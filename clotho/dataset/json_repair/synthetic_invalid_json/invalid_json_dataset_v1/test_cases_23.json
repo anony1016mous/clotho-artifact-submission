@@ -1,0 +1,1231 @@
+{
+  "possible_fix": "Replace JavaScript undefined with null\nExample: { \"key\": undefined } \u2192 { \"key\": null }",
+  "test_cases": [
+    [
+      {
+        "user": {
+          "id": 1,
+          "name": "Alice Smith",
+          "email": "alice@example.com",
+          "phone": null
+        }
+      },
+      "{\n  \"user\": {\n    \"id\": 1,\n    \"name\": \"Alice Smith\",\n    \"email\": \"alice@example.com\",\n    \"phone\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "bob_the_builder",
+          "age": 30,
+          "website": null,
+          "settings": {
+            "notifications": true,
+            "dark_mode": false
+          }
+        }
+      },
+      "{\n  \"profile\": {\n    \"username\": \"bob_the_builder\",\n    \"age\": 30,\n    \"website\": undefined,\n    \"settings\": {\n      \"notifications\": true,\n      \"dark_mode\": false\n    }\n  }\n}"
+    ],
+    [
+      {
+        "account": {
+          "userId": 101,
+          "status": "active",
+          "preferences": {
+            "newsletter": false,
+            "sms_alerts": null
+          }
+        }
+      },
+      "{\n  \"account\": {\n    \"userId\": 101,\n    \"status\": \"active\",\n    \"preferences\": {\n      \"newsletter\": false,\n      \"sms_alerts\": undefined\n    }\n  }\n}"
+    ],
+    [
+      {
+        "userInfo": {
+          "firstName": "Charlie",
+          "lastName": "Johnson",
+          "birthdate": null,
+          "address": {
+            "city": "New York",
+            "country": "USA"
+          }
+        }
+      },
+      "{\n  \"userInfo\": {\n    \"firstName\": \"Charlie\",\n    \"lastName\": \"Johnson\",\n    \"birthdate\": undefined,\n    \"address\": {\n      \"city\": \"New York\",\n      \"country\": \"USA\"\n    }\n  }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "user_id": 555,
+          "bio": "Loves coding and coffee.",
+          "avatar": null,
+          "social_links": []
+        }
+      },
+      "{\n  \"profile\": {\n    \"user_id\": 555,\n    \"bio\": \"Loves coding and coffee.\",\n    \"avatar\": undefined,\n    \"social_links\": []\n  }\n}"
+    ],
+    [
+      {
+        "accountDetails": {
+          "accountNumber": "123-456-789",
+          "type": "savings",
+          "balance": null,
+          "transactions": [
+            {
+              "amount": 250.5,
+              "date": "2023-01-15"
+            },
+            {
+              "amount": -100.0,
+              "date": "2023-02-10"
+            }
+          ]
+        }
+      },
+      "{\n  \"accountDetails\": {\n    \"accountNumber\": \"123-456-789\",\n    \"type\": \"savings\",\n    \"balance\": undefined,\n    \"transactions\": [\n      {\"amount\": 250.50, \"date\": \"2023-01-15\"},\n      {\"amount\": -100.00, \"date\": \"2023-02-10\"}\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "user": {
+          "id": 202,
+          "email": "david@example.com",
+          "contact": {
+            "home": null,
+            "work": "555-1234"
+          }
+        }
+      },
+      "{\n  \"user\": {\n    \"id\": 202,\n    \"email\": \"david@example.com\",\n    \"contact\": {\n      \"home\": undefined,\n      \"work\": \"555-1234\"\n    }\n  }\n}"
+    ],
+    [
+      {
+        "details": {
+          "first_name": "Emma",
+          "last_name": "Brown",
+          "membership_expiry": null,
+          "preferences": {
+            "email_notifications": true,
+            "sms_notifications": false
+          }
+        }
+      },
+      "{\n  \"details\": {\n    \"first_name\": \"Emma\",\n    \"last_name\": \"Brown\",\n    \"membership_expiry\": undefined,\n    \"preferences\": {\n      \"email_notifications\": true,\n      \"sms_notifications\": false\n    }\n  }\n}"
+    ],
+    [
+      {
+        "user": {
+          "name": "Frank",
+          "lastLogin": "2023-09-01T12:00:00Z",
+          "profilePicture": null
+        }
+      },
+      "{\n  \"user\": {\n    \"name\": \"Frank\",\n    \"lastLogin\": \"2023-09-01T12:00:00Z\",\n    \"profilePicture\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "account": {
+          "holder": "Grace Lee",
+          "active": true,
+          "lastAccess": null,
+          "permissions": [
+            "read",
+            "write"
+          ]
+        }
+      },
+      "{\n  \"account\": {\n    \"holder\": \"Grace Lee\",\n    \"active\": true,\n    \"lastAccess\": undefined,\n    \"permissions\": [\"read\", \"write\"]\n  }\n}"
+    ],
+    [
+      {
+        "orderId": 12345,
+        "product": "Smartphone",
+        "quantity": 2,
+        "status": null
+      },
+      "{\n  \"orderId\": 12345,\n  \"product\": \"Smartphone\",\n  \"quantity\": 2,\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "customerName": "John Doe",
+        "items": [
+          {
+            "productId": 678,
+            "name": "Laptop",
+            "price": 999.99,
+            "discountApplied": null
+          }
+        ]
+      },
+      "{\n  \"customerName\": \"John Doe\",\n  \"items\": [\n    {\n      \"productId\": 678,\n      \"name\": \"Laptop\",\n      \"price\": 999.99,\n      \"discountApplied\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "cart": {
+          "totalItems": 5,
+          "totalPrice": 150.0,
+          "couponCode": null
+        }
+      },
+      "{\n  \"cart\": {\n    \"totalItems\": 5,\n    \"totalPrice\": 150.00,\n    \"couponCode\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "customerId": 7890,
+        "shippingAddress": {
+          "street": "123 Elm St",
+          "city": "Somewhere",
+          "postalCode": null
+        }
+      },
+      "{\n  \"customerId\": 7890,\n  \"shippingAddress\": {\n    \"street\": \"123 Elm St\",\n    \"city\": \"Somewhere\",\n    \"postalCode\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "orderDate": "2023-10-01",
+        "deliveryDate": null
+      },
+      "{\n  \"orderDate\": \"2023-10-01\",\n  \"deliveryDate\": undefined\n}"
+    ],
+    [
+      {
+        "feedback": {
+          "rating": 5,
+          "comment": "Great service!",
+          "response": null
+        }
+      },
+      "{\n  \"feedback\": {\n    \"rating\": 5,\n    \"comment\": \"Great service!\",\n    \"response\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "user": {
+          "username": "shopper123",
+          "email": null
+        }
+      },
+      "{\n  \"user\": {\n    \"username\": \"shopper123\",\n    \"email\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "wishlist": [
+          {
+            "productId": 111,
+            "productName": "Headphones",
+            "dateAdded": null
+          }
+        ]
+      },
+      "{\n  \"wishlist\": [\n    {\n      \"productId\": 111,\n      \"productName\": \"Headphones\",\n      \"dateAdded\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "paymentMethod": {
+          "type": "Credit Card",
+          "lastFourDigits": "1234",
+          "expirationDate": null
+        }
+      },
+      "{\n  \"paymentMethod\": {\n    \"type\": \"Credit Card\",\n    \"lastFourDigits\": \"1234\",\n    \"expirationDate\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "orderHistory": [
+          {
+            "orderId": 54321,
+            "date": "2023-09-15",
+            "shipped": null
+          }
+        ]
+      },
+      "{\n  \"orderHistory\": [\n    {\n      \"orderId\": 54321,\n      \"date\": \"2023-09-15\",\n      \"shipped\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "title": "Inception",
+        "review": {
+          "rating": 4.8,
+          "comment": "A mind-bending thriller with stunning visuals.",
+          "recommend": true
+        }
+      },
+      "{\n    \"title\": \"Inception\",\n    \"review\": {\n        \"rating\": 4.8,\n        \"comment\": \"A mind-bending thriller with stunning visuals.\",\n        \"recommend\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "movie": "The Matrix",
+        "reviews": [
+          {
+            "user": "Alice",
+            "rating": 5,
+            "comment": "An innovative sci-fi masterpiece."
+          },
+          {
+            "user": "Bob",
+            "rating": 4.5,
+            "comment": "Intriguing plot with great action sequences."
+          }
+        ]
+      },
+      "{\n    \"movie\": \"The Matrix\",\n    \"reviews\": [\n        {\n            \"user\": \"Alice\",\n            \"rating\": 5,\n            \"comment\": \"An innovative sci-fi masterpiece.\"\n        },\n        {\n            \"user\": \"Bob\",\n            \"rating\": 4.5,\n            \"comment\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "show": "Breaking Bad",
+        "season": 5,
+        "finale": {
+          "episode": "Felina",
+          "rating": 5,
+          "comments": [
+            "Best series finale ever!",
+            "Perfect ending."
+          ]
+        }
+      },
+      "{\n    \"show\": \"Breaking Bad\",\n    \"season\": 5,\n    \"finale\": {\n        \"episode\": \"Felina\",\n        \"rating\": 5,\n        \"comments\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "title": "Avatar",
+        "release_year": 2009,
+        "genre": "Science Fiction",
+        "rating": 4.7,
+        "review": null
+      },
+      "{\n    \"title\": \"Avatar\",\n    \"release_year\": 2009,\n    \"genre\": \"Science Fiction\",\n    \"rating\": 4.7,\n    \"review\": undefined\n}"
+    ],
+    [
+      {
+        "series": "Stranger Things",
+        "season": 4,
+        "episodes": [
+          {
+            "title": "Chapter One: The Hellfire Club",
+            "rating": 4.9,
+            "watched": true
+          },
+          {
+            "title": "Chapter Two: Vecna's Curse",
+            "rating": 4.8,
+            "watched": null
+          }
+        ]
+      },
+      "{\n    \"series\": \"Stranger Things\",\n    \"season\": 4,\n    \"episodes\": [\n        {\n            \"title\": \"Chapter One: The Hellfire Club\",\n            \"rating\": 4.9,\n            \"watched\": true\n        },\n        {\n            \"title\": \"Chapter Two: Vecna's Curse\",\n            \"rating\": 4.8,\n            \"watched\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "documentary": "Our Planet",
+        "narrator": "David Attenborough",
+        "views": null
+      },
+      "{\n    \"documentary\": \"Our Planet\",\n    \"narrator\": \"David Attenborough\",\n    \"views\": undefined\n}"
+    ],
+    [
+      {
+        "film": "Joker",
+        "cast": [
+          "Joaquin Phoenix",
+          "Robert De Niro"
+        ],
+        "awards": "2 Oscars",
+        "sequel": null
+      },
+      "{\n    \"film\": \"Joker\",\n    \"cast\": [\n        \"Joaquin Phoenix\",\n        \"Robert De Niro\"\n    ],\n    \"awards\": \"2 Oscars\",\n    \"sequel\": undefined\n}"
+    ],
+    [
+      {
+        "movie": "Interstellar",
+        "director": "Christopher Nolan",
+        "actors": [
+          "Matthew McConaughey",
+          "Anne Hathaway"
+        ],
+        "availability": null
+      },
+      "{\n    \"movie\": \"Interstellar\",\n    \"director\": \"Christopher Nolan\",\n    \"actors\": [\n        \"Matthew McConaughey\",\n        \"Anne Hathaway\"\n    ],\n    \"availability\": undefined\n}"
+    ],
+    [
+      {
+        "series": "The Crown",
+        "seasons": 4,
+        "latest_season": {
+          "season_number": 4,
+          "ratings": 4.8,
+          "release_date": null
+        }
+      },
+      "{\n    \"series\": \"The Crown\",\n    \"seasons\": 4,\n    \"latest_season\": {\n        \"season_number\": 4,\n        \"ratings\": 4.8,\n        \"release_date\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "show": "The Office",
+        "genre": "Comedy",
+        "seasons": 9,
+        "favorite_quote": null
+      },
+      "{\n    \"show\": \"The Office\",\n    \"genre\": \"Comedy\",\n    \"seasons\": 9,\n    \"favorite_quote\": undefined\n}"
+    ],
+    [
+      {
+        "username": "john_doe",
+        "post": "Excited about the new movie release!",
+        "likes": 120,
+        "comments": [
+          {
+            "user": "jane_smith",
+            "comment": "Can't wait to see it!"
+          },
+          {
+            "user": "movie_buff",
+            "comment": "Same here!"
+          }
+        ]
+      },
+      "{\n    \"username\": \"john_doe\",\n    \"post\": \"Excited about the new movie release!\",\n    \"likes\": 120,\n    \"comments\": [\n        {\"user\": \"jane_smith\", \"comment\": \"Can't wait to see it!\"},\n        {\"user\": \"movie_buff\", \"comment\": undefined}\n    ]\n}"
+    ],
+    [
+      {
+        "username": "happy_traveler",
+        "post": "Just visited the Grand Canyon!",
+        "tags": [
+          "travel",
+          "nature",
+          "adventure"
+        ],
+        "retweets": 45
+      },
+      "{\n    \"username\": \"happy_traveler\",\n    \"post\": \"Just visited the Grand Canyon!\",\n    \"tags\": [\"travel\", \"nature\", undefined],\n    \"retweets\": 45\n}"
+    ],
+    [
+      {
+        "username": "tech_guru",
+        "post": "The new smartphone has amazing features.",
+        "device": "smartphone",
+        "shares": 30
+      },
+      "{\n    \"username\": \"tech_guru\",\n    \"post\": undefined,\n    \"device\": \"smartphone\",\n    \"shares\": 30\n}"
+    ],
+    [
+      {
+        "username": "music_lover",
+        "post": "Listening to the latest album by my favorite band.",
+        "album": "Unknown Pleasures",
+        "favorites": 200
+      },
+      "{\n    \"username\": \"music_lover\",\n    \"post\": \"Listening to the latest album by my favorite band.\",\n    \"album\": undefined,\n    \"favorites\": 200\n}"
+    ],
+    [
+      {
+        "username": "foodie123",
+        "post": "Just tried the new pasta recipe, and it was delicious!",
+        "recipe": "pasta",
+        "comments": []
+      },
+      "{\n    \"username\": \"foodie123\",\n    \"post\": \"Just tried the new pasta recipe, and it was delicious!\",\n    \"recipe\": undefined,\n    \"comments\": []\n}"
+    ],
+    [
+      {
+        "username": "nature_photographer",
+        "post": "Captured some amazing shots of the sunset!",
+        "location": "beach",
+        "shares": 60
+      },
+      "{\n    \"username\": undefined,\n    \"post\": \"Captured some amazing shots of the sunset!\",\n    \"location\": \"beach\",\n    \"shares\": 60\n}"
+    ],
+    [
+      {
+        "username": "fitness_freak",
+        "post": "Completed my morning run. Feeling great!",
+        "miles": 5,
+        "comments": [
+          {
+            "user": "runner_guy",
+            "comment": "Good job!"
+          }
+        ]
+      },
+      "{\n    \"username\": \"fitness_freak\",\n    \"post\": \"Completed my morning run. Feeling great!\",\n    \"miles\": undefined,\n    \"comments\": [\n        {\"user\": \"runner_guy\", \"comment\": \"Good job!\"}\n    ]\n}"
+    ],
+    [
+      {
+        "username": "pet_lover",
+        "post": "Adopted a new puppy!",
+        "petName": "Buddy",
+        "likes": 150
+      },
+      "{\n    \"username\": \"pet_lover\",\n    \"post\": \"Adopted a new puppy!\",\n    \"petName\": undefined,\n    \"likes\": 150\n}"
+    ],
+    [
+      {
+        "username": "bookworm",
+        "post": "Reading an incredible novel.",
+        "bookTitle": "The Great Gatsby",
+        "likes": 75
+      },
+      "{\n    \"username\": \"bookworm\",\n    \"post\": \"Reading an incredible novel.\",\n    \"bookTitle\": undefined,\n    \"likes\": 75\n}"
+    ],
+    [
+      {
+        "username": "artist_at_heart",
+        "post": "Finished a new painting today.",
+        "medium": "oil",
+        "comments": [
+          {
+            "user": "art_fan",
+            "comment": "Beautiful work!"
+          }
+        ]
+      },
+      "{\n    \"username\": \"artist_at_heart\",\n    \"post\": undefined,\n    \"medium\": \"oil\",\n    \"comments\": [\n        {\"user\": \"art_fan\", \"comment\": \"Beautiful work!\"}\n    ]\n}"
+    ],
+    [
+      {
+        "sensor_id": "sensor_01",
+        "temperature": 22.5,
+        "humidity": 60,
+        "status": "active",
+        "last_checked": "2023-10-15T08:00:00Z"
+      },
+      "{\n    \"sensor_id\": \"sensor_01\",\n    \"temperature\": 22.5,\n    \"humidity\": 60,\n    \"status\": undefined,\n    \"last_checked\": \"2023-10-15T08:00:00Z\"\n}"
+    ],
+    [
+      {
+        "device": "thermostat",
+        "location": "living room",
+        "readings": [
+          {
+            "time": "2023-10-15T07:55:00Z",
+            "value": 21.8
+          },
+          {
+            "time": "2023-10-15T08:00:00Z",
+            "value": 22.0
+          }
+        ],
+        "battery": 80
+      },
+      "{\n    \"device\": \"thermostat\",\n    \"location\": \"living room\",\n    \"readings\": [\n        {\"time\": \"2023-10-15T07:55:00Z\", \"value\": 21.8},\n        {\"time\": \"2023-10-15T08:00:00Z\", \"value\": undefined}\n    ],\n    \"battery\": 80\n}"
+    ],
+    [
+      {
+        "sensor_type": "motion",
+        "active": true,
+        "sensitivity": 0.8,
+        "alert_mode": "email",
+        "manufacturer": "SensorCorp"
+      },
+      "{\n    \"sensor_type\": \"motion\",\n    \"active\": true,\n    \"sensitivity\": undefined,\n    \"alert_mode\": \"email\",\n    \"manufacturer\": \"SensorCorp\"\n}"
+    ],
+    [
+      {
+        "sensor_id": "sensor_42",
+        "reading": {
+          "timestamp": "2023-10-15T12:00:00Z",
+          "values": {
+            "temperature": 19.5,
+            "humidity": 55,
+            "pressure": 1013
+          }
+        }
+      },
+      "{\n    \"sensor_id\": \"sensor_42\",\n    \"reading\": {\n        \"timestamp\": \"2023-10-15T12:00:00Z\",\n        \"values\": {\n            \"temperature\": 19.5,\n            \"humidity\": undefined,\n            \"pressure\": 1013\n        }\n    }\n}"
+    ],
+    [
+      {
+        "device_id": "dev_1001",
+        "alerts": [],
+        "signal_strength": "strong",
+        "ip_address": "192.168.1.10",
+        "last_update": "2023-10-15T11:45:00Z"
+      },
+      "{\n    \"device_id\": \"dev_1001\",\n    \"alerts\": undefined,\n    \"signal_strength\": \"strong\",\n    \"ip_address\": \"192.168.1.10\",\n    \"last_update\": \"2023-10-15T11:45:00Z\"\n}"
+    ],
+    [
+      {
+        "network": "home_wifi",
+        "connected_devices": [
+          {
+            "device_id": "dev_001",
+            "status": "online"
+          },
+          {
+            "device_id": "dev_002",
+            "status": "offline"
+          }
+        ],
+        "uptime": 56800
+      },
+      "{\n    \"network\": \"home_wifi\",\n    \"connected_devices\": [\n        {\"device_id\": \"dev_001\", \"status\": undefined},\n        {\"device_id\": \"dev_002\", \"status\": \"offline\"}\n    ],\n    \"uptime\": 56800\n}"
+    ],
+    [
+      {
+        "controller": "central_unit",
+        "firmware_version": "1.2.3",
+        "maintenance_due": "2023-12-01",
+        "operational": true
+      },
+      "{\n    \"controller\": \"central_unit\",\n    \"firmware_version\": undefined,\n    \"maintenance_due\": \"2023-12-01\",\n    \"operational\": true\n}"
+    ],
+    [
+      {
+        "hub": "IoT_gateway",
+        "status": "active",
+        "connected_sensors": 15,
+        "last_sync": "2023-10-14T20:30:00Z"
+      },
+      "{\n    \"hub\": \"IoT_gateway\",\n    \"status\": undefined,\n    \"connected_sensors\": 15,\n    \"last_sync\": \"2023-10-14T20:30:00Z\"\n}"
+    ],
+    [
+      {
+        "sensor_name": "humidity_sensor",
+        "location": "greenhouse",
+        "data_points": [
+          {
+            "time": "2023-10-15T09:00:00Z",
+            "humidity": 70
+          },
+          {
+            "time": "2023-10-15T09:05:00Z",
+            "humidity": 71
+          }
+        ],
+        "active": false
+      },
+      "{\n    \"sensor_name\": \"humidity_sensor\",\n    \"location\": \"greenhouse\",\n    \"data_points\": [\n        {\"time\": \"2023-10-15T09:00:00Z\", \"humidity\": 70},\n        {\"time\": \"2023-10-15T09:05:00Z\", \"humidity\": undefined}\n    ],\n    \"active\": false\n}"
+    ],
+    [
+      {
+        "gateway_id": "gw_1234",
+        "connectivity": "wired",
+        "firmware": "v3.4.1",
+        "last_restart": "2023-09-30T10:00:00Z",
+        "error_logs": []
+      },
+      "{\n    \"gateway_id\": \"gw_1234\",\n    \"connectivity\": \"wired\",\n    \"firmware\": undefined,\n    \"last_restart\": \"2023-09-30T10:00:00Z\",\n    \"error_logs\": []\n}"
+    ],
+    [
+      {
+        "location": "San Francisco",
+        "temperature": 68,
+        "conditions": "Sunny",
+        "forecast": {
+          "day1": "Sunny",
+          "day2": null,
+          "day3": "Partly Cloudy"
+        }
+      },
+      "{\n    \"location\": \"San Francisco\",\n    \"temperature\": 68,\n    \"conditions\": \"Sunny\",\n    \"forecast\": {\n        \"day1\": \"Sunny\",\n        \"day2\": undefined,\n        \"day3\": \"Partly Cloudy\"\n    }\n}"
+    ],
+    [
+      {
+        "city": "New York",
+        "humidity": 70,
+        "conditions": "Rainy",
+        "alert": null
+      },
+      "{\n    \"city\": \"New York\",\n    \"humidity\": 70,\n    \"conditions\": \"Rainy\",\n    \"alert\": undefined\n}"
+    ],
+    [
+      {
+        "location": "Seattle",
+        "temperature": 55,
+        "conditions": "Cloudy",
+        "forecast": [
+          "Rainy",
+          null,
+          "Partly Cloudy"
+        ]
+      },
+      "{\n    \"location\": \"Seattle\",\n    \"temperature\": 55,\n    \"conditions\": \"Cloudy\",\n    \"forecast\": [\n        \"Rainy\",\n        undefined,\n        \"Partly Cloudy\"\n    ]\n}"
+    ],
+    [
+      {
+        "region": "Midwest",
+        "averageTemperature": null,
+        "currentConditions": "Stormy",
+        "advisories": {
+          "tornado": true,
+          "flood": false
+        }
+      },
+      "{\n    \"region\": \"Midwest\",\n    \"averageTemperature\": undefined,\n    \"currentConditions\": \"Stormy\",\n    \"advisories\": {\n        \"tornado\": true,\n        \"flood\": false\n    }\n}"
+    ],
+    [
+      {
+        "country": "Canada",
+        "temperature": null,
+        "conditions": "Snow",
+        "upcoming": [
+          "Snow",
+          "Sleet",
+          "Clear"
+        ]
+      },
+      "{\n    \"country\": \"Canada\",\n    \"temperature\": undefined,\n    \"conditions\": \"Snow\",\n    \"upcoming\": [\n        \"Snow\",\n        \"Sleet\",\n        \"Clear\"\n    ]\n}"
+    ],
+    [
+      {
+        "city": "Miami",
+        "humidity": 80,
+        "heatIndex": null,
+        "conditions": "Hot"
+      },
+      "{\n    \"city\": \"Miami\",\n    \"humidity\": 80,\n    \"heatIndex\": undefined,\n    \"conditions\": \"Hot\"\n}"
+    ],
+    [
+      {
+        "station": "Downtown",
+        "temperature": 75,
+        "conditions": null,
+        "windSpeed": 5
+      },
+      "{\n    \"station\": \"Downtown\",\n    \"temperature\": 75,\n    \"conditions\": undefined,\n    \"windSpeed\": 5\n}"
+    ],
+    [
+      {
+        "location": "Denver",
+        "pressure": 1012,
+        "visibility": null,
+        "conditions": "Clear"
+      },
+      "{\n    \"location\": \"Denver\",\n    \"pressure\": 1012,\n    \"visibility\": undefined,\n    \"conditions\": \"Clear\"\n}"
+    ],
+    [
+      {
+        "city": "London",
+        "temperature": 60,
+        "humidity": 75,
+        "conditions": null
+      },
+      "{\n    \"city\": \"London\",\n    \"temperature\": 60,\n    \"humidity\": 75,\n    \"conditions\": undefined\n}"
+    ],
+    [
+      {
+        "region": "Southwest",
+        "averageTemperature": 85,
+        "conditions": "Dry",
+        "forecast": {
+          "day1": null,
+          "day2": "Dry",
+          "day3": "Sunny"
+        }
+      },
+      "{\n    \"region\": \"Southwest\",\n    \"averageTemperature\": 85,\n    \"conditions\": \"Dry\",\n    \"forecast\": {\n        \"day1\": undefined,\n        \"day2\": \"Dry\",\n        \"day3\": \"Sunny\"\n    }\n}"
+    ],
+    [
+      {
+        "transactionId": "TX12345",
+        "amount": 150.75,
+        "currency": "USD",
+        "status": "completed",
+        "date": "2023-10-01",
+        "description": "Payment for invoice #123"
+      },
+      "{\n  \"transactionId\": \"TX12345\",\n  \"amount\": 150.75,\n  \"currency\": \"USD\",\n  \"status\": undefined,\n  \"date\": \"2023-10-01\",\n  \"description\": \"Payment for invoice #123\"\n}"
+    ],
+    [
+      {
+        "accountNumber": "987654321",
+        "transactionType": "withdrawal",
+        "amount": 500,
+        "currency": "EUR",
+        "status": "pending",
+        "notes": "ATM withdrawal fee"
+      },
+      "{\n  \"accountNumber\": \"987654321\",\n  \"transactionType\": \"withdrawal\",\n  \"amount\": 500,\n  \"currency\": \"EUR\",\n  \"status\": undefined,\n  \"notes\": \"ATM withdrawal fee\"\n}"
+    ],
+    [
+      {
+        "userId": "U123456",
+        "transactions": [
+          {
+            "transactionId": "TX67890",
+            "amount": 300.25,
+            "currency": "USD",
+            "status": "completed"
+          },
+          {
+            "transactionId": "TX67891",
+            "amount": 50.5,
+            "currency": "USD",
+            "status": "failed"
+          }
+        ]
+      },
+      "{\n  \"userId\": \"U123456\",\n  \"transactions\": [\n    {\n      \"transactionId\": \"TX67890\",\n      \"amount\": 300.25,\n      \"currency\": \"USD\",\n      \"status\": \"completed\"\n    },\n    {\n      \"transactionId\": \"TX67891\",\n      \"amount\": 50.50,\n      \"currency\": \"USD\",\n      \"status\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "merchantId": "M1234",
+        "transactionDate": "2023-10-02",
+        "totalAmount": 1200.0,
+        "currency": "GBP",
+        "items": [
+          {
+            "itemId": "IT1001",
+            "quantity": 2,
+            "price": 300.0
+          },
+          {
+            "itemId": "IT1002",
+            "quantity": 1,
+            "price": 600.0
+          }
+        ],
+        "status": "processed"
+      },
+      "{\n  \"merchantId\": \"M1234\",\n  \"transactionDate\": \"2023-10-02\",\n  \"totalAmount\": 1200.00,\n  \"currency\": \"GBP\",\n  \"items\": [\n    {\"itemId\": \"IT1001\", \"quantity\": 2, \"price\": 300.00},\n    {\"itemId\": \"IT1002\", \"quantity\": 1, \"price\": 600.00}\n  ],\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "branchId": "B001",
+        "financialYear": "2023",
+        "monthlySummaries": [
+          {
+            "month": "January",
+            "income": 10000,
+            "expenses": 5000
+          },
+          {
+            "month": "February",
+            "income": 12000,
+            "expenses": 6000
+          }
+        ],
+        "approvalStatus": "approved"
+      },
+      "{\n  \"branchId\": \"B001\",\n  \"financialYear\": \"2023\",\n  \"monthlySummaries\": [\n    {\"month\": \"January\", \"income\": 10000, \"expenses\": 5000},\n    {\"month\": \"February\", \"income\": 12000, \"expenses\": 6000}\n  ],\n  \"approvalStatus\": undefined\n}"
+    ],
+    [
+      {
+        "invoiceId": "INV56789",
+        "dueAmount": 450.0,
+        "paidAmount": 450.0,
+        "currency": "USD",
+        "issueDate": "2023-09-15",
+        "paymentStatus": "paid"
+      },
+      "{\n  \"invoiceId\": \"INV56789\",\n  \"dueAmount\": 450.00,\n  \"paidAmount\": 450.00,\n  \"currency\": \"USD\",\n  \"issueDate\": \"2023-09-15\",\n  \"paymentStatus\": undefined\n}"
+    ],
+    [
+      {
+        "loanId": "LN123456",
+        "borrower": "John Doe",
+        "amount": 25000,
+        "interestRate": 5.5,
+        "term": 60,
+        "status": "active"
+      },
+      "{\n  \"loanId\": \"LN123456\",\n  \"borrower\": \"John Doe\",\n  \"amount\": 25000,\n  \"interestRate\": 5.5,\n  \"term\": 60,\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "investmentId": "INV99999",
+        "investor": "Jane Smith",
+        "funds": 50000,
+        "portfolio": [
+          {
+            "stock": "AAPL",
+            "shares": 50,
+            "price": 150
+          },
+          {
+            "stock": "GOOGL",
+            "shares": 20,
+            "price": 2800
+          }
+        ],
+        "status": "active"
+      },
+      "{\n  \"investmentId\": \"INV99999\",\n  \"investor\": \"Jane Smith\",\n  \"funds\": 50000,\n  \"portfolio\": [\n    {\"stock\": \"AAPL\", \"shares\": 50, \"price\": 150},\n    {\"stock\": \"GOOGL\", \"shares\": 20, \"price\": 2800}\n  ],\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "paymentId": "PY654321",
+        "payer": "Acme Corp",
+        "payee": "Widget Inc",
+        "amount": 750.0,
+        "currency": "USD",
+        "transactionDate": "2023-10-05",
+        "status": "completed"
+      },
+      "{\n  \"paymentId\": \"PY654321\",\n  \"payer\": \"Acme Corp\",\n  \"payee\": \"Widget Inc\",\n  \"amount\": 750.00,\n  \"currency\": \"USD\",\n  \"transactionDate\": \"2023-10-05\",\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "orderId": "ORD888888",
+        "customer": "XYZ Ltd",
+        "orderTotal": 299.99,
+        "currency": "USD",
+        "orderDate": "2023-10-03",
+        "fulfillmentStatus": "shipped"
+      },
+      "{\n  \"orderId\": \"ORD888888\",\n  \"customer\": \"XYZ Ltd\",\n  \"orderTotal\": 299.99,\n  \"currency\": \"USD\",\n  \"orderDate\": \"2023-10-03\",\n  \"fulfillmentStatus\": undefined\n}"
+    ],
+    [
+      {
+        "user": "JohnDoe",
+        "steps": 7894,
+        "caloriesBurned": 430,
+        "workout": {
+          "type": "Cardio",
+          "durationMinutes": 45,
+          "trainerFeedback": null
+        }
+      },
+      "{\n  \"user\": \"JohnDoe\",\n  \"steps\": 7894,\n  \"caloriesBurned\": 430,\n  \"workout\": {\n    \"type\": \"Cardio\",\n    \"durationMinutes\": 45,\n    \"trainerFeedback\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "user": "JaneSmith",
+        "waterIntakeLiters": 2.5,
+        "sleepHours": 7,
+        "dailyGoal": {
+          "steps": 10000,
+          "calories": 2000,
+          "completed": null
+        }
+      },
+      "{\n  \"user\": \"JaneSmith\",\n  \"waterIntakeLiters\": 2.5,\n  \"sleepHours\": 7,\n  \"dailyGoal\": {\n    \"steps\": 10000,\n    \"calories\": 2000,\n    \"completed\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "workoutSession": {
+          "date": "2023-10-01",
+          "exercise": "Yoga",
+          "durationMinutes": 60,
+          "satisfaction": null
+        },
+        "mood": "relaxed"
+      },
+      "{\n  \"workoutSession\": {\n    \"date\": \"2023-10-01\",\n    \"exercise\": \"Yoga\",\n    \"durationMinutes\": 60,\n    \"satisfaction\": undefined\n  },\n  \"mood\": \"relaxed\"\n}"
+    ],
+    [
+      {
+        "user": "MarkLee",
+        "weightKg": 75,
+        "fitnessLevel": "Intermediate",
+        "recentInjuries": null
+      },
+      "{\n  \"user\": \"MarkLee\",\n  \"weightKg\": 75,\n  \"fitnessLevel\": \"Intermediate\",\n  \"recentInjuries\": undefined\n}"
+    ],
+    [
+      {
+        "nutrition": {
+          "caloriesConsumed": 1800,
+          "proteinGrams": 150,
+          "carbsGrams": 200,
+          "fatGrams": null
+        },
+        "hydrationStatus": "Good"
+      },
+      "{\n  \"nutrition\": {\n    \"caloriesConsumed\": 1800,\n    \"proteinGrams\": 150,\n    \"carbsGrams\": 200,\n    \"fatGrams\": undefined\n  },\n  \"hydrationStatus\": \"Good\"\n}"
+    ],
+    [
+      {
+        "activity": "Running",
+        "distanceKm": 10,
+        "pace": "5:30/km",
+        "weather": null
+      },
+      "{\n  \"activity\": \"Running\",\n  \"distanceKm\": 10,\n  \"pace\": \"5:30/km\",\n  \"weather\": undefined\n}"
+    ],
+    [
+      {
+        "user": "EmilyR",
+        "BMI": 22.4,
+        "healthCheck": {
+          "bloodPressure": "120/80",
+          "cholesterolLevel": null
+        }
+      },
+      "{\n  \"user\": \"EmilyR\",\n  \"BMI\": 22.4,\n  \"healthCheck\": {\n    \"bloodPressure\": \"120/80\",\n    \"cholesterolLevel\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "fitnessClass": "HIIT",
+        "participants": 15,
+        "instructor": "Alex",
+        "notes": null
+      },
+      "{\n  \"fitnessClass\": \"HIIT\",\n  \"participants\": 15,\n  \"instructor\": \"Alex\",\n  \"notes\": undefined\n}"
+    ],
+    [
+      {
+        "dietPlan": {
+          "type": "Vegan",
+          "calorieLimit": 2000,
+          "allowCheatMeal": null
+        },
+        "adherence": "High"
+      },
+      "{\n  \"dietPlan\": {\n    \"type\": \"Vegan\",\n    \"calorieLimit\": 2000,\n    \"allowCheatMeal\": undefined\n  },\n  \"adherence\": \"High\"\n}"
+    ],
+    [
+      {
+        "user": "OliverP",
+        "activities": [
+          "Swimming",
+          "Cycling"
+        ],
+        "goal": {
+          "muscleGain": true,
+          "fatLoss": null
+        }
+      },
+      "{\n  \"user\": \"OliverP\",\n  \"activities\": [\n    \"Swimming\",\n    \"Cycling\"\n  ],\n  \"goal\": {\n    \"muscleGain\": true,\n    \"fatLoss\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "vehicle": "Car",
+        "location": {
+          "latitude": 40.7128,
+          "longitude": -74.006
+        },
+        "speed": 65,
+        "status": null
+      },
+      "{\n  \"vehicle\": \"Car\",\n  \"location\": {\n    \"latitude\": 40.7128,\n    \"longitude\": -74.0060\n  },\n  \"speed\": 65,\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "type": "Bicycle",
+        "trip": {
+          "start_time": "08:00",
+          "end_time": "09:00"
+        },
+        "distance": 12.5,
+        "gps": null
+      },
+      "{\n  \"type\": \"Bicycle\",\n  \"trip\": {\n    \"start_time\": \"08:00\",\n    \"end_time\": \"09:00\"\n  },\n  \"distance\": 12.5,\n  \"gps\": undefined\n}"
+    ],
+    [
+      {
+        "transport": "Bus",
+        "route": {
+          "start": "Station A",
+          "end": "Station B"
+        },
+        "passengers": 30,
+        "current_location": null
+      },
+      "{\n  \"transport\": \"Bus\",\n  \"route\": {\n    \"start\": \"Station A\",\n    \"end\": \"Station B\"\n  },\n  \"passengers\": 30,\n  \"current_location\": undefined\n}"
+    ],
+    [
+      {
+        "mode": "Train",
+        "schedule": {
+          "departure": "14:30",
+          "arrival": "16:00"
+        },
+        "track_number": 5,
+        "delay": null
+      },
+      "{\n  \"mode\": \"Train\",\n  \"schedule\": {\n    \"departure\": \"14:30\",\n    \"arrival\": \"16:00\"\n  },\n  \"track_number\": 5,\n  \"delay\": undefined\n}"
+    ],
+    [
+      {
+        "service": "Taxi",
+        "driver": "John Doe",
+        "license_plate": "XYZ 1234",
+        "location": null
+      },
+      "{\n  \"service\": \"Taxi\",\n  \"driver\": \"John Doe\",\n  \"license_plate\": \"XYZ 1234\",\n  \"location\": undefined\n}"
+    ],
+    [
+      {
+        "vehicle": "Truck",
+        "cargo": {
+          "type": "Furniture",
+          "weight": 5000
+        },
+        "driver": null,
+        "route": "Highway 101"
+      },
+      "{\n  \"vehicle\": \"Truck\",\n  \"cargo\": {\n    \"type\": \"Furniture\",\n    \"weight\": 5000\n  },\n  \"driver\": undefined,\n  \"route\": \"Highway 101\"\n}"
+    ],
+    [
+      {
+        "type": "Motorcycle",
+        "rider": "Alice Smith",
+        "helmet": true,
+        "checkpoint": null
+      },
+      "{\n  \"type\": \"Motorcycle\",\n  \"rider\": \"Alice Smith\",\n  \"helmet\": true,\n  \"checkpoint\": undefined\n}"
+    ],
+    [
+      {
+        "transport": "Subway",
+        "line": "Red",
+        "stations": [
+          "Central",
+          "Park Street",
+          "Harvard"
+        ],
+        "next_arrival": null
+      },
+      "{\n  \"transport\": \"Subway\",\n  \"line\": \"Red\",\n  \"stations\": [\"Central\", \"Park Street\", \"Harvard\"],\n  \"next_arrival\": undefined\n}"
+    ],
+    [
+      {
+        "method": "Walking",
+        "duration_minutes": 15,
+        "steps": 2000,
+        "gps_tracking": null
+      },
+      "{\n  \"method\": \"Walking\",\n  \"duration_minutes\": 15,\n  \"steps\": 2000,\n  \"gps_tracking\": undefined\n}"
+    ],
+    [
+      {
+        "mode": "Ferry",
+        "route": {
+          "origin": "Island Dock",
+          "destination": "Mainland Port"
+        },
+        "passenger_count": 100,
+        "weather_delay": null
+      },
+      "{\n  \"mode\": \"Ferry\",\n  \"route\": {\n    \"origin\": \"Island Dock\",\n    \"destination\": \"Mainland Port\"\n  },\n  \"passenger_count\": 100,\n  \"weather_delay\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "001",
+        "bookTitle": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "borrower": {
+          "name": "Alice Johnson",
+          "memberID": "M123"
+        },
+        "dueDate": "2023-11-01",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"001\",\n    \"bookTitle\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"borrower\": {\n        \"name\": \"Alice Johnson\",\n        \"memberID\": \"M123\"\n    },\n    \"dueDate\": \"2023-11-01\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "002",
+        "bookTitle": "1984",
+        "author": "George Orwell",
+        "borrower": {
+          "name": "Bob Smith",
+          "memberID": "M456"
+        },
+        "dueDate": "2023-11-15",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"002\",\n    \"bookTitle\": \"1984\",\n    \"author\": \"George Orwell\",\n    \"borrower\": {\n        \"name\": \"Bob Smith\",\n        \"memberID\": \"M456\"\n    },\n    \"dueDate\": \"2023-11-15\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "003",
+        "bookTitle": "Brave New World",
+        "author": "Aldous Huxley",
+        "borrower": {
+          "name": "Charlie Brown",
+          "memberID": "M789"
+        },
+        "dueDate": "2023-12-01",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"003\",\n    \"bookTitle\": \"Brave New World\",\n    \"author\": \"Aldous Huxley\",\n    \"borrower\": {\n        \"name\": \"Charlie Brown\",\n        \"memberID\": \"M789\"\n    },\n    \"dueDate\": \"2023-12-01\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "004",
+        "bookTitle": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "borrower": {
+          "name": "Diana Prince",
+          "memberID": "M101"
+        },
+        "dueDate": null,
+        "returned": null
+      },
+      "{\n    \"recordID\": \"004\",\n    \"bookTitle\": \"To Kill a Mockingbird\",\n    \"author\": \"Harper Lee\",\n    \"borrower\": {\n        \"name\": \"Diana Prince\",\n        \"memberID\": \"M101\"\n    },\n    \"dueDate\": undefined,\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "005",
+        "bookTitle": "Moby Dick",
+        "author": "Herman Melville",
+        "borrower": {
+          "name": "Eve Adams",
+          "memberID": "M112"
+        },
+        "dueDate": "2023-12-20",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"005\",\n    \"bookTitle\": \"Moby Dick\",\n    \"author\": \"Herman Melville\",\n    \"borrower\": {\n        \"name\": \"Eve Adams\",\n        \"memberID\": \"M112\"\n    },\n    \"dueDate\": \"2023-12-20\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "006",
+        "bookTitle": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "borrower": {
+          "name": "Frank Castle",
+          "memberID": "M123"
+        },
+        "dueDate": "2024-01-05",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"006\",\n    \"bookTitle\": \"The Catcher in the Rye\",\n    \"author\": \"J.D. Salinger\",\n    \"borrower\": {\n        \"name\": \"Frank Castle\",\n        \"memberID\": \"M123\"\n    },\n    \"dueDate\": \"2024-01-05\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "007",
+        "bookTitle": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "borrower": {
+          "name": "Grace Hopper",
+          "memberID": "M456"
+        },
+        "dueDate": "2024-01-15",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"007\",\n    \"bookTitle\": \"Pride and Prejudice\",\n    \"author\": \"Jane Austen\",\n    \"borrower\": {\n        \"name\": \"Grace Hopper\",\n        \"memberID\": \"M456\"\n    },\n    \"dueDate\": \"2024-01-15\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "008",
+        "bookTitle": "War and Peace",
+        "author": "Leo Tolstoy",
+        "borrower": {
+          "name": "Hannah Abbott",
+          "memberID": "M789"
+        },
+        "dueDate": "2024-02-01",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"008\",\n    \"bookTitle\": \"War and Peace\",\n    \"author\": \"Leo Tolstoy\",\n    \"borrower\": {\n        \"name\": \"Hannah Abbott\",\n        \"memberID\": \"M789\"\n    },\n    \"dueDate\": \"2024-02-01\",\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "009",
+        "bookTitle": "The Odyssey",
+        "author": "Homer",
+        "borrower": {
+          "name": "Irene Adler",
+          "memberID": "M101"
+        },
+        "dueDate": null,
+        "returned": null
+      },
+      "{\n    \"recordID\": \"009\",\n    \"bookTitle\": \"The Odyssey\",\n    \"author\": \"Homer\",\n    \"borrower\": {\n        \"name\": \"Irene Adler\",\n        \"memberID\": \"M101\"\n    },\n    \"dueDate\": undefined,\n    \"returned\": undefined\n}"
+    ],
+    [
+      {
+        "recordID": "010",
+        "bookTitle": "The Iliad",
+        "author": "Homer",
+        "borrower": {
+          "name": "Jack Sparrow",
+          "memberID": "M112"
+        },
+        "dueDate": "2024-02-20",
+        "returned": null
+      },
+      "{\n    \"recordID\": \"010\",\n    \"bookTitle\": \"The Iliad\",\n    \"author\": \"Homer\",\n    \"borrower\": {\n        \"name\": \"Jack Sparrow\",\n        \"memberID\": \"M112\"\n    },\n    \"dueDate\": \"2024-02-20\",\n    \"returned\": undefined\n}"
+    ]
+  ]
+}

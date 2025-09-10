@@ -1,0 +1,919 @@
+{
+  "possible_fix": "Replace special white space characters with regular spaces",
+  "test_cases": [
+    [
+      {
+        "device_id": "thermostat_5678",
+        "timestamp": "2023-10-04T09:30:00Z",
+        "action": "set_temperature",
+        "temperature": 22
+      },
+      "{\n    \"device_id\": \"thermostat_5678\",\n    \"timestamp\": \"2023-10-04T09:30:00Z\",\n    \"action\": \"set_temperature\",\n    \"temperature\":\u00a022\n}"
+    ],
+    [
+      {
+        "device_id": "speaker_4321",
+        "timestamp": "2023-10-04T12:15:00Z",
+        "action": "play_music",
+        "volume": 50
+      },
+      "{\n    \"device_id\": \"speaker_4321\",\n    \"timestamp\": \"2023-10-04T12:15:00Z\",\n    \"action\": \"play_music\",\n    \"volume\":\u00a050\n}"
+    ],
+    [
+      {
+        "device_id": "fridge_3344",
+        "timestamp": "2023-10-04T19:15:00Z",
+        "action": "door_opened",
+        "duration": 5
+      },
+      "{\n    \"device_id\": \"fridge_3344\",\n    \"timestamp\": \"2023-10-04T19:15:00Z\",\n    \"action\": \"door_opened\",\n    \"duration\":\u00a05\n}"
+    ],
+    [
+      {
+        "flightNumber": "AA123",
+        "departure": "2023-11-15T08:30:00",
+        "arrival": "2023-11-15T12:45:00",
+        "passengerInfo": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "age": 34,
+          "passportNumber": "A12345678"
+        },
+        "seatNumber": "12A",
+        "class": "Economy",
+        "status": "Confirmed"
+      },
+      "{\n    \"flightNumber\": \"AA123\",\n    \"departure\": \"2023-11-15T08:30:00\",\n    \"arrival\": \"2023-11-15T12:45:00\",\n    \"passengerInfo\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"age\": 34,\n        \"passportNumber\": \"A12345678\"\n    },\n    \"seatNumber\": \"12A\",\n    \"class\": \"Economy\",\n    \"status\": \"Confirmed\"\u2007\n}"
+    ],
+    [
+      {
+        "bookingReference": "XYZ789",
+        "flightNumber": "BA456",
+        "departureTime": "2023-12-01T14:20:00",
+        "arrivalTime": "2023-12-01T18:55:00",
+        "passengerNames": [
+          "Alice Smith",
+          "Bob Johnson"
+        ],
+        "seatNumbers": [
+          "5B",
+          "5C"
+        ],
+        "baggage": {
+          "checkedIn": 2,
+          "carryOn": 1
+        },
+        "price": 450.0
+      },
+      "{\n    \"bookingReference\": \"XYZ789\",\n    \"flightNumber\": \"BA456\",\n    \"departureTime\": \"2023-12-01T14:20:00\",\n    \"arrivalTime\": \"2023-12-01T18:55:00\",\n    \"passengerNames\": [\"Alice Smith\", \"Bob Johnson\"],\n    \"seatNumbers\": [\"5B\", \"5C\"],\n    \"baggage\": {\n        \"checkedIn\": 2,\n        \"carryOn\": 1\n    },\n    \"price\": 450.00\u2008\n}"
+    ],
+    [
+      {
+        "reservationID": "RES54321",
+        "flightCode": "LH789",
+        "departure": {
+          "city": "Berlin",
+          "dateTime": "2023-11-20T07:15:00"
+        },
+        "arrival": {
+          "city": "New York",
+          "dateTime": "2023-11-20T10:45:00"
+        },
+        "travelerDetails": {
+          "name": "Michael Brown",
+          "gender": "Male",
+          "contact": "+491234567890"
+        },
+        "ticketPrice": 600.5,
+        "paymentStatus": "Paid"
+      },
+      "{\n    \"reservationID\": \"RES54321\",\n    \"flightCode\": \"LH789\",\n    \"departure\": {\n        \"city\": \"Berlin\",\n        \"dateTime\": \"2023-11-20T07:15:00\"\n    },\n    \"arrival\": {\n        \"city\": \"New York\",\n        \"dateTime\": \"2023-11-20T10:45:00\"\n    },\n    \"travelerDetails\": {\n        \"name\": \"Michael Brown\",\n        \"gender\": \"Male\",\n        \"contact\": \"+491234567890\"\n    },\n    \"ticketPrice\": 600.50,\n    \"paymentStatus\": \"Paid\"\u2006\n}"
+    ],
+    [
+      {
+        "flightNumber": "SW123",
+        "departureDate": "2023-11-25",
+        "destination": "Tokyo",
+        "passengers": [
+          {
+            "name": "Emma Wilson",
+            "seat": "14F"
+          },
+          {
+            "name": "Liam Johnson",
+            "seat": "14E"
+          }
+        ],
+        "classType": "Business",
+        "bookingStatus": "Pending"
+      },
+      "{\n    \"flightNumber\": \"SW123\",\n    \"departureDate\": \"2023-11-25\",\n    \"destination\": \"Tokyo\",\n    \"passengers\": [\n        {\n            \"name\": \"Emma Wilson\",\n            \"seat\": \"14F\"\n        },\n        {\n            \"name\": \"Liam Johnson\",\n            \"seat\": \"14E\"\n        }\n    ],\n    \"classType\": \"Business\",\n    \"bookingStatus\": \"Pending\"\u2007\n}"
+    ],
+    [
+      {
+        "ticketID": "TKT98765",
+        "flightNumber": "EM923",
+        "departureInfo": {
+          "airport": "DXB",
+          "time": "2023-11-28T23:55:00"
+        },
+        "arrivalInfo": {
+          "airport": "LHR",
+          "time": "2023-11-29T06:25:00"
+        },
+        "passenger": {
+          "firstName": "Sophia",
+          "lastName": "Taylor"
+        },
+        "luggageAllowance": 30,
+        "mealPreference": "Vegetarian"
+      },
+      "{\n    \"ticketID\": \"TKT98765\",\n    \"flightNumber\": \"EM923\",\n    \"departureInfo\": {\n        \"airport\": \"DXB\",\n        \"time\": \"2023-11-28T23:55:00\"\n    },\n    \"arrivalInfo\": {\n        \"airport\": \"LHR\",\n        \"time\": \"2023-11-29T06:25:00\"\n    },\n    \"passenger\": {\n        \"firstName\": \"Sophia\",\n        \"lastName\": \"Taylor\"\n    },\n    \"luggageAllowance\": 30,\n    \"mealPreference\": \"Vegetarian\"\u2006\n}"
+    ],
+    [
+      {
+        "bookingNumber": "BN654321",
+        "flightIdentifier": "QR345",
+        "departureLocation": {
+          "city": "Doha",
+          "airportCode": "DOH"
+        },
+        "arrivalLocation": {
+          "city": "Paris",
+          "airportCode": "CDG"
+        },
+        "passengerDetails": [
+          {
+            "firstName": "Olivia",
+            "lastName": "Miller",
+            "seatClass": "First"
+          }
+        ],
+        "price": 1200.0,
+        "currency": "USD"
+      },
+      "{\n    \"bookingNumber\": \"BN654321\",\n    \"flightIdentifier\": \"QR345\",\n    \"departureLocation\": {\n        \"city\": \"Doha\",\n        \"airportCode\": \"DOH\"\n    },\n    \"arrivalLocation\": {\n        \"city\": \"Paris\",\n        \"airportCode\": \"CDG\"\n    },\n    \"passengerDetails\": [\n        {\n            \"firstName\": \"Olivia\",\n            \"lastName\": \"Miller\",\n            \"seatClass\": \"First\"\n        }\n    ],\n    \"price\": 1200.00,\n    \"currency\": \"USD\"\u2007\n}"
+    ],
+    [
+      {
+        "confirmationCode": "CONF1122",
+        "flightNum": "UA678",
+        "departure": {
+          "city": "San Francisco",
+          "time": "2023-12-05T18:30:00"
+        },
+        "arrival": {
+          "city": "Chicago",
+          "time": "2023-12-05T22:00:00"
+        },
+        "traveler": {
+          "name": "James Green",
+          "email": "james.green@example.com"
+        },
+        "seat": "21C",
+        "baggageAllowance": 2
+      },
+      "{\n    \"confirmationCode\": \"CONF1122\",\n    \"flightNum\": \"UA678\",\n    \"departure\": {\n        \"city\": \"San Francisco\",\n        \"time\": \"2023-12-05T18:30:00\"\n    },\n    \"arrival\": {\n        \"city\": \"Chicago\",\n        \"time\": \"2023-12-05T22:00:00\"\n    },\n    \"traveler\": {\n        \"name\": \"James Green\",\n        \"email\": \"james.green@example.com\"\n    },\n    \"seat\": \"21C\",\n    \"baggageAllowance\": 2\u2008\n}"
+    ],
+    [
+      {
+        "orderID": "ORD9988",
+        "flight": "AF123",
+        "schedule": {
+          "depart": "2023-12-10T09:00:00",
+          "arrive": "2023-12-10T17:30:00"
+        },
+        "customer": {
+          "fullName": "Chloe Martin",
+          "contactNumber": "+33123456789"
+        },
+        "classType": "Premium",
+        "amountPaid": 950.0
+      },
+      "{\n    \"orderID\": \"ORD9988\",\n    \"flight\": \"AF123\",\n    \"schedule\": {\n        \"depart\": \"2023-12-10T09:00:00\",\n        \"arrive\": \"2023-12-10T17:30:00\"\n    },\n    \"customer\": {\n        \"fullName\": \"Chloe Martin\",\n        \"contactNumber\": \"+33123456789\"\n    },\n    \"classType\": \"Premium\",\n    \"amountPaid\": 950.00\u2009\n}"
+    ],
+    [
+      {
+        "itineraryID": "ITIN3344",
+        "flightDetails": {
+          "number": "KL789",
+          "departure": "Amsterdam",
+          "arrival": "Rome"
+        },
+        "timings": {
+          "departureTime": "2023-12-15T16:45:00",
+          "arrivalTime": "2023-12-15T19:05:00"
+        },
+        "passenger": {
+          "firstName": "Lucas",
+          "lastName": "White",
+          "email": "lucas.white@example.com"
+        },
+        "extraServices": [
+          "Priority Boarding",
+          "Extra Legroom"
+        ]
+      },
+      "{\n    \"itineraryID\": \"ITIN3344\",\n    \"flightDetails\": {\n        \"number\": \"KL789\",\n        \"departure\": \"Amsterdam\",\n        \"arrival\": \"Rome\"\n    },\n    \"timings\": {\n        \"departureTime\": \"2023-12-15T16:45:00\",\n        \"arrivalTime\": \"2023-12-15T19:05:00\"\n    },\n    \"passenger\": {\n        \"firstName\": \"Lucas\",\n        \"lastName\": \"White\",\n        \"email\": \"lucas.white@example.com\"\n    },\n    \"extraServices\": [\"Priority Boarding\", \"Extra Legroom\"]\u2009\n}"
+    ],
+    [
+      {
+        "bookingRef": "REF4455",
+        "airline": "Qantas",
+        "flight": "QF12",
+        "depart": {
+          "location": "Sydney",
+          "dateTime": "2023-12-20T22:20:00"
+        },
+        "arrive": {
+          "location": "Los Angeles",
+          "dateTime": "2023-12-20T17:00:00"
+        },
+        "traveler": {
+          "name": "Ethan Baker",
+          "contact": "+61234567890"
+        },
+        "seatPreference": "Window",
+        "frequentFlyer": {
+          "number": "FF123456",
+          "status": "Gold"
+        }
+      },
+      "{\n    \"bookingRef\": \"REF4455\",\n    \"airline\": \"Qantas\",\n    \"flight\": \"QF12\",\n    \"depart\": {\n        \"location\": \"Sydney\",\n        \"dateTime\": \"2023-12-20T22:20:00\"\n    },\n    \"arrive\": {\n        \"location\": \"Los Angeles\",\n        \"dateTime\": \"2023-12-20T17:00:00\"\n    },\n    \"traveler\": {\n        \"name\": \"Ethan Baker\",\n        \"contact\": \"+61234567890\"\n    },\n    \"seatPreference\": \"Window\",\n    \"frequentFlyer\": {\n        \"number\": \"FF123456\",\n        \"status\": \"Gold\"\n    }\u2006\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-001",
+        "user_id": "user123",
+        "plan": "Premium",
+        "duration_months": 12,
+        "start_date": "2023-01-15",
+        "auto_renew": true
+      },
+      "{\n    \"subscription_id\":\u00a0\"sub-001\",\n    \"user_id\":\u00a0\"user123\",\n    \"plan\":\u00a0\"Premium\",\n    \"duration_months\":\u00a012,\n    \"start_date\":\u00a0\"2023-01-15\",\n    \"auto_renew\":\u00a0true\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-002",
+        "user_id": "user456",
+        "plan": "Basic",
+        "duration_months": 6,
+        "start_date": "2023-03-20",
+        "auto_renew": false
+      },
+      "{\n    \"subscription_id\":\u2008\"sub-002\",\n    \"user_id\":\u2008\"user456\",\n    \"plan\":\u2008\"Basic\",\n    \"duration_months\":\u20086,\n    \"start_date\":\u2008\"2023-03-20\",\n    \"auto_renew\":\u2008false\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-003",
+        "user_id": "user789",
+        "plan": "Family",
+        "duration_months": 3,
+        "start_date": "2023-04-10",
+        "auto_renew": true
+      },
+      "{\n    \"subscription_id\":\u2007\"sub-003\",\n    \"user_id\":\u2007\"user789\",\n    \"plan\":\u2007\"Family\",\n    \"duration_months\":\u20073,\n    \"start_date\":\u2007\"2023-04-10\",\n    \"auto_renew\":\u2007true\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-004",
+        "user_id": "user321",
+        "plan": "Student",
+        "duration_months": 9,
+        "start_date": "2023-05-05",
+        "auto_renew": false
+      },
+      "{\n    \"subscription_id\":\u2009\"sub-004\",\n    \"user_id\":\u2009\"user321\",\n    \"plan\":\u2009\"Student\",\n    \"duration_months\":\u20099,\n    \"start_date\":\u2009\"2023-05-05\",\n    \"auto_renew\":\u2009false\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-005",
+        "user_id": "user654",
+        "plan": "Enterprise",
+        "duration_months": 24,
+        "start_date": "2023-06-12",
+        "auto_renew": true
+      },
+      "{\n    \"subscription_id\":\u2000\"sub-005\",\n    \"user_id\":\u2000\"user654\",\n    \"plan\":\u2000\"Enterprise\",\n    \"duration_months\":\u200024,\n    \"start_date\":\u2000\"2023-06-12\",\n    \"auto_renew\":\u2000true\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-006",
+        "user_id": "user987",
+        "plan": "Annual",
+        "duration_months": 12,
+        "start_date": "2023-07-07",
+        "auto_renew": false
+      },
+      "{\n    \"subscription_id\":\u2005\"sub-006\",\n    \"user_id\":\u2005\"user987\",\n    \"plan\":\u2005\"Annual\",\n    \"duration_months\":\u200512,\n    \"start_date\":\u2005\"2023-07-07\",\n    \"auto_renew\":\u2005false\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-007",
+        "user_id": "user432",
+        "plan": "Monthly",
+        "duration_months": 1,
+        "start_date": "2023-08-01",
+        "auto_renew": true
+      },
+      "{\n    \"subscription_id\":\u2006\"sub-007\",\n    \"user_id\":\u2006\"user432\",\n    \"plan\":\u2006\"Monthly\",\n    \"duration_months\":\u20061,\n    \"start_date\":\u2006\"2023-08-01\",\n    \"auto_renew\":\u2006true\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-008",
+        "user_id": "user111",
+        "plan": "Trial",
+        "duration_months": 0,
+        "start_date": "2023-09-15",
+        "auto_renew": false
+      },
+      "{\n    \"subscription_id\":\u2004\"sub-008\",\n    \"user_id\":\u2004\"user111\",\n    \"plan\":\u2004\"Trial\",\n    \"duration_months\":\u20040,\n    \"start_date\":\u2004\"2023-09-15\",\n    \"auto_renew\":\u2004false\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-009",
+        "user_id": "user222",
+        "plan": "Basic Plus",
+        "duration_months": 18,
+        "start_date": "2023-10-10",
+        "auto_renew": true
+      },
+      "{\n    \"subscription_id\":\u2005\"sub-009\",\n    \"user_id\":\u2005\"user222\",\n    \"plan\":\u2005\"Basic Plus\",\n    \"duration_months\":\u200518,\n    \"start_date\":\u2005\"2023-10-10\",\n    \"auto_renew\":\u2005true\n}"
+    ],
+    [
+      {
+        "subscription_id": "sub-010",
+        "user_id": "user333",
+        "plan": "Lifetime",
+        "duration_months": 0,
+        "start_date": "2023-11-11",
+        "auto_renew": false
+      },
+      "{\n    \"subscription_id\":\u2005\"sub-010\",\n    \"user_id\":\u2005\"user333\",\n    \"plan\":\u2005\"Lifetime\",\n    \"duration_months\":\u20050,\n    \"start_date\":\u2005\"2023-11-11\",\n    \"auto_renew\":\u2005false\n}"
+    ],
+    [
+      {
+        "event": "Concert",
+        "venue": "Downtown Arena",
+        "date": "2023-12-15",
+        "tickets": [
+          {
+            "type": "VIP",
+            "price": 150,
+            "quantity": 50
+          },
+          {
+            "type": "General",
+            "price": 80,
+            "quantity": 200
+          }
+        ]
+      },
+      "{\n  \"event\": \"Concert\",\n  \"venue\": \"Downtown Arena\",\n  \"date\": \"2023-12-15\",\n  \"tickets\": [\n    {\"type\": \"VIP\", \"price\": 150, \"quantity\":\u00a050},\n    {\"type\": \"General\", \"price\": 80, \"quantity\":\u00a0200}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Circus Show",
+        "location": "City Park",
+        "date": "2024-06-10",
+        "seating": [
+          {
+            "section": "A",
+            "price": 100,
+            "available": 300
+          },
+          {
+            "section": "B",
+            "price": 70,
+            "available": 500
+          }
+        ]
+      },
+      "{\n  \"event\": \"Circus Show\",\n  \"location\": \"City Park\",\n  \"date\": \"2024-06-10\",\n  \"seating\": [\n    {\"section\": \"A\", \"price\": 100, \"available\":\u00a0300},\n    {\"section\": \"B\", \"price\": 70, \"available\":\u00a0500}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Theatre Play",
+        "venue": "Grand Theatre",
+        "date": "2023-11-22",
+        "tickets": [
+          {
+            "category": "Orchestra",
+            "cost": 120,
+            "count": 100
+          },
+          {
+            "category": "Balcony",
+            "cost": 60,
+            "count": 250
+          }
+        ]
+      },
+      "{\n  \"event\": \"Theatre Play\",\n  \"venue\": \"Grand Theatre\",\n  \"date\": \"2023-11-22\",\n  \"tickets\": [\n    {\"category\": \"Orchestra\", \"cost\": 120, \"count\":\u00a0100},\n    {\"category\": \"Balcony\", \"cost\": 60, \"count\":\u00a0250}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Tech Conference",
+        "location": "Convention Center",
+        "date": "2024-01-25",
+        "admission": [
+          {
+            "pass": "Full Access",
+            "price": 300,
+            "seats": 400
+          },
+          {
+            "pass": "Workshop Only",
+            "price": 150,
+            "seats": 200
+          }
+        ]
+      },
+      "{\n  \"event\": \"Tech Conference\",\n  \"location\": \"Convention Center\",\n  \"date\": \"2024-01-25\",\n  \"admission\": [\n    {\"pass\": \"Full Access\", \"price\": 300, \"seats\":\u00a0400},\n    {\"pass\": \"Workshop Only\", \"price\": 150, \"seats\":\u00a0200}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Food Festival",
+        "place": "Central Plaza",
+        "date": "2023-09-19",
+        "entry": [
+          {
+            "ticket": "Adult",
+            "rate": 20,
+            "available": 1000
+          },
+          {
+            "ticket": "Child",
+            "rate": 10,
+            "available": 500
+          }
+        ]
+      },
+      "{\n  \"event\": \"Food Festival\",\n  \"place\": \"Central Plaza\",\n  \"date\": \"2023-09-19\",\n  \"entry\": [\n    {\"ticket\": \"Adult\", \"rate\": 20, \"available\":\u00a01000},\n    {\"ticket\": \"Child\", \"rate\": 10, \"available\":\u00a0500}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Art Exhibition",
+        "gallery": "Modern Art Museum",
+        "date": "2024-04-05",
+        "passes": [
+          {
+            "type": "Standard",
+            "cost": 15,
+            "slots": 700
+          },
+          {
+            "type": "Student",
+            "cost": 10,
+            "slots": 300
+          }
+        ]
+      },
+      "{\n  \"event\": \"Art Exhibition\",\n  \"gallery\": \"Modern Art Museum\",\n  \"date\": \"2024-04-05\",\n  \"passes\": [\n    {\"type\": \"Standard\", \"cost\": 15, \"slots\":\u00a0700},\n    {\"type\": \"Student\", \"cost\": 10, \"slots\":\u00a0300}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Science Fair",
+        "location": "Science Center",
+        "date": "2023-08-12",
+        "tickets": [
+          {
+            "category": "Individual",
+            "price": 30,
+            "number": 600
+          },
+          {
+            "category": "Group",
+            "price": 100,
+            "number": 100
+          }
+        ]
+      },
+      "{\n  \"event\": \"Science Fair\",\n  \"location\": \"Science Center\",\n  \"date\": \"2023-08-12\",\n  \"tickets\": [\n    {\"category\": \"Individual\", \"price\": 30, \"number\":\u00a0600},\n    {\"category\": \"Group\", \"price\": 100, \"number\":\u00a0100}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Charity Gala",
+        "venue": "Grand Ballroom",
+        "date": "2023-10-17",
+        "tables": [
+          {
+            "type": "Premium",
+            "cost": 500,
+            "seats": 20
+          },
+          {
+            "type": "Standard",
+            "cost": 250,
+            "seats": 50
+          }
+        ]
+      },
+      "{\n  \"event\": \"Charity Gala\",\n  \"venue\": \"Grand Ballroom\",\n  \"date\": \"2023-10-17\",\n  \"tables\": [\n    {\"type\": \"Premium\", \"cost\": 500, \"seats\":\u00a020},\n    {\"type\": \"Standard\", \"cost\": 250, \"seats\":\u00a050}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Book Fair",
+        "venue": "City Library",
+        "date": "2024-03-21",
+        "entries": [
+          {
+            "category": "Adult",
+            "fee": 5,
+            "tickets": 1000
+          },
+          {
+            "category": "Child",
+            "fee": 0,
+            "tickets": 500
+          }
+        ]
+      },
+      "{\n  \"event\": \"Book Fair\",\n  \"venue\": \"City Library\",\n  \"date\": \"2024-03-21\",\n  \"entries\": [\n    {\"category\": \"Adult\", \"fee\": 5, \"tickets\":\u00a01000},\n    {\"category\": \"Child\", \"fee\": 0, \"tickets\":\u00a0500}\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Film Screening",
+        "location": "Open Air Cinema",
+        "date": "2023-07-28",
+        "passes": [
+          {
+            "type": "Regular",
+            "charge": 12,
+            "available": 200
+          },
+          {
+            "type": "VIP",
+            "charge": 25,
+            "available": 50
+          }
+        ]
+      },
+      "{\n  \"event\": \"Film Screening\",\n  \"location\": \"Open Air Cinema\",\n  \"date\": \"2023-07-28\",\n  \"passes\": [\n    {\"type\": \"Regular\", \"charge\": 12, \"available\":\u00a0200},\n    {\"type\": \"VIP\", \"charge\": 25, \"available\":\u00a050}\n  ]\n}"
+    ],
+    [
+      {
+        "issue_id": 101,
+        "description": "Application crashes when submitting a form",
+        "status": "open",
+        "priority": "high",
+        "steps_to_reproduce": [
+          "Go to the form page",
+          "Fill in the details",
+          "Click on Submit"
+        ]
+      },
+      "{\n    \"issue_id\":\u00a0101,\n    \"description\":\u00a0\"Application crashes when submitting a form\",\n    \"status\":\u00a0\"open\",\n    \"priority\":\u00a0\"high\",\n    \"steps_to_reproduce\":\u00a0[\n        \"Go to the form page\",\n        \"Fill in the details\",\n        \"Click on Submit\"\n    ]\n}"
+    ],
+    [
+      {
+        "issue_id": 102,
+        "description": "UI misalignment on dashboard",
+        "status": "in_progress",
+        "priority": "medium",
+        "reported_by": {
+          "user_id": 23,
+          "username": "jhondoe"
+        }
+      },
+      "{\n    \"issue_id\":\u00a0102,\n    \"description\":\u00a0\"UI misalignment on dashboard\",\n    \"status\":\u00a0\"in_progress\",\n    \"priority\":\u00a0\"medium\",\n    \"reported_by\":\u00a0{\n        \"user_id\":\u00a023,\n        \"username\":\u00a0\"jhondoe\"\n    }\n}"
+    ],
+    [
+      {
+        "issue_id": 103,
+        "description": "Error message not displayed on login failure",
+        "status": "closed",
+        "priority": "low",
+        "resolved_in_version": "v2.1.5"
+      },
+      "{\n    \"issue_id\":\u00a0103,\n    \"description\":\u00a0\"Error message not displayed on login failure\",\n    \"status\":\u00a0\"closed\",\n    \"priority\":\u00a0\"low\",\n    \"resolved_in_version\":\u00a0\"v2.1.5\"\n}"
+    ],
+    [
+      {
+        "issue_id": 104,
+        "description": "Slow performance on mobile devices",
+        "status": "open",
+        "priority": "critical",
+        "affected_versions": [
+          "v2.0",
+          "v2.1"
+        ]
+      },
+      "{\n    \"issue_id\":\u00a0104,\n    \"description\":\u00a0\"Slow performance on mobile devices\",\n    \"status\":\u00a0\"open\",\n    \"priority\":\u00a0\"critical\",\n    \"affected_versions\":\u00a0[\"v2.0\",\u00a0\"v2.1\"]\n}"
+    ],
+    [
+      {
+        "issue_id": 105,
+        "description": "Text overlap on the settings page",
+        "status": "in_progress",
+        "priority": "high",
+        "tags": [
+          "UI",
+          "bug"
+        ]
+      },
+      "{\n    \"issue_id\":\u00a0105,\n    \"description\":\u00a0\"Text overlap on the settings page\",\n    \"status\":\u00a0\"in_progress\",\n    \"priority\":\u00a0\"high\",\n    \"tags\":\u00a0[\"UI\",\u00a0\"bug\"]\n}"
+    ],
+    [
+      {
+        "issue_id": 106,
+        "description": "Incorrect calculation in the financial report",
+        "status": "open",
+        "priority": "high",
+        "reported_date": "2023-09-15"
+      },
+      "{\n    \"issue_id\":\u00a0106,\n    \"description\":\u00a0\"Incorrect calculation in the financial report\",\n    \"status\":\u00a0\"open\",\n    \"priority\":\u00a0\"high\",\n    \"reported_date\":\u00a0\"2023-09-15\"\n}"
+    ],
+    [
+      {
+        "issue_id": 107,
+        "description": "Session timeout not working properly",
+        "status": "closed",
+        "priority": "medium",
+        "closed_date": "2023-10-01"
+      },
+      "{\n    \"issue_id\":\u00a0107,\n    \"description\":\u00a0\"Session timeout not working properly\",\n    \"status\":\u00a0\"closed\",\n    \"priority\":\u00a0\"medium\",\n    \"closed_date\":\u00a0\"2023-10-01\"\n}"
+    ],
+    [
+      {
+        "issue_id": 108,
+        "description": "Email notifications are not sent",
+        "status": "open",
+        "priority": "critical",
+        "assigned_to": {
+          "user_id": 54,
+          "username": "annasmith"
+        }
+      },
+      "{\n    \"issue_id\":\u00a0108,\n    \"description\":\u00a0\"Email notifications are not sent\",\n    \"status\":\u00a0\"open\",\n    \"priority\":\u00a0\"critical\",\n    \"assigned_to\":\u00a0{\n        \"user_id\":\u00a054,\n        \"username\":\u00a0\"annasmith\"\n    }\n}"
+    ],
+    [
+      {
+        "issue_id": 109,
+        "description": "Application freezes on welcome screen",
+        "status": "in_progress",
+        "priority": "critical",
+        "comments": []
+      },
+      "{\n    \"issue_id\":\u00a0109,\n    \"description\":\u00a0\"Application freezes on welcome screen\",\n    \"status\":\u00a0\"in_progress\",\n    \"priority\":\u00a0\"critical\",\n    \"comments\":\u00a0[]\n}"
+    ],
+    [
+      {
+        "issue_id": 110,
+        "description": "Localization issues in the French version",
+        "status": "open",
+        "priority": "low",
+        "languages_affected": [
+          "French"
+        ]
+      },
+      "{\n    \"issue_id\":\u00a0110,\n    \"description\":\u00a0\"Localization issues in the French version\",\n    \"status\":\u00a0\"open\",\n    \"priority\":\u00a0\"low\",\n    \"languages_affected\":\u00a0[\"French\"]\n}"
+    ],
+    [
+      {
+        "store_id": "001",
+        "location": "Downtown",
+        "foot_traffic": [
+          {
+            "day": "Monday",
+            "count": 120
+          },
+          {
+            "day": "Tuesday",
+            "count": 150
+          },
+          {
+            "day": "Wednesday",
+            "count": 145
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"001\",\n    \"location\": \"Downtown\",\n    \"foot_traffic\": [\n        {\"day\": \"Monday\", \"count\": 120},\n        {\"day\": \"Tuesday\", \"count\": 150},\n        {\"day\": \"Wednesday\", \"count\": 145}\u2002\u2002]\n}"
+    ],
+    [
+      {
+        "store_id": "002",
+        "location": "Uptown",
+        "foot_traffic": [
+          {
+            "day": "Thursday",
+            "count": 110
+          },
+          {
+            "day": "Friday",
+            "count": 200
+          },
+          {
+            "day": "Saturday",
+            "count": 240
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"002\",\n    \"location\": \"Uptown\",\n    \"foot_traffic\": [\n        {\"day\": \"Thursday\", \"count\": 110},\n        {\"day\": \"Friday\", \"count\": 200},\n        {\"day\": \"Saturday\", \"count\": 240}\u2003\u2003]\n}"
+    ],
+    [
+      {
+        "store_id": "003",
+        "location": "Suburb",
+        "foot_traffic": [
+          {
+            "day": "Sunday",
+            "count": 130
+          },
+          {
+            "day": "Monday",
+            "count": 160
+          },
+          {
+            "day": "Tuesday",
+            "count": 170
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"003\",\n    \"location\": \"Suburb\",\n    \"foot_traffic\": [\n        {\"day\": \"Sunday\", \"count\": 130},\n        {\"day\": \"Monday\", \"count\": 160},\n        {\"day\": \"Tuesday\", \"count\": 170}\u2009]\n}"
+    ],
+    [
+      {
+        "store_id": "004",
+        "location": "Mall",
+        "foot_traffic": [
+          {
+            "day": "Wednesday",
+            "count": 90
+          },
+          {
+            "day": "Thursday",
+            "count": 130
+          },
+          {
+            "day": "Friday",
+            "count": 210
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"004\",\n    \"location\": \"Mall\",\n    \"foot_traffic\": [\n        {\"day\": \"Wednesday\", \"count\": 90},\n        {\"day\": \"Thursday\", \"count\": 130},\n        {\"day\": \"Friday\", \"count\": 210}\u2002]\n}"
+    ],
+    [
+      {
+        "store_id": "005",
+        "location": "City Center",
+        "foot_traffic": [
+          {
+            "day": "Saturday",
+            "count": 300
+          },
+          {
+            "day": "Sunday",
+            "count": 280
+          },
+          {
+            "day": "Monday",
+            "count": 200
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"005\",\n    \"location\": \"City Center\",\n    \"foot_traffic\": [\n        {\"day\": \"Saturday\", \"count\": 300},\n        {\"day\": \"Sunday\", \"count\": 280},\n        {\"day\": \"Monday\", \"count\": 200}\u2009\u2009]\n}"
+    ],
+    [
+      {
+        "store_id": "006",
+        "location": "Suburb",
+        "foot_traffic": [
+          {
+            "day": "Tuesday",
+            "count": 170
+          },
+          {
+            "day": "Wednesday",
+            "count": 180
+          },
+          {
+            "day": "Thursday",
+            "count": 160
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"006\",\n    \"location\": \"Suburb\",\n    \"foot_traffic\": [\n        {\"day\": \"Tuesday\", \"count\": 170},\n        {\"day\": \"Wednesday\", \"count\": 180},\n        {\"day\": \"Thursday\", \"count\": 160}\u2002]\n}"
+    ],
+    [
+      {
+        "store_id": "007",
+        "location": "Riverside",
+        "foot_traffic": [
+          {
+            "day": "Friday",
+            "count": 220
+          },
+          {
+            "day": "Saturday",
+            "count": 250
+          },
+          {
+            "day": "Sunday",
+            "count": 230
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"007\",\n    \"location\": \"Riverside\",\n    \"foot_traffic\": [\n        {\"day\": \"Friday\", \"count\": 220},\n        {\"day\": \"Saturday\", \"count\": 250},\n        {\"day\": \"Sunday\", \"count\": 230}\u2003]\n}"
+    ],
+    [
+      {
+        "store_id": "008",
+        "location": "Market Square",
+        "foot_traffic": [
+          {
+            "day": "Monday",
+            "count": 190
+          },
+          {
+            "day": "Tuesday",
+            "count": 200
+          },
+          {
+            "day": "Wednesday",
+            "count": 195
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"008\",\n    \"location\": \"Market Square\",\n    \"foot_traffic\": [\n        {\"day\": \"Monday\", \"count\": 190},\n        {\"day\": \"Tuesday\", \"count\": 200},\n        {\"day\": \"Wednesday\", \"count\": 195}\u2009]\n}"
+    ],
+    [
+      {
+        "store_id": "009",
+        "location": "High Street",
+        "foot_traffic": [
+          {
+            "day": "Thursday",
+            "count": 180
+          },
+          {
+            "day": "Friday",
+            "count": 240
+          },
+          {
+            "day": "Saturday",
+            "count": 260
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"009\",\n    \"location\": \"High Street\",\n    \"foot_traffic\": [\n        {\"day\": \"Thursday\", \"count\": 180},\n        {\"day\": \"Friday\", \"count\": 240},\n        {\"day\": \"Saturday\", \"count\": 260}\u2002]\n}"
+    ],
+    [
+      {
+        "store_id": "010",
+        "location": "Main Avenue",
+        "foot_traffic": [
+          {
+            "day": "Sunday",
+            "count": 210
+          },
+          {
+            "day": "Monday",
+            "count": 220
+          },
+          {
+            "day": "Tuesday",
+            "count": 215
+          }
+        ]
+      },
+      "{\n    \"store_id\": \"010\",\n    \"location\": \"Main Avenue\",\n    \"foot_traffic\": [\n        {\"day\": \"Sunday\", \"count\": 210},\n        {\"day\": \"Monday\", \"count\": 220},\n        {\"day\": \"Tuesday\", \"count\": 215}\u2002]\n}"
+    ],
+    [
+      {
+        "passenger": "Alice Smith",
+        "journeys": [
+          {
+            "from": "Eastside",
+            "to": "Westside",
+            "fare": 2.25
+          },
+          {
+            "from": "Westside",
+            "to": "Central",
+            "fare": 3.5
+          }
+        ]
+      },
+      "{\n  \"passenger\": \"Alice Smith\",\n  \"journeys\": [\n    {\"from\": \"Eastside\", \"to\": \"Westside\", \"fare\": 2.25},\n    {\"from\": \"Westside\", \"to\": \"Central\", \"fare\": 3.50\\u2003}\n  ]\n}"
+    ],
+    [
+      {
+        "cardNumber": "987654321",
+        "history": [
+          {
+            "day": "Monday",
+            "trip": "Morning",
+            "cost": 1.5
+          },
+          {
+            "day": "Monday",
+            "trip": "Evening",
+            "cost": 2.0
+          }
+        ]
+      },
+      "{\n  \"cardNumber\": \"987654321\",\n  \"history\": [\n    {\"day\": \"Monday\", \"trip\": \"Morning\", \"cost\": 1.50},\n    {\"day\": \"Monday\", \"trip\": \"Evening\", \"cost\": 2.00\\u2007}\n  ]\n}"
+    ]
+  ]
+}

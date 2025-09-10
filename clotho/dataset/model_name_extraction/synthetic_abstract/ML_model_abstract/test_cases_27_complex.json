@@ -1,0 +1,182 @@
+{
+  "test_0": {
+    "model_names": [
+      "Bayesian LSTM"
+    ],
+    "abstract": "We introduce a novel Bayesian LSTM framework that integrates uncertainty quantification into sequential predictive modeling. By leveraging variational inference, we derive a closed-form approximation of the posterior distribution over the LSTM's recurrent weights. This approach offers a robust mechanism for capturing model uncertainty, providing more reliable predictive intervals in time-series forecasting tasks. Our empirical evaluation demonstrates that the Bayesian LSTM outperforms standard LSTM architectures in terms of calibration and sharpness, particularly in datasets characterized by high volatility."
+  },
+  "test_1": {
+    "model_names": [
+      "Bayesian Neural Network"
+    ],
+    "abstract": "In this work, we propose an innovative approach for uncertainty quantification in deep learning using Bayesian Neural Networks (BNNs). Our method integrates Hamiltonian Monte Carlo within the BNN framework to achieve efficient sampling from the posterior distribution. This enhances the model's ability to quantify epistemic uncertainty, thereby improving decision-making processes in safety-critical applications. Experimental results indicate that our BNN significantly reduces predictive uncertainty compared to deterministic neural networks, while maintaining high levels of accuracy across various benchmark datasets."
+  },
+  "test_2": {
+    "model_names": [
+      "BayesOptNet"
+    ],
+    "abstract": "BayesOptNet is introduced as a comprehensive framework for optimizing hyperparameters in deep neural networks through Bayesian optimization. By integrating Gaussian Processes with a novel acquisition function, BayesOptNet efficiently explores the hyperparameter space, capturing both aleatoric and epistemic uncertainties. Extensive experiments on complex tasks demonstrate that BayesOptNet accelerates convergence and improves generalization performance compared to traditional grid and random search methods, particularly in high-dimensional settings."
+  },
+  "test_3": {
+    "model_names": [
+      "Variational Autoencoder"
+    ],
+    "abstract": "We extend the Variational Autoencoder (VAE) architecture to incorporate a Bayesian learning framework for capturing uncertainty in generative modeling tasks. By employing a stochastic variational inference technique, we derive a scalable algorithm that approximates the posterior distribution of latent variables. This Bayesian VAE variant provides improved uncertainty estimates and enhanced robustness against overfitting, as demonstrated in diverse generative tasks where traditional VAEs tend to fail under limited data regimes."
+  },
+  "test_4": {
+    "model_names": [
+      "Bayesian Convolutional Neural Network"
+    ],
+    "abstract": "This paper presents the Bayesian Convolutional Neural Network (BCNN), a novel architecture designed to address uncertainty quantification in image classification tasks. Leveraging dropout as a Bayesian approximation, the BCNN is capable of modeling uncertainty in both the convolutional layers and the fully connected layers. Comprehensive experimental evaluations reveal that the BCNN achieves superior performance in terms of uncertainty calibration and is more robust to adversarial perturbations compared to its deterministic counterparts."
+  },
+  "test_5": {
+    "model_names": [
+      "Deep Gaussian Process"
+    ],
+    "abstract": "We propose a hierarchical Bayesian model for uncertainty quantification using Deep Gaussian Processes (DGPs). The model leverages variational inference techniques to approximate the posterior and achieve scalability. By stacking multiple Gaussian Process layers, the DGP efficiently captures complex dependencies and provides rich uncertainty estimates. Our results indicate that DGPs outperform traditional Gaussian Processes in capturing both data and model uncertainty, especially in high-dimensional regression tasks with non-linear dependencies."
+  },
+  "test_6": {
+    "model_names": [
+      "Bayesian GAN"
+    ],
+    "abstract": "We develop a Bayesian GAN framework that integrates uncertainty quantification into generative adversarial networks. Utilizing a Bayesian perspective on the generator and discriminator, we employ a hybrid Monte Carlo method to sample from the posterior distribution. This framework not only provides insights into the variability of the generated samples but also enhances the stability of the training process. Experiments show that Bayesian GANs offer improved diversity and quality of generated samples compared to non-Bayesian GANs."
+  },
+  "test_7": {
+    "model_names": [
+      "Probabilistic U-Net"
+    ],
+    "abstract": "The Probabilistic U-Net is introduced as an advanced model for uncertainty quantification in medical image segmentation. By integrating a conditional variational autoencoder within the U-Net architecture, the Probabilistic U-Net estimates pixel-wise uncertainty maps. This approach provides meaningful uncertainty quantification, which is crucial for clinical decision-making. Comparative analysis with standard U-Net highlights the Probabilistic U-Net's superior capability in capturing segmentation uncertainty and improving diagnostic accuracy."
+  },
+  "test_8": {
+    "model_names": [
+      "Bayesian Transformer"
+    ],
+    "abstract": "In this paper, we explore the Bayesian Transformer model, which incorporates uncertainty estimation into the transformer architecture, widely used in NLP tasks. By using Bayesian inference over transformer parameters, we develop a variational dropout mechanism that quantifies uncertainty in language modeling and translation tasks. The Bayesian Transformer demonstrates improved performance in capturing uncertainty associated with rare words and ambiguous sentences, outperforming conventional transformer models in both accuracy and reliability metrics."
+  },
+  "test_9": {
+    "model_names": [
+      "Bayesian RNN"
+    ],
+    "abstract": "We present a Bayesian RNN model designed to incorporate uncertainty quantification into sequential data processing. Through variational inference, the Bayesian RNN models the uncertainty of recurrent connections, yielding probabilistic predictions with well-calibrated uncertainty estimates. The model is evaluated on diverse sequential datasets, demonstrating enhanced predictive performance and robustness against noisy inputs, outperforming traditional RNNs in terms of uncertainty calibration and outlier detection."
+  },
+  "test_10": {
+    "model_names": [
+      "Bayesian Deep Q-Network"
+    ],
+    "abstract": "This research introduces the Bayesian Deep Q-Network (BDQN), a reinforcement learning framework that integrates uncertainty quantification to improve exploration efficiency. By modeling the Q-value estimates probabilistically, BDQN employs a Bayesian approximation that aids in balancing exploration and exploitation. Our experimental results show that BDQN outperforms conventional DQNs in environments with sparse rewards, achieving faster convergence and improved policy robustness under uncertainty."
+  },
+  "test_11": {
+    "model_names": [
+      "Bayesian ResNet"
+    ],
+    "abstract": "We introduce the Bayesian ResNet, a novel extension of the ResNet architecture designed to incorporate uncertainty quantification in deep residual networks. By employing variational inference and Monte Carlo dropout, Bayesian ResNet captures uncertainty associated with deep feature extraction layers. The model demonstrates enhanced robustness and reliability in computer vision tasks, particularly under distributional shifts and adversarial settings, as compared to standard ResNet implementations."
+  },
+  "test_12": {
+    "model_names": [
+      "Bayesian GNN"
+    ],
+    "abstract": "We propose a Bayesian Graph Neural Network (Bayesian GNN) for uncertainty quantification in graph-structured data analysis. Utilizing a variational Bayesian approach, the Bayesian GNN models uncertainty over node embeddings and edge attributes. This framework improves the interpretability and reliability of predictions in tasks such as node classification and link prediction. Empirical evaluations show that Bayesian GNNs deliver better uncertainty estimates and predictive performance, particularly in sparse and noisy graph scenarios."
+  },
+  "test_13": {
+    "model_names": [
+      "Bayesian DenseNet"
+    ],
+    "abstract": "The Bayesian DenseNet is proposed as an extension of the DenseNet architecture for uncertainty quantification in deep learning models. By integrating variational dropout across dense blocks, the Bayesian DenseNet provides a probabilistic framework for capturing uncertainty in deep feature hierarchies. Our experiments on image classification benchmarks reveal that Bayesian DenseNet achieves superior uncertainty calibration and robustness compared to traditional DenseNet, particularly in the presence of noisy and corrupted data."
+  },
+  "test_14": {
+    "model_names": [
+      "Bayesian Autoencoder"
+    ],
+    "abstract": "We present the Bayesian Autoencoder, a model that enhances traditional autoencoders with uncertainty quantification capabilities. By deploying a Bayesian framework, we derive an inference procedure that approximates the posterior distribution over latent variables. This approach facilitates the generation of uncertainty-aware reconstructions, improving the model's applicability in tasks where interpretability and reliability are critical. Our results demonstrate that Bayesian Autoencoders outperform deterministic autoencoders in both reconstruction fidelity and uncertainty estimation."
+  },
+  "test_15": {
+    "model_names": [
+      "Bayesian NASNet"
+    ],
+    "abstract": "We introduce Bayesian NASNet, an extension of the NASNet architecture incorporating Bayesian principles for uncertainty quantification in neural architecture search. By applying Bayesian optimization over the search space, Bayesian NASNet efficiently balances exploration and exploitation, leading to architectures that generalize better on unseen data. Experimental analyses show that Bayesian NASNet outperforms conventional NASNet in terms of predictive uncertainty and model robustness, particularly in scenarios with limited training data."
+  },
+  "test_16": {
+    "model_names": [
+      "Bayesian Capsule Network"
+    ],
+    "abstract": "In this study, we propose the Bayesian Capsule Network, an advanced model for uncertainty quantification in capsule networks. The Bayesian framework allows for the estimation of uncertainty at the capsule level, enhancing the network's ability to model complex spatial hierarchies. Our method employs variational inference for efficient training and inference, demonstrating superior performance in capturing uncertainty and improving classification accuracy on complex visual datasets compared to deterministic capsule networks."
+  },
+  "test_17": {
+    "model_names": [
+      "Bayesian EfficientNet"
+    ],
+    "abstract": "The Bayesian EfficientNet is proposed as an extension of the EfficientNet architecture for incorporating uncertainty quantification in state-of-the-art image classification models. Through variational inference and Bayesian dropout, the Bayesian EfficientNet captures model uncertainty within scalable network layers. Our experimental results show that the Bayesian EfficientNet achieves improved model calibration and robustness, particularly under adversarial conditions and real-world distributional shifts, compared to standard EfficientNet variants."
+  },
+  "test_18": {
+    "model_names": [
+      "Bayesian BERT"
+    ],
+    "abstract": "We propose Bayesian BERT, an extension of the BERT architecture designed for uncertainty quantification in natural language processing tasks. By employing variational dropout across transformer layers, Bayesian BERT captures uncertainty in contextual embeddings, offering enhanced robustness and interpretability. Experimental evaluations on diverse NLP benchmarks indicate that Bayesian BERT significantly improves uncertainty estimation and predictive accuracy over standard BERT models, particularly for low-resource and ambiguous language tasks."
+  },
+  "test_19": {
+    "model_names": [
+      "Bayesian Sparse R-CNN"
+    ],
+    "abstract": "This paper presents the Bayesian Sparse R-CNN, a novel approach for uncertainty quantification in object detection. By extending the Sparse R-CNN framework with Bayesian inference, our model estimates uncertainty in both the object proposal generation and classification stages. The Bayesian Sparse R-CNN significantly enhances detection reliability and robustness to occlusions and noise, outperforming traditional Sparse R-CNN models in challenging visual environments."
+  },
+  "test_20": {
+    "model_names": [
+      "Bayesian Wide & Deep"
+    ],
+    "abstract": "We introduce the Bayesian Wide & Deep model, an extension of the Wide & Deep learning framework for uncertainty quantification in recommendation systems. By applying a Bayesian treatment to both the wide and deep components, our model estimates parameter uncertainty, leading to better recommendations under uncertainty. Our approach demonstrates improved predictive performance and user satisfaction in online recommendation tasks, particularly in scenarios with sparse user-item interactions."
+  },
+  "test_21": {
+    "model_names": [
+      "Bayesian YOLO"
+    ],
+    "abstract": "Bayesian YOLO is proposed as an innovative framework for object detection with uncertainty quantification. By introducing Bayesian inference into the YOLO (You Only Look Once) architecture, our model provides probabilistic bounding box predictions and class scores. This approach enhances detection accuracy and robustness, particularly in complex scenes with occlusions and varying lighting conditions. Comparative experiments demonstrate that Bayesian YOLO outperforms standard YOLO models in terms of calibration and reliability."
+  },
+  "test_22": {
+    "model_names": [
+      "Bayesian LSTM"
+    ],
+    "abstract": "We present a Bayesian LSTM framework for uncertainty quantification in sequential prediction tasks. By leveraging variational inference techniques, we capture the posterior distribution over LSTM parameters, allowing for robust uncertainty estimates in time-series forecasting. Our Bayesian LSTM outperforms traditional LSTM models by offering improved prediction intervals and reliability in datasets with inherent temporal variability, as demonstrated in extensive empirical studies."
+  },
+  "test_23": {
+    "model_names": [
+      "Bayesian RL"
+    ],
+    "abstract": "Bayesian Reinforcement Learning (Bayesian RL) is introduced as a methodology for incorporating uncertainty quantification in reinforcement learning environments. By applying a Bayesian framework to model the uncertainty in both state transitions and reward functions, Bayesian RL enhances exploration strategies and improves policy efficiency. Our experimental results indicate that Bayesian RL outperforms traditional RL approaches in environments with complex dynamics and sparse reward signals, achieving faster and more reliable convergence."
+  },
+  "test_24": {
+    "model_names": [
+      "Bayesian MLP"
+    ],
+    "abstract": "We propose a Bayesian Multi-layer Perceptron (Bayesian MLP) for uncertainty quantification in deep neural networks. Utilizing variational inference, our Bayesian MLP provides probabilistic outputs with well-calibrated uncertainty estimates. The model is particularly effective in scenarios with noisy and missing data, where traditional MLPs struggle. Empirical evaluations demonstrate that the Bayesian MLP achieves superior performance in both predictive accuracy and uncertainty estimation compared to its deterministic counterparts."
+  },
+  "test_25": {
+    "model_names": [
+      "Bayesian Autoencoder"
+    ],
+    "abstract": "We develop a Bayesian Autoencoder framework that integrates uncertainty quantification into unsupervised learning tasks. By modeling latent space uncertainty with a variational Bayesian approach, the Bayesian Autoencoder provides robust reconstructions and enhanced interpretability of latent representations. Our experimental analysis reveals that this approach outperforms traditional autoencoders in terms of reconstruction quality and uncertainty estimation, particularly in settings with limited training data."
+  },
+  "test_26": {
+    "model_names": [
+      "Bayesian SVM"
+    ],
+    "abstract": "We introduce a Bayesian Support Vector Machine (Bayesian SVM) for uncertainty quantification in classification tasks. By adopting a probabilistic framework, the Bayesian SVM captures uncertainty in hyperplane parameters, offering probabilistic class assignments. This leads to improved decision boundaries and robust performance in noisy and imbalanced datasets. Comparative studies demonstrate that the Bayesian SVM surpasses traditional SVMs in both classification accuracy and uncertainty calibration."
+  },
+  "test_27": {
+    "model_names": [
+      "Bayesian NAS"
+    ],
+    "abstract": "This paper proposes Bayesian Neural Architecture Search (Bayesian NAS), a framework for optimizing neural network architectures with uncertainty quantification. By utilizing a Bayesian optimization approach, Bayesian NAS explores the architecture search space effectively, capturing model uncertainty and improving generalization. Experimental results show that Bayesian NAS achieves better performance and robustness compared to conventional NAS methods, particularly in resource-constrained environments."
+  },
+  "test_28": {
+    "model_names": [
+      "Bayesian CNN"
+    ],
+    "abstract": "We extend the Convolutional Neural Network (CNN) architecture to a Bayesian framework for uncertainty quantification in image classification tasks. By employing Bayesian inference over convolutional layers, the Bayesian CNN provides probabilistic predictions and improved uncertainty estimates. Our results demonstrate enhanced model reliability and robustness to adversarial attacks, surpassing the performance of standard CNN models in various challenging visual datasets."
+  },
+  "test_29": {
+    "model_names": [
+      "Bayesian RNN"
+    ],
+    "abstract": "The Bayesian RNN is introduced as an advanced model for integrating uncertainty quantification into recurrent neural networks. Utilizing variational Bayesian methods, the Bayesian RNN provides a probabilistic framework for sequential data analysis, enhancing robustness against data noise and variability. Empirical evaluations reveal that the Bayesian RNN achieves superior performance in terms of uncertainty estimation and predictive accuracy, particularly in non-stationary time-series datasets."
+  }
+}

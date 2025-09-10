@@ -1,0 +1,212 @@
+{
+  "test_0": {
+    "model_names": [
+      "BERT",
+      "LIME"
+    ],
+    "abstract": "This paper presents a comparative analysis of the explainability and interpretability of the BERT model when integrated with Local Interpretable Model-Agnostic Explanations (LIME). We evaluate the ability of LIME to provide understandable insights into BERT's decision-making process on text classification tasks. Our results indicate that while LIME offers valuable visual interpretations, its explanations are sometimes inconsistent with BERT's internal mechanisms."
+  },
+  "test_1": {
+    "model_names": [
+      "ResNet-50",
+      "Grad-CAM"
+    ],
+    "abstract": "This study introduces an interpretability framework leveraging Gradient-weighted Class Activation Mapping (Grad-CAM) to elucidate the feature importance within ResNet-50 models. By generating heatmaps that highlight image regions critical for ResNet-50's classifications, we demonstrate enhanced model transparency, benefiting both model developers and end-users in understanding decision rationales."
+  },
+  "test_2": {
+    "model_names": [
+      "VGG-16",
+      "SHAP"
+    ],
+    "abstract": "We explore the interpretability of image classification models by applying SHapley Additive exPlanations (SHAP) to VGG-16 networks. SHAP provides feature attribution scores, allowing an in-depth analysis of how VGG-16 assigns importance to different image pixels. Our empirical evaluations highlight SHAP's utility in revealing biases and ensuring VGG-16's predictions align with human interpretability standards."
+  },
+  "test_3": {
+    "model_names": [
+      "Transformer",
+      "DeepLIFT"
+    ],
+    "abstract": "Our research focuses on improving the interpretability of Transformer models through the application of Deep Learning Important FeaTures (DeepLIFT). We assess DeepLIFT's effectiveness in tracing the contribution of input tokens to the Transformer's output decisions, offering a clearer understanding of the model's internal dynamics and enhancing trust in its predictions."
+  },
+  "test_4": {
+    "model_names": [
+      "Inception-v3",
+      "TCAV"
+    ],
+    "abstract": "The paper examines the use of Testing with Concept Activation Vectors (TCAV) to interpret Inception-v3 model decisions. TCAV allows the quantification of concept influence on model predictions, facilitating a more intuitive grasp of Inception-v3's reasoning processes. Our experiments confirm TCAV's potential in uncovering implicit biases and advancing model transparency."
+  },
+  "test_5": {
+    "model_names": [
+      "GPT-2",
+      "Integrated Gradients"
+    ],
+    "abstract": "In this work, we utilize Integrated Gradients to enhance the interpretability of the GPT-2 language model. By attributing output predictions to input features, Integrated Gradients helps unravel how GPT-2 processes language, offering insights into its strengths and limitations in tasks such as text generation and sentiment analysis."
+  },
+  "test_6": {
+    "model_names": [
+      "XGBoost",
+      "TreeExplainer"
+    ],
+    "abstract": "This study delves into the explainability of XGBoost models by deploying TreeExplainer, a specialized tool for tree-based models. We analyze how TreeExplainer provides individual-level prediction explanations, thereby demystifying XGBoost's complex ensemble decision-making process and enhancing user trust in model outputs."
+  },
+  "test_7": {
+    "model_names": [
+      "YOLOv5",
+      "CAM"
+    ],
+    "abstract": "We integrate Class Activation Mapping (CAM) with the YOLOv5 object detection model to augment interpretability. CAM facilitates the visualization of spatial information used by YOLOv5 for object localization, enabling us to better understand the decisions made during complex detection tasks and ensure the reliability of model predictions."
+  },
+  "test_8": {
+    "model_names": [
+      "BART",
+      "Anchors"
+    ],
+    "abstract": "Anchors provide high-precision, human-friendly explanations for the BART model's predictions in natural language processing tasks. Our study demonstrates that Anchors are effective in producing understandable rules that describe BART's decision boundaries, thus enhancing transparency and facilitating the debugging process in model deployment."
+  },
+  "test_9": {
+    "model_names": [
+      "DenseNet-121",
+      "Grad-CAM++"
+    ],
+    "abstract": "Introducing Grad-CAM++ for DenseNet-121, we aim to refine interpretability by highlighting the most influential image regions contributing to a model's outputs. Our findings show that Grad-CAM++ offers superior localization and clarity over traditional methods, thus proving beneficial in applications requiring precise visual interpretation."
+  },
+  "test_10": {
+    "model_names": [
+      "DistilBERT",
+      "LIME"
+    ],
+    "abstract": "This paper investigates the applicability of Local Interpretable Model-Agnostic Explanations (LIME) in unfolding the black-box nature of the DistilBERT model. By utilizing LIME, we aim to generate interpretable explanations that help elucidate the model's predictions for sentiment analysis, enabling users to gain insights into its decision-making processes."
+  },
+  "test_11": {
+    "model_names": [
+      "EfficientNet",
+      "SHAP"
+    ],
+    "abstract": "We present a novel approach to interpreting EfficientNet's performance by applying SHapley Additive exPlanations (SHAP). Our research outlines how SHAP can be used to dissect EfficientNet's feature importance, providing a comprehensive understanding of the model's behavior and guiding improvements in neural architecture search strategies."
+  },
+  "test_12": {
+    "model_names": [
+      "XLNet",
+      "DeepSHAP"
+    ],
+    "abstract": "Exploring DeepSHAP's adaptability for XLNet, this paper highlights advancements in model interpretability across complex text understanding tasks. DeepSHAP effectively demystifies XLNet's token attributions, facilitating a granular analysis that supports model debugging, refinement, and enhanced interpretability across various NLP applications."
+  },
+  "test_13": {
+    "model_names": [
+      "MobileNetV2",
+      "Guided Backpropagation"
+    ],
+    "abstract": "Investigating MobileNetV2's decision-making mechanisms, we employ Guided Backpropagation to visualize layer-wise feature contributions. Through this technique, we identify critical patterns in MobileNetV2's processing of image data, contributing to a deeper understanding of its efficiency and potential biases in mobile-based applications."
+  },
+  "test_14": {
+    "model_names": [
+      "RoBERTa",
+      "Attention Rollout"
+    ],
+    "abstract": "In this study, we propose an innovative use of Attention Rollout to interpret RoBERTa's attention mechanisms. By progressively aggregating attention weights, we provide a transparent view of how RoBERTa processes input sequences, enhancing clarity in tasks like sentiment analysis and question answering."
+  },
+  "test_15": {
+    "model_names": [
+      "Mask R-CNN",
+      "Score-CAM"
+    ],
+    "abstract": "This paper evaluates the integration of Score-CAM with Mask R-CNN to enhance model interpretability in object detection. Score-CAM generates intuitive heatmaps, offering clearer insights into the regions contributing to Mask R-CNN's prediction confidence, thereby facilitating more effective model assessment and deployment strategies."
+  },
+  "test_16": {
+    "model_names": [
+      "LightGBM",
+      "Permutation Importance"
+    ],
+    "abstract": "Our research investigates Permutation Importance as a technique to interpret LightGBM model predictions. By evaluating the impact of feature value permutations, we identify key contributing factors to LightGBM's outcomes, fostering a deeper understanding of its decision mechanisms and assisting in feature selection processes."
+  },
+  "test_17": {
+    "model_names": [
+      "UNet",
+      "Saliency Maps"
+    ],
+    "abstract": "In this paper, we apply Saliency Maps to the UNet architecture for semantic segmentation tasks. By visualizing which pixels influence the model's predictions the most, Saliency Maps provide valuable insights into UNet's decision-making process, paving the way for improvements in medical imaging and other pixel-level tasks."
+  },
+  "test_18": {
+    "model_names": [
+      "TabNet",
+      "LIME"
+    ],
+    "abstract": "We explore the use of Local Interpretable Model-Agnostic Explanations (LIME) to demystify the complex decision processes in TabNet. LIME aids in visualizing feature contributions, thus offering interpretable insights into TabNet's tabular data predictions and enhancing user trust in the model's automated decision-making systems."
+  },
+  "test_19": {
+    "model_names": [
+      "T5",
+      "Layer-wise Relevance Propagation"
+    ],
+    "abstract": "This research introduces Layer-wise Relevance Propagation (LRP) to analyze the interpretability of the T5 model. LRP provides detailed insights into how each layer of T5 contributes to its language generation tasks, offering a transparent view into the model's inner workings and improving its overall interpretability."
+  },
+  "test_20": {
+    "model_names": [
+      "AlexNet",
+      "Deconvolution"
+    ],
+    "abstract": "We examine the interpretability of the AlexNet model through the application of Deconvolution techniques. This approach allows for a reconstructive visualization of input images, shedding light on the hierarchical feature representations learned by AlexNet, and providing insights necessary for model improvement and bias detection."
+  },
+  "test_21": {
+    "model_names": [
+      "Wide Residual Networks",
+      "Feature Visualization"
+    ],
+    "abstract": "By employing Feature Visualization techniques, we aim to elucidate the inner workings of Wide Residual Networks. Our approach visualizes the features that drive network predictions, thereby facilitating a deeper understanding of its architecture and guiding enhancements in the design of more interpretable network models."
+  },
+  "test_22": {
+    "model_names": [
+      "BiLSTM",
+      "Attention Visualization"
+    ],
+    "abstract": "This paper presents a novel framework for interpreting BiLSTM models through Attention Visualization. By illustrating attention distributions across input sequences, our method provides insights into BiLSTM's learning patterns, contributing to more transparent natural language processing applications and improved model feedback mechanisms."
+  },
+  "test_23": {
+    "model_names": [
+      "Fast R-CNN",
+      "Class Activation Mapping"
+    ],
+    "abstract": "We utilize Class Activation Mapping (CAM) to enhance the interpretability of Fast R-CNN models. CAM helps visualize the discriminative regions influencing the model's object detection decisions, thus improving transparency and facilitating the development of more reliable and interpretable computer vision systems."
+  },
+  "test_24": {
+    "model_names": [
+      "OpenAI CLIP",
+      "Cross-attention Maps"
+    ],
+    "abstract": "In this study, we leverage Cross-attention Maps to interpret the OpenAI CLIP model's decision-making processes in multimodal learning tasks. These maps offer a detailed examination of how textual and visual inputs are integrated, providing insights that are crucial for refining model performance and ensuring cross-modal alignment."
+  },
+  "test_25": {
+    "model_names": [
+      "WaveNet",
+      "Temporal Relevance Analysis"
+    ],
+    "abstract": "Temporal Relevance Analysis is introduced as a method to interpret the predictions of the WaveNet model in audio generation tasks. By mapping temporal features' contributions to outputs, this technique enhances the interpretability of WaveNet's decisions, facilitating better understanding and control over generated audio sequences."
+  },
+  "test_26": {
+    "model_names": [
+      "NASNet",
+      "Occlusion Sensitivity"
+    ],
+    "abstract": "We apply Occlusion Sensitivity analysis to NASNet models to enhance the interpretability of image recognition tasks. By systematically occluding parts of input images, we identify critical regions that impact NASNet's predictions, offering insights that drive improvements in model robustness and transparency."
+  },
+  "test_27": {
+    "model_names": [
+      "BigGAN",
+      "Activation Atlas"
+    ],
+    "abstract": "Activation Atlas is employed to interpret the generative processes of BigGAN models. This visualization tool reveals the complex activation patterns within BigGAN, offering an intuitive understanding of how abstract features are synthesized into realistic images, and guiding future enhancements in generative model design."
+  },
+  "test_28": {
+    "model_names": [
+      "Neural ODE",
+      "Sensitivity Analysis"
+    ],
+    "abstract": "This paper investigates the application of Sensitivity Analysis on Neural Ordinary Differential Equations (Neural ODE) to provide interpretability in dynamic system modeling. The analysis reveals how variations in inputs can influence model trajectories, thereby enhancing understanding of complex temporal behaviors."
+  },
+  "test_29": {
+    "model_names": [
+      "VQ-VAE",
+      "Information Bottleneck"
+    ],
+    "abstract": "We explore the interpretability of Vector Quantized Variational Autoencoders (VQ-VAE) through the lens of the Information Bottleneck framework. This approach delineates how VQ-VAE models balance compression and reconstruction tasks, providing insights necessary for refining model architectures to enhance interpretability."
+  }
+}

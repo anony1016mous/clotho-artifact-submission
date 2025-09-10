@@ -1,0 +1,3736 @@
+{
+  "possible_fix": "Fix incorrect nesting (object inside array missing a bracket, etc.)",
+  "test_cases": [
+    [
+      {
+        "courseName": "Introduction to Python",
+        "students": [
+          {
+            "id": 1,
+            "name": "Alice Smith",
+            "email": "alice@example.com"
+          },
+          {
+            "id": 2,
+            "name": "Bob Johnson",
+            "email": "bob@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n    \"courseName\": \"Introduction to Python\",\n    \"students\": [\n        {\"id\": 1, \"name\": \"Alice Smith\", \"email\": \"alice@example.com\",\n        {\"id\": 2, \"name\": \"Bob Johnson\", \"email\": \"bob@example.com\"}\n    ],\n    \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "courseName": "Data Science Fundamentals",
+        "students": [
+          {
+            "id": 3,
+            "name": "Charlie Brown",
+            "email": "charlie@example.com"
+          },
+          {
+            "id": 4,
+            "name": "Diana Prince",
+            "email": "diana@example.com"
+          }
+        ],
+        "enrollmentOpen": false
+      },
+      "{\n    \"courseName\": \"Data Science Fundamentals\",\n    \"students\": [\n        {\"id\": 3, \"name\": \"Charlie Brown\", \"email\": \"charlie@example.com\"},\n        {\"id\": 4, \"name\": \"Diana Prince\", \"email\": \"diana@example.com\"\n    ],\n    \"enrollmentOpen\": false\n}"
+    ],
+    [
+      {
+        "courseName": "Web Development Bootcamp",
+        "students": [
+          {
+            "id": 5,
+            "name": "Edward Norton",
+            "email": "edward@example.com"
+          },
+          {
+            "id": 6,
+            "name": "Fiona Gallagher",
+            "email": "fiona@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n    \"courseName\": \"Web Development Bootcamp\",\n    \"students\": [\n        {\"id\": 5, \"name\": \"Edward Norton\", \"email\": \"edward@example.com\",\n        {\"id\": 6, \"name\": \"Fiona Gallagher\", \"email\": \"fiona@example.com\"}\n    ],\n    \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "courseName": "Machine Learning 101",
+        "students": [
+          {
+            "id": 7,
+            "name": "George Clooney",
+            "email": "george@example.com"
+          },
+          {
+            "id": 8,
+            "name": "Hannah Montana",
+            "email": "hannah@example.com"
+          }
+        ],
+        "enrollmentOpen": false
+      },
+      "{\n    \"courseName\": \"Machine Learning 101\",\n    \"students\": [\n        {\"id\": 7, \"name\": \"George Clooney\", \"email\": \"george@example.com\"}\n        {\"id\": 8, \"name\": \"Hannah Montana\", \"email\": \"hannah@example.com\"}\n    ],\n    \"enrollmentOpen\": false\n}"
+    ],
+    [
+      {
+        "courseName": "Artificial Intelligence Basics",
+        "students": [
+          {
+            "id": 9,
+            "name": "Irene Adler",
+            "email": "irene@example.com"
+          },
+          {
+            "id": 10,
+            "name": "Jack Ryan",
+            "email": "jack@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n    \"courseName\": \"Artificial Intelligence Basics\",\n    \"students\": [\n        {\"id\": 9, \"name\": \"Irene Adler\", \"email\": \"irene@example.com\"},\n        {\"id\": 10, \"name\": \"Jack Ryan\", \"email\": \"jack@example.com\"\n    ],\n    \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "courseName": "Blockchain Essentials",
+        "students": [
+          {
+            "id": 11,
+            "name": "Karen Page",
+            "email": "karen@example.com"
+          },
+          {
+            "id": 12,
+            "name": "Luke Cage",
+            "email": "luke@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n    \"courseName\": \"Blockchain Essentials\",\n    \"students\": [\n        {\"id\": 11, \"name\": \"Karen Page\", \"email\": \"karen@example.com\"}\n        {\"id\": 12, \"name\": \"Luke Cage\", \"email\": \"luke@example.com\"}\n    ],\n    \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "courseName": "Introduction to Cybersecurity",
+        "students": [
+          {
+            "id": 13,
+            "name": "Matt Murdock",
+            "email": "matt@example.com"
+          },
+          {
+            "id": 14,
+            "name": "Nancy Drew",
+            "email": "nancy@example.com"
+          }
+        ],
+        "enrollmentOpen": false
+      },
+      "{\n    \"courseName\": \"Introduction to Cybersecurity\",\n    \"students\": [\n        {\"id\": 13, \"name\": \"Matt Murdock\", \"email\": \"matt@example.com\",\n        {\"id\": 14, \"name\": \"Nancy Drew\", \"email\": \"nancy@example.com\"}\n    ],\n    \"enrollmentOpen\": false\n}"
+    ],
+    [
+      {
+        "courseName": "Advanced JavaScript",
+        "students": [
+          {
+            "id": 15,
+            "name": "Olivia Pope",
+            "email": "olivia@example.com"
+          },
+          {
+            "id": 16,
+            "name": "Peter Parker",
+            "email": "peter@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n    \"courseName\": \"Advanced JavaScript\",\n    \"students\": [\n        {\"id\": 15, \"name\": \"Olivia Pope\", \"email\": \"olivia@example.com\"},\n        {\"id\": 16, \"name\": \"Peter Parker\", \"email\": \"peter@example.com\"\n    ],\n    \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "courseName": "Intro to Quantum Computing",
+        "students": [
+          {
+            "id": 17,
+            "name": "Quentin Quire",
+            "email": "quentin@example.com"
+          },
+          {
+            "id": 18,
+            "name": "Rachel Green",
+            "email": "rachel@example.com"
+          }
+        ],
+        "enrollmentOpen": false
+      },
+      "{\n    \"courseName\": \"Intro to Quantum Computing\",\n    \"students\": [\n        {\"id\": 17, \"name\": \"Quentin Quire\", \"email\": \"quentin@example.com\"}\n        {\"id\": 18, \"name\": \"Rachel Green\", \"email\": \"rachel@example.com\"}\n    ],\n    \"enrollmentOpen\": false\n}"
+    ],
+    [
+      {
+        "courseName": "Virtual Reality Development",
+        "students": [
+          {
+            "id": 19,
+            "name": "Sam Winchester",
+            "email": "sam@example.com"
+          },
+          {
+            "id": 20,
+            "name": "Tony Stark",
+            "email": "tony@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n    \"courseName\": \"Virtual Reality Development\",\n    \"students\": [\n        {\"id\": 19, \"name\": \"Sam Winchester\", \"email\": \"sam@example.com\",\n        {\"id\": 20, \"name\": \"Tony Stark\", \"email\": \"tony@example.com\"}\n    ],\n    \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "John Doe",
+          "age": 30,
+          "employment": {
+            "status": "employed",
+            "employer": "TechCorp"
+          },
+          "requested_amount": 50000
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"John Doe\",\n        \"age\": 30,\n        \"employment\": {\n            \"status\": \"employed\",\n            \"employer\": \"TechCorp\",\n        \"requested_amount\": 50000\n    }\n}"
+    ],
+    [
+      {
+        "application": [
+          {
+            "id": 1,
+            "applicant_name": "Jane Smith",
+            "details": {
+              "age": 28,
+              "income": 65000
+            }
+          }
+        ]
+      },
+      "{\n    \"application\": [\n        {\n            \"id\": 1,\n            \"applicant_name\": \"Jane Smith\",\n            \"details\": {\n                \"age\": 28,\n                \"income\": 65000\n            }\n    ]\n}"
+    ],
+    [
+      {
+        "loan_details": {
+          "loan_type": "personal",
+          "amount": 15000,
+          "term_years": 5
+        },
+        "applicant_info": {
+          "name": "Michael Green",
+          "credit_score": 720
+        }
+      },
+      "{\n    \"loan_details\": {\n        \"loan_type\": \"personal\",\n        \"amount\": 15000,\n        \"term_years\": 5\n    \"applicant_info\": {\n        \"name\": \"Michael Green\",\n        \"credit_score\": 720\n    }\n}"
+    ],
+    [
+      {
+        "bank": "National Bank",
+        "loans": [
+          {
+            "applicant_id": 101,
+            "amount": 20000,
+            "status": "approved"
+          }
+        ]
+      },
+      "{\n    \"bank\": \"National Bank\",\n    \"loans\": [\n        {\n            \"applicant_id\": 101,\n            \"amount\": 20000,\n            \"status\": \"approved\"\n    ]\n}"
+    ],
+    [
+      {
+        "application_date": "2023-09-15",
+        "applicant": {
+          "first_name": "Alice",
+          "last_name": "Brown",
+          "history": {
+            "previous_loans": 2,
+            "defaulted": false
+          }
+        }
+      },
+      "{\n    \"application_date\": \"2023-09-15\",\n    \"applicant\": {\n        \"first_name\": \"Alice\",\n        \"last_name\": \"Brown\",\n        \"history\": {\n            \"previous_loans\": 2,\n            \"defaulted\": false\n    }\n}"
+    ],
+    [
+      {
+        "loan_application": {
+          "reference_number": "LN20230915",
+          "applicant_name": "Tom Sawyer",
+          "amount_requested": 75000,
+          "collateral": {
+            "type": "real estate",
+            "value": 120000
+          }
+        }
+      },
+      "{\n    \"loan_application\": {\n        \"reference_number\": \"LN20230915\",\n        \"applicant_name\": \"Tom Sawyer\",\n        \"amount_requested\": 75000,\n        \"collateral\": {\n            \"type\": \"real estate\",\n            \"value\": 120000\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Laura Palmer",
+          "dob": "1990-04-12",
+          "assets": [
+            {
+              "type": "car",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Laura Palmer\",\n        \"dob\": \"1990-04-12\",\n        \"assets\": [\n            {\n                \"type\": \"car\",\n                \"value\": 10000\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "application": {
+          "submission": "online",
+          "date_received": "2023-10-01",
+          "applicant": {
+            "name": "Peter Parker",
+            "employment": {
+              "type": "full-time",
+              "company": "Daily Bugle"
+            }
+          }
+        }
+      },
+      "{\n    \"application\": {\n        \"submission\": \"online\",\n        \"date_received\": \"2023-10-01\",\n        \"applicant\": {\n            \"name\": \"Peter Parker\",\n            \"employment\": {\n                \"type\": \"full-time\",\n                \"company\": \"Daily Bugle\"\n        }\n    }\n}"
+    ],
+    [
+      {
+        "branch": "Downtown",
+        "applications": [
+          {
+            "applicant_id": 235,
+            "name": "Nancy Drew",
+            "loan": {
+              "type": "auto",
+              "amount": 18000
+            }
+          }
+        ]
+      },
+      "{\n    \"branch\": \"Downtown\",\n    \"applications\": [\n        {\n            \"applicant_id\": 235,\n            \"name\": \"Nancy Drew\",\n            \"loan\": {\n                \"type\": \"auto\",\n                \"amount\": 18000\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "status": "pending",
+        "applicant": {
+          "name": "Clark Kent",
+          "verified": true,
+          "documents": {
+            "id_proof": "passport",
+            "address_proof": "utility bill"
+          }
+        }
+      },
+      "{\n    \"status\": \"pending\",\n    \"applicant\": {\n        \"name\": \"Clark Kent\",\n        \"verified\": true,\n        \"documents\": {\n            \"id_proof\": \"passport\",\n            \"address_proof\": \"utility bill\"\n    }\n}"
+    ],
+    [
+      {
+        "chatLogs": [
+          {
+            "customer": "Alice",
+            "messages": [
+              {
+                "time": "10:00 AM",
+                "text": "Hello, I need help with my order."
+              },
+              {
+                "time": "10:05 AM",
+                "text": "Can you check the status?"
+              }
+            ]
+          },
+          {
+            "customer": "Bob",
+            "messages": [
+              {
+                "time": "11:00 AM",
+                "text": "I would like to change my delivery address."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"chatLogs\": [\n    {\n      \"customer\": \"Alice\",\n      \"messages\": [\n        { \"time\": \"10:00 AM\", \"text\": \"Hello, I need help with my order.\" },\n        { \"time\": \"10:05 AM\", \"text\": \"Can you check the status?\"\n      ]\n    },\n    {\n      \"customer\": \"Bob\",\n      \"messages\": [\n        { \"time\": \"11:00 AM\", \"text\": \"I would like to change my delivery address.\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "supportChats": [
+          {
+            "agent": "John",
+            "conversation": [
+              {
+                "timestamp": "9:00 AM",
+                "message": "Welcome to support, how can I assist you today?"
+              }
+            ]
+          },
+          {
+            "agent": "Doe",
+            "conversation": [
+              {
+                "timestamp": "9:30 AM",
+                "message": "I'll need some more details about the issue."
+              },
+              {
+                "timestamp": "9:45 AM",
+                "message": "Thank you for the information."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"supportChats\": [\n    {\n      \"agent\": \"John\",\n      \"conversation\": [\n        { \"timestamp\": \"9:00 AM\", \"message\": \"Welcome to support, how can I assist you today?\"\n      ]\n    },\n    {\n      \"agent\": \"Doe\",\n      \"conversation\": [\n        { \"timestamp\": \"9:30 AM\", \"message\": \"I'll need some more details about the issue.\" },\n        { \"timestamp\": \"9:45 AM\", \"message\": \"Thank you for the information.\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "contacts": [
+          {
+            "name": "Charlie",
+            "chatHistory": [
+              {
+                "time": "2:00 PM",
+                "content": "Can I return my item?"
+              },
+              {
+                "time": "2:15 PM",
+                "content": "What is the process?"
+              }
+            ]
+          },
+          {
+            "name": "Diana",
+            "chatHistory": [
+              {
+                "time": "3:00 PM",
+                "content": "I received the wrong product."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"contacts\": [\n    {\n      \"name\": \"Charlie\",\n      \"chatHistory\": [\n        { \"time\": \"2:00 PM\", \"content\": \"Can I return my item?\" },\n        { \"time\": \"2:15 PM\", \"content\": \"What is the process?\"\n      ]\n    },\n    {\n      \"name\": \"Diana\",\n      \"chatHistory\": [\n        { \"time\": \"3:00 PM\", \"content\": \"I received the wrong product.\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chatSessions": [
+          {
+            "user": "Emma",
+            "logs": [
+              {
+                "timestamp": "4:00 PM",
+                "text": "I have a billing question."
+              },
+              {
+                "timestamp": "4:20 PM",
+                "text": "Can you walk me through the charges?"
+              }
+            ]
+          },
+          {
+            "user": "Frank",
+            "logs": [
+              {
+                "timestamp": "5:00 PM",
+                "text": "Is there a warranty on this product?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"chatSessions\": [\n    {\n      \"user\": \"Emma\",\n      \"logs\": [\n        { \"timestamp\": \"4:00 PM\", \"text\": \"I have a billing question.\" },\n        { \"timestamp\": \"4:20 PM\", \"text\": \"Can you walk me through the charges?\"\n      ]\n    },\n    {\n      \"user\": \"Frank\",\n      \"logs\": [\n        { \"timestamp\": \"5:00 PM\", \"text\": \"Is there a warranty on this product?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "interactionLogs": [
+          {
+            "customerName": "Grace",
+            "chatDetails": [
+              {
+                "time": "6:00 PM",
+                "message": "I am looking for a refund."
+              }
+            ]
+          },
+          {
+            "customerName": "Hank",
+            "chatDetails": [
+              {
+                "time": "6:30 PM",
+                "message": "Can you assist me with a product inquiry?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"interactionLogs\": [\n    {\n      \"customerName\": \"Grace\",\n      \"chatDetails\": [\n        { \"time\": \"6:00 PM\", \"message\": \"I am looking for a refund.\"\n      ]\n    },\n    {\n      \"customerName\": \"Hank\",\n      \"chatDetails\": [\n        { \"time\": \"6:30 PM\", \"message\": \"Can you assist me with a product inquiry?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chatRecords": [
+          {
+            "client": "Ivy",
+            "discussion": [
+              {
+                "timestamp": "7:00 PM",
+                "text": "I'd like to upgrade my subscription."
+              }
+            ]
+          },
+          {
+            "client": "Jack",
+            "discussion": [
+              {
+                "timestamp": "7:30 PM",
+                "text": "How can I cancel my service?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"chatRecords\": [\n    {\n      \"client\": \"Ivy\",\n      \"discussion\": [\n        { \"timestamp\": \"7:00 PM\", \"text\": \"I'd like to upgrade my subscription.\"\n      ]\n    },\n    {\n      \"client\": \"Jack\",\n      \"discussion\": [\n        { \"timestamp\": \"7:30 PM\", \"text\": \"How can I cancel my service?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "serviceCalls": [
+          {
+            "customer": "Laura",
+            "transcript": [
+              {
+                "time": "8:00 AM",
+                "text": "What are your hours of operation?"
+              }
+            ]
+          },
+          {
+            "customer": "Michael",
+            "transcript": [
+              {
+                "time": "8:30 AM",
+                "text": "Can I expedite my shipping?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"serviceCalls\": [\n    {\n      \"customer\": \"Laura\",\n      \"transcript\": [\n        { \"time\": \"8:00 AM\", \"text\": \"What are your hours of operation?\"\n      ]\n    },\n    {\n      \"customer\": \"Michael\",\n      \"transcript\": [\n        { \"time\": \"8:30 AM\", \"text\": \"Can I expedite my shipping?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "clientChats": [
+          {
+            "name": "Nina",
+            "messages": [
+              {
+                "time": "9:00 AM",
+                "text": "I need to update my payment information."
+              }
+            ]
+          },
+          {
+            "name": "Oscar",
+            "messages": [
+              {
+                "time": "9:30 AM",
+                "text": "How can I track my order?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"clientChats\": [\n    {\n      \"name\": \"Nina\",\n      \"messages\": [\n        { \"time\": \"9:00 AM\", \"text\": \"I need to update my payment information.\"\n      ]\n    },\n    {\n      \"name\": \"Oscar\",\n      \"messages\": [\n        { \"time\": \"9:30 AM\", \"text\": \"How can I track my order?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "communicationLogs": [
+          {
+            "customer": "Pam",
+            "messages": [
+              {
+                "time": "10:00 AM",
+                "text": "Is there a student discount?"
+              }
+            ]
+          },
+          {
+            "customer": "Quincy",
+            "messages": [
+              {
+                "time": "10:30 AM",
+                "text": "How do I reset my password?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"communicationLogs\": [\n    {\n      \"customer\": \"Pam\",\n      \"messages\": [\n        { \"time\": \"10:00 AM\", \"text\": \"Is there a student discount?\"\n      ]\n    },\n    {\n      \"customer\": \"Quincy\",\n      \"messages\": [\n        { \"time\": \"10:30 AM\", \"text\": \"How do I reset my password?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "sessionRecords": [
+          {
+            "client": "Rachel",
+            "chat": [
+              {
+                "time": "11:00 AM",
+                "text": "What is your return policy?"
+              }
+            ]
+          },
+          {
+            "client": "Sam",
+            "chat": [
+              {
+                "time": "11:30 AM",
+                "text": "Can I get a receipt emailed?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"sessionRecords\": [\n    {\n      \"client\": \"Rachel\",\n      \"chat\": [\n        { \"time\": \"11:00 AM\", \"text\": \"What is your return policy?\"\n      ]\n    },\n    {\n      \"client\": \"Sam\",\n      \"chat\": [\n        { \"time\": \"11:30 AM\", \"text\": \"Can I get a receipt emailed?\" }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceLogs": [
+          {
+            "deviceId": "thermostat-01",
+            "status": "on",
+            "temperature": 22.5,
+            "timestamp": "2023-10-20T14:28:00Z"
+          },
+          {
+            "deviceId": "light-02",
+            "status": "off",
+            "brightness": 0,
+            "timestamp": "2023-10-20T14:30:00Z"
+          }
+        ]
+      },
+      "{\n  \"deviceLogs\": [\n    {\n      \"deviceId\": \"thermostat-01\",\n      \"status\": \"on\",\n      \"temperature\": 22.5,\n      \"timestamp\": \"2023-10-20T14:28:00Z\"\n    ,\n    {\n      \"deviceId\": \"light-02\",\n      \"status\": \"off\",\n      \"brightness\": 0,\n      \"timestamp\": \"2023-10-20T14:30:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "usageLogs": [
+          {
+            "deviceId": "security-camera-05",
+            "recordings": [
+              {
+                "timestamp": "2023-10-20T15:00:00Z",
+                "event": "motion_detected"
+              },
+              {
+                "timestamp": "2023-10-20T15:05:00Z",
+                "event": "motion_detected"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"usageLogs\": [\n    {\n      \"deviceId\": \"security-camera-05\",\n      \"recordings\": [\n        {\n          \"timestamp\": \"2023-10-20T15:00:00Z\",\n          \"event\": \"motion_detected\"\n        ,\n        {\n          \"timestamp\": \"2023-10-20T15:05:00Z\",\n          \"event\": \"motion_detected\"\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceUsage": [
+          {
+            "deviceId": "smart-lock-03",
+            "action": "unlocked",
+            "timestamp": "2023-10-20T16:00:00Z"
+          },
+          {
+            "deviceId": "smart-lock-03",
+            "action": "locked",
+            "timestamp": "2023-10-20T16:10:00Z"
+          }
+        ]
+      },
+      "{\n  \"deviceUsage\": [\n    {\n      \"deviceId\": \"smart-lock-03\",\n      \"action\": \"unlocked\",\n      \"timestamp\": \"2023-10-20T16:00:00Z\"\n    ,\n    {\n      \"deviceId\": \"smart-lock-03\",\n      \"action\": \"locked\",\n      \"timestamp\": \"2023-10-20T16:10:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "John Doe",
+          "age": 28,
+          "skills": [
+            "JavaScript",
+            "React",
+            "Node.js"
+          ],
+          "education": {
+            "university": "State University",
+            "degree": "Bachelor of Science",
+            "year": 2018
+          }
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"John Doe\",\n        \"age\": 28,\n        \"skills\": [\"JavaScript\", \"React\", \"Node.js\"],\n        \"education\": {\n            \"university\": \"State University\",\n            \"degree\": \"Bachelor of Science\",\n            \"year\": 2018\n    }\n}"
+    ],
+    [
+      {
+        "jobApplication": {
+          "position": "Software Engineer",
+          "experience": [
+            {
+              "company": "TechCorp",
+              "duration": "2 years"
+            },
+            {
+              "company": "Innovatech",
+              "duration": "1 year"
+            }
+          ],
+          "references": [
+            "Alice Smith",
+            "Bob Johnson"
+          ]
+        }
+      },
+      "{\n    \"jobApplication\": {\n        \"position\": \"Software Engineer\",\n        \"experience\": [\n            {\n                \"company\": \"TechCorp\",\n                \"duration\": \"2 years\"\n            },\n            {\n                \"company\": \"Innovatech\",\n                \"duration\": \"1 year\"\n        ],\n        \"references\": [\"Alice Smith\", \"Bob Johnson\"]\n    }\n}"
+    ],
+    [
+      {
+        "resume": {
+          "personal_info": {
+            "first_name": "Emily",
+            "last_name": "Clark",
+            "contact": {
+              "email": "emily.clark@example.com",
+              "phone": "555-1234"
+            }
+          },
+          "work_experience": [
+            "Intern at DataCorp",
+            "Analyst at Insights Inc."
+          ]
+        }
+      },
+      "{\n    \"resume\": {\n        \"personal_info\": {\n            \"first_name\": \"Emily\",\n            \"last_name\": \"Clark\",\n            \"contact\": {\n                \"email\": \"emily.clark@example.com\",\n                \"phone\": \"555-1234\"\n            }\n        },\n        \"work_experience\": [\"Intern at DataCorp\", \"Analyst at Insights Inc.\"\n    }\n}"
+    ],
+    [
+      {
+        "candidate": {
+          "full_name": "Michael Brown",
+          "portfolio": {
+            "projects": [
+              {
+                "title": "E-commerce Platform",
+                "tech_stack": [
+                  "Python",
+                  "Django",
+                  "PostgreSQL"
+                ]
+              },
+              {
+                "title": "Mobile App",
+                "tech_stack": [
+                  "Flutter",
+                  "Firebase"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "{\n    \"candidate\": {\n        \"full_name\": \"Michael Brown\",\n        \"portfolio\": {\n            \"projects\": [\n                {\n                    \"title\": \"E-commerce Platform\",\n                    \"tech_stack\": [\"Python\", \"Django\", \"PostgreSQL\"]\n                },\n                {\n                    \"title\": \"Mobile App\",\n                    \"tech_stack\": [\"Flutter\", \"Firebase\"]\n                }\n            ]\n    }\n}"
+    ],
+    [
+      {
+        "applicationForm": {
+          "applicant_details": {
+            "firstName": "Sara",
+            "lastName": "Lee",
+            "languages": [
+              "English",
+              "French"
+            ],
+            "certifications": [
+              "Certified Scrum Master",
+              "AWS Certified Solutions Architect"
+            ]
+          }
+        }
+      },
+      "{\n    \"applicationForm\": {\n        \"applicant_details\": {\n            \"firstName\": \"Sara\",\n            \"lastName\": \"Lee\",\n            \"languages\": [\"English\", \"French\"],\n            \"certifications\": [\n                \"Certified Scrum Master\",\n                \"AWS Certified Solutions Architect\"\n            ]\n    }\n}"
+    ],
+    [
+      {
+        "jobCandidate": {
+          "name": "Anna Taylor",
+          "experience": {
+            "roles": [
+              {
+                "title": "Data Analyst",
+                "years": 3
+              },
+              {
+                "title": "Research Assistant",
+                "years": 2
+              }
+            ]
+          }
+        }
+      },
+      "{\n    \"jobCandidate\": {\n        \"name\": \"Anna Taylor\",\n        \"experience\": {\n            \"roles\": [\n                {\n                    \"title\": \"Data Analyst\",\n                    \"years\": 3\n                },\n                {\n                    \"title\": \"Research Assistant\",\n                    \"years\": 2\n                }\n            ]\n    }\n}"
+    ],
+    [
+      {
+        "application": {
+          "name": "Lucas Gray",
+          "achievements": [
+            "Top 10 in XYZ Coding Challenge",
+            "Published Paper in ABC Journal"
+          ],
+          "contact": {
+            "email": "lucas.gray@example.com",
+            "phone": "555-9876"
+          }
+        }
+      },
+      "{\n    \"application\": {\n        \"name\": \"Lucas Gray\",\n        \"achievements\": [\n            \"Top 10 in XYZ Coding Challenge\",\n            \"Published Paper in ABC Journal\"\n        ],\n        \"contact\": {\n            \"email\": \"lucas.gray@example.com\",\n            \"phone\": \"555-9876\"\n    }\n}"
+    ],
+    [
+      {
+        "flights": [
+          {
+            "flight_number": "AA123",
+            "departure": {
+              "airport": "JFK",
+              "time": "2023-12-15T08:00:00"
+            },
+            "arrival": {
+              "airport": "LAX",
+              "time": "2023-12-15T11:00:00"
+            }
+          },
+          {
+            "flight_number": "UA456",
+            "departure": {
+              "airport": "ORD",
+              "time": "2023-12-15T09:30:00"
+            },
+            "arrival": {
+              "airport": "SFO",
+              "time": "2023-12-15T12:00:00"
+            }
+          }
+        ]
+      },
+      "{\n    \"flights\": [\n        {\n            \"flight_number\": \"AA123\",\n            \"departure\": {\n                \"airport\": \"JFK\",\n                \"time\": \"2023-12-15T08:00:00\"\n            },\n            \"arrival\": {\n                \"airport\": \"LAX\",\n                \"time\": \"2023-12-15T11:00:00\"\n            }\n        ,\n        {\n            \"flight_number\": \"UA456\",\n            \"departure\": {\n                \"airport\": \"ORD\",\n                \"time\": \"2023-12-15T09:30:00\"\n            },\n            \"arrival\": {\n                \"airport\": \"SFO\",\n                \"time\": \"2023-12-15T12:00:00\"\n            }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "bookings": [
+          {
+            "passenger": {
+              "name": "John Doe",
+              "age": 34
+            },
+            "flight": "DL789",
+            "seat": "12A"
+          },
+          {
+            "passenger": {
+              "name": "Jane Smith",
+              "age": 28
+            },
+            "flight": "AA321",
+            "seat": "10C"
+          }
+        ]
+      },
+      "{\n    \"bookings\": [\n        {\n            \"passenger\": {\n                \"name\": \"John Doe\",\n                \"age\": 34\n            },\n            \"flight\": \"DL789\",\n            \"seat\": \"12A\"\n        ,\n        {\n            \"passenger\": {\n                \"name\": \"Jane Smith\",\n                \"age\": 28\n            },\n            \"flight\": \"AA321\",\n            \"seat\": \"10C\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "flight_info": [
+          {
+            "airline": "Southwest",
+            "flight_number": "SW1234",
+            "status": "On Time"
+          },
+          {
+            "airline": "Spirit",
+            "flight_number": "SP5678",
+            "status": "Delayed"
+          }
+        ]
+      },
+      "{\n    \"flight_info\": [\n        {\n            \"airline\": \"Southwest\",\n            \"flight_number\": \"SW1234\",\n            \"status\": \"On Time\"\n        ,\n        {\n            \"airline\": \"Spirit\",\n            \"flight_number\": \"SP5678\",\n            \"status\": \"Delayed\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "tickets": [
+          {
+            "ticket_id": "001",
+            "passenger_name": "Alice Brown",
+            "flight_number": "BA123"
+          },
+          {
+            "ticket_id": "002",
+            "passenger_name": "Bob White",
+            "flight_number": "AF456"
+          }
+        ]
+      },
+      "{\n    \"tickets\": [\n        {\n            \"ticket_id\": \"001\",\n            \"passenger_name\": \"Alice Brown\",\n            \"flight_number\": \"BA123\"\n        ,\n        {\n            \"ticket_id\": \"002\",\n            \"passenger_name\": \"Bob White\",\n            \"flight_number\": \"AF456\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "reservations": [
+          {
+            "reservation_id": "101",
+            "customer": {
+              "first_name": "Emily",
+              "last_name": "Adams"
+            }
+          },
+          {
+            "reservation_id": "102",
+            "customer": {
+              "first_name": "Michael",
+              "last_name": "Johnson"
+            }
+          }
+        ]
+      },
+      "{\n    \"reservations\": [\n        {\n            \"reservation_id\": \"101\",\n            \"customer\": {\n                \"first_name\": \"Emily\",\n                \"last_name\": \"Adams\"\n            }\n        ,\n        {\n            \"reservation_id\": \"102\",\n            \"customer\": {\n                \"first_name\": \"Michael\",\n                \"last_name\": \"Johnson\"\n            }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "baggage": [
+          {
+            "tag": "BG123",
+            "weight": 23
+          },
+          {
+            "tag": "BG124",
+            "weight": 18
+          }
+        ]
+      },
+      "{\n    \"baggage\": [\n        {\n            \"tag\": \"BG123\",\n            \"weight\": 23\n        ,\n        {\n            \"tag\": \"BG124\",\n            \"weight\": 18\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "check_in": [
+          {
+            "counter": "A1",
+            "open_time": "05:00 AM"
+          },
+          {
+            "counter": "B3",
+            "open_time": "06:00 AM"
+          }
+        ]
+      },
+      "{\n    \"check_in\": [\n        {\n            \"counter\": \"A1\",\n            \"open_time\": \"05:00 AM\"\n        ,\n        {\n            \"counter\": \"B3\",\n            \"open_time\": \"06:00 AM\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "crew": [
+          {
+            "name": "Captain Morgan",
+            "role": "Pilot"
+          },
+          {
+            "name": "Anna Smith",
+            "role": "Co-Pilot"
+          }
+        ]
+      },
+      "{\n    \"crew\": [\n        {\n            \"name\": \"Captain Morgan\",\n            \"role\": \"Pilot\"\n        ,\n        {\n            \"name\": \"Anna Smith\",\n            \"role\": \"Co-Pilot\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cancellations": [
+          {
+            "cancellation_id": "C123",
+            "reason": "Weather"
+          },
+          {
+            "cancellation_id": "C124",
+            "reason": "Technical"
+          }
+        ]
+      },
+      "{\n    \"cancellations\": [\n        {\n            \"cancellation_id\": \"C123\",\n            \"reason\": \"Weather\"\n        ,\n        {\n            \"cancellation_id\": \"C124\",\n            \"reason\": \"Technical\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "delays": [
+          {
+            "flight_number": "LH789",
+            "delay": "2 hours"
+          },
+          {
+            "flight_number": "QR456",
+            "delay": "30 minutes"
+          }
+        ]
+      },
+      "{\n    \"delays\": [\n        {\n            \"flight_number\": \"LH789\",\n            \"delay\": \"2 hours\"\n        ,\n        {\n            \"flight_number\": \"QR456\",\n            \"delay\": \"30 minutes\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "La Bella Italia",
+        "reservations": [
+          {
+            "name": "John Doe",
+            "time": "19:00",
+            "table": 5,
+            "guests": 2
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"La Bella Italia\",\n    \"reservations\": [\n        {\n            \"name\": \"John Doe\",\n            \"time\": \"19:00\",\n            \"table\": 5,\n            \"guests\": 2\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Sushi Place",
+        "reservations": [
+          {
+            "name": "Jane Smith",
+            "time": "20:00",
+            "table": 3,
+            "guests": 4
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Sushi Place\",\n    \"reservations\": [\n        {\n            \"name\": \"Jane Smith\",\n            \"time\": \"20:00\",\n            \"table\": 3,\n            \"guests\": 4\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Steakhouse",
+        "reservations": [
+          {
+            "name": "Alice Johnson",
+            "time": "18:00",
+            "table": 1,
+            "guests": 3
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Steakhouse\",\n    \"reservations\": [\n        {\n            \"name\": \"Alice Johnson\",\n            \"time\": \"18:00\",\n            \"table\": 1,\n            \"guests\": 3\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Bistro Cafe",
+        "reservations": [
+          {
+            "name": "Robert Brown",
+            "time": "21:00",
+            "table": 6,
+            "guests": 2
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Bistro Cafe\",\n    \"reservations\": [\n        {\n            \"name\": \"Robert Brown\",\n            \"time\": \"21:00\",\n            \"table\": 6,\n            \"guests\": 2\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Vegan Delights",
+        "reservations": [
+          {
+            "name": "Emily White",
+            "time": "19:30",
+            "table": 4,
+            "guests": 5
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Vegan Delights\",\n    \"reservations\": [\n        {\n            \"name\": \"Emily White\",\n            \"time\": \"19:30\",\n            \"table\": 4,\n            \"guests\": 5\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Pasta Paradise",
+        "reservations": [
+          {
+            "name": "Chris Green",
+            "time": "17:45",
+            "table": 2,
+            "guests": 6
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Pasta Paradise\",\n    \"reservations\": [\n        {\n            \"name\": \"Chris Green\",\n            \"time\": \"17:45\",\n            \"table\": 2,\n            \"guests\": 6\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Taco Fiesta",
+        "reservations": [
+          {
+            "name": "Mike Taylor",
+            "time": "18:30",
+            "table": 7,
+            "guests": 1
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Taco Fiesta\",\n    \"reservations\": [\n        {\n            \"name\": \"Mike Taylor\",\n            \"time\": \"18:30\",\n            \"table\": 7,\n            \"guests\": 1\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Burger Joint",
+        "reservations": [
+          {
+            "name": "Sarah Connor",
+            "time": "20:15",
+            "table": 8,
+            "guests": 3
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Burger Joint\",\n    \"reservations\": [\n        {\n            \"name\": \"Sarah Connor\",\n            \"time\": \"20:15\",\n            \"table\": 8,\n            \"guests\": 3\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Grill House",
+        "reservations": [
+          {
+            "name": "David Wilson",
+            "time": "17:00",
+            "table": 10,
+            "guests": 2
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Grill House\",\n    \"reservations\": [\n        {\n            \"name\": \"David Wilson\",\n            \"time\": \"17:00\",\n            \"table\": 10,\n            \"guests\": 2\n    ]\n}"
+    ],
+    [
+      {
+        "restaurant": "Gourmet Kitchen",
+        "reservations": [
+          {
+            "name": "Lisa Black",
+            "time": "19:45",
+            "table": 9,
+            "guests": 4
+          }
+        ]
+      },
+      "{\n    \"restaurant\": \"Gourmet Kitchen\",\n    \"reservations\": [\n        {\n            \"name\": \"Lisa Black\",\n            \"time\": \"19:45\",\n            \"table\": 9,\n            \"guests\": 4\n    ]\n}"
+    ],
+    [
+      {
+        "player": "gamer123",
+        "games": [
+          {
+            "game": "BattleQuest",
+            "hoursPlayed": 120,
+            "achievements": [
+              "First Blood",
+              "Sharp Shooter"
+            ],
+            "friendsMet": [
+              {
+                "name": "playerOne",
+                "joined": "2023-01-10"
+              },
+              {
+                "name": "playerTwo",
+                "joined": "2023-02-15"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"player\": \"gamer123\",\n  \"games\": [\n    {\n      \"game\": \"BattleQuest\",\n      \"hoursPlayed\": 120,\n      \"achievements\": [\"First Blood\", \"Sharp Shooter\"],\n      \"friendsMet\": [\n        {\"name\": \"playerOne\", \"joined\": \"2023-01-10\"},\n        {\"name\": \"playerTwo\", \"joined\": \"2023-02-15\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "username": "proGamer99",
+        "lastSession": "2023-10-03",
+        "games": [
+          {
+            "title": "SpaceExplorers",
+            "hours": 340,
+            "achievements": [
+              "Galactic Hero",
+              "Explorer"
+            ]
+          }
+        ]
+      },
+      "{\n  \"username\": \"proGamer99\",\n  \"lastSession\": \"2023-10-03\",\n  \"games\": [\n    {\n      \"title\": \"SpaceExplorers\",\n      \"hours\": 340,\n      \"achievements\": [\"Galactic Hero\", \"Explorer\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "account": {
+          "ID": "abc123",
+          "gamesPlayed": [
+            {
+              "name": "ZombieLand",
+              "score": 5000
+            },
+            {
+              "name": "AlienInvasion",
+              "score": 3000
+            }
+          ]
+        }
+      },
+      "{\n  \"account\": {\n    \"ID\": \"abc123\",\n    \"gamesPlayed\": [\n      {\"name\": \"ZombieLand\", \"score\": 5000},\n      {\"name\": \"AlienInvasion\", \"score\": 3000\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "user": "legend27",
+        "favoriteGames": [
+          {
+            "gameName": "HeroQuest",
+            "timeSpent": 150,
+            "topAchievements": [
+              "Conqueror",
+              "Champion"
+            ]
+          }
+        ]
+      },
+      "{\n  \"user\": \"legend27\",\n  \"favoriteGames\": [\n    {\n      \"gameName\": \"HeroQuest\",\n      \"timeSpent\": 150,\n      \"topAchievements\": [\"Conqueror\", \"Champion\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "nickname": "stealthNinja",
+        "achievements": [
+          {
+            "title": "Ninja Master",
+            "date": "2023-08-20"
+          },
+          {
+            "title": "Silent Assassin",
+            "date": "2023-09-10"
+          }
+        ]
+      },
+      "{\n  \"nickname\": \"stealthNinja\",\n  \"achievements\": [\n    {\"title\": \"Ninja Master\", \"date\": \"2023-08-20\"},\n    {\"title\": \"Silent Assassin\", \"date\": \"2023-09-10\"\n  ]\n}"
+    ],
+    [
+      {
+        "id": "questMaster42",
+        "gamesDetails": [
+          {
+            "name": "MysticAdventures",
+            "totalHours": 95,
+            "milestones": [
+              "Explorer",
+              "Master Adventurer"
+            ]
+          }
+        ]
+      },
+      "{\n  \"id\": \"questMaster42\",\n  \"gamesDetails\": [\n    {\n      \"name\": \"MysticAdventures\",\n      \"totalHours\": 95,\n      \"milestones\": [\"Explorer\", \"Master Adventurer\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "userName": "shadowHunter",
+        "gamingHistory": [
+          {
+            "gameTitle": "ShadowRealm",
+            "hoursPlayed": 210,
+            "achievements": [
+              "Shadow Master",
+              "Night Stalker"
+            ]
+          }
+        ]
+      },
+      "{\n  \"userName\": \"shadowHunter\",\n  \"gamingHistory\": [\n    {\n      \"gameTitle\": \"ShadowRealm\",\n      \"hoursPlayed\": 210,\n      \"achievements\": [\"Shadow Master\", \"Night Stalker\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "products": [
+          {
+            "id": "P001",
+            "name": "Laptop",
+            "quantity": 50,
+            "price": 999.99,
+            "categories": [
+              "Electronics",
+              "Computers"
+            ]
+          },
+          {
+            "id": "P002",
+            "name": "Smartphone",
+            "quantity": 150,
+            "price": 699.99,
+            "categories": [
+              "Electronics",
+              "Mobile Devices"
+            ]
+          }
+        ]
+      },
+      "{\n  \"products\": [\n    {\n      \"id\": \"P001\",\n      \"name\": \"Laptop\",\n      \"quantity\": 50,\n      \"price\": 999.99,\n      \"categories\": [\"Electronics\", \"Computers\"]\n    ,\n    {\n      \"id\": \"P002\",\n      \"name\": \"Smartphone\",\n      \"quantity\": 150,\n      \"price\": 699.99,\n      \"categories\": [\"Electronics\", \"Mobile Devices\"]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "inventory": {
+          "location": "Warehouse A",
+          "products": [
+            {
+              "id": "P003",
+              "name": "Tablet",
+              "quantity": 75,
+              "price": 399.99,
+              "categories": [
+                "Electronics",
+                "Tablets"
+              ]
+            },
+            {
+              "id": "P004",
+              "name": "Headphones",
+              "quantity": 200,
+              "price": 199.99,
+              "categories": [
+                "Electronics",
+                "Audio"
+              ]
+            }
+          ]
+        }
+      },
+      "{\n  \"inventory\": {\n    \"location\": \"Warehouse A\",\n    \"products\": [\n      {\n        \"id\": \"P003\",\n        \"name\": \"Tablet\",\n        \"quantity\": 75,\n        \"price\": 399.99,\n        \"categories\": [\"Electronics\", \"Tablets\"]\n      ,\n      {\n        \"id\": \"P004\",\n        \"name\": \"Headphones\",\n        \"quantity\": 200,\n        \"price\": 199.99,\n        \"categories\": [\"Electronics\", \"Audio\"]\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "store": {
+          "name": "Tech Depot",
+          "products": [
+            {
+              "id": "P005",
+              "name": "Monitor",
+              "quantity": 30,
+              "price": 249.99,
+              "categories": [
+                "Electronics",
+                "Displays"
+              ]
+            },
+            {
+              "id": "P006",
+              "name": "Keyboard",
+              "quantity": 120,
+              "price": 49.99,
+              "categories": [
+                "Electronics",
+                "Computer Accessories"
+              ]
+            }
+          ],
+          "manager": "Jane Doe"
+        }
+      },
+      "{\n  \"store\": {\n    \"name\": \"Tech Depot\",\n    \"products\": [\n      {\n        \"id\": \"P005\",\n        \"name\": \"Monitor\",\n        \"quantity\": 30,\n        \"price\": 249.99,\n        \"categories\": [\"Electronics\", \"Displays\"]\n      ,\n      {\n        \"id\": \"P006\",\n        \"name\": \"Keyboard\",\n        \"quantity\": 120,\n        \"price\": 49.99,\n        \"categories\": [\"Electronics\", \"Computer Accessories\"]\n      }\n    ],\n    \"manager\": \"Jane Doe\"\n  }\n}"
+    ],
+    [
+      {
+        "inventory": [
+          {
+            "section": "A1",
+            "items": [
+              {
+                "id": "P007",
+                "name": "Mouse",
+                "quantity": 250,
+                "price": 19.99
+              },
+              {
+                "id": "P008",
+                "name": "Charger",
+                "quantity": 100,
+                "price": 29.99
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"inventory\": [\n    {\n      \"section\": \"A1\",\n      \"items\": [\n        {\n          \"id\": \"P007\",\n          \"name\": \"Mouse\",\n          \"quantity\": 250,\n          \"price\": 19.99\n        ,\n        {\n          \"id\": \"P008\",\n          \"name\": \"Charger\",\n          \"quantity\": 100,\n          \"price\": 29.99\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "products": [
+          {
+            "id": "P009",
+            "name": "Webcam",
+            "quantity": 85,
+            "price": 89.99,
+            "categories": [
+              "Electronics",
+              "Video"
+            ]
+          },
+          {
+            "id": "P010",
+            "name": "Router",
+            "quantity": 40,
+            "price": 129.99,
+            "categories": [
+              "Electronics",
+              "Networking"
+            ]
+          }
+        ]
+      },
+      "{\n  \"products\": [\n    {\n      \"id\": \"P009\",\n      \"name\": \"Webcam\",\n      \"quantity\": 85,\n      \"price\": 89.99,\n      \"categories\": [\"Electronics\", \"Video\"]\n    ,\n    {\n      \"id\": \"P010\",\n      \"name\": \"Router\",\n      \"quantity\": 40,\n      \"price\": 129.99,\n      \"categories\": [\"Electronics\", \"Networking\"]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "warehouse": {
+          "id": "W001",
+          "address": "123 Industrial Rd",
+          "capacity": 1000,
+          "products": [
+            {
+              "id": "P011",
+              "name": "Switch",
+              "quantity": 60,
+              "price": 59.99
+            },
+            {
+              "id": "P012",
+              "name": "External Hard Drive",
+              "quantity": 80,
+              "price": 99.99
+            }
+          ]
+        }
+      },
+      "{\n  \"warehouse\": {\n    \"id\": \"W001\",\n    \"address\": \"123 Industrial Rd\",\n    \"capacity\": 1000,\n    \"products\": [\n      {\n        \"id\": \"P011\",\n        \"name\": \"Switch\",\n        \"quantity\": 60,\n        \"price\": 59.99\n      ,\n      {\n        \"id\": \"P012\",\n        \"name\": \"External Hard Drive\",\n        \"quantity\": 80,\n        \"price\": 99.99\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "store": {
+          "name": "Gadget Shop",
+          "products": [
+            {
+              "id": "P013",
+              "name": "Game Console",
+              "quantity": 20,
+              "price": 299.99,
+              "categories": [
+                "Electronics",
+                "Gaming"
+              ]
+            },
+            {
+              "id": "P014",
+              "name": "VR Headset",
+              "quantity": 10,
+              "price": 399.99,
+              "categories": [
+                "Electronics",
+                "Virtual Reality"
+              ]
+            }
+          ]
+        }
+      },
+      "{\n  \"store\": {\n    \"name\": \"Gadget Shop\",\n    \"products\": [\n      {\n        \"id\": \"P013\",\n        \"name\": \"Game Console\",\n        \"quantity\": 20,\n        \"price\": 299.99,\n        \"categories\": [\"Electronics\", \"Gaming\"]\n      ,\n      {\n        \"id\": \"P014\",\n        \"name\": \"VR Headset\",\n        \"quantity\": 10,\n        \"price\": 399.99,\n        \"categories\": [\"Electronics\", \"Virtual Reality\"]\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "inventory": {
+          "location": "Warehouse B",
+          "products": [
+            {
+              "id": "P015",
+              "name": "Printer",
+              "quantity": 30,
+              "price": 149.99,
+              "categories": [
+                "Electronics",
+                "Office Equipment"
+              ]
+            },
+            {
+              "id": "P016",
+              "name": "Scanner",
+              "quantity": 25,
+              "price": 129.99,
+              "categories": [
+                "Electronics",
+                "Office Equipment"
+              ]
+            }
+          ]
+        }
+      },
+      "{\n  \"inventory\": {\n    \"location\": \"Warehouse B\",\n    \"products\": [\n      {\n        \"id\": \"P015\",\n        \"name\": \"Printer\",\n        \"quantity\": 30,\n        \"price\": 149.99,\n        \"categories\": [\"Electronics\", \"Office Equipment\"]\n      ,\n      {\n        \"id\": \"P016\",\n        \"name\": \"Scanner\",\n        \"quantity\": 25,\n        \"price\": 129.99,\n        \"categories\": [\"Electronics\", \"Office Equipment\"]\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "store": {
+          "name": "Digital Hub",
+          "products": [
+            {
+              "id": "P017",
+              "name": "Camera",
+              "quantity": 15,
+              "price": 499.99,
+              "categories": [
+                "Electronics",
+                "Photography"
+              ]
+            },
+            {
+              "id": "P018",
+              "name": "Tripod",
+              "quantity": 40,
+              "price": 89.99,
+              "categories": [
+                "Electronics",
+                "Photography"
+              ]
+            }
+          ]
+        }
+      },
+      "{\n  \"store\": {\n    \"name\": \"Digital Hub\",\n    \"products\": [\n      {\n        \"id\": \"P017\",\n        \"name\": \"Camera\",\n        \"quantity\": 15,\n        \"price\": 499.99,\n        \"categories\": [\"Electronics\", \"Photography\"]\n      ,\n      {\n        \"id\": \"P018\",\n        \"name\": \"Tripod\",\n        \"quantity\": 40,\n        \"price\": 89.99,\n        \"categories\": [\"Electronics\", \"Photography\"]\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "inventory": {
+          "section": "C3",
+          "products": [
+            {
+              "id": "P019",
+              "name": "Smartwatch",
+              "quantity": 60,
+              "price": 199.99,
+              "categories": [
+                "Electronics",
+                "Wearable Technology"
+              ]
+            },
+            {
+              "id": "P020",
+              "name": "Fitness Tracker",
+              "quantity": 80,
+              "price": 129.99,
+              "categories": [
+                "Electronics",
+                "Wearable Technology"
+              ]
+            }
+          ]
+        }
+      },
+      "{\n  \"inventory\": {\n    \"section\": \"C3\",\n    \"products\": [\n      {\n        \"id\": \"P019\",\n        \"name\": \"Smartwatch\",\n        \"quantity\": 60,\n        \"price\": 199.99,\n        \"categories\": [\"Electronics\", \"Wearable Technology\"]\n      ,\n      {\n        \"id\": \"P020\",\n        \"name\": \"Fitness Tracker\",\n        \"quantity\": 80,\n        \"price\": 129.99,\n        \"categories\": [\"Electronics\", \"Wearable Technology\"]\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "subscriptions": [
+          {
+            "id": "sub001",
+            "user": "user123",
+            "plan": "premium",
+            "status": "active"
+          },
+          {
+            "id": "sub002",
+            "user": "user456",
+            "plan": "basic",
+            "status": "expired"
+          }
+        ]
+      },
+      "{\n  \"subscriptions\": [\n    {\n      \"id\": \"sub001\",\n      \"user\": \"user123\",\n      \"plan\": \"premium\",\n      \"status\": \"active\"\n    ,\n    {\n      \"id\": \"sub002\",\n      \"user\": \"user456\",\n      \"plan\": \"basic\",\n      \"status\": \"expired\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user": "user789",
+        "subscriptions": [
+          {
+            "id": "sub003",
+            "plan": "standard",
+            "status": "active"
+          }
+        ]
+      },
+      "{\n  \"user\": \"user789\",\n  \"subscriptions\": [\n    {\n      \"id\": \"sub003\",\n      \"plan\": \"standard\",\n      \"status\": \"active\"\n    ]\n}"
+    ],
+    [
+      {
+        "accounts": [
+          {
+            "user": "user321",
+            "subscriptions": [
+              {
+                "id": "sub004",
+                "plan": "premium",
+                "status": "active"
+              }
+            ]
+          },
+          {
+            "user": "user654",
+            "subscriptions": []
+          }
+        ]
+      },
+      "{\n  \"accounts\": [\n    {\n      \"user\": \"user321\",\n      \"subscriptions\": [\n        {\n          \"id\": \"sub004\",\n          \"plan\": \"premium\",\n          \"status\": \"active\"\n        ]\n    ,\n    {\n      \"user\": \"user654\",\n      \"subscriptions\": []\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "activeSubscriptions": [
+          {
+            "id": "sub005",
+            "user": "user987",
+            "plan": "basic",
+            "status": "active"
+          },
+          {
+            "id": "sub006",
+            "user": "user654",
+            "plan": "premium",
+            "status": "active"
+          }
+        ]
+      },
+      "{\n  \"activeSubscriptions\": [\n    {\n      \"id\": \"sub005\",\n      \"user\": \"user987\",\n      \"plan\": \"basic\",\n      \"status\": \"active\"\n    }\n    {\n      \"id\": \"sub006\",\n      \"user\": \"user654\",\n      \"plan\": \"premium\",\n      \"status\": \"active\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "subscriptionDetails": {
+          "id": "sub007",
+          "user": "user111",
+          "plan": "standard",
+          "details": {
+            "renewalDate": "2024-01-01",
+            "paymentMethod": "credit_card"
+          }
+        }
+      },
+      "{\n  \"subscriptionDetails\": {\n    \"id\": \"sub007\",\n    \"user\": \"user111\",\n    \"plan\": \"standard\",\n    \"details\": {\n      \"renewalDate\": \"2024-01-01\",\n      \"paymentMethod\": \"credit_card\"\n  }\n}"
+    ],
+    [
+      {
+        "userProfiles": [
+          {
+            "username": "user222",
+            "subscriptions": [
+              {
+                "id": "sub008",
+                "plan": "basic",
+                "status": "cancelled"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"userProfiles\": [\n    {\n      \"username\": \"user222\",\n      \"subscriptions\": [\n        {\n          \"id\": \"sub008\",\n          \"plan\": \"basic\",\n          \"status\": \"cancelled\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "subscriptionPlans": [
+          {
+            "planName": "standard",
+            "features": [
+              "HD",
+              "2 screens"
+            ]
+          },
+          {
+            "planName": "premium",
+            "features": [
+              "4K",
+              "4 screens"
+            ]
+          }
+        ]
+      },
+      "{\n  \"subscriptionPlans\": [\n    {\n      \"planName\": \"standard\",\n      \"features\": [\"HD\", \"2 screens\"]\n    [{\n      \"planName\": \"premium\",\n      \"features\": [\"4K\", \"4 screens\"]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "cancellationRecords": [
+          {
+            "id": "sub009",
+            "user": "user333",
+            "reason": "not satisfied",
+            "date": "2023-09-15"
+          }
+        ]
+      },
+      "{\n  \"cancellationRecords\": [\n    {\n      \"id\": \"sub009\",\n      \"user\": \"user333\",\n      \"reason\": \"not satisfied\",\n      \"date\": \"2023-09-15\"\n    }\n]"
+    ],
+    [
+      {
+        "users": [
+          {
+            "username": "user444",
+            "email": "user444@example.com",
+            "subscription": {
+              "id": "sub010",
+              "plan": "premium",
+              "status": "active"
+            }
+          }
+        ]
+      },
+      "{\n  \"users\": [\n    {\n      \"username\": \"user444\",\n      \"email\": \"user444@example.com\",\n      \"subscription\": {\n        \"id\": \"sub010\",\n        \"plan\": \"premium\",\n        \"status\": \"active\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "subscriptionHistory": [
+          {
+            "id": "sub011",
+            "changes": [
+              {
+                "date": "2023-01-01",
+                "status": "active"
+              },
+              {
+                "date": "2023-06-01",
+                "status": "paused"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"subscriptionHistory\": [\n    {\n      \"id\": \"sub011\",\n      \"changes\": [\n        {\n          \"date\": \"2023-01-01\",\n          \"status\": \"active\"\n        }\n        {\n          \"date\": \"2023-06-01\",\n          \"status\": \"paused\"\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "student_name": "Alice Johnson",
+        "grades": [
+          {
+            "subject": "Math",
+            "score": 92
+          },
+          {
+            "subject": "Science",
+            "score": 88
+          },
+          {
+            "subject": "Literature",
+            "score": 85
+          }
+        ],
+        "attendance": "95%"
+      },
+      "{\n  \"student_name\": \"Alice Johnson\",\n  \"grades\": [\n    {\"subject\": \"Math\", \"score\": 92,\n    {\"subject\": \"Science\", \"score\": 88},\n    {\"subject\": \"Literature\", \"score\": 85}\n  ],\n  \"attendance\": \"95%\"\n}"
+    ],
+    [
+      {
+        "student_name": "Bob Smith",
+        "grades": [
+          {
+            "subject": "History",
+            "score": 78
+          },
+          {
+            "subject": "Math",
+            "score": 85
+          },
+          {
+            "subject": "Art",
+            "score": 90
+          }
+        ],
+        "comments": "Improving steadily"
+      },
+      "{\n  \"student_name\": \"Bob Smith\",\n  \"grades\": [\n    {\"subject\": \"History\", \"score\": 78},\n    {\"subject\": \"Math\", \"score\": 85,\n    {\"subject\": \"Art\", \"score\": 90}\n  ],\n  \"comments\": \"Improving steadily\"\n}"
+    ],
+    [
+      {
+        "student_name": "Clara Lee",
+        "grades": [
+          {
+            "subject": "Biology",
+            "score": 89
+          },
+          {
+            "subject": "Chemistry",
+            "score": 92
+          },
+          {
+            "subject": "Physics",
+            "score": 90
+          }
+        ],
+        "extracurricular": [
+          "Debate Club",
+          "Soccer"
+        ]
+      },
+      "{\n  \"student_name\": \"Clara Lee\",\n  \"grades\": [\n    {\"subject\": \"Biology\", \"score\": 89,\n    {\"subject\": \"Chemistry\", \"score\": 92},\n    {\"subject\": \"Physics\", \"score\": 90}\n  ],\n  \"extracurricular\": [\"Debate Club\", \"Soccer\"]\n}"
+    ],
+    [
+      {
+        "student_name": "David Kim",
+        "grades": [
+          {
+            "subject": "Geography",
+            "score": 76
+          },
+          {
+            "subject": "Economics",
+            "score": 83
+          },
+          {
+            "subject": "Philosophy",
+            "score": 79
+          }
+        ],
+        "projects": [
+          {
+            "title": "Sustainable Energy",
+            "grade": "A"
+          },
+          {
+            "title": "Economic Impact",
+            "grade": "B"
+          }
+        ]
+      },
+      "{\n  \"student_name\": \"David Kim\",\n  \"grades\": [\n    {\"subject\": \"Geography\", \"score\": 76},\n    {\"subject\": \"Economics\", \"score\": 83,\n    {\"subject\": \"Philosophy\", \"score\": 79}\n  ],\n  \"projects\": [\n    {\"title\": \"Sustainable Energy\", \"grade\": \"A\"},\n    {\"title\": \"Economic Impact\", \"grade\": \"B\"}\n  ]\n}"
+    ],
+    [
+      {
+        "student_name": "Ella Brown",
+        "grades": [
+          {
+            "subject": "English",
+            "score": 94
+          },
+          {
+            "subject": "French",
+            "score": 88
+          },
+          {
+            "subject": "Spanish",
+            "score": 91
+          }
+        ],
+        "remarks": "Excellent linguistic skills"
+      },
+      "{\n  \"student_name\": \"Ella Brown\",\n  \"grades\": [\n    {\"subject\": \"English\", \"score\": 94},\n    {\"subject\": \"French\", \"score\": 88,\n    {\"subject\": \"Spanish\", \"score\": 91}\n  ],\n  \"remarks\": \"Excellent linguistic skills\"\n}"
+    ],
+    [
+      {
+        "student_name": "Frank Green",
+        "grades": [
+          {
+            "subject": "Music",
+            "score": 87
+          },
+          {
+            "subject": "Drama",
+            "score": 90
+          },
+          {
+            "subject": "Dance",
+            "score": 84
+          }
+        ],
+        "special_awards": [
+          "Music Excellence"
+        ]
+      },
+      "{\n  \"student_name\": \"Frank Green\",\n  \"grades\": [\n    {\"subject\": \"Music\", \"score\": 87},\n    {\"subject\": \"Drama\", \"score\": 90,\n    {\"subject\": \"Dance\", \"score\": 84}\n  ],\n  \"special_awards\": [\"Music Excellence\"]\n}"
+    ],
+    [
+      {
+        "student_name": "Grace White",
+        "grades": [
+          {
+            "subject": "Math",
+            "score": 98
+          },
+          {
+            "subject": "Science",
+            "score": 93
+          },
+          {
+            "subject": "Computer Science",
+            "score": 97
+          }
+        ],
+        "projects": [
+          {
+            "title": "AI Research",
+            "grade": "A"
+          }
+        ]
+      },
+      "{\n  \"student_name\": \"Grace White\",\n  \"grades\": [\n    {\"subject\": \"Math\", \"score\": 98},\n    {\"subject\": \"Science\", \"score\": 93,\n    {\"subject\": \"Computer Science\", \"score\": 97}\n  ],\n  \"projects\": [\n    {\"title\": \"AI Research\", \"grade\": \"A\"}\n  ]\n}"
+    ],
+    [
+      {
+        "student_name": "Henry Black",
+        "grades": [
+          {
+            "subject": "History",
+            "score": 82
+          },
+          {
+            "subject": "Geography",
+            "score": 85
+          },
+          {
+            "subject": "Political Science",
+            "score": 80
+          }
+        ],
+        "attendance": "98%"
+      },
+      "{\n  \"student_name\": \"Henry Black\",\n  \"grades\": [\n    {\"subject\": \"History\", \"score\": 82},\n    {\"subject\": \"Geography\", \"score\": 85,\n    {\"subject\": \"Political Science\", \"score\": 80}\n  ],\n  \"attendance\": \"98%\"\n}"
+    ],
+    [
+      {
+        "student_name": "Isla Brown",
+        "grades": [
+          {
+            "subject": "Biology",
+            "score": 94
+          },
+          {
+            "subject": "Chemistry",
+            "score": 90
+          },
+          {
+            "subject": "Physics",
+            "score": 87
+          }
+        ],
+        "clubs": [
+          "Science Club",
+          "Math Club"
+        ]
+      },
+      "{\n  \"student_name\": \"Isla Brown\",\n  \"grades\": [\n    {\"subject\": \"Biology\", \"score\": 94},\n    {\"subject\": \"Chemistry\", \"score\": 90,\n    {\"subject\": \"Physics\", \"score\": 87}\n  ],\n  \"clubs\": [\"Science Club\", \"Math Club\"]\n}"
+    ],
+    [
+      {
+        "student_name": "James Green",
+        "grades": [
+          {
+            "subject": "French",
+            "score": 88
+          },
+          {
+            "subject": "German",
+            "score": 84
+          },
+          {
+            "subject": "Spanish",
+            "score": 90
+          }
+        ],
+        "comments": "Strong in languages"
+      },
+      "{\n  \"student_name\": \"James Green\",\n  \"grades\": [\n    {\"subject\": \"French\", \"score\": 88},\n    {\"subject\": \"German\", \"score\": 84,\n    {\"subject\": \"Spanish\", \"score\": 90}\n  ],\n  \"comments\": \"Strong in languages\"\n}"
+    ],
+    [
+      {
+        "listings": [
+          {
+            "id": 101,
+            "address": "123 Elm St",
+            "price": 250000,
+            "features": [
+              "garage",
+              "pool",
+              "garden"
+            ]
+          },
+          {
+            "id": 102,
+            "address": "456 Oak St",
+            "price": 300000,
+            "features": [
+              "basement",
+              "attic"
+            ]
+          }
+        ]
+      },
+      "{\n  \"listings\": [\n    {\n      \"id\": 101,\n      \"address\": \"123 Elm St\",\n      \"price\": 250000,\n      \"features\": [\"garage\", \"pool\", \"garden\"\n    },\n    {\n      \"id\": 102,\n      \"address\": \"456 Oak St\",\n      \"price\": 300000,\n      \"features\": [\"basement\", \"attic\"]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "properties": [
+          {
+            "id": 201,
+            "type": "apartment",
+            "location": "Downtown",
+            "details": {
+              "bedrooms": 2,
+              "bathrooms": 1,
+              "floor": 3
+            }
+          },
+          {
+            "id": 202,
+            "type": "house",
+            "location": "Suburb",
+            "details": {
+              "bedrooms": 4,
+              "bathrooms": 3,
+              "garage": true
+            }
+          }
+        ]
+      },
+      "{\n  \"properties\": [\n    {\n      \"id\": 201,\n      \"type\": \"apartment\",\n      \"location\": \"Downtown\",\n      \"details\": {\n        \"bedrooms\": 2,\n        \"bathrooms\": 1,\n        \"floor\": 3\n    },\n    {\n      \"id\": 202,\n      \"type\": \"house\",\n      \"location\": \"Suburb\",\n      \"details\": {\n        \"bedrooms\": 4,\n        \"bathrooms\": 3,\n        \"garage\": true\n      }\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "real_estate_listings": [
+          {
+            "property_id": 301,
+            "city": "New York",
+            "price": 850000,
+            "amenities": [
+              "elevator",
+              "doorman",
+              "gym"
+            ]
+          },
+          {
+            "property_id": 302,
+            "city": "Los Angeles",
+            "price": 765000,
+            "amenities": [
+              "pool",
+              "garage"
+            ]
+          }
+        ]
+      },
+      "{\n  \"real_estate_listings\": [\n    {\n      \"property_id\": 301,\n      \"city\": \"New York\",\n      \"price\": 850000,\n      \"amenities\": [\"elevator\", \"doorman\", \"gym\"\n    },\n    {\n      \"property_id\": 302,\n      \"city\": \"Los Angeles\",\n      \"price\": 765000,\n      \"amenities\": [\"pool\", \"garage\"]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "agents": [
+          {
+            "name": "Alice Johnson",
+            "id": 401,
+            "listings": [
+              {
+                "id": 501,
+                "address": "789 Pine St",
+                "price": 500000
+              },
+              {
+                "id": 502,
+                "address": "321 Maple St",
+                "price": 750000
+              }
+            ]
+          },
+          {
+            "name": "Bob Smith",
+            "id": 402,
+            "listings": [
+              {
+                "id": 503,
+                "address": "654 Birch St",
+                "price": 425000
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"agents\": [\n    {\n      \"name\": \"Alice Johnson\",\n      \"id\": 401,\n      \"listings\": [\n        {\"id\": 501, \"address\": \"789 Pine St\", \"price\": 500000},\n        {\"id\": 502, \"address\": \"321 Maple St\", \"price\": 750000}\n      ]\n    },\n    {\n      \"name\": \"Bob Smith\",\n      \"id\": 402,\n      \"listings\": [\n        {\"id\": 503, \"address\": \"654 Birch St\", \"price\": 425000}\n    }]\n  ]\n}"
+    ],
+    [
+      {
+        "realty_agents": [
+          {
+            "agent_id": 1001,
+            "name": "Diana Prince",
+            "listings": [
+              {
+                "property_id": 1101,
+                "address": "100 Hero Ln",
+                "price": 950000
+              }
+            ]
+          },
+          {
+            "agent_id": 1002,
+            "name": "Bruce Wayne",
+            "listings": [
+              {
+                "property_id": 1102,
+                "address": "200 Dark St",
+                "price": 1500000
+              },
+              {
+                "property_id": 1103,
+                "address": "300 Night Ave",
+                "price": 1150000
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"realty_agents\": [\n    {\n      \"agent_id\": 1001,\n      \"name\": \"Diana Prince\",\n      \"listings\": [\n        {\"property_id\": 1101, \"address\": \"100 Hero Ln\", \"price\": 950000}\n    },\n    {\n      \"agent_id\": 1002,\n      \"name\": \"Bruce Wayne\",\n      \"listings\": [\n        {\"property_id\": 1102, \"address\": \"200 Dark St\", \"price\": 1500000},\n        {\"property_id\": 1103, \"address\": \"300 Night Ave\", \"price\": 1150000}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Concert",
+        "tickets": [
+          {
+            "id": 1,
+            "buyer": "Alice",
+            "price": 50.0
+          },
+          {
+            "id": 2,
+            "buyer": "Bob",
+            "price": 55.0
+          }
+        ]
+      },
+      "{\n  \"event\": \"Concert\",\n  \"tickets\": [\n    {\n      \"id\": 1,\n      \"buyer\": \"Alice\",\n      \"price\": 50.00\n    {\n      \"id\": 2,\n      \"buyer\": \"Bob\",\n      \"price\": 55.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Theater Play",
+        "venue": "Grand Theater",
+        "seats": [
+          {
+            "row": "A",
+            "number": 10,
+            "available": true
+          },
+          {
+            "row": "B",
+            "number": 5,
+            "available": false
+          }
+        ]
+      },
+      "{\n  \"event\": \"Theater Play\",\n  \"venue\": \"Grand Theater\",\n  \"seats\": [\n    {\n      \"row\": \"A\",\n      \"number\": 10,\n      \"available\": true\n    {\n      \"row\": \"B\",\n      \"number\": 5,\n      \"available\": false\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Sports Match",
+        "date": "2023-12-15",
+        "tickets_sold": [
+          {
+            "section": "Upper Deck",
+            "count": 150
+          },
+          {
+            "section": "Lower Deck",
+            "count": 200
+          }
+        ]
+      },
+      "{\n  \"event\": \"Sports Match\",\n  \"date\": \"2023-12-15\",\n  \"tickets_sold\": [\n    {\n      \"section\": \"Upper Deck\",\n      \"count\": 150\n    {\n      \"section\": \"Lower Deck\",\n      \"count\": 200\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Charity Gala",
+        "location": "City Hall",
+        "guests": [
+          {
+            "name": "John Doe",
+            "table": 5
+          },
+          {
+            "name": "Jane Smith",
+            "table": 5
+          }
+        ]
+      },
+      "{\n  \"event\": \"Charity Gala\",\n  \"location\": \"City Hall\",\n  \"guests\": [\n    {\n      \"name\": \"John Doe\",\n      \"table\": 5\n    {\n      \"name\": \"Jane Smith\",\n      \"table\": 5\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Film Festival",
+        "films": [
+          {
+            "title": "The First Light",
+            "director": "A. Director"
+          },
+          {
+            "title": "Journey's End",
+            "director": "B. Filmmaker"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Film Festival\",\n  \"films\": [\n    {\n      \"title\": \"The First Light\",\n      \"director\": \"A. Director\"\n    {\n      \"title\": \"Journey's End\",\n      \"director\": \"B. Filmmaker\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Art Exhibition",
+        "artists": [
+          {
+            "name": "Leonardo",
+            "medium": "Oil on Canvas"
+          },
+          {
+            "name": "Michelangelo",
+            "medium": "Sculpture"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Art Exhibition\",\n  \"artists\": [\n    {\n      \"name\": \"Leonardo\",\n      \"medium\": \"Oil on Canvas\"\n    {\n      \"name\": \"Michelangelo\",\n      \"medium\": \"Sculpture\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Workshop",
+        "instructors": [
+          {
+            "name": "Prof. Adams",
+            "topic": "Advanced Techniques"
+          },
+          {
+            "name": "Dr. Baker",
+            "topic": "Introductory Course"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Workshop\",\n  \"instructors\": [\n    {\n      \"name\": \"Prof. Adams\",\n      \"topic\": \"Advanced Techniques\"\n    {\n      \"name\": \"Dr. Baker\",\n      \"topic\": \"Introductory Course\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Book Signing",
+        "author": "Famous Writer",
+        "books": [
+          {
+            "title": "Bestseller One",
+            "copies": 100
+          },
+          {
+            "title": "Bestseller Two",
+            "copies": 150
+          }
+        ]
+      },
+      "{\n  \"event\": \"Book Signing\",\n  \"author\": \"Famous Writer\",\n  \"books\": [\n    {\n      \"title\": \"Bestseller One\",\n      \"copies\": 100\n    {\n      \"title\": \"Bestseller Two\",\n      \"copies\": 150\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Gaming Convention",
+        "games": [
+          {
+            "title": "Space Adventure",
+            "platform": "PC"
+          },
+          {
+            "title": "Mystery Island",
+            "platform": "Console"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Gaming Convention\",\n  \"games\": [\n    {\n      \"title\": \"Space Adventure\",\n      \"platform\": \"PC\"\n    {\n      \"title\": \"Mystery Island\",\n      \"platform\": \"Console\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Tech Conference",
+        "sessions": [
+          {
+            "topic": "AI Innovations",
+            "speaker": "Dr. Innovate"
+          },
+          {
+            "topic": "Cybersecurity",
+            "speaker": "Mr. Secure"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Tech Conference\",\n  \"sessions\": [\n    {\n      \"topic\": \"AI Innovations\",\n      \"speaker\": \"Dr. Innovate\"\n    {\n      \"topic\": \"Cybersecurity\",\n      \"speaker\": \"Mr. Secure\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Bug Tracker",
+        "issues": [
+          {
+            "id": 101,
+            "title": "Login button not working",
+            "status": "open",
+            "comments": [
+              {
+                "user": "dev1",
+                "comment": "Please provide more details."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Bug Tracker\",\n  \"issues\": [\n    {\n      \"id\": 101,\n      \"title\": \"Login button not working\",\n      \"status\": \"open\",\n      \"comments\": [\n        {\n          \"user\": \"dev1\",\n          \"comment\": \"Please provide more details.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Issue Tracker",
+        "issues": [
+          {
+            "id": 202,
+            "title": "Page not loading",
+            "status": "closed",
+            "comments": [
+              {
+                "user": "tester1",
+                "comment": "Resolved by clearing cache."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Issue Tracker\",\n  \"issues\": [\n    {\n      \"id\": 202,\n      \"title\": \"Page not loading\",\n      \"status\": \"closed\",\n      \"comments\": [\n        {\n          \"user\": \"tester1\",\n          \"comment\": \"Resolved by clearing cache.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Error Tracker",
+        "issues": [
+          {
+            "id": 303,
+            "title": "UI glitch on dashboard",
+            "status": "in progress",
+            "comments": [
+              {
+                "user": "dev3",
+                "comment": "Working on the resolution."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Error Tracker\",\n  \"issues\": [\n    {\n      \"id\": 303,\n      \"title\": \"UI glitch on dashboard\",\n      \"status\": \"in progress\",\n      \"comments\": [\n        {\n          \"user\": \"dev3\",\n          \"comment\": \"Working on the resolution.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Task Tracker",
+        "issues": [
+          {
+            "id": 404,
+            "title": "Server timeout error",
+            "status": "open",
+            "comments": [
+              {
+                "user": "admin",
+                "comment": "Investigating server logs."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Task Tracker\",\n  \"issues\": [\n    {\n      \"id\": 404,\n      \"title\": \"Server timeout error\",\n      \"status\": \"open\",\n      \"comments\": [\n        {\n          \"user\": \"admin\",\n          \"comment\": \"Investigating server logs.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Bug Monitoring",
+        "issues": [
+          {
+            "id": 505,
+            "title": "Memory leak detected",
+            "status": "open",
+            "comments": [
+              {
+                "user": "dev5",
+                "comment": "Potential issue in module X."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Bug Monitoring\",\n  \"issues\": [\n    {\n      \"id\": 505,\n      \"title\": \"Memory leak detected\",\n      \"status\": \"open\",\n      \"comments\": [\n        {\n          \"user\": \"dev5\",\n          \"comment\": \"Potential issue in module X.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Defect Tracker",
+        "issues": [
+          {
+            "id": 606,
+            "title": "API endpoint failure",
+            "status": "resolved",
+            "comments": [
+              {
+                "user": "lead",
+                "comment": "Refactored the endpoint code."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Defect Tracker\",\n  \"issues\": [\n    {\n      \"id\": 606,\n      \"title\": \"API endpoint failure\",\n      \"status\": \"resolved\",\n      \"comments\": [\n        {\n          \"user\": \"lead\",\n          \"comment\": \"Refactored the endpoint code.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Fault Tracker",
+        "issues": [
+          {
+            "id": 707,
+            "title": "Graphics rendering issue",
+            "status": "open",
+            "comments": [
+              {
+                "user": "gfxdev",
+                "comment": "Issue with rendering pipeline."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Fault Tracker\",\n  \"issues\": [\n    {\n      \"id\": 707,\n      \"title\": \"Graphics rendering issue\",\n      \"status\": \"open\",\n      \"comments\": [\n        {\n          \"user\": \"gfxdev\",\n          \"comment\": \"Issue with rendering pipeline.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Glitch Reporter",
+        "issues": [
+          {
+            "id": 808,
+            "title": "Audio playback error",
+            "status": "in review",
+            "comments": [
+              {
+                "user": "audiodev",
+                "comment": "Checking codec compatibility."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Glitch Reporter\",\n  \"issues\": [\n    {\n      \"id\": 808,\n      \"title\": \"Audio playback error\",\n      \"status\": \"in review\",\n      \"comments\": [\n        {\n          \"user\": \"audiodev\",\n          \"comment\": \"Checking codec compatibility.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Debug Log",
+        "issues": [
+          {
+            "id": 909,
+            "title": "Database connection lost",
+            "status": "open",
+            "comments": [
+              {
+                "user": "dbadmin",
+                "comment": "Possible network issue."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Debug Log\",\n  \"issues\": [\n    {\n      \"id\": 909,\n      \"title\": \"Database connection lost\",\n      \"status\": \"open\",\n      \"comments\": [\n        {\n          \"user\": \"dbadmin\",\n          \"comment\": \"Possible network issue.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Incident Report",
+        "issues": [
+          {
+            "id": 1010,
+            "title": "Unexpected shutdown",
+            "status": "open",
+            "comments": [
+              {
+                "user": "sysadmin",
+                "comment": "Monitoring for recurrence."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"project\": \"Incident Report\",\n  \"issues\": [\n    {\n      \"id\": 1010,\n      \"title\": \"Unexpected shutdown\",\n      \"status\": \"open\",\n      \"comments\": [\n        {\n          \"user\": \"sysadmin\",\n          \"comment\": \"Monitoring for recurrence.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "123XYZ",
+        "maintenanceRecords": [
+          {
+            "date": "2023-08-15",
+            "service": "Oil Change",
+            "mileage": 15000
+          },
+          {
+            "date": "2023-10-20",
+            "service": "Tire Rotation",
+            "mileage": 20000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"123XYZ\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-08-15\",\n      \"service\": \"Oil Change\",\n      \"mileage\": 15000\n    ,\n    {\n      \"date\": \"2023-10-20\",\n      \"service\": \"Tire Rotation\",\n      \"mileage\": 20000\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "456ABC",
+        "maintenanceRecords": [
+          {
+            "date": "2023-07-10",
+            "service": "Brake Inspection",
+            "mileage": 25000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"456ABC\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-07-10\",\n      \"service\": \"Brake Inspection\",\n      \"mileage\": 25000\n    \n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "789DEF",
+        "maintenanceRecords": [
+          {
+            "date": "2023-05-22",
+            "service": "Battery Replacement",
+            "mileage": 18000
+          },
+          {
+            "date": "2023-09-14",
+            "service": "Air Filter Change",
+            "mileage": 22000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"789DEF\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-05-22\",\n      \"service\": \"Battery Replacement\",\n      \"mileage\": 18000\n    },\n    {\n      \"date\": \"2023-09-14\",\n      \"service\": \"Air Filter Change\",\n      \"mileage\": 22000\n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "101GHI",
+        "maintenanceRecords": [
+          {
+            "date": "2023-06-30",
+            "service": "Transmission Fluid Change",
+            "mileage": 30000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"101GHI\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-06-30\",\n      \"service\": \"Transmission Fluid Change\",\n      \"mileage\": 30000\n    \n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "202JKL",
+        "maintenanceRecords": [
+          {
+            "date": "2023-04-18",
+            "service": "Spark Plug Replacement",
+            "mileage": 40000
+          },
+          {
+            "date": "2023-09-30",
+            "service": "Coolant Flush",
+            "mileage": 45000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"202JKL\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-04-18\",\n      \"service\": \"Spark Plug Replacement\",\n      \"mileage\": 40000\n    ,\n    {\n      \"date\": \"2023-09-30\",\n      \"service\": \"Coolant Flush\",\n      \"mileage\": 45000\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "303MNO",
+        "maintenanceRecords": [
+          {
+            "date": "2023-03-11",
+            "service": "Wiper Blade Replacement",
+            "mileage": 35000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"303MNO\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-03-11\",\n      \"service\": \"Wiper Blade Replacement\",\n      \"mileage\": 35000\n    \n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "404PQR",
+        "maintenanceRecords": [
+          {
+            "date": "2023-01-25",
+            "service": "Headlight Bulb Replacement",
+            "mileage": 32000
+          },
+          {
+            "date": "2023-08-19",
+            "service": "Fuel System Cleaning",
+            "mileage": 37000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"404PQR\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-01-25\",\n      \"service\": \"Headlight Bulb Replacement\",\n      \"mileage\": 32000\n    }\n    {\n      \"date\": \"2023-08-19\",\n      \"service\": \"Fuel System Cleaning\",\n      \"mileage\": 37000\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "505STU",
+        "maintenanceRecords": [
+          {
+            "date": "2023-02-14",
+            "service": "Engine Tune-Up",
+            "mileage": 28000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"505STU\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-02-14\",\n      \"service\": \"Engine Tune-Up\",\n      \"mileage\": 28000\n    \n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "606VWX",
+        "maintenanceRecords": [
+          {
+            "date": "2023-03-29",
+            "service": "Exhaust System Check",
+            "mileage": 33000
+          },
+          {
+            "date": "2023-07-12",
+            "service": "Alignment",
+            "mileage": 38000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"606VWX\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-03-29\",\n      \"service\": \"Exhaust System Check\",\n      \"mileage\": 33000\n    ,\n    {\n      \"date\": \"2023-07-12\",\n      \"service\": \"Alignment\",\n      \"mileage\": 38000\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "vehicleId": "707YZA",
+        "maintenanceRecords": [
+          {
+            "date": "2023-08-05",
+            "service": "Air Conditioning Service",
+            "mileage": 36000
+          }
+        ]
+      },
+      "{\n  \"vehicleId\": \"707YZA\",\n  \"maintenanceRecords\": [\n    {\n      \"date\": \"2023-08-05\",\n      \"service\": \"Air Conditioning Service\",\n      \"mileage\": 36000\n    \n  ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 1,
+            "name": "John Doe",
+            "attendance": [
+              {
+                "date": "2023-10-01",
+                "status": "present"
+              },
+              {
+                "date": "2023-10-02",
+                "status": "absent"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Jane Smith",
+            "attendance": [
+              {
+                "date": "2023-10-01",
+                "status": "present"
+              },
+              {
+                "date": "2023-10-02",
+                "status": "present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"employees\": [\n    {\n      \"id\": 1,\n      \"name\": \"John Doe\",\n      \"attendance\": [\n        {\"date\": \"2023-10-01\", \"status\": \"present\"}\n        {\"date\": \"2023-10-02\", \"status\": \"absent\"}\n      ]\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Jane Smith\",\n      \"attendance\": [\n        {\"date\": \"2023-10-01\", \"status\": \"present\"}\n        {\"date\": \"2023-10-02\", \"status\": \"present\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "departments": [
+          {
+            "dept_id": 101,
+            "name": "HR",
+            "employees": [
+              {
+                "id": 1,
+                "name": "Alice",
+                "days_present": 20
+              },
+              {
+                "id": 2,
+                "name": "Bob",
+                "days_present": 18
+              }
+            ]
+          },
+          {
+            "dept_id": 102,
+            "name": "Engineering",
+            "employees": [
+              {
+                "id": 3,
+                "name": "Charlie",
+                "days_present": 22
+              },
+              {
+                "id": 4,
+                "name": "David",
+                "days_present": 19
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"departments\": [\n    {\n      \"dept_id\": 101,\n      \"name\": \"HR\",\n      \"employees\": [\n        {\"id\": 1, \"name\": \"Alice\", \"days_present\": 20}\n        {\"id\": 2, \"name\": \"Bob\", \"days_present\": 18}\n      ]\n    },\n    {\n      \"dept_id\": 102,\n      \"name\": \"Engineering\",\n      \"employees\": [\n        {\"id\": 3, \"name\": \"Charlie\", \"days_present\": 22}\n        {\"id\": 4, \"name\": \"David\", \"days_present\": 19}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "teams": [
+          {
+            "team_name": "Team A",
+            "members": [
+              {
+                "name": "Eve",
+                "id": 5,
+                "attendance_percentage": 95
+              },
+              {
+                "name": "Frank",
+                "id": 6,
+                "attendance_percentage": 92
+              }
+            ]
+          },
+          {
+            "team_name": "Team B",
+            "members": [
+              {
+                "name": "Grace",
+                "id": 7,
+                "attendance_percentage": 88
+              },
+              {
+                "name": "Heidi",
+                "id": 8,
+                "attendance_percentage": 90
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"teams\": [\n    {\n      \"team_name\": \"Team A\",\n      \"members\": [\n        {\"name\": \"Eve\", \"id\": 5, \"attendance_percentage\": 95}\n        {\"name\": \"Frank\", \"id\": 6, \"attendance_percentage\": 92}\n      ]\n    },\n    {\n      \"team_name\": \"Team B\",\n      \"members\": [\n        {\"name\": \"Grace\", \"id\": 7, \"attendance_percentage\": 88}\n        {\"name\": \"Heidi\", \"id\": 8, \"attendance_percentage\": 90}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "projects": [
+          {
+            "project_id": 201,
+            "name": "Project X",
+            "attendees": [
+              {
+                "employee_id": 9,
+                "time_in": "09:00",
+                "time_out": "17:00"
+              },
+              {
+                "employee_id": 10,
+                "time_in": "09:30",
+                "time_out": "17:30"
+              }
+            ]
+          },
+          {
+            "project_id": 202,
+            "name": "Project Y",
+            "attendees": [
+              {
+                "employee_id": 11,
+                "time_in": "08:45",
+                "time_out": "16:45"
+              },
+              {
+                "employee_id": 12,
+                "time_in": "09:15",
+                "time_out": "17:15"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"projects\": [\n    {\n      \"project_id\": 201,\n      \"name\": \"Project X\",\n      \"attendees\": [\n        {\"employee_id\": 9, \"time_in\": \"09:00\", \"time_out\": \"17:00\"}\n        {\"employee_id\": 10, \"time_in\": \"09:30\", \"time_out\": \"17:30\"}\n      ]\n    },\n    {\n      \"project_id\": 202,\n      \"name\": \"Project Y\",\n      \"attendees\": [\n        {\"employee_id\": 11, \"time_in\": \"08:45\", \"time_out\": \"16:45\"}\n        {\"employee_id\": 12, \"time_in\": \"09:15\", \"time_out\": \"17:15\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "locations": [
+          {
+            "office": "New York",
+            "employees": [
+              {
+                "id": 13,
+                "attendance_days": 18
+              },
+              {
+                "id": 14,
+                "attendance_days": 19
+              }
+            ]
+          },
+          {
+            "office": "Los Angeles",
+            "employees": [
+              {
+                "id": 15,
+                "attendance_days": 20
+              },
+              {
+                "id": 16,
+                "attendance_days": 17
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"locations\": [\n    {\n      \"office\": \"New York\",\n      \"employees\": [\n        {\"id\": 13, \"attendance_days\": 18}\n        {\"id\": 14, \"attendance_days\": 19}\n      ]\n    },\n    {\n      \"office\": \"Los Angeles\",\n      \"employees\": [\n        {\"id\": 15, \"attendance_days\": 20}\n        {\"id\": 16, \"attendance_days\": 17}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "shifts": [
+          {
+            "shift_name": "Morning",
+            "employees": [
+              {
+                "id": 17,
+                "start_time": "08:00",
+                "end_time": "16:00"
+              },
+              {
+                "id": 18,
+                "start_time": "09:00",
+                "end_time": "17:00"
+              }
+            ]
+          },
+          {
+            "shift_name": "Evening",
+            "employees": [
+              {
+                "id": 19,
+                "start_time": "14:00",
+                "end_time": "22:00"
+              },
+              {
+                "id": 20,
+                "start_time": "15:00",
+                "end_time": "23:00"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"shifts\": [\n    {\n      \"shift_name\": \"Morning\",\n      \"employees\": [\n        {\"id\": 17, \"start_time\": \"08:00\", \"end_time\": \"16:00\"}\n        {\"id\": 18, \"start_time\": \"09:00\", \"end_time\": \"17:00\"}\n      ]\n    },\n    {\n      \"shift_name\": \"Evening\",\n      \"employees\": [\n        {\"id\": 19, \"start_time\": \"14:00\", \"end_time\": \"22:00\"}\n        {\"id\": 20, \"start_time\": \"15:00\", \"end_time\": \"23:00\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "events": [
+          {
+            "event_id": 301,
+            "name": "Annual Meeting",
+            "participants": [
+              {
+                "employee_id": 21,
+                "status": "confirmed"
+              },
+              {
+                "employee_id": 22,
+                "status": "pending"
+              }
+            ]
+          },
+          {
+            "event_id": 302,
+            "name": "Tech Conference",
+            "participants": [
+              {
+                "employee_id": 23,
+                "status": "confirmed"
+              },
+              {
+                "employee_id": 24,
+                "status": "declined"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"events\": [\n    {\n      \"event_id\": 301,\n      \"name\": \"Annual Meeting\",\n      \"participants\": [\n        {\"employee_id\": 21, \"status\": \"confirmed\"}\n        {\"employee_id\": 22, \"status\": \"pending\"}\n      ]\n    },\n    {\n      \"event_id\": 302,\n      \"name\": \"Tech Conference\",\n      \"participants\": [\n        {\"employee_id\": 23, \"status\": \"confirmed\"}\n        {\"employee_id\": 24, \"status\": \"declined\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "training_sessions": [
+          {
+            "session_id": 401,
+            "topic": "Leadership",
+            "attendees": [
+              {
+                "emp_id": 25,
+                "feedback": "excellent"
+              },
+              {
+                "emp_id": 26,
+                "feedback": "good"
+              }
+            ]
+          },
+          {
+            "session_id": 402,
+            "topic": "Communication",
+            "attendees": [
+              {
+                "emp_id": 27,
+                "feedback": "satisfactory"
+              },
+              {
+                "emp_id": 28,
+                "feedback": "needs improvement"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"training_sessions\": [\n    {\n      \"session_id\": 401,\n      \"topic\": \"Leadership\",\n      \"attendees\": [\n        {\"emp_id\": 25, \"feedback\": \"excellent\"}\n        {\"emp_id\": 26, \"feedback\": \"good\"}\n      ]\n    },\n    {\n      \"session_id\": 402,\n      \"topic\": \"Communication\",\n      \"attendees\": [\n        {\"emp_id\": 27, \"feedback\": \"satisfactory\"}\n        {\"emp_id\": 28, \"feedback\": \"needs improvement\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "holidays": [
+          {
+            "date": "2023-12-25",
+            "name": "Christmas",
+            "employees_on_leave": [
+              {
+                "id": 29,
+                "reason": "personal"
+              },
+              {
+                "id": 30,
+                "reason": "vacation"
+              }
+            ]
+          },
+          {
+            "date": "2023-01-01",
+            "name": "New Year",
+            "employees_on_leave": [
+              {
+                "id": 31,
+                "reason": "vacation"
+              },
+              {
+                "id": 32,
+                "reason": "family"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"holidays\": [\n    {\n      \"date\": \"2023-12-25\",\n      \"name\": \"Christmas\",\n      \"employees_on_leave\": [\n        {\"id\": 29, \"reason\": \"personal\"}\n        {\"id\": 30, \"reason\": \"vacation\"}\n      ]\n    },\n    {\n      \"date\": \"2023-01-01\",\n      \"name\": \"New Year\",\n      \"employees_on_leave\": [\n        {\"id\": 31, \"reason\": \"vacation\"}\n        {\"id\": 32, \"reason\": \"family\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "workshops": [
+          {
+            "workshop_id": 501,
+            "title": "Team Building",
+            "participants": [
+              {
+                "employee_id": 33,
+                "role": "speaker"
+              },
+              {
+                "employee_id": 34,
+                "role": "participant"
+              }
+            ]
+          },
+          {
+            "workshop_id": 502,
+            "title": "Project Management",
+            "participants": [
+              {
+                "employee_id": 35,
+                "role": "organizer"
+              },
+              {
+                "employee_id": 36,
+                "role": "attendee"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"workshops\": [\n    {\n      \"workshop_id\": 501,\n      \"title\": \"Team Building\",\n      \"participants\": [\n        {\"employee_id\": 33, \"role\": \"speaker\"}\n        {\"employee_id\": 34, \"role\": \"participant\"}\n      ]\n    },\n    {\n      \"workshop_id\": 502,\n      \"title\": \"Project Management\",\n      \"participants\": [\n        {\"employee_id\": 35, \"role\": \"organizer\"}\n        {\"employee_id\": 36, \"role\": \"attendee\"}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Benefits of Online Learning",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "user123",
+            "content": "I think online learning offers great flexibility.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "user456",
+                "content": "I agree! It's perfect for balancing work and study."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Benefits of Online Learning\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"user123\",\n            \"content\": \"I think online learning offers great flexibility.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"user456\",\n                    \"content\": \"I agree! It's perfect for balancing work and study.\"\n                ]\n            \n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "How to Cook Pasta",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "chefMike",
+            "content": "Boil water, add pasta, cook for 10 minutes.",
+            "replies": []
+          },
+          {
+            "postId": 2,
+            "author": "foodieJane",
+            "content": "Don't forget to add salt to the water!",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "chefMike",
+                "content": "Good tip!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"How to Cook Pasta\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"chefMike\",\n            \"content\": \"Boil water, add pasta, cook for 10 minutes.\",\n            \"replies\": []\n        ,\n        {\n            \"postId\": 2,\n            \"author\": \"foodieJane\",\n            \"content\": \"Don't forget to add salt to the water!\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"chefMike\",\n                    \"content\": \"Good tip!\"\n                }\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Best Programming Language",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "devGuy",
+            "content": "Python is great for beginners.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "coderGirl",
+                "content": "True, and it's versatile for many applications."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Best Programming Language\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"devGuy\",\n            \"content\": \"Python is great for beginners.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"coderGirl\",\n                    \"content\": \"True, and it's versatile for many applications.\"\n                ]\n            \n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Travel Tips",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "traveler1",
+            "content": "Always pack light.",
+            "replies": []
+          },
+          {
+            "postId": 2,
+            "author": "backpacker",
+            "content": "Make sure to have a travel insurance.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "traveler1",
+                "content": "That's crucial!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Travel Tips\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"traveler1\",\n            \"content\": \"Always pack light.\",\n            \"replies\": []\n        ,\n        {\n            \"postId\": 2,\n            \"author\": \"backpacker\",\n            \"content\": \"Make sure to have a travel insurance.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"traveler1\",\n                    \"content\": \"That's crucial!\"\n                }\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Gardening Tips",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "greenThumb",
+            "content": "Water your plants in the early morning.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "plantLover",
+                "content": "That's when they can absorb it best."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Gardening Tips\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"greenThumb\",\n            \"content\": \"Water your plants in the early morning.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"plantLover\",\n                    \"content\": \"That's when they can absorb it best.\"\n                ]\n            \n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Pet Care",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "petOwner",
+            "content": "Ensure your pet gets regular vet check-ups.",
+            "replies": []
+          },
+          {
+            "postId": 2,
+            "author": "vetExpert",
+            "content": "Also, consider a balanced diet for your pets.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "petOwner",
+                "content": "Definitely, it's very important!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Pet Care\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"petOwner\",\n            \"content\": \"Ensure your pet gets regular vet check-ups.\",\n            \"replies\": []\n        ,\n        {\n            \"postId\": 2,\n            \"author\": \"vetExpert\",\n            \"content\": \"Also, consider a balanced diet for your pets.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"petOwner\",\n                    \"content\": \"Definitely, it's very important!\"\n                }\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Healthy Recipes",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "chefAnna",
+            "content": "Try adding avocado to your salads.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "foodieTom",
+                "content": "Avocados are so nutritious!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Healthy Recipes\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"chefAnna\",\n            \"content\": \"Try adding avocado to your salads.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"foodieTom\",\n                    \"content\": \"Avocados are so nutritious!\"\n                ]\n            \n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Work-Life Balance",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "workHard",
+            "content": "Make time for yourself every day.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "lifeCoach",
+                "content": "Yes, self-care is crucial."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Work-Life Balance\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"workHard\",\n            \"content\": \"Make time for yourself every day.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"lifeCoach\",\n                    \"content\": \"Yes, self-care is crucial.\"\n                ]\n            \n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Photography Techniques",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "photoFan",
+            "content": "Use natural light as much as possible.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "proShooter",
+                "content": "Natural light gives the best results."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Photography Techniques\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"photoFan\",\n            \"content\": \"Use natural light as much as possible.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"proShooter\",\n                    \"content\": \"Natural light gives the best results.\"\n                ]\n            \n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadTitle": "Best Exercise Routines",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "fitnessGuru",
+            "content": "Combine cardio with strength training.",
+            "replies": [
+              {
+                "replyId": 1,
+                "author": "gymRat",
+                "content": "A solid approach for overall fitness."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"threadTitle\": \"Best Exercise Routines\",\n    \"posts\": [\n        {\n            \"postId\": 1,\n            \"author\": \"fitnessGuru\",\n            \"content\": \"Combine cardio with strength training.\",\n            \"replies\": [\n                {\n                    \"replyId\": 1,\n                    \"author\": \"gymRat\",\n                    \"content\": \"A solid approach for overall fitness.\"\n                ]\n            \n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Downtown",
+        "date": "2023-10-01",
+        "foot_traffic": [
+          {
+            "hour": "09:00",
+            "count": 50
+          },
+          {
+            "hour": "10:00",
+            "count": 75
+          },
+          {
+            "hour": "11:00",
+            "count": 100
+          }
+        ]
+      },
+      "{\n    \"store\": \"Downtown\",\n    \"date\": \"2023-10-01\",\n    \"foot_traffic\": [\n        {\"hour\": \"09:00\", \"count\": 50,\n        {\"hour\": \"10:00\", \"count\": 75},\n        {\"hour\": \"11:00\", \"count\": 100}\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Uptown",
+        "date": "2023-10-02",
+        "foot_traffic": [
+          {
+            "hour": "13:00",
+            "count": 150
+          },
+          {
+            "hour": "14:00",
+            "count": 200
+          },
+          {
+            "hour": "15:00",
+            "count": 250
+          }
+        ]
+      },
+      "{\n    \"store\": \"Uptown\",\n    \"date\": \"2023-10-02\",\n    \"foot_traffic\": [\n        {\"hour\": \"13:00\", \"count\": 150},\n        {\"hour\": \"14:00\", \"count\": 200\n        {\"hour\": \"15:00\", \"count\": 250}\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Suburban",
+        "date": "2023-10-03",
+        "foot_traffic": [
+          {
+            "hour": "08:00",
+            "count": 45
+          },
+          {
+            "hour": "09:00",
+            "count": 90
+          },
+          {
+            "hour": "10:00",
+            "count": 130
+          }
+        ]
+      },
+      "{\n    \"store\": \"Suburban\",\n    \"date\": \"2023-10-03\",\n    \"foot_traffic\": [\n        {\"hour\": \"08:00\", \"count\": 45},\n        {\"hour\": \"09:00\", \"count\": 90},\n        {\"hour\": \"10:00\", \"count\": 130\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Mall",
+        "date": "2023-10-04",
+        "foot_traffic": [
+          {
+            "hour": "16:00",
+            "count": 300
+          },
+          {
+            "hour": "17:00",
+            "count": 350
+          },
+          {
+            "hour": "18:00",
+            "count": 400
+          }
+        ]
+      },
+      "{\n    \"store\": \"Mall\",\n    \"date\": \"2023-10-04\",\n    \"foot_traffic\": [\n        {\"hour\": \"16:00\", \"count\": 300},\n        {\"hour\": \"17:00\", \"count\": 350\n        {\"hour\": \"18:00\", \"count\": 400}\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Airport",
+        "date": "2023-10-05",
+        "foot_traffic": [
+          {
+            "hour": "06:00",
+            "count": 120
+          },
+          {
+            "hour": "07:00",
+            "count": 180
+          },
+          {
+            "hour": "08:00",
+            "count": 240
+          }
+        ]
+      },
+      "{\n    \"store\": \"Airport\",\n    \"date\": \"2023-10-05\",\n    \"foot_traffic\": [\n        {\"hour\": \"06:00\", \"count\": 120},\n        {\"hour\": \"07:00\", \"count\": 180},\n        {\"hour\": \"08:00\", \"count\": 240\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Outlet",
+        "date": "2023-10-06",
+        "foot_traffic": [
+          {
+            "hour": "12:00",
+            "count": 220
+          },
+          {
+            "hour": "13:00",
+            "count": 270
+          },
+          {
+            "hour": "14:00",
+            "count": 320
+          }
+        ]
+      },
+      "{\n    \"store\": \"Outlet\",\n    \"date\": \"2023-10-06\",\n    \"foot_traffic\": [\n        {\"hour\": \"12:00\", \"count\": 220,\n        {\"hour\": \"13:00\", \"count\": 270},\n        {\"hour\": \"14:00\", \"count\": 320}\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Corner Shop",
+        "date": "2023-10-07",
+        "foot_traffic": [
+          {
+            "hour": "07:00",
+            "count": 35
+          },
+          {
+            "hour": "08:00",
+            "count": 55
+          },
+          {
+            "hour": "09:00",
+            "count": 75
+          }
+        ]
+      },
+      "{\n    \"store\": \"Corner Shop\",\n    \"date\": \"2023-10-07\",\n    \"foot_traffic\": [\n        {\"hour\": \"07:00\", \"count\": 35},\n        {\"hour\": \"08:00\", \"count\": 55,\n        {\"hour\": \"09:00\", \"count\": 75}\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Supermarket",
+        "date": "2023-10-08",
+        "foot_traffic": [
+          {
+            "hour": "10:00",
+            "count": 180
+          },
+          {
+            "hour": "11:00",
+            "count": 210
+          },
+          {
+            "hour": "12:00",
+            "count": 250
+          }
+        ]
+      },
+      "{\n    \"store\": \"Supermarket\",\n    \"date\": \"2023-10-08\",\n    \"foot_traffic\": [\n        {\"hour\": \"10:00\", \"count\": 180},\n        {\"hour\": \"11:00\", \"count\": 210},\n        {\"hour\": \"12:00\", \"count\": 250\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Gas Station",
+        "date": "2023-10-09",
+        "foot_traffic": [
+          {
+            "hour": "05:00",
+            "count": 60
+          },
+          {
+            "hour": "06:00",
+            "count": 100
+          },
+          {
+            "hour": "07:00",
+            "count": 140
+          }
+        ]
+      },
+      "{\n    \"store\": \"Gas Station\",\n    \"date\": \"2023-10-09\",\n    \"foot_traffic\": [\n        {\"hour\": \"05:00\", \"count\": 60,\n        {\"hour\": \"06:00\", \"count\": 100},\n        {\"hour\": \"07:00\", \"count\": 140}\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Tech Hub",
+        "date": "2023-10-10",
+        "foot_traffic": [
+          {
+            "hour": "11:00",
+            "count": 330
+          },
+          {
+            "hour": "12:00",
+            "count": 360
+          },
+          {
+            "hour": "13:00",
+            "count": 390
+          }
+        ]
+      },
+      "{\n    \"store\": \"Tech Hub\",\n    \"date\": \"2023-10-10\",\n    \"foot_traffic\": [\n        {\"hour\": \"11:00\", \"count\": 330},\n        {\"hour\": \"12:00\", \"count\": 360\n        {\"hour\": \"13:00\", \"count\": 390}\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Chill Vibes",
+        "tracks": [
+          {
+            "title": "Sunset Lover",
+            "artist": "Petit Biscuit"
+          },
+          {
+            "title": "Weightless",
+            "artist": "Marconi Union"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Chill Vibes\",\n    \"tracks\": [\n        {\n            \"title\": \"Sunset Lover\",\n            \"artist\": \"Petit Biscuit\"\n        ,\n        {\n            \"title\": \"Weightless\",\n            \"artist\": \"Marconi Union\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Workout Mix",
+        "tracks": [
+          {
+            "title": "Stronger",
+            "artist": "Kanye West"
+          },
+          {
+            "title": "Eye of the Tiger",
+            "artist": "Survivor"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Workout Mix\",\n    \"tracks\": [\n        {\n            \"title\": \"Stronger\",\n            \"artist\": \"Kanye West\"\n        {\n            \"title\": \"Eye of the Tiger\",\n            \"artist\": \"Survivor\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Road Trip",
+        "tracks": [
+          {
+            "title": "On the Road Again",
+            "artist": "Willie Nelson"
+          },
+          {
+            "title": "Life is a Highway",
+            "artist": "Tom Cochrane"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Road Trip\",\n    \"tracks\": [\n        {\n            \"title\": \"On the Road Again\",\n            \"artist\": \"Willie Nelson\"\n        }\n        {\n            \"title\": \"Life is a Highway\",\n            \"artist\": \"Tom Cochrane\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Party Playlist",
+        "tracks": [
+          {
+            "title": "Uptown Funk",
+            "artist": "Mark Ronson ft. Bruno Mars"
+          },
+          {
+            "title": "Shake It Off",
+            "artist": "Taylor Swift"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Party Playlist\",\n    \"tracks\": [\n        {\n            \"title\": \"Uptown Funk\",\n            \"artist\": \"Mark Ronson ft. Bruno Mars\"\n        ,{\n            \"title\": \"Shake It Off\",\n            \"artist\": \"Taylor Swift\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Study Tunes",
+        "tracks": [
+          {
+            "title": "Clair de Lune",
+            "artist": "Claude Debussy"
+          },
+          {
+            "title": "Nocturne in E-flat major",
+            "artist": "Frederic Chopin"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Study Tunes\",\n    \"tracks\": [\n        {\n            \"title\": \"Clair de Lune\",\n            \"artist\": \"Claude Debussy\"\n        {\n            \"title\": \"Nocturne in E-flat major\",\n            \"artist\": \"Frederic Chopin\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Indie Essentials",
+        "tracks": [
+          {
+            "title": "Electric Feel",
+            "artist": "MGMT"
+          },
+          {
+            "title": "Fluorescent Adolescent",
+            "artist": "Arctic Monkeys"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Indie Essentials\",\n    \"tracks\": [\n        {\n            \"title\": \"Electric Feel\",\n            \"artist\": \"MGMT\"\n        ,{\n            \"title\": \"Fluorescent Adolescent\",\n            \"artist\": \"Arctic Monkeys\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Relaxation",
+        "tracks": [
+          {
+            "title": "Weightless",
+            "artist": "Marconi Union"
+          },
+          {
+            "title": "Watermark",
+            "artist": "Enya"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Relaxation\",\n    \"tracks\": [\n        {\n            \"title\": \"Weightless\",\n            \"artist\": \"Marconi Union\"\n        {\n            \"title\": \"Watermark\",\n            \"artist\": \"Enya\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Classic Rock",
+        "tracks": [
+          {
+            "title": "Bohemian Rhapsody",
+            "artist": "Queen"
+          },
+          {
+            "title": "Hotel California",
+            "artist": "Eagles"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Classic Rock\",\n    \"tracks\": [\n        {\n            \"title\": \"Bohemian Rhapsody\",\n            \"artist\": \"Queen\"\n        ,{\n            \"title\": \"Hotel California\",\n            \"artist\": \"Eagles\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Pop Hits",
+        "tracks": [
+          {
+            "title": "Blinding Lights",
+            "artist": "The Weeknd"
+          },
+          {
+            "title": "Levitating",
+            "artist": "Dua Lipa"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Pop Hits\",\n    \"tracks\": [\n        {\n            \"title\": \"Blinding Lights\",\n            \"artist\": \"The Weeknd\"\n        {\n            \"title\": \"Levitating\",\n            \"artist\": \"Dua Lipa\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlist_name": "Jazz Classics",
+        "tracks": [
+          {
+            "title": "Take Five",
+            "artist": "Dave Brubeck"
+          },
+          {
+            "title": "So What",
+            "artist": "Miles Davis"
+          }
+        ]
+      },
+      "{\n    \"playlist_name\": \"Jazz Classics\",\n    \"tracks\": [\n        {\n            \"title\": \"Take Five\",\n            \"artist\": \"Dave Brubeck\"\n        ,{\n            \"title\": \"So What\",\n            \"artist\": \"Miles Davis\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "user_id": 12345,
+        "trips": [
+          {
+            "trip_id": "A1",
+            "start_station": "Central Station",
+            "end_station": "East Park",
+            "timestamp": "2023-10-01T08:30:00Z"
+          },
+          {
+            "trip_id": "A2",
+            "start_station": "East Park",
+            "end_station": "West End",
+            "timestamp": "2023-10-02T09:00:00Z"
+          }
+        ]
+      },
+      "{\n  \"user_id\": 12345,\n  \"trips\": [\n    {\n      \"trip_id\": \"A1\",\n      \"start_station\": \"Central Station\",\n      \"end_station\": \"East Park\",\n      \"timestamp\": \"2023-10-01T08:30:00Z\"\n    ,\n    {\n      \"trip_id\": \"A2\",\n      \"start_station\": \"East Park\",\n      \"end_station\": \"West End\",\n      \"timestamp\": \"2023-10-02T09:00:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "card_number": "9876543210",
+        "balance": 25.5,
+        "trip_history": [
+          {
+            "date": "2023-09-21",
+            "route": "North-South Line",
+            "fare": 2.75
+          },
+          {
+            "date": "2023-09-22",
+            "route": "East-West Line",
+            "fare": 3.0
+          }
+        ]
+      },
+      "{\n  \"card_number\": \"9876543210\",\n  \"balance\": 25.50,\n  \"trip_history\": [\n    {\n      \"date\": \"2023-09-21\",\n      \"route\": \"North-South Line\",\n      \"fare\": 2.75\n    ,\n    {\n      \"date\": \"2023-09-22\",\n      \"route\": \"East-West Line\",\n      \"fare\": 3.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user": "JohnDoe",
+        "recent_trips": [
+          {
+            "station_entered": "South Station",
+            "station_exited": "North Station",
+            "time": "2023-10-03T07:15:00Z"
+          },
+          {
+            "station_entered": "North Station",
+            "station_exited": "South Station",
+            "time": "2023-10-03T18:45:00Z"
+          }
+        ]
+      },
+      "{\n  \"user\": \"JohnDoe\",\n  \"recent_trips\": [\n    {\n      \"station_entered\": \"South Station\",\n      \"station_exited\": \"North Station\",\n      \"time\": \"2023-10-03T07:15:00Z\"\n    ,\n    {\n      \"station_entered\": \"North Station\",\n      \"station_exited\": \"South Station\",\n      \"time\": \"2023-10-03T18:45:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "pass_id": 2468,
+        "rides": [
+          {
+            "origin": "Main Square",
+            "destination": "University",
+            "date": "2023-10-04"
+          },
+          {
+            "origin": "University",
+            "destination": "Main Square",
+            "date": "2023-10-05"
+          }
+        ]
+      },
+      "{\n  \"pass_id\": 2468,\n  \"rides\": [\n    {\n      \"origin\": \"Main Square\",\n      \"destination\": \"University\",\n      \"date\": \"2023-10-04\"\n    ,\n    {\n      \"origin\": \"University\",\n      \"destination\": \"Main Square\",\n      \"date\": \"2023-10-05\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "account_number": "ABC123XYZ",
+        "active_passes": 2,
+        "usage_details": [
+          {
+            "line": "Red Line",
+            "check_in": "2023-09-28T07:50:00Z",
+            "check_out": "2023-09-28T08:30:00Z"
+          },
+          {
+            "line": "Blue Line",
+            "check_in": "2023-09-29T07:50:00Z",
+            "check_out": "2023-09-29T08:20:00Z"
+          }
+        ]
+      },
+      "{\n  \"account_number\": \"ABC123XYZ\",\n  \"active_passes\": 2,\n  \"usage_details\": [\n    {\n      \"line\": \"Red Line\",\n      \"check_in\": \"2023-09-28T07:50:00Z\",\n      \"check_out\": \"2023-09-28T08:30:00Z\"\n    ,\n    {\n      \"line\": \"Blue Line\",\n      \"check_in\": \"2023-09-29T07:50:00Z\",\n      \"check_out\": \"2023-09-29T08:20:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "customer_id": "1001",
+        "pass_type": "Monthly",
+        "journey_log": [
+          {
+            "entry_station": "Airport",
+            "exit_station": "City Center",
+            "time": "2023-10-06T09:00:00Z"
+          },
+          {
+            "entry_station": "City Center",
+            "exit_station": "Airport",
+            "time": "2023-10-06T17:30:00Z"
+          }
+        ]
+      },
+      "{\n  \"customer_id\": \"1001\",\n  \"pass_type\": \"Monthly\",\n  \"journey_log\": [\n    {\n      \"entry_station\": \"Airport\",\n      \"exit_station\": \"City Center\",\n      \"time\": \"2023-10-06T09:00:00Z\"\n    ,\n    {\n      \"entry_station\": \"City Center\",\n      \"exit_station\": \"Airport\",\n      \"time\": \"2023-10-06T17:30:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "transit_user": "JaneDoe123",
+        "subscription_status": "Active",
+        "travel_events": [
+          {
+            "from": "Downtown",
+            "to": "Uptown",
+            "date": "2023-10-07"
+          },
+          {
+            "from": "Uptown",
+            "to": "Downtown",
+            "date": "2023-10-08"
+          }
+        ]
+      },
+      "{\n  \"transit_user\": \"JaneDoe123\",\n  \"subscription_status\": \"Active\",\n  \"travel_events\": [\n    {\n      \"from\": \"Downtown\",\n      \"to\": \"Uptown\",\n      \"date\": \"2023-10-07\"\n    ,\n    {\n      \"from\": \"Uptown\",\n      \"to\": \"Downtown\",\n      \"date\": \"2023-10-08\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "commuter_id": 5678,
+        "card_balance": 15.0,
+        "transit_records": [
+          {
+            "entry": "Green Park",
+            "exit": "Hilltop",
+            "timestamp": "2023-10-09T06:45:00Z"
+          },
+          {
+            "entry": "Hilltop",
+            "exit": "Green Park",
+            "timestamp": "2023-10-09T19:00:00Z"
+          }
+        ]
+      },
+      "{\n  \"commuter_id\": 5678,\n  \"card_balance\": 15.00,\n  \"transit_records\": [\n    {\n      \"entry\": \"Green Park\",\n      \"exit\": \"Hilltop\",\n      \"timestamp\": \"2023-10-09T06:45:00Z\"\n    ,\n    {\n      \"entry\": \"Hilltop\",\n      \"exit\": \"Green Park\",\n      \"timestamp\": \"2023-10-09T19:00:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "pass_holder": "AlexWhite",
+        "expiry_date": "2023-12-31",
+        "trip_data": [
+          {
+            "departure": "Old Town",
+            "arrival": "New Town",
+            "time_of_travel": "2023-10-10T07:30:00Z"
+          },
+          {
+            "departure": "New Town",
+            "arrival": "Old Town",
+            "time_of_travel": "2023-10-10T18:00:00Z"
+          }
+        ]
+      },
+      "{\n  \"pass_holder\": \"AlexWhite\",\n  \"expiry_date\": \"2023-12-31\",\n  \"trip_data\": [\n    {\n      \"departure\": \"Old Town\",\n      \"arrival\": \"New Town\",\n      \"time_of_travel\": \"2023-10-10T07:30:00Z\"\n    ,\n    {\n      \"departure\": \"New Town\",\n      \"arrival\": \"Old Town\",\n      \"time_of_travel\": \"2023-10-10T18:00:00Z\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "account_id": 3210,
+        "last_recharge": "2023-09-15T12:00:00Z",
+        "travel_logs": [
+          {
+            "origin": "East Village",
+            "destination": "West Gate",
+            "fare": 2.5
+          },
+          {
+            "origin": "West Gate",
+            "destination": "East Village",
+            "fare": 2.5
+          }
+        ]
+      },
+      "{\n  \"account_id\": 3210,\n  \"last_recharge\": \"2023-09-15T12:00:00Z\",\n  \"travel_logs\": [\n    {\n      \"origin\": \"East Village\",\n      \"destination\": \"West Gate\",\n      \"fare\": 2.50\n    ,\n    {\n      \"origin\": \"West Gate\",\n      \"destination\": \"East Village\",\n      \"fare\": 2.50\n    }\n  ]\n}"
+    ]
+  ]
+}

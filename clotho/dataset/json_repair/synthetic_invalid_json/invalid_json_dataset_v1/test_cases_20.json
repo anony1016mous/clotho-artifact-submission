@@ -1,0 +1,1198 @@
+{
+  "possible_fix": "Fix numeric values with leading zeros\nExample: { \"key\": 00123 } \u2192 { \"key\": 123 }",
+  "test_cases": [
+    [
+      {
+        "userId": 123,
+        "username": "john_doe",
+        "age": 30,
+        "score": 456
+      },
+      "{\n    \"userId\": 00123,\n    \"username\": \"john_doe\",\n    \"age\": 30,\n    \"score\": 00456\n}"
+    ],
+    [
+      {
+        "userId": 8765,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "contact": {
+          "phone": 1234567890,
+          "email": "jane.smith@example.com"
+        }
+      },
+      "{\n    \"userId\": 08765,\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Smith\",\n    \"contact\": {\n        \"phone\": 01234567890,\n        \"email\": \"jane.smith@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "profileId": 987,
+        "isPremiumUser": false,
+        "loginAttempts": 2,
+        "preferences": {
+          "newsletter": true,
+          "notifications": false
+        }
+      },
+      "{\n    \"profileId\": 0987,\n    \"isPremiumUser\": false,\n    \"loginAttempts\": 02,\n    \"preferences\": {\n        \"newsletter\": true,\n        \"notifications\": false\n    }\n}"
+    ],
+    [
+      {
+        "accountId": 54321,
+        "nickname": "coolguy",
+        "experiencePoints": 1500
+      },
+      "{\n    \"accountId\": 054321,\n    \"nickname\": \"coolguy\",\n    \"experiencePoints\": 01500\n}"
+    ],
+    [
+      {
+        "userId": 101,
+        "subscriptions": {
+          "magazine": 5,
+          "onlineCourses": 3
+        }
+      },
+      "{\n    \"userId\": 0101,\n    \"subscriptions\": {\n        \"magazine\": 05,\n        \"onlineCourses\": 003\n    }\n}"
+    ],
+    [
+      {
+        "userProfileId": 678,
+        "displayName": "SuperUser",
+        "billingInfo": {
+          "creditCard": 9876543210123456,
+          "zipCode": 12345
+        }
+      },
+      "{\n    \"userProfileId\": 0678,\n    \"displayName\": \"SuperUser\",\n    \"billingInfo\": {\n        \"creditCard\": 09876543210123456,\n        \"zipCode\": 012345\n    }\n}"
+    ],
+    [
+      {
+        "identifier": 333,
+        "history": {
+          "lastLogin": 2,
+          "purchases": 10
+        },
+        "status": "active"
+      },
+      "{\n    \"identifier\": 0333,\n    \"history\": {\n        \"lastLogin\": 02,\n        \"purchases\": 010\n    },\n    \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "userId": 1001,
+        "role": "administrator",
+        "settings": {
+          "theme": "dark",
+          "language": "en"
+        }
+      },
+      "{\n    \"userId\": 01001,\n    \"role\": \"administrator\",\n    \"settings\": {\n        \"theme\": \"dark\",\n        \"language\": \"en\"\n    }\n}"
+    ],
+    [
+      {
+        "userId": 999,
+        "accounts": [
+          {
+            "type": "savings",
+            "balance": 1000
+          },
+          {
+            "type": "checking",
+            "balance": 500
+          }
+        ]
+      },
+      "{\n    \"userId\": 0999,\n    \"accounts\": [\n        {\n            \"type\": \"savings\",\n            \"balance\": 01000\n        },\n        {\n            \"type\": \"checking\",\n            \"balance\": 0500\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "clientId": 5555,
+        "membership": "gold",
+        "renewalDate": "2024-01-01"
+      },
+      "{\n    \"clientId\": 05555,\n    \"membership\": \"gold\",\n    \"renewalDate\": \"2024-01-01\"\n}"
+    ],
+    [
+      {
+        "orderId": 12345,
+        "customer": "Alice Smith",
+        "items": [
+          {
+            "productId": 67890,
+            "quantity": 2,
+            "price": 25.99
+          }
+        ],
+        "total": 51.98
+      },
+      "{\n  \"orderId\": 012345,\n  \"customer\": \"Alice Smith\",\n  \"items\": [\n    {\n      \"productId\": 067890,\n      \"quantity\": 2,\n      \"price\": 25.99\n    }\n  ],\n  \"total\": 51.98\n}"
+    ],
+    [
+      {
+        "orderId": 54321,
+        "customer": "Bob Johnson",
+        "items": [
+          {
+            "productId": 11223,
+            "quantity": 1,
+            "price": 99.99
+          },
+          {
+            "productId": 44556,
+            "quantity": 3,
+            "price": 15.0
+          }
+        ],
+        "total": 144.99
+      },
+      "{\n  \"orderId\": 054321,\n  \"customer\": \"Bob Johnson\",\n  \"items\": [\n    {\n      \"productId\": 011223,\n      \"quantity\": 1,\n      \"price\": 99.99\n    },\n    {\n      \"productId\": 044556,\n      \"quantity\": 3,\n      \"price\": 15.00\n    }\n  ],\n  \"total\": 144.99\n}"
+    ],
+    [
+      {
+        "orderId": 67890,
+        "customer": "Charlie Brown",
+        "items": [
+          {
+            "productId": 33445,
+            "quantity": 5,
+            "price": 8.99
+          }
+        ],
+        "total": 44.95
+      },
+      "{\n  \"orderId\": 067890,\n  \"customer\": \"Charlie Brown\",\n  \"items\": [\n    {\n      \"productId\": 033445,\n      \"quantity\": 5,\n      \"price\": 8.99\n    }\n  ],\n  \"total\": 44.95\n}"
+    ],
+    [
+      {
+        "orderId": 98765,
+        "customer": "David Green",
+        "items": [
+          {
+            "productId": 99999,
+            "quantity": 10,
+            "price": 2.5
+          }
+        ],
+        "total": 25.0
+      },
+      "{\n  \"orderId\": 098765,\n  \"customer\": \"David Green\",\n  \"items\": [\n    {\n      \"productId\": 099999,\n      \"quantity\": 10,\n      \"price\": 2.50\n    }\n  ],\n  \"total\": 25.00\n}"
+    ],
+    [
+      {
+        "orderId": 11223,
+        "customer": "Emily White",
+        "items": [
+          {
+            "productId": 55667,
+            "quantity": 2,
+            "price": 12.0
+          },
+          {
+            "productId": 77889,
+            "quantity": 1,
+            "price": 30.0
+          }
+        ],
+        "total": 54.0
+      },
+      "{\n  \"orderId\": 011223,\n  \"customer\": \"Emily White\",\n  \"items\": [\n    {\n      \"productId\": 055667,\n      \"quantity\": 2,\n      \"price\": 12.00\n    },\n    {\n      \"productId\": 077889,\n      \"quantity\": 1,\n      \"price\": 30.00\n    }\n  ],\n  \"total\": 54.00\n}"
+    ],
+    [
+      {
+        "orderId": 22334,
+        "customer": "Frank Black",
+        "items": [
+          {
+            "productId": 66778,
+            "quantity": 4,
+            "price": 7.25
+          }
+        ],
+        "total": 29.0
+      },
+      "{\n  \"orderId\": 022334,\n  \"customer\": \"Frank Black\",\n  \"items\": [\n    {\n      \"productId\": 066778,\n      \"quantity\": 4,\n      \"price\": 7.25\n    }\n  ],\n  \"total\": 29.00\n}"
+    ],
+    [
+      {
+        "orderId": 33445,
+        "customer": "Grace Kelly",
+        "items": [
+          {
+            "productId": 77889,
+            "quantity": 6,
+            "price": 3.5
+          }
+        ],
+        "total": 21.0
+      },
+      "{\n  \"orderId\": 033445,\n  \"customer\": \"Grace Kelly\",\n  \"items\": [\n    {\n      \"productId\": 077889,\n      \"quantity\": 6,\n      \"price\": 3.50\n    }\n  ],\n  \"total\": 21.00\n}"
+    ],
+    [
+      {
+        "orderId": 44556,
+        "customer": "Hannah Lee",
+        "items": [
+          {
+            "productId": 88990,
+            "quantity": 3,
+            "price": 20.0
+          }
+        ],
+        "total": 60.0
+      },
+      "{\n  \"orderId\": 044556,\n  \"customer\": \"Hannah Lee\",\n  \"items\": [\n    {\n      \"productId\": 088990,\n      \"quantity\": 3,\n      \"price\": 20.00\n    }\n  ],\n  \"total\": 60.00\n}"
+    ],
+    [
+      {
+        "orderId": 55667,
+        "customer": "Ivy Kim",
+        "items": [
+          {
+            "productId": 99001,
+            "quantity": 8,
+            "price": 5.0
+          }
+        ],
+        "total": 40.0
+      },
+      "{\n  \"orderId\": 055667,\n  \"customer\": \"Ivy Kim\",\n  \"items\": [\n    {\n      \"productId\": 099001,\n      \"quantity\": 8,\n      \"price\": 5.00\n    }\n  ],\n  \"total\": 40.00\n}"
+    ],
+    [
+      {
+        "orderId": 66778,
+        "customer": "Jake Lee",
+        "items": [
+          {
+            "productId": 10002,
+            "quantity": 2,
+            "price": 15.75
+          },
+          {
+            "productId": 22334,
+            "quantity": 5,
+            "price": 6.0
+          }
+        ],
+        "total": 57.5
+      },
+      "{\n  \"orderId\": 066778,\n  \"customer\": \"Jake Lee\",\n  \"items\": [\n    {\n      \"productId\": 010002,\n      \"quantity\": 2,\n      \"price\": 15.75\n    },\n    {\n      \"productId\": 022334,\n      \"quantity\": 5,\n      \"price\": 6.00\n    }\n  ],\n  \"total\": 57.50\n}"
+    ],
+    [
+      {
+        "movie": "Inception",
+        "year": 2010,
+        "rating": 8.8,
+        "reviews": [
+          {
+            "user": "Alice",
+            "score": 9,
+            "comment": "Mind-blowing effects!"
+          },
+          {
+            "user": "Bob",
+            "score": 8,
+            "comment": "Very engaging plot."
+          }
+        ]
+      },
+      "{\n    \"movie\": \"Inception\",\n    \"year\": 02010,\n    \"rating\": 08.8,\n    \"reviews\": [\n        {\"user\": \"Alice\", \"score\": 09, \"comment\": \"Mind-blowing effects!\"},\n        {\"user\": \"Bob\", \"score\": 08, \"comment\": \"Very engaging plot.\"}\n    ]\n}"
+    ],
+    [
+      {
+        "show": "Breaking Bad",
+        "seasons": 5,
+        "rating": 9.5,
+        "episodes": [
+          {
+            "title": "Pilot",
+            "number": 1,
+            "air_year": 2008
+          },
+          {
+            "title": "Felina",
+            "number": 62,
+            "air_year": 2013
+          }
+        ]
+      },
+      "{\n    \"show\": \"Breaking Bad\",\n    \"seasons\": 05,\n    \"rating\": 09.5,\n    \"episodes\": [\n        {\"title\": \"Pilot\", \"number\": 01, \"air_year\": 2008},\n        {\"title\": \"Felina\", \"number\": 062, \"air_year\": 2013}\n    ]\n}"
+    ],
+    [
+      {
+        "movie": "The Matrix",
+        "release_year": 1999,
+        "rating": 8.7,
+        "reviews": [
+          {
+            "user": "Charlie",
+            "score": 10,
+            "comment": "A game changer!"
+          }
+        ]
+      },
+      "{\n    \"movie\": \"The Matrix\",\n    \"release_year\": 01999,\n    \"rating\": 08.7,\n    \"reviews\": [\n        {\"user\": \"Charlie\", \"score\": 010, \"comment\": \"A game changer!\"}\n    ]\n}"
+    ],
+    [
+      {
+        "show": "Stranger Things",
+        "season_count": 4,
+        "rating": 8.9,
+        "episodes": [
+          {
+            "title": "Chapter One",
+            "episode_number": 1,
+            "air_date": "2016-07-15"
+          }
+        ]
+      },
+      "{\n    \"show\": \"Stranger Things\",\n    \"season_count\": 04,\n    \"rating\": 08.9,\n    \"episodes\": [\n        {\"title\": \"Chapter One\", \"episode_number\": 01, \"air_date\": \"2016-07-15\"}\n    ]\n}"
+    ],
+    [
+      {
+        "movie": "The Shawshank Redemption",
+        "year": 1994,
+        "rating": 9.3,
+        "reviews": [
+          {
+            "user": "Dave",
+            "score": 10,
+            "comment": "An absolute masterpiece!"
+          }
+        ]
+      },
+      "{\n    \"movie\": \"The Shawshank Redemption\",\n    \"year\": 01994,\n    \"rating\": 09.3,\n    \"reviews\": [\n        {\"user\": \"Dave\", \"score\": 010, \"comment\": \"An absolute masterpiece!\"}\n    ]\n}"
+    ],
+    [
+      {
+        "show": "Game of Thrones",
+        "seasons": 8,
+        "rating": 9.2,
+        "episodes": [
+          {
+            "title": "Winter Is Coming",
+            "number": 1,
+            "air_year": 2011
+          }
+        ]
+      },
+      "{\n    \"show\": \"Game of Thrones\",\n    \"seasons\": 08,\n    \"rating\": 09.2,\n    \"episodes\": [\n        {\"title\": \"Winter Is Coming\", \"number\": 01, \"air_year\": 2011}\n    ]\n}"
+    ],
+    [
+      {
+        "movie": "Interstellar",
+        "release_year": 2014,
+        "rating": 8.6,
+        "reviews": [
+          {
+            "user": "Eve",
+            "score": 9,
+            "comment": "Visually stunning and emotionally gripping."
+          }
+        ]
+      },
+      "{\n    \"movie\": \"Interstellar\",\n    \"release_year\": 02014,\n    \"rating\": 08.6,\n    \"reviews\": [\n        {\"user\": \"Eve\", \"score\": 09, \"comment\": \"Visually stunning and emotionally gripping.\"}\n    ]\n}"
+    ],
+    [
+      {
+        "show": "The Office",
+        "seasons": 9,
+        "rating": 8.9,
+        "episodes": [
+          {
+            "title": "Pilot",
+            "number": 1,
+            "air_year": 2005
+          }
+        ]
+      },
+      "{\n    \"show\": \"The Office\",\n    \"seasons\": 09,\n    \"rating\": 08.9,\n    \"episodes\": [\n        {\"title\": \"Pilot\", \"number\": 01, \"air_year\": 2005}\n    ]\n}"
+    ],
+    [
+      {
+        "movie": "Pulp Fiction",
+        "year": 1994,
+        "rating": 8.9,
+        "reviews": [
+          {
+            "user": "Frank",
+            "score": 10,
+            "comment": "A cult classic!"
+          },
+          {
+            "user": "Grace",
+            "score": 9,
+            "comment": "Timeless masterpiece."
+          }
+        ]
+      },
+      "{\n    \"movie\": \"Pulp Fiction\",\n    \"year\": 01994,\n    \"rating\": 08.9,\n    \"reviews\": [\n        {\"user\": \"Frank\", \"score\": 010, \"comment\": \"A cult classic!\"},\n        {\"user\": \"Grace\", \"score\": 09, \"comment\": \"Timeless masterpiece.\"}\n    ]\n}"
+    ],
+    [
+      {
+        "show": "Friends",
+        "seasons": 10,
+        "rating": 8.9,
+        "episodes": [
+          {
+            "title": "The One Where It All Began",
+            "number": 1,
+            "air_year": 1994
+          }
+        ]
+      },
+      "{\n    \"show\": \"Friends\",\n    \"seasons\": 010,\n    \"rating\": 08.9,\n    \"episodes\": [\n        {\"title\": \"The One Where It All Began\", \"number\": 01, \"air_year\": 1994}\n    ]\n}"
+    ],
+    [
+      {
+        "post_id": 12345,
+        "author": "john_doe",
+        "likes": 150,
+        "comments": [
+          {
+            "user": "alice",
+            "comment": "Great post!",
+            "likes": 20
+          },
+          {
+            "user": "bob",
+            "comment": "Thanks for sharing!",
+            "likes": 50
+          }
+        ]
+      },
+      "{\n    \"post_id\": 012345,\n    \"author\": \"john_doe\",\n    \"likes\": 0150,\n    \"comments\": [\n        {\n            \"user\": \"alice\",\n            \"comment\": \"Great post!\",\n            \"likes\": 0020\n        },\n        {\n            \"user\": \"bob\",\n            \"comment\": \"Thanks for sharing!\",\n            \"likes\": 0050\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "user": "jane_smith",
+        "post": "Loving the new features on this platform! #excited",
+        "reactions": {
+          "likes": 200,
+          "shares": 45
+        }
+      },
+      "{\n    \"user\": \"jane_smith\",\n    \"post\": \"Loving the new features on this platform! #excited\",\n    \"reactions\": {\n        \"likes\": 0200,\n        \"shares\": 0045\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "mike89",
+          "followers": 1300,
+          "following": 300
+        },
+        "recent_posts": [
+          {
+            "post_id": 3412,
+            "content": "Check out my latest video! #vlog",
+            "views": 5000
+          }
+        ]
+      },
+      "{\n    \"profile\": {\n        \"username\": \"mike89\",\n        \"followers\": 01300,\n        \"following\": 0300\n    },\n    \"recent_posts\": [\n        {\n            \"post_id\": 03412,\n            \"content\": \"Check out my latest video! #vlog\",\n            \"views\": 05000\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "event": "live_stream",
+        "host": "tech_guru",
+        "attendees": 400,
+        "feedback": {
+          "positive": 350,
+          "negative": 50
+        }
+      },
+      "{\n    \"event\": \"live_stream\",\n    \"host\": \"tech_guru\",\n    \"attendees\": 0400,\n    \"feedback\": {\n        \"positive\": 0350,\n        \"negative\": 050\n    }\n}"
+    ],
+    [
+      {
+        "topic": "travel_photos",
+        "photos_posted": 10,
+        "comments": [
+          {
+            "user": "travel_lover",
+            "comment": "Beautiful place!",
+            "likes": 30
+          }
+        ]
+      },
+      "{\n    \"topic\": \"travel_photos\",\n    \"photos_posted\": 010,\n    \"comments\": [\n        {\n            \"user\": \"travel_lover\",\n            \"comment\": \"Beautiful place!\",\n            \"likes\": 030\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "user": "chef_julia",
+        "recipe_shared": 5,
+        "likes": 600,
+        "comments": 80
+      },
+      "{\n    \"user\": \"chef_julia\",\n    \"recipe_shared\": 05,\n    \"likes\": 0600,\n    \"comments\": 080\n}"
+    ],
+    [
+      {
+        "app_version": "1.5.2",
+        "user_feedback": {
+          "total": 1000,
+          "positive": 800,
+          "neutral": 150,
+          "negative": 50
+        }
+      },
+      "{\n    \"app_version\": \"1.5.2\",\n    \"user_feedback\": {\n        \"total\": 01000,\n        \"positive\": 0800,\n        \"neutral\": 0150,\n        \"negative\": 050\n    }\n}"
+    ],
+    [
+      {
+        "competition": "photo_challenge",
+        "participants": 250,
+        "winners": 3
+      },
+      "{\n    \"competition\": \"photo_challenge\",\n    \"participants\": 0250,\n    \"winners\": 03\n}"
+    ],
+    [
+      {
+        "meetup": "tech_talk",
+        "attendees": 75,
+        "speakers": 5
+      },
+      "{\n    \"meetup\": \"tech_talk\",\n    \"attendees\": 075,\n    \"speakers\": 05\n}"
+    ],
+    [
+      {
+        "article": "impact_of_technology",
+        "reads": 2500,
+        "comments": 200
+      },
+      "{\n    \"article\": \"impact_of_technology\",\n    \"reads\": 02500,\n    \"comments\": 0200\n}"
+    ],
+    [
+      {
+        "sensorId": 101,
+        "temperature": 22,
+        "humidity": 45,
+        "battery": 98
+      },
+      "{\n    \"sensorId\": 0101,\n    \"temperature\": 022,\n    \"humidity\": 045,\n    \"battery\": 098\n}"
+    ],
+    [
+      {
+        "device": "thermostat",
+        "status": "active",
+        "readings": {
+          "currentTemp": 19,
+          "targetTemp": 22
+        }
+      },
+      "{\n    \"device\": \"thermostat\",\n    \"status\": \"active\",\n    \"readings\": {\n        \"currentTemp\": 019,\n        \"targetTemp\": 022\n    }\n}"
+    ],
+    [
+      {
+        "sensorType": "motion",
+        "isActive": true,
+        "detectionCount": 5
+      },
+      "{\n    \"sensorType\": \"motion\",\n    \"isActive\": true,\n    \"detectionCount\": 05\n}"
+    ],
+    [
+      {
+        "sensorList": [
+          {
+            "id": 201,
+            "status": "online"
+          },
+          {
+            "id": 202,
+            "status": "offline"
+          }
+        ]
+      },
+      "{\n    \"sensorList\": [\n        {\"id\": 0201, \"status\": \"online\"},\n        {\"id\": 0202, \"status\": \"offline\"}\n    ]\n}"
+    ],
+    [
+      {
+        "location": "warehouse",
+        "lightLevel": 75,
+        "energyConsumption": 10.5
+      },
+      "{\n    \"location\": \"warehouse\",\n    \"lightLevel\": 075,\n    \"energyConsumption\": 010.5\n}"
+    ],
+    [
+      {
+        "alarm": {
+          "isTriggered": false,
+          "countdown": 30
+        },
+        "deviceCount": 16
+      },
+      "{\n    \"alarm\": {\n        \"isTriggered\": false,\n        \"countdown\": 030\n    },\n    \"deviceCount\": 016\n}"
+    ],
+    [
+      {
+        "network": "WiFi",
+        "signalStrength": -67,
+        "uptime": 1024
+      },
+      "{\n    \"network\": \"WiFi\",\n    \"signalStrength\": -067,\n    \"uptime\": 01024\n}"
+    ],
+    [
+      {
+        "model": "X100",
+        "softwareVersion": 3.2,
+        "lastUpdate": 7
+      },
+      "{\n    \"model\": \"X100\",\n    \"softwareVersion\": 03.2,\n    \"lastUpdate\": 07\n}"
+    ],
+    [
+      {
+        "sensorData": [
+          {
+            "type": "temperature",
+            "value": 23
+          },
+          {
+            "type": "humidity",
+            "value": 55
+          }
+        ]
+      },
+      "{\n    \"sensorData\": [\n        {\"type\": \"temperature\", \"value\": 023},\n        {\"type\": \"humidity\", \"value\": 055}\n    ]\n}"
+    ],
+    [
+      {
+        "id": 309,
+        "frequency": 60,
+        "nodes": 5
+      },
+      "{\n    \"id\": 0309,\n    \"frequency\": 060,\n    \"nodes\": 05\n}"
+    ],
+    [
+      {
+        "city": "New York",
+        "temperature": 75,
+        "humidity": 60,
+        "forecast": {
+          "high": 80,
+          "low": 65
+        }
+      },
+      "{\n    \"city\": \"New York\",\n    \"temperature\": 075,\n    \"humidity\": 060,\n    \"forecast\": {\n        \"high\": 080,\n        \"low\": 065\n    }\n}"
+    ],
+    [
+      {
+        "city": "Los Angeles",
+        "temperature": 85,
+        "humidity": 50,
+        "forecast": {
+          "high": 90,
+          "low": 70
+        }
+      },
+      "{\n    \"city\": \"Los Angeles\",\n    \"temperature\": 085,\n    \"humidity\": 050,\n    \"forecast\": {\n        \"high\": 090,\n        \"low\": 070\n    }\n}"
+    ],
+    [
+      {
+        "city": "Chicago",
+        "temperature": 65,
+        "humidity": 55,
+        "forecast": {
+          "high": 70,
+          "low": 60
+        }
+      },
+      "{\n    \"city\": \"Chicago\",\n    \"temperature\": 065,\n    \"humidity\": 055,\n    \"forecast\": {\n        \"high\": 070,\n        \"low\": 060\n    }\n}"
+    ],
+    [
+      {
+        "city": "Houston",
+        "temperature": 90,
+        "humidity": 70,
+        "forecast": {
+          "high": 95,
+          "low": 75
+        }
+      },
+      "{\n    \"city\": \"Houston\",\n    \"temperature\": 090,\n    \"humidity\": 070,\n    \"forecast\": {\n        \"high\": 095,\n        \"low\": 075\n    }\n}"
+    ],
+    [
+      {
+        "city": "Phoenix",
+        "temperature": 100,
+        "humidity": 20,
+        "forecast": {
+          "high": 105,
+          "low": 90
+        }
+      },
+      "{\n    \"city\": \"Phoenix\",\n    \"temperature\": 0100,\n    \"humidity\": 020,\n    \"forecast\": {\n        \"high\": 0105,\n        \"low\": 090\n    }\n}"
+    ],
+    [
+      {
+        "city": "Philadelphia",
+        "temperature": 78,
+        "humidity": 65,
+        "forecast": {
+          "high": 82,
+          "low": 68
+        }
+      },
+      "{\n    \"city\": \"Philadelphia\",\n    \"temperature\": 078,\n    \"humidity\": 065,\n    \"forecast\": {\n        \"high\": 082,\n        \"low\": 068\n    }\n}"
+    ],
+    [
+      {
+        "city": "San Antonio",
+        "temperature": 88,
+        "humidity": 57,
+        "forecast": {
+          "high": 91,
+          "low": 70
+        }
+      },
+      "{\n    \"city\": \"San Antonio\",\n    \"temperature\": 088,\n    \"humidity\": 057,\n    \"forecast\": {\n        \"high\": 091,\n        \"low\": 070\n    }\n}"
+    ],
+    [
+      {
+        "city": "San Diego",
+        "temperature": 72,
+        "humidity": 75,
+        "forecast": {
+          "high": 80,
+          "low": 65
+        }
+      },
+      "{\n    \"city\": \"San Diego\",\n    \"temperature\": 072,\n    \"humidity\": 075,\n    \"forecast\": {\n        \"high\": 080,\n        \"low\": 065\n    }\n}"
+    ],
+    [
+      {
+        "city": "Dallas",
+        "temperature": 95,
+        "humidity": 40,
+        "forecast": {
+          "high": 100,
+          "low": 85
+        }
+      },
+      "{\n    \"city\": \"Dallas\",\n    \"temperature\": 095,\n    \"humidity\": 040,\n    \"forecast\": {\n        \"high\": 0100,\n        \"low\": 085\n    }\n}"
+    ],
+    [
+      {
+        "city": "San Jose",
+        "temperature": 68,
+        "humidity": 80,
+        "forecast": {
+          "high": 75,
+          "low": 60
+        }
+      },
+      "{\n    \"city\": \"San Jose\",\n    \"temperature\": 068,\n    \"humidity\": 080,\n    \"forecast\": {\n        \"high\": 075,\n        \"low\": 060\n    }\n}"
+    ],
+    [
+      {
+        "transaction_id": 12345,
+        "amount": 2500,
+        "currency": "USD",
+        "timestamp": "2023-10-15T14:23:00Z"
+      },
+      "{\n    \"transaction_id\": 012345,\n    \"amount\": 02500,\n    \"currency\": \"USD\",\n    \"timestamp\": \"2023-10-15T14:23:00Z\"\n}"
+    ],
+    [
+      {
+        "account_number": 987654321,
+        "balance": 50000,
+        "transactions": [
+          {
+            "id": 1,
+            "type": "deposit",
+            "amount": 2000
+          }
+        ]
+      },
+      "{\n    \"account_number\": 0987654321,\n    \"balance\": 050000,\n    \"transactions\": [\n        {\n            \"id\": 0001,\n            \"type\": \"deposit\",\n            \"amount\": 02000\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "customer_id": 56789,
+        "loans": [
+          {
+            "loan_id": 111,
+            "amount": 15000,
+            "interest_rate": 5.5
+          }
+        ]
+      },
+      "{\n    \"customer_id\": 056789,\n    \"loans\": [\n        {\n            \"loan_id\": 0111,\n            \"amount\": 015000,\n            \"interest_rate\": 05.5\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "merchant_id": 2023,
+        "sales": [
+          {
+            "sale_id": 301,
+            "amount": 300,
+            "date": "2023-10-15"
+          },
+          {
+            "sale_id": 302,
+            "amount": 450
+          }
+        ]
+      },
+      "{\n    \"merchant_id\": 02023,\n    \"sales\": [\n        {\n            \"sale_id\": 0301,\n            \"amount\": 0300,\n            \"date\": \"2023-10-15\"\n        },\n        {\n            \"sale_id\": 0302,\n            \"amount\": 0450\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "payment_id": 501,
+        "method": "credit_card",
+        "details": {
+          "card_number": 4111111111111111,
+          "expiry_date": "12/25"
+        }
+      },
+      "{\n    \"payment_id\": 0501,\n    \"method\": \"credit_card\",\n    \"details\": {\n        \"card_number\": 0411111111111111,\n        \"expiry_date\": \"12/25\"\n    }\n}"
+    ],
+    [
+      {
+        "transfer_id": 6789,
+        "from_account": 987654,
+        "to_account": 123456,
+        "amount": 750
+      },
+      "{\n    \"transfer_id\": 06789,\n    \"from_account\": 0987654,\n    \"to_account\": 0123456,\n    \"amount\": 0750\n}"
+    ],
+    [
+      {
+        "record_id": 789,
+        "description": "Monthly subscription",
+        "amount": 19.99,
+        "currency": "USD"
+      },
+      "{\n    \"record_id\": 0789,\n    \"description\": \"Monthly subscription\",\n    \"amount\": 019.99,\n    \"currency\": \"USD\"\n}"
+    ],
+    [
+      {
+        "invoice_number": 1001,
+        "client": "ABC Corp",
+        "total_amount": 1234.56,
+        "paid": true
+      },
+      "{\n    \"invoice_number\": 01001,\n    \"client\": \"ABC Corp\",\n    \"total_amount\": 01234.56,\n    \"paid\": true\n}"
+    ],
+    [
+      {
+        "statement_id": 456,
+        "transactions": [
+          {
+            "transaction_id": 7890,
+            "amount": 1200
+          },
+          {
+            "transaction_id": 7891,
+            "amount": 800
+          }
+        ]
+      },
+      "{\n    \"statement_id\": 0456,\n    \"transactions\": [\n        {\n            \"transaction_id\": 07890,\n            \"amount\": 01200\n        },\n        {\n            \"transaction_id\": 07891,\n            \"amount\": 0800\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "budget_id": 321,
+        "allocated": 10000,
+        "spent": 2500,
+        "remaining": 7500
+      },
+      "{\n    \"budget_id\": 0321,\n    \"allocated\": 010000,\n    \"spent\": 02500,\n    \"remaining\": 07500\n}"
+    ],
+    [
+      {
+        "user": "Alice",
+        "steps": 12345,
+        "calories_burned": 350,
+        "workout_duration": 45
+      },
+      "{\n  \"user\": \"Alice\",\n  \"steps\": 012345,\n  \"calories_burned\": 0350,\n  \"workout_duration\": 045\n}"
+    ],
+    [
+      {
+        "user": "Bob",
+        "heart_rate": 68,
+        "sleep_hours": 7.5,
+        "water_intake": 2000
+      },
+      "{\n  \"user\": \"Bob\",\n  \"heart_rate\": 068,\n  \"sleep_hours\": 7.5,\n  \"water_intake\": 02000\n}"
+    ],
+    [
+      {
+        "user": "Charlie",
+        "weight": 80,
+        "height": 175,
+        "bmi": 26.1
+      },
+      "{\n  \"user\": \"Charlie\",\n  \"weight\": 080,\n  \"height\": 0175,\n  \"bmi\": 26.1\n}"
+    ],
+    [
+      {
+        "user": "David",
+        "daily_steps_goal": 10000,
+        "achieved_steps": 9850,
+        "active_minutes": 60
+      },
+      "{\n  \"user\": \"David\",\n  \"daily_steps_goal\": 010000,\n  \"achieved_steps\": 09850,\n  \"active_minutes\": 060\n}"
+    ],
+    [
+      {
+        "user": "Emma",
+        "calories_intake": 1800,
+        "protein_grams": 70,
+        "fat_grams": 50
+      },
+      "{\n  \"user\": \"Emma\",\n  \"calories_intake\": 01800,\n  \"protein_grams\": 070,\n  \"fat_grams\": 050\n}"
+    ],
+    [
+      {
+        "user": "Frank",
+        "cycling_distance": 25,
+        "steps_walked": 12000,
+        "workout_sessions": 5
+      },
+      "{\n  \"user\": \"Frank\",\n  \"cycling_distance\": 025,\n  \"steps_walked\": 012000,\n  \"workout_sessions\": 05\n}"
+    ],
+    [
+      {
+        "user": "Grace",
+        "yoga_minutes": 30,
+        "meditation_minutes": 15,
+        "hydration_level": 8
+      },
+      "{\n  \"user\": \"Grace\",\n  \"yoga_minutes\": 030,\n  \"meditation_minutes\": 015,\n  \"hydration_level\": 08\n}"
+    ],
+    [
+      {
+        "user": "Hannah",
+        "daily_calories_burned": 500,
+        "average_heart_rate": 72,
+        "rest_days": 2
+      },
+      "{\n  \"user\": \"Hannah\",\n  \"daily_calories_burned\": 0500,\n  \"average_heart_rate\": 072,\n  \"rest_days\": 02\n}"
+    ],
+    [
+      {
+        "user": "Ivy",
+        "squats_count": 100,
+        "plank_duration": 60,
+        "jumping_jacks": 300
+      },
+      "{\n  \"user\": \"Ivy\",\n  \"squats_count\": 0100,\n  \"plank_duration\": 060,\n  \"jumping_jacks\": 0300\n}"
+    ],
+    [
+      {
+        "user": "Jack",
+        "running_distance": 10,
+        "cycling_speed": 15,
+        "exercise_sessions": 3
+      },
+      "{\n  \"user\": \"Jack\",\n  \"running_distance\": 010,\n  \"cycling_speed\": 015,\n  \"exercise_sessions\": 03\n}"
+    ],
+    [
+      {
+        "vehicle_id": "AB123",
+        "speed": 65,
+        "location": {
+          "latitude": 40.712776,
+          "longitude": -74.005974
+        }
+      },
+      "{\n    \"vehicle_id\": \"AB123\",\n    \"speed\": 065,\n    \"location\": {\n        \"latitude\": 40.712776,\n        \"longitude\": -74.005974\n    }\n}"
+    ],
+    [
+      {
+        "trip_id": "XYZ789",
+        "distance": 120,
+        "start_location": {
+          "latitude": 34.052235,
+          "longitude": -118.243683
+        },
+        "end_location": {
+          "latitude": 36.169941,
+          "longitude": -115.139832
+        }
+      },
+      "{\n    \"trip_id\": \"XYZ789\",\n    \"distance\": 0120,\n    \"start_location\": {\n        \"latitude\": 34.052235,\n        \"longitude\": -118.243683\n    },\n    \"end_location\": {\n        \"latitude\": 36.169941,\n        \"longitude\": -115.139832\n    }\n}"
+    ],
+    [
+      {
+        "driver_id": "DR567",
+        "current_speed": 55,
+        "current_location": {
+          "latitude": 51.507351,
+          "longitude": -0.127758
+        }
+      },
+      "{\n    \"driver_id\": \"DR567\",\n    \"current_speed\": 055,\n    \"current_location\": {\n        \"latitude\": 51.507351,\n        \"longitude\": -0.127758\n    }\n}"
+    ],
+    [
+      {
+        "shipment_id": "SH12345",
+        "weight": 800,
+        "pickup_location": {
+          "latitude": 48.856613,
+          "longitude": 2.352222
+        }
+      },
+      "{\n    \"shipment_id\": \"SH12345\",\n    \"weight\": 0800,\n    \"pickup_location\": {\n        \"latitude\": 48.856613,\n        \"longitude\": 2.352222\n    }\n}"
+    ],
+    [
+      {
+        "route_id": "RT234",
+        "duration": 30,
+        "path": [
+          {
+            "latitude": 35.689487,
+            "longitude": 139.691711
+          },
+          {
+            "latitude": 37.774929,
+            "longitude": -122.419418
+          }
+        ]
+      },
+      "{\n    \"route_id\": \"RT234\",\n    \"duration\": 030,\n    \"path\": [\n        {\n            \"latitude\": 35.689487,\n            \"longitude\": 139.691711\n        },\n        {\n            \"latitude\": 37.774929,\n            \"longitude\": -122.419418\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "taxi_id": "TX999",
+        "fare": 23,
+        "destination": {
+          "latitude": 40.416775,
+          "longitude": -3.70379
+        }
+      },
+      "{\n    \"taxi_id\": \"TX999\",\n    \"fare\": 023,\n    \"destination\": {\n        \"latitude\": 40.416775,\n        \"longitude\": -3.703790\n    }\n}"
+    ],
+    [
+      {
+        "ride_id": "RD678",
+        "passenger_count": 4,
+        "pickup_coordinates": {
+          "latitude": 55.755825,
+          "longitude": 37.617298
+        }
+      },
+      "{\n    \"ride_id\": \"RD678\",\n    \"passenger_count\": 04,\n    \"pickup_coordinates\": {\n        \"latitude\": 55.755825,\n        \"longitude\": 37.617298\n    }\n}"
+    ],
+    [
+      {
+        "flight_id": "FL345",
+        "altitude": 10000,
+        "current_position": {
+          "latitude": 41.902782,
+          "longitude": 12.496365
+        }
+      },
+      "{\n    \"flight_id\": \"FL345\",\n    \"altitude\": 010000,\n    \"current_position\": {\n        \"latitude\": 41.902782,\n        \"longitude\": 12.496365\n    }\n}"
+    ],
+    [
+      {
+        "cargo_id": "CG123",
+        "volume": 600,
+        "loading_port": {
+          "latitude": 25.276987,
+          "longitude": 55.296249
+        }
+      },
+      "{\n    \"cargo_id\": \"CG123\",\n    \"volume\": 0600,\n    \"loading_port\": {\n        \"latitude\": 25.276987,\n        \"longitude\": 55.296249\n    }\n}"
+    ],
+    [
+      {
+        "vehicle_type": "Bus",
+        "seating_capacity": 50,
+        "station_coordinates": {
+          "latitude": -33.86882,
+          "longitude": 151.209296
+        }
+      },
+      "{\n    \"vehicle_type\": \"Bus\",\n    \"seating_capacity\": 050,\n    \"station_coordinates\": {\n        \"latitude\": -33.868820,\n        \"longitude\": 151.209296\n    }\n}"
+    ],
+    [
+      {
+        "bookId": 1234,
+        "title": "The Great Gatsby",
+        "borrowerId": 987,
+        "dueDate": "2023-11-01"
+      },
+      "{\n    \"bookId\": 01234,\n    \"title\": \"The Great Gatsby\",\n    \"borrowerId\": 0987,\n    \"dueDate\": \"2023-11-01\"\n}"
+    ],
+    [
+      {
+        "bookId": 5678,
+        "title": "1984",
+        "borrowerId": 456,
+        "dueDate": "2023-12-15"
+      },
+      "{\n    \"bookId\": 05678,\n    \"title\": \"1984\",\n    \"borrowerId\": 0456,\n    \"dueDate\": \"2023-12-15\"\n}"
+    ],
+    [
+      {
+        "bookId": 3456,
+        "title": "To Kill a Mockingbird",
+        "borrowerId": 234,
+        "dueDate": "2023-10-31"
+      },
+      "{\n    \"bookId\": 03456,\n    \"title\": \"To Kill a Mockingbird\",\n    \"borrowerId\": 0234,\n    \"dueDate\": \"2023-10-31\"\n}"
+    ],
+    [
+      {
+        "bookId": 91011,
+        "title": "Pride and Prejudice",
+        "borrowerId": 321,
+        "dueDate": "2024-01-05"
+      },
+      "{\n    \"bookId\": 091011,\n    \"title\": \"Pride and Prejudice\",\n    \"borrowerId\": 0321,\n    \"dueDate\": \"2024-01-05\"\n}"
+    ],
+    [
+      {
+        "bookId": 1112,
+        "title": "Moby Dick",
+        "borrowerId": 654,
+        "dueDate": "2023-11-10"
+      },
+      "{\n    \"bookId\": 01112,\n    \"title\": \"Moby Dick\",\n    \"borrowerId\": 0654,\n    \"dueDate\": \"2023-11-10\"\n}"
+    ],
+    [
+      {
+        "bookId": 1314,
+        "title": "War and Peace",
+        "borrowerId": 789,
+        "dueDate": "2023-12-01"
+      },
+      "{\n    \"bookId\": 01314,\n    \"title\": \"War and Peace\",\n    \"borrowerId\": 0789,\n    \"dueDate\": \"2023-12-01\"\n}"
+    ],
+    [
+      {
+        "bookId": 1516,
+        "title": "The Odyssey",
+        "borrowerId": 112,
+        "dueDate": "2023-11-20"
+      },
+      "{\n    \"bookId\": 01516,\n    \"title\": \"The Odyssey\",\n    \"borrowerId\": 0112,\n    \"dueDate\": \"2023-11-20\"\n}"
+    ],
+    [
+      {
+        "bookId": 1718,
+        "title": "Jane Eyre",
+        "borrowerId": 223,
+        "dueDate": "2023-12-30"
+      },
+      "{\n    \"bookId\": 01718,\n    \"title\": \"Jane Eyre\",\n    \"borrowerId\": 0223,\n    \"dueDate\": \"2023-12-30\"\n}"
+    ],
+    [
+      {
+        "bookId": 1920,
+        "title": "The Catcher in the Rye",
+        "borrowerId": 334,
+        "dueDate": "2024-01-15"
+      },
+      "{\n    \"bookId\": 01920,\n    \"title\": \"The Catcher in the Rye\",\n    \"borrowerId\": 0334,\n    \"dueDate\": \"2024-01-15\"\n}"
+    ],
+    [
+      {
+        "bookId": 2122,
+        "title": "Animal Farm",
+        "borrowerId": 445,
+        "dueDate": "2023-11-25"
+      },
+      "{\n    \"bookId\": 02122,\n    \"title\": \"Animal Farm\",\n    \"borrowerId\": 0445,\n    \"dueDate\": \"2023-11-25\"\n}"
+    ]
+  ]
+}

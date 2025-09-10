@@ -1,0 +1,2016 @@
+{
+  "possible_fix": "Fix incorrect nesting (object inside array missing a bracket, etc.)",
+  "test_cases": [
+    [
+      {
+        "users": [
+          {
+            "id": 1,
+            "name": "Alice",
+            "email": "alice@example.com"
+          },
+          {
+            "id": 2,
+            "name": "Bob",
+            "email": "bob@example.com"
+          }
+        ]
+      },
+      "{\n    \"users\": [\n        {\n            \"id\": 1,\n            \"name\": \"Alice\",\n            \"email\": \"alice@example.com\"\n        ,\n        {\n            \"id\": 2,\n            \"name\": \"Bob\",\n            \"email\": \"bob@example.com\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "johndoe",
+          "age": 30,
+          "interests": [
+            "reading",
+            "gaming",
+            "hiking"
+          ]
+        }
+      },
+      "{\n    \"profile\": {\n        \"username\": \"johndoe\",\n        \"age\": 30,\n        \"interests\": [\"reading\", \"gaming\", \"hiking\"\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "name": "Emma",
+          "location": "New York",
+          "friends": [
+            {
+              "name": "Olivia",
+              "id": 3
+            },
+            {
+              "name": "Liam",
+              "id": 4
+            }
+          ]
+        }
+      },
+      "{\n    \"user\": {\n        \"name\": \"Emma\",\n        \"location\": \"New York\",\n        \"friends\": [\n            {\n                \"name\": \"Olivia\",\n                \"id\": 3\n            ,\n            {\n                \"name\": \"Liam\",\n                \"id\": 4\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "account": {
+          "id": 101,
+          "username": "charlie1995",
+          "emails": [
+            "charlie@example.com",
+            "c.haynes@example.com"
+          ]
+        }
+      },
+      "{\n    \"account\": {\n        \"id\": 101,\n        \"username\": \"charlie1995\",\n        \"emails\": [\"charlie@example.com\", \"c.haynes@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "contacts": [
+          {
+            "name": "Sophia",
+            "phone": "123-456-7890"
+          },
+          {
+            "name": "Jackson",
+            "phone": "098-765-4321"
+          }
+        ]
+      },
+      "{\n    \"contacts\": [\n        {\n            \"name\": \"Sophia\",\n            \"phone\": \"123-456-7890\"\n        ,\n        {\n            \"name\": \"Jackson\",\n            \"phone\": \"098-765-4321\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "settings": {
+          "theme": "dark",
+          "notifications": {
+            "email": true,
+            "sms": false
+          }
+        }
+      },
+      "{\n    \"settings\": {\n        \"theme\": \"dark\",\n        \"notifications\": {\n            \"email\": true,\n            \"sms\": false\n    }\n}"
+    ],
+    [
+      {
+        "team": [
+          {
+            "member": "Zara",
+            "role": "designer"
+          },
+          {
+            "member": "Lucas",
+            "role": "developer"
+          }
+        ]
+      },
+      "{\n    \"team\": [\n        {\n            \"member\": \"Zara\",\n            \"role\": \"designer\"\n        ,\n        {\n            \"member\": \"Lucas\",\n            \"role\": \"developer\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "products": [
+          {
+            "name": "Laptop",
+            "price": 1500
+          },
+          {
+            "name": "Smartphone",
+            "price": 700
+          }
+        ]
+      },
+      "{\n    \"products\": [\n        {\n            \"name\": \"Laptop\",\n            \"price\": 1500\n        ,\n        {\n            \"name\": \"Smartphone\",\n            \"price\": 700\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "order": {
+          "id": 567,
+          "items": [
+            {
+              "product": "Book",
+              "quantity": 2
+            },
+            {
+              "product": "Pen",
+              "quantity": 5
+            }
+          ]
+        }
+      },
+      "{\n    \"order\": {\n        \"id\": 567,\n        \"items\": [\n            {\n                \"product\": \"Book\",\n                \"quantity\": 2\n            ,\n            {\n                \"product\": \"Pen\",\n                \"quantity\": 5\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "bookmarks": {
+          "articles": [
+            {
+              "title": "AI in 2023",
+              "url": "https://example.com/ai-2023"
+            },
+            {
+              "title": "Blockchain Basics",
+              "url": "https://example.com/blockchain-basics"
+            }
+          ]
+        }
+      },
+      "{\n    \"bookmarks\": {\n        \"articles\": [\n            {\n                \"title\": \"AI in 2023\",\n                \"url\": \"https://example.com/ai-2023\"\n            ,\n            {\n                \"title\": \"Blockchain Basics\",\n                \"url\": \"https://example.com/blockchain-basics\"\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "12345",
+            "customer": {
+              "name": "John Doe",
+              "email": "john.doe@example.com"
+            },
+            "items": [
+              {
+                "productId": "101",
+                "quantity": 2
+              },
+              {
+                "productId": "202",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"12345\",\n            \"customer\": {\n                \"name\": \"John Doe\",\n                \"email\": \"john.doe@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"101\",\n                    \"quantity\": 2\n                },\n                {\n                    \"productId\": \"202\",\n                    \"quantity\": 1\n                ]\n            }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "54321",
+            "customer": {
+              "name": "Jane Smith",
+              "email": "jane.smith@example.com"
+            },
+            "items": [
+              {
+                "productId": "303",
+                "quantity": 3
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"54321\",\n            \"customer\": {\n                \"name\": \"Jane Smith\",\n                \"email\": \"jane.smith@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"303\",\n                    \"quantity\": 3\n                }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "11111",
+            "customer": {
+              "name": "Sam Wilson",
+              "email": "sam.wilson@example.com"
+            },
+            "items": [
+              {
+                "productId": "404",
+                "quantity": 1
+              },
+              {
+                "productId": "505",
+                "quantity": 5
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"11111\",\n            \"customer\": {\n                \"name\": \"Sam Wilson\",\n                \"email\": \"sam.wilson@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"404\",\n                    \"quantity\": 1\n                },\n                {\n                    \"productId\": \"505\",\n                    \"quantity\": 5\n                ]\n            }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "22222",
+            "customer": {
+              "name": "Alex Johnson",
+              "email": "alex.johnson@example.com"
+            },
+            "items": [
+              {
+                "productId": "606",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"22222\",\n            \"customer\": {\n                \"name\": \"Alex Johnson\",\n                \"email\": \"alex.johnson@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"606\",\n                    \"quantity\": 2\n                }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "33333",
+            "customer": {
+              "name": "Chris Lee",
+              "email": "chris.lee@example.com"
+            },
+            "items": [
+              {
+                "productId": "707",
+                "quantity": 3
+              },
+              {
+                "productId": "808",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"33333\",\n            \"customer\": {\n                \"name\": \"Chris Lee\",\n                \"email\": \"chris.lee@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"707\",\n                    \"quantity\": 3\n                },\n                {\n                    \"productId\": \"808\",\n                    \"quantity\": 1\n                ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "44444",
+            "customer": {
+              "name": "Dana White",
+              "email": "dana.white@example.com"
+            },
+            "items": [
+              {
+                "productId": "909",
+                "quantity": 4
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"44444\",\n            \"customer\": {\n                \"name\": \"Dana White\",\n                \"email\": \"dana.white@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"909\",\n                    \"quantity\": 4\n                }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "55555",
+            "customer": {
+              "name": "Eli Black",
+              "email": "eli.black@example.com"
+            },
+            "items": [
+              {
+                "productId": "1001",
+                "quantity": 2
+              },
+              {
+                "productId": "1101",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"55555\",\n            \"customer\": {\n                \"name\": \"Eli Black\",\n                \"email\": \"eli.black@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"1001\",\n                    \"quantity\": 2\n                },\n                {\n                    \"productId\": \"1101\",\n                    \"quantity\": 2\n                ]\n            }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "66666",
+            "customer": {
+              "name": "Fiona Green",
+              "email": "fiona.green@example.com"
+            },
+            "items": [
+              {
+                "productId": "1202",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"66666\",\n            \"customer\": {\n                \"name\": \"Fiona Green\",\n                \"email\": \"fiona.green@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"1202\",\n                    \"quantity\": 1\n                }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "77777",
+            "customer": {
+              "name": "George Brown",
+              "email": "george.brown@example.com"
+            },
+            "items": [
+              {
+                "productId": "1303",
+                "quantity": 3
+              },
+              {
+                "productId": "1404",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"77777\",\n            \"customer\": {\n                \"name\": \"George Brown\",\n                \"email\": \"george.brown@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"1303\",\n                    \"quantity\": 3\n                },\n                {\n                    \"productId\": \"1404\",\n                    \"quantity\": 1\n                ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orders": [
+          {
+            "orderId": "88888",
+            "customer": {
+              "name": "Hannah White",
+              "email": "hannah.white@example.com"
+            },
+            "items": [
+              {
+                "productId": "1505",
+                "quantity": 5
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"orders\": [\n        {\n            \"orderId\": \"88888\",\n            \"customer\": {\n                \"name\": \"Hannah White\",\n                \"email\": \"hannah.white@example.com\"\n            },\n            \"items\": [\n                {\n                    \"productId\": \"1505\",\n                    \"quantity\": 5\n                }\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "reviews": [
+          {
+            "title": "Inception",
+            "rating": 4.8,
+            "comments": [
+              {
+                "user": "Alice",
+                "comment": "Mind-bending and thrilling"
+              },
+              {
+                "user": "Bob",
+                "comment": "A masterpiece of modern cinema"
+              }
+            ]
+          },
+          {
+            "title": "Stranger Things",
+            "rating": 4.5,
+            "comments": [
+              {
+                "user": "Charlie",
+                "comment": "Nostalgic and engaging"
+              },
+              {
+                "user": "Dave",
+                "comment": "Sci-fi at its best"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"reviews\": [\n        {\n            \"title\": \"Inception\",\n            \"rating\": 4.8,\n            \"comments\": [\n                {\"user\": \"Alice\", \"comment\": \"Mind-bending and thrilling\"},\n                {\"user\": \"Bob\", \"comment\": \"A masterpiece of modern cinema\"}\n            ]\n        ,\n        {\n            \"title\": \"Stranger Things\",\n            \"rating\": 4.5,\n            \"comments\": [\n                {\"user\": \"Charlie\", \"comment\": \"Nostalgic and engaging\"},\n                {\"user\": \"Dave\", \"comment\": \"Sci-fi at its best\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "movies": [
+          {
+            "name": "The Matrix",
+            "director": "Wachowski",
+            "reviews": [
+              {
+                "user": "Eve",
+                "score": 5,
+                "comment": "Revolutionary visuals and storyline"
+              }
+            ]
+          },
+          {
+            "name": "The Godfather",
+            "director": "Coppola",
+            "reviews": [
+              {
+                "user": "Frank",
+                "score": 5,
+                "comment": "An epic tale of family and power"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"movies\": [\n        {\n            \"name\": \"The Matrix\",\n            \"director\": \"Wachowski\",\n            \"reviews\": [\n                {\"user\": \"Eve\", \"score\": 5, \"comment\": \"Revolutionary visuals and storyline\"}\n            ]\n        ,\n        {\n            \"name\": \"The Godfather\",\n            \"director\": \"Coppola\",\n            \"reviews\": [\n                {\"user\": \"Frank\", \"score\": 5, \"comment\": \"An epic tale of family and power\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "tvShows": [
+          {
+            "name": "Breaking Bad",
+            "seasons": 5,
+            "reviews": [
+              {
+                "user": "Grace",
+                "rating": 4.9,
+                "feedback": "Intense and thrilling"
+              }
+            ]
+          },
+          {
+            "name": "The Office",
+            "seasons": 9,
+            "reviews": [
+              {
+                "user": "Hank",
+                "rating": 4.7,
+                "feedback": "Hilarious and heartwarming"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"tvShows\": [\n        {\n            \"name\": \"Breaking Bad\",\n            \"seasons\": 5,\n            \"reviews\": [\n                {\"user\": \"Grace\", \"rating\": 4.9, \"feedback\": \"Intense and thrilling\"}\n            ]\n        ,\n        {\n            \"name\": \"The Office\",\n            \"seasons\": 9,\n            \"reviews\": [\n                {\"user\": \"Hank\", \"rating\": 4.7, \"feedback\": \"Hilarious and heartwarming\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "documentaries": [
+          {
+            "title": "Planet Earth",
+            "narrator": "David Attenborough",
+            "reviews": [
+              {
+                "user": "Ivy",
+                "rating": 5,
+                "comment": "Visually stunning and informative"
+              }
+            ]
+          },
+          {
+            "title": "The Last Dance",
+            "narrator": "Michael Jordan",
+            "reviews": [
+              {
+                "user": "Jack",
+                "rating": 4.8,
+                "comment": "Incredible insight into a legendary career"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"documentaries\": [\n        {\n            \"title\": \"Planet Earth\",\n            \"narrator\": \"David Attenborough\",\n            \"reviews\": [\n                {\"user\": \"Ivy\", \"rating\": 5, \"comment\": \"Visually stunning and informative\"}\n            ]\n        ,\n        {\n            \"title\": \"The Last Dance\",\n            \"narrator\": \"Michael Jordan\",\n            \"reviews\": [\n                {\"user\": \"Jack\", \"rating\": 4.8, \"comment\": \"Incredible insight into a legendary career\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "animatedMovies": [
+          {
+            "title": "Toy Story",
+            "studio": "Pixar",
+            "reviews": [
+              {
+                "user": "Kate",
+                "rating": 4.9,
+                "comment": "Timeless and heartwarming"
+              }
+            ]
+          },
+          {
+            "title": "Spirited Away",
+            "studio": "Studio Ghibli",
+            "reviews": [
+              {
+                "user": "Leo",
+                "rating": 5,
+                "comment": "A magical journey"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"animatedMovies\": [\n        {\n            \"title\": \"Toy Story\",\n            \"studio\": \"Pixar\",\n            \"reviews\": [\n                {\"user\": \"Kate\", \"rating\": 4.9, \"comment\": \"Timeless and heartwarming\"}\n            ]\n        ,\n        {\n            \"title\": \"Spirited Away\",\n            \"studio\": \"Studio Ghibli\",\n            \"reviews\": [\n                {\"user\": \"Leo\", \"rating\": 5, \"comment\": \"A magical journey\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "series": [
+          {
+            "name": "Game of Thrones",
+            "seasons": 8,
+            "reviews": [
+              {
+                "user": "Mia",
+                "rating": 4.5,
+                "comment": "Epic and unpredictable"
+              }
+            ]
+          },
+          {
+            "name": "Friends",
+            "seasons": 10,
+            "reviews": [
+              {
+                "user": "Nina",
+                "rating": 4.6,
+                "comment": "Timeless and funny"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"series\": [\n        {\n            \"name\": \"Game of Thrones\",\n            \"seasons\": 8,\n            \"reviews\": [\n                {\"user\": \"Mia\", \"rating\": 4.5, \"comment\": \"Epic and unpredictable\"}\n            ]\n        ,\n        {\n            \"name\": \"Friends\",\n            \"seasons\": 10,\n            \"reviews\": [\n                {\"user\": \"Nina\", \"rating\": 4.6, \"comment\": \"Timeless and funny\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "films": [
+          {
+            "title": "Pulp Fiction",
+            "director": "Tarantino",
+            "reviews": [
+              {
+                "user": "Oscar",
+                "rating": 4.9,
+                "comment": "A classic with unforgettable dialogue"
+              }
+            ]
+          },
+          {
+            "title": "The Dark Knight",
+            "director": "Nolan",
+            "reviews": [
+              {
+                "user": "Paul",
+                "rating": 5,
+                "comment": "A new standard for superhero films"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"films\": [\n        {\n            \"title\": \"Pulp Fiction\",\n            \"director\": \"Tarantino\",\n            \"reviews\": [\n                {\"user\": \"Oscar\", \"rating\": 4.9, \"comment\": \"A classic with unforgettable dialogue\"}\n            ]\n        ,\n        {\n            \"title\": \"The Dark Knight\",\n            \"director\": \"Nolan\",\n            \"reviews\": [\n                {\"user\": \"Paul\", \"rating\": 5, \"comment\": \"A new standard for superhero films\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "miniSeries": [
+          {
+            "title": "Chernobyl",
+            "episodes": 5,
+            "reviews": [
+              {
+                "user": "Quincy",
+                "rating": 4.8,
+                "comment": "Gripping and devastating"
+              }
+            ]
+          },
+          {
+            "title": "Band of Brothers",
+            "episodes": 10,
+            "reviews": [
+              {
+                "user": "Rachel",
+                "rating": 4.9,
+                "comment": "Intense and historically rich"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"miniSeries\": [\n        {\n            \"title\": \"Chernobyl\",\n            \"episodes\": 5,\n            \"reviews\": [\n                {\"user\": \"Quincy\", \"rating\": 4.8, \"comment\": \"Gripping and devastating\"}\n            ]\n        ,\n        {\n            \"title\": \"Band of Brothers\",\n            \"episodes\": 10,\n            \"reviews\": [\n                {\"user\": \"Rachel\", \"rating\": 4.9, \"comment\": \"Intense and historically rich\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "classicMovies": [
+          {
+            "title": "Casablanca",
+            "year": 1942,
+            "reviews": [
+              {
+                "user": "Steve",
+                "rating": 4.7,
+                "comment": "Timeless romance"
+              }
+            ]
+          },
+          {
+            "title": "Gone with the Wind",
+            "year": 1939,
+            "reviews": [
+              {
+                "user": "Tina",
+                "rating": 4.8,
+                "comment": "A sweeping epic"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"classicMovies\": [\n        {\n            \"title\": \"Casablanca\",\n            \"year\": 1942,\n            \"reviews\": [\n                {\"user\": \"Steve\", \"rating\": 4.7, \"comment\": \"Timeless romance\"}\n            ]\n        ,\n        {\n            \"title\": \"Gone with the Wind\",\n            \"year\": 1939,\n            \"reviews\": [\n                {\"user\": \"Tina\", \"rating\": 4.8, \"comment\": \"A sweeping epic\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "sciFiSeries": [
+          {
+            "title": "Black Mirror",
+            "seasons": 5,
+            "reviews": [
+              {
+                "user": "Uma",
+                "rating": 4.5,
+                "comment": "Thought-provoking and chilling"
+              }
+            ]
+          },
+          {
+            "title": "Westworld",
+            "seasons": 3,
+            "reviews": [
+              {
+                "user": "Victor",
+                "rating": 4.6,
+                "comment": "Complex and intriguing"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"sciFiSeries\": [\n        {\n            \"title\": \"Black Mirror\",\n            \"seasons\": 5,\n            \"reviews\": [\n                {\"user\": \"Uma\", \"rating\": 4.5, \"comment\": \"Thought-provoking and chilling\"}\n            ]\n        ,\n        {\n            \"title\": \"Westworld\",\n            \"seasons\": 3,\n            \"reviews\": [\n                {\"user\": \"Victor\", \"rating\": 4.6, \"comment\": \"Complex and intriguing\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 1,
+            "content": "Excited about the new product launch!",
+            "comments": [
+              {
+                "id": 101,
+                "user": "Alice",
+                "text": "Congratulations!"
+              },
+              {
+                "id": 102,
+                "user": "Bob",
+                "text": "Can't wait to try it."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "content": "Had a great weekend hiking.",
+            "comments": []
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 1,\n      \"content\": \"Excited about the new product launch!\",\n      \"comments\": [\n        {\n          \"id\": 101,\n          \"user\": \"Alice\",\n          \"text\": \"Congratulations!\"\n        },\n        {\n          \"id\": 102,\n          \"user\": \"Bob\",\n          \"text\": \"Can't wait to try it.\"\n      ]\n    },\n    {\n      \"id\": 2,\n      \"content\": \"Had a great weekend hiking.\",\n      \"comments\": []\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 3,
+            "content": "Loving the new cafe downtown!",
+            "comments": [
+              {
+                "id": 103,
+                "user": "Charlie",
+                "text": "I have to check it out!"
+              },
+              {
+                "id": 104,
+                "user": "Diana",
+                "text": "What's the address?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 3,\n      \"content\": \"Loving the new cafe downtown!\",\n      \"comments\": [\n        {\n          \"id\": 103,\n          \"user\": \"Charlie\",\n          \"text\": \"I have to check it out!\"\n        },\n        {\n          \"id\": 104,\n          \"user\": \"Diana\",\n          \"text\": \"What's the address?\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 4,
+            "content": "Just finished reading a great book.",
+            "comments": [
+              {
+                "id": 105,
+                "user": "Eve",
+                "text": "Which book?"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "content": "Enjoying the sunny weather!",
+            "comments": []
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 4,\n      \"content\": \"Just finished reading a great book.\",\n      \"comments\": [\n        {\n          \"id\": 105,\n          \"user\": \"Eve\",\n          \"text\": \"Which book?\"\n      ]\n    },\n    {\n      \"id\": 5,\n      \"content\": \"Enjoying the sunny weather!\",\n      \"comments\": []\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 6,
+            "content": "Can't believe it's already October!",
+            "comments": []
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 6,\n      \"content\": \"Can't believe it's already October!\",\n      \"comments\": [\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 7,
+            "content": "Trying out some new recipes today.",
+            "comments": [
+              {
+                "id": 106,
+                "user": "Frank",
+                "text": "Let us know how it goes."
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 7,\n      \"content\": \"Trying out some new recipes today.\",\n      \"comments\": [\n        {\n          \"id\": 106,\n          \"user\": \"Frank\",\n          \"text\": \"Let us know how it goes.\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 8,
+            "content": "Watching a beautiful sunset.",
+            "comments": []
+          },
+          {
+            "id": 9,
+            "content": "The new season of my favorite show is out!",
+            "comments": [
+              {
+                "id": 107,
+                "user": "George",
+                "text": "Binge-watching time!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 8,\n      \"content\": \"Watching a beautiful sunset.\",\n      \"comments\": []\n    },\n    {\n      \"id\": 9,\n      \"content\": \"The new season of my favorite show is out!\",\n      \"comments\": [\n        {\n          \"id\": 107,\n          \"user\": \"George\",\n          \"text\": \"Binge-watching time!\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 10,
+            "content": "Feeling grateful for all the support.",
+            "comments": [
+              {
+                "id": 108,
+                "user": "Helen",
+                "text": "You deserve it!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 10,\n      \"content\": \"Feeling grateful for all the support.\",\n      \"comments\": [\n        {\n          \"id\": 108,\n          \"user\": \"Helen\",\n          \"text\": \"You deserve it!\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 11,
+            "content": "Exploring new music genres.",
+            "comments": [
+              {
+                "id": 109,
+                "user": "Ivy",
+                "text": "Any recommendations?"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 11,\n      \"content\": \"Exploring new music genres.\",\n      \"comments\": [\n        {\n          \"id\": 109,\n          \"user\": \"Ivy\",\n          \"text\": \"Any recommendations?\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 12,
+            "content": "Planning a road trip!",
+            "comments": [
+              {
+                "id": 110,
+                "user": "Jack",
+                "text": "Drive safely!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 12,\n      \"content\": \"Planning a road trip!\",\n      \"comments\": [\n        {\n          \"id\": 110,\n          \"user\": \"Jack\",\n          \"text\": \"Drive safely!\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "posts": [
+          {
+            "id": 13,
+            "content": "Starting a new workout regime.",
+            "comments": [
+              {
+                "id": 111,
+                "user": "Karen",
+                "text": "Way to go!"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"posts\": [\n    {\n      \"id\": 13,\n      \"content\": \"Starting a new workout regime.\",\n      \"comments\": [\n        {\n          \"id\": 111,\n          \"user\": \"Karen\",\n          \"text\": \"Way to go!\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "location": "Warehouse A",
+        "sensors": [
+          {
+            "type": "temperature",
+            "value": 22.5,
+            "unit": "Celsius"
+          },
+          {
+            "type": "humidity",
+            "value": 45,
+            "unit": "%"
+          }
+        ],
+        "timestamp": "2023-10-10T14:48:00Z"
+      },
+      "{\n    \"location\": \"Warehouse A\",\n    \"sensors\": [\n        {\n            \"type\": \"temperature\",\n            \"value\": 22.5,\n            \"unit\": \"Celsius\",\n        {\n            \"type\": \"humidity\",\n            \"value\": 45,\n            \"unit\": \"%\"\n        }\n    ],\n    \"timestamp\": \"2023-10-10T14:48:00Z\"\n}"
+    ],
+    [
+      {
+        "device_id": "sensor-12345",
+        "readings": [
+          {
+            "type": "pressure",
+            "value": 101.3,
+            "unit": "kPa"
+          }
+        ],
+        "status": "active"
+      },
+      "{\n    \"device_id\": \"sensor-12345\",\n    \"readings\": [\n        {\n            \"type\": \"pressure\",\n            \"value\": 101.3,\n            \"unit\": \"kPa\"\n    ],\n    \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "station": "Main Hub",
+        "sensors": [
+          {
+            "id": "temp-001",
+            "reading": 19.8
+          },
+          {
+            "id": "hum-002",
+            "reading": 55.1
+          }
+        ],
+        "connected": true
+      },
+      "{\n    \"station\": \"Main Hub\",\n    \"sensors\": [\n        {\n            \"id\": \"temp-001\",\n            \"reading\": 19.8\n        {\n            \"id\": \"hum-002\",\n            \"reading\": 55.1\n        }\n    ],\n    \"connected\": true\n}"
+    ],
+    [
+      {
+        "node": "Node 23",
+        "measurements": [
+          {
+            "type": "voltage",
+            "value": 3.7,
+            "unit": "V"
+          },
+          {
+            "type": "current",
+            "value": 0.5,
+            "unit": "A"
+          }
+        ],
+        "operational": false
+      },
+      "{\n    \"node\": \"Node 23\",\n    \"measurements\": [\n        {\n            \"type\": \"voltage\",\n            \"value\": 3.7,\n            \"unit\": \"V\"\n        {\n            \"type\": \"current\",\n            \"value\": 0.5,\n            \"unit\": \"A\"\n        }\n    ],\n    \"operational\": false\n}"
+    ],
+    [
+      {
+        "gateway": "Gateway 1",
+        "data": [
+          {
+            "parameter": "frequency",
+            "measure": 868,
+            "unit": "MHz"
+          }
+        ],
+        "online": true
+      },
+      "{\n    \"gateway\": \"Gateway 1\",\n    \"data\": [\n        {\n            \"parameter\": \"frequency\",\n            \"measure\": 868,\n            \"unit\": \"MHz\"\n    ],\n    \"online\": true\n}"
+    ],
+    [
+      {
+        "building": "Building B",
+        "logs": [
+          {
+            "event": "power_failure",
+            "timestamp": "2023-10-10T12:00:00Z"
+          },
+          {
+            "event": "reboot",
+            "timestamp": "2023-10-11T08:00:00Z"
+          }
+        ],
+        "alerts": false
+      },
+      "{\n    \"building\": \"Building B\",\n    \"logs\": [\n        {\n            \"event\": \"power_failure\",\n            \"timestamp\": \"2023-10-10T12:00:00Z\",\n        {\n            \"event\": \"reboot\",\n            \"timestamp\": \"2023-10-11T08:00:00Z\"\n        }\n    ],\n    \"alerts\": false\n}"
+    ],
+    [
+      {
+        "zone": "Zone X",
+        "metrics": [
+          {
+            "kind": "noise",
+            "level": 70,
+            "unit": "dB"
+          }
+        ],
+        "secure": true
+      },
+      "{\n    \"zone\": \"Zone X\",\n    \"metrics\": [\n        {\n            \"kind\": \"noise\",\n            \"level\": 70,\n            \"unit\": \"dB\"\n    ],\n    \"secure\": true\n}"
+    ],
+    [
+      {
+        "sector": "Sector Y",
+        "devices": [
+          {
+            "type": "camera",
+            "status": "active"
+          },
+          {
+            "type": "sensor",
+            "status": "inactive"
+          }
+        ],
+        "count": 2
+      },
+      "{\n    \"sector\": \"Sector Y\",\n    \"devices\": [\n        {\n            \"type\": \"camera\",\n            \"status\": \"active\"\n        {\n            \"type\": \"sensor\",\n            \"status\": \"inactive\"\n        }\n    ],\n    \"count\": 2\n}"
+    ],
+    [
+      {
+        "field": "Field 5",
+        "elements": [
+          {
+            "description": "temperature probe",
+            "reading": 23.4
+          }
+        ],
+        "active": true
+      },
+      "{\n    \"field\": \"Field 5\",\n    \"elements\": [\n        {\n            \"description\": \"temperature probe\",\n            \"reading\": 23.4\n    ],\n    \"active\": true\n}"
+    ],
+    [
+      {
+        "grid": "Grid North",
+        "sensors": [
+          {
+            "id": "light-004",
+            "intensity": 400,
+            "unit": "lux"
+          },
+          {
+            "id": "temp-005",
+            "intensity": 25,
+            "unit": "Celsius"
+          }
+        ],
+        "operating": true
+      },
+      "{\n    \"grid\": \"Grid North\",\n    \"sensors\": [\n        {\n            \"id\": \"light-004\",\n            \"intensity\": 400,\n            \"unit\": \"lux\",\n        {\n            \"id\": \"temp-005\",\n            \"intensity\": 25,\n            \"unit\": \"Celsius\"\n        }\n    ],\n    \"operating\": true\n}"
+    ],
+    [
+      {
+        "city": "New York",
+        "weather": [
+          {
+            "date": "2023-10-01",
+            "temperature": 68,
+            "condition": "Sunny"
+          },
+          {
+            "date": "2023-10-02",
+            "temperature": 72,
+            "condition": "Cloudy"
+          }
+        ]
+      },
+      "{\n  \"city\": \"New York\",\n  \"weather\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"temperature\": 68,\n      \"condition\": \"Sunny\"\n    {\n      \"date\": \"2023-10-02\",\n      \"temperature\": 72,\n      \"condition\": \"Cloudy\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "city": "London",
+        "forecast": [
+          {
+            "day": "Monday",
+            "high": 60,
+            "low": 50,
+            "description": "Rainy"
+          },
+          {
+            "day": "Tuesday",
+            "high": 58,
+            "low": 48,
+            "description": "Windy"
+          }
+        ]
+      },
+      "{\n  \"city\": \"London\",\n  \"forecast\": [\n    {\n      \"day\": \"Monday\",\n      \"high\": 60,\n      \"low\": 50,\n      \"description\": \"Rainy\"\n    {\n      \"day\": \"Tuesday\",\n      \"high\": 58,\n      \"low\": 48,\n      \"description\": \"Windy\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "country": "Australia",
+        "climate": [
+          {
+            "month": "January",
+            "average_temp": 85,
+            "rainfall": "Low"
+          },
+          {
+            "month": "February",
+            "average_temp": 82,
+            "rainfall": "Moderate"
+          }
+        ]
+      },
+      "{\n  \"country\": \"Australia\",\n  \"climate\": [\n    {\n      \"month\": \"January\",\n      \"average_temp\": 85,\n      \"rainfall\": \"Low\"\n    {\n      \"month\": \"February\",\n      \"average_temp\": 82,\n      \"rainfall\": \"Moderate\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "region": "Asia",
+        "weather_report": [
+          {
+            "city": "Tokyo",
+            "temperature": 75,
+            "humidity": "60%"
+          },
+          {
+            "city": "Beijing",
+            "temperature": 78,
+            "humidity": "55%"
+          }
+        ]
+      },
+      "{\n  \"region\": \"Asia\",\n  \"weather_report\": [\n    {\n      \"city\": \"Tokyo\",\n      \"temperature\": 75,\n      \"humidity\": \"60%\"\n    {\n      \"city\": \"Beijing\",\n      \"temperature\": 78,\n      \"humidity\": \"55%\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "location": "South America",
+        "weather_conditions": [
+          {
+            "city": "Buenos Aires",
+            "forecast": "Sunny",
+            "temperature_min": 65
+          },
+          {
+            "city": "Rio de Janeiro",
+            "forecast": "Rainy",
+            "temperature_min": 70
+          }
+        ]
+      },
+      "{\n  \"location\": \"South America\",\n  \"weather_conditions\": [\n    {\n      \"city\": \"Buenos Aires\",\n      \"forecast\": \"Sunny\",\n      \"temperature_min\": 65\n    {\n      \"city\": \"Rio de Janeiro\",\n      \"forecast\": \"Rainy\",\n      \"temperature_min\": 70\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "continent": "Europe",
+        "daily_weather": [
+          {
+            "location": "Berlin",
+            "high_temp": 64,
+            "low_temp": 50
+          },
+          {
+            "location": "Paris",
+            "high_temp": 68,
+            "low_temp": 52
+          }
+        ]
+      },
+      "{\n  \"continent\": \"Europe\",\n  \"daily_weather\": [\n    {\n      \"location\": \"Berlin\",\n      \"high_temp\": 64,\n      \"low_temp\": 50\n    {\n      \"location\": \"Paris\",\n      \"high_temp\": 68,\n      \"low_temp\": 52\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "region": "Middle East",
+        "weekly_forecast": [
+          {
+            "city": "Dubai",
+            "condition": "Hot",
+            "wind_speed": "20 km/h"
+          },
+          {
+            "city": "Jerusalem",
+            "condition": "Mild",
+            "wind_speed": "15 km/h"
+          }
+        ]
+      },
+      "{\n  \"region\": \"Middle East\",\n  \"weekly_forecast\": [\n    {\n      \"city\": \"Dubai\",\n      \"condition\": \"Hot\",\n      \"wind_speed\": \"20 km/h\"\n    {\n      \"city\": \"Jerusalem\",\n      \"condition\": \"Mild\",\n      \"wind_speed\": \"15 km/h\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "area": "Africa",
+        "weather_data": [
+          {
+            "city": "Cairo",
+            "temperature": 95,
+            "dust_level": "High"
+          },
+          {
+            "city": "Nairobi",
+            "temperature": 78,
+            "dust_level": "Low"
+          }
+        ]
+      },
+      "{\n  \"area\": \"Africa\",\n  \"weather_data\": [\n    {\n      \"city\": \"Cairo\",\n      \"temperature\": 95,\n      \"dust_level\": \"High\"\n    {\n      \"city\": \"Nairobi\",\n      \"temperature\": 78,\n      \"dust_level\": \"Low\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "continent": "North America",
+        "weather_summary": [
+          {
+            "state": "California",
+            "average_high": 77,
+            "average_low": 58
+          },
+          {
+            "state": "Texas",
+            "average_high": 85,
+            "average_low": 65
+          }
+        ]
+      },
+      "{\n  \"continent\": \"North America\",\n  \"weather_summary\": [\n    {\n      \"state\": \"California\",\n      \"average_high\": 77,\n      \"average_low\": 58\n    {\n      \"state\": \"Texas\",\n      \"average_high\": 85,\n      \"average_low\": 65\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "island": "Hawaii",
+        "monthly_weather": [
+          {
+            "month": "March",
+            "rainfall": "High",
+            "temperature": 80
+          },
+          {
+            "month": "April",
+            "rainfall": "Medium",
+            "temperature": 78
+          }
+        ]
+      },
+      "{\n  \"island\": \"Hawaii\",\n  \"monthly_weather\": [\n    {\n      \"month\": \"March\",\n      \"rainfall\": \"High\",\n      \"temperature\": 80\n    {\n      \"month\": \"April\",\n      \"rainfall\": \"Medium\",\n      \"temperature\": 78\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "transactions": [
+          {
+            "id": "TX1001",
+            "amount": 150.0,
+            "currency": "USD",
+            "date": "2023-10-01"
+          },
+          {
+            "id": "TX1002",
+            "amount": 200.0,
+            "currency": "EUR",
+            "date": "2023-10-02"
+          }
+        ]
+      },
+      "{\n  \"transactions\": [\n    {\n      \"id\": \"TX1001\",\n      \"amount\": 150.00,\n      \"currency\": \"USD\",\n      \"date\": \"2023-10-01\"\n    {\n      \"id\": \"TX1002\",\n      \"amount\": 200.00,\n      \"currency\": \"EUR\",\n      \"date\": \"2023-10-02\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "payments": [
+          {
+            "reference": "PMT-20231001",
+            "sender": "Alice",
+            "receiver": "Bob",
+            "amount": 500.0,
+            "currency": "USD"
+          },
+          {
+            "reference": "PMT-20231002",
+            "sender": "Charlie",
+            "receiver": "David",
+            "amount": 750.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n  \"payments\": [\n    {\n      \"reference\": \"PMT-20231001\",\n      \"sender\": \"Alice\",\n      \"receiver\": \"Bob\",\n      \"amount\": 500.00,\n      \"currency\": \"USD\"\n    },\n    {\n      \"reference\": \"PMT-20231002\",\n      \"sender\": \"Charlie\",\n      \"receiver\": \"David\",\n      \"amount\": 750.00,\n      \"currency\": \"USD\"\n  ]\n}"
+    ],
+    [
+      {
+        "exchanges": [
+          {
+            "exchange_id": "EX-1001",
+            "from_currency": "USD",
+            "to_currency": "JPY",
+            "rate": 110.25
+          },
+          {
+            "exchange_id": "EX-1002",
+            "from_currency": "EUR",
+            "to_currency": "USD",
+            "rate": 1.12
+          }
+        ]
+      },
+      "{\n  \"exchanges\": [\n    {\n      \"exchange_id\": \"EX-1001\",\n      \"from_currency\": \"USD\",\n      \"to_currency\": \"JPY\",\n      \"rate\": 110.25\n    },\n    {\n      \"exchange_id\": \"EX-1002\",\n      \"from_currency\": \"EUR\"\n      \"to_currency\": \"USD\",\n      \"rate\": 1.12\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "budgets": [
+          {
+            "budget_id": "BUD-1001",
+            "category": "Marketing",
+            "allocated": 20000.0,
+            "currency": "USD"
+          },
+          {
+            "budget_id": "BUD-1002",
+            "category": "R&D",
+            "allocated": 35000.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n  \"budgets\": [\n    {\n      \"budget_id\": \"BUD-1001\",\n      \"category\": \"Marketing\",\n      \"allocated\": 20000.00,\n      \"currency\": \"USD\"\n    {\n      \"budget_id\": \"BUD-1002\",\n      \"category\": \"R&D\",\n      \"allocated\": 35000.00,\n      \"currency\": \"USD\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "savings": [
+          {
+            "account_number": "SAV-1234",
+            "owner": "Emily Clark",
+            "balance": 1500.0
+          },
+          {
+            "account_number": "SAV-5678",
+            "owner": "Michael Brown",
+            "balance": 3000.0
+          }
+        ]
+      },
+      "{\n  \"savings\": [\n    {\n      \"account_number\": \"SAV-1234\",\n      \"owner\": \"Emily Clark\",\n      \"balance\": 1500.00\n    {\n      \"account_number\": \"SAV-5678\",\n      \"owner\": \"Michael Brown\",\n      \"balance\": 3000.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "investments": [
+          {
+            "investment_id": "INV-9876",
+            "type": "Stock",
+            "amount": 5000.0,
+            "currency": "USD"
+          },
+          {
+            "investment_id": "INV-5432",
+            "type": "Bond",
+            "amount": 10000.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n  \"investments\": [\n    {\n      \"investment_id\": \"INV-9876\",\n      \"type\": \"Stock\",\n      \"amount\": 5000.00,\n      \"currency\": \"USD\"\n    {\n      \"investment_id\": \"INV-5432\",\n      \"type\": \"Bond\",\n      \"amount\": 10000.00,\n      \"currency\": \"USD\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "expenses": [
+          {
+            "expense_id": "EXP-2023-01",
+            "description": "Office Supplies",
+            "cost": 120.0,
+            "currency": "USD"
+          },
+          {
+            "expense_id": "EXP-2023-02",
+            "description": "Travel",
+            "cost": 500.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n  \"expenses\": [\n    {\n      \"expense_id\": \"EXP-2023-01\",\n      \"description\": \"Office Supplies\",\n      \"cost\": 120.00,\n      \"currency\": \"USD\"\n    },\n    {\n      \"expense_id\": \"EXP-2023-02\",\n      \"description\": \"Travel\",\n      \"cost\": 500.00,\n      \"currency\": \"USD\"\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1001",
+        "activities": [
+          {
+            "type": "running",
+            "distance": 5.2,
+            "unit": "km"
+          },
+          {
+            "type": "cycling",
+            "distance": 20.5,
+            "unit": "km"
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1001\",\n  \"activities\": [\n    {\n      \"type\": \"running\",\n      \"distance\": 5.2,\n      \"unit\": \"km\"\n    ,\n    {\n      \"type\": \"cycling\",\n      \"distance\": 20.5,\n      \"unit\": \"km\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1002",
+        "diet_log": [
+          {
+            "day": "Monday",
+            "calories": 2200
+          },
+          {
+            "day": "Tuesday",
+            "calories": 2100
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1002\",\n  \"diet_log\": [\n    {\n      \"day\": \"Monday\",\n      \"calories\": 2200\n    ,\n    {\n      \"day\": \"Tuesday\",\n      \"calories\": 2100\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1003",
+        "workout_schedule": [
+          {
+            "day": "Wednesday",
+            "exercise": "yoga",
+            "duration": 60
+          },
+          {
+            "day": "Friday",
+            "exercise": "swimming",
+            "duration": 30
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1003\",\n  \"workout_schedule\": [\n    {\n      \"day\": \"Wednesday\",\n      \"exercise\": \"yoga\",\n      \"duration\": 60\n    ,\n    {\n      \"day\": \"Friday\",\n      \"exercise\": \"swimming\",\n      \"duration\": 30\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1004",
+        "health_metrics": [
+          {
+            "date": "2023-10-01",
+            "weight": 70.5
+          },
+          {
+            "date": "2023-10-08",
+            "weight": 70.2
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1004\",\n  \"health_metrics\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"weight\": 70.5\n    ,\n    {\n      \"date\": \"2023-10-08\",\n      \"weight\": 70.2\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1005",
+        "sleep_analysis": [
+          {
+            "night": "Saturday",
+            "hours_slept": 8.0
+          },
+          {
+            "night": "Sunday",
+            "hours_slept": 7.5
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1005\",\n  \"sleep_analysis\": [\n    {\n      \"night\": \"Saturday\",\n      \"hours_slept\": 8.0\n    ,\n    {\n      \"night\": \"Sunday\",\n      \"hours_slept\": 7.5\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1006",
+        "water_intake": [
+          {
+            "day": "Monday",
+            "liters": 2.0
+          },
+          {
+            "day": "Tuesday",
+            "liters": 1.8
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1006\",\n  \"water_intake\": [\n    {\n      \"day\": \"Monday\",\n      \"liters\": 2.0\n    ,\n    {\n      \"day\": \"Tuesday\",\n      \"liters\": 1.8\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1007",
+        "mental_wellness": [
+          {
+            "day": "Wednesday",
+            "mood": "Happy"
+          },
+          {
+            "day": "Thursday",
+            "mood": "Stressed"
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1007\",\n  \"mental_wellness\": [\n    {\n      \"day\": \"Wednesday\",\n      \"mood\": \"Happy\"\n    ,\n    {\n      \"day\": \"Thursday\",\n      \"mood\": \"Stressed\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1008",
+        "fitness_goals": [
+          {
+            "goal": "Run 10km",
+            "target_date": "2023-12-01"
+          },
+          {
+            "goal": "Lose 5kg",
+            "target_date": "2024-01-01"
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1008\",\n  \"fitness_goals\": [\n    {\n      \"goal\": \"Run 10km\",\n      \"target_date\": \"2023-12-01\"\n    ,\n    {\n      \"goal\": \"Lose 5kg\",\n      \"target_date\": \"2024-01-01\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1009",
+        "meal_plans": [
+          {
+            "day": "Monday",
+            "meals": [
+              "Breakfast: Oatmeal",
+              "Lunch: Salad",
+              "Dinner: Grilled Chicken"
+            ]
+          },
+          {
+            "day": "Tuesday",
+            "meals": [
+              "Breakfast: Smoothie",
+              "Lunch: Sandwich",
+              "Dinner: Pasta"
+            ]
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1009\",\n  \"meal_plans\": [\n    {\n      \"day\": \"Monday\",\n      \"meals\": [\n        \"Breakfast: Oatmeal\",\n        \"Lunch: Salad\",\n        \"Dinner: Grilled Chicken\"\n      ]\n    ,\n    {\n      \"day\": \"Tuesday\",\n      \"meals\": [\n        \"Breakfast: Smoothie\",\n        \"Lunch: Sandwich\",\n        \"Dinner: Pasta\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": "U1010",
+        "gym_sessions": [
+          {
+            "date": "2023-10-10",
+            "exercises": [
+              "Bench Press",
+              "Squats",
+              "Deadlift"
+            ]
+          },
+          {
+            "date": "2023-10-12",
+            "exercises": [
+              "Pull-ups",
+              "Bicep Curls",
+              "Tricep Dips"
+            ]
+          }
+        ]
+      },
+      "{\n  \"user_id\": \"U1010\",\n  \"gym_sessions\": [\n    {\n      \"date\": \"2023-10-10\",\n      \"exercises\": [\n        \"Bench Press\",\n        \"Squats\",\n        \"Deadlift\"\n      ]\n    ,\n    {\n      \"date\": \"2023-10-12\",\n      \"exercises\": [\n        \"Pull-ups\",\n        \"Bicep Curls\",\n        \"Tricep Dips\"\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "vehicles": [
+          {
+            "type": "car",
+            "location": {
+              "latitude": 40.712776,
+              "longitude": -74.005974
+            }
+          },
+          {
+            "type": "bike",
+            "location": {
+              "latitude": 34.052235,
+              "longitude": -118.243683
+            }
+          }
+        ]
+      },
+      "{\n  \"vehicles\": [\n    {\n      \"type\": \"car\",\n      \"location\": {\n        \"latitude\": 40.712776,\n        \"longitude\": -74.005974\n    },\n    {\n      \"type\": \"bike\",\n      \"location\": {\n        \"latitude\": 34.052235,\n        \"longitude\": -118.243683\n      }\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "routes": [
+          {
+            "name": "Route 66",
+            "stops": [
+              {
+                "city": "Chicago",
+                "coordinates": {
+                  "latitude": 41.878113,
+                  "longitude": -87.629799
+                }
+              },
+              {
+                "city": "Los Angeles",
+                "coordinates": {
+                  "latitude": 34.052235,
+                  "longitude": -118.243683
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"routes\": [\n    {\n      \"name\": \"Route 66\",\n      \"stops\": [\n        {\n          \"city\": \"Chicago\",\n          \"coordinates\": {\n            \"latitude\": 41.878113,\n            \"longitude\": -87.629799\n          },\n        {\n          \"city\": \"Los Angeles\",\n          \"coordinates\": {\n            \"latitude\": 34.052235,\n            \"longitude\": -118.243683\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "trips": [
+          {
+            "destination": "New York",
+            "waypoints": [
+              {
+                "latitude": 39.952583,
+                "longitude": -75.165222
+              },
+              {
+                "latitude": 40.712776,
+                "longitude": -74.005974
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"trips\": [\n    {\n      \"destination\": \"New York\",\n      \"waypoints\": [\n        {\n          \"latitude\": 39.952583,\n          \"longitude\": -75.165222\n        },\n        {\n          \"latitude\": 40.712776,\n          \"longitude\": -74.005974\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "transit": [
+          {
+            "mode": "bus",
+            "stops": [
+              {
+                "name": "Main St",
+                "location": {
+                  "latitude": 35.227085,
+                  "longitude": -80.843124
+                }
+              },
+              {
+                "name": "Broadway",
+                "location": {
+                  "latitude": 36.162664,
+                  "longitude": -86.781602
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"transit\": [\n    {\n      \"mode\": \"bus\",\n      \"stops\": [\n        {\n          \"name\": \"Main St\",\n          \"location\": {\n            \"latitude\": 35.227085,\n            \"longitude\": -80.843124\n        },\n        {\n          \"name\": \"Broadway\",\n          \"location\": {\n            \"latitude\": 36.162664,\n            \"longitude\": -86.781602\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "delivery": [
+          {
+            "service": "express",
+            "locations": [
+              {
+                "point": "warehouse",
+                "coordinates": {
+                  "latitude": 33.448376,
+                  "longitude": -112.074036
+                }
+              },
+              {
+                "point": "hub",
+                "coordinates": {
+                  "latitude": 29.760427,
+                  "longitude": -95.369804
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"delivery\": [\n    {\n      \"service\": \"express\",\n      \"locations\": [\n        {\n          \"point\": \"warehouse\",\n          \"coordinates\": {\n            \"latitude\": 33.448376,\n            \"longitude\": -112.074036\n        },\n        {\n          \"point\": \"hub\",\n          \"coordinates\": {\n            \"latitude\": 29.760427,\n            \"longitude\": -95.369804\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "navigation": [
+          {
+            "vehicle": "scooter",
+            "track": [
+              {
+                "start": {
+                  "latitude": 32.715736,
+                  "longitude": -117.161087
+                }
+              },
+              {
+                "end": {
+                  "latitude": 34.052235,
+                  "longitude": -118.243683
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"navigation\": [\n    {\n      \"vehicle\": \"scooter\",\n      \"track\": [\n        {\n          \"start\": {\n            \"latitude\": 32.715736,\n            \"longitude\": -117.161087\n          }\n        },\n        {\n          \"end\": {\n            \"latitude\": 34.052235,\n            \"longitude\": -118.243683\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "rideSharing": [
+          {
+            "service": "uber",
+            "coords": [
+              {
+                "pickup": {
+                  "latitude": 37.774929,
+                  "longitude": -122.419418
+                }
+              },
+              {
+                "dropoff": {
+                  "latitude": 37.338208,
+                  "longitude": -121.886329
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"rideSharing\": [\n    {\n      \"service\": \"uber\",\n      \"coords\": [\n        {\n          \"pickup\": {\n            \"latitude\": 37.774929,\n            \"longitude\": -122.419418\n        },\n        {\n          \"dropoff\": {\n            \"latitude\": 37.338208,\n            \"longitude\": -121.886329\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "freight": [
+          {
+            "type": "air",
+            "route": [
+              {
+                "departure": {
+                  "latitude": 47.606209,
+                  "longitude": -122.332069
+                }
+              },
+              {
+                "arrival": {
+                  "latitude": 37.774929,
+                  "longitude": -122.419418
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"freight\": [\n    {\n      \"type\": \"air\",\n      \"route\": [\n        {\n          \"departure\": {\n            \"latitude\": 47.606209,\n            \"longitude\": -122.332069\n        },\n        {\n          \"arrival\": {\n            \"latitude\": 37.774929,\n            \"longitude\": -122.419418\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "tracking": [
+          {
+            "packageId": "12345",
+            "locations": [
+              {
+                "date": "2023-10-01",
+                "coordinates": {
+                  "latitude": 40.73061,
+                  "longitude": -73.935242
+                }
+              },
+              {
+                "date": "2023-10-02",
+                "coordinates": {
+                  "latitude": 41.878113,
+                  "longitude": -87.629799
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"tracking\": [\n    {\n      \"packageId\": \"12345\",\n      \"locations\": [\n        {\n          \"date\": \"2023-10-01\",\n          \"coordinates\": {\n            \"latitude\": 40.73061,\n            \"longitude\": -73.935242\n        },\n        {\n          \"date\": \"2023-10-02\",\n          \"coordinates\": {\n            \"latitude\": 41.878113,\n            \"longitude\": -87.629799\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "logistics": [
+          {
+            "method": "rail",
+            "stations": [
+              {
+                "name": "Central",
+                "location": {
+                  "latitude": 51.507351,
+                  "longitude": -0.127758
+                }
+              },
+              {
+                "name": "East",
+                "location": {
+                  "latitude": 51.515419,
+                  "longitude": -0.141099
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"logistics\": [\n    {\n      \"method\": \"rail\",\n      \"stations\": [\n        {\n          \"name\": \"Central\",\n          \"location\": {\n            \"latitude\": 51.507351,\n            \"longitude\": -0.127758\n        },\n        {\n          \"name\": \"East\",\n          \"location\": {\n            \"latitude\": 51.515419,\n            \"longitude\": -0.141099\n          }\n        }\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Central Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "001",
+            "books": [
+              {
+                "title": "1984",
+                "author": "George Orwell"
+              }
+            ]
+          },
+          {
+            "memberID": "002",
+            "books": [
+              {
+                "title": "The Great Gatsby",
+                "author": "F. Scott Fitzgerald"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Central Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"001\",\n            \"books\": [\n                {\"title\": \"1984\", \"author\": \"George Orwell\"}\n        },\n        {\n            \"memberID\": \"002\",\n            \"books\": [\n                {\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "City Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "100",
+            "books": [
+              {
+                "title": "To Kill a Mockingbird",
+                "author": "Harper Lee"
+              },
+              {
+                "title": "Animal Farm",
+                "author": "George Orwell"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"City Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"100\",\n            \"books\": [\n                {\"title\": \"To Kill a Mockingbird\", \"author\": \"Harper Lee\"},\n                {\"title\": \"Animal Farm\", \"author\": \"George Orwell\"}\n            ]\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Downtown Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "300",
+            "books": [
+              {
+                "title": "Catch-22",
+                "author": "Joseph Heller"
+              }
+            ]
+          },
+          {
+            "memberID": "301",
+            "books": [
+              {
+                "title": "Brave New World",
+                "author": "Aldous Huxley"
+              },
+              {
+                "title": "Fahrenheit 451",
+                "author": "Ray Bradbury"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Downtown Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"300\",\n            \"books\": [\n                {\"title\": \"Catch-22\", \"author\": \"Joseph Heller\"}\n            ]\n        },\n        {\n            \"memberID\": \"301\",\n            \"books\": [\n                {\"title\": \"Brave New World\", \"author\": \"Aldous Huxley\"},\n                {\"title\": \"Fahrenheit 451\", \"author\": \"Ray Bradbury\"}\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Community Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "450",
+            "books": [
+              {
+                "title": "The Catcher in the Rye",
+                "author": "J.D. Salinger"
+              }
+            ]
+          },
+          {
+            "memberID": "451",
+            "books": [
+              {
+                "title": "The Lord of the Rings",
+                "author": "J.R.R. Tolkien"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Community Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"450\",\n            \"books\": [\n                {\"title\": \"The Catcher in the Rye\", \"author\": \"J.D. Salinger\"}\n        },\n        {\n            \"memberID\": \"451\",\n            \"books\": [\n                {\"title\": \"The Lord of the Rings\", \"author\": \"J.R.R. Tolkien\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "University Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "550",
+            "books": [
+              {
+                "title": "Pride and Prejudice",
+                "author": "Jane Austen"
+              }
+            ]
+          },
+          {
+            "memberID": "551",
+            "books": [
+              {
+                "title": "Jane Eyre",
+                "author": "Charlotte Bront\u00eb"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"University Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"550\",\n            \"books\": [\n                {\"title\": \"Pride and Prejudice\", \"author\": \"Jane Austen\"}\n            ]\n        },\n        {\n            \"memberID\": \"551\",\n            \"books\": [\n                {\"title\": \"Jane Eyre\", \"author\": \"Charlotte Bront\u00eb\"}\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Suburban Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "650",
+            "books": [
+              {
+                "title": "Moby Dick",
+                "author": "Herman Melville"
+              }
+            ]
+          },
+          {
+            "memberID": "651",
+            "books": [
+              {
+                "title": "War and Peace",
+                "author": "Leo Tolstoy"
+              },
+              {
+                "title": "Anna Karenina",
+                "author": "Leo Tolstoy"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Suburban Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"650\",\n            \"books\": [\n                {\"title\": \"Moby Dick\", \"author\": \"Herman Melville\"}\n            ]\n        },\n        {\n            \"memberID\": \"651\",\n            \"books\": [\n                {\"title\": \"War and Peace\", \"author\": \"Leo Tolstoy\"},\n                {\"title\": \"Anna Karenina\", \"author\": \"Leo Tolstoy\"}\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Regional Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "750",
+            "books": [
+              {
+                "title": "Les Mis\u00e9rables",
+                "author": "Victor Hugo"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Regional Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"750\",\n            \"books\": [\n                {\"title\": \"Les Mis\u00e9rables\", \"author\": \"Victor Hugo\"}\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Metropolitan Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "850",
+            "books": [
+              {
+                "title": "The Hobbit",
+                "author": "J.R.R. Tolkien"
+              },
+              {
+                "title": "The Silmarillion",
+                "author": "J.R.R. Tolkien"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Metropolitan Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"850\",\n            \"books\": [\n                {\"title\": \"The Hobbit\", \"author\": \"J.R.R. Tolkien\"},\n                {\"title\": \"The Silmarillion\", \"author\": \"J.R.R. Tolkien\"}\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Small Town Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "950",
+            "books": [
+              {
+                "title": "The Odyssey",
+                "author": "Homer"
+              }
+            ]
+          },
+          {
+            "memberID": "951",
+            "books": [
+              {
+                "title": "Iliad",
+                "author": "Homer"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Small Town Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"950\",\n            \"books\": [\n                {\"title\": \"The Odyssey\", \"author\": \"Homer\"}\n            ]\n        },\n        {\n            \"memberID\": \"951\",\n            \"books\": [\n                {\"title\": \"Iliad\", \"author\": \"Homer\"}\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "library": "Ocean Side Library",
+        "bookLendingRecords": [
+          {
+            "memberID": "1050",
+            "books": [
+              {
+                "title": "Great Expectations",
+                "author": "Charles Dickens"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"library\": \"Ocean Side Library\",\n    \"bookLendingRecords\": [\n        {\n            \"memberID\": \"1050\",\n            \"books\": [\n                {\"title\": \"Great Expectations\", \"author\": \"Charles Dickens\"}\n        }\n    ]\n}"
+    ]
+  ]
+}

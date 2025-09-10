@@ -1,0 +1,212 @@
+{
+  "test_0": {
+    "model_names": [
+      "BERT",
+      "MobileBERT"
+    ],
+    "abstract": "In this paper, we explore an efficient knowledge distillation technique aimed at compressing the BERT model into a more lightweight version, MobileBERT, suitable for deployment on mobile devices. The proposed method leverages attention transfer and layer-wise distillation to maintain performance while significantly reducing model size and computational requirements. Our experiments demonstrate that MobileBERT achieves comparable accuracy on the GLUE benchmark with a fraction of the parameters of the original BERT model."
+  },
+  "test_1": {
+    "model_names": [
+      "DistilBERT",
+      "TinyBERT"
+    ],
+    "abstract": "We propose a novel approach to model compression by distilling knowledge from DistilBERT into TinyBERT. Our framework efficiently transfers both knowledge and attention patterns, leading to a smaller model that retains robust performance. The experimental results on various NLP tasks show that TinyBERT achieves a similar accuracy to DistilBERT while reducing the inference latency by 40%."
+  },
+  "test_2": {
+    "model_names": [
+      "RoBERTa",
+      "MiniLM"
+    ],
+    "abstract": "This study presents a comprehensive analysis of compressing the RoBERTa model into MiniLM through knowledge distillation. By introducing a multi-head self-attention matching mechanism, MiniLM effectively captures the linguistic information of RoBERTa. Our results demonstrate that MiniLM achieves competitive scores on common NLP benchmarks with a reduced computational footprint, making it suitable for real-time applications."
+  },
+  "test_3": {
+    "model_names": [
+      "ResNet-50",
+      "EfficientNet"
+    ],
+    "abstract": "We introduce a novel distillation framework aimed at compressing ResNet-50 into a more efficient model, EfficientNet, by incorporating feature map alignment and layer pruning strategies. This approach allows EfficientNet to inherit the feature extraction capabilities of ResNet-50 while operating with fewer resources. Empirical evaluations on the ImageNet dataset confirm that EfficientNet maintains accuracy levels comparable to ResNet-50 with a significantly smaller memory footprint."
+  },
+  "test_4": {
+    "model_names": [
+      "GPT-3",
+      "TinyGPT"
+    ],
+    "abstract": "In this research, a two-stage knowledge distillation process is applied to compress GPT-3 into TinyGPT. By utilizing both word-level and sentence-level distillation, TinyGPT effectively preserves the language modeling capabilities of GPT-3 while reducing parameter count by 70%. The proposed model demonstrates its efficacy on various generative tasks, achieving performance close to GPT-3 with enhanced computational efficiency."
+  },
+  "test_5": {
+    "model_names": [
+      "VGG-16",
+      "SqueezeNet"
+    ],
+    "abstract": "Our work focuses on compressing VGG-16 into a compact architecture, SqueezeNet, using a novel structural distillation method. This involves transferring both the hierarchical feature representations and spatial attention from VGG-16. The experiments conducted on standard image classification datasets indicate that SqueezeNet offers a substantial reduction in model size while achieving over 90% of the baseline accuracy of VGG-16."
+  },
+  "test_6": {
+    "model_names": [
+      "Llama",
+      "Llama-2"
+    ],
+    "abstract": "The paper introduces a streamlined knowledge distillation technique to create Llama-2 by compressing Llama. By employing progressive layer shrinking and adaptive knowledge transfer, Llama-2 retains the generative prowess of Llama while reducing computational overhead. Benchmarking on conversational AI tasks shows that Llama-2 sustains performance levels akin to Llama with a more efficient architecture."
+  },
+  "test_7": {
+    "model_names": [
+      "Transformer-XL",
+      "CompactTransformer"
+    ],
+    "abstract": "We propose a knowledge distillation methodology that reduces the complexity of Transformer-XL into a more compact model, CompactTransformer. The approach utilizes segment-level matching and memory retention techniques to preserve the long-range dependency modeling of Transformer-XL. Our empirical results on language modeling tasks demonstrate that CompactTransformer achieves a 50% reduction in model size without compromising accuracy."
+  },
+  "test_8": {
+    "model_names": [
+      "XLNet",
+      "FastXLNet"
+    ],
+    "abstract": "This paper presents FastXLNet, a compressed version of XLNet obtained through a targeted distillation process that focuses on attention head pruning and token embedding optimization. FastXLNet manages to uphold the performance of XLNet across various linguistic benchmarks while delivering faster inference speeds and reduced parameter count, showcasing its potential for deployment in latency-sensitive applications."
+  },
+  "test_9": {
+    "model_names": [
+      "T5",
+      "DistilT5"
+    ],
+    "abstract": "Our research introduces DistilT5, a compressed variant of the T5 model achieved through a novel mixed-mode distillation approach. This approach blends text summarization and question-answering tasks to effectively transfer knowledge. As a result, DistilT5 exhibits competitive performance with the original T5 while boasting a significant reduction in computational demand, making it ideal for resource-constrained environments."
+  },
+  "test_10": {
+    "model_names": [
+      "Inception-v3",
+      "LiteInception"
+    ],
+    "abstract": "We present LiteInception, a compact version of Inception-v3, derived through an innovative layer compression and feature distillation framework. By aligning activation patterns and selectively pruning filters, LiteInception effectively reduces model size by over 60% while retaining high accuracy on image classification tasks, as evidenced by our experiments on the CIFAR-100 dataset."
+  },
+  "test_11": {
+    "model_names": [
+      "BERT",
+      "DistilBERT"
+    ],
+    "abstract": "This work investigates the potential of DistilBERT as a distilled version of BERT, focusing on reducing computational complexity while maintaining effectiveness. Using a combination of token-level and sentence-level distillation techniques, DistilBERT achieves a comparable performance to BERT on the SQuAD dataset, with only half the parameters and faster inference time."
+  },
+  "test_12": {
+    "model_names": [
+      "OpenAI CLIP",
+      "MiniCLIP"
+    ],
+    "abstract": "This paper explores the downscaling of OpenAI CLIP into a compact model, MiniCLIP, through a tailored knowledge distillation approach. MiniCLIP leverages cross-modal feature alignment techniques to capture multi-modal representations with a reduced parameter set. The resulting model sustains the multimodal understanding capabilities of CLIP across vision and language tasks while being more efficient for deployment."
+  },
+  "test_13": {
+    "model_names": [
+      "BART",
+      "LightBART"
+    ],
+    "abstract": "LightBART is introduced as a distilled version of the BART model, designed for efficient text generation tasks. Through a structured distillation process focusing on encoder-decoder layer optimization, LightBART achieves similar performance levels to BART on abstractive summarization tasks while reducing computational resources by 35%."
+  },
+  "test_14": {
+    "model_names": [
+      "Vision Transformer",
+      "TinyViT"
+    ],
+    "abstract": "In this study, we propose TinyViT, a lightweight version of the Vision Transformer model, utilizing a novel attention-focused distillation technique. TinyViT retains the robust feature extraction capabilities of the Vision Transformer while achieving a 50% reduction in model size. Experimental results on image classification tasks demonstrate that TinyViT maintains competitive accuracy with enhanced efficiency."
+  },
+  "test_15": {
+    "model_names": [
+      "ELECTRA",
+      "MiniELECTRA"
+    ],
+    "abstract": "We introduce MiniELECTRA, a compressed version of the ELECTRA model, developed through a hybrid distillation approach. By integrating generator-discriminator interactions into the distillation process, MiniELECTRA achieves a balance between performance and efficiency. Our evaluations indicate that MiniELECTRA performs comparably to ELECTRA on a variety of NLP benchmarks, with significantly reduced computational requirements."
+  },
+  "test_16": {
+    "model_names": [
+      "GPT-3",
+      "MiniGPT"
+    ],
+    "abstract": "This paper presents MiniGPT, a compact iteration of the GPT-3 model achieved through a multi-scale knowledge distillation process. By distilling both syntactic and semantic knowledge, MiniGPT maintains high language generation quality while reducing the parameter count by 60%. The model is validated on a series of natural language generation tasks, demonstrating its potential for efficient deployment."
+  },
+  "test_17": {
+    "model_names": [
+      "ResNet-101",
+      "TinyResNet"
+    ],
+    "abstract": "Through a strategic application of knowledge distillation, we developed TinyResNet from ResNet-101, focused on minimizing model complexity while preserving accuracy. TinyResNet employs feature map similarity and hierarchical knowledge transfer to achieve this balance. Simulation results on image recognition tasks indicate that TinyResNet maintains substantial accuracy with a significantly smaller memory and computational footprint."
+  },
+  "test_18": {
+    "model_names": [
+      "BERT",
+      "SlimBERT"
+    ],
+    "abstract": "Our research introduces SlimBERT, a streamlined adaptation of BERT using a layer-wise distillation and parameter pruning methodology. SlimBERT effectively captures essential linguistic patterns with reduced parameters, achieving performance on par with BERT across several NLP tasks, while operating with reduced latency and improved scalability."
+  },
+  "test_19": {
+    "model_names": [
+      "EfficientNet-B0",
+      "MicroNet"
+    ],
+    "abstract": "This study presents MicroNet, a lightweight model distilled from EfficientNet-B0, by employing a compression-aware knowledge transfer strategy. MicroNet inherits the high-efficiency characteristics of EfficientNet-B0, maintaining accuracy on image classification challenges while achieving a more compact form suitable for edge computing environments."
+  },
+  "test_20": {
+    "model_names": [
+      "XLNet",
+      "NanoXLNet"
+    ],
+    "abstract": "NanoXLNet is introduced as a distilled alternative to XLNet, featuring a significantly smaller architecture derived from focused knowledge transfer and attention mechanism refinement. Our evaluations reveal that NanoXLNet retains robust performance on language modeling tasks while being more resource-efficient, demonstrating its utility in constrained computational scenarios."
+  },
+  "test_21": {
+    "model_names": [
+      "Albert",
+      "MicroAlbert"
+    ],
+    "abstract": "We propose MicroAlbert, a compressed model distilled from Albert, utilizing an embedding distillation mechanism that efficiently compresses semantic representation. MicroAlbert achieves a comparable performance to Albert on the GLUE benchmark while operating with fewer parameters, highlighting its potential for efficient NLP model deployment."
+  },
+  "test_22": {
+    "model_names": [
+      "Transformers",
+      "MiniTransformers"
+    ],
+    "abstract": "We propose MiniTransformers, a compressed version of the standard Transformers model, using a cross-layer knowledge distillation strategy. MiniTransformers are designed to maintain the original model's expressivity while significantly reducing the number of parameters. Experimental results show that MiniTransformers deliver strong performance on sequence transduction tasks with enhanced speed and efficiency."
+  },
+  "test_23": {
+    "model_names": [
+      "VGG-19",
+      "CompactVGG"
+    ],
+    "abstract": "CompactVGG is introduced as a compact architecture distilled from VGG-19 through a feature preservation and selective pruning process. The resulting model retains high accuracy on image recognition tasks, achieving a significant reduction in parameters and computational cost compared to the original VGG-19 model. The success of CompactVGG is validated on extensive image benchmarks."
+  },
+  "test_24": {
+    "model_names": [
+      "GPT-2",
+      "SlimGPT"
+    ],
+    "abstract": "We present SlimGPT, a distilled form of GPT-2 achieved through targeted knowledge transfer and sequential layer compression. SlimGPT maintains the generative capabilities of GPT-2 with a notable decrease in parameters, optimizing it for environments with limited computational capacity. Performance evaluations confirm that SlimGPT achieves near-parity with GPT-2 across diverse language tasks."
+  },
+  "test_25": {
+    "model_names": [
+      "DenseNet",
+      "CompactDenseNet"
+    ],
+    "abstract": "In this work, CompactDenseNet is proposed as a distilled and compressed version of DenseNet, using an innovative knowledge distillation process that emphasizes feature connectivity preservation. CompactDenseNet is validated on standard vision benchmarks, showing that it achieves comparable accuracy to DenseNet while being more compact and computationally efficient."
+  },
+  "test_26": {
+    "model_names": [
+      "BERT",
+      "MiniBERT"
+    ],
+    "abstract": "MiniBERT is introduced as a compact alternative to BERT, obtained through a layer-wise knowledge distillation framework that preserves transformer representational capacity. Our experiments show that MiniBERT performs competitively with BERT on multiple NLP benchmarks while requiring significantly fewer computational resources, making it suitable for deployment in resource-constrained scenarios."
+  },
+  "test_27": {
+    "model_names": [
+      "WideResNet",
+      "SlimResNet"
+    ],
+    "abstract": "This study develops SlimResNet, a streamlined version of WideResNet, through an innovative knowledge distillation method focused on channel and layer pruning. SlimResNet maintains the wide architecture's performance on image classification tasks while achieving a reduction in model size and computational demand, as demonstrated by experiments on popular image datasets."
+  },
+  "test_28": {
+    "model_names": [
+      "FastText",
+      "TinyText"
+    ],
+    "abstract": "TinyText is introduced as a distilled version of FastText, focusing on reducing the model size without sacrificing performance. By applying an efficient word-vector compression technique and knowledge distillation, TinyText manages to retain the classification accuracy of FastText across various textual datasets while being more computationally efficient."
+  },
+  "test_29": {
+    "model_names": [
+      "YOLOv3",
+      "NanoYOLO"
+    ],
+    "abstract": "We propose NanoYOLO, a compressed version of YOLOv3, developed using a targeted distillation strategy that emphasizes feature map alignment and anchor point refinement. NanoYOLO achieves real-time object detection performance close to that of YOLOv3 while operating with a fraction of the computational resources, making it suitable for deployment in edge devices."
+  }
+}

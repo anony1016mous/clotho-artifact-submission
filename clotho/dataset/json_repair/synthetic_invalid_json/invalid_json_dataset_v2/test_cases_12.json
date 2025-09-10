@@ -1,0 +1,1015 @@
+{
+  "possible_fix": "Strip fenced code blocks like ```json and ```",
+  "test_cases": [
+    [
+      {
+        "applicant": {
+          "name": "John Doe",
+          "contact": {
+            "email": "john.doe@example.com",
+            "phone": "555-0100"
+          }
+        },
+        "resume": {
+          "skills": [
+            "JavaScript",
+            "Python",
+            "SQL"
+          ],
+          "experience": [
+            {
+              "company": "Tech Corp",
+              "role": "Software Developer",
+              "duration": "3 years"
+            }
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"John Doe\",\n        \"contact\": {\n            \"email\": \"john.doe@example.com\",\n            \"phone\": \"555-0100\"\n        }\n    },\n    \"resume\": {\n        \"skills\": [\n            ```json\n            \"JavaScript\",\n            \"Python\",\n            \"SQL\"\n            ```\n        ],\n        \"experience\": [\n            {\n                \"company\": \"Tech Corp\",\n                \"role\": \"Software Developer\",\n                \"duration\": \"3 years\"\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Jane Smith",
+          "contact": {
+            "email": "jane.smith@example.com",
+            "phone": "555-0200"
+          }
+        },
+        "resume": {
+          "education": {
+            "degree": "BSc Computer Science",
+            "university": "University of Example",
+            "graduation_year": 2020
+          },
+          "languages": [
+            "English",
+            "Spanish"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Jane Smith\",\n        \"contact\": {\n            \"email\": \"jane.smith@example.com\",\n            \"phone\": \"555-0200\"\n        }\n    },\n    \"resume\": {\n        \"education\": {\n            \"degree\": \"BSc Computer Science\",\n            \"university\": \"University of Example\",\n            \"graduation_year\": 2020\n        },\n        \"languages\": [\n            ```json\n            \"English\",\n            \"Spanish\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Alice Johnson",
+          "contact": {
+            "email": "alice.j@example.com",
+            "phone": "555-0300"
+          }
+        },
+        "resume": {
+          "projects": [
+            {
+              "title": "Web Scraper",
+              "description": "A tool to extract data from websites."
+            }
+          ],
+          "certifications": [
+            "AWS Certified",
+            "Google Cloud Certified"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Alice Johnson\",\n        \"contact\": {\n            \"email\": \"alice.j@example.com\",\n            \"phone\": \"555-0300\"\n        }\n    },\n    \"resume\": {\n        \"projects\": [\n            {\n                \"title\": \"Web Scraper\",\n                \"description\": \"A tool to extract data from websites.\"\n            }\n        ],\n        \"certifications\": [\n            ```json\n            \"AWS Certified\",\n            \"Google Cloud Certified\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Michael Brown",
+          "contact": {
+            "email": "michael.brown@example.com",
+            "phone": "555-0400"
+          }
+        },
+        "resume": {
+          "references": [
+            {
+              "name": "Emma Wilson",
+              "relationship": "Former Manager"
+            }
+          ],
+          "hobbies": [
+            "Photography",
+            "Cycling"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Michael Brown\",\n        \"contact\": {\n            \"email\": \"michael.brown@example.com\",\n            \"phone\": \"555-0400\"\n        }\n    },\n    \"resume\": {\n        \"references\": [\n            {\n                \"name\": \"Emma Wilson\",\n                \"relationship\": \"Former Manager\"\n            }\n        ],\n        \"hobbies\": [\n            ```json\n            \"Photography\",\n            \"Cycling\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Emily Clark",
+          "contact": {
+            "email": "emily.clark@example.com",
+            "phone": "555-0500"
+          }
+        },
+        "resume": {
+          "objective": "To secure a challenging position in a reputable organization.",
+          "achievements": [
+            "Dean's List",
+            "Hackathon Winner"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Emily Clark\",\n        \"contact\": {\n            \"email\": \"emily.clark@example.com\",\n            \"phone\": \"555-0500\"\n        }\n    },\n    \"resume\": {\n        \"objective\": \"To secure a challenging position in a reputable organization.\",\n        \"achievements\": [\n            ```json\n            \"Dean's List\",\n            \"Hackathon Winner\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Robert Lee",
+          "contact": {
+            "email": "robert.lee@example.com",
+            "phone": "555-0600"
+          }
+        },
+        "resume": {
+          "volunteer_experience": [
+            {
+              "organization": "Local Charity",
+              "role": "Event Coordinator"
+            }
+          ],
+          "languages_known": [
+            "French",
+            "German"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Robert Lee\",\n        \"contact\": {\n            \"email\": \"robert.lee@example.com\",\n            \"phone\": \"555-0600\"\n        }\n    },\n    \"resume\": {\n        \"volunteer_experience\": [\n            {\n                \"organization\": \"Local Charity\",\n                \"role\": \"Event Coordinator\"\n            }\n        ],\n        \"languages_known\": [\n            ```json\n            \"French\",\n            \"German\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Sophia Turner",
+          "contact": {
+            "email": "sophia.turner@example.com",
+            "phone": "555-0700"
+          }
+        },
+        "resume": {
+          "internships": [
+            {
+              "company": "Startup Inc.",
+              "role": "Intern Developer"
+            }
+          ],
+          "interests": [
+            "AI Research",
+            "Blockchain Technology"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Sophia Turner\",\n        \"contact\": {\n            \"email\": \"sophia.turner@example.com\",\n            \"phone\": \"555-0700\"\n        }\n    },\n    \"resume\": {\n        \"internships\": [\n            {\n                \"company\": \"Startup Inc.\",\n                \"role\": \"Intern Developer\"\n            }\n        ],\n        \"interests\": [\n            ```json\n            \"AI Research\",\n            \"Blockchain Technology\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "William Davis",
+          "contact": {
+            "email": "william.davis@example.com",
+            "phone": "555-0800"
+          }
+        },
+        "resume": {
+          "personal_projects": [
+            {
+              "name": "Smart Home Automation",
+              "details": "A home automation system using IoT devices."
+            }
+          ],
+          "spoken_languages": [
+            "Chinese",
+            "Japanese"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"William Davis\",\n        \"contact\": {\n            \"email\": \"william.davis@example.com\",\n            \"phone\": \"555-0800\"\n        }\n    },\n    \"resume\": {\n        \"personal_projects\": [\n            {\n                \"name\": \"Smart Home Automation\",\n                \"details\": \"A home automation system using IoT devices.\"\n            }\n        ],\n        \"spoken_languages\": [\n            ```json\n            \"Chinese\",\n            \"Japanese\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Chloe Martin",
+          "contact": {
+            "email": "chloe.martin@example.com",
+            "phone": "555-0900"
+          }
+        },
+        "resume": {
+          "online_courses": [
+            {
+              "title": "Machine Learning",
+              "platform": "Coursera"
+            }
+          ],
+          "hobbies": [
+            "Cooking",
+            "Traveling"
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Chloe Martin\",\n        \"contact\": {\n            \"email\": \"chloe.martin@example.com\",\n            \"phone\": \"555-0900\"\n        }\n    },\n    \"resume\": {\n        \"online_courses\": [\n            {\n                \"title\": \"Machine Learning\",\n                \"platform\": \"Coursera\"\n            }\n        ],\n        \"hobbies\": [\n            ```json\n            \"Cooking\",\n            \"Traveling\"\n            ```\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Daniel Carter",
+          "contact": {
+            "email": "daniel.carter@example.com",
+            "phone": "555-1000"
+          }
+        },
+        "resume": {
+          "skills": [
+            "C++",
+            "Python",
+            "Java"
+          ],
+          "publications": [
+            {
+              "title": "Advanced Algorithms",
+              "journal": "Tech Journal"
+            }
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Daniel Carter\",\n        \"contact\": {\n            \"email\": \"daniel.carter@example.com\",\n            \"phone\": \"555-1000\"\n        }\n    },\n    \"resume\": {\n        \"skills\": [\n            ```json\n            \"C++\",\n            \"Python\",\n            \"Java\"\n            ```\n        ],\n        \"publications\": [\n            {\n                \"title\": \"Advanced Algorithms\",\n                \"journal\": \"Tech Journal\"\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "products": [
+          {
+            "id": 101,
+            "name": "Laptop",
+            "price": 799.99,
+            "quantity": 45
+          },
+          {
+            "id": 102,
+            "name": "Smartphone",
+            "price": 699.99,
+            "quantity": 120
+          }
+        ]
+      },
+      "```json\n{\n    \"products\": [\n        {\n            \"id\": 101,\n            \"name\": \"Laptop\",\n            \"price\": 799.99,\n            \"quantity\": 45\n        },\n        {\n            \"id\": 102,\n            \"name\": \"Smartphone\",\n            \"price\": 699.99,\n            \"quantity\": 120\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "inventory": {
+          "warehouse": "Main",
+          "location": "Section A",
+          "items": [
+            {
+              "product_id": 201,
+              "name": "Tablet",
+              "stock": 30
+            },
+            {
+              "product_id": 202,
+              "name": "Speaker",
+              "stock": 75
+            }
+          ]
+        }
+      },
+      "```json\n{\n    \"inventory\": {\n        \"warehouse\": \"Main\",\n        \"location\": \"Section A\",\n        \"items\": [\n            {\n                \"product_id\": 201,\n                \"name\": \"Tablet\",\n                \"stock\": 30\n            },\n            {\n                \"product_id\": 202,\n                \"name\": \"Speaker\",\n                \"stock\": 75\n            }\n        ]\n    }\n}\n```"
+    ],
+    [
+      {
+        "suppliers": [
+          {
+            "supplier_id": 301,
+            "name": "TechCorp",
+            "products_supplied": [
+              "Laptop",
+              "Tablet"
+            ]
+          },
+          {
+            "supplier_id": 302,
+            "name": "SoundWave",
+            "products_supplied": [
+              "Speaker",
+              "Headphones"
+            ]
+          }
+        ]
+      },
+      "```json\n{\n    \"suppliers\": [\n        {\n            \"supplier_id\": 301,\n            \"name\": \"TechCorp\",\n            \"products_supplied\": [\"Laptop\", \"Tablet\"]\n        },\n        {\n            \"supplier_id\": 302,\n            \"name\": \"SoundWave\",\n            \"products_supplied\": [\"Speaker\", \"Headphones\"]\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "store": {
+          "name": "Tech Store",
+          "address": "123 Main Street",
+          "manager": "Alice Johnson"
+        }
+      },
+      "```json\n{\n    \"store\": {\n        \"name\": \"Tech Store\",\n        \"address\": \"123 Main Street\",\n        \"manager\": \"Alice Johnson\"\n    }\n}\n```"
+    ],
+    [
+      {
+        "order": {
+          "order_id": 401,
+          "customer": "John Doe",
+          "items": [
+            {
+              "product_id": 101,
+              "quantity": 2
+            },
+            {
+              "product_id": 102,
+              "quantity": 1
+            }
+          ],
+          "total_cost": 2299.97
+        }
+      },
+      "```json\n{\n    \"order\": {\n        \"order_id\": 401,\n        \"customer\": \"John Doe\",\n        \"items\": [\n            {\n                \"product_id\": 101,\n                \"quantity\": 2\n            },\n            {\n                \"product_id\": 102,\n                \"quantity\": 1\n            }\n        ],\n        \"total_cost\": 2299.97\n    }\n}\n```"
+    ],
+    [
+      {
+        "categories": [
+          {
+            "category_id": 501,
+            "name": "Electronics"
+          },
+          {
+            "category_id": 502,
+            "name": "Accessories"
+          }
+        ]
+      },
+      "```json\n{\n    \"categories\": [\n        {\n            \"category_id\": 501,\n            \"name\": \"Electronics\"\n        },\n        {\n            \"category_id\": 502,\n            \"name\": \"Accessories\"\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "returns": [
+          {
+            "return_id": 601,
+            "product_id": 101,
+            "reason": "Defective",
+            "quantity": 1
+          },
+          {
+            "return_id": 602,
+            "product_id": 202,
+            "reason": "Unwanted",
+            "quantity": 2
+          }
+        ]
+      },
+      "```json\n{\n    \"returns\": [\n        {\n            \"return_id\": 601,\n            \"product_id\": 101,\n            \"reason\": \"Defective\",\n            \"quantity\": 1\n        },\n        {\n            \"return_id\": 602,\n            \"product_id\": 202,\n            \"reason\": \"Unwanted\",\n            \"quantity\": 2\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "discounts": [
+          {
+            "discount_id": 701,
+            "product_id": 102,
+            "percentage": 10
+          },
+          {
+            "discount_id": 702,
+            "product_id": 201,
+            "percentage": 5
+          }
+        ]
+      },
+      "```json\n{\n    \"discounts\": [\n        {\n            \"discount_id\": 701,\n            \"product_id\": 102,\n            \"percentage\": 10\n        },\n        {\n            \"discount_id\": 702,\n            \"product_id\": 201,\n            \"percentage\": 5\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "reviews": [
+          {
+            "review_id": 801,
+            "product_id": 101,
+            "rating": 4,
+            "comment": "Great laptop!"
+          },
+          {
+            "review_id": 802,
+            "product_id": 202,
+            "rating": 3,
+            "comment": "Average quality."
+          }
+        ]
+      },
+      "```json\n{\n    \"reviews\": [\n        {\n            \"review_id\": 801,\n            \"product_id\": 101,\n            \"rating\": 4,\n            \"comment\": \"Great laptop!\"\n        },\n        {\n            \"review_id\": 802,\n            \"product_id\": 202,\n            \"rating\": 3,\n            \"comment\": \"Average quality.\"\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "sales": {
+          "year": 2023,
+          "quarters": [
+            {
+              "quarter": 1,
+              "revenue": 50000
+            },
+            {
+              "quarter": 2,
+              "revenue": 60000
+            }
+          ]
+        }
+      },
+      "```json\n{\n    \"sales\": {\n        \"year\": 2023,\n        \"quarters\": [\n            {\n                \"quarter\": 1,\n                \"revenue\": 50000\n            },\n            {\n                \"quarter\": 2,\n                \"revenue\": 60000\n            }\n        ]\n    }\n}\n```"
+    ],
+    [
+      {
+        "studentId": "A12345",
+        "name": "John Doe",
+        "subjects": [
+          {
+            "name": "Mathematics",
+            "grade": "A"
+          },
+          {
+            "name": "Science",
+            "grade": "B+"
+          }
+        ],
+        "attendance": 95.5
+      },
+      "```json\n{\n  \"studentId\": \"A12345\",\n  \"name\": \"John Doe\",\n  \"subjects\": [\n    {\n      \"name\": \"Mathematics\",\n      \"grade\": \"A\"\n    },\n    {\n      \"name\": \"Science\",\n      \"grade\": \"B+\"\n    }\n  ],\n  \"attendance\": 95.5\n}\n```"
+    ],
+    [
+      {
+        "studentId": "B67890",
+        "name": "Jane Smith",
+        "subjects": [
+          {
+            "name": "History",
+            "grade": "A-"
+          },
+          {
+            "name": "Biology",
+            "grade": "B"
+          },
+          {
+            "name": "English",
+            "grade": "A"
+          }
+        ],
+        "attendance": 88
+      },
+      "```json\n{\n  \"studentId\": \"B67890\",\n  \"name\": \"Jane Smith\",\n  \"subjects\": [\n    {\n      \"name\": \"History\",\n      \"grade\": \"A-\"\n    },\n    {\n      \"name\": \"Biology\",\n      \"grade\": \"B\"\n    },\n    {\n      \"name\": \"English\",\n      \"grade\": \"A\"\n    }\n  ],\n  \"attendance\": 88\n}\n```"
+    ],
+    [
+      {
+        "studentId": "C23456",
+        "name": "Robert Brown",
+        "subjects": [
+          {
+            "name": "Chemistry",
+            "grade": "B+"
+          },
+          {
+            "name": "Physics",
+            "grade": "A"
+          }
+        ],
+        "attendance": 92.3
+      },
+      "```json\n{\n  \"studentId\": \"C23456\",\n  \"name\": \"Robert Brown\",\n  \"subjects\": [\n    {\n      \"name\": \"Chemistry\",\n      \"grade\": \"B+\"\n    },\n    {\n      \"name\": \"Physics\",\n      \"grade\": \"A\"\n    }\n  ],\n  \"attendance\": 92.3\n}\n```"
+    ],
+    [
+      {
+        "studentId": "D34567",
+        "name": "Emily Clark",
+        "subjects": [
+          {
+            "name": "Art",
+            "grade": "A+"
+          },
+          {
+            "name": "Music",
+            "grade": "A"
+          },
+          {
+            "name": "Drama",
+            "grade": "B"
+          }
+        ],
+        "attendance": 97
+      },
+      "```json\n{\n  \"studentId\": \"D34567\",\n  \"name\": \"Emily Clark\",\n  \"subjects\": [\n    {\n      \"name\": \"Art\",\n      \"grade\": \"A+\"\n    },\n    {\n      \"name\": \"Music\",\n      \"grade\": \"A\"\n    },\n    {\n      \"name\": \"Drama\",\n      \"grade\": \"B\"\n    }\n  ],\n  \"attendance\": 97\n}\n```"
+    ],
+    [
+      {
+        "studentId": "E45678",
+        "name": "Michael Johnson",
+        "subjects": [
+          {
+            "name": "Geography",
+            "grade": "B-"
+          },
+          {
+            "name": "Social Studies",
+            "grade": "C+"
+          }
+        ],
+        "attendance": 85.8
+      },
+      "```json\n{\n  \"studentId\": \"E45678\",\n  \"name\": \"Michael Johnson\",\n  \"subjects\": [\n    {\n      \"name\": \"Geography\",\n      \"grade\": \"B-\"\n    },\n    {\n      \"name\": \"Social Studies\",\n      \"grade\": \"C+\"\n    }\n  ],\n  \"attendance\": 85.8\n}\n```"
+    ],
+    [
+      {
+        "studentId": "F56789",
+        "name": "Sophia Martinez",
+        "subjects": [
+          {
+            "name": "Economics",
+            "grade": "A"
+          },
+          {
+            "name": "Political Science",
+            "grade": "A-"
+          }
+        ],
+        "attendance": 93.4
+      },
+      "```json\n{\n  \"studentId\": \"F56789\",\n  \"name\": \"Sophia Martinez\",\n  \"subjects\": [\n    {\n      \"name\": \"Economics\",\n      \"grade\": \"A\"\n    },\n    {\n      \"name\": \"Political Science\",\n      \"grade\": \"A-\"\n    }\n  ],\n  \"attendance\": 93.4\n}\n```"
+    ],
+    [
+      {
+        "studentId": "G67890",
+        "name": "Olivia Wilson",
+        "subjects": [
+          {
+            "name": "Literature",
+            "grade": "B+"
+          },
+          {
+            "name": "Philosophy",
+            "grade": "A"
+          }
+        ],
+        "attendance": 89.6
+      },
+      "```json\n{\n  \"studentId\": \"G67890\",\n  \"name\": \"Olivia Wilson\",\n  \"subjects\": [\n    {\n      \"name\": \"Literature\",\n      \"grade\": \"B+\"\n    },\n    {\n      \"name\": \"Philosophy\",\n      \"grade\": \"A\"\n    }\n  ],\n  \"attendance\": 89.6\n}\n```"
+    ],
+    [
+      {
+        "studentId": "H78901",
+        "name": "Liam Taylor",
+        "subjects": [
+          {
+            "name": "Computer Science",
+            "grade": "A"
+          },
+          {
+            "name": "Mathematics",
+            "grade": "A+"
+          }
+        ],
+        "attendance": 94.2
+      },
+      "```json\n{\n  \"studentId\": \"H78901\",\n  \"name\": \"Liam Taylor\",\n  \"subjects\": [\n    {\n      \"name\": \"Computer Science\",\n      \"grade\": \"A\"\n    },\n    {\n      \"name\": \"Mathematics\",\n      \"grade\": \"A+\"\n    }\n  ],\n  \"attendance\": 94.2\n}\n```"
+    ],
+    [
+      {
+        "studentId": "I89012",
+        "name": "Isabella Davis",
+        "subjects": [
+          {
+            "name": "Biology",
+            "grade": "A-"
+          },
+          {
+            "name": "Chemistry",
+            "grade": "B+"
+          }
+        ],
+        "attendance": 90.7
+      },
+      "```json\n{\n  \"studentId\": \"I89012\",\n  \"name\": \"Isabella Davis\",\n  \"subjects\": [\n    {\n      \"name\": \"Biology\",\n      \"grade\": \"A-\"\n    },\n    {\n      \"name\": \"Chemistry\",\n      \"grade\": \"B+\"\n    }\n  ],\n  \"attendance\": 90.7\n}\n```"
+    ],
+    [
+      {
+        "studentId": "J90123",
+        "name": "Noah Garcia",
+        "subjects": [
+          {
+            "name": "Physics",
+            "grade": "A"
+          },
+          {
+            "name": "Astronomy",
+            "grade": "A-"
+          }
+        ],
+        "attendance": 96
+      },
+      "```json\n{\n  \"studentId\": \"J90123\",\n  \"name\": \"Noah Garcia\",\n  \"subjects\": [\n    {\n      \"name\": \"Physics\",\n      \"grade\": \"A\"\n    },\n    {\n      \"name\": \"Astronomy\",\n      \"grade\": \"A-\"\n    }\n  ],\n  \"attendance\": 96\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Music Fest 2023",
+        "venue": "Green Park",
+        "date": "2023-08-12",
+        "tickets_sold": 2500,
+        "ticket_types": [
+          {
+            "type": "VIP",
+            "price": 200,
+            "sold": 300
+          },
+          {
+            "type": "General",
+            "price": 100,
+            "sold": 2200
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Music Fest 2023\",\n    \"venue\": \"Green Park\",\n    \"date\": \"2023-08-12\",\n    \"tickets_sold\": 2500,\n    \"ticket_types\": [\n        {\n            \"type\": \"VIP\",\n            \"price\": 200,\n            \"sold\": 300\n        },\n        {\n            \"type\": \"General\",\n            \"price\": 100,\n            \"sold\": 2200\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Tech Conference 2023",
+        "location": "Downtown Convention Center",
+        "date": "2023-11-05",
+        "attendees": 1500,
+        "ticket_details": [
+          {
+            "category": "Student",
+            "price": 50,
+            "sold": 500
+          },
+          {
+            "category": "Professional",
+            "price": 150,
+            "sold": 1000
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Tech Conference 2023\",\n    \"location\": \"Downtown Convention Center\",\n    \"date\": \"2023-11-05\",\n    \"attendees\": 1500,\n    \"ticket_details\": [\n        {\n            \"category\": \"Student\",\n            \"price\": 50,\n            \"sold\": 500\n        },\n        {\n            \"category\": \"Professional\",\n            \"price\": 150,\n            \"sold\": 1000\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Art Expo 2023",
+        "venue": "City Art Gallery",
+        "date": "2023-09-15",
+        "total_tickets": 1200,
+        "ticket_options": [
+          {
+            "type": "Early Bird",
+            "price": 70,
+            "sold": 300
+          },
+          {
+            "type": "Regular",
+            "price": 90,
+            "sold": 900
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Art Expo 2023\",\n    \"venue\": \"City Art Gallery\",\n    \"date\": \"2023-09-15\",\n    \"total_tickets\": 1200,\n    \"ticket_options\": [\n        {\n            \"type\": \"Early Bird\",\n            \"price\": 70,\n            \"sold\": 300\n        },\n        {\n            \"type\": \"Regular\",\n            \"price\": 90,\n            \"sold\": 900\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Food Fest 2023",
+        "location": "Riverfront Park",
+        "date": "2023-07-22",
+        "tickets_sold": 4000,
+        "ticket_categories": [
+          {
+            "type": "Adult",
+            "price": 30,
+            "sold": 3000
+          },
+          {
+            "type": "Child",
+            "price": 15,
+            "sold": 1000
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Food Fest 2023\",\n    \"location\": \"Riverfront Park\",\n    \"date\": \"2023-07-22\",\n    \"tickets_sold\": 4000,\n    \"ticket_categories\": [\n        {\n            \"type\": \"Adult\",\n            \"price\": 30,\n            \"sold\": 3000\n        },\n        {\n            \"type\": \"Child\",\n            \"price\": 15,\n            \"sold\": 1000\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Film Festival 2023",
+        "venue": "Majestic Cinema",
+        "date": "2023-10-10",
+        "tickets_sold": 5000,
+        "ticket_variants": [
+          {
+            "type": "Standard",
+            "price": 40,
+            "sold": 3500
+          },
+          {
+            "type": "Premium",
+            "price": 80,
+            "sold": 1500
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Film Festival 2023\",\n    \"venue\": \"Majestic Cinema\",\n    \"date\": \"2023-10-10\",\n    \"tickets_sold\": 5000,\n    \"ticket_variants\": [\n        {\n            \"type\": \"Standard\",\n            \"price\": 40,\n            \"sold\": 3500\n        },\n        {\n            \"type\": \"Premium\",\n            \"price\": 80,\n            \"sold\": 1500\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Comedy Night 2023",
+        "location": "Downtown Theater",
+        "date": "2023-12-01",
+        "total_attendance": 800,
+        "ticket_types": [
+          {
+            "category": "Front Row",
+            "price": 100,
+            "sold": 150
+          },
+          {
+            "category": "Standard",
+            "price": 50,
+            "sold": 650
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Comedy Night 2023\",\n    \"location\": \"Downtown Theater\",\n    \"date\": \"2023-12-01\",\n    \"total_attendance\": 800,\n    \"ticket_types\": [\n        {\n            \"category\": \"Front Row\",\n            \"price\": 100,\n            \"sold\": 150\n        },\n        {\n            \"category\": \"Standard\",\n            \"price\": 50,\n            \"sold\": 650\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Jazz Night 2023",
+        "venue": "Blue Note Club",
+        "date": "2023-06-20",
+        "tickets_available": 1000,
+        "ticket_options": [
+          {
+            "type": "Balcony",
+            "price": 70,
+            "sold": 300
+          },
+          {
+            "type": "Main Floor",
+            "price": 120,
+            "sold": 700
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Jazz Night 2023\",\n    \"venue\": \"Blue Note Club\",\n    \"date\": \"2023-06-20\",\n    \"tickets_available\": 1000,\n    \"ticket_options\": [\n        {\n            \"type\": \"Balcony\",\n            \"price\": 70,\n            \"sold\": 300\n        },\n        {\n            \"type\": \"Main Floor\",\n            \"price\": 120,\n            \"sold\": 700\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Book Fair 2023",
+        "location": "City Library",
+        "date": "2023-04-15",
+        "tickets_sold": 2000,
+        "ticket_classes": [
+          {
+            "type": "Adult",
+            "price": 20,
+            "sold": 1500
+          },
+          {
+            "type": "Child",
+            "price": 10,
+            "sold": 500
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Book Fair 2023\",\n    \"location\": \"City Library\",\n    \"date\": \"2023-04-15\",\n    \"tickets_sold\": 2000,\n    \"ticket_classes\": [\n        {\n            \"type\": \"Adult\",\n            \"price\": 20,\n            \"sold\": 1500\n        },\n        {\n            \"type\": \"Child\",\n            \"price\": 10,\n            \"sold\": 500\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Science Expo 2023",
+        "venue": "Innovation Center",
+        "date": "2023-05-10",
+        "total_tickets": 3000,
+        "ticket_types": [
+          {
+            "category": "Exhibitor",
+            "price": 150,
+            "sold": 500
+          },
+          {
+            "category": "Visitor",
+            "price": 50,
+            "sold": 2500
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Science Expo 2023\",\n    \"venue\": \"Innovation Center\",\n    \"date\": \"2023-05-10\",\n    \"total_tickets\": 3000,\n    \"ticket_types\": [\n        {\n            \"category\": \"Exhibitor\",\n            \"price\": 150,\n            \"sold\": 500\n        },\n        {\n            \"category\": \"Visitor\",\n            \"price\": 50,\n            \"sold\": 2500\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "event_name": "Charity Gala 2023",
+        "location": "Grand Ballroom",
+        "date": "2023-03-18",
+        "attendees": 1000,
+        "ticket_packages": [
+          {
+            "type": "Dinner",
+            "price": 250,
+            "sold": 300
+          },
+          {
+            "type": "Show Only",
+            "price": 100,
+            "sold": 700
+          }
+        ]
+      },
+      "```json\n{\n    \"event_name\": \"Charity Gala 2023\",\n    \"location\": \"Grand Ballroom\",\n    \"date\": \"2023-03-18\",\n    \"attendees\": 1000,\n    \"ticket_packages\": [\n        {\n            \"type\": \"Dinner\",\n            \"price\": 250,\n            \"sold\": 300\n        },\n        {\n            \"type\": \"Show Only\",\n            \"price\": 100,\n            \"sold\": 700\n        }\n    ]\n}\n```"
+    ],
+    [
+      {
+        "user_id": "A12345",
+        "history": [
+          {
+            "date": "2023-10-12",
+            "line": "Blue",
+            "amount": 2.5
+          },
+          {
+            "date": "2023-10-13",
+            "line": "Red",
+            "amount": 3.0
+          },
+          {
+            "date": "2023-10-14",
+            "line": "Green",
+            "amount": 2.75
+          }
+        ]
+      },
+      "```json\n{\n    \"user_id\": \"A12345\",\n    \"history\": [\n        {\"date\": \"2023-10-12\", \"line\": \"Blue\", \"amount\": 2.5},\n        {\"date\": \"2023-10-13\", \"line\": \"Red\", \"amount\": 3.0},\n        {\"date\": \"2023-10-14\", \"line\": \"Green\", \"amount\": 2.75}\n    ]\n}\n```"
+    ],
+    [
+      {
+        "card_number": "9876543210",
+        "trips": [
+          {
+            "station": "Central",
+            "time": "08:30",
+            "fare": 2.5
+          },
+          {
+            "station": "Pine Street",
+            "time": "12:45",
+            "fare": 3.0
+          }
+        ],
+        "balance": 15.0
+      },
+      "```json\n{\n    \"card_number\": \"9876543210\",\n    \"trips\": [\n        {\"station\": \"Central\", \"time\": \"08:30\", \"fare\": 2.5},\n        {\"station\": \"Pine Street\", \"time\": \"12:45\", \"fare\": 3.0}\n    ],\n    \"balance\": 15.0\n}\n```"
+    ],
+    [
+      {
+        "passenger_name": "John Doe",
+        "usage": [
+          {
+            "route": "10X",
+            "departure": "08:15",
+            "cost": 2.25
+          },
+          {
+            "route": "22",
+            "departure": "09:45",
+            "cost": 1.75
+          }
+        ],
+        "total_spent": 4.0
+      },
+      "```json\n{\n    \"passenger_name\": \"John Doe\",\n    \"usage\": [\n        {\"route\": \"10X\", \"departure\": \"08:15\", \"cost\": 2.25},\n        {\"route\": \"22\", \"departure\": \"09:45\", \"cost\": 1.75}\n    ],\n    \"total_spent\": 4.0\n}\n```"
+    ],
+    [
+      {
+        "ticket_id": "T-20231014",
+        "journeys": [
+          {
+            "origin": "Downtown",
+            "destination": "Uptown",
+            "price": 3.5
+          },
+          {
+            "origin": "Uptown",
+            "destination": "Downtown",
+            "price": 3.5
+          }
+        ],
+        "valid_until": "2023-11-14"
+      },
+      "```json\n{\n    \"ticket_id\": \"T-20231014\",\n    \"journeys\": [\n        {\"origin\": \"Downtown\", \"destination\": \"Uptown\", \"price\": 3.5},\n        {\"origin\": \"Uptown\", \"destination\": \"Downtown\", \"price\": 3.5}\n    ],\n    \"valid_until\": \"2023-11-14\"\n}\n```"
+    ],
+    [
+      {
+        "card_id": "C123456",
+        "transactions": [
+          {
+            "start_station": "Main St",
+            "end_station": "Broadway",
+            "fare": 2.0
+          },
+          {
+            "start_station": "Broadway",
+            "end_station": "Main St",
+            "fare": 2.0
+          }
+        ],
+        "remaining_balance": 10.0
+      },
+      "```json\n{\n    \"card_id\": \"C123456\",\n    \"transactions\": [\n        {\"start_station\": \"Main St\", \"end_station\": \"Broadway\", \"fare\": 2.0},\n        {\"start_station\": \"Broadway\", \"end_station\": \"Main St\", \"fare\": 2.0}\n    ],\n    \"remaining_balance\": 10.0\n}\n```"
+    ],
+    [
+      {
+        "user": "Jane Smith",
+        "activity": [
+          {
+            "line": "Yellow",
+            "time": "07:00",
+            "cost": 2.25
+          },
+          {
+            "line": "Purple",
+            "time": "18:30",
+            "cost": 2.5
+          }
+        ],
+        "total_uses": 2
+      },
+      "```json\n{\n    \"user\": \"Jane Smith\",\n    \"activity\": [\n        {\"line\": \"Yellow\", \"time\": \"07:00\", \"cost\": 2.25},\n        {\"line\": \"Purple\", \"time\": \"18:30\", \"cost\": 2.5}\n    ],\n    \"total_uses\": 2\n}\n```"
+    ],
+    [
+      {
+        "account_number": "ACC12345",
+        "rides": [
+          {
+            "from": "East",
+            "to": "West",
+            "charge": 3.0
+          },
+          {
+            "from": "North",
+            "to": "South",
+            "charge": 3.25
+          }
+        ],
+        "last_top_up": "2023-10-01"
+      },
+      "```json\n{\n    \"account_number\": \"ACC12345\",\n    \"rides\": [\n        {\"from\": \"East\", \"to\": \"West\", \"charge\": 3.0},\n        {\"from\": \"North\", \"to\": \"South\", \"charge\": 3.25}\n    ],\n    \"last_top_up\": \"2023-10-01\"\n}\n```"
+    ],
+    [
+      {
+        "customer_id": "CUS98765",
+        "commutes": [
+          {
+            "departure": "Station A",
+            "arrival": "Station B",
+            "fee": 2.5
+          },
+          {
+            "departure": "Station C",
+            "arrival": "Station D",
+            "fee": 3.0
+          }
+        ],
+        "total_commute_cost": 5.5
+      },
+      "```json\n{\n    \"customer_id\": \"CUS98765\",\n    \"commutes\": [\n        {\"departure\": \"Station A\", \"arrival\": \"Station B\", \"fee\": 2.5},\n        {\"departure\": \"Station C\", \"arrival\": \"Station D\", \"fee\": 3.0}\n    ],\n    \"total_commute_cost\": 5.5\n}\n```"
+    ],
+    [
+      {
+        "pass_id": "P123XYZ",
+        "entries": [
+          {
+            "entry": "North Gate",
+            "exit": "South Gate",
+            "deduction": 2.0
+          },
+          {
+            "entry": "West Gate",
+            "exit": "East Gate",
+            "deduction": 2.25
+          }
+        ],
+        "balance_remaining": 8.0
+      },
+      "```json\n{\n    \"pass_id\": \"P123XYZ\",\n    \"entries\": [\n        {\"entry\": \"North Gate\", \"exit\": \"South Gate\", \"deduction\": 2.0},\n        {\"entry\": \"West Gate\", \"exit\": \"East Gate\", \"deduction\": 2.25}\n    ],\n    \"balance_remaining\": 8.0\n}\n```"
+    ],
+    [
+      {
+        "membership_id": "MEM45678",
+        "travel_history": [
+          {
+            "start": "City Center",
+            "end": "Suburbs",
+            "charge": 3.0
+          },
+          {
+            "start": "Suburbs",
+            "end": "City Center",
+            "charge": 3.0
+          }
+        ],
+        "expiry_date": "2024-01-01"
+      },
+      "```json\n{\n    \"membership_id\": \"MEM45678\",\n    \"travel_history\": [\n        {\"start\": \"City Center\", \"end\": \"Suburbs\", \"charge\": 3.0},\n        {\"start\": \"Suburbs\", \"end\": \"City Center\", \"charge\": 3.0}\n    ],\n    \"expiry_date\": \"2024-01-01\"\n}\n```"
+    ]
+  ]
+}

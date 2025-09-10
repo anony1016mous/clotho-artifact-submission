@@ -1,0 +1,2675 @@
+{
+  "possible_fix": "Strip comments like /* ... */ and // ...",
+  "test_cases": [
+    [
+      {
+        "courseName": "Introduction to Programming",
+        "instructor": "John Doe",
+        "students": [
+          {
+            "name": "Alice Smith",
+            "email": "alice@example.com"
+          },
+          {
+            "name": "Bob Johnson",
+            "email": "bob@example.com"
+          }
+        ],
+        "enrollmentOpen": true
+      },
+      "{\n  \"courseName\": \"Introduction to Programming\", // Course title\n  \"instructor\": \"John Doe\",\n  \"students\": [\n    {\n      \"name\": \"Alice Smith\",\n      \"email\": \"alice@example.com\"\n    },\n    {\n      \"name\": \"Bob Johnson\",\n      \"email\": \"bob@example.com\"\n    }\n  ],\n  \"enrollmentOpen\": true\n}"
+    ],
+    [
+      {
+        "courseID": "CS101",
+        "courseName": "Data Structures",
+        "duration": "10 weeks",
+        "studentsEnrolled": 50
+      },
+      "{\n  \"courseID\": \"CS101\",\n  \"courseName\": \"Data Structures\", // Title of the course\n  \"duration\": \"10 weeks\",\n  \"studentsEnrolled\": 50\n}"
+    ],
+    [
+      {
+        "title": "Digital Marketing 101",
+        "instructor": "Jane Doe",
+        "students": [
+          {
+            "name": "Charlie Brown",
+            "email": "charlie@example.com"
+          }
+        ],
+        "maxCapacity": 100
+      },
+      "{\n  \"title\": \"Digital Marketing 101\",\n  \"instructor\": \"Jane Doe\",\n  \"students\": [\n    {\n      \"name\": \"Charlie Brown\",\n      \"email\": \"charlie@example.com\" // Student contact\n    }\n  ],\n  \"maxCapacity\": 100\n}"
+    ],
+    [
+      {
+        "course": "Machine Learning",
+        "faculty": "Dr. Alan Turing",
+        "schedule": {
+          "startDate": "2023-10-01",
+          "endDate": "2023-12-01"
+        },
+        "isActive": false
+      },
+      "{\n  \"course\": \"Machine Learning\",\n  \"faculty\": \"Dr. Alan Turing\",\n  \"schedule\": {\n    \"startDate\": \"2023-10-01\", /* Beginning of course */\n    \"endDate\": \"2023-12-01\"\n  },\n  \"isActive\": false\n}"
+    ],
+    [
+      {
+        "courseCode": "BIO202",
+        "courseTitle": "Genetics",
+        "credits": 3,
+        "participants": [
+          "student1@example.com",
+          "student2@example.com"
+        ]
+      },
+      "{\n  \"courseCode\": \"BIO202\", // Unique code\n  \"courseTitle\": \"Genetics\",\n  \"credits\": 3, /* Number of credits */\n  \"participants\": [\n    \"student1@example.com\",\n    \"student2@example.com\"\n  ]\n}"
+    ],
+    [
+      {
+        "session": "Spring 2023",
+        "professor": "Dr. Marie Curie",
+        "subject": "Chemistry",
+        "isFull": true
+      },
+      "{\n  \"session\": \"Spring 2023\", // Academic session\n  \"professor\": \"Dr. Marie Curie\",\n  \"subject\": \"Chemistry\", /* Field of study */\n  \"isFull\": true\n}"
+    ],
+    [
+      {
+        "program": "Advanced Mathematics",
+        "lecturer": "Prof. Albert Einstein",
+        "year": 2023,
+        "capacity": 30
+      },
+      "{\n  \"program\": \"Advanced Mathematics\", // Program name\n  \"lecturer\": \"Prof. Albert Einstein\", /* Lecturer's name */\n  \"year\": 2023,\n  \"capacity\": 30\n}"
+    ],
+    [
+      {
+        "courseTitle": "Philosophy of Science",
+        "instructor": "Prof. Aristotle",
+        "classSize": 25,
+        "isOnline": true
+      },
+      "{\n  \"courseTitle\": \"Philosophy of Science\", /* Name of the course */\n  \"instructor\": \"Prof. Aristotle\",\n  \"classSize\": 25, // Number of students\n  \"isOnline\": true\n}"
+    ],
+    [
+      {
+        "degree": "Bachelor of Arts",
+        "advisor": "Dr. Maya Angelou",
+        "subjects": [
+          "Literature",
+          "History"
+        ],
+        "isAvailable": false
+      },
+      "{\n  \"degree\": \"Bachelor of Arts\",\n  \"advisor\": \"Dr. Maya Angelou\",\n  \"subjects\": [\n    \"Literature\", // Main subject\n    \"History\"\n  ],\n  \"isAvailable\": false /* Availability status */\n}"
+    ],
+    [
+      {
+        "programName": "Cybersecurity Essentials",
+        "mentor": "Mr. Edward Snowden",
+        "durationWeeks": 12,
+        "enrolled": 15
+      },
+      "{\n  \"programName\": \"Cybersecurity Essentials\",\n  \"mentor\": \"Mr. Edward Snowden\", // Program mentor\n  \"durationWeeks\": 12,\n  \"enrolled\": 15 /* Number of enrolled students */\n}"
+    ],
+    [
+      {
+        "chat_id": "12345",
+        "customer": {
+          "name": "John Doe",
+          "email": "johndoe@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-01T10:00:00Z",
+            "sender": "customer",
+            "text": "I'd like to know the status of my order."
+          },
+          {
+            "timestamp": "2023-10-01T10:05:00Z",
+            "sender": "agent",
+            "text": "Sure, let me check that for you."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"12345\",\n  \"customer\": {\n    \"name\": \"John Doe\",\n    \"email\": \"johndoe@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-01T10:00:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"I'd like to know the status of my order.\"\n    },\n    {\n      \"timestamp\": \"2023-10-01T10:05:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Sure, let me check that for you.\"\n    }\n  ]\n  // Comment: End of messages\n}"
+    ],
+    [
+      {
+        "chat_id": "67890",
+        "customer": {
+          "name": "Jane Smith",
+          "email": "janesmith@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-02T09:30:00Z",
+            "sender": "customer",
+            "text": "Can you help me with a refund?"
+          },
+          {
+            "timestamp": "2023-10-02T09:35:00Z",
+            "sender": "agent",
+            "text": "Of course, could you please provide your order number?"
+          }
+        ]
+      },
+      "{\n  /* Chat log details */\n  \"chat_id\": \"67890\",\n  \"customer\": {\n    \"name\": \"Jane Smith\",\n    \"email\": \"janesmith@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-02T09:30:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"Can you help me with a refund?\"\n    },\n    {\n      \"timestamp\": \"2023-10-02T09:35:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Of course, could you please provide your order number?\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": "13579",
+        "customer": {
+          "name": "Alice Johnson",
+          "email": "alicej@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-03T11:45:00Z",
+            "sender": "customer",
+            "text": "I'm having trouble logging into my account."
+          },
+          {
+            "timestamp": "2023-10-03T11:50:00Z",
+            "sender": "agent",
+            "text": "Let's reset your password."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"13579\",\n  \"customer\": {\n    \"name\": \"Alice Johnson\",\n    \"email\": \"alicej@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-03T11:45:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"I'm having trouble logging into my account.\"\n      // Note: critical issue\n    },\n    {\n      \"timestamp\": \"2023-10-03T11:50:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Let's reset your password.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": "24680",
+        "customer": {
+          "name": "Bob Brown",
+          "email": "bobbrown@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-04T14:20:00Z",
+            "sender": "customer",
+            "text": "I have a question about your services."
+          },
+          {
+            "timestamp": "2023-10-04T14:25:00Z",
+            "sender": "agent",
+            "text": "I'd be happy to help. What would you like to know?"
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"24680\",\n  \"customer\": {\n    \"name\": \"Bob Brown\",\n    \"email\": \"bobbrown@example.com\"\n  },\n  \"messages\": [\n    // Messages exchanged\n    {\n      \"timestamp\": \"2023-10-04T14:20:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"I have a question about your services.\"\n    },\n    {\n      \"timestamp\": \"2023-10-04T14:25:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"I'd be happy to help. What would you like to know?\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": "98765",
+        "customer": {
+          "name": "Charlie Davis",
+          "email": "charlied@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-05T15:10:00Z",
+            "sender": "customer",
+            "text": "Do you offer discounts for bulk orders?"
+          },
+          {
+            "timestamp": "2023-10-05T15:15:00Z",
+            "sender": "agent",
+            "text": "Yes, we do! Let me give you more details."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"98765\",\n  \"customer\": {\n    \"name\": \"Charlie Davis\",\n    \"email\": \"charlied@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-05T15:10:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"Do you offer discounts for bulk orders?\"\n    },\n    {\n      \"timestamp\": \"2023-10-05T15:15:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Yes, we do! Let me give you more details.\"\n    }\n  ]\n  /* End of chat log */\n}"
+    ],
+    [
+      {
+        "chat_id": "11223",
+        "customer": {
+          "name": "Dana White",
+          "email": "danaw@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-06T16:00:00Z",
+            "sender": "customer",
+            "text": "I need help with my subscription."
+          },
+          {
+            "timestamp": "2023-10-06T16:05:00Z",
+            "sender": "agent",
+            "text": "Let's take a look at your account."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"11223\",\n  \"customer\": {\n    \"name\": \"Dana White\",\n    \"email\": \"danaw@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-06T16:00:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"I need help with my subscription.\"\n    }\n    /* Issue: missing second message */\n    ,{\n      \"timestamp\": \"2023-10-06T16:05:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Let's take a look at your account.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": "33445",
+        "customer": {
+          "name": "Elliot Green",
+          "email": "elliotg@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-07T17:30:00Z",
+            "sender": "customer",
+            "text": "Is there a way to expedite shipping?"
+          },
+          {
+            "timestamp": "2023-10-07T17:35:00Z",
+            "sender": "agent",
+            "text": "Yes, we offer express shipping options."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"33445\",\n  \"customer\": {\n    \"name\": \"Elliot Green\",\n    \"email\": \"elliotg@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-07T17:30:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"Is there a way to expedite shipping?\"\n    },\n    // Next message:\n    {\n      \"timestamp\": \"2023-10-07T17:35:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Yes, we offer express shipping options.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": "55667",
+        "customer": {
+          "name": "Frank Black",
+          "email": "frankb@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-08T18:15:00Z",
+            "sender": "customer",
+            "text": "I want to change my delivery address."
+          },
+          {
+            "timestamp": "2023-10-08T18:20:00Z",
+            "sender": "agent",
+            "text": "Please provide the new address."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"55667\",\n  \"customer\": {\n    \"name\": \"Frank Black\",\n    \"email\": \"frankb@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-08T18:15:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"I want to change my delivery address.\"\n    },\n    {\n      \"timestamp\": \"2023-10-08T18:20:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Please provide the new address.\"\n    }\n  ]\n  /* This is the end of conversation */\n}"
+    ],
+    [
+      {
+        "chat_id": "77889",
+        "customer": {
+          "name": "Grace Hopper",
+          "email": "graceh@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-09T19:00:00Z",
+            "sender": "customer",
+            "text": "Can you resend my invoice?"
+          },
+          {
+            "timestamp": "2023-10-09T19:05:00Z",
+            "sender": "agent",
+            "text": "Sure, I've sent it to your email."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"77889\",\n  \"customer\": {\n    \"name\": \"Grace Hopper\",\n    \"email\": \"graceh@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-09T19:00:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"Can you resend my invoice?\"\n    },\n    {\n      \"timestamp\": \"2023-10-09T19:05:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"Sure, I've sent it to your email.\"\n    }\n  ]\n  // Comment: invoice sent\n}"
+    ],
+    [
+      {
+        "chat_id": "99001",
+        "customer": {
+          "name": "Hannah Wells",
+          "email": "hannahw@example.com"
+        },
+        "messages": [
+          {
+            "timestamp": "2023-10-10T20:45:00Z",
+            "sender": "customer",
+            "text": "What are your operating hours?"
+          },
+          {
+            "timestamp": "2023-10-10T20:50:00Z",
+            "sender": "agent",
+            "text": "We are open from 9 AM to 5 PM, Monday to Friday."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": \"99001\",\n  \"customer\": {\n    \"name\": \"Hannah Wells\",\n    \"email\": \"hannahw@example.com\"\n  },\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-10T20:45:00Z\",\n      \"sender\": \"customer\",\n      \"text\": \"What are your operating hours?\"\n    },\n    {\n      \"timestamp\": \"2023-10-10T20:50:00Z\",\n      \"sender\": \"agent\",\n      \"text\": \"We are open from 9 AM to 5 PM, Monday to Friday.\"\n    }\n  ]\n  /* Please remove this comment */\n}"
+    ],
+    [
+      {
+        "deviceId": "ABC123",
+        "deviceName": "Smart Bulb",
+        "status": "on",
+        "usage": [
+          {
+            "date": "2023-10-01",
+            "duration": "2 hours"
+          },
+          {
+            "date": "2023-10-02",
+            "duration": "3 hours"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"ABC123\", // Device ID\n  \"deviceName\": \"Smart Bulb\", /* Smart Bulb */\n  \"status\": \"on\",\n  \"usage\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"duration\": \"2 hours\" // Duration in hours\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"duration\": \"3 hours\" /* Another day */\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "XYZ789",
+        "deviceName": "Smart Thermostat",
+        "status": "off",
+        "temperatureSetting": 22,
+        "logs": [
+          {
+            "date": "2023-10-01",
+            "temperature": 21
+          },
+          {
+            "date": "2023-10-02",
+            "temperature": 20
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"XYZ789\", // Thermostat Device ID\n  \"deviceName\": \"Smart Thermostat\",\n  \"status\": \"off\", /* Device status */\n  \"temperatureSetting\": 22,\n  \"logs\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"temperature\": 21 // Temperature in Celsius\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"temperature\": 20 /* Slightly colder */\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "LMN456",
+        "deviceName": "Smart Door Lock",
+        "status": "locked",
+        "events": [
+          {
+            "date": "2023-10-01",
+            "action": "unlocked"
+          },
+          {
+            "date": "2023-10-02",
+            "action": "locked"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"LMN456\", // Door Lock ID\n  \"deviceName\": \"Smart Door Lock\",\n  \"status\": \"locked\", /* Current status */\n  \"events\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"action\": \"unlocked\" // Action performed\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"action\": \"locked\" /* Locked back */\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "PQR987",
+        "deviceName": "Smart Speaker",
+        "status": "on",
+        "volume": 75,
+        "tracksPlayed": [
+          {
+            "date": "2023-10-01",
+            "trackName": "Song A"
+          },
+          {
+            "date": "2023-10-02",
+            "trackName": "Song B"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"PQR987\", // Speaker ID\n  \"deviceName\": \"Smart Speaker\",\n  \"status\": \"on\", /* Speaker status */\n  \"volume\": 75, // Volume level\n  \"tracksPlayed\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"trackName\": \"Song A\" /* First track */\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"trackName\": \"Song B\" // Second track\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "UVW654",
+        "deviceName": "Smart Oven",
+        "status": "preheating",
+        "temperature": 180,
+        "cookingLogs": [
+          {
+            "date": "2023-10-01",
+            "recipe": "Pizza"
+          },
+          {
+            "date": "2023-10-02",
+            "recipe": "Bread"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"UVW654\", // Oven ID\n  \"deviceName\": \"Smart Oven\",\n  \"status\": \"preheating\", /* Current status */\n  \"temperature\": 180, // Temperature in Celsius\n  \"cookingLogs\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"recipe\": \"Pizza\" /* Cooking recipe */\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"recipe\": \"Bread\" // Another recipe\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "STU321",
+        "deviceName": "Smart Vacuum",
+        "status": "cleaning",
+        "batteryLevel": 50,
+        "cleaningSessions": [
+          {
+            "date": "2023-10-01",
+            "duration": "1 hour"
+          },
+          {
+            "date": "2023-10-02",
+            "duration": "1.5 hours"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"STU321\", // Vacuum ID\n  \"deviceName\": \"Smart Vacuum\",\n  \"status\": \"cleaning\", /* Status of vacuum */\n  \"batteryLevel\": 50, // Battery percentage\n  \"cleaningSessions\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"duration\": \"1 hour\" /* First session */\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"duration\": \"1.5 hours\" // Second session\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "GHI258",
+        "deviceName": "Smart Refrigerator",
+        "status": "cooling",
+        "temperature": 4,
+        "doorStatus": "closed",
+        "events": [
+          {
+            "date": "2023-10-01",
+            "event": "door opened"
+          },
+          {
+            "date": "2023-10-02",
+            "event": "door closed"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"GHI258\", // Refrigerator ID\n  \"deviceName\": \"Smart Refrigerator\",\n  \"status\": \"cooling\", /* Status of refrigerator */\n  \"temperature\": 4, // Temperature in Celsius\n  \"doorStatus\": \"closed\", /* Current door status */\n  \"events\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"event\": \"door opened\" // Event logged\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"event\": \"door closed\" /* Another event logged */\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "JKL963",
+        "deviceName": "Smart Camera",
+        "status": "recording",
+        "resolution": "1080p",
+        "recordingLogs": [
+          {
+            "date": "2023-10-01",
+            "duration": "5 hours"
+          },
+          {
+            "date": "2023-10-02",
+            "duration": "6 hours"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"JKL963\", // Camera ID\n  \"deviceName\": \"Smart Camera\",\n  \"status\": \"recording\", /* Current status */\n  \"resolution\": \"1080p\", // Video resolution\n  \"recordingLogs\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"duration\": \"5 hours\" /* Recording duration */\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"duration\": \"6 hours\" // Another recording duration\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "VWX741",
+        "deviceName": "Smart Light Strip",
+        "status": "off",
+        "color": "blue",
+        "controlLogs": [
+          {
+            "date": "2023-10-01",
+            "action": "turned on"
+          },
+          {
+            "date": "2023-10-02",
+            "action": "turned off"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"VWX741\", // Light Strip ID\n  \"deviceName\": \"Smart Light Strip\",\n  \"status\": \"off\", /* Current status */\n  \"color\": \"blue\", // Color setting\n  \"controlLogs\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"action\": \"turned on\" /* Action performed */\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"action\": \"turned off\" // Another action\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "DEF852",
+        "deviceName": "Smart Plug",
+        "status": "off",
+        "currentUsage": "0.5 kWh",
+        "usageLogs": [
+          {
+            "date": "2023-10-01",
+            "usage": "1 kWh"
+          },
+          {
+            "date": "2023-10-02",
+            "usage": "0.8 kWh"
+          }
+        ]
+      },
+      "{\n  \"deviceId\": \"DEF852\", // Smart Plug ID\n  \"deviceName\": \"Smart Plug\",\n  \"status\": \"off\", /* Status of the plug */\n  \"currentUsage\": \"0.5 kWh\", // Current usage\n  \"usageLogs\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"usage\": \"1 kWh\" /* Usage for the day */\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"usage\": \"0.8 kWh\" // Another day's usage\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "booking_id": "ABC123",
+        "passenger": {
+          "first_name": "John",
+          "last_name": "Doe"
+        },
+        "flight_details": {
+          "flight_number": "XY123",
+          "departure": "2023-12-15T10:00:00Z",
+          "arrival": "2023-12-15T14:00:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"ABC123\",\n  \"passenger\": {\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"XY123\",\n    /* This is a comment */\n    \"departure\": \"2023-12-15T10:00:00Z\",\n    \"arrival\": \"2023-12-15T14:00:00Z\"\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "DEF456",
+        "passenger": {
+          "first_name": "Alice",
+          "last_name": "Smith"
+        },
+        "flight_details": {
+          "flight_number": "AB456",
+          "departure": "2023-12-20T16:00:00Z",
+          "arrival": "2023-12-20T20:00:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"DEF456\",\n  \"passenger\": {\n    \"first_name\": \"Alice\",\n    \"last_name\": \"Smith\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"AB456\",\n    \"departure\": \"2023-12-20T16:00:00Z\",\n    \"arrival\": \"2023-12-20T20:00:00Z\" // Comment about arrival time\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "GHI789",
+        "passenger": {
+          "first_name": "Robert",
+          "last_name": "Brown"
+        },
+        "flight_details": {
+          "flight_number": "CD789",
+          "departure": "2023-12-25T08:00:00Z",
+          "arrival": "2023-12-25T12:00:00Z"
+        },
+        "seat": "12C"
+      },
+      "{\n  \"booking_id\": \"GHI789\",\n  \"passenger\": {\n    \"first_name\": \"Robert\",\n    \"last_name\": \"Brown\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"CD789\",\n    \"departure\": \"2023-12-25T08:00:00Z\",\n    \"arrival\": \"2023-12-25T12:00:00Z\"\n  },\n  \"seat\": \"12C\" // Preferred seat\n}"
+    ],
+    [
+      {
+        "booking_id": "JKL012",
+        "passenger": {
+          "first_name": "Emily",
+          "last_name": "Davis"
+        },
+        "flight_details": {
+          "flight_number": "EF012",
+          "departure": "2023-12-30T11:00:00Z",
+          "arrival": "2023-12-30T15:00:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"JKL012\",\n  \"passenger\": {\n    \"first_name\": \"Emily\",\n    \"last_name\": \"Davis\" // Passenger's last name\n  },\n  \"flight_details\": {\n    \"flight_number\": \"EF012\",\n    \"departure\": \"2023-12-30T11:00:00Z\",\n    \"arrival\": \"2023-12-30T15:00:00Z\"\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "MNO345",
+        "passenger": {
+          "first_name": "Michael",
+          "last_name": "Johnson"
+        },
+        "flight_details": {
+          "flight_number": "GH345",
+          "departure": "2024-01-05T09:30:00Z",
+          "arrival": "2024-01-05T13:30:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"MNO345\",\n  \"passenger\": {\n    \"first_name\": \"Michael\",\n    \"last_name\": \"Johnson\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"GH345\",\n    // This is a comment\n    \"departure\": \"2024-01-05T09:30:00Z\",\n    \"arrival\": \"2024-01-05T13:30:00Z\"\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "PQR678",
+        "passenger": {
+          "first_name": "Jessica",
+          "last_name": "Wilson"
+        },
+        "flight_details": {
+          "flight_number": "IJ678",
+          "departure": "2024-01-10T14:00:00Z",
+          "arrival": "2024-01-10T18:00:00Z"
+        },
+        "seat": "15A"
+      },
+      "{\n  \"booking_id\": \"PQR678\",\n  \"passenger\": {\n    \"first_name\": \"Jessica\",\n    \"last_name\": \"Wilson\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"IJ678\",\n    \"departure\": \"2024-01-10T14:00:00Z\",\n    \"arrival\": \"2024-01-10T18:00:00Z\"\n  },\n  \"seat\": \"15A\" /* Seat preference */\n}"
+    ],
+    [
+      {
+        "booking_id": "STU901",
+        "passenger": {
+          "first_name": "David",
+          "last_name": "White"
+        },
+        "flight_details": {
+          "flight_number": "KL901",
+          "departure": "2024-01-15T07:45:00Z",
+          "arrival": "2024-01-15T11:45:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"STU901\",\n  \"passenger\": {\n    \"first_name\": \"David\",\n    \"last_name\": \"White\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"KL901\",\n    \"departure\": \"2024-01-15T07:45:00Z\" // Departure time\n    \"arrival\": \"2024-01-15T11:45:00Z\"\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "VWX234",
+        "passenger": {
+          "first_name": "Olivia",
+          "last_name": "Martinez"
+        },
+        "flight_details": {
+          "flight_number": "MN234",
+          "departure": "2024-01-20T06:00:00Z",
+          "arrival": "2024-01-20T10:00:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"VWX234\",\n  \"passenger\": {\n    \"first_name\": \"Olivia\",\n    \"last_name\": \"Martinez\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"MN234\",\n    \"departure\": \"2024-01-20T06:00:00Z\",\n    \"arrival\": \"2024-01-20T10:00:00Z\" /* Arrival time */\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "YZA567",
+        "passenger": {
+          "first_name": "Sophia",
+          "last_name": "Garcia"
+        },
+        "flight_details": {
+          "flight_number": "OP567",
+          "departure": "2024-01-25T13:15:00Z",
+          "arrival": "2024-01-25T17:15:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"YZA567\",\n  \"passenger\": {\n    \"first_name\": \"Sophia\",\n    \"last_name\": \"Garcia\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"OP567\",\n    \"departure\": \"2024-01-25T13:15:00Z\",\n    // Arrival should be at 5:15 PM\n    \"arrival\": \"2024-01-25T17:15:00Z\"\n  }\n}"
+    ],
+    [
+      {
+        "booking_id": "BCD890",
+        "passenger": {
+          "first_name": "Lucas",
+          "last_name": "Martinez"
+        },
+        "flight_details": {
+          "flight_number": "QR890",
+          "departure": "2024-02-01T18:00:00Z",
+          "arrival": "2024-02-01T22:00:00Z"
+        }
+      },
+      "{\n  \"booking_id\": \"BCD890\",\n  \"passenger\": {\n    \"first_name\": \"Lucas\",\n    \"last_name\": \"Martinez\"\n  },\n  \"flight_details\": {\n    \"flight_number\": \"QR890\",\n    \"departure\": \"2024-02-01T18:00:00Z\",\n    \"arrival\": \"2024-02-01T22:00:00Z\" // Check arrival time\n  }\n}"
+    ],
+    [
+      {
+        "restaurant": "The Gourmet Spot",
+        "reservation": {
+          "date": "2023-11-15",
+          "time": "19:30",
+          "partySize": 4,
+          "contact": {
+            "name": "John Doe",
+            "phone": "555-0123"
+          }
+        }
+      },
+      "{\n    \"restaurant\": \"The Gourmet Spot\",\n    \"reservation\": {\n        \"date\": \"2023-11-15\",\n        \"time\": \"19:30\", // Reservation time\n        \"partySize\": 4,\n        \"contact\": {\n            \"name\": \"John Doe\",\n            \"phone\": \"555-0123\" /* Customer's phone number */\n        }\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Bistro Central",
+        "reservation": {
+          "date": "2023-12-01",
+          "time": "12:00",
+          "partySize": 2,
+          "specialRequests": "Vegan options"
+        }
+      },
+      "{\n    \"restaurant\": \"Bistro Central\",\n    \"reservation\": {\n        \"date\": \"2023-12-01\", // Reservation date\n        \"time\": \"12:00\",\n        \"partySize\": 2,\n        \"specialRequests\": \"Vegan options\" /* Requests for the meal */\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Caf\u00e9 Delight",
+        "reservation": {
+          "date": "2023-10-30",
+          "time": "18:00",
+          "partySize": 3,
+          "contact": {
+            "name": "Alice Smith",
+            "email": "alice@example.com"
+          }
+        }
+      },
+      "{\n    \"restaurant\": \"Caf\u00e9 Delight\",\n    \"reservation\": {\n        \"date\": \"2023-10-30\",\n        \"time\": \"18:00\" // Reservation time\n        \"partySize\": 3,\n        \"contact\": {\n            \"name\": \"Alice Smith\",\n            \"email\": \"alice@example.com\" // Contact email\n        }\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Oceanview Diner",
+        "reservation": {
+          "date": "2023-09-05",
+          "time": "20:00",
+          "partySize": 5,
+          "tablePreference": "Window"
+        }
+      },
+      "{\n    \"restaurant\": \"Oceanview Diner\",\n    \"reservation\": {\n        \"date\": \"2023-09-05\",\n        \"time\": \"20:00\", /* Preferred dining time */\n        \"partySize\": 5,\n        \"tablePreference\": \"Window\" // Prefer a window seat\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Urban Eatery",
+        "reservation": {
+          "date": "2023-11-22",
+          "time": "13:00",
+          "partySize": 6,
+          "notes": "Celebrating a birthday"
+        }
+      },
+      "{\n    \"restaurant\": \"Urban Eatery\",\n    \"reservation\": {\n        \"date\": \"2023-11-22\", // Reservation date\n        \"time\": \"13:00\",\n        \"partySize\": 6, /* Number of guests */\n        \"notes\": \"Celebrating a birthday\"\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "The Greenhouse",
+        "reservation": {
+          "date": "2023-08-10",
+          "time": "17:45",
+          "partySize": 2,
+          "contact": {
+            "name": "Tom Harrison",
+            "email": "tom.h@example.com",
+            "phone": "555-6789"
+          }
+        }
+      },
+      "{\n    \"restaurant\": \"The Greenhouse\",\n    \"reservation\": {\n        \"date\": \"2023-08-10\",\n        \"time\": \"17:45\",\n        \"partySize\": 2, // Number of people\n        \"contact\": {\n            \"name\": \"Tom Harrison\",\n            \"email\": \"tom.h@example.com\",\n            \"phone\": \"555-6789\" /* Contact phone number */\n        }\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Pasta Palace",
+        "reservation": {
+          "date": "2023-07-20",
+          "time": "21:00",
+          "partySize": 8,
+          "specialRequests": "Gluten-free meals"
+        }
+      },
+      "{\n    \"restaurant\": \"Pasta Palace\",\n    \"reservation\": {\n        \"date\": \"2023-07-20\", // Booking date\n        \"time\": \"21:00\",\n        \"partySize\": 8,\n        \"specialRequests\": \"Gluten-free meals\" /* Dietary requests */\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Steakhouse Prime",
+        "reservation": {
+          "date": "2023-06-15",
+          "time": "19:15",
+          "partySize": 10,
+          "contact": {
+            "name": "David Brooks",
+            "phone": "555-3344"
+          }
+        }
+      },
+      "{\n    \"restaurant\": \"Steakhouse Prime\",\n    \"reservation\": {\n        \"date\": \"2023-06-15\",\n        \"time\": \"19:15\", /* Time of reservation */\n        \"partySize\": 10,\n        \"contact\": {\n            \"name\": \"David Brooks\", // Contact name\n            \"phone\": \"555-3344\"\n        }\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Sushi World",
+        "reservation": {
+          "date": "2023-05-25",
+          "time": "18:30",
+          "partySize": 1,
+          "specialRequests": "Quiet table"
+        }
+      },
+      "{\n    \"restaurant\": \"Sushi World\",\n    \"reservation\": {\n        \"date\": \"2023-05-25\",\n        \"time\": \"18:30\" // Time of booking\n        \"partySize\": 1,\n        \"specialRequests\": \"Quiet table\" /* Seating request */\n    }\n}"
+    ],
+    [
+      {
+        "restaurant": "Burger Haven",
+        "reservation": {
+          "date": "2023-04-10",
+          "time": "14:00",
+          "partySize": 7,
+          "contact": {
+            "name": "Emma Johnson",
+            "email": "emma.j@example.com"
+          }
+        }
+      },
+      "{\n    \"restaurant\": \"Burger Haven\",\n    \"reservation\": {\n        \"date\": \"2023-04-10\", /* Date of reservation */\n        \"time\": \"14:00\",\n        \"partySize\": 7,\n        \"contact\": {\n            \"name\": \"Emma Johnson\",\n            \"email\": \"emma.j@example.com\" // Email for contact\n        }\n    }\n}"
+    ],
+    [
+      {
+        "player_id": "user123",
+        "games": [
+          {
+            "game_id": "game001",
+            "duration": 3600,
+            "score": 5200
+          },
+          {
+            "game_id": "game002",
+            "duration": 1800,
+            "score": 3000
+          }
+        ]
+      },
+      "{\n    \"player_id\": \"user123\",\n    \"games\": [\n        {\n            \"game_id\": \"game001\",\n            \"duration\": 3600, // Duration in seconds\n            \"score\": 5200\n        },\n        {\n            \"game_id\": \"game002\",\n            \"duration\": 1800,\n            \"score\": 3000 // This is the end score\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "session_id": "session789",
+        "activities": [
+          {
+            "action": "login",
+            "timestamp": "2023-10-01T12:00:00Z"
+          },
+          {
+            "action": "start_game",
+            "timestamp": "2023-10-01T12:05:00Z",
+            "game_id": "game007"
+          }
+        ]
+      },
+      "{\n    \"session_id\": \"session789\",\n    \"activities\": [\n        {\n            \"action\": \"login\",\n            \"timestamp\": \"2023-10-01T12:00:00Z\" // User logs in\n        },\n        {\n            \"action\": \"start_game\",\n            \"timestamp\": \"2023-10-01T12:05:00Z\",\n            \"game_id\": \"game007\"\n        }\n        // End of activities\n    ]\n}"
+    ],
+    [
+      {
+        "username": "gamerX",
+        "friends": [
+          "playerA",
+          "playerB",
+          "playerC"
+        ],
+        "status": "online"
+      },
+      "{\n    \"username\": \"gamerX\", // Gamer's username\n    \"friends\": [\n        \"playerA\", // Best friend\n        \"playerB\",\n        \"playerC\"\n    ],\n    \"status\": \"online\" // Current status\n}"
+    ],
+    [
+      {
+        "game_stats": {
+          "total_games": 150,
+          "wins": 85,
+          "losses": 65,
+          "highest_score": 9800
+        }
+      },
+      "{\n    \"game_stats\": {\n        \"total_games\": 150, // Total number of games played\n        \"wins\": 85, // Total wins\n        \"losses\": 65,\n        \"highest_score\": 9800 // Highest score achieved\n    }\n}"
+    ],
+    [
+      {
+        "inventory": {
+          "weapons": [
+            "sword",
+            "bow",
+            "dagger"
+          ],
+          "potions": [
+            "health_potion",
+            "mana_potion"
+          ]
+        }
+      },
+      "{\n    \"inventory\": {\n        \"weapons\": [\"sword\", \"bow\", \"dagger\"], // List of weapons\n        \"potions\": [\"health_potion\", \"mana_potion\"] // List of potions\n    }\n}"
+    ],
+    [
+      {
+        "leaderboard": [
+          {
+            "rank": 1,
+            "username": "champion123",
+            "score": 10000
+          },
+          {
+            "rank": 2,
+            "username": "proGamer",
+            "score": 9500
+          }
+        ]
+      },
+      "{\n    \"leaderboard\": [\n        {\n            \"rank\": 1,\n            \"username\": \"champion123\",\n            \"score\": 10000 // Top player's score\n        },\n        {\n            \"rank\": 2,\n            \"username\": \"proGamer\",\n            \"score\": 9500\n        } // End of leaderboard\n    ]\n}"
+    ],
+    [
+      {
+        "achievement": {
+          "title": "Master Explorer",
+          "description": "Complete all map areas",
+          "date_earned": "2023-09-15"
+        }
+      },
+      "{\n    \"achievement\": {\n        \"title\": \"Master Explorer\", // Achievement title\n        \"description\": \"Complete all map areas\", // Description of achievement\n        \"date_earned\": \"2023-09-15\"\n    }\n}"
+    ],
+    [
+      {
+        "settings": {
+          "volume": 75,
+          "resolution": "1920x1080",
+          "language": "en"
+        }
+      },
+      "{\n    \"settings\": {\n        \"volume\": 75, // Volume percentage\n        \"resolution\": \"1920x1080\", // Screen resolution\n        \"language\": \"en\" // Language setting\n    }\n}"
+    ],
+    [
+      {
+        "match_history": [
+          {
+            "match_id": "match001",
+            "result": "win",
+            "date": "2023-09-20"
+          },
+          {
+            "match_id": "match002",
+            "result": "loss",
+            "date": "2023-09-21"
+          }
+        ]
+      },
+      "{\n    \"match_history\": [\n        {\n            \"match_id\": \"match001\",\n            \"result\": \"win\", // Match result\n            \"date\": \"2023-09-20\"\n        },\n        {\n            \"match_id\": \"match002\",\n            \"result\": \"loss\",\n            \"date\": \"2023-09-21\" // Date of match\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "guild": {
+          "name": "Warriors Unite",
+          "members": 45,
+          "rank": 7
+        }
+      },
+      "{\n    \"guild\": {\n        \"name\": \"Warriors Unite\", // Guild name\n        \"members\": 45, // Number of members\n        \"rank\": 7 // Guild rank\n    }\n}"
+    ],
+    [
+      {
+        "products": [
+          {
+            "id": "A1",
+            "name": "Laptop",
+            "price": 999.99,
+            "stock": 10
+          }
+        ]
+      },
+      "{\n    \"products\": [\n        {\n            \"id\": \"A1\",\n            \"name\": \"Laptop\",\n            \"price\": 999.99, // Price in USD\n            \"stock\": 10\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "warehouse": {
+          "location": "North",
+          "capacity": 1000,
+          "current_stock": 450
+        }
+      },
+      "{\n    \"warehouse\": {\n        \"location\": \"North\", /* Main warehouse */\n        \"capacity\": 1000,\n        \"current_stock\": 450\n    }\n}"
+    ],
+    [
+      {
+        "order_id": "ORD12345",
+        "status": "shipped",
+        "items": [
+          {
+            "product_id": "A1",
+            "quantity": 2
+          },
+          {
+            "product_id": "B2",
+            "quantity": 5
+          }
+        ]
+      },
+      "{\n    \"order_id\": \"ORD12345\",\n    \"status\": \"shipped\",\n    \"items\": [\n        {\n            \"product_id\": \"A1\",\n            \"quantity\": 2\n        },\n        {\n            \"product_id\": \"B2\", // Second item\n            \"quantity\": 5\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "supplier": {
+          "name": "Global Supplies Inc.",
+          "contact": {
+            "phone": "+1234567890",
+            "email": "info@globalsupplies.com"
+          }
+        }
+      },
+      "{\n    \"supplier\": {\n        \"name\": \"Global Supplies Inc.\", // Primary supplier\n        \"contact\": {\n            \"phone\": \"+1234567890\",\n            \"email\": \"info@globalsupplies.com\"\n        }\n    }\n}"
+    ],
+    [
+      {
+        "inventory_levels": {
+          "A1": 20,
+          "B2": 15,
+          "C3": 0
+        }
+      },
+      "{\n    \"inventory_levels\": {\n        \"A1\": 20,\n        \"B2\": 15, // Out of stock soon\n        \"C3\": 0\n    }\n}"
+    ],
+    [
+      {
+        "discounts": [
+          {
+            "code": "SAVE10",
+            "discount": 10
+          },
+          {
+            "code": "FREESHIP",
+            "discount": 0
+          }
+        ]
+      },
+      "{\n    \"discounts\": [\n        {\n            \"code\": \"SAVE10\",\n            \"discount\": 10\n        },\n        {\n            \"code\": \"FREESHIP\", /* Free shipping code */\n            \"discount\": 0\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "returns": {
+          "policy": "30 days",
+          "exceptions": [
+            "Clearance items",
+            "Special orders"
+          ]
+        }
+      },
+      "{\n    \"returns\": {\n        \"policy\": \"30 days\", \n        \"exceptions\": [\n            \"Clearance items\",\n            \"Special orders\" // Check for exceptions\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "category": {
+          "electronics": [
+            "Laptop",
+            "Smartphone"
+          ],
+          "furniture": [
+            "Chair",
+            "Table"
+          ]
+        }
+      },
+      "{\n    \"category\": {\n        \"electronics\": [\"Laptop\", \"Smartphone\"], \n        \"furniture\": [\"Chair\", \"Table\"] /* New arrivals coming */\n    }\n}"
+    ],
+    [
+      {
+        "shipment": {
+          "origin": "Factory A",
+          "destination": "Warehouse B",
+          "eta": "2023-11-12"
+        }
+      },
+      "{\n    \"shipment\": {\n        \"origin\": \"Factory A\", // Shipment details\n        \"destination\": \"Warehouse B\",\n        \"eta\": \"2023-11-12\"\n    }\n}"
+    ],
+    [
+      {
+        "notifications": {
+          "email": true,
+          "sms": false
+        }
+      },
+      "{\n    \"notifications\": {\n        \"email\": true, // Enable email notifications\n        \"sms\": false\n    }\n}"
+    ],
+    [
+      {
+        "property_id": "001",
+        "address": "123 Main St",
+        "price": 350000,
+        "features": [
+          "garden",
+          "garage",
+          "swimming pool"
+        ],
+        "agent": {
+          "name": "Alice Johnson",
+          "contact": "alice@example.com"
+        }
+      },
+      "{\n  \"property_id\": \"001\",\n  \"address\": \"123 Main St\",\n  \"price\": 350000, // Price in USD\n  \"features\": [\"garden\", \"garage\", \"swimming pool\"],\n  \"agent\": {\n    \"name\": \"Alice Johnson\",\n    \"contact\": \"alice@example.com\" // Preferred contact method\n  }\n}"
+    ],
+    [
+      {
+        "property_id": "002",
+        "address": "456 Elm St",
+        "price": 420000,
+        "features": [
+          "balcony",
+          "central heating"
+        ],
+        "agent": {
+          "name": "Bob Smith",
+          "contact": "bob@example.com"
+        },
+        "availability": "available"
+      },
+      "{\n  \"property_id\": \"002\",\n  \"address\": \"456 Elm St\", /* Spacious property */\n  \"price\": 420000,\n  \"features\": [\"balcony\", \"central heating\"],\n  \"agent\": {\n    \"name\": \"Bob Smith\",\n    \"contact\": \"bob@example.com\"\n  },\n  \"availability\": \"available\" // Currently open for viewing\n}"
+    ],
+    [
+      {
+        "property_id": "003",
+        "address": "789 Maple Ave",
+        "price": 275000,
+        "features": [
+          "fireplace",
+          "deck"
+        ],
+        "agent": {
+          "name": "Carol Lee",
+          "contact": "carol@example.com"
+        }
+      },
+      "{\n  \"property_id\": \"003\",\n  \"address\": \"789 Maple Ave\",\n  \"price\": 275000, // Reduced price\n  \"features\": [\"fireplace\", \"deck\"],\n  \"agent\": {\n    \"name\": \"Carol Lee\",\n    \"contact\": \"carol@example.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": "004",
+        "address": "101 Oak St",
+        "price": 630000,
+        "features": [
+          "gym",
+          "sauna"
+        ],
+        "agent": {
+          "name": "Dave Wilson",
+          "contact": "dave@example.com"
+        },
+        "status": "sold"
+      },
+      "{\n  \"property_id\": \"004\",\n  \"address\": \"101 Oak St\", /* Prime location */\n  \"price\": 630000,\n  \"features\": [\"gym\", \"sauna\"],\n  \"agent\": {\n    \"name\": \"Dave Wilson\",\n    \"contact\": \"dave@example.com\"\n  },\n  \"status\": \"sold\"\n}"
+    ],
+    [
+      {
+        "property_id": "005",
+        "address": "234 Pine Rd",
+        "price": 310000,
+        "features": [
+          "basement",
+          "attic"
+        ],
+        "agent": {
+          "name": "Eva Green",
+          "contact": "eva@example.com"
+        }
+      },
+      "{\n  \"property_id\": \"005\",\n  \"address\": \"234 Pine Rd\",\n  \"price\": 310000,\n  \"features\": [\"basement\", \"attic\"], // Additional storage space\n  \"agent\": {\n    \"name\": \"Eva Green\",\n    \"contact\": \"eva@example.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": "006",
+        "address": "567 Birch Blvd",
+        "price": 800000,
+        "features": [
+          "tennis court",
+          "helipad"
+        ],
+        "agent": {
+          "name": "Frank Moore",
+          "contact": "frank@example.com"
+        },
+        "status": "under contract"
+      },
+      "{\n  \"property_id\": \"006\",\n  \"address\": \"567 Birch Blvd\",\n  \"price\": 800000, /* Luxurious estate */\n  \"features\": [\"tennis court\", \"helipad\"],\n  \"agent\": {\n    \"name\": \"Frank Moore\",\n    \"contact\": \"frank@example.com\"\n  },\n  \"status\": \"under contract\"\n}"
+    ],
+    [
+      {
+        "property_id": "007",
+        "address": "890 Cedar Cres",
+        "price": 450000,
+        "features": [
+          "solar panels",
+          "energy-efficient"
+        ],
+        "agent": {
+          "name": "Grace Hall",
+          "contact": "grace@example.com"
+        }
+      },
+      "{\n  \"property_id\": \"007\",\n  \"address\": \"890 Cedar Cres\", // Eco-friendly home\n  \"price\": 450000,\n  \"features\": [\"solar panels\", \"energy-efficient\"],\n  \"agent\": {\n    \"name\": \"Grace Hall\",\n    \"contact\": \"grace@example.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": "008",
+        "address": "321 Spruce Ln",
+        "price": 380000,
+        "features": [
+          "large yard",
+          "patio"
+        ],
+        "agent": {
+          "name": "Hannah King",
+          "contact": "hannah@example.com"
+        }
+      },
+      "{\n  \"property_id\": \"008\",\n  \"address\": \"321 Spruce Ln\", /* Great for families */\n  \"price\": 380000,\n  \"features\": [\"large yard\", \"patio\"],\n  \"agent\": {\n    \"name\": \"Hannah King\",\n    \"contact\": \"hannah@example.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": "009",
+        "address": "654 Cypress Ct",
+        "price": 290000,
+        "features": [
+          "hardwood floors",
+          "fireplace"
+        ],
+        "agent": {
+          "name": "Ian Brown",
+          "contact": "ian@example.com"
+        },
+        "status": "pending"
+      },
+      "{\n  \"property_id\": \"009\",\n  \"address\": \"654 Cypress Ct\",\n  \"price\": 290000, // Affordable and cozy\n  \"features\": [\"hardwood floors\", \"fireplace\"],\n  \"agent\": {\n    \"name\": \"Ian Brown\",\n    \"contact\": \"ian@example.com\"\n  },\n  \"status\": \"pending\"\n}"
+    ],
+    [
+      {
+        "property_id": "010",
+        "address": "789 Willow Dr",
+        "price": 525000,
+        "features": [
+          "pool house",
+          "barbecue area"
+        ],
+        "agent": {
+          "name": "Jenny White",
+          "contact": "jenny@example.com"
+        }
+      },
+      "{\n  \"property_id\": \"010\",\n  \"address\": \"789 Willow Dr\",\n  \"price\": 525000, /* Perfect for entertaining */\n  \"features\": [\"pool house\", \"barbecue area\"],\n  \"agent\": {\n    \"name\": \"Jenny White\",\n    \"contact\": \"jenny@example.com\"\n  }\n}"
+    ],
+    [
+      {
+        "event": "Concert",
+        "date": "2023-11-15",
+        "tickets": {
+          "available": 1200,
+          "sold": 850
+        },
+        "venue": "Madison Square Garden"
+      },
+      "{\n    \"event\": \"Concert\", // The main event\n    \"date\": \"2023-11-15\", /* The event date */\n    \"tickets\": {\n        \"available\": 1200, // Number of available tickets\n        \"sold\": 850 /* Number of tickets sold */\n    },\n    \"venue\": \"Madison Square Garden\"\n}"
+    ],
+    [
+      {
+        "event": "Art Exhibition",
+        "organizer": "City Art Foundation",
+        "location": {
+          "city": "New York",
+          "address": "123 Art Lane"
+        },
+        "tickets": {
+          "price": 20,
+          "currency": "USD"
+        }
+      },
+      "{\n    \"event\": \"Art Exhibition\", // Event name\n    \"organizer\": \"City Art Foundation\", /* Company name */\n    \"location\": {\n        \"city\": \"New York\", // City\n        \"address\": \"123 Art Lane\" /* Full address */\n    },\n    \"tickets\": {\n        \"price\": 20, // Ticket price\n        \"currency\": \"USD\"\n    }\n}"
+    ],
+    [
+      {
+        "event": "Tech Conference",
+        "date": "2024-04-23",
+        "attendees": 1500,
+        "sponsors": [
+          "TechCorp",
+          "Innovate Inc"
+        ]
+      },
+      "{\n    \"event\": \"Tech Conference\", // Upcoming event\n    \"date\": \"2024-04-23\", /* Conference date */\n    \"attendees\": 1500, // Expected attendees\n    \"sponsors\": [\n        \"TechCorp\", // Main sponsor\n        \"Innovate Inc\" /* Additional sponsor */\n    ]\n}"
+    ],
+    [
+      {
+        "event": "Food Festival",
+        "date": "2023-09-10",
+        "tickets": {
+          "total": 3000,
+          "sold": 2250
+        },
+        "location": "Central Park"
+      },
+      "{\n    \"event\": \"Food Festival\", /* Tasty event */\n    \"date\": \"2023-09-10\", // Event date\n    \"tickets\": {\n        \"total\": 3000, // Total tickets\n        \"sold\": 2250 /* Tickets sold */\n    },\n    \"location\": \"Central Park\" // Venue\n}"
+    ],
+    [
+      {
+        "event": "Book Fair",
+        "date": "2023-12-05",
+        "tickets": {
+          "early_bird_price": 10,
+          "regular_price": 15
+        },
+        "organizer": "Book Lovers United"
+      },
+      "{\n    \"event\": \"Book Fair\", // Annual fair\n    \"date\": \"2023-12-05\", /* Date of the fair */\n    \"tickets\": {\n        \"early_bird_price\": 10, // Discounted price\n        \"regular_price\": 15 /* Standard price */\n    },\n    \"organizer\": \"Book Lovers United\"\n}"
+    ],
+    [
+      {
+        "event": "Marathon",
+        "date": "2024-05-21",
+        "participants": 5000,
+        "location": "City Center"
+      },
+      "{\n    \"event\": \"Marathon\", /* Running event */\n    \"date\": \"2024-05-21\", // Event date\n    \"participants\": 5000, /* Number of runners */\n    \"location\": \"City Center\" // Starting point\n}"
+    ],
+    [
+      {
+        "event": "Film Festival",
+        "date": "2024-01-15",
+        "films": [
+          "Indie Film 1",
+          "Documentary 2",
+          "Short Film 3"
+        ]
+      },
+      "{\n    \"event\": \"Film Festival\", // Cinema event\n    \"date\": \"2024-01-15\", /* Date for festival */\n    \"films\": [\n        \"Indie Film 1\", // Feature film\n        \"Documentary 2\", /* Docufilm */\n        \"Short Film 3\" // Short movie\n    ]\n}"
+    ],
+    [
+      {
+        "event": "Yoga Retreat",
+        "date": "2023-08-14",
+        "tickets": {
+          "available": 100,
+          "price": 50
+        },
+        "location": "Oceanview Beach"
+      },
+      "{\n    \"event\": \"Yoga Retreat\", // Wellness event\n    \"date\": \"2023-08-14\", /* Event date */\n    \"tickets\": {\n        \"available\": 100, // Available spots\n        \"price\": 50 /* Ticket price */\n    },\n    \"location\": \"Oceanview Beach\" // Venue\n}"
+    ],
+    [
+      {
+        "event": "Music Festival",
+        "date": "2023-07-30",
+        "tickets": {
+          "early_bird": 100,
+          "general": 150
+        },
+        "bands": [
+          "The Rockers",
+          "Synthwave Dream"
+        ]
+      },
+      "{\n    \"event\": \"Music Festival\", // Summer event\n    \"date\": \"2023-07-30\", /* Date of the festival */\n    \"tickets\": {\n        \"early_bird\": 100, // Discounted ticket\n        \"general\": 150 /* General admission */\n    },\n    \"bands\": [\n        \"The Rockers\", // Headlining band\n        \"Synthwave Dream\" /* Supporting act */\n    ]\n}"
+    ],
+    [
+      {
+        "event": "Science Expo",
+        "date": "2023-10-20",
+        "exhibits": [
+          "Robotics Showcase",
+          "Quantum Computing Demo"
+        ],
+        "tickets": {
+          "student_discount": true,
+          "price": 25
+        }
+      },
+      "{\n    \"event\": \"Science Expo\", /* Educational event */\n    \"date\": \"2023-10-20\", // Date\n    \"exhibits\": [\n        \"Robotics Showcase\", // Robotics\n        \"Quantum Computing Demo\" /* Quantum tech */\n    ],\n    \"tickets\": {\n        \"student_discount\": true, // Discount available\n        \"price\": 25 /* Ticket price */\n    }\n}"
+    ],
+    [
+      {
+        "summary": "Button not responsive",
+        "description": "The submit button on the form is not responding when clicked.",
+        "status": "Open",
+        "priority": "High",
+        "tags": [
+          "UI",
+          "Bug",
+          "Form"
+        ],
+        "assigned_to": "dev_team"
+      },
+      "{\n  \"summary\": \"Button not responsive\",\n  \"description\": \"The submit button on the form is not responding when clicked.\",\n  \"status\": \"Open\",\n  \"priority\": \"High\",\n  /* The tags are used to label the issue */\n  \"tags\": [\"UI\", \"Bug\", \"Form\"],\n  \"assigned_to\": \"dev_team\"\n}"
+    ],
+    [
+      {
+        "issue_id": 12345,
+        "title": "Unexpected logout",
+        "details": "Users are being logged out unexpectedly after 5 minutes of inactivity.",
+        "status": "In Progress",
+        "reported_by": "jane_doe",
+        "components": [
+          "Authentication",
+          "Session Management"
+        ]
+      },
+      "{\n  \"issue_id\": 12345,\n  // Title of the issue\n  \"title\": \"Unexpected logout\",\n  \"details\": \"Users are being logged out unexpectedly after 5 minutes of inactivity.\",\n  \"status\": \"In Progress\",\n  \"reported_by\": \"jane_doe\",\n  \"components\": [\"Authentication\", \"Session Management\"]\n}"
+    ],
+    [
+      {
+        "reporter": "john_smith",
+        "environment": "Production",
+        "issue_type": "Bug",
+        "created_at": "2023-10-01T10:00:00Z",
+        "steps_to_reproduce": [
+          "Open the application",
+          "Navigate to the dashboard",
+          "Observe the error message"
+        ]
+      },
+      "{\n  \"reporter\": \"john_smith\",\n  \"environment\": \"Production\",\n  // This marks the type of issue\n  \"issue_type\": \"Bug\",\n  \"created_at\": \"2023-10-01T10:00:00Z\",\n  \"steps_to_reproduce\": [\n    \"Open the application\",\n    \"Navigate to the dashboard\",\n    \"Observe the error message\"\n  ]\n}"
+    ],
+    [
+      {
+        "bug_id": 6789,
+        "description": "Error 404 on help page",
+        "assigned_to": "alice_wonder",
+        "priority": "Medium",
+        "status": "Open",
+        "comments": [
+          "Initial report by user",
+          "Acknowledged by support team"
+        ]
+      },
+      "{\n  \"bug_id\": 6789,\n  \"description\": \"Error 404 on help page\",\n  \"assigned_to\": \"alice_wonder\",\n  \"priority\": \"Medium\",\n  \"status\": \"Open\",\n  // Comments on the issue\n  \"comments\": [\n    \"Initial report by user\",\n    \"Acknowledged by support team\"\n  ]\n}"
+    ],
+    [
+      {
+        "title": "Missing icons on toolbar",
+        "description": "Some icons do not appear on the toolbar in the latest version.",
+        "status": "Resolved",
+        "resolved_by": "team_alpha",
+        "resolution": "Icons were missing from the asset folder."
+      },
+      "{\n  \"title\": \"Missing icons on toolbar\",\n  /* Description of the problem */\n  \"description\": \"Some icons do not appear on the toolbar in the latest version.\",\n  \"status\": \"Resolved\",\n  \"resolved_by\": \"team_alpha\",\n  \"resolution\": \"Icons were missing from the asset folder.\"\n}"
+    ],
+    [
+      {
+        "issue_id": 1122,
+        "summary": "Performance degradation",
+        "details": "Application performance drops significantly when loading large datasets.",
+        "status": "Open",
+        "category": "Performance",
+        "reporter": "chris_pine"
+      },
+      "{\n  \"issue_id\": 1122,\n  // Quick summary of the issue\n  \"summary\": \"Performance degradation\",\n  \"details\": \"Application performance drops significantly when loading large datasets.\",\n  \"status\": \"Open\",\n  \"category\": \"Performance\",\n  \"reporter\": \"chris_pine\"\n}"
+    ],
+    [
+      {
+        "task_id": 3344,
+        "title": "Crash on login",
+        "assigned_to": "bob_builder",
+        "status": "In Review",
+        "reported_at": "2023-09-15T09:30:00Z",
+        "priority": "Critical"
+      },
+      "{\n  \"task_id\": 3344,\n  \"title\": \"Crash on login\",\n  \"assigned_to\": \"bob_builder\",\n  /* Current status of the task */\n  \"status\": \"In Review\",\n  \"reported_at\": \"2023-09-15T09:30:00Z\",\n  \"priority\": \"Critical\"\n}"
+    ],
+    [
+      {
+        "title": "User cannot reset password",
+        "description": "The password reset link is broken.",
+        "reported_by": "lucy_lu",
+        "status": "Open",
+        "tags": [
+          "Security",
+          "Bug"
+        ],
+        "created_at": "2023-10-05T12:00:00Z"
+      },
+      "{\n  \"title\": \"User cannot reset password\",\n  \"description\": \"The password reset link is broken.\",\n  \"reported_by\": \"lucy_lu\",\n  // Current status of the issue\n  \"status\": \"Open\",\n  \"tags\": [\"Security\", \"Bug\"],\n  \"created_at\": \"2023-10-05T12:00:00Z\"\n}"
+    ],
+    [
+      {
+        "issue_id": 5566,
+        "summary": "Data export failing",
+        "details": "Exporting data to CSV results in a server error.",
+        "status": "Pending",
+        "priority": "High",
+        "assigned_to": "dev_ops"
+      },
+      "{\n  \"issue_id\": 5566,\n  /* Brief summary of the issue */\n  \"summary\": \"Data export failing\",\n  \"details\": \"Exporting data to CSV results in a server error.\",\n  \"status\": \"Pending\",\n  \"priority\": \"High\",\n  \"assigned_to\": \"dev_ops\"\n}"
+    ],
+    [
+      {
+        "title": "App freezes on startup",
+        "description": "The application becomes unresponsive immediately after launching.",
+        "reported_by": "max_payne",
+        "status": "Closed",
+        "resolution": "Issue was due to an incorrect configuration file.",
+        "tags": [
+          "Bug",
+          "Startup"
+        ]
+      },
+      "{\n  // The title of the issue\n  \"title\": \"App freezes on startup\",\n  \"description\": \"The application becomes unresponsive immediately after launching.\",\n  \"reported_by\": \"max_payne\",\n  \"status\": \"Closed\",\n  \"resolution\": \"Issue was due to an incorrect configuration file.\",\n  \"tags\": [\"Bug\", \"Startup\"]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "ABC123",
+        "maintenance_records": [
+          {
+            "date": "2023-01-15",
+            "service": "Oil Change",
+            "cost": 40.99,
+            "comments": "Routine oil change."
+          },
+          {
+            "date": "2023-03-20",
+            "service": "Brake Inspection",
+            "cost": 30.0,
+            "comments": "Brakes in good condition."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"ABC123\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-01-15\",\n            \"service\": \"Oil Change\",\n            \"cost\": 40.99,\n            \"comments\": \"Routine oil change.\" // regular service\n        },\n        {\n            \"date\": \"2023-03-20\",\n            \"service\": \"Brake Inspection\", // full check-up\n            \"cost\": 30.00,\n            \"comments\": \"Brakes in good condition.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "XYZ789",
+        "maintenance_records": [
+          {
+            "date": "2023-02-10",
+            "service": "Tire Rotation",
+            "cost": 25.0,
+            "comments": "Rotated tires as per schedule."
+          },
+          {
+            "date": "2023-04-15",
+            "service": "Battery Replacement",
+            "cost": 110.5,
+            "comments": "Replaced with new battery."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"XYZ789\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-02-10\",\n            \"service\": \"Tire Rotation\",\n            \"cost\": 25.00,\n            \"comments\": \"Rotated tires as per schedule.\" /* done on time */\n        },\n        {\n            \"date\": \"2023-04-15\",\n            \"service\": \"Battery Replacement\",\n            \"cost\": 110.50, // includes labor\n            \"comments\": \"Replaced with new battery.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "LMN456",
+        "maintenance_records": [
+          {
+            "date": "2023-05-05",
+            "service": "Air Filter Replacement",
+            "cost": 15.75,
+            "comments": "Replaced air filter."
+          },
+          {
+            "date": "2023-06-12",
+            "service": "Spark Plug Replacement",
+            "cost": 45.6,
+            "comments": "Changed all spark plugs."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"LMN456\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-05-05\",\n            \"service\": \"Air Filter Replacement\", // quick service\n            \"cost\": 15.75,\n            \"comments\": \"Replaced air filter.\"\n        },\n        {\n            \"date\": \"2023-06-12\",\n            \"service\": \"Spark Plug Replacement\",\n            \"cost\": 45.60,\n            \"comments\": \"Changed all spark plugs.\" /* all plugs checked */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "QRS321",
+        "maintenance_records": [
+          {
+            "date": "2023-07-01",
+            "service": "Transmission Fluid Change",
+            "cost": 75.0,
+            "comments": "Fluid level restored."
+          },
+          {
+            "date": "2023-08-04",
+            "service": "Coolant Flush",
+            "cost": 60.0,
+            "comments": "Coolant system flushed."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"QRS321\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-07-01\",\n            \"service\": \"Transmission Fluid Change\" // regular maintenance\n            \"cost\": 75.00,\n            \"comments\": \"Fluid level restored.\"\n        },\n        {\n            \"date\": \"2023-08-04\",\n            \"service\": \"Coolant Flush\",\n            \"cost\": 60.00,\n            \"comments\": \"Coolant system flushed.\" /* ensure no leaks */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "TUV564",
+        "maintenance_records": [
+          {
+            "date": "2023-09-20",
+            "service": "Windshield Wiper Replacement",
+            "cost": 22.99,
+            "comments": "Wipers replaced with premium quality."
+          },
+          {
+            "date": "2023-10-05",
+            "service": "Headlight Restoration",
+            "cost": 55.0,
+            "comments": "Both headlights restored."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"TUV564\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-09-20\",\n            \"service\": \"Windshield Wiper Replacement\",\n            \"cost\": 22.99, // premium quality\n            \"comments\": \"Wipers replaced with premium quality.\"\n        },\n        {\n            \"date\": \"2023-10-05\",\n            \"service\": \"Headlight Restoration\" /* both sides */\n            \"cost\": 55.00,\n            \"comments\": \"Both headlights restored.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "PQR987",
+        "maintenance_records": [
+          {
+            "date": "2023-11-01",
+            "service": "Exhaust Inspection",
+            "cost": 35.0,
+            "comments": "No leaks detected."
+          },
+          {
+            "date": "2023-12-15",
+            "service": "Shock Absorber Replacement",
+            "cost": 120.0,
+            "comments": "Replaced all shock absorbers."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"PQR987\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-11-01\",\n            \"service\": \"Exhaust Inspection\",\n            \"cost\": 35.00, /* checked thoroughly */\n            \"comments\": \"No leaks detected.\"\n        },\n        {\n            \"date\": \"2023-12-15\",\n            \"service\": \"Shock Absorber Replacement\", // all four replaced\n            \"cost\": 120.00,\n            \"comments\": \"Replaced all shock absorbers.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "JKL532",
+        "maintenance_records": [
+          {
+            "date": "2023-08-22",
+            "service": "Alignment",
+            "cost": 50.0,
+            "comments": "Performed wheel alignment."
+          },
+          {
+            "date": "2023-09-10",
+            "service": "Fuel System Cleaning",
+            "cost": 85.0,
+            "comments": "Cleaned and serviced fuel system."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"JKL532\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-08-22\",\n            \"service\": \"Alignment\", // necessary check\n            \"cost\": 50.00,\n            \"comments\": \"Performed wheel alignment.\"\n        },\n        {\n            \"date\": \"2023-09-10\",\n            \"service\": \"Fuel System Cleaning\",\n            \"cost\": 85.00,\n            \"comments\": \"Cleaned and serviced fuel system.\" /* regular task */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "OPQ678",
+        "maintenance_records": [
+          {
+            "date": "2023-03-05",
+            "service": "Radiator Hose Inspection",
+            "cost": 45.0,
+            "comments": "Hoses are in good condition."
+          },
+          {
+            "date": "2023-04-12",
+            "service": "Timing Belt Replacement",
+            "cost": 220.0,
+            "comments": "Replaced timing belt as precaution."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"OPQ678\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-03-05\",\n            \"service\": \"Radiator Hose Inspection\",\n            \"cost\": 45.00,\n            \"comments\": \"Hoses are in good condition.\" /* checked thoroughly */\n        },\n        {\n            \"date\": \"2023-04-12\",\n            \"service\": \"Timing Belt Replacement\" // necessary replacement\n            \"cost\": 220.00,\n            \"comments\": \"Replaced timing belt as precaution.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "BCA879",
+        "maintenance_records": [
+          {
+            "date": "2023-02-25",
+            "service": "Cabin Air Filter Replacement",
+            "cost": 19.99,
+            "comments": "Replaced cabin air filter."
+          },
+          {
+            "date": "2023-03-30",
+            "service": "Serpentine Belt Inspection",
+            "cost": 40.0,
+            "comments": "Belt in good condition, no cracks."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"BCA879\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-02-25\",\n            \"service\": \"Cabin Air Filter Replacement\",\n            \"cost\": 19.99, // routine change\n            \"comments\": \"Replaced cabin air filter.\"\n        },\n        {\n            \"date\": \"2023-03-30\",\n            \"service\": \"Serpentine Belt Inspection\" /* checked thoroughly */\n            \"cost\": 40.00,\n            \"comments\": \"Belt in good condition, no cracks.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "DEF456",
+        "maintenance_records": [
+          {
+            "date": "2023-06-15",
+            "service": "AC System Recharge",
+            "cost": 95.0,
+            "comments": "Recharged AC system."
+          },
+          {
+            "date": "2023-07-10",
+            "service": "Engine Mount Replacement",
+            "cost": 150.0,
+            "comments": "Replaced engine mounts."
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"DEF456\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-06-15\",\n            \"service\": \"AC System Recharge\",\n            \"cost\": 95.00,\n            \"comments\": \"Recharged AC system.\" /* necessary for summer */\n        },\n        {\n            \"date\": \"2023-07-10\",\n            \"service\": \"Engine Mount Replacement\" // improved performance\n            \"cost\": 150.00,\n            \"comments\": \"Replaced engine mounts.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 101,
+            "name": "Alice Johnson",
+            "attendance": [
+              {
+                "date": "2023-10-01",
+                "status": "Present"
+              },
+              {
+                "date": "2023-10-02",
+                "status": "Absent"
+              }
+            ]
+          },
+          {
+            "id": 102,
+            "name": "Bob Smith",
+            "attendance": [
+              {
+                "date": "2023-10-01",
+                "status": "Present"
+              },
+              {
+                "date": "2023-10-02",
+                "status": "Present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 101,\n            \"name\": \"Alice Johnson\",\n            \"attendance\": [\n                {\"date\": \"2023-10-01\", \"status\": \"Present\"},\n                {\"date\": \"2023-10-02\", \"status\": \"Absent\"}\n            ]\n        },\n        /* Comment about employee record */\n        {\n            \"id\": 102,\n            \"name\": \"Bob Smith\",\n            \"attendance\": [\n                {\"date\": \"2023-10-01\", \"status\": \"Present\"},\n                {\"date\": \"2023-10-02\", \"status\": \"Present\"}\n            ]\n        }\n        // End of record\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 201,
+            "name": "Charlie Brown",
+            "attendance": [
+              {
+                "date": "2023-09-15",
+                "status": "Present"
+              },
+              {
+                "date": "2023-09-16",
+                "status": "Present"
+              }
+            ]
+          },
+          {
+            "id": 202,
+            "name": "Donna White",
+            "attendance": [
+              {
+                "date": "2023-09-15",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-09-16",
+                "status": "Present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 201,\n            \"name\": \"Charlie Brown\",\n            \"attendance\": [\n                {\"date\": \"2023-09-15\", \"status\": \"Present\"},\n                {\"date\": \"2023-09-16\", \"status\": \"Present\"}\n            ]\n        },\n        {\n            \"id\": 202,\n            \"name\": \"Donna White\",\n            // Attendance details\n            \"attendance\": [\n                {\"date\": \"2023-09-15\", \"status\": \"Absent\"},\n                {\"date\": \"2023-09-16\", \"status\": \"Present\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 301,
+            "name": "Eve Adams",
+            "attendance": [
+              {
+                "date": "2023-08-20",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-08-21",
+                "status": "Present"
+              }
+            ]
+          },
+          {
+            "id": 302,
+            "name": "Frank Turner",
+            "attendance": [
+              {
+                "date": "2023-08-20",
+                "status": "Present"
+              },
+              {
+                "date": "2023-08-21",
+                "status": "Absent"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 301,\n            \"name\": \"Eve Adams\",\n            \"attendance\": [\n                {\"date\": \"2023-08-20\", \"status\": \"Absent\"},\n                {\"date\": \"2023-08-21\", \"status\": \"Present\"}\n            ]\n        },\n        {\n            \"id\": 302,\n            \"name\": \"Frank Turner\",\n            /* Missing a day off */\n            \"attendance\": [\n                {\"date\": \"2023-08-20\", \"status\": \"Present\"},\n                {\"date\": \"2023-08-21\", \"status\": \"Absent\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 401,
+            "name": "Grace Hopper",
+            "attendance": [
+              {
+                "date": "2023-07-10",
+                "status": "Present"
+              },
+              {
+                "date": "2023-07-11",
+                "status": "Present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 401,\n            \"name\": \"Grace Hopper\",\n            \"attendance\": [\n                {\"date\": \"2023-07-10\", \"status\": \"Present\"},\n                {\"date\": \"2023-07-11\", \"status\": \"Present\"}\n            ]\n        }\n        // Single employee record\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 501,
+            "name": "Hank Green",
+            "attendance": [
+              {
+                "date": "2023-06-14",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-06-15",
+                "status": "Present"
+              }
+            ]
+          },
+          {
+            "id": 502,
+            "name": "Ivy Lee",
+            "attendance": [
+              {
+                "date": "2023-06-14",
+                "status": "Present"
+              },
+              {
+                "date": "2023-06-15",
+                "status": "Absent"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 501,\n            \"name\": \"Hank Green\",\n            \"attendance\": [\n                {\"date\": \"2023-06-14\", \"status\": \"Absent\"},\n                {\"date\": \"2023-06-15\", \"status\": \"Present\"}\n            ]\n        },\n        {\n            \"id\": 502,\n            \"name\": \"Ivy Lee\",\n            \"attendance\": [\n                {\"date\": \"2023-06-14\", \"status\": \"Present\"},\n                {\"date\": \"2023-06-15\", \"status\": \"Absent\"}\n            ]\n        }\n        /* End of records */\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 601,
+            "name": "Jackie Chan",
+            "attendance": [
+              {
+                "date": "2023-05-05",
+                "status": "Present"
+              },
+              {
+                "date": "2023-05-06",
+                "status": "Absent"
+              }
+            ]
+          },
+          {
+            "id": 602,
+            "name": "Karen Gillan",
+            "attendance": [
+              {
+                "date": "2023-05-05",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-05-06",
+                "status": "Present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 601,\n            \"name\": \"Jackie Chan\",\n            \"attendance\": [\n                {\"date\": \"2023-05-05\", \"status\": \"Present\"},\n                {\"date\": \"2023-05-06\", \"status\": \"Absent\"}\n            ]\n        },\n        /* Note about Karen's attendance */\n        {\n            \"id\": 602,\n            \"name\": \"Karen Gillan\",\n            \"attendance\": [\n                {\"date\": \"2023-05-05\", \"status\": \"Absent\"},\n                {\"date\": \"2023-05-06\", \"status\": \"Present\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 701,
+            "name": "Liam Neeson",
+            "attendance": [
+              {
+                "date": "2023-04-20",
+                "status": "Present"
+              },
+              {
+                "date": "2023-04-21",
+                "status": "Absent"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 701,\n            \"name\": \"Liam Neeson\",\n            \"attendance\": [\n                {\"date\": \"2023-04-20\", \"status\": \"Present\"},\n                {\"date\": \"2023-04-21\", \"status\": \"Absent\"}\n            ]\n        }\n        // End of Liam's record\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 801,
+            "name": "Mia Wong",
+            "attendance": [
+              {
+                "date": "2023-03-12",
+                "status": "Present"
+              },
+              {
+                "date": "2023-03-13",
+                "status": "Present"
+              }
+            ]
+          },
+          {
+            "id": 802,
+            "name": "Noah Davis",
+            "attendance": [
+              {
+                "date": "2023-03-12",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-03-13",
+                "status": "Present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 801,\n            \"name\": \"Mia Wong\",\n            \"attendance\": [\n                {\"date\": \"2023-03-12\", \"status\": \"Present\"},\n                {\"date\": \"2023-03-13\", \"status\": \"Present\"}\n            ]\n        },\n        {\n            \"id\": 802,\n            \"name\": \"Noah Davis\",\n            \"attendance\": [\n                {\"date\": \"2023-03-12\", \"status\": \"Absent\"},\n                {\"date\": \"2023-03-13\", \"status\": \"Present\"}\n            ]\n        }\n        // Employee records end\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 901,
+            "name": "Olivia Wilde",
+            "attendance": [
+              {
+                "date": "2023-02-25",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-02-26",
+                "status": "Present"
+              }
+            ]
+          },
+          {
+            "id": 902,
+            "name": "Paul Walker",
+            "attendance": [
+              {
+                "date": "2023-02-25",
+                "status": "Present"
+              },
+              {
+                "date": "2023-02-26",
+                "status": "Absent"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 901,\n            \"name\": \"Olivia Wilde\",\n            \"attendance\": [\n                {\"date\": \"2023-02-25\", \"status\": \"Absent\"},\n                {\"date\": \"2023-02-26\", \"status\": \"Present\"}\n            ]\n        },\n        {\n            \"id\": 902,\n            \"name\": \"Paul Walker\",\n            \"attendance\": [\n                {\"date\": \"2023-02-25\", \"status\": \"Present\"},\n                {\"date\": \"2023-02-26\", \"status\": \"Absent\"}\n            ]\n        }\n        /* Paul was on leave */\n    ]\n}"
+    ],
+    [
+      {
+        "employees": [
+          {
+            "id": 1001,
+            "name": "Quincy Adams",
+            "attendance": [
+              {
+                "date": "2023-01-18",
+                "status": "Present"
+              },
+              {
+                "date": "2023-01-19",
+                "status": "Absent"
+              }
+            ]
+          },
+          {
+            "id": 1002,
+            "name": "Rachel Green",
+            "attendance": [
+              {
+                "date": "2023-01-18",
+                "status": "Absent"
+              },
+              {
+                "date": "2023-01-19",
+                "status": "Present"
+              }
+            ]
+          }
+        ]
+      },
+      "{\n    \"employees\": [\n        {\n            \"id\": 1001,\n            \"name\": \"Quincy Adams\",\n            /* Quincy has good attendance */\n            \"attendance\": [\n                {\"date\": \"2023-01-18\", \"status\": \"Present\"},\n                {\"date\": \"2023-01-19\", \"status\": \"Absent\"}\n            ]\n        },\n        {\n            \"id\": 1002,\n            \"name\": \"Rachel Green\",\n            \"attendance\": [\n                {\"date\": \"2023-01-18\", \"status\": \"Absent\"},\n                {\"date\": \"2023-01-19\", \"status\": \"Present\"}\n            ]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 1234,
+        "title": "Best programming languages in 2023",
+        "posts": [
+          {
+            "user": "alice",
+            "timestamp": "2023-10-01T14:30:00Z",
+            "content": "I think Python is still very popular because of its simplicity."
+          },
+          {
+            "user": "bob",
+            "timestamp": "2023-10-01T15:00:00Z",
+            "content": "JavaScript has become essential for web development."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 1234,\n    \"title\": \"Best programming languages in 2023\",\n    \"posts\": [\n        {\n            \"user\": \"alice\",\n            \"timestamp\": \"2023-10-01T14:30:00Z\",\n            \"content\": \"I think Python is still very popular because of its simplicity.\" // Alice's opinion\n        },\n        {\n            \"user\": \"bob\",\n            \"timestamp\": \"2023-10-01T15:00:00Z\",\n            \"content\": \"JavaScript has become essential for web development.\" /* Bob's\n            perspective */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 5678,
+        "title": "Future of AI",
+        "posts": [
+          {
+            "user": "carol",
+            "timestamp": "2023-10-02T09:15:00Z",
+            "content": "AI can potentially revolutionize healthcare."
+          },
+          {
+            "user": "dave",
+            "timestamp": "2023-10-02T10:45:00Z",
+            "content": "Ethical considerations are key in AI development."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 5678,\n    \"title\": \"Future of AI\",\n    \"posts\": [\n        {\n            \"user\": \"carol\",\n            \"timestamp\": \"2023-10-02T09:15:00Z\",\n            \"content\": \"AI can potentially revolutionize healthcare.\" // comment\n        },\n        {\n            \"user\": \"dave\",\n            \"timestamp\": \"2023-10-02T10:45:00Z\",\n            \"content\": \"Ethical considerations are key in AI development.\"\n            /* another comment */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 9101,
+        "title": "Pros and Cons of Remote Work",
+        "posts": [
+          {
+            "user": "eve",
+            "timestamp": "2023-10-03T08:00:00Z",
+            "content": "Remote work offers flexibility but can be isolating."
+          },
+          {
+            "user": "frank",
+            "timestamp": "2023-10-03T08:45:00Z",
+            "content": "Increased productivity is a major benefit."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 9101,\n    \"title\": \"Pros and Cons of Remote Work\",\n    \"posts\": [\n        {\n            \"user\": \"eve\",\n            \"timestamp\": \"2023-10-03T08:00:00Z\",\n            \"content\": \"Remote work offers flexibility but can be isolating.\" // Eve's thoughts\n        },\n        {\n            \"user\": \"frank\",\n            \"timestamp\": \"2023-10-03T08:45:00Z\",\n            \"content\": \"Increased productivity is a major benefit.\" /* Frank's input */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 1121,
+        "title": "Impact of Cryptocurrency",
+        "posts": [
+          {
+            "user": "grace",
+            "timestamp": "2023-10-04T11:20:00Z",
+            "content": "Cryptocurrency is changing the financial landscape."
+          },
+          {
+            "user": "heidi",
+            "timestamp": "2023-10-04T12:00:00Z",
+            "content": "Regulation is necessary for stability."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 1121,\n    \"title\": \"Impact of Cryptocurrency\",\n    \"posts\": [\n        {\n            \"user\": \"grace\",\n            \"timestamp\": \"2023-10-04T11:20:00Z\",\n            \"content\": \"Cryptocurrency is changing the financial landscape.\" // Grace's statement\n        },\n        {\n            \"user\": \"heidi\",\n            \"timestamp\": \"2023-10-04T12:00:00Z\",\n            \"content\": \"Regulation is necessary for stability.\" /* Opinion by Heidi */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 3141,
+        "title": "Climate Change Challenges",
+        "posts": [
+          {
+            "user": "ivan",
+            "timestamp": "2023-10-05T13:45:00Z",
+            "content": "Renewable energy is crucial to mitigate climate change."
+          },
+          {
+            "user": "judy",
+            "timestamp": "2023-10-05T14:30:00Z",
+            "content": "We need global cooperation to tackle this issue."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 3141,\n    \"title\": \"Climate Change Challenges\",\n    \"posts\": [\n        {\n            \"user\": \"ivan\",\n            \"timestamp\": \"2023-10-05T13:45:00Z\",\n            \"content\": \"Renewable energy is crucial to mitigate climate change.\" // Ivan's comment\n        },\n        {\n            \"user\": \"judy\",\n            \"timestamp\": \"2023-10-05T14:30:00Z\",\n            \"content\": \"We need global cooperation to tackle this issue.\" /* Judy's view */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 1617,
+        "title": "Evolution of Mobile Technology",
+        "posts": [
+          {
+            "user": "kai",
+            "timestamp": "2023-10-06T07:30:00Z",
+            "content": "5G technology is transforming mobile communications."
+          },
+          {
+            "user": "lara",
+            "timestamp": "2023-10-06T08:15:00Z",
+            "content": "Smartphones are becoming more powerful each year."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 1617,\n    \"title\": \"Evolution of Mobile Technology\",\n    \"posts\": [\n        {\n            \"user\": \"kai\",\n            \"timestamp\": \"2023-10-06T07:30:00Z\",\n            \"content\": \"5G technology is transforming mobile communications.\" // Kai's observation\n        },\n        {\n            \"user\": \"lara\",\n            \"timestamp\": \"2023-10-06T08:15:00Z\",\n            \"content\": \"Smartphones are becoming more powerful each year.\" /* Comment by Lara */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 1819,
+        "title": "Virtual Reality in Gaming",
+        "posts": [
+          {
+            "user": "mike",
+            "timestamp": "2023-10-07T16:00:00Z",
+            "content": "VR is providing immersive gaming experiences."
+          },
+          {
+            "user": "nina",
+            "timestamp": "2023-10-07T17:00:00Z",
+            "content": "The cost of VR equipment is still a barrier."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 1819,\n    \"title\": \"Virtual Reality in Gaming\",\n    \"posts\": [\n        {\n            \"user\": \"mike\",\n            \"timestamp\": \"2023-10-07T16:00:00Z\",\n            \"content\": \"VR is providing immersive gaming experiences.\" // Mike's enthusiasm\n        },\n        {\n            \"user\": \"nina\",\n            \"timestamp\": \"2023-10-07T17:00:00Z\",\n            \"content\": \"The cost of VR equipment is still a barrier.\" /* Nina's concern */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 2021,
+        "title": "Blockchain Beyond Cryptocurrency",
+        "posts": [
+          {
+            "user": "oliver",
+            "timestamp": "2023-10-08T18:30:00Z",
+            "content": "Blockchain can enhance supply chain transparency."
+          },
+          {
+            "user": "pam",
+            "timestamp": "2023-10-08T19:15:00Z",
+            "content": "It's a secure way to handle digital transactions."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 2021,\n    \"title\": \"Blockchain Beyond Cryptocurrency\",\n    \"posts\": [\n        {\n            \"user\": \"oliver\",\n            \"timestamp\": \"2023-10-08T18:30:00Z\",\n            \"content\": \"Blockchain can enhance supply chain transparency.\" // Oliver's insight\n        },\n        {\n            \"user\": \"pam\",\n            \"timestamp\": \"2023-10-08T19:15:00Z\",\n            \"content\": \"It's a secure way to handle digital transactions.\" /* Pam's agreement */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 2223,
+        "title": "The Rise of E-commerce",
+        "posts": [
+          {
+            "user": "quinn",
+            "timestamp": "2023-10-09T10:30:00Z",
+            "content": "E-commerce is convenient and growing rapidly."
+          },
+          {
+            "user": "ryan",
+            "timestamp": "2023-10-09T11:00:00Z",
+            "content": "Cybersecurity remains a major concern."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 2223,\n    \"title\": \"The Rise of E-commerce\",\n    \"posts\": [\n        {\n            \"user\": \"quinn\",\n            \"timestamp\": \"2023-10-09T10:30:00Z\",\n            \"content\": \"E-commerce is convenient and growing rapidly.\" // Quinn's point\n        },\n        {\n            \"user\": \"ryan\",\n            \"timestamp\": \"2023-10-09T11:00:00Z\",\n            \"content\": \"Cybersecurity remains a major concern.\" /* Ryan's warning */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 2425,
+        "title": "Electric Vehicles: Pros and Cons",
+        "posts": [
+          {
+            "user": "sara",
+            "timestamp": "2023-10-10T12:30:00Z",
+            "content": "EVs help reduce carbon emissions."
+          },
+          {
+            "user": "tom",
+            "timestamp": "2023-10-10T13:00:00Z",
+            "content": "Battery life and charging infrastructure are challenges."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 2425,\n    \"title\": \"Electric Vehicles: Pros and Cons\",\n    \"posts\": [\n        {\n            \"user\": \"sara\",\n            \"timestamp\": \"2023-10-10T12:30:00Z\",\n            \"content\": \"EVs help reduce carbon emissions.\" // Sara's note\n        },\n        {\n            \"user\": \"tom\",\n            \"timestamp\": \"2023-10-10T13:00:00Z\",\n            \"content\": \"Battery life and charging infrastructure are challenges.\" /* Tom's challenge */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": {
+          "id": 1,
+          "name": "Downtown Store",
+          "footTraffic": [
+            {
+              "day": "Monday",
+              "count": 150
+            },
+            {
+              "day": "Tuesday",
+              "count": 200
+            }
+          ]
+        }
+      },
+      "{\n  \"store\": {\n    \"id\": 1, // The identifier of the store\n    \"name\": \"Downtown Store\", /* Store name */\n    \"footTraffic\": [\n      {\"day\": \"Monday\", \"count\": 150},\n      {\"day\": \"Tuesday\", \"count\": 200}\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "week": "Week 42",
+        "locations": [
+          {
+            "name": "Central Plaza",
+            "visitors": 1234
+          },
+          {
+            "name": "East Mall",
+            "visitors": 987
+          }
+        ]
+      },
+      "{\n  \"week\": \"Week 42\", // Current week number\n  \"locations\": [\n    {\n      \"name\": \"Central Plaza\", /* Plaza location */\n      \"visitors\": 1234\n    },\n    {\n      \"name\": \"East Mall\", // Mall on the east side\n      \"visitors\": 987\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "date": "2023-10-15",
+        "traffic": {
+          "morning": 300,
+          "afternoon": 450,
+          "evening": 500
+        }
+      },
+      "{\n  \"date\": \"2023-10-15\", /* Date of traffic record */\n  \"traffic\": {\n    \"morning\": 300,\n    \"afternoon\": 450, // Peak time\n    \"evening\": 500\n  }\n}"
+    ],
+    [
+      {
+        "storeID": 101,
+        "totalVisitors": 5120,
+        "busiestDay": "Saturday",
+        "dailyData": [
+          {
+            "day": "Monday",
+            "visitors": 720
+          },
+          {
+            "day": "Saturday",
+            "visitors": 1200
+          }
+        ]
+      },
+      "{\n  \"storeID\": 101, // Store identifier\n  \"totalVisitors\": 5120, /* Total number of visitors this week */\n  \"busiestDay\": \"Saturday\",\n  \"dailyData\": [\n    {\"day\": \"Monday\", \"visitors\": 720},\n    {\"day\": \"Saturday\", \"visitors\": 1200}\n  ]\n}"
+    ],
+    [
+      {
+        "region": "North",
+        "stores": [
+          {
+            "name": "Main St",
+            "footTraffic": [
+              {
+                "day": "Thursday",
+                "count": 340
+              },
+              {
+                "day": "Friday",
+                "count": 560
+              }
+            ]
+          }
+        ]
+      },
+      "{\n  \"region\": \"North\", // Region of the stores\n  \"stores\": [\n    {\n      \"name\": \"Main St\", /* Store located on Main Street */\n      \"footTraffic\": [\n        {\"day\": \"Thursday\", \"count\": 340},\n        {\"day\": \"Friday\", \"count\": 560}\n      ]\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "storeName": "West End",
+        "visitorData": [
+          {
+            "hour": "09:00",
+            "visitors": 50
+          },
+          {
+            "hour": "14:00",
+            "visitors": 120
+          }
+        ]
+      },
+      "{\n  \"storeName\": \"West End\", /* Store name */\n  \"visitorData\": [\n    {\"hour\": \"09:00\", \"visitors\": 50}, // Morning hour\n    {\"hour\": \"14:00\", \"visitors\": 120} /* Afternoon peak */\n  ]\n}"
+    ],
+    [
+      {
+        "day": "Wednesday",
+        "trafficCounts": {
+          "open": 80,
+          "close": 60
+        }
+      },
+      "{\n  \"day\": \"Wednesday\", // Mid-week traffic\n  \"trafficCounts\": {\n    \"open\": 80, /* Opening count */\n    \"close\": 60 // Closing count\n  }\n}"
+    ],
+    [
+      {
+        "monthlyReport": {
+          "month": "September",
+          "totalFootTraffic": 23456
+        }
+      },
+      "{\n  \"monthlyReport\": {\n    \"month\": \"September\", // Month of report\n    \"totalFootTraffic\": 23456 /* Total traffic for the month */\n  }\n}"
+    ],
+    [
+      {
+        "storeChain": "Mega Retail",
+        "data": {
+          "branches": 12,
+          "averageDailyFootTraffic": 345
+        }
+      },
+      "{\n  \"storeChain\": \"Mega Retail\", /* Retail chain name */\n  \"data\": {\n    \"branches\": 12, // Number of branches\n    \"averageDailyFootTraffic\": 345\n  }\n}"
+    ],
+    [
+      {
+        "footTrafficAnalysis": {
+          "peakHour": "18:00",
+          "averageVisitors": 600
+        }
+      },
+      "{\n  \"footTrafficAnalysis\": {\n    \"peakHour\": \"18:00\", // Evening rush hour\n    \"averageVisitors\": 600 /* Average number of visitors */\n  }\n}"
+    ],
+    [
+      {
+        "playlistName": "Chill Vibes",
+        "songs": [
+          {
+            "title": "Sunset Lover",
+            "artist": "Petit Biscuit",
+            "duration": 228
+          },
+          {
+            "title": "Weightless",
+            "artist": "Marconi Union",
+            "duration": 505
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Chill Vibes\",\n    \"songs\": [\n        // The first song in the playlist\n        {\n            \"title\": \"Sunset Lover\",\n            \"artist\": \"Petit Biscuit\",\n            \"duration\": 228\n        },\n        {\n            \"title\": \"Weightless\",\n            // Duration in seconds\n            \"artist\": \"Marconi Union\",\n            \"duration\": 505\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Workout Mix",
+        "songs": [
+          {
+            "title": "Stronger",
+            "artist": "Kanye West",
+            "duration": 312
+          },
+          {
+            "title": "Eye of the Tiger",
+            "artist": "Survivor",
+            "duration": 245
+          }
+        ],
+        "totalDuration": 557
+      },
+      "{\n    \"playlistName\": \"Workout Mix\",\n    \"songs\": [\n        {\n            \"title\": \"Stronger\",\n            \"artist\": \"Kanye West\",\n            \"duration\": 312\n        },\n        /* Classic workout anthem */\n        {\n            \"title\": \"Eye of the Tiger\",\n            \"artist\": \"Survivor\",\n            \"duration\": 245\n        }\n    ],\n    \"totalDuration\": 557 // Total duration in seconds\n}"
+    ],
+    [
+      {
+        "playlistName": "Road Trip Tunes",
+        "songs": [
+          {
+            "title": "Life is a Highway",
+            "artist": "Tom Cochrane",
+            "duration": 276
+          },
+          {
+            "title": "Shut Up and Dance",
+            "artist": "WALK THE MOON",
+            "duration": 200
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Road Trip Tunes\",\n    \"songs\": [\n        {\n            \"title\": \"Life is a Highway\",\n            \"artist\": \"Tom Cochrane\",\n            /* Duration of the song */\n            \"duration\": 276\n        },\n        {\n            // Another great song\n            \"title\": \"Shut Up and Dance\",\n            \"artist\": \"WALK THE MOON\",\n            \"duration\": 200\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Acoustic Relaxation",
+        "songs": [
+          {
+            "title": "Banana Pancakes",
+            "artist": "Jack Johnson",
+            "duration": 193
+          },
+          {
+            "title": "Better Together",
+            "artist": "Jack Johnson",
+            "duration": 207
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Acoustic Relaxation\",\n    \"songs\": [\n        {\n            \"title\": \"Banana Pancakes\",\n            // Jack Johnson hit\n            \"artist\": \"Jack Johnson\",\n            \"duration\": 193\n        },\n        {\n            \"title\": \"Better Together\",\n            \"artist\": \"Jack Johnson\", /* Another hit */\n            \"duration\": 207\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "90s Hits",
+        "songs": [
+          {
+            "title": "Smells Like Teen Spirit",
+            "artist": "Nirvana",
+            "duration": 301
+          },
+          {
+            "title": "No Scrubs",
+            "artist": "TLC",
+            "duration": 237
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"90s Hits\",\n    \"songs\": [\n        {\n            \"title\": \"Smells Like Teen Spirit\", // Grunge classic\n            \"artist\": \"Nirvana\",\n            \"duration\": 301\n        },\n        {\n            \"title\": \"No Scrubs\",\n            /* TLC's hit song */\n            \"artist\": \"TLC\",\n            \"duration\": 237\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Party Anthems",
+        "songs": [
+          {
+            "title": "Uptown Funk",
+            "artist": "Mark Ronson ft. Bruno Mars",
+            "duration": 269
+          },
+          {
+            "title": "Sorry",
+            "artist": "Justin Bieber",
+            "duration": 200
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Party Anthems\",\n    \"songs\": [\n        {\n            \"title\": \"Uptown Funk\",\n            \"artist\": \"Mark Ronson ft. Bruno Mars\",\n            \"duration\": 269 // Funky tune\n        },\n        // Popular dance track\n        {\n            \"title\": \"Sorry\",\n            \"artist\": \"Justin Bieber\",\n            \"duration\": 200\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Indie Favorites",
+        "songs": [
+          {
+            "title": "Electric Feel",
+            "artist": "MGMT",
+            "duration": 228
+          },
+          {
+            "title": "1901",
+            "artist": "Phoenix",
+            "duration": 215
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Indie Favorites\",\n    \"songs\": [\n        // Great indie song\n        {\n            \"title\": \"Electric Feel\",\n            \"artist\": \"MGMT\",\n            \"duration\": 228\n        },\n        {\n            \"title\": \"1901\",\n            /* French band Phoenix */\n            \"artist\": \"Phoenix\",\n            \"duration\": 215\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Classic Rock",
+        "songs": [
+          {
+            "title": "Bohemian Rhapsody",
+            "artist": "Queen",
+            "duration": 354
+          },
+          {
+            "title": "Hotel California",
+            "artist": "Eagles",
+            "duration": 390
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Classic Rock\",\n    \"songs\": [\n        {\n            /* Legendary song by Queen */\n            \"title\": \"Bohemian Rhapsody\",\n            \"artist\": \"Queen\",\n            \"duration\": 354\n        },\n        {\n            \"title\": \"Hotel California\",\n            \"artist\": \"Eagles\", // A classic tune\n            \"duration\": 390\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Pop Hits",
+        "songs": [
+          {
+            "title": "Shape of You",
+            "artist": "Ed Sheeran",
+            "duration": 233
+          },
+          {
+            "title": "Bad Guy",
+            "artist": "Billie Eilish",
+            "duration": 194
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Pop Hits\",\n    \"songs\": [\n        {\n            \"title\": \"Shape of You\", // Ed Sheeran's hit\n            \"artist\": \"Ed Sheeran\",\n            \"duration\": 233\n        },\n        {\n            /* Popular song by Billie */\n            \"title\": \"Bad Guy\",\n            \"artist\": \"Billie Eilish\",\n            \"duration\": 194\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Jazz Essentials",
+        "songs": [
+          {
+            "title": "So What",
+            "artist": "Miles Davis",
+            "duration": 545
+          },
+          {
+            "title": "Take Five",
+            "artist": "The Dave Brubeck Quartet",
+            "duration": 324
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Jazz Essentials\",\n    \"songs\": [\n        {\n            \"title\": \"So What\",\n            \"artist\": \"Miles Davis\",\n            \"duration\": 545 /* Long jazz track */\n        },\n        // Iconic jazz piece\n        {\n            \"title\": \"Take Five\",\n            \"artist\": \"The Dave Brubeck Quartet\",\n            \"duration\": 324\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardID": "123456789",
+        "owner": "Alice Johnson",
+        "usageHistory": [
+          {
+            "date": "2023-10-01",
+            "route": "Bus 24",
+            "amount": 2.5
+          },
+          {
+            "date": "2023-10-02",
+            "route": "Tram 6",
+            "amount": 3.0
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"123456789\",\n  \"owner\": \"Alice Johnson\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"route\": \"Bus 24\",\n      \"amount\": 2.50\n    },\n    // This was a special offer day\n    {\n      \"date\": \"2023-10-02\",\n      \"route\": \"Tram 6\",\n      \"amount\": 3.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "987654321",
+        "owner": "Bob Smith",
+        "usageHistory": [
+          {
+            "date": "2023-09-29",
+            "route": "Metro Red Line",
+            "amount": 4.0
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"987654321\",\n  \"owner\": \"Bob Smith\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-09-29\",\n      \"route\": \"Metro Red Line\",\n      \"amount\": 4.00\n    }\n    /* Ensure this transaction is correctly accounted */\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "112233445",
+        "owner": "Charlie Davis",
+        "usageHistory": [
+          {
+            "date": "2023-08-15",
+            "route": "Bus 45",
+            "amount": 2.75
+          },
+          {
+            "date": "2023-08-16",
+            "route": "Train B",
+            "amount": 5.0
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"112233445\",\n  \"owner\": \"Charlie Davis\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-08-15\",\n      \"route\": \"Bus 45\",\n      \"amount\": 2.75\n    },\n    {\n      \"date\": \"2023-08-16\",\n      \"route\": \"Train B\",\n      \"amount\": 5.00\n    }\n    // End of records for August\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "556677889",
+        "owner": "Diana White",
+        "usageHistory": []
+      },
+      "{\n  \"cardID\": \"556677889\",\n  \"owner\": \"Diana White\",\n  \"usageHistory\": [] // No usage recorded yet\n}"
+    ],
+    [
+      {
+        "cardID": "223344556",
+        "owner": "Eve Black",
+        "usageHistory": [
+          {
+            "date": "2023-07-10",
+            "route": "Bus 12",
+            "amount": 3.25
+          },
+          {
+            "date": "2023-07-11",
+            "route": "Tram 9",
+            "amount": 2.75
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"223344556\",\n  \"owner\": \"Eve Black\",\n  \"usageHistory\": [\n    /* July transactions */\n    {\n      \"date\": \"2023-07-10\",\n      \"route\": \"Bus 12\",\n      \"amount\": 3.25\n    },\n    {\n      \"date\": \"2023-07-11\",\n      \"route\": \"Tram 9\",\n      \"amount\": 2.75\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "569874123",
+        "owner": "Frank Green",
+        "usageHistory": [
+          {
+            "date": "2023-06-21",
+            "route": "Train A",
+            "amount": 4.5
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"569874123\",\n  \"owner\": \"Frank Green\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-06-21\",\n      \"route\": \"Train A\",\n      \"amount\": 4.50\n    }\n    /* This is a peak time charge */\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "334455667",
+        "owner": "Gina Brown",
+        "usageHistory": [
+          {
+            "date": "2023-05-05",
+            "route": "Bus 76",
+            "amount": 3.0
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"334455667\",\n  \"owner\": \"Gina Brown\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-05-05\",\n      \"route\": \"Bus 76\",\n      \"amount\": 3.00\n    }\n    // Discount applied\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "445566778",
+        "owner": "Hank Blue",
+        "usageHistory": [
+          {
+            "date": "2023-04-14",
+            "route": "Metro Blue Line",
+            "amount": 5.5
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"445566778\",\n  \"owner\": \"Hank Blue\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-04-14\",\n      \"route\": \"Metro Blue Line\",\n      \"amount\": 5.50\n    }\n    // Check for weekend charge\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "667788990",
+        "owner": "Ivy Orange",
+        "usageHistory": [
+          {
+            "date": "2023-03-03",
+            "route": "Tram 15",
+            "amount": 3.25
+          },
+          {
+            "date": "2023-03-04",
+            "route": "Bus 80",
+            "amount": 2.5
+          }
+        ]
+      },
+      "{\n  \"cardID\": \"667788990\",\n  \"owner\": \"Ivy Orange\",\n  \"usageHistory\": [\n    {\n      \"date\": \"2023-03-03\",\n      \"route\": \"Tram 15\",\n      \"amount\": 3.25\n    },\n    {\n      \"date\": \"2023-03-04\",\n      \"route\": \"Bus 80\",\n      \"amount\": 2.50\n    }\n    // March usage\n  ]\n}"
+    ],
+    [
+      {
+        "cardID": "778899001",
+        "owner": "Jack Purple",
+        "usageHistory": []
+      },
+      "{\n  \"cardID\": \"778899001\",\n  \"owner\": \"Jack Purple\",\n  \"usageHistory\": [] /* No transactions recorded */\n}"
+    ]
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "test_0": {
+    "model_names": [
+      "BERT",
+      "DeepMind Control Suite"
+    ],
+    "abstract": "This paper investigates the robustness of BERT against adversarial attacks in natural language processing tasks. We extend our study to the DeepMind Control Suite to analyze how BERT's adversarial robustness can be transferred to tasks in a simulated environment. Our experiments show that BERT, when fine-tuned with adversarial training, demonstrates increased resilience against perturbations, leading to improved performance in both text and control tasks."
+  },
+  "test_1": {
+    "model_names": [
+      "ResNet-50",
+      "VGG-16"
+    ],
+    "abstract": "This study explores the effectiveness of adversarial training in enhancing the robustness of ResNet-50 and VGG-16 models against adversarial attacks. We conduct experiments on image classification tasks to assess how these models can withstand perturbations. Our results indicate that while both models benefit from adversarial training, ResNet-50 shows superior robustness compared to VGG-16, emphasizing the importance of network architecture in adversarial defenses."
+  },
+  "test_2": {
+    "model_names": [
+      "XGBoost",
+      "LightGBM"
+    ],
+    "abstract": "In this research, we compare the adversarial robustness of tree-based models, specifically XGBoost and LightGBM, on tabular data. We employ adversarial perturbations to evaluate model stability and propose a defense mechanism to enhance robustness. Our findings reveal that LightGBM exhibits greater vulnerability to adversarial attacks than XGBoost, but both models can significantly improve with targeted adversarial training techniques."
+  },
+  "test_3": {
+    "model_names": [
+      "YOLOv5",
+      "EfficientDet"
+    ],
+    "abstract": "We analyze the robustness of object detection models, YOLOv5 and EfficientDet, under adversarial settings. By introducing adversarial examples into the training pipeline, we assess how these models can maintain detection accuracy. Our experiments demonstrate that YOLOv5, equipped with adversarial defenses, outperforms EfficientDet in challenging scenarios, indicating its potential as a reliable model for robust object detection."
+  },
+  "test_4": {
+    "model_names": [
+      "GPT-3",
+      "T5"
+    ],
+    "abstract": "This paper examines the adversarial robustness of language models GPT-3 and T5 in text generation tasks. We introduce adversarial text perturbations to assess their impact on output quality. Our results indicate that while both models are susceptible to adversarial inputs, T5 demonstrates slightly better robustness due to its architectural differences and training strategies. We propose enhancements to boost resistance to adversarial attacks further."
+  },
+  "test_5": {
+    "model_names": [
+      "Transformers",
+      "BART"
+    ],
+    "abstract": "The study focuses on Transformers and BART in the context of adversarial learning for sequence-to-sequence tasks. We apply adversarial techniques to evaluate and improve the models' resilience against input perturbations. Our findings suggest that BART possesses inherent advantages in robustness due to its denoising pre-training, which can be further amplified through adversarial training strategies."
+  },
+  "test_6": {
+    "model_names": [
+      "AlexNet",
+      "DenseNet"
+    ],
+    "abstract": "In this work, we assess the robustness of CNN architectures AlexNet and DenseNet against adversarial attacks. Using a variety of adversarial attack methods, we examine each model's ability to retain classification accuracy on image datasets. Our experiments reveal that DenseNet exhibits stronger resistance to adversarial perturbations than AlexNet, highlighting the importance of network depth and connectivity in robust CNN design."
+  },
+  "test_7": {
+    "model_names": [
+      "Faster R-CNN",
+      "SSD"
+    ],
+    "abstract": "This research investigates the robustness of object detection models, Faster R-CNN and SSD, against adversarial attacks. We generate adversarial examples targeting object localization and classification to evaluate model performance. Our results show that Faster R-CNN, with its region proposal strategy, achieves better robustness compared to the single-stage SSD, suggesting pathways for improving adversarial defenses in object detectors."
+  },
+  "test_8": {
+    "model_names": [
+      "BERT",
+      "RoBERTa"
+    ],
+    "abstract": "We explore the adversarial robustness of pre-trained language models BERT and RoBERTa through a series of text classification tasks. By applying adversarial training methods, we assess the models' ability to resist adversarial text inputs. The findings indicate that RoBERTa, with its enhanced training regimen, demonstrates higher robustness levels than BERT, paving the way for more resilient NLP applications."
+  },
+  "test_9": {
+    "model_names": [
+      "CycleGAN",
+      "Pix2Pix"
+    ],
+    "abstract": "This paper examines the robustness of CycleGAN and Pix2Pix models when faced with adversarial attacks on image-to-image translation tasks. We develop adversarial examples to test the image translation capabilities of both models. Results show that CycleGAN, with its cycle consistency loss, retains better robustness compared to Pix2Pix, suggesting strategies for enhancing adversarial defenses in generative models."
+  },
+  "test_10": {
+    "model_names": [
+      "StyleGAN",
+      "ProGAN"
+    ],
+    "abstract": "In this study, we evaluate the adversarial robustness of generative adversarial networks, specifically StyleGAN and ProGAN, in generating high-quality images. By introducing adversarial noise during training, we test each model's ability to maintain image fidelity. Our experiments reveal that StyleGAN, with its adaptive instance normalization, provides superior robustness against adversarial perturbations, indicating a pathway for robust GAN design."
+  },
+  "test_11": {
+    "model_names": [
+      "OpenAI CLIP",
+      "DALL-E"
+    ],
+    "abstract": "This research explores the adversarial robustness of multimodal models OpenAI CLIP and DALL-E in image and text understanding tasks. We introduce adversarial perturbations to assess the models' performance under duress. Our results indicate that CLIP's contrastive training offers better resistance to adversarial inputs than DALL-E, underscoring the importance of training objectives in fostering robustness across modalities."
+  },
+  "test_12": {
+    "model_names": [
+      "Reformer",
+      "Performer"
+    ],
+    "abstract": "The study investigates the adversarial robustness of efficient Transformer models, Reformer and Performer, on long-sequence tasks. We apply adversarial attacks to evaluate their capacity to handle input perturbations. Findings suggest that Performer's kernel-based attention mechanism provides enhanced robustness over Reformer, highlighting the potential of efficient Transformer architectures in adversarial settings."
+  },
+  "test_13": {
+    "model_names": [
+      "GPT-2",
+      "CTRL"
+    ],
+    "abstract": "This paper examines the adversarial robustness of autoregressive language models GPT-2 and CTRL in controlled text generation. We perform adversarial attacks to test models' consistency and reliability under adversarial conditions. Our study reveals that CTRL's control codes can be leveraged to mitigate adversarial effects, providing a distinct advantage over GPT-2 in maintaining robust text generation."
+  },
+  "test_14": {
+    "model_names": [
+      "Wide ResNet",
+      "MobileNetV3"
+    ],
+    "abstract": "We assess the adversarial robustness of lightweight CNN architectures Wide ResNet and MobileNetV3 in image classification tasks. Through adversarial training, we evaluate their susceptibility to adversarial examples. The results show that Wide ResNet, with its increased channel width, exhibits greater robustness compared to MobileNetV3, suggesting architectural modifications to enhance adversarial defenses in compact models."
+  },
+  "test_15": {
+    "model_names": [
+      "BigGAN",
+      "SAGAN"
+    ],
+    "abstract": "This research investigates the adversarial robustness of GAN models BigGAN and SAGAN in generating diverse and high-fidelity images. We employ adversarial noise in the training process to test model stability. Findings indicate that BigGAN's larger capacity provides better resistance to adversarial attacks than SAGAN, which guides future improvements in robust generative model design."
+  },
+  "test_16": {
+    "model_names": [
+      "ELECTRA",
+      "ALBERT"
+    ],
+    "abstract": "In this study, we compare the adversarial robustness of pre-trained language models ELECTRA and ALBERT in text classification tasks. We use adversarial training techniques to enhance model resistance to text perturbations. Our results show that ELECTRA's discriminative training provides superior robustness compared to ALBERT's parameter efficiency, highlighting a trade-off between model size and resilience."
+  },
+  "test_17": {
+    "model_names": [
+      "DeepAR",
+      "N-BEATS"
+    ],
+    "abstract": "This paper examines the robustness of time series forecasting models DeepAR and N-BEATS under adversarial conditions. We apply adversarial attacks to the input data to evaluate model accuracy and stability. Findings suggest that N-BEATS, with its backward and forward residual links, offers enhanced robustness over DeepAR, informing future adversarial defense strategies in time series analysis."
+  },
+  "test_18": {
+    "model_names": [
+      "FastSpeech",
+      "Tacotron 2"
+    ],
+    "abstract": "The study evaluates the adversarial robustness of speech synthesis models FastSpeech and Tacotron 2. By introducing adversarial noise in the training data, we assess each model's ability to produce intelligible speech. Results indicate that FastSpeech, due to its non-autoregressive architecture, exhibits superior robustness against adversarial perturbations compared to Tacotron 2, suggesting future research directions in robust speech synthesis."
+  },
+  "test_19": {
+    "model_names": [
+      "Neural ODE",
+      "NODE-RNN"
+    ],
+    "abstract": "In this work, we investigate the adversarial robustness of continuous-time models Neural ODE and NODE-RNN on dynamic system tasks. We introduce adversarial perturbations to evaluate the models' resistance to input noise. The experiments reveal that NODE-RNN, with its recurrent architecture, demonstrates heightened robustness over Neural ODE, indicating the benefits of recurrent structures in adversarial environments."
+  },
+  "test_20": {
+    "model_names": [
+      "DeBERTa",
+      "XLNet"
+    ],
+    "abstract": "This research explores the adversarial robustness of language models DeBERTa and XLNet in natural language understanding tasks. We employ adversarial attacks to test the models' ability to maintain performance under perturbations. The results indicate that DeBERTa, with its disentangled attention mechanism, offers superior robustness compared to XLNet, guiding enhancements in model design for heightened adversarial defense."
+  },
+  "test_21": {
+    "model_names": [
+      "GloVe",
+      "Word2Vec"
+    ],
+    "abstract": "We analyze the adversarial robustness of word embedding models GloVe and Word2Vec in semantic similarity tasks. By generating adversarial examples, we assess the models' ability to retain semantic integrity. Our findings reveal that GloVe embeddings exhibit greater robustness to adversarial noise compared to Word2Vec, suggesting avenues for improving embedding resilience in NLP applications."
+  },
+  "test_22": {
+    "model_names": [
+      "DeepLabV3+",
+      "PSPNet"
+    ],
+    "abstract": "This paper investigates the robustness of semantic segmentation models DeepLabV3+ and PSPNet against adversarial attacks. We apply adversarial perturbations to evaluate model performance and propose enhancements to improve resilience. Our experiments show that DeepLabV3+, with its atrous spatial pyramid pooling, outperforms PSPNet in robust segmentation, indicating the importance of multi-scale processing in adversarial defenses."
+  },
+  "test_23": {
+    "model_names": [
+      "ViT",
+      "Swin Transformer"
+    ],
+    "abstract": "The study examines adversarial robustness of vision transformer models ViT and Swin Transformer in image classification tasks. We use adversarial training to evaluate their resistance to perturbations. Results suggest that Swin Transformer, with its hierarchical feature maps, provides enhanced robustness over ViT, which informs future developments in transformer-based vision models."
+  },
+  "test_24": {
+    "model_names": [
+      "DCGAN",
+      "WGAN-GP"
+    ],
+    "abstract": "This research evaluates the adversarial robustness of generative adversarial networks DCGAN and WGAN-GP in image synthesis tasks. By introducing adversarial noise, we assess the models' capacity to generate realistic images. Findings indicate that WGAN-GP's gradient penalty contributes to improved robustness over DCGAN, serving as a foundation for more resilient GAN architectures."
+  },
+  "test_25": {
+    "model_names": [
+      "DeepFM",
+      "Wide & Deep"
+    ],
+    "abstract": "In this study, we explore the adversarial robustness of recommendation models DeepFM and Wide & Deep in learning user-item interactions. Through adversarial training, we test their sensitivity to input perturbations. Our experiments show that DeepFM, due to its factorization machine component, exhibits higher robustness compared to Wide & Deep, suggesting methods for enhancing recommendation system resilience."
+  },
+  "test_26": {
+    "model_names": [
+      "RNN",
+      "LSTM"
+    ],
+    "abstract": "This paper investigates the adversarial robustness of recurrent models RNN and LSTM in sequential data tasks. We apply adversarial attacks to evaluate the models' capability to handle input perturbations. Results demonstrate that LSTM's gating mechanism provides better robustness over plain RNNs, highlighting the importance of memory gates in defending against adversarial sequences."
+  },
+  "test_27": {
+    "model_names": [
+      "TabNet",
+      "CatBoost"
+    ],
+    "abstract": "The study examines the robustness of tabular data models TabNet and CatBoost against adversarial attacks. We perform adversarial training to assess their ability to maintain predictive accuracy. Findings suggest that TabNet's attentive interpretable layers offer superior robustness compared to CatBoost, indicating pathways for developing more resilient tabular models."
+  },
+  "test_28": {
+    "model_names": [
+      "GraphSAGE",
+      "GAT"
+    ],
+    "abstract": "We analyze the adversarial robustness of graph neural networks GraphSAGE and GAT on node classification tasks. Adversarial attacks are employed to test each model's stability under perturbations. Results indicate that GraphSAGE's aggregation mechanism provides better defense against adversarial inputs compared to GAT's attention-based approach, offering insights into robust GNN design."
+  },
+  "test_29": {
+    "model_names": [
+      "AlphaFold",
+      "RoseTTAFold"
+    ],
+    "abstract": "This research compares the adversarial robustness of protein folding models AlphaFold and RoseTTAFold in predicting protein structures. We introduce adversarial perturbations to the input sequences to assess model accuracy. Results show that AlphaFold, with its integrated attention and evolutionary data, exhibits higher robustness compared to RoseTTAFold, highlighting the importance of model integration strategies in biological sequence analysis."
+  }
+}

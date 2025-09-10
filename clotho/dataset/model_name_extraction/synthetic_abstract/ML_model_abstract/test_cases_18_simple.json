@@ -1,0 +1,186 @@
+{
+  "test_0": {
+    "model_names": [
+      "GraphSAGE"
+    ],
+    "abstract": "In this study, we explore the capabilities of GraphSAGE in relational learning tasks. GraphSAGE, a popular Graph Neural Network model, is evaluated on multiple datasets to assess its ability to predict relationships in complex networks. Our results demonstrate that GraphSAGE not only improves accuracy in link prediction tasks but also enhances the interpretability of node embeddings."
+  },
+  "test_1": {
+    "model_names": [
+      "GAT",
+      "RelationalGAT"
+    ],
+    "abstract": "This paper introduces RelationalGAT, an extension of the Graph Attention Network (GAT) specifically designed for relational learning. By leveraging attention mechanisms, RelationalGAT can effectively capture the intricate dependencies between nodes, leading to superior performance in tasks such as knowledge graph completion and social network analysis."
+  },
+  "test_2": {
+    "model_names": [
+      "DeepWalk",
+      "Graph2Vec"
+    ],
+    "abstract": "We investigate the integration of DeepWalk and Graph2Vec to enhance graph representation learning. DeepWalk's random walk approach combined with Graph2Vec's embedding technique enables the learning of rich relational structures. Our experiments show significant improvements in classification tasks, indicating the potential of these models in graph-based learning."
+  },
+  "test_3": {
+    "model_names": [
+      "Node2Vec"
+    ],
+    "abstract": "Node2Vec is a key model in the field of Graph Neural Networks, offering a unique approach to producing scalable node embeddings. This paper discusses its application in relational learning, highlighting its ability to efficiently capture diverse connectivity patterns within graphs, thereby improving predictive accuracy in relational tasks."
+  },
+  "test_4": {
+    "model_names": [
+      "RGCN"
+    ],
+    "abstract": "This paper presents an analysis of Relational Graph Convolutional Networks (RGCN) applied to multi-relational data. RGCN extends traditional convolutional networks to handle multiple types of relationships, showing promise in applications such as link prediction and entity classification within complex graphs."
+  },
+  "test_5": {
+    "model_names": [
+      "TGN"
+    ],
+    "abstract": "Temporal Graph Networks (TGN) are introduced as a novel approach to dynamic relational learning. By incorporating temporal dynamics into graph neural networks, TGN can effectively model evolving relationships over time. Our experiments demonstrate that TGN significantly improves prediction accuracy on dynamic datasets."
+  },
+  "test_6": {
+    "model_names": [
+      "Graph Isomorphism Network"
+    ],
+    "abstract": "Graph Isomorphism Network (GIN) is evaluated for its effectiveness in relational learning tasks. GIN's ability to distinguish between different graph structures is leveraged to enhance link prediction and node classification. The results indicate that GIN provides a robust framework for understanding complex relational data."
+  },
+  "test_7": {
+    "model_names": [
+      "GCN-LSTM"
+    ],
+    "abstract": "We propose GCN-LSTM, a hybrid model combining Graph Convolutional Networks (GCN) with Long Short-Term Memory (LSTM) units for improved relational learning. This model is particularly effective in sequential graph-based tasks, where it captures both spatial and temporal dependencies with high accuracy."
+  },
+  "test_8": {
+    "model_names": [
+      "CompGCN"
+    ],
+    "abstract": "This research highlights the application of Composition-based Graph Convolutional Networks (CompGCN) in relational learning domains. CompGCN incorporates compositional operators to effectively handle heterogeneous graph structures, leading to enhanced performance in tasks like entity resolution and relationship prediction."
+  },
+  "test_9": {
+    "model_names": [
+      "R-GCN",
+      "DistMult"
+    ],
+    "abstract": "In this paper, we enhance the Relational Graph Convolutional Network (R-GCN) by integrating it with the DistMult scoring function for improved relational learning. This combination leverages the strengths of both models, resulting in better handling of multi-relational graphs and improved knowledge graph completion metrics."
+  },
+  "test_10": {
+    "model_names": [
+      "GraphRec"
+    ],
+    "abstract": "GraphRec is introduced as a novel framework for relational recommendation systems. By utilizing graph neural networks, GraphRec captures user-item interactions and their underlying relational structures. Our experiments demonstrate that GraphRec significantly enhances recommendation accuracy compared to traditional methods."
+  },
+  "test_11": {
+    "model_names": [
+      "Relational-GCN"
+    ],
+    "abstract": "The Relational-GCN model is evaluated for its performance on heterogeneous graph data. Designed to handle graphs with various types of edges, Relational-GCN excels in multi-relational learning environments, showing substantial improvements in link prediction and node classification tasks."
+  },
+  "test_12": {
+    "model_names": [
+      "Gated Graph Sequence Neural Network"
+    ],
+    "abstract": "We explore the capabilities of the Gated Graph Sequence Neural Network for relational learning. This model integrates gating mechanisms within graph neural networks to focus on relevant node sequences, enhancing performance in applications such as sequence prediction and temporal graph analysis."
+  },
+  "test_13": {
+    "model_names": [
+      "Graph Convolutional Network",
+      "Graph Transformer"
+    ],
+    "abstract": "This study compares Graph Convolutional Network (GCN) with the more recent Graph Transformer in relational learning tasks. While GCNs are effective for capturing local structures, Graph Transformers incorporate global attention mechanisms, providing a comprehensive understanding of complex graph relationships."
+  },
+  "test_14": {
+    "model_names": [
+      "Capsule Graph Neural Network"
+    ],
+    "abstract": "Capsule Graph Neural Network (CapsuleGNN) is proposed for improved relational understanding in graph-structured data. By employing capsule networks, CapsuleGNN captures hierarchical relationships within graphs, offering enhanced performance in clustering and community detection tasks."
+  },
+  "test_15": {
+    "model_names": [
+      "Attention Walk"
+    ],
+    "abstract": "Attention Walk is introduced as a novel model that combines attention mechanisms with random walk strategies for relational learning. This approach allows for adaptive exploration of graph structures, yielding improved results in tasks such as link prediction and graph classification."
+  },
+  "test_16": {
+    "model_names": [
+      "Dynamic Graph Convolutional Neural Network"
+    ],
+    "abstract": "The Dynamic Graph Convolutional Neural Network (DGCNN) is evaluated for its application in dynamic relational learning. DGCNN adapts to changes in graph structures over time, providing robust predictive capabilities in environments where relationships evolve, such as social networks and temporal interaction graphs."
+  },
+  "test_17": {
+    "model_names": [
+      "Heterogeneous Graph Transformer"
+    ],
+    "abstract": "Heterogeneous Graph Transformer (HGT) is presented as a cutting-edge model for relational learning on heterogeneous graphs. HGT employs a transformer-based architecture that effectively distinguishes between different node and edge types, offering improved performance in complex graph-based tasks."
+  },
+  "test_18": {
+    "model_names": [
+      "Graph Neural Network-based Matrix Factorization"
+    ],
+    "abstract": "This paper introduces a Graph Neural Network-based Matrix Factorization model for relational learning. By integrating matrix factorization techniques with graph neural networks, the model achieves enhanced performance in recommendation systems, leveraging both latent factor models and graph structures."
+  },
+  "test_19": {
+    "model_names": [
+      "Graph Attention Model"
+    ],
+    "abstract": "We propose the Graph Attention Model for relational learning, which utilizes attention mechanisms to focus on relevant parts of the graph. This model shows superior performance in tasks such as node classification and graph-based knowledge discovery due to its ability to dynamically adjust attention weights."
+  },
+  "test_20": {
+    "model_names": [
+      "Hierarchical Graph Neural Network"
+    ],
+    "abstract": "Hierarchical Graph Neural Network (HGNN) is explored for its ability to perform relational learning by capturing hierarchical structures within graphs. HGNN effectively models multi-level relationships, providing improved accuracy in tasks such as hierarchical clustering and multi-hop reasoning."
+  },
+  "test_21": {
+    "model_names": [
+      "Siamese Graph Neural Network"
+    ],
+    "abstract": "Siamese Graph Neural Network is evaluated for its capacity in relational similarity learning. By employing a twin network architecture, this model excels at identifying similar nodes across different graphs, proving effective in tasks like anomaly detection and cross-domain graph matching."
+  },
+  "test_22": {
+    "model_names": [
+      "Graph Memory Network"
+    ],
+    "abstract": "Graph Memory Network is proposed as an innovative model for relational learning, incorporating memory components to retain contextual information over multiple graph processing steps. This approach enhances the model's ability to perform in long-term dependency tasks within complex networks."
+  },
+  "test_23": {
+    "model_names": [
+      "Attention-based Graph Neural Network"
+    ],
+    "abstract": "The Attention-based Graph Neural Network (AGNN) is explored for its application in relational learning. AGNN leverages attention mechanisms to prioritize significant graph components, resulting in improved performance in node classification and graph summarization tasks."
+  },
+  "test_24": {
+    "model_names": [
+      "Stochastic Graph Neural Network"
+    ],
+    "abstract": "Stochastic Graph Neural Network (SGNN) introduces randomness in graph processing to enhance relational learning. SGNN's stochastic components allow for diverse representation learning, particularly beneficial in environments with uncertain or incomplete data, such as sensor networks."
+  },
+  "test_25": {
+    "model_names": [
+      "Graph U-Net"
+    ],
+    "abstract": "Graph U-Net is examined for its effectiveness in hierarchical relational learning. By integrating pooling and unpooling layers within the graph domain, Graph U-Net captures multi-scale graph representations, which significantly improves performance in tasks like graph segmentation and partitioning."
+  },
+  "test_26": {
+    "model_names": [
+      "Graph Capsule Network"
+    ],
+    "abstract": "Graph Capsule Network is introduced for improved relational learning by utilizing capsule units to capture spatial hierarchies within graphs. This model's ability to understand complex structures enhances performance in tasks such as structural role classification and graph generation."
+  },
+  "test_27": {
+    "model_names": [
+      "Graph MLP"
+    ],
+    "abstract": "Graph MLP, a simple yet powerful model, is evaluated for its performance in relational learning. By applying multi-layer perceptrons directly to graph data, Graph MLP offers a scalable solution that provides competitive results in node-level prediction tasks."
+  },
+  "test_28": {
+    "model_names": [
+      "Graph WaveNet"
+    ],
+    "abstract": "Graph WaveNet is analyzed for its capability in performing relational learning on dynamic graphs. By incorporating wavelet-based transformations, Graph WaveNet effectively captures temporal dynamics and spatial dependencies, offering improved accuracy in forecasting and anomaly detection tasks."
+  },
+  "test_29": {
+    "model_names": [
+      "Graph Echo State Network"
+    ],
+    "abstract": "The Graph Echo State Network (GESN) is proposed as a novel approach for relational learning in recurrent graph environments. GESN leverages the reservoir computing paradigm, showing strong performance in tasks requiring temporal sequence processing and dynamic graph analysis."
+  }
+}

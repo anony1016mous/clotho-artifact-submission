@@ -1,0 +1,1285 @@
+{
+  "possible_fix": "Strip MongoDB data types like NumberLong(2) and ISODate(\"2012-12-19T06:01:17.171Z\")",
+  "test_cases": [
+    [
+      {
+        "user_id": 1,
+        "username": "johndoe",
+        "email": "johndoe@example.com",
+        "created_at": "2012-12-19T06:01:17.171Z"
+      },
+      "{\n  \"user_id\": 1,\n  \"username\": \"johndoe\",\n  \"email\": \"johndoe@example.com\",\n  \"created_at\": ISODate(\"2012-12-19T06:01:17.171Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 2,
+        "username": "janedoe",
+        "age": 25,
+        "last_login": "2023-04-15T10:45:30.000Z"
+      },
+      "{\n  \"user_id\": 2,\n  \"username\": \"janedoe\",\n  \"age\": 25,\n  \"last_login\": ISODate(\"2023-04-15T10:45:30.000Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 3,
+        "username": "bobby88",
+        "posts": 1287,
+        "reputation": 345.67
+      },
+      "{\n  \"user_id\": 3,\n  \"username\": \"bobby88\",\n  \"posts\": NumberLong(1287),\n  \"reputation\": 345.67\n}"
+    ],
+    [
+      {
+        "user_id": 4,
+        "username": "alice_w",
+        "email": "alice_w@example.org",
+        "birthdate": "1990-05-14"
+      },
+      "{\n  \"user_id\": 4,\n  \"username\": \"alice_w\",\n  \"email\": \"alice_w@example.org\",\n  \"birthdate\": ISODate(\"1990-05-14T00:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 5,
+        "username": "charlie",
+        "is_active": true,
+        "signup_date": "2020-09-01T12:33:45.000Z"
+      },
+      "{\n  \"user_id\": 5,\n  \"username\": \"charlie\",\n  \"is_active\": true,\n  \"signup_date\": ISODate(\"2020-09-01T12:33:45.000Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 6,
+        "username": "dave99",
+        "follower_count": 5983,
+        "subscription_end": "2023-01-01T00:00:00.000Z"
+      },
+      "{\n  \"user_id\": 6,\n  \"username\": \"dave99\",\n  \"follower_count\": NumberLong(5983),\n  \"subscription_end\": ISODate(\"2023-01-01T00:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 7,
+        "username": "emily_r",
+        "bio": "Love to travel and explore new places!",
+        "last_updated": "2023-10-10T08:00:00.000Z"
+      },
+      "{\n  \"user_id\": 7,\n  \"username\": \"emily_r\",\n  \"bio\": \"Love to travel and explore new places!\",\n  \"last_updated\": ISODate(\"2023-10-10T08:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 8,
+        "username": "frankie_123",
+        "membership_level": "Gold",
+        "points": 1500
+      },
+      "{\n  \"user_id\": 8,\n  \"username\": \"frankie_123\",\n  \"membership_level\": \"Gold\",\n  \"points\": NumberLong(1500)\n}"
+    ],
+    [
+      {
+        "user_id": 9,
+        "username": "george_k",
+        "email_verified": false,
+        "created_at": "2021-07-22T14:00:00.000Z"
+      },
+      "{\n  \"user_id\": 9,\n  \"username\": \"george_k\",\n  \"email_verified\": false,\n  \"created_at\": ISODate(\"2021-07-22T14:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "user_id": 10,
+        "username": "hannah_s",
+        "friend_count": 250,
+        "last_purchase": "2023-06-30T18:45:00.000Z"
+      },
+      "{\n  \"user_id\": 10,\n  \"username\": \"hannah_s\",\n  \"friend_count\": NumberLong(250),\n  \"last_purchase\": ISODate(\"2023-06-30T18:45:00.000Z\")\n}"
+    ],
+    [
+      {
+        "orderId": "12345",
+        "customerId": "cust01",
+        "orderDate": "2023-10-01T12:00:00Z",
+        "totalAmount": 250.75,
+        "items": [
+          {
+            "productId": "p01",
+            "quantity": 2,
+            "price": 50.5
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"12345\",\n  \"customerId\": \"cust01\",\n  \"orderDate\": ISODate(\"2023-10-01T12:00:00Z\"),\n  \"totalAmount\": NumberLong(250.75),\n  \"items\": [\n    {\n      \"productId\": \"p01\",\n      \"quantity\": NumberLong(2),\n      \"price\": 50.5\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "54321",
+        "customerId": "cust02",
+        "orderDate": "2023-09-15T08:30:00Z",
+        "totalAmount": 120.0,
+        "items": [
+          {
+            "productId": "p03",
+            "quantity": 1,
+            "price": 120.0
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"54321\",\n  \"customerId\": \"cust02\",\n  \"orderDate\": ISODate(\"2023-09-15T08:30:00Z\"),\n  \"totalAmount\": NumberLong(120.00),\n  \"items\": [\n    {\n      \"productId\": \"p03\",\n      \"quantity\": NumberLong(1),\n      \"price\": 120.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "67890",
+        "customerId": "cust03",
+        "orderDate": "2023-10-05T14:45:00Z",
+        "totalAmount": 300.5,
+        "items": [
+          {
+            "productId": "p05",
+            "quantity": 3,
+            "price": 100.0
+          },
+          {
+            "productId": "p06",
+            "quantity": 1,
+            "price": 0.5
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"67890\",\n  \"customerId\": \"cust03\",\n  \"orderDate\": ISODate(\"2023-10-05T14:45:00Z\"),\n  \"totalAmount\": NumberLong(300.50),\n  \"items\": [\n    {\n      \"productId\": \"p05\",\n      \"quantity\": NumberLong(3),\n      \"price\": 100.00\n    },\n    {\n      \"productId\": \"p06\",\n      \"quantity\": NumberLong(1),\n      \"price\": 0.50\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "24680",
+        "customerId": "cust04",
+        "orderDate": "2023-08-22T09:20:00Z",
+        "totalAmount": 75.5,
+        "items": [
+          {
+            "productId": "p08",
+            "quantity": 1,
+            "price": 75.5
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"24680\",\n  \"customerId\": \"cust04\",\n  \"orderDate\": ISODate(\"2023-08-22T09:20:00Z\"),\n  \"totalAmount\": NumberLong(75.5),\n  \"items\": [\n    {\n      \"productId\": \"p08\",\n      \"quantity\": NumberLong(1),\n      \"price\": 75.5\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "98765",
+        "customerId": "cust05",
+        "orderDate": "2023-07-10T11:11:00Z",
+        "totalAmount": 500.0,
+        "items": [
+          {
+            "productId": "p09",
+            "quantity": 5,
+            "price": 100.0
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"98765\",\n  \"customerId\": \"cust05\",\n  \"orderDate\": ISODate(\"2023-07-10T11:11:00Z\"),\n  \"totalAmount\": NumberLong(500.00),\n  \"items\": [\n    {\n      \"productId\": \"p09\",\n      \"quantity\": NumberLong(5),\n      \"price\": 100.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "11223",
+        "customerId": "cust06",
+        "orderDate": "2023-11-02T16:00:00Z",
+        "totalAmount": 89.99,
+        "items": [
+          {
+            "productId": "p11",
+            "quantity": 2,
+            "price": 44.99
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"11223\",\n  \"customerId\": \"cust06\",\n  \"orderDate\": ISODate(\"2023-11-02T16:00:00Z\"),\n  \"totalAmount\": NumberLong(89.99),\n  \"items\": [\n    {\n      \"productId\": \"p11\",\n      \"quantity\": NumberLong(2),\n      \"price\": 44.99\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "33445",
+        "customerId": "cust07",
+        "orderDate": "2023-06-18T10:00:00Z",
+        "totalAmount": 150.0,
+        "items": [
+          {
+            "productId": "p12",
+            "quantity": 1,
+            "price": 150.0
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"33445\",\n  \"customerId\": \"cust07\",\n  \"orderDate\": ISODate(\"2023-06-18T10:00:00Z\"),\n  \"totalAmount\": NumberLong(150.00),\n  \"items\": [\n    {\n      \"productId\": \"p12\",\n      \"quantity\": NumberLong(1),\n      \"price\": 150.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "55667",
+        "customerId": "cust08",
+        "orderDate": "2023-05-25T13:30:00Z",
+        "totalAmount": 320.45,
+        "items": [
+          {
+            "productId": "p14",
+            "quantity": 3,
+            "price": 106.82
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"55667\",\n  \"customerId\": \"cust08\",\n  \"orderDate\": ISODate(\"2023-05-25T13:30:00Z\"),\n  \"totalAmount\": NumberLong(320.45),\n  \"items\": [\n    {\n      \"productId\": \"p14\",\n      \"quantity\": NumberLong(3),\n      \"price\": 106.82\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "77889",
+        "customerId": "cust09",
+        "orderDate": "2023-04-30T09:00:00Z",
+        "totalAmount": 75.0,
+        "items": [
+          {
+            "productId": "p15",
+            "quantity": 5,
+            "price": 15.0
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"77889\",\n  \"customerId\": \"cust09\",\n  \"orderDate\": ISODate(\"2023-04-30T09:00:00Z\"),\n  \"totalAmount\": NumberLong(75.00),\n  \"items\": [\n    {\n      \"productId\": \"p15\",\n      \"quantity\": NumberLong(5),\n      \"price\": 15.00\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "orderId": "99001",
+        "customerId": "cust10",
+        "orderDate": "2023-03-21T17:45:00Z",
+        "totalAmount": 420.75,
+        "items": [
+          {
+            "productId": "p17",
+            "quantity": 7,
+            "price": 60.11
+          }
+        ]
+      },
+      "{\n  \"orderId\": \"99001\",\n  \"customerId\": \"cust10\",\n  \"orderDate\": ISODate(\"2023-03-21T17:45:00Z\"),\n  \"totalAmount\": NumberLong(420.75),\n  \"items\": [\n    {\n      \"productId\": \"p17\",\n      \"quantity\": NumberLong(7),\n      \"price\": 60.11\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "reviewTitle": "Great Sci-Fi Adventure",
+        "reviewContent": "A thrilling journey through space and time.",
+        "rating": 5,
+        "reviewDate": "2023-10-05T14:48:00.000Z"
+      },
+      "{\n  \"reviewTitle\": \"Great Sci-Fi Adventure\",\n  \"reviewContent\": \"A thrilling journey through space and time.\",\n  \"rating\": NumberLong(5),\n  \"reviewDate\": ISODate(\"2023-10-05T14:48:00.000Z\")\n}"
+    ],
+    [
+      {
+        "reviewer": "John Doe",
+        "movieTitle": "Mystery of the Unknown",
+        "reviewDetails": {
+          "comment": "An intriguing plot with unexpected twists.",
+          "datePosted": "2023-09-15T09:30:00.000Z",
+          "helpfulVotes": 42
+        }
+      },
+      "{\n  \"reviewer\": \"John Doe\",\n  \"movieTitle\": \"Mystery of the Unknown\",\n  \"reviewDetails\": {\n    \"comment\": \"An intriguing plot with unexpected twists.\",\n    \"datePosted\": ISODate(\"2023-09-15T09:30:00.000Z\"),\n    \"helpfulVotes\": NumberLong(42)\n  }\n}"
+    ],
+    [
+      {
+        "showTitle": "Fantasy World",
+        "seasons": 3,
+        "lastReviewed": "2023-11-01T12:00:00.000Z",
+        "ratings": {
+          "visuals": 9,
+          "storyline": 8
+        }
+      },
+      "{\n  \"showTitle\": \"Fantasy World\",\n  \"seasons\": NumberLong(3),\n  \"lastReviewed\": ISODate(\"2023-11-01T12:00:00.000Z\"),\n  \"ratings\": {\n    \"visuals\": NumberLong(9),\n    \"storyline\": NumberLong(8)\n  }\n}"
+    ],
+    [
+      {
+        "criticName": "Alice Smith",
+        "tvShow": "The Real Story",
+        "review": "Captivating and well-acted series.",
+        "stars": 4,
+        "publishedOn": "2023-08-22T16:45:00.000Z"
+      },
+      "{\n  \"criticName\": \"Alice Smith\",\n  \"tvShow\": \"The Real Story\",\n  \"review\": \"Captivating and well-acted series.\",\n  \"stars\": NumberLong(4),\n  \"publishedOn\": ISODate(\"2023-08-22T16:45:00.000Z\")\n}"
+    ],
+    [
+      {
+        "filmTitle": "Action Packed",
+        "viewerName": "Sam Brown",
+        "feedback": "Edge-of-the-seat excitement!",
+        "score": 7,
+        "feedbackDate": "2023-10-30T18:00:00.000Z"
+      },
+      "{\n  \"filmTitle\": \"Action Packed\",\n  \"viewerName\": \"Sam Brown\",\n  \"feedback\": \"Edge-of-the-seat excitement!\",\n  \"score\": NumberLong(7),\n  \"feedbackDate\": ISODate(\"2023-10-30T18:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "documentaryTitle": "Life on Earth",
+        "reviewedBy": "Jane Wilson",
+        "opinion": "Informative and beautifully shot.",
+        "ratingOutOfTen": 8,
+        "reviewTimestamp": "2023-09-10T07:15:00.000Z"
+      },
+      "{\n  \"documentaryTitle\": \"Life on Earth\",\n  \"reviewedBy\": \"Jane Wilson\",\n  \"opinion\": \"Informative and beautifully shot.\",\n  \"ratingOutOfTen\": NumberLong(8),\n  \"reviewTimestamp\": ISODate(\"2023-09-10T07:15:00.000Z\")\n}"
+    ],
+    [
+      {
+        "seriesTitle": "The Chronicles",
+        "criticReview": "A compelling narrative with stunning visuals.",
+        "reviewScore": 9,
+        "dateReviewed": "2023-12-05T20:10:00.000Z"
+      },
+      "{\n  \"seriesTitle\": \"The Chronicles\",\n  \"criticReview\": \"A compelling narrative with stunning visuals.\",\n  \"reviewScore\": NumberLong(9),\n  \"dateReviewed\": ISODate(\"2023-12-05T20:10:00.000Z\")\n}"
+    ],
+    [
+      {
+        "animeTitle": "Adventure Quest",
+        "feedbackBy": "Tom Lee",
+        "thoughts": "Incredible animation and storyline.",
+        "overallScore": 10,
+        "postedOn": "2023-11-11T13:22:00.000Z"
+      },
+      "{\n  \"animeTitle\": \"Adventure Quest\",\n  \"feedbackBy\": \"Tom Lee\",\n  \"thoughts\": \"Incredible animation and storyline.\",\n  \"overallScore\": NumberLong(10),\n  \"postedOn\": ISODate(\"2023-11-11T13:22:00.000Z\")\n}"
+    ],
+    [
+      {
+        "filmName": "Epic Tale",
+        "reviewerHandle": "MovieBuff99",
+        "remarks": "A masterpiece that touches the soul.",
+        "scoreGiven": 6,
+        "timeOfReview": "2023-10-25T17:00:00.000Z"
+      },
+      "{\n  \"filmName\": \"Epic Tale\",\n  \"reviewerHandle\": \"MovieBuff99\",\n  \"remarks\": \"A masterpiece that touches the soul.\",\n  \"scoreGiven\": NumberLong(6),\n  \"timeOfReview\": ISODate(\"2023-10-25T17:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "showName": "Dramatic Skies",
+        "userReview": "A breathtaking series that keeps you hooked.",
+        "ratingScale": 7,
+        "submissionDate": "2023-12-15T21:35:00.000Z"
+      },
+      "{\n  \"showName\": \"Dramatic Skies\",\n  \"userReview\": \"A breathtaking series that keeps you hooked.\",\n  \"ratingScale\": NumberLong(7),\n  \"submissionDate\": ISODate(\"2023-12-15T21:35:00.000Z\")\n}"
+    ],
+    [
+      {
+        "post_id": 101,
+        "author": "user123",
+        "content": "Just had the best coffee ever!",
+        "likes": 120,
+        "comments": [
+          {
+            "user": "coffee_lover",
+            "comment": "Where did you get it?",
+            "timestamp": "2023-10-05T10:15:30Z"
+          },
+          {
+            "user": "barista_jane",
+            "comment": "Glad you enjoyed it!",
+            "timestamp": "2023-10-05T11:00:00Z"
+          }
+        ]
+      },
+      "{\n    \"post_id\": NumberLong(101),\n    \"author\": \"user123\",\n    \"content\": \"Just had the best coffee ever!\",\n    \"likes\": NumberLong(120),\n    \"comments\": [\n        {\n            \"user\": \"coffee_lover\",\n            \"comment\": \"Where did you get it?\",\n            \"timestamp\": ISODate(\"2023-10-05T10:15:30Z\")\n        },\n        {\n            \"user\": \"barista_jane\",\n            \"comment\": \"Glad you enjoyed it!\",\n            \"timestamp\": ISODate(\"2023-10-05T11:00:00Z\")\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "post_id": 202,
+        "author": "user456",
+        "content": "Loving the new update!",
+        "likes": 45,
+        "retweets": 22,
+        "hashtags": [
+          "#update",
+          "#newfeatures"
+        ]
+      },
+      "{\n    \"post_id\": NumberLong(202),\n    \"author\": \"user456\",\n    \"content\": \"Loving the new update!\",\n    \"likes\": NumberLong(45),\n    \"retweets\": NumberLong(22),\n    \"hashtags\": [\"#update\", \"#newfeatures\"]\n}"
+    ],
+    [
+      {
+        "post_id": 303,
+        "author": "traveler_john",
+        "content": "Can't wait for my next trip! \u2708\ufe0f",
+        "likes": 89,
+        "comments": [
+          {
+            "user": "jet_setter",
+            "comment": "Where are you going?",
+            "timestamp": "2023-09-30T14:22:45Z"
+          }
+        ],
+        "shared": true
+      },
+      "{\n    \"post_id\": NumberLong(303),\n    \"author\": \"traveler_john\",\n    \"content\": \"Can't wait for my next trip! \u2708\ufe0f\",\n    \"likes\": NumberLong(89),\n    \"comments\": [\n        {\n            \"user\": \"jet_setter\",\n            \"comment\": \"Where are you going?\",\n            \"timestamp\": ISODate(\"2023-09-30T14:22:45Z\")\n        }\n    ],\n    \"shared\": true\n}"
+    ],
+    [
+      {
+        "post_id": 404,
+        "author": "tech_guru",
+        "content": "Check out this cool gadget!",
+        "likes": 300,
+        "comments": [],
+        "retweets": 75
+      },
+      "{\n    \"post_id\": NumberLong(404),\n    \"author\": \"tech_guru\",\n    \"content\": \"Check out this cool gadget!\",\n    \"likes\": NumberLong(300),\n    \"comments\": [],\n    \"retweets\": NumberLong(75)\n}"
+    ],
+    [
+      {
+        "post_id": 505,
+        "author": "foodie_anna",
+        "content": "Made this delicious pasta today!",
+        "likes": 150,
+        "comments": [
+          {
+            "user": "chef_mark",
+            "comment": "Recipe please!",
+            "timestamp": "2023-08-12T18:00:00Z"
+          },
+          {
+            "user": "home_cook_22",
+            "comment": "Looks amazing!",
+            "timestamp": "2023-08-12T19:30:25Z"
+          }
+        ],
+        "reactions": {
+          "love": 80,
+          "wow": 40
+        }
+      },
+      "{\n    \"post_id\": NumberLong(505),\n    \"author\": \"foodie_anna\",\n    \"content\": \"Made this delicious pasta today!\",\n    \"likes\": NumberLong(150),\n    \"comments\": [\n        {\n            \"user\": \"chef_mark\",\n            \"comment\": \"Recipe please!\",\n            \"timestamp\": ISODate(\"2023-08-12T18:00:00Z\")\n        },\n        {\n            \"user\": \"home_cook_22\",\n            \"comment\": \"Looks amazing!\",\n            \"timestamp\": ISODate(\"2023-08-12T19:30:25Z\")\n        }\n    ],\n    \"reactions\": {\n        \"love\": NumberLong(80),\n        \"wow\": NumberLong(40)\n    }\n}"
+    ],
+    [
+      {
+        "post_id": 606,
+        "author": "nature_lover",
+        "content": "Beautiful sunset at the beach.",
+        "likes": 230,
+        "shares": 15,
+        "tags": [
+          "sunset",
+          "beach",
+          "nature"
+        ]
+      },
+      "{\n    \"post_id\": NumberLong(606),\n    \"author\": \"nature_lover\",\n    \"content\": \"Beautiful sunset at the beach.\",\n    \"likes\": NumberLong(230),\n    \"shares\": NumberLong(15),\n    \"tags\": [\"sunset\", \"beach\", \"nature\"]\n}"
+    ],
+    [
+      {
+        "post_id": 707,
+        "author": "sports_fan",
+        "content": "What a game last night!",
+        "likes": 500,
+        "comments": [
+          {
+            "user": "team_supporter",
+            "comment": "Amazing performance!",
+            "timestamp": "2023-07-20T21:18:36Z"
+          }
+        ],
+        "shares": 50
+      },
+      "{\n    \"post_id\": NumberLong(707),\n    \"author\": \"sports_fan\",\n    \"content\": \"What a game last night!\",\n    \"likes\": NumberLong(500),\n    \"comments\": [\n        {\n            \"user\": \"team_supporter\",\n            \"comment\": \"Amazing performance!\",\n            \"timestamp\": ISODate(\"2023-07-20T21:18:36Z\")\n        }\n    ],\n    \"shares\": NumberLong(50)\n}"
+    ],
+    [
+      {
+        "post_id": 808,
+        "author": "bookworm_jane",
+        "content": "Just finished reading an incredible book.",
+        "likes": 140,
+        "comments": [
+          {
+            "user": "avid_reader",
+            "comment": "Title, please?",
+            "timestamp": "2023-06-15T16:45:00Z"
+          }
+        ],
+        "book_title": "The Great Adventure"
+      },
+      "{\n    \"post_id\": NumberLong(808),\n    \"author\": \"bookworm_jane\",\n    \"content\": \"Just finished reading an incredible book.\",\n    \"likes\": NumberLong(140),\n    \"comments\": [\n        {\n            \"user\": \"avid_reader\",\n            \"comment\": \"Title, please?\",\n            \"timestamp\": ISODate(\"2023-06-15T16:45:00Z\")\n        }\n    ],\n    \"book_title\": \"The Great Adventure\"\n}"
+    ],
+    [
+      {
+        "post_id": 909,
+        "author": "music_freak",
+        "content": "Listening to my favorite album!",
+        "likes": 320,
+        "comments": [],
+        "now_playing": "Greatest Hits"
+      },
+      "{\n    \"post_id\": NumberLong(909),\n    \"author\": \"music_freak\",\n    \"content\": \"Listening to my favorite album!\",\n    \"likes\": NumberLong(320),\n    \"comments\": [],\n    \"now_playing\": \"Greatest Hits\"\n}"
+    ],
+    [
+      {
+        "post_id": 1010,
+        "author": "movie_buff",
+        "content": "Just saw an amazing film!",
+        "likes": 260,
+        "comments": [
+          {
+            "user": "cinema_lover",
+            "comment": "Which one?",
+            "timestamp": "2023-05-10T13:30:00Z"
+          }
+        ],
+        "film_title": "Epic Journey"
+      },
+      "{\n    \"post_id\": NumberLong(1010),\n    \"author\": \"movie_buff\",\n    \"content\": \"Just saw an amazing film!\",\n    \"likes\": NumberLong(260),\n    \"comments\": [\n        {\n            \"user\": \"cinema_lover\",\n            \"comment\": \"Which one?\",\n            \"timestamp\": ISODate(\"2023-05-10T13:30:00Z\")\n        }\n    ],\n    \"film_title\": \"Epic Journey\"\n}"
+    ],
+    [
+      {
+        "sensorId": "sensor_01",
+        "timestamp": "2023-10-15T14:48:00Z",
+        "temperature": 22.5,
+        "status": "active",
+        "metadata": {
+          "location": "warehouse",
+          "lastMaintenance": "2023-09-10T10:00:00Z"
+        }
+      },
+      "{\n  \"sensorId\": \"sensor_01\",\n  \"timestamp\": ISODate(\"2023-10-15T14:48:00Z\"),\n  \"temperature\": 22.5,\n  \"status\": \"active\",\n  \"metadata\": {\n    \"location\": \"warehouse\",\n    \"lastMaintenance\": ISODate(\"2023-09-10T10:00:00Z\")\n  }\n}"
+    ],
+    [
+      {
+        "deviceId": "device_A",
+        "dataPoints": [
+          {
+            "time": "2023-10-20T09:00:00Z",
+            "humidity": 60
+          },
+          {
+            "time": "2023-10-20T10:00:00Z",
+            "humidity": 63
+          }
+        ],
+        "battery": {
+          "voltage": 3.7,
+          "lastChecked": "2023-10-19T12:00:00Z"
+        }
+      },
+      "{\n  \"deviceId\": \"device_A\",\n  \"dataPoints\": [\n    {\n      \"time\": ISODate(\"2023-10-20T09:00:00Z\"),\n      \"humidity\": NumberLong(60)\n    },\n    {\n      \"time\": ISODate(\"2023-10-20T10:00:00Z\"),\n      \"humidity\": NumberLong(63)\n    }\n  ],\n  \"battery\": {\n    \"voltage\": 3.7,\n    \"lastChecked\": ISODate(\"2023-10-19T12:00:00Z\")\n  }\n}"
+    ],
+    [
+      {
+        "sensorId": "sensor_B2",
+        "readings": [
+          {
+            "timestamp": "2023-10-21T08:30:00Z",
+            "pressure": 101.5
+          },
+          {
+            "timestamp": "2023-10-21T09:30:00Z",
+            "pressure": 102.3
+          }
+        ],
+        "alert": false
+      },
+      "{\n  \"sensorId\": \"sensor_B2\",\n  \"readings\": [\n    {\n      \"timestamp\": ISODate(\"2023-10-21T08:30:00Z\"),\n      \"pressure\": NumberLong(101.5)\n    },\n    {\n      \"timestamp\": ISODate(\"2023-10-21T09:30:00Z\"),\n      \"pressure\": NumberLong(102.3)\n    }\n  ],\n  \"alert\": false\n}"
+    ],
+    [
+      {
+        "nodeId": "node_110",
+        "lastPing": "2023-10-19T07:45:00Z",
+        "uptime": 259200,
+        "metrics": {
+          "cpuLoad": 15.6,
+          "memoryUsage": 68
+        }
+      },
+      "{\n  \"nodeId\": \"node_110\",\n  \"lastPing\": ISODate(\"2023-10-19T07:45:00Z\"),\n  \"uptime\": NumberLong(259200),\n  \"metrics\": {\n    \"cpuLoad\": NumberLong(15.6),\n    \"memoryUsage\": NumberLong(68)\n  }\n}"
+    ],
+    [
+      {
+        "deviceName": "temp_sensor_04",
+        "status": "offline",
+        "lastActive": "2023-10-18T15:20:00Z",
+        "errorCode": null
+      },
+      "{\n  \"deviceName\": \"temp_sensor_04\",\n  \"status\": \"offline\",\n  \"lastActive\": ISODate(\"2023-10-18T15:20:00Z\"),\n  \"errorCode\": null\n}"
+    ],
+    [
+      {
+        "sensorType": "CO2",
+        "measurements": [
+          {
+            "level": 400,
+            "time": "2023-10-22T11:00:00Z"
+          },
+          {
+            "level": 415,
+            "time": "2023-10-22T12:00:00Z"
+          }
+        ],
+        "alerts": []
+      },
+      "{\n  \"sensorType\": \"CO2\",\n  \"measurements\": [\n    {\n      \"level\": NumberLong(400),\n      \"time\": ISODate(\"2023-10-22T11:00:00Z\")\n    },\n    {\n      \"level\": NumberLong(415),\n      \"time\": ISODate(\"2023-10-22T12:00:00Z\")\n    }\n  ],\n  \"alerts\": []\n}"
+    ],
+    [
+      {
+        "systemId": "sys_007",
+        "lastUpdate": "2023-10-17T13:35:00Z",
+        "parameters": {
+          "voltage": 220,
+          "current": 5.2,
+          "frequency": 50
+        }
+      },
+      "{\n  \"systemId\": \"sys_007\",\n  \"lastUpdate\": ISODate(\"2023-10-17T13:35:00Z\"),\n  \"parameters\": {\n    \"voltage\": NumberLong(220),\n    \"current\": NumberLong(5.2),\n    \"frequency\": NumberLong(50)\n  }\n}"
+    ],
+    [
+      {
+        "gatewayId": "gw_01",
+        "connectedDevices": 12,
+        "lastRestart": "2023-10-20T04:00:00Z",
+        "logs": [
+          "Device connected: sensor_03",
+          "Temperature alert triggered"
+        ]
+      },
+      "{\n  \"gatewayId\": \"gw_01\",\n  \"connectedDevices\": NumberLong(12),\n  \"lastRestart\": ISODate(\"2023-10-20T04:00:00Z\"),\n  \"logs\": [\n    \"Device connected: sensor_03\",\n    \"Temperature alert triggered\"\n  ]\n}"
+    ],
+    [
+      {
+        "stationId": "station_X",
+        "measurements": {
+          "windSpeed": 10.5,
+          "windDirection": "NW",
+          "timestamp": "2023-10-23T07:25:00Z"
+        }
+      },
+      "{\n  \"stationId\": \"station_X\",\n  \"measurements\": {\n    \"windSpeed\": NumberLong(10.5),\n    \"windDirection\": \"NW\",\n    \"timestamp\": ISODate(\"2023-10-23T07:25:00Z\")\n  }\n}"
+    ],
+    [
+      {
+        "controllerId": "ctrl_09",
+        "firmwareVersion": "1.4.2",
+        "lastModified": "2023-10-16T11:15:00Z",
+        "settings": {
+          "mode": "automatic",
+          "threshold": 75
+        }
+      },
+      "{\n  \"controllerId\": \"ctrl_09\",\n  \"firmwareVersion\": \"1.4.2\",\n  \"lastModified\": ISODate(\"2023-10-16T11:15:00Z\"),\n  \"settings\": {\n    \"mode\": \"automatic\",\n    \"threshold\": NumberLong(75)\n  }\n}"
+    ],
+    [
+      {
+        "location": "New York",
+        "temperature": 75,
+        "humidity": 60,
+        "recorded_at": "2023-10-05T14:48:00Z"
+      },
+      "{\n    \"location\": \"New York\",\n    \"temperature\": NumberLong(75),\n    \"humidity\": 60,\n    \"recorded_at\": ISODate(\"2023-10-05T14:48:00Z\")\n}"
+    ],
+    [
+      {
+        "city": "Los Angeles",
+        "forecast": "Sunny",
+        "wind_speed": 7,
+        "last_updated": "2023-10-05T10:30:00Z"
+      },
+      "{\n    \"city\": \"Los Angeles\",\n    \"forecast\": \"Sunny\",\n    \"wind_speed\": NumberLong(7),\n    \"last_updated\": ISODate(\"2023-10-05T10:30:00Z\")\n}"
+    ],
+    [
+      {
+        "region": "Midwest",
+        "average_high_temp": 85,
+        "average_low_temp": 65,
+        "data_collected": "2023-10-04T16:00:00Z"
+      },
+      "{\n    \"region\": \"Midwest\",\n    \"average_high_temp\": NumberLong(85),\n    \"average_low_temp\": NumberLong(65),\n    \"data_collected\": ISODate(\"2023-10-04T16:00:00Z\")\n}"
+    ],
+    [
+      {
+        "country": "Canada",
+        "weather_station": "Toronto",
+        "precipitation": 12,
+        "checked_at": "2023-10-05T09:15:00Z"
+      },
+      "{\n    \"country\": \"Canada\",\n    \"weather_station\": \"Toronto\",\n    \"precipitation\": NumberLong(12),\n    \"checked_at\": ISODate(\"2023-10-05T09:15:00Z\")\n}"
+    ],
+    [
+      {
+        "continent": "Europe",
+        "current_conditions": "Cloudy",
+        "pressure": 1015,
+        "timestamp": "2023-10-05T13:20:00Z"
+      },
+      "{\n    \"continent\": \"Europe\",\n    \"current_conditions\": \"Cloudy\",\n    \"pressure\": NumberLong(1015),\n    \"timestamp\": ISODate(\"2023-10-05T13:20:00Z\")\n}"
+    ],
+    [
+      {
+        "state": "California",
+        "weather": "Rain",
+        "visibility": 10,
+        "reported_at": "2023-10-05T12:00:00Z"
+      },
+      "{\n    \"state\": \"California\",\n    \"weather\": \"Rain\",\n    \"visibility\": NumberLong(10),\n    \"reported_at\": ISODate(\"2023-10-05T12:00:00Z\")\n}"
+    ],
+    [
+      {
+        "province": "Quebec",
+        "climate": "Cold",
+        "snowfall": 20,
+        "update_time": "2023-10-05T02:45:00Z"
+      },
+      "{\n    \"province\": \"Quebec\",\n    \"climate\": \"Cold\",\n    \"snowfall\": NumberLong(20),\n    \"update_time\": ISODate(\"2023-10-05T02:45:00Z\")\n}"
+    ],
+    [
+      {
+        "district": "Downtown",
+        "pollution_level": "Moderate",
+        "UV_index": 5,
+        "report_generated": "2023-10-05T08:10:00Z"
+      },
+      "{\n    \"district\": \"Downtown\",\n    \"pollution_level\": \"Moderate\",\n    \"UV_index\": NumberLong(5),\n    \"report_generated\": ISODate(\"2023-10-05T08:10:00Z\")\n}"
+    ],
+    [
+      {
+        "territory": "Alaska",
+        "wind_chill": -5,
+        "sunrise_time": "07:45AM",
+        "date": "2023-10-05"
+      },
+      "{\n    \"territory\": \"Alaska\",\n    \"wind_chill\": NumberLong(-5),\n    \"sunrise_time\": \"07:45AM\",\n    \"date\": \"ISODate(\\\"2023-10-05\\\")\"\n}"
+    ],
+    [
+      {
+        "region_name": "Southeast",
+        "storm_chance": 40,
+        "alert_level": "Yellow",
+        "time_recorded": "2023-10-05T18:30:00Z"
+      },
+      "{\n    \"region_name\": \"Southeast\",\n    \"storm_chance\": NumberLong(40),\n    \"alert_level\": \"Yellow\",\n    \"time_recorded\": ISODate(\"2023-10-05T18:30:00Z\")\n}"
+    ],
+    [
+      {
+        "transactionId": "tx001",
+        "amount": 250.75,
+        "currency": "USD",
+        "timestamp": "2023-10-01T14:48:00.000Z",
+        "account": {
+          "accountId": "acc123",
+          "holderName": "John Doe"
+        }
+      },
+      "{\n  \"transactionId\": \"tx001\",\n  \"amount\": 250.75,\n  \"currency\": \"USD\",\n  \"timestamp\": ISODate(\"2023-10-01T14:48:00.000Z\"),\n  \"account\": {\n    \"accountId\": \"acc123\",\n    \"holderName\": \"John Doe\"\n  }\n}"
+    ],
+    [
+      {
+        "transactionId": "tx002",
+        "amount": 1000,
+        "currency": "EUR",
+        "timestamp": "2023-08-21T09:30:00.000Z",
+        "account": {
+          "accountId": "acc456",
+          "holderName": "Jane Smith"
+        }
+      },
+      "{\n  \"transactionId\": \"tx002\",\n  \"amount\": NumberLong(1000),\n  \"currency\": \"EUR\",\n  \"timestamp\": \"2023-08-21T09:30:00.000Z\",\n  \"account\": {\n    \"accountId\": \"acc456\",\n    \"holderName\": \"Jane Smith\"\n  }\n}"
+    ],
+    [
+      {
+        "transactionId": "tx003",
+        "amount": 50.5,
+        "currency": "GBP",
+        "timestamp": "2023-10-12T16:45:30.000Z",
+        "account": {
+          "accountId": "acc789",
+          "holderName": "Alice Brown"
+        },
+        "description": "Grocery shopping"
+      },
+      "{\n  \"transactionId\": \"tx003\",\n  \"amount\": 50.5,\n  \"currency\": \"GBP\",\n  \"timestamp\": ISODate(\"2023-10-12T16:45:30.000Z\"),\n  \"account\": {\n    \"accountId\": \"acc789\",\n    \"holderName\": \"Alice Brown\"\n  },\n  \"description\": \"Grocery shopping\"\n}"
+    ],
+    [
+      {
+        "transactionId": "tx004",
+        "amount": 75.0,
+        "currency": "JPY",
+        "timestamp": "2023-09-15T12:00:00.000Z",
+        "account": {
+          "accountId": "acc101",
+          "holderName": "Chris Green"
+        }
+      },
+      "{\n  \"transactionId\": \"tx004\",\n  \"amount\": 75.0,\n  \"currency\": \"JPY\",\n  \"timestamp\": \"2023-09-15T12:00:00.000Z\",\n  \"account\": {\n    \"accountId\": \"acc101\",\n    \"holderName\": \"Chris Green\"\n  },\n  \"balance\": NumberLong(3000)\n}"
+    ],
+    [
+      {
+        "transactionId": "tx005",
+        "amount": 450.55,
+        "currency": "AUD",
+        "timestamp": "2023-07-04T08:45:00.000Z",
+        "account": {
+          "accountId": "acc202",
+          "holderName": "Dana White"
+        },
+        "notes": "Payment for services"
+      },
+      "{\n  \"transactionId\": \"tx005\",\n  \"amount\": 450.55,\n  \"currency\": \"AUD\",\n  \"timestamp\": ISODate(\"2023-07-04T08:45:00.000Z\"),\n  \"account\": {\n    \"accountId\": \"acc202\",\n    \"holderName\": \"Dana White\"\n  },\n  \"notes\": \"Payment for services\"\n}"
+    ],
+    [
+      {
+        "transactionId": "tx006",
+        "amount": 225.3,
+        "currency": "CAD",
+        "timestamp": "2023-05-10T11:20:00.000Z",
+        "account": {
+          "accountId": "acc303",
+          "holderName": "Evan Black"
+        },
+        "category": "Utilities"
+      },
+      "{\n  \"transactionId\": \"tx006\",\n  \"amount\": NumberLong(225.30),\n  \"currency\": \"CAD\",\n  \"timestamp\": \"2023-05-10T11:20:00.000Z\",\n  \"account\": {\n    \"accountId\": \"acc303\",\n    \"holderName\": \"Evan Black\"\n  },\n  \"category\": \"Utilities\"\n}"
+    ],
+    [
+      {
+        "transactionId": "tx007",
+        "amount": 10.0,
+        "currency": "CHF",
+        "timestamp": "2023-02-14T14:00:00.000Z",
+        "account": {
+          "accountId": "acc404",
+          "holderName": "Fiona Gray"
+        }
+      },
+      "{\n  \"transactionId\": \"tx007\",\n  \"amount\": NumberLong(10.0),\n  \"currency\": \"CHF\",\n  \"timestamp\": \"2023-02-14T14:00:00.000Z\",\n  \"account\": {\n    \"accountId\": \"acc404\",\n    \"holderName\": \"Fiona Gray\"\n  }\n}"
+    ],
+    [
+      {
+        "transactionId": "tx008",
+        "amount": 500.0,
+        "currency": "CNY",
+        "timestamp": "2023-11-25T18:30:00.000Z",
+        "account": {
+          "accountId": "acc505",
+          "holderName": "George Red"
+        },
+        "category": "Entertainment"
+      },
+      "{\n  \"transactionId\": \"tx008\",\n  \"amount\": 500.0,\n  \"currency\": \"CNY\",\n  \"timestamp\": ISODate(\"2023-11-25T18:30:00.000Z\"),\n  \"account\": {\n    \"accountId\": \"acc505\",\n    \"holderName\": \"George Red\"\n  },\n  \"category\": \"Entertainment\"\n}"
+    ],
+    [
+      {
+        "transactionId": "tx009",
+        "amount": 99.99,
+        "currency": "INR",
+        "timestamp": "2023-03-03T10:00:00.000Z",
+        "account": {
+          "accountId": "acc606",
+          "holderName": "Hannah Blue"
+        },
+        "notes": "Gift for friend"
+      },
+      "{\n  \"transactionId\": \"tx009\",\n  \"amount\": 99.99,\n  \"currency\": \"INR\",\n  \"timestamp\": ISODate(\"2023-03-03T10:00:00.000Z\"),\n  \"account\": {\n    \"accountId\": \"acc606\",\n    \"holderName\": \"Hannah Blue\"\n  },\n  \"notes\": \"Gift for friend\"\n}"
+    ],
+    [
+      {
+        "transactionId": "tx010",
+        "amount": 150.0,
+        "currency": "BRL",
+        "timestamp": "2023-06-01T20:15:00.000Z",
+        "account": {
+          "accountId": "acc707",
+          "holderName": "Ian White"
+        },
+        "description": "Online course fee"
+      },
+      "{\n  \"transactionId\": \"tx010\",\n  \"amount\": NumberLong(150.0),\n  \"currency\": \"BRL\",\n  \"timestamp\": \"2023-06-01T20:15:00.000Z\",\n  \"account\": {\n    \"accountId\": \"acc707\",\n    \"holderName\": \"Ian White\"\n  },\n  \"description\": \"Online course fee\"\n}"
+    ],
+    [
+      {
+        "workout": {
+          "type": "running",
+          "distance_km": 5,
+          "duration_min": 30,
+          "calories_burned": 300
+        },
+        "user": {
+          "age": 25,
+          "weight_kg": 70
+        },
+        "date": "2012-12-19T06:01:17.171Z"
+      },
+      "{\n    \"workout\": {\n        \"type\": \"running\",\n        \"distance_km\": 5,\n        \"duration_min\": 30,\n        \"calories_burned\": NumberLong(300)\n    },\n    \"user\": {\n        \"age\": 25,\n        \"weight_kg\": 70\n    },\n    \"date\": ISODate(\"2012-12-19T06:01:17.171Z\")\n}"
+    ],
+    [
+      {
+        "meal": {
+          "type": "breakfast",
+          "calories": 400,
+          "protein_g": 20,
+          "fat_g": 15
+        },
+        "user": {
+          "age": 30,
+          "height_cm": 180
+        },
+        "timestamp": "2023-09-10T08:30:00Z"
+      },
+      "{\n    \"meal\": {\n        \"type\": \"breakfast\",\n        \"calories\": 400,\n        \"protein_g\": NumberLong(20),\n        \"fat_g\": 15\n    },\n    \"user\": {\n        \"age\": 30,\n        \"height_cm\": 180\n    },\n    \"timestamp\": ISODate(\"2023-09-10T08:30:00Z\")\n}"
+    ],
+    [
+      {
+        "exercise": {
+          "name": "yoga",
+          "duration_min": 60,
+          "calories_burned": 200
+        },
+        "user": {
+          "age": 28,
+          "weight_kg": 65
+        },
+        "session_date": "2023-10-01T10:00:00Z"
+      },
+      "{\n    \"exercise\": {\n        \"name\": \"yoga\",\n        \"duration_min\": NumberLong(60),\n        \"calories_burned\": 200\n    },\n    \"user\": {\n        \"age\": 28,\n        \"weight_kg\": 65\n    },\n    \"session_date\": ISODate(\"2023-10-01T10:00:00Z\")\n}"
+    ],
+    [
+      {
+        "activity": {
+          "type": "cycling",
+          "distance_km": 15,
+          "duration_min": 45,
+          "calories_burned": 500
+        },
+        "user": {
+          "age": 22,
+          "weight_kg": 75
+        },
+        "completed_at": "2023-09-25T15:00:00Z"
+      },
+      "{\n    \"activity\": {\n        \"type\": \"cycling\",\n        \"distance_km\": NumberLong(15),\n        \"duration_min\": 45,\n        \"calories_burned\": NumberLong(500)\n    },\n    \"user\": {\n        \"age\": 22,\n        \"weight_kg\": 75\n    },\n    \"completed_at\": ISODate(\"2023-09-25T15:00:00Z\")\n}"
+    ],
+    [
+      {
+        "hydration": {
+          "water_intake_l": 2.5,
+          "daily_goal_l": 3
+        },
+        "user": {
+          "age": 35,
+          "weight_kg": 80
+        },
+        "recorded_on": "2023-09-20T09:00:00Z"
+      },
+      "{\n    \"hydration\": {\n        \"water_intake_l\": NumberLong(2.5),\n        \"daily_goal_l\": NumberLong(3)\n    },\n    \"user\": {\n        \"age\": 35,\n        \"weight_kg\": 80\n    },\n    \"recorded_on\": ISODate(\"2023-09-20T09:00:00Z\")\n}"
+    ],
+    [
+      {
+        "sleep": {
+          "duration_hr": 8,
+          "quality": "good"
+        },
+        "user": {
+          "age": 40,
+          "weight_kg": 85
+        },
+        "sleep_date": "2023-09-18T22:00:00Z"
+      },
+      "{\n    \"sleep\": {\n        \"duration_hr\": NumberLong(8),\n        \"quality\": \"good\"\n    },\n    \"user\": {\n        \"age\": 40,\n        \"weight_kg\": 85\n    },\n    \"sleep_date\": ISODate(\"2023-09-18T22:00:00Z\")\n}"
+    ],
+    [
+      {
+        "mindfulness": {
+          "session_min": 20,
+          "mood": "calm"
+        },
+        "user": {
+          "age": 29,
+          "weight_kg": 68
+        },
+        "session_time": "2023-09-15T07:00:00Z"
+      },
+      "{\n    \"mindfulness\": {\n        \"session_min\": NumberLong(20),\n        \"mood\": \"calm\"\n    },\n    \"user\": {\n        \"age\": 29,\n        \"weight_kg\": 68\n    },\n    \"session_time\": ISODate(\"2023-09-15T07:00:00Z\")\n}"
+    ],
+    [
+      {
+        "nutrition": {
+          "carbs_g": 150,
+          "protein_g": 100,
+          "fats_g": 60
+        },
+        "user": {
+          "age": 45,
+          "weight_kg": 90
+        },
+        "log_date": "2023-09-12T12:00:00Z"
+      },
+      "{\n    \"nutrition\": {\n        \"carbs_g\": NumberLong(150),\n        \"protein_g\": NumberLong(100),\n        \"fats_g\": 60\n    },\n    \"user\": {\n        \"age\": 45,\n        \"weight_kg\": 90\n    },\n    \"log_date\": ISODate(\"2023-09-12T12:00:00Z\")\n}"
+    ],
+    [
+      {
+        "wellbeing": {
+          "stress_level": "low",
+          "happiness_score": 8
+        },
+        "user": {
+          "age": 50,
+          "weight_kg": 95
+        },
+        "report_time": "2023-09-05T20:00:00Z"
+      },
+      "{\n    \"wellbeing\": {\n        \"stress_level\": \"low\",\n        \"happiness_score\": NumberLong(8)\n    },\n    \"user\": {\n        \"age\": 50,\n        \"weight_kg\": 95\n    },\n    \"report_time\": ISODate(\"2023-09-05T20:00:00Z\")\n}"
+    ],
+    [
+      {
+        "meditation": {
+          "focus_level": "high",
+          "session_duration_min": 25
+        },
+        "user": {
+          "age": 32,
+          "weight_kg": 78
+        },
+        "meditation_date": "2023-09-30T06:00:00Z"
+      },
+      "{\n    \"meditation\": {\n        \"focus_level\": \"high\",\n        \"session_duration_min\": NumberLong(25)\n    },\n    \"user\": {\n        \"age\": 32,\n        \"weight_kg\": 78\n    },\n    \"meditation_date\": ISODate(\"2023-09-30T06:00:00Z\")\n}"
+    ],
+    [
+      {
+        "vehicle_id": "AB123",
+        "location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "status": "active",
+        "last_updated": "2012-12-19T06:01:17.171Z"
+      },
+      "{\n    \"vehicle_id\": \"AB123\",\n    \"location\": {\n        \"latitude\": 37.7749,\n        \"longitude\": -122.4194\n    },\n    \"status\": \"active\",\n    \"last_updated\": ISODate(\"2012-12-19T06:01:17.171Z\")\n}"
+    ],
+    [
+      {
+        "trip_id": "56789",
+        "start_location": {
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        },
+        "end_location": {
+          "latitude": 36.1699,
+          "longitude": -115.1398
+        },
+        "distance_km": 430
+      },
+      "{\n    \"trip_id\": \"56789\",\n    \"start_location\": {\n        \"latitude\": 34.0522,\n        \"longitude\": -118.2437\n    },\n    \"end_location\": {\n        \"latitude\": 36.1699,\n        \"longitude\": -115.1398\n    },\n    \"distance_km\": NumberLong(430)\n}"
+    ],
+    [
+      {
+        "driver_id": "D1122",
+        "current_speed": 55.5,
+        "location": {
+          "latitude": 40.7128,
+          "longitude": -74.006
+        },
+        "timestamp": "2013-08-21T14:45:32.000Z"
+      },
+      "{\n    \"driver_id\": \"D1122\",\n    \"current_speed\": 55.5,\n    \"location\": {\n        \"latitude\": 40.7128,\n        \"longitude\": -74.0060\n    },\n    \"timestamp\": ISODate(\"2013-08-21T14:45:32.000Z\")\n}"
+    ],
+    [
+      {
+        "route_name": "Route 66",
+        "waypoints": [
+          {
+            "latitude": 35.4676,
+            "longitude": -97.5164
+          },
+          {
+            "latitude": 34.0522,
+            "longitude": -118.2437
+          }
+        ],
+        "total_distance_km": 3944
+      },
+      "{\n    \"route_name\": \"Route 66\",\n    \"waypoints\": [\n        {\n            \"latitude\": 35.4676,\n            \"longitude\": -97.5164\n        },\n        {\n            \"latitude\": 34.0522,\n            \"longitude\": -118.2437\n        }\n    ],\n    \"total_distance_km\": NumberLong(3944)\n}"
+    ],
+    [
+      {
+        "shipment_id": "SHIP12345",
+        "origin": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        },
+        "destination": {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        "estimated_arrival": "2015-11-25T09:30:00.000Z"
+      },
+      "{\n    \"shipment_id\": \"SHIP12345\",\n    \"origin\": {\n        \"latitude\": 51.5074,\n        \"longitude\": -0.1278\n    },\n    \"destination\": {\n        \"latitude\": 48.8566,\n        \"longitude\": 2.3522\n    },\n    \"estimated_arrival\": ISODate(\"2015-11-25T09:30:00.000Z\")\n}"
+    ],
+    [
+      {
+        "flight_number": "BA2490",
+        "departure": {
+          "latitude": 51.47,
+          "longitude": -0.4543
+        },
+        "arrival": {
+          "latitude": 40.6413,
+          "longitude": -73.7781
+        },
+        "flight_duration_mins": 420
+      },
+      "{\n    \"flight_number\": \"BA2490\",\n    \"departure\": {\n        \"latitude\": 51.4700,\n        \"longitude\": -0.4543\n    },\n    \"arrival\": {\n        \"latitude\": 40.6413,\n        \"longitude\": -73.7781\n    },\n    \"flight_duration_mins\": NumberLong(420)\n}"
+    ],
+    [
+      {
+        "bus_id": "BUS6789",
+        "route": "Downtown Loop",
+        "next_stop": {
+          "latitude": 39.7392,
+          "longitude": -104.9903
+        },
+        "expected_arrival": "2014-04-22T16:20:00.000Z"
+      },
+      "{\n    \"bus_id\": \"BUS6789\",\n    \"route\": \"Downtown Loop\",\n    \"next_stop\": {\n        \"latitude\": 39.7392,\n        \"longitude\": -104.9903\n    },\n    \"expected_arrival\": ISODate(\"2014-04-22T16:20:00.000Z\")\n}"
+    ],
+    [
+      {
+        "taxi_id": "TX1234",
+        "current_location": {
+          "latitude": 25.7617,
+          "longitude": -80.1918
+        },
+        "available": true,
+        "last_service": "2019-07-10T10:00:00.000Z"
+      },
+      "{\n    \"taxi_id\": \"TX1234\",\n    \"current_location\": {\n        \"latitude\": 25.7617,\n        \"longitude\": -80.1918\n    },\n    \"available\": true,\n    \"last_service\": ISODate(\"2019-07-10T10:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "container_id": "CONT9988",
+        "origin_port": {
+          "latitude": 13.0827,
+          "longitude": 80.2707
+        },
+        "destination_port": {
+          "latitude": 1.3521,
+          "longitude": 103.8198
+        },
+        "departure_date": "2020-02-14T15:00:00.000Z"
+      },
+      "{\n    \"container_id\": \"CONT9988\",\n    \"origin_port\": {\n        \"latitude\": 13.0827,\n        \"longitude\": 80.2707\n    },\n    \"destination_port\": {\n        \"latitude\": 1.3521,\n        \"longitude\": 103.8198\n    },\n    \"departure_date\": ISODate(\"2020-02-14T15:00:00.000Z\")\n}"
+    ],
+    [
+      {
+        "train_id": "TR2345",
+        "departure_station": {
+          "latitude": 55.7558,
+          "longitude": 37.6173
+        },
+        "arrival_station": {
+          "latitude": 59.9343,
+          "longitude": 30.3351
+        },
+        "journey_time_minutes": 480
+      },
+      "{\n    \"train_id\": \"TR2345\",\n    \"departure_station\": {\n        \"latitude\": 55.7558,\n        \"longitude\": 37.6173\n    },\n    \"arrival_station\": {\n        \"latitude\": 59.9343,\n        \"longitude\": 30.3351\n    },\n    \"journey_time_minutes\": NumberLong(480)\n}"
+    ],
+    [
+      {
+        "bookId": "1",
+        "title": "The Great Gatsby",
+        "borrower": "John Doe",
+        "borrowDate": "2023-09-10T10:00:00Z",
+        "dueDate": "2023-10-10T10:00:00Z",
+        "returnedDate": null
+      },
+      "{\n    \"bookId\": \"1\",\n    \"title\": \"The Great Gatsby\",\n    \"borrower\": \"John Doe\",\n    \"borrowDate\": ISODate(\"2023-09-10T10:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-10-10T10:00:00Z\"),\n    \"returnedDate\": null\n}"
+    ],
+    [
+      {
+        "bookId": "2",
+        "title": "1984",
+        "borrower": "Jane Smith",
+        "borrowDate": "2023-08-15T14:00:00Z",
+        "dueDate": "2023-09-15T14:00:00Z",
+        "returnedDate": "2023-09-10T09:00:00Z"
+      },
+      "{\n    \"bookId\": \"2\",\n    \"title\": \"1984\",\n    \"borrower\": \"Jane Smith\",\n    \"borrowDate\": ISODate(\"2023-08-15T14:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-09-15T14:00:00Z\"),\n    \"returnedDate\": ISODate(\"2023-09-10T09:00:00Z\")\n}"
+    ],
+    [
+      {
+        "bookId": "3",
+        "title": "To Kill a Mockingbird",
+        "borrower": "Sam Brown",
+        "borrowDate": "2023-07-20T11:30:00Z",
+        "dueDate": "2023-08-20T11:30:00Z",
+        "returnedDate": null
+      },
+      "{\n    \"bookId\": \"3\",\n    \"title\": \"To Kill a Mockingbird\",\n    \"borrower\": \"Sam Brown\",\n    \"borrowDate\": ISODate(\"2023-07-20T11:30:00Z\"),\n    \"dueDate\": ISODate(\"2023-08-20T11:30:00Z\"),\n    \"returnedDate\": null\n}"
+    ],
+    [
+      {
+        "bookId": "4",
+        "title": "Moby-Dick",
+        "borrower": "Lisa White",
+        "borrowDate": "2023-05-01T12:00:00Z",
+        "dueDate": "2023-06-01T12:00:00Z",
+        "returnedDate": "2023-05-28T15:00:00Z"
+      },
+      "{\n    \"bookId\": \"4\",\n    \"title\": \"Moby-Dick\",\n    \"borrower\": \"Lisa White\",\n    \"borrowDate\": ISODate(\"2023-05-01T12:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-06-01T12:00:00Z\"),\n    \"returnedDate\": ISODate(\"2023-05-28T15:00:00Z\")\n}"
+    ],
+    [
+      {
+        "bookId": "5",
+        "title": "War and Peace",
+        "borrower": "Mike Green",
+        "borrowDate": "2023-11-01T09:00:00Z",
+        "dueDate": "2023-12-01T09:00:00Z",
+        "returnedDate": null
+      },
+      "{\n    \"bookId\": \"5\",\n    \"title\": \"War and Peace\",\n    \"borrower\": \"Mike Green\",\n    \"borrowDate\": ISODate(\"2023-11-01T09:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-12-01T09:00:00Z\"),\n    \"returnedDate\": null\n}"
+    ],
+    [
+      {
+        "bookId": "6",
+        "title": "Pride and Prejudice",
+        "borrower": "Emma Black",
+        "borrowDate": "2023-10-05T13:00:00Z",
+        "dueDate": "2023-11-05T13:00:00Z",
+        "returnedDate": "2023-10-31T16:00:00Z"
+      },
+      "{\n    \"bookId\": \"6\",\n    \"title\": \"Pride and Prejudice\",\n    \"borrower\": \"Emma Black\",\n    \"borrowDate\": ISODate(\"2023-10-05T13:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-11-05T13:00:00Z\"),\n    \"returnedDate\": ISODate(\"2023-10-31T16:00:00Z\")\n}"
+    ],
+    [
+      {
+        "bookId": "7",
+        "title": "The Catcher in the Rye",
+        "borrower": "Tom Grey",
+        "borrowDate": "2023-02-14T08:00:00Z",
+        "dueDate": "2023-03-14T08:00:00Z",
+        "returnedDate": "2023-03-01T17:00:00Z"
+      },
+      "{\n    \"bookId\": \"7\",\n    \"title\": \"The Catcher in the Rye\",\n    \"borrower\": \"Tom Grey\",\n    \"borrowDate\": ISODate(\"2023-02-14T08:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-03-14T08:00:00Z\"),\n    \"returnedDate\": ISODate(\"2023-03-01T17:00:00Z\")\n}"
+    ],
+    [
+      {
+        "bookId": "8",
+        "title": "Crime and Punishment",
+        "borrower": "Nina Violet",
+        "borrowDate": "2023-01-10T15:00:00Z",
+        "dueDate": "2023-02-10T15:00:00Z",
+        "returnedDate": null
+      },
+      "{\n    \"bookId\": \"8\",\n    \"title\": \"Crime and Punishment\",\n    \"borrower\": \"Nina Violet\",\n    \"borrowDate\": ISODate(\"2023-01-10T15:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-02-10T15:00:00Z\"),\n    \"returnedDate\": null\n}"
+    ],
+    [
+      {
+        "bookId": "9",
+        "title": "The Odyssey",
+        "borrower": "Alex Blue",
+        "borrowDate": "2022-12-01T12:00:00Z",
+        "dueDate": "2023-01-01T12:00:00Z",
+        "returnedDate": "2022-12-28T10:00:00Z"
+      },
+      "{\n    \"bookId\": \"9\",\n    \"title\": \"The Odyssey\",\n    \"borrower\": \"Alex Blue\",\n    \"borrowDate\": ISODate(\"2022-12-01T12:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-01-01T12:00:00Z\"),\n    \"returnedDate\": ISODate(\"2022-12-28T10:00:00Z\")\n}"
+    ],
+    [
+      {
+        "bookId": "10",
+        "title": "The Brothers Karamazov",
+        "borrower": "Sophia Pink",
+        "borrowDate": "2023-03-23T07:00:00Z",
+        "dueDate": "2023-04-23T07:00:00Z",
+        "returnedDate": "2023-04-20T13:00:00Z"
+      },
+      "{\n    \"bookId\": \"10\",\n    \"title\": \"The Brothers Karamazov\",\n    \"borrower\": \"Sophia Pink\",\n    \"borrowDate\": ISODate(\"2023-03-23T07:00:00Z\"),\n    \"dueDate\": ISODate(\"2023-04-23T07:00:00Z\"),\n    \"returnedDate\": ISODate(\"2023-04-20T13:00:00Z\")\n}"
+    ]
+  ]
+}

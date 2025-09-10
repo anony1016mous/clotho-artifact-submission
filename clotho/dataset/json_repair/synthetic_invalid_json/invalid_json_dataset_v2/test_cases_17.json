@@ -1,0 +1,2747 @@
+{
+  "possible_fix": "Concatenate strings like \"long text\" + \"more text on next line\"",
+  "test_cases": [
+    [
+      {
+        "student": "John Doe",
+        "course": "Introduction to Programming",
+        "description": "Learn the basics of programming using Python. This course covers variables, loops, functions, and more.",
+        "status": "enrolled"
+      },
+      "{\n  \"student\": \"John Doe\",\n  \"course\": \"Introduction to Programming\",\n  \"description\": \"Learn the basics of programming using Python. This course covers \" +\n  \"variables, loops, functions, and more.\",\n  \"status\": \"enrolled\"\n}"
+    ],
+    [
+      {
+        "student": "Jane Smith",
+        "course": "Data Science 101",
+        "description": "An introductory course on data science using R programming. Includes data analysis and visualization techniques.",
+        "status": "completed"
+      },
+      "{\n  \"student\": \"Jane Smith\",\n  \"course\": \"Data Science 101\",\n  \"description\": \"An introductory course on data science using R programming. Includes \" +\n  \"data analysis and visualization techniques.\",\n  \"status\": \"completed\"\n}"
+    ],
+    [
+      {
+        "student": "Emily Zhang",
+        "course": "Advanced Machine Learning",
+        "description": "Explore advanced machine learning concepts including neural networks and deep learning models.",
+        "status": "in-progress"
+      },
+      "{\n  \"student\": \"Emily Zhang\",\n  \"course\": \"Advanced Machine Learning\",\n  \"description\": \"Explore advanced machine learning concepts including \" +\n  \"neural networks and deep learning models.\",\n  \"status\": \"in-progress\"\n}"
+    ],
+    [
+      {
+        "student": "Michael Brown",
+        "course": "Web Development Bootcamp",
+        "description": "A comprehensive course on web development covering HTML, CSS, JavaScript, and modern frameworks.",
+        "status": "dropped"
+      },
+      "{\n  \"student\": \"Michael Brown\",\n  \"course\": \"Web Development Bootcamp\",\n  \"description\": \"A comprehensive course on web development covering HTML, CSS, \" +\n  \"JavaScript, and modern frameworks.\",\n  \"status\": \"dropped\"\n}"
+    ],
+    [
+      {
+        "student": "Sophia Gomez",
+        "course": "Cybersecurity Essentials",
+        "description": "Understand the principles of cybersecurity and learn about network security, cryptography, and risk management.",
+        "status": "enrolled"
+      },
+      "{\n  \"student\": \"Sophia Gomez\",\n  \"course\": \"Cybersecurity Essentials\",\n  \"description\": \"Understand the principles of cybersecurity and learn about \" +\n  \"network security, cryptography, and risk management.\",\n  \"status\": \"enrolled\"\n}"
+    ],
+    [
+      {
+        "student": "Liam Nguyen",
+        "course": "Project Management",
+        "description": "Gain essential skills in project management, including planning, execution, and team coordination.",
+        "status": "completed"
+      },
+      "{\n  \"student\": \"Liam Nguyen\",\n  \"course\": \"Project Management\",\n  \"description\": \"Gain essential skills in project management, including \" +\n  \"planning, execution, and team coordination.\",\n  \"status\": \"completed\"\n}"
+    ],
+    [
+      {
+        "student": "Olivia Lee",
+        "course": "Digital Marketing Strategies",
+        "description": "Learn effective digital marketing strategies, including SEO, social media, and content marketing.",
+        "status": "in-progress"
+      },
+      "{\n  \"student\": \"Olivia Lee\",\n  \"course\": \"Digital Marketing Strategies\",\n  \"description\": \"Learn effective digital marketing strategies, including \" +\n  \"SEO, social media, and content marketing.\",\n  \"status\": \"in-progress\"\n}"
+    ],
+    [
+      {
+        "student": "Noah Davis",
+        "course": "Artificial Intelligence Fundamentals",
+        "description": "This course covers the fundamentals of AI, including algorithms, machine learning, and intelligent systems.",
+        "status": "enrolled"
+      },
+      "{\n  \"student\": \"Noah Davis\",\n  \"course\": \"Artificial Intelligence Fundamentals\",\n  \"description\": \"This course covers the fundamentals of AI, including \" +\n  \"algorithms, machine learning, and intelligent systems.\",\n  \"status\": \"enrolled\"\n}"
+    ],
+    [
+      {
+        "student": "Ava Turner",
+        "course": "Financial Analysis",
+        "description": "Learn to analyze financial statements, investment decisions, and the use of financial tools.",
+        "status": "completed"
+      },
+      "{\n  \"student\": \"Ava Turner\",\n  \"course\": \"Financial Analysis\",\n  \"description\": \"Learn to analyze financial statements, investment decisions, and the \" +\n  \"use of financial tools.\",\n  \"status\": \"completed\"\n}"
+    ],
+    [
+      {
+        "student": "Ethan Clark",
+        "course": "Graphic Design Mastery",
+        "description": "Master graphic design using software like Adobe Photoshop, Illustrator, and more.",
+        "status": "in-progress"
+      },
+      "{\n  \"student\": \"Ethan Clark\",\n  \"course\": \"Graphic Design Mastery\",\n  \"description\": \"Master graphic design using software like Adobe Photoshop, \" +\n  \"Illustrator, and more.\",\n  \"status\": \"in-progress\"\n}"
+    ],
+    [
+      {
+        "applicantName": "John Doe",
+        "loanAmount": 15000,
+        "loanPurpose": "To buy a car",
+        "employmentStatus": "Employed",
+        "creditScore": 720
+      },
+      "{\n    \"applicantName\": \"John Doe\",\n    \"loanAmount\": 15000,\n    \"loanPurpose\": \"To buy a\" + \" car\",\n    \"employmentStatus\": \"Employed\",\n    \"creditScore\": 720\n}"
+    ],
+    [
+      {
+        "applicantName": "Jane Smith",
+        "loanAmount": 5000,
+        "loanPurpose": "Home improvement",
+        "employmentStatus": "Self-employed",
+        "creditScore": 680
+      },
+      "{\n    \"applicantName\": \"Jane Smith\",\n    \"loanAmount\": 5000,\n    \"loanPurpose\": \"Home\" + \" improvement\",\n    \"employmentStatus\": \"Self-employed\",\n    \"creditScore\": 680\n}"
+    ],
+    [
+      {
+        "applicantName": "Robert Johnson",
+        "loanAmount": 25000,
+        "loanPurpose": "Business expansion",
+        "employmentStatus": "Business Owner",
+        "creditScore": 730
+      },
+      "{\n    \"applicantName\": \"Robert Johnson\",\n    \"loanAmount\": 25000,\n    \"loanPurpose\": \"Business\" + \" expansion\",\n    \"employmentStatus\": \"Business Owner\",\n    \"creditScore\": 730\n}"
+    ],
+    [
+      {
+        "applicantName": "Emily Davis",
+        "loanAmount": 20000,
+        "loanPurpose": "Debt consolidation",
+        "employmentStatus": "Unemployed",
+        "creditScore": 650
+      },
+      "{\n    \"applicantName\": \"Emily Davis\",\n    \"loanAmount\": 20000,\n    \"loanPurpose\": \"Debt\" + \" consolidation\",\n    \"employmentStatus\": \"Unemployed\",\n    \"creditScore\": 650\n}"
+    ],
+    [
+      {
+        "applicantName": "Michael Brown",
+        "loanAmount": 10000,
+        "loanPurpose": "Education",
+        "employmentStatus": "Student",
+        "creditScore": 600
+      },
+      "{\n    \"applicantName\": \"Michael Brown\",\n    \"loanAmount\": 10000,\n    \"loanPurpose\": \"Edu\" + \"cation\",\n    \"employmentStatus\": \"Student\",\n    \"creditScore\": 600\n}"
+    ],
+    [
+      {
+        "applicantName": "Laura Wilson",
+        "loanAmount": 30000,
+        "loanPurpose": "Wedding expenses",
+        "employmentStatus": "Employed",
+        "creditScore": 710
+      },
+      "{\n    \"applicantName\": \"Laura Wilson\",\n    \"loanAmount\": 30000,\n    \"loanPurpose\": \"Wedding\" + \" expenses\",\n    \"employmentStatus\": \"Employed\",\n    \"creditScore\": 710\n}"
+    ],
+    [
+      {
+        "applicantName": "Chris Martinez",
+        "loanAmount": 8000,
+        "loanPurpose": "Medical bills",
+        "employmentStatus": "Part-time",
+        "creditScore": 670
+      },
+      "{\n    \"applicantName\": \"Chris Martinez\",\n    \"loanAmount\": 8000,\n    \"loanPurpose\": \"Medical\" + \" bills\",\n    \"employmentStatus\": \"Part-time\",\n    \"creditScore\": 670\n}"
+    ],
+    [
+      {
+        "applicantName": "Sophia Miller",
+        "loanAmount": 12000,
+        "loanPurpose": "Vacation",
+        "employmentStatus": "Full-time",
+        "creditScore": 720
+      },
+      "{\n    \"applicantName\": \"Sophia Miller\",\n    \"loanAmount\": 12000,\n    \"loanPurpose\": \"Va\" + \"cation\",\n    \"employmentStatus\": \"Full-time\",\n    \"creditScore\": 720\n}"
+    ],
+    [
+      {
+        "applicantName": "Daniel Harris",
+        "loanAmount": 45000,
+        "loanPurpose": "Home purchase",
+        "employmentStatus": "Contractor",
+        "creditScore": 750
+      },
+      "{\n    \"applicantName\": \"Daniel Harris\",\n    \"loanAmount\": 45000,\n    \"loanPurpose\": \"Home\" + \" purchase\",\n    \"employmentStatus\": \"Contractor\",\n    \"creditScore\": 750\n}"
+    ],
+    [
+      {
+        "applicantName": "Olivia Garcia",
+        "loanAmount": 2500,
+        "loanPurpose": "Small business",
+        "employmentStatus": "Freelancer",
+        "creditScore": 690
+      },
+      "{\n    \"applicantName\": \"Olivia Garcia\",\n    \"loanAmount\": 2500,\n    \"loanPurpose\": \"Small\" + \" business\",\n    \"employmentStatus\": \"Freelancer\",\n    \"creditScore\": 690\n}"
+    ],
+    [
+      {
+        "chat_id": 101,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-01T14:48:00Z",
+            "content": "I need help with my order. It seems like there is a delay."
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-01T14:50:00Z",
+            "content": "I apologize for the inconvenience. Let me check the status of your order."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 101,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-01T14:48:00Z\",\n      \"content\": \"I need help with my order. \" + \"It seems like there is a delay.\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-01T14:50:00Z\",\n      \"content\": \"I apologize for the inconvenience. \" + \"Let me check the status of your order.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 102,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-02T09:15:00Z",
+            "content": "The item I received is defective."
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-02T09:17:00Z",
+            "content": "I'm sorry to hear that. We can process a return or exchange for you."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 102,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-02T09:15:00Z\",\n      \"content\": \"The item I received\" + \" is defective.\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-02T09:17:00Z\",\n      \"content\": \"I'm sorry to hear that. \" + \"We can process a return or exchange for you.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 103,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-03T12:00:00Z",
+            "content": "Can you update my shipping address?"
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-03T12:05:00Z",
+            "content": "Certainly. Could you please provide the new address?"
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 103,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-03T12:00:00Z\",\n      \"content\": \"Can you update my \" + \"shipping address?\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-03T12:05:00Z\",\n      \"content\": \"Certainly. \" + \"Could you please provide the new address?\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 104,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-04T15:30:00Z",
+            "content": "I can't log into my account."
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-04T15:32:00Z",
+            "content": "Let's reset your password. Please check your email for instructions."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 104,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-04T15:30:00Z\",\n      \"content\": \"I can't log into \" + \"my account.\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-04T15:32:00Z\",\n      \"content\": \"Let's reset your password. \" + \"Please check your email for instructions.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 105,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-05T16:45:00Z",
+            "content": "How can I track my order?"
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-05T16:47:00Z",
+            "content": "You can track your order using the link sent to your email."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 105,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-05T16:45:00Z\",\n      \"content\": \"How can I track \" + \"my order?\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-05T16:47:00Z\",\n      \"content\": \"You can track your order \" + \"using the link sent to your email.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 106,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-06T17:10:00Z",
+            "content": "Do you offer discounts for bulk purchases?"
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-06T17:12:00Z",
+            "content": "Yes, we do. Please contact our sales team for more details."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 106,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-06T17:10:00Z\",\n      \"content\": \"Do you offer discounts \" + \"for bulk purchases?\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-06T17:12:00Z\",\n      \"content\": \"Yes, we do. \" + \"Please contact our sales team for more details.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 107,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-07T18:20:00Z",
+            "content": "Your app keeps crashing."
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-07T18:22:00Z",
+            "content": "I'm sorry about that. Please try reinstalling the app."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 107,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-07T18:20:00Z\",\n      \"content\": \"Your app keeps \" + \"crashing.\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-07T18:22:00Z\",\n      \"content\": \"I'm sorry about that. \" + \"Please try reinstalling the app.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 108,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-08T19:35:00Z",
+            "content": "Can I change my payment method?"
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-08T19:37:00Z",
+            "content": "Yes, you can update your payment method in your account settings."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 108,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-08T19:35:00Z\",\n      \"content\": \"Can I change my \" + \"payment method?\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-08T19:37:00Z\",\n      \"content\": \"Yes, you can update your payment method \" + \"in your account settings.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 109,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-09T20:50:00Z",
+            "content": "I'm having trouble applying a discount code."
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-09T20:52:00Z",
+            "content": "Please make sure the code hasn't expired and meets all requirements."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 109,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-09T20:50:00Z\",\n      \"content\": \"I'm having trouble \" + \"applying a discount code.\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-09T20:52:00Z\",\n      \"content\": \"Please make sure the code hasn't expired \" + \"and meets all requirements.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 110,
+        "messages": [
+          {
+            "sender": "customer",
+            "time": "2023-10-10T21:10:00Z",
+            "content": "Can I get a refund for my last purchase?"
+          },
+          {
+            "sender": "agent",
+            "time": "2023-10-10T21:12:00Z",
+            "content": "Refunds are available within 30 days of purchase with the original receipt."
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 110,\n  \"messages\": [\n    {\n      \"sender\": \"customer\",\n      \"time\": \"2023-10-10T21:10:00Z\",\n      \"content\": \"Can I get a refund \" + \"for my last purchase?\"\n    },\n    {\n      \"sender\": \"agent\",\n      \"time\": \"2023-10-10T21:12:00Z\",\n      \"content\": \"Refunds are available within 30 days \" + \"of purchase with the original receipt.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceId": "abc123",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T10:00:00Z",
+            "action": "turn_on",
+            "device": "light"
+          },
+          {
+            "timestamp": "2023-10-01T10:05:00Z",
+            "action": "set_temperature",
+            "value": 22,
+            "device": "thermostat"
+          }
+        ],
+        "location": "Living Room"
+      },
+      "{\n  \"deviceId\": \"abc123\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T10:00:00Z\", \"action\": \"turn_on\", \"device\": \"light\" },\n    { \"timestamp\": \"2023-10-01T10:05:00Z\", \"action\": \"set_temperature\", \"value\": 22, \"device\": \"thermostat\" }\n  ],\n  \"location\": \"Living \" + \"Room\"\n}"
+    ],
+    [
+      {
+        "deviceId": "def456",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T11:00:00Z",
+            "action": "lock",
+            "device": "door"
+          },
+          {
+            "timestamp": "2023-10-01T11:10:00Z",
+            "action": "unlock",
+            "device": "door"
+          }
+        ],
+        "status": "locked"
+      },
+      "{\n  \"deviceId\": \"def456\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T11:00:00Z\", \"action\": \"lock\", \"device\": \"door\" },\n    { \"timestamp\": \"2023-10-01T11:10:00Z\", \"action\": \"unlock\", \"device\": \"door\" }\n  ],\n  \"status\": \"lock\" + \"ed\"\n}"
+    ],
+    [
+      {
+        "deviceId": "ghi789",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T12:00:00Z",
+            "action": "activate",
+            "device": "security_camera"
+          },
+          {
+            "timestamp": "2023-10-01T12:15:00Z",
+            "action": "deactivate",
+            "device": "security_camera"
+          }
+        ],
+        "duration": "15 minutes"
+      },
+      "{\n  \"deviceId\": \"ghi789\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T12:00:00Z\", \"action\": \"activate\", \"device\": \"security_camera\" },\n    { \"timestamp\": \"2023-10-01T12:15:00Z\", \"action\": \"deactivate\", \"device\": \"security_camera\" }\n  ],\n  \"duration\": \"15 \" + \"minutes\"\n}"
+    ],
+    [
+      {
+        "deviceId": "jkl012",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T13:00:00Z",
+            "action": "start",
+            "device": "vacuum_cleaner"
+          },
+          {
+            "timestamp": "2023-10-01T13:30:00Z",
+            "action": "stop",
+            "device": "vacuum_cleaner"
+          }
+        ],
+        "cleaning_mode": "auto"
+      },
+      "{\n  \"deviceId\": \"jkl012\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T13:00:00Z\", \"action\": \"start\", \"device\": \"vacuum_cleaner\" },\n    { \"timestamp\": \"2023-10-01T13:30:00Z\", \"action\": \"stop\", \"device\": \"vacuum_cleaner\" }\n  ],\n  \"cleaning_mode\": \"au\" + \"to\"\n}"
+    ],
+    [
+      {
+        "deviceId": "mno345",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T14:00:00Z",
+            "action": "play",
+            "device": "smart_speaker"
+          },
+          {
+            "timestamp": "2023-10-01T14:10:00Z",
+            "action": "pause",
+            "device": "smart_speaker"
+          }
+        ],
+        "volume": "medium"
+      },
+      "{\n  \"deviceId\": \"mno345\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T14:00:00Z\", \"action\": \"play\", \"device\": \"smart_speaker\" },\n    { \"timestamp\": \"2023-10-01T14:10:00Z\", \"action\": \"pause\", \"device\": \"smart_speaker\" }\n  ],\n  \"volume\": \"med\" + \"ium\"\n}"
+    ],
+    [
+      {
+        "deviceId": "pqr678",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T15:00:00Z",
+            "action": "open",
+            "device": "curtains"
+          },
+          {
+            "timestamp": "2023-10-01T15:20:00Z",
+            "action": "close",
+            "device": "curtains"
+          }
+        ],
+        "state": "closed"
+      },
+      "{\n  \"deviceId\": \"pqr678\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T15:00:00Z\", \"action\": \"open\", \"device\": \"curtains\" },\n    { \"timestamp\": \"2023-10-01T15:20:00Z\", \"action\": \"close\", \"device\": \"curtains\" }\n  ],\n  \"state\": \"clos\" + \"ed\"\n}"
+    ],
+    [
+      {
+        "deviceId": "stu901",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T16:00:00Z",
+            "action": "start",
+            "device": "sprinkler_system"
+          },
+          {
+            "timestamp": "2023-10-01T16:30:00Z",
+            "action": "stop",
+            "device": "sprinkler_system"
+          }
+        ],
+        "watering_schedule": "daily"
+      },
+      "{\n  \"deviceId\": \"stu901\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T16:00:00Z\", \"action\": \"start\", \"device\": \"sprinkler_system\" },\n    { \"timestamp\": \"2023-10-01T16:30:00Z\", \"action\": \"stop\", \"device\": \"sprinkler_system\" }\n  ],\n  \"watering_schedule\": \"da\" + \"ily\"\n}"
+    ],
+    [
+      {
+        "deviceId": "vwx234",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T17:00:00Z",
+            "action": "power_on",
+            "device": "air_purifier"
+          },
+          {
+            "timestamp": "2023-10-01T17:45:00Z",
+            "action": "power_off",
+            "device": "air_purifier"
+          }
+        ],
+        "filter_status": "clean"
+      },
+      "{\n  \"deviceId\": \"vwx234\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T17:00:00Z\", \"action\": \"power_on\", \"device\": \"air_purifier\" },\n    { \"timestamp\": \"2023-10-01T17:45:00Z\", \"action\": \"power_off\", \"device\": \"air_purifier\" }\n  ],\n  \"filter_status\": \"cl\" + \"ean\"\n}"
+    ],
+    [
+      {
+        "deviceId": "yzb567",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T18:00:00Z",
+            "action": "mute",
+            "device": "tv"
+          },
+          {
+            "timestamp": "2023-10-01T18:30:00Z",
+            "action": "unmute",
+            "device": "tv"
+          }
+        ],
+        "channel": "news"
+      },
+      "{\n  \"deviceId\": \"yzb567\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T18:00:00Z\", \"action\": \"mute\", \"device\": \"tv\" },\n    { \"timestamp\": \"2023-10-01T18:30:00Z\", \"action\": \"unmute\", \"device\": \"tv\" }\n  ],\n  \"channel\": \"ne\" + \"ws\"\n}"
+    ],
+    [
+      {
+        "deviceId": "cde890",
+        "logs": [
+          {
+            "timestamp": "2023-10-01T19:00:00Z",
+            "action": "start",
+            "device": "dishwasher"
+          },
+          {
+            "timestamp": "2023-10-01T19:45:00Z",
+            "action": "finish",
+            "device": "dishwasher"
+          }
+        ],
+        "mode": "intensive"
+      },
+      "{\n  \"deviceId\": \"cde890\",\n  \"logs\": [\n    { \"timestamp\": \"2023-10-01T19:00:00Z\", \"action\": \"start\", \"device\": \"dishwasher\" },\n    { \"timestamp\": \"2023-10-01T19:45:00Z\", \"action\": \"finish\", \"device\": \"dishwasher\" }\n  ],\n  \"mode\": \"inten\" + \"sive\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "John Doe",
+          "cover_letter": "I am very interested in the software engineer position at your company. I believe my skills + experience make me a strong candidate."
+        },
+        "resume": {
+          "skills": [
+            "Python",
+            "JavaScript",
+            "Project Management"
+          ],
+          "experience": [
+            {
+              "title": "Software Engineer",
+              "company": "Tech Corp",
+              "duration": "2 years"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"John Doe\",\n    \"cover_letter\": \"I am very interested in the software engineer position at your company. I believe my skills \" + \"experience make me a strong candidate.\"\n  },\n  \"resume\": {\n    \"skills\": [\"Python\", \"JavaScript\", \"Project Management\"],\n    \"experience\": [\n      {\n        \"title\": \"Software Engineer\",\n        \"company\": \"Tech Corp\",\n        \"duration\": \"2 years\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Jane Smith",
+          "objective": "To leverage my extensive technical skills + leadership abilities in a challenging development role.",
+          "contact": {
+            "email": "jane.smith@example.com",
+            "phone": "555-1234"
+          }
+        },
+        "resume": {
+          "education": [
+            {
+              "degree": "B.Sc. in Computer Science",
+              "university": "State University",
+              "year": "2020"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Jane Smith\",\n    \"objective\": \"To leverage my extensive technical skills \" + \"leadership abilities in a challenging development role.\",\n    \"contact\": {\n      \"email\": \"jane.smith@example.com\",\n      \"phone\": \"555-1234\"\n    }\n  },\n  \"resume\": {\n    \"education\": [\n      {\n        \"degree\": \"B.Sc. in Computer Science\",\n        \"university\": \"State University\",\n        \"year\": \"2020\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Emily Johnson",
+          "personal_statement": "A dedicated and enthusiastic professional seeking to contribute to innovative projects. Looking for opportunities to + grow and develop new skills."
+        },
+        "resume": {
+          "projects": [
+            {
+              "title": "AI Research",
+              "role": "Lead Developer",
+              "description": "Developed machine learning models to optimize supply chains."
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Emily Johnson\",\n    \"personal_statement\": \"A dedicated and enthusiastic professional seeking to contribute to innovative projects. Looking for opportunities to \" + \"grow and develop new skills.\"\n  },\n  \"resume\": {\n    \"projects\": [\n      {\n        \"title\": \"AI Research\",\n        \"role\": \"Lead Developer\",\n        \"description\": \"Developed machine learning models to optimize supply chains.\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Michael Brown",
+          "summary": "A strategic thinker with + expertise in business development and digital marketing.",
+          "portfolio": "http://michaelbrownportfolio.com"
+        },
+        "resume": {
+          "experience": [
+            {
+              "title": "Marketing Director",
+              "company": "Creative Solutions",
+              "duration": "3 years"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Michael Brown\",\n    \"summary\": \"A strategic thinker with \" + \"expertise in business development and digital marketing.\",\n    \"portfolio\": \"http://michaelbrownportfolio.com\"\n  },\n  \"resume\": {\n    \"experience\": [\n      {\n        \"title\": \"Marketing Director\",\n        \"company\": \"Creative Solutions\",\n        \"duration\": \"3 years\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Laura Green",
+          "career_objective": "To secure a challenging position where I can effectively utilize my skills + make a significant contribution to the success of the company.",
+          "languages": [
+            "English",
+            "Spanish"
+          ]
+        },
+        "resume": {
+          "certifications": [
+            "Certified Scrum Master",
+            "PMP Certification"
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Laura Green\",\n    \"career_objective\": \"To secure a challenging position where I can effectively utilize my skills \" + \"make a significant contribution to the success of the company.\",\n    \"languages\": [\"English\", \"Spanish\"]\n  },\n  \"resume\": {\n    \"certifications\": [\n      \"Certified Scrum Master\",\n      \"PMP Certification\"\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Chris Martin",
+          "bio": "Dynamic IT professional with a keen interest in emerging technologies. Aspiring to work in an environment + that challenges my technical and creative skills."
+        },
+        "resume": {
+          "volunteer": [
+            {
+              "organization": "Tech for Good",
+              "role": "Coordinator",
+              "years": "1 year"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Chris Martin\",\n    \"bio\": \"Dynamic IT professional with a keen interest in emerging technologies. Aspiring to work in an environment \" + \"that challenges my technical and creative skills.\"\n  },\n  \"resume\": {\n    \"volunteer\": [\n      {\n        \"organization\": \"Tech for Good\",\n        \"role\": \"Coordinator\",\n        \"years\": \"1 year\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Sophia White",
+          "introduction": "I am a seasoned graphic designer with over 5 years of experience in delivering compelling visuals. Eager to collaborate + with innovative teams."
+        },
+        "resume": {
+          "achievements": [
+            {
+              "award": "Graphic Design Award",
+              "year": "2019"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Sophia White\",\n    \"introduction\": \"I am a seasoned graphic designer with over 5 years of experience in delivering compelling visuals. Eager to collaborate \" + \"with innovative teams.\"\n  },\n  \"resume\": {\n    \"achievements\": [\n      {\n        \"award\": \"Graphic Design Award\",\n        \"year\": \"2019\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "David Wilson",
+          "goals": "To become a leading expert in cybersecurity, contributing to + the protection of digital assets worldwide.",
+          "website": "http://davidwilson.com"
+        },
+        "resume": {
+          "training": [
+            {
+              "program": "Cybersecurity Bootcamp",
+              "institution": "Tech Academy",
+              "completion": "2021"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"David Wilson\",\n    \"goals\": \"To become a leading expert in cybersecurity, contributing to \" + \"the protection of digital assets worldwide.\",\n    \"website\": \"http://davidwilson.com\"\n  },\n  \"resume\": {\n    \"training\": [\n      {\n        \"program\": \"Cybersecurity Bootcamp\",\n        \"institution\": \"Tech Academy\",\n        \"completion\": \"2021\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Olivia Taylor",
+          "about_me": "Passionate data scientist with a knack for predictive modeling and data visualization. Looking forward + to solving complex business problems."
+        },
+        "resume": {
+          "publications": [
+            {
+              "title": "Data Science and Its Impact",
+              "journal": "Tech Journal",
+              "year": "2022"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Olivia Taylor\",\n    \"about_me\": \"Passionate data scientist with a knack for predictive modeling and data visualization. Looking forward \" + \"to solving complex business problems.\"\n  },\n  \"resume\": {\n    \"publications\": [\n      {\n        \"title\": \"Data Science and Its Impact\",\n        \"journal\": \"Tech Journal\",\n        \"year\": \"2022\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "James Anderson",
+          "mission_statement": "Dedicated to advancing environmental sustainability through the development of technologies + that reduce carbon emissions."
+        },
+        "resume": {
+          "conferences": [
+            {
+              "name": "Green Tech Summit",
+              "role": "Speaker",
+              "year": "2023"
+            }
+          ]
+        }
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"James Anderson\",\n    \"mission_statement\": \"Dedicated to advancing environmental sustainability through the development of technologies \" + \"that reduce carbon emissions.\"\n  },\n  \"resume\": {\n    \"conferences\": [\n      {\n        \"name\": \"Green Tech Summit\",\n        \"role\": \"Speaker\",\n        \"year\": \"2023\"\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "flightNumber": "AA123",
+        "departure": "New York",
+        "arrival": "London",
+        "passenger": {
+          "name": "John Doe",
+          "passport": "X12345678"
+        },
+        "seat": "12A",
+        "notes": "Vegetarian meal requested."
+      },
+      "{\n    \"flightNumber\": \"AA123\",\n    \"departure\": \"New York\",\n    \"arrival\": \"London\",\n    \"passenger\": {\n        \"name\": \"John Doe\",\n        \"passport\": \"X12345678\"\n    },\n    \"seat\": \"12A\",\n    \"notes\": \"Vegetarian meal \" + \"requested.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "DL456",
+        "departure": "Los Angeles",
+        "arrival": "Sydney",
+        "passenger": {
+          "name": "Jane Smith",
+          "passport": "Y87654321"
+        },
+        "seat": "22C",
+        "notes": "Wheelchair assistance needed."
+      },
+      "{\n    \"flightNumber\": \"DL456\",\n    \"departure\": \"Los Angeles\",\n    \"arrival\": \"Sydney\",\n    \"passenger\": {\n        \"name\": \"Jane Smith\",\n        \"passport\": \"Y87654321\"\n    },\n    \"seat\": \"22C\",\n    \"notes\": \"Wheelchair assistance \" + \"needed.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "UA789",
+        "departure": "Chicago",
+        "arrival": "Tokyo",
+        "passenger": {
+          "name": "Sarah Connor",
+          "passport": "Z12398745"
+        },
+        "seat": "14B",
+        "notes": "Extra legroom requested."
+      },
+      "{\n    \"flightNumber\": \"UA789\",\n    \"departure\": \"Chicago\",\n    \"arrival\": \"Tokyo\",\n    \"passenger\": {\n        \"name\": \"Sarah Connor\",\n        \"passport\": \"Z12398745\"\n    },\n    \"seat\": \"14B\",\n    \"notes\": \"Extra legroom \" + \"requested.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "SW123",
+        "departure": "San Francisco",
+        "arrival": "New Delhi",
+        "passenger": {
+          "name": "Peter Parker",
+          "passport": "P09876543"
+        },
+        "seat": "36D",
+        "notes": "No special requirements."
+      },
+      "{\n    \"flightNumber\": \"SW123\",\n    \"departure\": \"San Francisco\",\n    \"arrival\": \"New Delhi\",\n    \"passenger\": {\n        \"name\": \"Peter Parker\",\n        \"passport\": \"P09876543\"\n    },\n    \"seat\": \"36D\",\n    \"notes\": \"No special \" + \"requirements.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "QF321",
+        "departure": "Seattle",
+        "arrival": "Paris",
+        "passenger": {
+          "name": "Bruce Wayne",
+          "passport": "Q98765432"
+        },
+        "seat": "5E",
+        "notes": "Business class upgrade."
+      },
+      "{\n    \"flightNumber\": \"QF321\",\n    \"departure\": \"Seattle\",\n    \"arrival\": \"Paris\",\n    \"passenger\": {\n        \"name\": \"Bruce Wayne\",\n        \"passport\": \"Q98765432\"\n    },\n    \"seat\": \"5E\",\n    \"notes\": \"Business class \" + \"upgrade.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "BA987",
+        "departure": "Miami",
+        "arrival": "Madrid",
+        "passenger": {
+          "name": "Clark Kent",
+          "passport": "C11223344"
+        },
+        "seat": "8F",
+        "notes": "Window seat requested."
+      },
+      "{\n    \"flightNumber\": \"BA987\",\n    \"departure\": \"Miami\",\n    \"arrival\": \"Madrid\",\n    \"passenger\": {\n        \"name\": \"Clark Kent\",\n        \"passport\": \"C11223344\"\n    },\n    \"seat\": \"8F\",\n    \"notes\": \"Window seat \" + \"requested.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "AF654",
+        "departure": "Dallas",
+        "arrival": "Berlin",
+        "passenger": {
+          "name": "Diana Prince",
+          "passport": "D22334455"
+        },
+        "seat": "11C",
+        "notes": "Priority boarding needed."
+      },
+      "{\n    \"flightNumber\": \"AF654\",\n    \"departure\": \"Dallas\",\n    \"arrival\": \"Berlin\",\n    \"passenger\": {\n        \"name\": \"Diana Prince\",\n        \"passport\": \"D22334455\"\n    },\n    \"seat\": \"11C\",\n    \"notes\": \"Priority boarding \" + \"needed.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "LH432",
+        "departure": "Houston",
+        "arrival": "Dubai",
+        "passenger": {
+          "name": "Barry Allen",
+          "passport": "B33445566"
+        },
+        "seat": "3A",
+        "notes": "No meal preference."
+      },
+      "{\n    \"flightNumber\": \"LH432\",\n    \"departure\": \"Houston\",\n    \"arrival\": \"Dubai\",\n    \"passenger\": {\n        \"name\": \"Barry Allen\",\n        \"passport\": \"B33445566\"\n    },\n    \"seat\": \"3A\",\n    \"notes\": \"No meal \" + \"preference.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "NH987",
+        "departure": "Boston",
+        "arrival": "Amsterdam",
+        "passenger": {
+          "name": "Hal Jordan",
+          "passport": "H44556677"
+        },
+        "seat": "47G",
+        "notes": "Seating near restrooms."
+      },
+      "{\n    \"flightNumber\": \"NH987\",\n    \"departure\": \"Boston\",\n    \"arrival\": \"Amsterdam\",\n    \"passenger\": {\n        \"name\": \"Hal Jordan\",\n        \"passport\": \"H44556677\"\n    },\n    \"seat\": \"47G\",\n    \"notes\": \"Seating near \" + \"restrooms.\"\n}"
+    ],
+    [
+      {
+        "flightNumber": "EK321",
+        "departure": "Atlanta",
+        "arrival": "Rome",
+        "passenger": {
+          "name": "Arthur Curry",
+          "passport": "A55667788"
+        },
+        "seat": "29B",
+        "notes": "Traveling with infant."
+      },
+      "{\n    \"flightNumber\": \"EK321\",\n    \"departure\": \"Atlanta\",\n    \"arrival\": \"Rome\",\n    \"passenger\": {\n        \"name\": \"Arthur Curry\",\n        \"passport\": \"A55667788\"\n    },\n    \"seat\": \"29B\",\n    \"notes\": \"Traveling with \" + \"infant.\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "12345",
+        "customer_name": "John Doe",
+        "reservation_date": "2023-10-15",
+        "time": "19:00",
+        "guests": 4,
+        "special_requests": "Table by the window, anniversary celebration"
+      },
+      "{\n    \"reservation_id\": \"12345\",\n    \"customer_name\": \"John Doe\",\n    \"reservation_date\": \"2023-10-15\",\n    \"time\": \"19:00\",\n    \"guests\": 4,\n    \"special_requests\": \"Table by the window, \" + \"anniversary celebration\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "98765",
+        "customer_name": "Alice Smith",
+        "reservation_date": "2023-11-22",
+        "time": "18:30",
+        "guests": 2,
+        "special_requests": "Vegan menu options, birthday party"
+      },
+      "{\n    \"reservation_id\": \"98765\",\n    \"customer_name\": \"Alice Smith\",\n    \"reservation_date\": \"2023-11-22\",\n    \"time\": \"18:30\",\n    \"guests\": 2,\n    \"special_requests\": \"Vegan menu options, \" + \"birthday party\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "54321",
+        "customer_name": "Robert Brown",
+        "reservation_date": "2023-12-01",
+        "time": "20:00",
+        "guests": 6,
+        "special_requests": "Gluten-free options, quiet area"
+      },
+      "{\n    \"reservation_id\": \"54321\",\n    \"customer_name\": \"Robert Brown\",\n    \"reservation_date\": \"2023-12-01\",\n    \"time\": \"20:00\",\n    \"guests\": 6,\n    \"special_requests\": \"Gluten-free options, \" + \"quiet area\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "24680",
+        "customer_name": "Emily White",
+        "reservation_date": "2023-11-10",
+        "time": "21:15",
+        "guests": 3,
+        "special_requests": "High chair for toddler, near the play area"
+      },
+      "{\n    \"reservation_id\": \"24680\",\n    \"customer_name\": \"Emily White\",\n    \"reservation_date\": \"2023-11-10\",\n    \"time\": \"21:15\",\n    \"guests\": 3,\n    \"special_requests\": \"High chair for toddler, \" + \"near the play area\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "11223",
+        "customer_name": "Michael Johnson",
+        "reservation_date": "2023-10-20",
+        "time": "17:00",
+        "guests": 5,
+        "special_requests": "Wheelchair accessible, low-light area"
+      },
+      "{\n    \"reservation_id\": \"11223\",\n    \"customer_name\": \"Michael Johnson\",\n    \"reservation_date\": \"2023-10-20\",\n    \"time\": \"17:00\",\n    \"guests\": 5,\n    \"special_requests\": \"Wheelchair accessible, \" + \"low-light area\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "33445",
+        "customer_name": "Olivia Green",
+        "reservation_date": "2023-12-25",
+        "time": "13:00",
+        "guests": 8,
+        "special_requests": "Corner table, Christmas lunch special"
+      },
+      "{\n    \"reservation_id\": \"33445\",\n    \"customer_name\": \"Olivia Green\",\n    \"reservation_date\": \"2023-12-25\",\n    \"time\": \"13:00\",\n    \"guests\": 8,\n    \"special_requests\": \"Corner table, \" + \"Christmas lunch special\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "55667",
+        "customer_name": "Sophia Thompson",
+        "reservation_date": "2023-10-28",
+        "time": "18:45",
+        "guests": 10,
+        "special_requests": "Formal dinner setting, outdoor seating"
+      },
+      "{\n    \"reservation_id\": \"55667\",\n    \"customer_name\": \"Sophia Thompson\",\n    \"reservation_date\": \"2023-10-28\",\n    \"time\": \"18:45\",\n    \"guests\": 10,\n    \"special_requests\": \"Formal dinner setting, \" + \"outdoor seating\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "66778",
+        "customer_name": "Liam Wilson",
+        "reservation_date": "2023-11-05",
+        "time": "14:30",
+        "guests": 2,
+        "special_requests": "Quiet table, romantic setting"
+      },
+      "{\n    \"reservation_id\": \"66778\",\n    \"customer_name\": \"Liam Wilson\",\n    \"reservation_date\": \"2023-11-05\",\n    \"time\": \"14:30\",\n    \"guests\": 2,\n    \"special_requests\": \"Quiet table, \" + \"romantic setting\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "77889",
+        "customer_name": "Jacob Martinez",
+        "reservation_date": "2023-12-31",
+        "time": "22:00",
+        "guests": 7,
+        "special_requests": "New Year's Eve party, champagne toast"
+      },
+      "{\n    \"reservation_id\": \"77889\",\n    \"customer_name\": \"Jacob Martinez\",\n    \"reservation_date\": \"2023-12-31\",\n    \"time\": \"22:00\",\n    \"guests\": 7,\n    \"special_requests\": \"New Year's Eve party, \" + \"champagne toast\"\n}"
+    ],
+    [
+      {
+        "reservation_id": "88990",
+        "customer_name": "Charlotte Lee",
+        "reservation_date": "2023-11-18",
+        "time": "12:00",
+        "guests": 4,
+        "special_requests": "Halal menu, child-friendly environment"
+      },
+      "{\n    \"reservation_id\": \"88990\",\n    \"customer_name\": \"Charlotte Lee\",\n    \"reservation_date\": \"2023-11-18\",\n    \"time\": \"12:00\",\n    \"guests\": 4,\n    \"special_requests\": \"Halal menu, \" + \"child-friendly environment\"\n}"
+    ],
+    [
+      {
+        "player": "Gamer123",
+        "sessions": [
+          {
+            "game": "Space Odyssey",
+            "duration": 120,
+            "summary": "Completed the first chapter and unlocked new spaceships."
+          },
+          {
+            "game": "Mystery Quest",
+            "duration": 90,
+            "summary": "Solved the puzzle in the ancient temple and gained experience points."
+          }
+        ]
+      },
+      "{\n    \"player\": \"Gamer123\",\n    \"sessions\": [\n        {\n            \"game\": \"Space Odyssey\",\n            \"duration\": 120,\n            \"summary\": \"Completed the first chapter\" + \" and unlocked new spaceships.\"\n        },\n        {\n            \"game\": \"Mystery Quest\",\n            \"duration\": 90,\n            \"summary\": \"Solved the puzzle in the\" + \" ancient temple and gained experience points.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "player": "EpicPlayer",
+        "games_played": [
+          "Dragon's Lair",
+          "Zombie Invasion",
+          "Castle Siege"
+        ],
+        "achievements": "Completed all levels and reached top 10 in leaderboard."
+      },
+      "{\n    \"player\": \"EpicPlayer\",\n    \"games_played\": [\n        \"Dragon's Lair\",\n        \"Zombie Invasion\",\n        \"Castle Siege\"\n    ],\n    \"achievements\": \"Completed all levels\" + \" and reached top 10 in leaderboard.\"\n}"
+    ],
+    [
+      {
+        "username": "ProGamer",
+        "recent_activity": [
+          {
+            "game": "Alien Attack",
+            "action": "Won",
+            "details": "Defeated the final boss in under 5 minutes."
+          },
+          {
+            "game": "Fantasy World",
+            "action": "Lost",
+            "details": "Couldn't find the magical artifact."
+          }
+        ]
+      },
+      "{\n    \"username\": \"ProGamer\",\n    \"recent_activity\": [\n        {\n            \"game\": \"Alien Attack\",\n            \"action\": \"Won\",\n            \"details\": \"Defeated the final boss\" + \" in under 5 minutes.\"\n        },\n        {\n            \"game\": \"Fantasy World\",\n            \"action\": \"Lost\",\n            \"details\": \"Couldn't find the\" + \" magical artifact.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "player_id": "PlayerOne",
+        "favorite_games": [
+          "Legend of Heroes",
+          "Galaxy Warriors"
+        ],
+        "notes": "Loves playing strategic games and participating in tournaments."
+      },
+      "{\n    \"player_id\": \"PlayerOne\",\n    \"favorite_games\": [\n        \"Legend of Heroes\",\n        \"Galaxy Warriors\"\n    ],\n    \"notes\": \"Loves playing strategic\" + \" games and participating in tournaments.\"\n}"
+    ],
+    [
+      {
+        "gamer_tag": "NinjaMaster",
+        "games": [
+          {
+            "name": "Stealth Ops",
+            "hours_played": 300,
+            "highlights": "Mastered all stealth techniques and weapon handling."
+          }
+        ]
+      },
+      "{\n    \"gamer_tag\": \"NinjaMaster\",\n    \"games\": [\n        {\n            \"name\": \"Stealth Ops\",\n            \"hours_played\": 300,\n            \"highlights\": \"Mastered all stealth\" + \" techniques and weapon handling.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "nickname": "StormChaser",
+        "online_friends": [
+          "BlizzardQueen",
+          "ThunderLord"
+        ],
+        "status": "Currently exploring new worlds and completing storyline quests."
+      },
+      "{\n    \"nickname\": \"StormChaser\",\n    \"online_friends\": [\n        \"BlizzardQueen\",\n        \"ThunderLord\"\n    ],\n    \"status\": \"Currently exploring new worlds\" + \" and completing storyline quests.\"\n}"
+    ],
+    [
+      {
+        "user": "SpeedDemon",
+        "best_times": {
+          "racing_game": "1:35:27",
+          "puzzle_game": "00:45:12"
+        },
+        "remarks": "Always aiming to beat personal records and set new milestones."
+      },
+      "{\n    \"user\": \"SpeedDemon\",\n    \"best_times\": {\n        \"racing_game\": \"1:35:27\",\n        \"puzzle_game\": \"00:45:12\"\n    },\n    \"remarks\": \"Always aiming to beat personal records\" + \" and set new milestones.\"\n}"
+    ],
+    [
+      {
+        "alias": "ShadowHunter",
+        "achievements": [
+          "Top scorer in FPS tournaments",
+          "MVP in team battles"
+        ],
+        "bio": "Passionate about first-person shooters and competitive gaming."
+      },
+      "{\n    \"alias\": \"ShadowHunter\",\n    \"achievements\": [\n        \"Top scorer in FPS tournaments\",\n        \"MVP in team battles\"\n    ],\n    \"bio\": \"Passionate about first-person shooters\" + \" and competitive gaming.\"\n}"
+    ],
+    [
+      {
+        "game_handle": "DragonSlayer",
+        "recent_matches": [
+          {
+            "opponent": "KnightWarrior",
+            "result": "Victory",
+            "commentary": "Outmaneuvered the opponent with strategic play."
+          }
+        ]
+      },
+      "{\n    \"game_handle\": \"DragonSlayer\",\n    \"recent_matches\": [\n        {\n            \"opponent\": \"KnightWarrior\",\n            \"result\": \"Victory\",\n            \"commentary\": \"Outmaneuvered the opponent\" + \" with strategic play.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "username": "BattleMage",
+        "session_history": [
+          {
+            "game_title": "Magic Realm",
+            "duration_minutes": 200,
+            "progress": "Reached the final boss and unlocked hidden spells."
+          },
+          {
+            "game_title": "Dungeon Crawler",
+            "duration_minutes": 150,
+            "progress": "Collected all artifacts and gained special abilities."
+          }
+        ]
+      },
+      "{\n    \"username\": \"BattleMage\",\n    \"session_history\": [\n        {\n            \"game_title\": \"Magic Realm\",\n            \"duration_minutes\": 200,\n            \"progress\": \"Reached the final boss\" + \" and unlocked hidden spells.\"\n        },\n        {\n            \"game_title\": \"Dungeon Crawler\",\n            \"duration_minutes\": 150,\n            \"progress\": \"Collected all artifacts\" + \" and gained special abilities.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB12345",
+        "user": {
+          "name": "Alice Johnson",
+          "email": "alice.johnson@example.com"
+        },
+        "plan": "Premium",
+        "details": "Subscribed on 2023-01-15. Renewal every year."
+      },
+      "{\n  \"subscription_id\": \"SUB12345\",\n  \"user\": {\n    \"name\": \"Alice Johnson\",\n    \"email\": \"alice.johnson@example.com\"\n  },\n  \"plan\": \"Premium\",\n  \"details\": \"Subscribed on 2023-01-15.\" + \"Renewal every year.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB67890",
+        "user": {
+          "name": "Bob Smith",
+          "email": "bob.smith@example.com"
+        },
+        "plan": "Standard",
+        "details": "Subscribed on 2023-02-10. No auto-renew."
+      },
+      "{\n  \"subscription_id\": \"SUB67890\",\n  \"user\": {\n    \"name\": \"Bob Smith\",\n    \"email\": \"bob.smith@example.com\"\n  },\n  \"plan\": \"Standard\",\n  \"details\": \"Subscribed on 2023-02-10.\" + \"No auto-renew.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB11223",
+        "user": {
+          "name": "Carol Lee",
+          "email": "carol.lee@example.com"
+        },
+        "plan": "Basic",
+        "details": "Joined in 2022. Active subscriber."
+      },
+      "{\n  \"subscription_id\": \"SUB11223\",\n  \"user\": {\n    \"name\": \"Carol Lee\",\n    \"email\": \"carol.lee@example.com\"\n  },\n  \"plan\": \"Basic\",\n  \"details\": \"Joined in 2022.\" + \"Active subscriber.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB33445",
+        "user": {
+          "name": "David Brown",
+          "email": "david.brown@example.com"
+        },
+        "plan": "Enterprise",
+        "details": "Corporate plan. Managed by IT department."
+      },
+      "{\n  \"subscription_id\": \"SUB33445\",\n  \"user\": {\n    \"name\": \"David Brown\",\n    \"email\": \"david.brown@example.com\"\n  },\n  \"plan\": \"Enterprise\",\n  \"details\": \"Corporate plan.\" + \"Managed by IT department.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB55667",
+        "user": {
+          "name": "Emily Clark",
+          "email": "emily.clark@example.com"
+        },
+        "plan": "Family",
+        "details": "Multiple user access. Renewals due annually."
+      },
+      "{\n  \"subscription_id\": \"SUB55667\",\n  \"user\": {\n    \"name\": \"Emily Clark\",\n    \"email\": \"emily.clark@example.com\"\n  },\n  \"plan\": \"Family\",\n  \"details\": \"Multiple user access.\" + \"Renewals due annually.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB77889",
+        "user": {
+          "name": "Frank Young",
+          "email": "frank.young@example.com"
+        },
+        "plan": "Student",
+        "details": "Discounted rate. Requires student ID verification."
+      },
+      "{\n  \"subscription_id\": \"SUB77889\",\n  \"user\": {\n    \"name\": \"Frank Young\",\n    \"email\": \"frank.young@example.com\"\n  },\n  \"plan\": \"Student\",\n  \"details\": \"Discounted rate.\" + \"Requires student ID verification.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB99001",
+        "user": {
+          "name": "Grace Hall",
+          "email": "grace.hall@example.com"
+        },
+        "plan": "Monthly",
+        "details": "Pay as you go. Cancel anytime."
+      },
+      "{\n  \"subscription_id\": \"SUB99001\",\n  \"user\": {\n    \"name\": \"Grace Hall\",\n    \"email\": \"grace.hall@example.com\"\n  },\n  \"plan\": \"Monthly\",\n  \"details\": \"Pay as you go.\" + \"Cancel anytime.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB10203",
+        "user": {
+          "name": "Henry Taylor",
+          "email": "henry.taylor@example.com"
+        },
+        "plan": "Annual",
+        "details": "Yearly subscription with a 2-month free trial."
+      },
+      "{\n  \"subscription_id\": \"SUB10203\",\n  \"user\": {\n    \"name\": \"Henry Taylor\",\n    \"email\": \"henry.taylor@example.com\"\n  },\n  \"plan\": \"Annual\",\n  \"details\": \"Yearly subscription with a\" + \"2-month free trial.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB20405",
+        "user": {
+          "name": "Irene Walker",
+          "email": "irene.walker@example.com"
+        },
+        "plan": "Trial",
+        "details": "14-day free trial. No credit card required."
+      },
+      "{\n  \"subscription_id\": \"SUB20405\",\n  \"user\": {\n    \"name\": \"Irene Walker\",\n    \"email\": \"irene.walker@example.com\"\n  },\n  \"plan\": \"Trial\",\n  \"details\": \"14-day free trial.\" + \"No credit card required.\"\n}"
+    ],
+    [
+      {
+        "subscription_id": "SUB30607",
+        "user": {
+          "name": "Jack White",
+          "email": "jack.white@example.com"
+        },
+        "plan": "Lifetime",
+        "details": "One-time payment. Access for life."
+      },
+      "{\n  \"subscription_id\": \"SUB30607\",\n  \"user\": {\n    \"name\": \"Jack White\",\n    \"email\": \"jack.white@example.com\"\n  },\n  \"plan\": \"Lifetime\",\n  \"details\": \"One-time payment.\" + \"Access for life.\"\n}"
+    ],
+    [
+      {
+        "studentName": "John Doe",
+        "subjects": [
+          {
+            "name": "Math",
+            "grade": "A"
+          },
+          {
+            "name": "Science",
+            "grade": "B+"
+          },
+          {
+            "name": "History",
+            "grade": "A-"
+          }
+        ],
+        "comments": "Exemplary student. Highly motivated and diligent."
+      },
+      "{\n    \"studentName\": \"John Doe\",\n    \"subjects\": [\n        {\"name\": \"Math\", \"grade\": \"A\"},\n        {\"name\": \"Science\", \"grade\": \"B+\"},\n        {\"name\": \"History\", \"grade\": \"A-\"}\n    ],\n    \"comments\": \"Exemplary student.\" + \" Highly motivated and diligent.\"\n}"
+    ],
+    [
+      {
+        "studentID": "S12345",
+        "semester": "Fall 2023",
+        "scores": {
+          "Math": 95,
+          "English": 88,
+          "Physics": 92
+        },
+        "remarks": "Consistently performs above average."
+      },
+      "{\n    \"studentID\": \"S12345\",\n    \"semester\": \"Fall 2023\",\n    \"scores\": {\n        \"Math\": 95,\n        \"English\": 88,\n        \"Physics\": 92\n    },\n    \"remarks\": \"Consistently performs\" + \" above average.\"\n}"
+    ],
+    [
+      {
+        "teacherComments": "Shows great improvement across all subjects.",
+        "attendancePercentage": 96,
+        "extraCourses": [
+          "Art",
+          "Music"
+        ]
+      },
+      "{\n    \"teacherComments\": \"Shows great improvement\" + \" across all subjects.\",\n    \"attendancePercentage\": 96,\n    \"extraCourses\": [\"Art\", \"Music\"]\n}"
+    ],
+    [
+      {
+        "reportType": "Mid-term Evaluation",
+        "studentName": "Alice Smith",
+        "performanceSummary": "Alice has shown remarkable progress in mathematics."
+      },
+      "{\n    \"reportType\": \"Mid-term Evaluation\",\n    \"studentName\": \"Alice Smith\",\n    \"performanceSummary\": \"Alice has shown remarkable\" + \" progress in mathematics.\"\n}"
+    ],
+    [
+      {
+        "overallGrade": "B+",
+        "subjectGrades": {
+          "Biology": "B",
+          "Chemistry": "A"
+        },
+        "teacherFeedback": "Needs to focus more on lab work."
+      },
+      "{\n    \"overallGrade\": \"B+\",\n    \"subjectGrades\": {\n        \"Biology\": \"B\",\n        \"Chemistry\": \"A\"\n    },\n    \"teacherFeedback\": \"Needs to focus more\" + \" on lab work.\"\n}"
+    ],
+    [
+      {
+        "date": "2023-10-15",
+        "studentProfile": {
+          "firstName": "Michael",
+          "lastName": "Brown",
+          "classYear": "Sophomore"
+        },
+        "assessment": "Michael consistently participates in class discussions."
+      },
+      "{\n    \"date\": \"2023-10-15\",\n    \"studentProfile\": {\n        \"firstName\": \"Michael\",\n        \"lastName\": \"Brown\",\n        \"classYear\": \"Sophomore\"\n    },\n    \"assessment\": \"Michael consistently participates\" + \" in class discussions.\"\n}"
+    ],
+    [
+      {
+        "studentAchievements": [
+          "Honor Roll",
+          "Math Olympiad Participant"
+        ],
+        "advisoryComment": "Keep up the excellent work in STEM subjects."
+      },
+      "{\n    \"studentAchievements\": [\"Honor Roll\", \"Math Olympiad Participant\"],\n    \"advisoryComment\": \"Keep up the excellent\" + \" work in STEM subjects.\"\n}"
+    ],
+    [
+      {
+        "performanceTrend": "Improving",
+        "notes": "Continues to excel in creative writing and literature analysis."
+      },
+      "{\n    \"performanceTrend\": \"Improving\",\n    \"notes\": \"Continues to excel in creative writing\" + \" and literature analysis.\"\n}"
+    ],
+    [
+      {
+        "academicStanding": "Good",
+        "parentFeedback": "Appreciates the school's communication and support."
+      },
+      "{\n    \"academicStanding\": \"Good\",\n    \"parentFeedback\": \"Appreciates the school's\" + \" communication and support.\"\n}"
+    ],
+    [
+      {
+        "studentInitiatives": [
+          "Science Fair Organizer",
+          "Debate Team Captain"
+        ],
+        "principalRemarks": "Demonstrates leadership and initiative."
+      },
+      "{\n    \"studentInitiatives\": [\"Science Fair Organizer\", \"Debate Team Captain\"],\n    \"principalRemarks\": \"Demonstrates leadership\" + \" and initiative.\"\n}"
+    ],
+    [
+      {
+        "property_id": 1234,
+        "description": "Beautiful two-bedroom apartment + Located in the city center + Amazing view of the skyline",
+        "price": 250000,
+        "agent": {
+          "name": "John Doe",
+          "contact": "john.doe@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 1234,\n  \"description\": \"Beautiful two-bedroom apartment\" + \" Located in the city center\" + \" Amazing view of the skyline\",\n  \"price\": 250000,\n  \"agent\": {\n    \"name\": \"John Doe\",\n    \"contact\": \"john.doe@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 5678,
+        "description": "Spacious four-bedroom house + Includes a large backyard + Close to schools and parks",
+        "price": 450000,
+        "agent": {
+          "name": "Jane Smith",
+          "contact": "jane.smith@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 5678,\n  \"description\": \"Spacious four-bedroom house\" + \" Includes a large backyard\" + \" Close to schools and parks\",\n  \"price\": 450000,\n  \"agent\": {\n    \"name\": \"Jane Smith\",\n    \"contact\": \"jane.smith@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 9101,
+        "description": "Modern studio apartment + Perfect for young professionals + Includes gym access",
+        "price": 150000,
+        "agent": {
+          "name": "Alice Johnson",
+          "contact": "alice.j@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 9101,\n  \"description\": \"Modern studio apartment\" + \" Perfect for young professionals\" + \" Includes gym access\",\n  \"price\": 150000,\n  \"agent\": {\n    \"name\": \"Alice Johnson\",\n    \"contact\": \"alice.j@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 1121,
+        "description": "Charming cottage + Surrounded by nature + Ideal for weekend retreats",
+        "price": 180000,
+        "agent": {
+          "name": "Robert Brown",
+          "contact": "robert.brown@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 1121,\n  \"description\": \"Charming cottage\" + \" Surrounded by nature\" + \" Ideal for weekend retreats\",\n  \"price\": 180000,\n  \"agent\": {\n    \"name\": \"Robert Brown\",\n    \"contact\": \"robert.brown@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 3141,
+        "description": "Luxury penthouse + Panoramic city views + Private rooftop terrace",
+        "price": 1200000,
+        "agent": {
+          "name": "Laura White",
+          "contact": "laura.white@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 3141,\n  \"description\": \"Luxury penthouse\" + \" Panoramic city views\" + \" Private rooftop terrace\",\n  \"price\": 1200000,\n  \"agent\": {\n    \"name\": \"Laura White\",\n    \"contact\": \"laura.white@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 5161,
+        "description": "Eco-friendly home + Solar panels installed + Close to public transport",
+        "price": 350000,
+        "agent": {
+          "name": "Daniel Green",
+          "contact": "daniel.green@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 5161,\n  \"description\": \"Eco-friendly home\" + \" Solar panels installed\" + \" Close to public transport\",\n  \"price\": 350000,\n  \"agent\": {\n    \"name\": \"Daniel Green\",\n    \"contact\": \"daniel.green@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 7181,
+        "description": "Historic townhouse + Original features retained + Near downtown",
+        "price": 600000,
+        "agent": {
+          "name": "Emma Black",
+          "contact": "emma.black@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 7181,\n  \"description\": \"Historic townhouse\" + \" Original features retained\" + \" Near downtown\",\n  \"price\": 600000,\n  \"agent\": {\n    \"name\": \"Emma Black\",\n    \"contact\": \"emma.black@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 9201,
+        "description": "Compact apartment + Perfect for singles + City living experience",
+        "price": 200000,
+        "agent": {
+          "name": "Michael Blue",
+          "contact": "michael.blue@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 9201,\n  \"description\": \"Compact apartment\" + \" Perfect for singles\" + \" City living experience\",\n  \"price\": 200000,\n  \"agent\": {\n    \"name\": \"Michael Blue\",\n    \"contact\": \"michael.blue@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 1222,
+        "description": "Family home + Large playroom for kids + Friendly neighborhood",
+        "price": 500000,
+        "agent": {
+          "name": "Sophia Yellow",
+          "contact": "sophia.yellow@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 1222,\n  \"description\": \"Family home\" + \" Large playroom for kids\" + \" Friendly neighborhood\",\n  \"price\": 500000,\n  \"agent\": {\n    \"name\": \"Sophia Yellow\",\n    \"contact\": \"sophia.yellow@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "property_id": 3242,
+        "description": "Cozy condo + Affordable price + Safe community",
+        "price": 300000,
+        "agent": {
+          "name": "Oliver Grey",
+          "contact": "oliver.grey@realestate.com"
+        }
+      },
+      "{\n  \"property_id\": 3242,\n  \"description\": \"Cozy condo\" + \" Affordable price\" + \" Safe community\",\n  \"price\": 300000,\n  \"agent\": {\n    \"name\": \"Oliver Grey\",\n    \"contact\": \"oliver.grey@realestate.com\"\n  }\n}"
+    ],
+    [
+      {
+        "event": "Concert Night",
+        "description": "Join us for a night of amazing music and performances by various artists.",
+        "location": "Downtown Arena",
+        "date": "2023-11-25",
+        "tickets": [
+          {
+            "section": "VIP",
+            "price": 250.0,
+            "availability": "Available"
+          },
+          {
+            "section": "General",
+            "price": 100.0,
+            "availability": "Sold Out"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Concert Night\",\n  \"description\": \"Join us for a night of amazing music\" + \" and performances by various artists.\",\n  \"location\": \"Downtown Arena\",\n  \"date\": \"2023-11-25\",\n  \"tickets\": [\n    {\n      \"section\": \"VIP\",\n      \"price\": 250.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"General\",\n      \"price\": 100.00,\n      \"availability\": \"Sold Out\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Art Expo 2023",
+        "description": "Explore the world of modern art from various acclaimed artists.",
+        "location": "City Art Gallery",
+        "date": "2023-12-15",
+        "tickets": [
+          {
+            "section": "Standard",
+            "price": 35.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Student",
+            "price": 20.0,
+            "availability": "Limited"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Art Expo 2023\",\n  \"description\": \"Explore the world of modern art\" + \" from various acclaimed artists.\",\n  \"location\": \"City Art Gallery\",\n  \"date\": \"2023-12-15\",\n  \"tickets\": [\n    {\n      \"section\": \"Standard\",\n      \"price\": 35.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Student\",\n      \"price\": 20.00,\n      \"availability\": \"Limited\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Tech Conference",
+        "description": "Engage with top tech leaders and discover new innovations in the tech world.",
+        "location": "Convention Center",
+        "date": "2024-01-20",
+        "tickets": [
+          {
+            "section": "Early Bird",
+            "price": 120.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Regular",
+            "price": 150.0,
+            "availability": "Available"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Tech Conference\",\n  \"description\": \"Engage with top tech leaders\" + \" and discover new innovations in the tech world.\",\n  \"location\": \"Convention Center\",\n  \"date\": \"2024-01-20\",\n  \"tickets\": [\n    {\n      \"section\": \"Early Bird\",\n      \"price\": 120.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Regular\",\n      \"price\": 150.00,\n      \"availability\": \"Available\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Book Fair",
+        "description": "A paradise for book lovers with thousands of books to explore and buy.",
+        "location": "Central Library",
+        "date": "2024-02-10",
+        "tickets": [
+          {
+            "section": "Adult",
+            "price": 10.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Child",
+            "price": 5.0,
+            "availability": "Available"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Book Fair\",\n  \"description\": \"A paradise for book lovers\" + \" with thousands of books to explore and buy.\",\n  \"location\": \"Central Library\",\n  \"date\": \"2024-02-10\",\n  \"tickets\": [\n    {\n      \"section\": \"Adult\",\n      \"price\": 10.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Child\",\n      \"price\": 5.00,\n      \"availability\": \"Available\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Food Festival",
+        "description": "Taste the best dishes from various cuisines, all in one place.",
+        "location": "Festival Grounds",
+        "date": "2024-03-05",
+        "tickets": [
+          {
+            "section": "General Admission",
+            "price": 50.0,
+            "availability": "Available"
+          },
+          {
+            "section": "VIP",
+            "price": 100.0,
+            "availability": "Limited"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Food Festival\",\n  \"description\": \"Taste the best dishes from\" + \" various cuisines, all in one place.\",\n  \"location\": \"Festival Grounds\",\n  \"date\": \"2024-03-05\",\n  \"tickets\": [\n    {\n      \"section\": \"General Admission\",\n      \"price\": 50.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"VIP\",\n      \"price\": 100.00,\n      \"availability\": \"Limited\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Marathon",
+        "description": "Participate in the annual city marathon and challenge yourself.",
+        "location": "City Park",
+        "date": "2024-04-15",
+        "tickets": [
+          {
+            "section": "5K",
+            "price": 25.0,
+            "availability": "Available"
+          },
+          {
+            "section": "10K",
+            "price": 40.0,
+            "availability": "Available"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Marathon\",\n  \"description\": \"Participate in the annual city marathon\" + \" and challenge yourself.\",\n  \"location\": \"City Park\",\n  \"date\": \"2024-04-15\",\n  \"tickets\": [\n    {\n      \"section\": \"5K\",\n      \"price\": 25.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"10K\",\n      \"price\": 40.00,\n      \"availability\": \"Available\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Film Festival",
+        "description": "Experience the magic of cinema with screenings of award-winning films.",
+        "location": "Main Theatre",
+        "date": "2024-05-20",
+        "tickets": [
+          {
+            "section": "Standard",
+            "price": 15.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Premium",
+            "price": 30.0,
+            "availability": "Limited"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Film Festival\",\n  \"description\": \"Experience the magic of cinema\" + \" with screenings of award-winning films.\",\n  \"location\": \"Main Theatre\",\n  \"date\": \"2024-05-20\",\n  \"tickets\": [\n    {\n      \"section\": \"Standard\",\n      \"price\": 15.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Premium\",\n      \"price\": 30.00,\n      \"availability\": \"Limited\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Gaming Convention",
+        "description": "Join fellow gamers for a weekend of tournaments, new game releases, and more.",
+        "location": "Gaming Expo Center",
+        "date": "2024-06-10",
+        "tickets": [
+          {
+            "section": "Full Pass",
+            "price": 75.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Day Pass",
+            "price": 40.0,
+            "availability": "Available"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Gaming Convention\",\n  \"description\": \"Join fellow gamers for a weekend\" + \" of tournaments, new game releases, and more.\",\n  \"location\": \"Gaming Expo Center\",\n  \"date\": \"2024-06-10\",\n  \"tickets\": [\n    {\n      \"section\": \"Full Pass\",\n      \"price\": 75.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Day Pass\",\n      \"price\": 40.00,\n      \"availability\": \"Available\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Summer Concert Series",
+        "description": "Enjoy live performances every weekend throughout the summer.",
+        "location": "Outdoor Amphitheater",
+        "date": "2024-07-01",
+        "tickets": [
+          {
+            "section": "General Admission",
+            "price": 60.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Lawn Seating",
+            "price": 40.0,
+            "availability": "Available"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Summer Concert Series\",\n  \"description\": \"Enjoy live performances every weekend\" + \" throughout the summer.\",\n  \"location\": \"Outdoor Amphitheater\",\n  \"date\": \"2024-07-01\",\n  \"tickets\": [\n    {\n      \"section\": \"General Admission\",\n      \"price\": 60.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Lawn Seating\",\n      \"price\": 40.00,\n      \"availability\": \"Available\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "event": "Science Expo",
+        "description": "Discover the latest advancements in science and technology.",
+        "location": "Science Center",
+        "date": "2024-08-15",
+        "tickets": [
+          {
+            "section": "Adult",
+            "price": 20.0,
+            "availability": "Available"
+          },
+          {
+            "section": "Child",
+            "price": 10.0,
+            "availability": "Available"
+          }
+        ]
+      },
+      "{\n  \"event\": \"Science Expo\",\n  \"description\": \"Discover the latest advancements in science\" + \" and technology.\",\n  \"location\": \"Science Center\",\n  \"date\": \"2024-08-15\",\n  \"tickets\": [\n    {\n      \"section\": \"Adult\",\n      \"price\": 20.00,\n      \"availability\": \"Available\"\n    },\n    {\n      \"section\": \"Child\",\n      \"price\": 10.00,\n      \"availability\": \"Available\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "issue_id": 101,
+        "title": "UI Bug on Dashboard",
+        "description": "The dashboard freezes when loading long reports. It needs investigation.",
+        "status": "Open"
+      },
+      "{\n    \"issue_id\": 101,\n    \"title\": \"UI Bug on Dashboard\",\n    \"description\": \"The dashboard freezes when loading long\" + \" reports. It needs investigation.\",\n    \"status\": \"Open\"\n}"
+    ],
+    [
+      {
+        "issue_id": 102,
+        "title": "Login Feature Malfunction",
+        "description": "Users are unable to login after the recent update. This needs urgent attention.",
+        "priority": "High"
+      },
+      "{\n    \"issue_id\": 102,\n    \"title\": \"Login Feature Malfunction\",\n    \"description\": \"Users are unable to login after the\" + \" recent update. This needs urgent attention.\",\n    \"priority\": \"High\"\n}"
+    ],
+    [
+      {
+        "issue_id": 103,
+        "title": "404 Error on Contact Page",
+        "description": "The contact us page returns a 404 error intermittently, which affects user trust.",
+        "status": "Investigating"
+      },
+      "{\n    \"issue_id\": 103,\n    \"title\": \"404 Error on Contact Page\",\n    \"description\": \"The contact us page returns a 404 error\" + \" intermittently, which affects user trust.\",\n    \"status\": \"Investigating\"\n}"
+    ],
+    [
+      {
+        "issue_id": 104,
+        "title": "Email Notifications Delayed",
+        "description": "There is a significant delay in email notifications being sent out.",
+        "priority": "Medium"
+      },
+      "{\n    \"issue_id\": 104,\n    \"title\": \"Email Notifications Delayed\",\n    \"description\": \"There is a significant delay in email\" + \" notifications being sent out.\",\n    \"priority\": \"Medium\"\n}"
+    ],
+    [
+      {
+        "issue_id": 105,
+        "title": "Performance Issues in Backend",
+        "description": "The backend service experiences high latency during peak hours.",
+        "status": "Open"
+      },
+      "{\n    \"issue_id\": 105,\n    \"title\": \"Performance Issues in Backend\",\n    \"description\": \"The backend service experiences high\" + \" latency during peak hours.\",\n    \"status\": \"Open\"\n}"
+    ],
+    [
+      {
+        "issue_id": 106,
+        "title": "Data Sync Error",
+        "description": "Data synchronization between the server and client is not consistent.",
+        "priority": "High"
+      },
+      "{\n    \"issue_id\": 106,\n    \"title\": \"Data Sync Error\",\n    \"description\": \"Data synchronization between the server\" + \" and client is not consistent.\",\n    \"priority\": \"High\"\n}"
+    ],
+    [
+      {
+        "issue_id": 107,
+        "title": "Incorrect User Permissions",
+        "description": "Some users have access to admin features which they should not.",
+        "status": "Closed"
+      },
+      "{\n    \"issue_id\": 107,\n    \"title\": \"Incorrect User Permissions\",\n    \"description\": \"Some users have access to admin features\" + \" which they should not.\",\n    \"status\": \"Closed\"\n}"
+    ],
+    [
+      {
+        "issue_id": 108,
+        "title": "UI Overlapping Text",
+        "description": "Text overlaps on smaller screens making it unreadable.",
+        "priority": "Low"
+      },
+      "{\n    \"issue_id\": 108,\n    \"title\": \"UI Overlapping Text\",\n    \"description\": \"Text overlaps on smaller screens making\" + \" it unreadable.\",\n    \"priority\": \"Low\"\n}"
+    ],
+    [
+      {
+        "issue_id": 109,
+        "title": "Crash on Save Function",
+        "description": "Application crashes when attempting to save large files.",
+        "status": "In Progress"
+      },
+      "{\n    \"issue_id\": 109,\n    \"title\": \"Crash on Save Function\",\n    \"description\": \"Application crashes when attempting to\" + \" save large files.\",\n    \"status\": \"In Progress\"\n}"
+    ],
+    [
+      {
+        "issue_id": 110,
+        "title": "Incorrect Date Formatting",
+        "description": "Dates are not formatted according to user settings, causing confusion.",
+        "priority": "Medium"
+      },
+      "{\n    \"issue_id\": 110,\n    \"title\": \"Incorrect Date Formatting\",\n    \"description\": \"Dates are not formatted according to\" + \" user settings, causing confusion.\",\n    \"priority\": \"Medium\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Toyota Camry",
+        "maintenance": {
+          "date": "2023-01-15",
+          "description": "Oil change and tire rotation"
+        },
+        "notes": "Maintenance done at 45,000 miles"
+      },
+      "{\n  \"vehicle\": \"Toyota Camry\",\n  \"maintenance\": {\n    \"date\": \"2023-01-15\",\n    \"description\": \"Oil change and tire \" + \"rotation\"\n  },\n  \"notes\": \"Maintenance done at 45,000 miles\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Honda Accord",
+        "maintenance": {
+          "date": "2023-03-22",
+          "description": "Brake pad replacement"
+        },
+        "notes": "Pads replaced with high-performance variants"
+      },
+      "{\n  \"vehicle\": \"Honda Accord\",\n  \"maintenance\": {\n    \"date\": \"2023-03-22\",\n    \"description\": \"Brake pad \" + \"replacement\"\n  },\n  \"notes\": \"Pads replaced with high-performance variants\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Ford F-150",
+        "maintenance": {
+          "date": "2023-06-10",
+          "description": "Air filter replacement"
+        },
+        "notes": "Replaced after 30,000 miles as per schedule"
+      },
+      "{\n  \"vehicle\": \"Ford F-150\",\n  \"maintenance\": {\n    \"date\": \"2023-06-10\",\n    \"description\": \"Air \" + \"filter replacement\"\n  },\n  \"notes\": \"Replaced after 30,000 miles as per schedule\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Chevrolet Malibu",
+        "maintenance": {
+          "date": "2023-07-18",
+          "description": "Battery check and replacement"
+        },
+        "notes": "Battery replaced due to low performance"
+      },
+      "{\n  \"vehicle\": \"Chevrolet Malibu\",\n  \"maintenance\": {\n    \"date\": \"2023-07-18\",\n    \"description\": \"Battery check \" + \"and replacement\"\n  },\n  \"notes\": \"Battery replaced due to low performance\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Nissan Altima",
+        "maintenance": {
+          "date": "2023-02-03",
+          "description": "Transmission fluid change"
+        },
+        "notes": "Fluid change done at transmission specialist"
+      },
+      "{\n  \"vehicle\": \"Nissan Altima\",\n  \"maintenance\": {\n    \"date\": \"2023-02-03\",\n    \"description\": \"Transmission \" + \"fluid change\"\n  },\n  \"notes\": \"Fluid change done at transmission specialist\"\n}"
+    ],
+    [
+      {
+        "vehicle": "BMW 3 Series",
+        "maintenance": {
+          "date": "2023-05-11",
+          "description": "Coolant level check and refill"
+        },
+        "notes": "Performed as part of routine servicing"
+      },
+      "{\n  \"vehicle\": \"BMW 3 Series\",\n  \"maintenance\": {\n    \"date\": \"2023-05-11\",\n    \"description\": \"Coolant level \" + \"check and refill\"\n  },\n  \"notes\": \"Performed as part of routine servicing\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Tesla Model 3",
+        "maintenance": {
+          "date": "2023-08-01",
+          "description": "Tire pressure monitoring system check"
+        },
+        "notes": "Software update also performed"
+      },
+      "{\n  \"vehicle\": \"Tesla Model 3\",\n  \"maintenance\": {\n    \"date\": \"2023-08-01\",\n    \"description\": \"Tire pressure \" + \"monitoring system check\"\n  },\n  \"notes\": \"Software update also performed\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Hyundai Elantra",
+        "maintenance": {
+          "date": "2023-09-05",
+          "description": "Engine diagnostics and tuning"
+        },
+        "notes": "Tuning improved fuel efficiency by 5%"
+      },
+      "{\n  \"vehicle\": \"Hyundai Elantra\",\n  \"maintenance\": {\n    \"date\": \"2023-09-05\",\n    \"description\": \"Engine diagnostics \" + \"and tuning\"\n  },\n  \"notes\": \"Tuning improved fuel efficiency by 5%\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Subaru Outback",
+        "maintenance": {
+          "date": "2023-04-20",
+          "description": "Headlight bulb replacement"
+        },
+        "notes": "Replaced both bulbs for consistency"
+      },
+      "{\n  \"vehicle\": \"Subaru Outback\",\n  \"maintenance\": {\n    \"date\": \"2023-04-20\",\n    \"description\": \"Headlight \" + \"bulb replacement\"\n  },\n  \"notes\": \"Replaced both bulbs for consistency\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Mazda CX-5",
+        "maintenance": {
+          "date": "2023-11-12",
+          "description": "Full service including alignment"
+        },
+        "notes": "Vehicle feels smoother after alignment"
+      },
+      "{\n  \"vehicle\": \"Mazda CX-5\",\n  \"maintenance\": {\n    \"date\": \"2023-11-12\",\n    \"description\": \"Full service \" + \"including alignment\"\n  },\n  \"notes\": \"Vehicle feels smoother after alignment\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E001",
+        "name": "Alice Johnson",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Absent"
+          }
+        ],
+        "notes": "Worked overtime on project X. + Excellent performance"
+      },
+      "{\n  \"employeeId\": \"E001\",\n  \"name\": \"Alice Johnson\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Present\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Absent\"\n    }\n  ],\n  \"notes\": \"Worked overtime on project X.\" +\n  \" Excellent performance\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E002",
+        "name": "Bob Smith",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Late"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Present"
+          }
+        ],
+        "remarks": "Attended leadership training. + Needs improvement in attendance"
+      },
+      "{\n  \"employeeId\": \"E002\",\n  \"name\": \"Bob Smith\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Late\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Present\"\n    }\n  ],\n  \"remarks\": \"Attended leadership training. \" +\n  \"Needs improvement in attendance\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E003",
+        "name": "Cathy Brown",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Present"
+          }
+        ],
+        "comments": "Volunteered for extra shifts. + Positive feedback from team"
+      },
+      "{\n  \"employeeId\": \"E003\",\n  \"name\": \"Cathy Brown\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Present\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Present\"\n    }\n  ],\n  \"comments\": \"Volunteered for extra shifts.\" +\n  \" Positive feedback from team\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E004",
+        "name": "David Wilson",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Absent"
+          }
+        ],
+        "feedback": "Personal reasons for absence. + Will make up time"
+      },
+      "{\n  \"employeeId\": \"E004\",\n  \"name\": \"David Wilson\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Absent\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Absent\"\n    }\n  ],\n  \"feedback\": \"Personal reasons for absence.\" +\n  \" Will make up time\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E005",
+        "name": "Eva Martinez",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Present"
+          }
+        ],
+        "note": "Consistent performer. + Recommended for promotion"
+      },
+      "{\n  \"employeeId\": \"E005\",\n  \"name\": \"Eva Martinez\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Present\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Present\"\n    }\n  ],\n  \"note\": \"Consistent performer. \" +\n  \"Recommended for promotion\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E006",
+        "name": "Frank Adams",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Late"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Late"
+          }
+        ],
+        "observation": "Needs to work on punctuality. + Discussed with supervisor"
+      },
+      "{\n  \"employeeId\": \"E006\",\n  \"name\": \"Frank Adams\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Late\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Late\"\n    }\n  ],\n  \"observation\": \"Needs to work on punctuality. \" +\n  \"Discussed with supervisor\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E007",
+        "name": "Grace Lee",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Present"
+          }
+        ],
+        "feedback": "High dedication to tasks. + Team player"
+      },
+      "{\n  \"employeeId\": \"E007\",\n  \"name\": \"Grace Lee\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Present\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Present\"\n    }\n  ],\n  \"feedback\": \"High dedication to tasks. \" +\n  \"Team player\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E008",
+        "name": "Henry Clark",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Present"
+          }
+        ],
+        "remarks": "Absent due to medical reasons. + Provided doctor's note"
+      },
+      "{\n  \"employeeId\": \"E008\",\n  \"name\": \"Henry Clark\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Absent\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Present\"\n    }\n  ],\n  \"remarks\": \"Absent due to medical reasons. \" +\n  \"Provided doctor's note\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E009",
+        "name": "Ivy White",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Late"
+          }
+        ],
+        "note": "Strong work ethic. + Needs improvement in time management"
+      },
+      "{\n  \"employeeId\": \"E009\",\n  \"name\": \"Ivy White\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Present\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Late\"\n    }\n  ],\n  \"note\": \"Strong work ethic. \" +\n  \"Needs improvement in time management\"\n}"
+    ],
+    [
+      {
+        "employeeId": "E010",
+        "name": "Jack Black",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Absent"
+          }
+        ],
+        "comments": "Absent due to family emergency. + Plans to return next week"
+      },
+      "{\n  \"employeeId\": \"E010\",\n  \"name\": \"Jack Black\",\n  \"attendance\": [\n    {\n      \"date\": \"2023-10-01\",\n      \"status\": \"Absent\"\n    },\n    {\n      \"date\": \"2023-10-02\",\n      \"status\": \"Absent\"\n    }\n  ],\n  \"comments\": \"Absent due to family emergency.\" +\n  \" Plans to return next week\"\n}"
+    ],
+    [
+      {
+        "thread_id": 1,
+        "title": "How to Learn Programming",
+        "posts": [
+          {
+            "post_id": 1,
+            "author": "Alice",
+            "content": "I think the best way to learn programming is practice. Keep coding daily!"
+          },
+          {
+            "post_id": 2,
+            "author": "Bob",
+            "content": "Alice is right! Also, try to build projects, even small ones."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 1,\n    \"title\": \"How to Learn Programming\",\n    \"posts\": [\n        {\n            \"post_id\": 1,\n            \"author\": \"Alice\",\n            \"content\": \"I think the best way to learn programming is practice.\" + \" Keep coding daily!\"\n        },\n        {\n            \"post_id\": 2,\n            \"author\": \"Bob\",\n            \"content\": \"Alice is right!\" + \" Also, try to build projects, even small ones.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 2,
+        "title": "Best Programming Languages in 2023",
+        "posts": [
+          {
+            "post_id": 3,
+            "author": "Cynthia",
+            "content": "Python is still a great choice due to its versatility."
+          },
+          {
+            "post_id": 4,
+            "author": "Dan",
+            "content": "I'm seeing a lot of interest in Rust lately because of its safety and performance."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 2,\n    \"title\": \"Best Programming Languages in 2023\",\n    \"posts\": [\n        {\n            \"post_id\": 3,\n            \"author\": \"Cynthia\",\n            \"content\": \"Python is still a great choice\" + \" due to its versatility.\"\n        },\n        {\n            \"post_id\": 4,\n            \"author\": \"Dan\",\n            \"content\": \"I'm seeing a lot of interest in Rust lately\" + \" because of its safety and performance.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 3,
+        "title": "JavaScript vs. TypeScript",
+        "posts": [
+          {
+            "post_id": 5,
+            "author": "Eve",
+            "content": "TypeScript offers type safety, which can prevent bugs."
+          },
+          {
+            "post_id": 6,
+            "author": "Frank",
+            "content": "JavaScript is more flexible, but TypeScript's types can be really helpful."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 3,\n    \"title\": \"JavaScript vs. TypeScript\",\n    \"posts\": [\n        {\n            \"post_id\": 5,\n            \"author\": \"Eve\",\n            \"content\": \"TypeScript offers type safety,\" + \" which can prevent bugs.\"\n        },\n        {\n            \"post_id\": 6,\n            \"author\": \"Frank\",\n            \"content\": \"JavaScript is more flexible,\" + \" but TypeScript's types can be really helpful.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 4,
+        "title": "Which framework to choose?",
+        "posts": [
+          {
+            "post_id": 7,
+            "author": "Grace",
+            "content": "React has a large community and many resources available."
+          },
+          {
+            "post_id": 8,
+            "author": "Hank",
+            "content": "Vue.js is a good option for projects that need quick turnaround."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 4,\n    \"title\": \"Which framework to choose?\",\n    \"posts\": [\n        {\n            \"post_id\": 7,\n            \"author\": \"Grace\",\n            \"content\": \"React has a large community\" + \" and many resources available.\"\n        },\n        {\n            \"post_id\": 8,\n            \"author\": \"Hank\",\n            \"content\": \"Vue.js is a good option for projects\" + \" that need quick turnaround.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 5,
+        "title": "How to Contribute to Open Source?",
+        "posts": [
+          {
+            "post_id": 9,
+            "author": "Ivy",
+            "content": "Finding a project that aligns with your skills and interests is key."
+          },
+          {
+            "post_id": 10,
+            "author": "Jack",
+            "content": "Don't hesitate to start small, like fixing typos or updating documentation."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 5,\n    \"title\": \"How to Contribute to Open Source?\",\n    \"posts\": [\n        {\n            \"post_id\": 9,\n            \"author\": \"Ivy\",\n            \"content\": \"Finding a project that aligns with your skills\" + \" and interests is key.\"\n        },\n        {\n            \"post_id\": 10,\n            \"author\": \"Jack\",\n            \"content\": \"Don't hesitate to start small,\" + \" like fixing typos or updating documentation.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 6,
+        "title": "Should I learn AI/ML?",
+        "posts": [
+          {
+            "post_id": 11,
+            "author": "Karen",
+            "content": "AI and ML are very much in demand across numerous industries."
+          },
+          {
+            "post_id": 12,
+            "author": "Leo",
+            "content": "With the right resources, you can get started with AI/ML relatively quickly."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 6,\n    \"title\": \"Should I learn AI/ML?\",\n    \"posts\": [\n        {\n            \"post_id\": 11,\n            \"author\": \"Karen\",\n            \"content\": \"AI and ML are very much in demand\" + \" across numerous industries.\"\n        },\n        {\n            \"post_id\": 12,\n            \"author\": \"Leo\",\n            \"content\": \"With the right resources,\" + \" you can get started with AI/ML relatively quickly.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 7,
+        "title": "Remote Work Benefits",
+        "posts": [
+          {
+            "post_id": 13,
+            "author": "Mona",
+            "content": "Remote work allows for a better work-life balance."
+          },
+          {
+            "post_id": 14,
+            "author": "Nate",
+            "content": "It also saves time and money on commuting."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 7,\n    \"title\": \"Remote Work Benefits\",\n    \"posts\": [\n        {\n            \"post_id\": 13,\n            \"author\": \"Mona\",\n            \"content\": \"Remote work allows for a better\" + \" work-life balance.\"\n        },\n        {\n            \"post_id\": 14,\n            \"author\": \"Nate\",\n            \"content\": \"It also saves time\" + \" and money on commuting.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 8,
+        "title": "The Future of Web Development",
+        "posts": [
+          {
+            "post_id": 15,
+            "author": "Olivia",
+            "content": "WebAssembly is likely to play a significant role in web development."
+          },
+          {
+            "post_id": 16,
+            "author": "Paul",
+            "content": "Expect more focus on performance and security enhancements."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 8,\n    \"title\": \"The Future of Web Development\",\n    \"posts\": [\n        {\n            \"post_id\": 15,\n            \"author\": \"Olivia\",\n            \"content\": \"WebAssembly is likely to play a significant role\" + \" in web development.\"\n        },\n        {\n            \"post_id\": 16,\n            \"author\": \"Paul\",\n            \"content\": \"Expect more focus on performance\" + \" and security enhancements.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 9,
+        "title": "Learning Data Structures",
+        "posts": [
+          {
+            "post_id": 17,
+            "author": "Quinn",
+            "content": "Understanding data structures is fundamental to solving complex problems."
+          },
+          {
+            "post_id": 18,
+            "author": "Rita",
+            "content": "Start with basics like arrays, lists, and then move to trees and graphs."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 9,\n    \"title\": \"Learning Data Structures\",\n    \"posts\": [\n        {\n            \"post_id\": 17,\n            \"author\": \"Quinn\",\n            \"content\": \"Understanding data structures is fundamental\" + \" to solving complex problems.\"\n        },\n        {\n            \"post_id\": 18,\n            \"author\": \"Rita\",\n            \"content\": \"Start with basics like arrays, lists,\" + \" and then move to trees and graphs.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 10,
+        "title": "Benefits of Pair Programming",
+        "posts": [
+          {
+            "post_id": 19,
+            "author": "Sam",
+            "content": "Pair programming can lead to better code quality and shared knowledge."
+          },
+          {
+            "post_id": 20,
+            "author": "Tina",
+            "content": "It also can be a great way to onboard new team members."
+          }
+        ]
+      },
+      "{\n    \"thread_id\": 10,\n    \"title\": \"Benefits of Pair Programming\",\n    \"posts\": [\n        {\n            \"post_id\": 19,\n            \"author\": \"Sam\",\n            \"content\": \"Pair programming can lead to better code quality\" + \" and shared knowledge.\"\n        },\n        {\n            \"post_id\": 20,\n            \"author\": \"Tina\",\n            \"content\": \"It also can be a great way\" + \" to onboard new team members.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Downtown Branch",
+        "trafficData": [
+          {
+            "date": "2023-10-01",
+            "footTraffic": 1500,
+            "notes": "Weekend sale attracted more customers than usual."
+          },
+          {
+            "date": "2023-10-02",
+            "footTraffic": 1200,
+            "notes": "Regular weekday foot traffic."
+          }
+        ]
+      },
+      "{\n    \"store\": \"Downtown Branch\",\n    \"trafficData\": [\n        {\n            \"date\": \"2023-10-01\",\n            \"footTraffic\": 1500,\n            \"notes\": \"Weekend sale attracted \" + \"more customers than usual.\"\n        },\n        {\n            \"date\": \"2023-10-02\",\n            \"footTraffic\": 1200,\n            \"notes\": \"Regular weekday \" + \"foot traffic.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Uptown Branch",
+        "trafficAnalysis": {
+          "peakDay": "Saturday",
+          "averageDailyVisitors": 900,
+          "comments": "The store attracts more shoppers on weekends."
+        }
+      },
+      "{\n    \"store\": \"Uptown Branch\",\n    \"trafficAnalysis\": {\n        \"peakDay\": \"Saturday\",\n        \"averageDailyVisitors\": 900,\n        \"comments\": \"The store attracts \" + \"more shoppers on weekends.\"\n    }\n}"
+    ],
+    [
+      {
+        "store": "Suburban Branch",
+        "monthlyReport": [
+          {
+            "month": "September",
+            "totalVisitors": 27000,
+            "specialEvents": "Back to school promotions"
+          },
+          {
+            "month": "October",
+            "totalVisitors": 29000,
+            "specialEvents": "Halloween decorations and sales"
+          }
+        ]
+      },
+      "{\n    \"store\": \"Suburban Branch\",\n    \"monthlyReport\": [\n        {\n            \"month\": \"September\",\n            \"totalVisitors\": 27000,\n            \"specialEvents\": \"Back to school \" + \"promotions\"\n        },\n        {\n            \"month\": \"October\",\n            \"totalVisitors\": 29000,\n            \"specialEvents\": \"Halloween decorations \" + \"and sales\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Central Mall",
+        "visitorPatterns": {
+          "morning": 300,
+          "afternoon": 700,
+          "evening": 500,
+          "remarks": "Evening sessions are popular due to dinner offers."
+        }
+      },
+      "{\n    \"store\": \"Central Mall\",\n    \"visitorPatterns\": {\n        \"morning\": 300,\n        \"afternoon\": 700,\n        \"evening\": 500,\n        \"remarks\": \"Evening sessions are \" + \"popular due to dinner offers.\"\n    }\n}"
+    ],
+    [
+      {
+        "store": "New Town Plaza",
+        "dailyFootTraffic": [
+          {
+            "day": "Monday",
+            "visitorCount": 800,
+            "observation": "Slow start to the week, as usual."
+          },
+          {
+            "day": "Tuesday",
+            "visitorCount": 950,
+            "observation": "Increased due to special promotions."
+          }
+        ]
+      },
+      "{\n    \"store\": \"New Town Plaza\",\n    \"dailyFootTraffic\": [\n        {\n            \"day\": \"Monday\",\n            \"visitorCount\": 800,\n            \"observation\": \"Slow start to the week, \" + \"as usual.\"\n        },\n        {\n            \"day\": \"Tuesday\",\n            \"visitorCount\": 950,\n            \"observation\": \"Increased due to \" + \"special promotions.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Riverside Outlet",
+        "weeklySummary": {
+          "highestVisitorDay": "Friday",
+          "lowestVisitorDay": "Sunday",
+          "summaryNote": "Fridays attract more due to end of week sales."
+        }
+      },
+      "{\n    \"store\": \"Riverside Outlet\",\n    \"weeklySummary\": {\n        \"highestVisitorDay\": \"Friday\",\n        \"lowestVisitorDay\": \"Sunday\",\n        \"summaryNote\": \"Fridays attract more \" + \"due to end of week sales.\"\n    }\n}"
+    ],
+    [
+      {
+        "store": "Lakeside Plaza",
+        "eventImpact": {
+          "event": "July 4th Sale",
+          "visitorIncrease": 30,
+          "eventDetails": "The July 4th Sale increased foot traffic significantly."
+        }
+      },
+      "{\n    \"store\": \"Lakeside Plaza\",\n    \"eventImpact\": {\n        \"event\": \"July 4th Sale\",\n        \"visitorIncrease\": 30,\n        \"eventDetails\": \"The July 4th Sale \" + \"increased foot traffic significantly.\"\n    }\n}"
+    ],
+    [
+      {
+        "store": "Greenwood Store",
+        "visitorDemographics": {
+          "ageGroup": "25-34",
+          "percentage": 45,
+          "comments": "This age group is the most frequent visitors."
+        }
+      },
+      "{\n    \"store\": \"Greenwood Store\",\n    \"visitorDemographics\": {\n        \"ageGroup\": \"25-34\",\n        \"percentage\": 45,\n        \"comments\": \"This age group is \" + \"the most frequent visitors.\"\n    }\n}"
+    ],
+    [
+      {
+        "store": "City Center",
+        "holidayTraffic": [
+          {
+            "holiday": "Christmas",
+            "visitorCount": 5000,
+            "notes": "Peak season with festive shopping."
+          },
+          {
+            "holiday": "New Year",
+            "visitorCount": 4800,
+            "notes": "Slightly lower than Christmas but still high."
+          }
+        ]
+      },
+      "{\n    \"store\": \"City Center\",\n    \"holidayTraffic\": [\n        {\n            \"holiday\": \"Christmas\",\n            \"visitorCount\": 5000,\n            \"notes\": \"Peak season with \" + \"festive shopping.\"\n        },\n        {\n            \"holiday\": \"New Year\",\n            \"visitorCount\": 4800,\n            \"notes\": \"Slightly lower than \" + \"Christmas but still high.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "store": "Beachside Mall",
+        "seasonalTrends": {
+          "summer": 4000,
+          "winter": 3500,
+          "description": "Summer months see an increase due to tourists."
+        }
+      },
+      "{\n    \"store\": \"Beachside Mall\",\n    \"seasonalTrends\": {\n        \"summer\": 4000,\n        \"winter\": 3500,\n        \"description\": \"Summer months see \" + \"an increase due to tourists.\"\n    }\n}"
+    ],
+    [
+      {
+        "playlistName": "Chill Vibes",
+        "description": "A collection of relaxing tunes to unwind and de-stress.",
+        "songs": [
+          {
+            "title": "Calm Waters",
+            "artist": "Smooth Sailors",
+            "duration": "4:32"
+          },
+          {
+            "title": "Sunny Days",
+            "artist": "Bright Horizons",
+            "duration": "3:45"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Chill Vibes\",\n    \"description\": \"A collection of relaxing tunes to unwind \" + \"and de-stress.\",\n    \"songs\": [\n        {\n            \"title\": \"Calm Waters\",\n            \"artist\": \"Smooth Sailors\",\n            \"duration\": \"4:32\"\n        },\n        {\n            \"title\": \"Sunny Days\",\n            \"artist\": \"Bright Horizons\",\n            \"duration\": \"3:45\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Workout Mix",
+        "description": "High-energy tracks to power your exercise sessions.",
+        "songs": [
+          {
+            "title": "Pump It Up",
+            "artist": "Fitness Beats",
+            "duration": "5:01"
+          },
+          {
+            "title": "Run Fast",
+            "artist": "Speedsters",
+            "duration": "4:20"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Workout Mix\",\n    \"description\": \"High-energy tracks to power your \" + \"exercise sessions.\",\n    \"songs\": [\n        {\n            \"title\": \"Pump It Up\",\n            \"artist\": \"Fitness Beats\",\n            \"duration\": \"5:01\"\n        },\n        {\n            \"title\": \"Run Fast\",\n            \"artist\": \"Speedsters\",\n            \"duration\": \"4:20\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Road Trip",
+        "description": "Perfect tunes to accompany you on your journey.",
+        "songs": [
+          {
+            "title": "Highway Star",
+            "artist": "Rock Riders",
+            "duration": "6:43"
+          },
+          {
+            "title": "Open Roads",
+            "artist": "Freedom Band",
+            "duration": "4:56"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Road Trip\",\n    \"description\": \"Perfect tunes to accompany you \" + \"on your journey.\",\n    \"songs\": [\n        {\n            \"title\": \"Highway Star\",\n            \"artist\": \"Rock Riders\",\n            \"duration\": \"6:43\"\n        },\n        {\n            \"title\": \"Open Roads\",\n            \"artist\": \"Freedom Band\",\n            \"duration\": \"4:56\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Party Hits",
+        "description": "Dance tracks to keep the party going all night.",
+        "songs": [
+          {
+            "title": "Dance All Night",
+            "artist": "DJ Party",
+            "duration": "5:22"
+          },
+          {
+            "title": "Electric Groove",
+            "artist": "The Electros",
+            "duration": "6:10"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Party Hits\",\n    \"description\": \"Dance tracks to keep the party \" + \"going all night.\",\n    \"songs\": [\n        {\n            \"title\": \"Dance All Night\",\n            \"artist\": \"DJ Party\",\n            \"duration\": \"5:22\"\n        },\n        {\n            \"title\": \"Electric Groove\",\n            \"artist\": \"The Electros\",\n            \"duration\": \"6:10\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Acoustic Calm",
+        "description": "Soothing acoustic melodies for peaceful moments.",
+        "songs": [
+          {
+            "title": "Gentle Strum",
+            "artist": "Acoustic Duo",
+            "duration": "3:36"
+          },
+          {
+            "title": "Quiet Strings",
+            "artist": "Harmony Players",
+            "duration": "4:12"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Acoustic Calm\",\n    \"description\": \"Soothing acoustic melodies for \" + \"peaceful moments.\",\n    \"songs\": [\n        {\n            \"title\": \"Gentle Strum\",\n            \"artist\": \"Acoustic Duo\",\n            \"duration\": \"3:36\"\n        },\n        {\n            \"title\": \"Quiet Strings\",\n            \"artist\": \"Harmony Players\",\n            \"duration\": \"4:12\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Jazz Nights",
+        "description": "Smooth jazz tracks for a relaxing evening.",
+        "songs": [
+          {
+            "title": "Evening Breeze",
+            "artist": "Jazz Ensemble",
+            "duration": "5:45"
+          },
+          {
+            "title": "Nightfall",
+            "artist": "Smooth Jazz",
+            "duration": "6:30"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Jazz Nights\",\n    \"description\": \"Smooth jazz tracks for a \" + \"relaxing evening.\",\n    \"songs\": [\n        {\n            \"title\": \"Evening Breeze\",\n            \"artist\": \"Jazz Ensemble\",\n            \"duration\": \"5:45\"\n        },\n        {\n            \"title\": \"Nightfall\",\n            \"artist\": \"Smooth Jazz\",\n            \"duration\": \"6:30\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Indie Discoveries",
+        "description": "Fresh indie tunes from emerging artists.",
+        "songs": [
+          {
+            "title": "New Horizons",
+            "artist": "Indie Breakthrough",
+            "duration": "4:18"
+          },
+          {
+            "title": "Uncharted",
+            "artist": "The Explorers",
+            "duration": "5:30"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Indie Discoveries\",\n    \"description\": \"Fresh indie tunes from \" + \"emerging artists.\",\n    \"songs\": [\n        {\n            \"title\": \"New Horizons\",\n            \"artist\": \"Indie Breakthrough\",\n            \"duration\": \"4:18\"\n        },\n        {\n            \"title\": \"Uncharted\",\n            \"artist\": \"The Explorers\",\n            \"duration\": \"5:30\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Classical Moods",
+        "description": "Timeless classical music for a refined atmosphere.",
+        "songs": [
+          {
+            "title": "Moonlight Sonata",
+            "artist": "Beethoven",
+            "duration": "7:15"
+          },
+          {
+            "title": "Four Seasons: Spring",
+            "artist": "Vivaldi",
+            "duration": "3:25"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Classical Moods\",\n    \"description\": \"Timeless classical music for \" + \"a refined atmosphere.\",\n    \"songs\": [\n        {\n            \"title\": \"Moonlight Sonata\",\n            \"artist\": \"Beethoven\",\n            \"duration\": \"7:15\"\n        },\n        {\n            \"title\": \"Four Seasons: Spring\",\n            \"artist\": \"Vivaldi\",\n            \"duration\": \"3:25\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Electronic Waves",
+        "description": "A fusion of electronic beats and synth melodies.",
+        "songs": [
+          {
+            "title": "Electric Dreams",
+            "artist": "Synth Masters",
+            "duration": "5:54"
+          },
+          {
+            "title": "Digital Pulse",
+            "artist": "Beat Architects",
+            "duration": "4:40"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Electronic Waves\",\n    \"description\": \"A fusion of electronic beats \" + \"and synth melodies.\",\n    \"songs\": [\n        {\n            \"title\": \"Electric Dreams\",\n            \"artist\": \"Synth Masters\",\n            \"duration\": \"5:54\"\n        },\n        {\n            \"title\": \"Digital Pulse\",\n            \"artist\": \"Beat Architects\",\n            \"duration\": \"4:40\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Reggae Rhythms",
+        "description": "Feel the island vibes with these reggae classics.",
+        "songs": [
+          {
+            "title": "One Love",
+            "artist": "Bob Marley",
+            "duration": "3:52"
+          },
+          {
+            "title": "Redemption Song",
+            "artist": "Bob Marley",
+            "duration": "4:17"
+          }
+        ]
+      },
+      "{\n    \"playlistName\": \"Reggae Rhythms\",\n    \"description\": \"Feel the island vibes with \" + \"these reggae classics.\",\n    \"songs\": [\n        {\n            \"title\": \"One Love\",\n            \"artist\": \"Bob Marley\",\n            \"duration\": \"3:52\"\n        },\n        {\n            \"title\": \"Redemption Song\",\n            \"artist\": \"Bob Marley\",\n            \"duration\": \"4:17\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardID": "1234567890",
+        "usageHistory": [
+          {
+            "date": "2023-09-15",
+            "time": "08:30",
+            "station": "Central",
+            "action": "Entry"
+          },
+          {
+            "date": "2023-09-15",
+            "time": "09:00",
+            "station": "North",
+            "action": "Exit"
+          }
+        ]
+      },
+      "{\n    \"cardID\": \"1234567890\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-09-15\",\n            \"time\": \"08:30\",\n            \"station\": \"Central\",\n            \"action\": \"Entry\"\n        },\n        {\n            \"date\": \"2023-09-15\",\n            \"time\": \"09:00\",\n            \"station\": \"North\",\n            \"action\": \"Ex\" + \"it\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardOwner": "John Doe",
+        "balance": 25.5,
+        "transactions": [
+          {
+            "transactionID": "TX1001",
+            "amount": 2.75,
+            "date": "2023-09-16",
+            "type": "Bus fare"
+          },
+          {
+            "transactionID": "TX1002",
+            "amount": 2.5,
+            "date": "2023-09-17",
+            "type": "Subway fare"
+          }
+        ]
+      },
+      "{\n    \"cardOwner\": \"John Doe\",\n    \"balance\": 25.50,\n    \"transactions\": [\n        {\n            \"transactionID\": \"TX1001\",\n            \"amount\": 2.75,\n            \"date\": \"2023-09-16\",\n            \"type\": \"Bus fare\"\n        },\n        {\n            \"transactionID\": \"TX1002\",\n            \"amount\": 2.50,\n            \"date\": \"2023-09-17\",\n            \"type\": \"Sub\" + \"way fare\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "travelCard": {
+          "id": "A1B2C3D4",
+          "issuedDate": "2023-01-10",
+          "expiryDate": "2024-01-09"
+        },
+        "travelLogs": [
+          {
+            "date": "2023-07-12",
+            "route": "Downtown Express",
+            "fare": 3.0
+          }
+        ]
+      },
+      "{\n    \"travelCard\": {\n        \"id\": \"A1B2C3D4\",\n        \"issuedDate\": \"2023-01-10\",\n        \"expiryDate\": \"2024-01-09\"\n    },\n    \"travelLogs\": [\n        {\n            \"date\": \"2023-07-12\",\n            \"route\": \"Downtown\" + \" Express\",\n            \"fare\": 3.00\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "userID": "U12345",
+        "lastUsed": "2023-08-21",
+        "stationsVisited": [
+          "Central",
+          "West",
+          "East"
+        ]
+      },
+      "{\n    \"userID\": \"U12345\",\n    \"lastUsed\": \"2023-08-21\",\n    \"stationsVisited\": [\n        \"Central\",\n        \"West\",\n        \"Ea\" + \"st\"\n    ]\n}"
+    ],
+    [
+      {
+        "ticketType": "Monthly Pass",
+        "validUntil": "2023-12-31",
+        "details": {
+          "price": 75.0,
+          "zonesCovered": [
+            "Zone 1",
+            "Zone 2",
+            "Zone 3"
+          ]
+        }
+      },
+      "{\n    \"ticketType\": \"Monthly Pass\",\n    \"validUntil\": \"2023-12-31\",\n    \"details\": {\n        \"price\": 75.00,\n        \"zonesCovered\": [\n            \"Zone 1\",\n            \"Zone 2\",\n            \"Zone\" + \" 3\"\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "passengerName": "Alice Johnson",
+        "recentTrips": [
+          {
+            "date": "2023-09-01",
+            "startStation": "East",
+            "endStation": "West",
+            "fare": 2.75
+          },
+          {
+            "date": "2023-09-02",
+            "startStation": "South",
+            "endStation": "Central",
+            "fare": 3.0
+          }
+        ]
+      },
+      "{\n    \"passengerName\": \"Alice Johnson\",\n    \"recentTrips\": [\n        {\n            \"date\": \"2023-09-01\",\n            \"startStation\": \"East\",\n            \"endStation\": \"West\",\n            \"fare\": 2.75\n        },\n        {\n            \"date\": \"2023-09-02\",\n            \"startStation\": \"South\",\n            \"endStation\": \"Cen\" + \"tral\",\n            \"fare\": 3.00\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardNumber": "9876543210",
+        "activeStatus": true,
+        "holderInformation": {
+          "name": "Michael Smith",
+          "contact": "michael.smith@example.com"
+        }
+      },
+      "{\n    \"cardNumber\": \"9876543210\",\n    \"activeStatus\": true,\n    \"holderInformation\": {\n        \"name\": \"Michael Smith\",\n        \"contact\": \"michael.\" + \"smith@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "tripID": "TRP456789",
+        "journeyDetails": {
+          "startTime": "07:45",
+          "endTime": "08:30",
+          "routeTaken": "Green Line"
+        }
+      },
+      "{\n    \"tripID\": \"TRP456789\",\n    \"journeyDetails\": {\n        \"startTime\": \"07:45\",\n        \"endTime\": \"08:30\",\n        \"routeTaken\": \"Green\" + \" Line\"\n    }\n}"
+    ],
+    [
+      {
+        "accountBalance": 45.25,
+        "recentActivity": [
+          {
+            "description": "Loaded funds",
+            "amount": 20.0,
+            "date": "2023-08-30"
+          },
+          {
+            "description": "Bus fare deduction",
+            "amount": 2.75,
+            "date": "2023-09-01"
+          }
+        ]
+      },
+      "{\n    \"accountBalance\": 45.25,\n    \"recentActivity\": [\n        {\n            \"description\": \"Loaded funds\",\n            \"amount\": 20.00,\n            \"date\": \"2023-08-30\"\n        },\n        {\n            \"description\": \"Bus fare\" + \" deduction\",\n            \"amount\": 2.75,\n            \"date\": \"2023-09-01\"\n        }\n    ]\n}"
+    ]
+  ]
+}

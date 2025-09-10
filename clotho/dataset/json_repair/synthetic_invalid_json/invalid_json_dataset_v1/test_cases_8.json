@@ -1,0 +1,253 @@
+{
+  "possible_fix": "Replace special white space characters with regular spaces",
+  "test_cases": [
+    [
+      {
+        "transactions": [
+          {
+            "transaction_id": "TX123456",
+            "amount": 250.75,
+            "currency": "USD",
+            "timestamp": "2023-10-01T14:48:00Z"
+          },
+          {
+            "transaction_id": "TX123457",
+            "amount": 520.0,
+            "currency": "EUR",
+            "timestamp": "2023-10-01T15:00:00Z"
+          }
+        ]
+      },
+      "{\n  \"transactions\": [\n    {\n      \"transaction_id\": \"TX123456\",\n      \"amount\": 250.75,\n      \"currency\": \"USD\",\n      \"timestamp\": \"2023-10-01T14:48:00Z\"\n    },\n    {\n      \"transaction_id\": \"TX123457\",\n      \"amount\": 520.00,\n      \"currency\": \"EUR\",\n      \"timestamp\": \"2023-10-01T15:00:00Z\"\u200b\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "account": {
+          "account_id": "ACC1001",
+          "owner": "Alice Smith",
+          "transactions": [
+            {
+              "transaction_id": "TX1001",
+              "amount": 100.5,
+              "currency": "USD",
+              "timestamp": "2023-10-02T09:30:00Z"
+            },
+            {
+              "transaction_id": "TX1002",
+              "amount": -50.75,
+              "currency": "USD",
+              "timestamp": "2023-10-02T10:00:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"account\": {\n    \"account_id\": \"ACC1001\",\n    \"owner\": \"Alice Smith\",\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX1001\",\n        \"amount\": 100.50,\n        \"currency\": \"USD\",\n        \"timestamp\": \"2023-10-02T09:30:00Z\"\n      },\n      {\n        \"transaction_id\": \"TX1002\",\n        \"amount\": -50.75,\n        \"currency\": \"USD\",\n        \"timestamp\": \"2023-10-02T10:00:00Z\"\ufeff\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "summary": {
+          "total_income": 5000,
+          "total_expense": 3200,
+          "currency": "GBP"
+        },
+        "transactions": [
+          {
+            "transaction_id": "TX2001",
+            "amount": 1500,
+            "currency": "GBP",
+            "timestamp": "2023-10-05T13:15:00Z"
+          },
+          {
+            "transaction_id": "TX2002",
+            "amount": 1700,
+            "currency": "GBP",
+            "timestamp": "2023-10-05T16:45:00Z"
+          }
+        ]
+      },
+      "{\n  \"summary\": {\n    \"total_income\": 5000,\n    \"total_expense\": 3200,\n    \"currency\": \"GBP\"\n  },\n  \"transactions\": [\n    {\n      \"transaction_id\": \"TX2001\",\n      \"amount\": 1500,\n      \"currency\": \"GBP\",\n      \"timestamp\": \"2023-10-05T13:15:00Z\"\n    },\n    {\n      \"transaction_id\": \"TX2002\",\n      \"amount\": 1700,\n      \"currency\": \"GBP\",\n      \"timestamp\": \"2023-10-05T16:45:00Z\"\u00a0\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user": {
+          "user_id": "USER100",
+          "name": "John Doe",
+          "transactions": [
+            {
+              "transaction_id": "TX3001",
+              "amount": 200,
+              "currency": "CAD",
+              "timestamp": "2023-10-06T11:00:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"user\": {\n    \"user_id\": \"USER100\",\n    \"name\": \"John Doe\",\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX3001\",\n        \"amount\": 200,\n        \"currency\": \"CAD\",\n        \"timestamp\": \"2023-10-06T11:00:00Z\"\u2009\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "transaction_summary": {
+          "total_transactions": 3,
+          "total_amount": 850.25,
+          "currency": "AUD"
+        },
+        "transactions": [
+          {
+            "transaction_id": "TX4001",
+            "amount": 300.0,
+            "currency": "AUD",
+            "timestamp": "2023-10-07T08:30:00Z"
+          },
+          {
+            "transaction_id": "TX4002",
+            "amount": 550.25,
+            "currency": "AUD",
+            "timestamp": "2023-10-07T09:45:00Z"
+          }
+        ]
+      },
+      "{\n  \"transaction_summary\": {\n    \"total_transactions\": 3,\n    \"total_amount\": 850.25,\n    \"currency\": \"AUD\"\n  },\n  \"transactions\": [\n    {\n      \"transaction_id\": \"TX4001\",\n      \"amount\": 300.00,\n      \"currency\": \"AUD\",\n      \"timestamp\": \"2023-10-07T08:30:00Z\"\n    },\n    {\n      \"transaction_id\": \"TX4002\",\n      \"amount\": 550.25,\n      \"currency\": \"AUD\",\n      \"timestamp\": \"2023-10-07T09:45:00Z\"\u2007\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "bank": {
+          "name": "Global Bank",
+          "branch": "Downtown",
+          "transactions": [
+            {
+              "transaction_id": "TX5001",
+              "amount": 1000.0,
+              "currency": "JPY",
+              "timestamp": "2023-10-08T10:15:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"bank\": {\n    \"name\": \"Global Bank\",\n    \"branch\": \"Downtown\",\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX5001\",\n        \"amount\": 1000.00,\n        \"currency\": \"JPY\",\n        \"timestamp\": \"2023-10-08T10:15:00Z\"\u202f\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "financial_report": {
+          "year": 2023,
+          "quarter": 3,
+          "transactions": [
+            {
+              "transaction_id": "TX6001",
+              "amount": 450.0,
+              "currency": "INR",
+              "timestamp": "2023-10-09T12:00:00Z"
+            },
+            {
+              "transaction_id": "TX6002",
+              "amount": 150.5,
+              "currency": "INR",
+              "timestamp": "2023-10-09T13:30:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"financial_report\": {\n    \"year\": 2023,\n    \"quarter\": 3,\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX6001\",\n        \"amount\": 450.00,\n        \"currency\": \"INR\",\n        \"timestamp\": \"2023-10-09T12:00:00Z\"\n      },\n      {\n        \"transaction_id\": \"TX6002\",\n        \"amount\": 150.50,\n        \"currency\": \"INR\",\n        \"timestamp\": \"2023-10-09T13:30:00Z\"\u2006\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "business_account": {
+          "business_id": "BIZ101",
+          "name": "Tech Solutions",
+          "transactions": [
+            {
+              "transaction_id": "TX7001",
+              "amount": 750.0,
+              "currency": "CHF",
+              "timestamp": "2023-10-10T11:45:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"business_account\": {\n    \"business_id\": \"BIZ101\",\n    \"name\": \"Tech Solutions\",\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX7001\",\n        \"amount\": 750.00,\n        \"currency\": \"CHF\",\n        \"timestamp\": \"2023-10-10T11:45:00Z\"\u2000\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "payment_history": {
+          "customer_id": "CUST2001",
+          "total_payments": 5,
+          "transactions": [
+            {
+              "transaction_id": "TX8001",
+              "amount": 100.0,
+              "currency": "NOK",
+              "timestamp": "2023-10-11T10:00:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"payment_history\": {\n    \"customer_id\": \"CUST2001\",\n    \"total_payments\": 5,\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX8001\",\n        \"amount\": 100.00,\n        \"currency\": \"NOK\",\n        \"timestamp\": \"2023-10-11T10:00:00Z\"\u2009\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "investment_account": {
+          "account_number": "INV1234",
+          "portfolio_value": 20000.0,
+          "currency": "SGD",
+          "transactions": [
+            {
+              "transaction_id": "TX9001",
+              "amount": 500.0,
+              "currency": "SGD",
+              "timestamp": "2023-10-12T09:00:00Z"
+            }
+          ]
+        }
+      },
+      "{\n  \"investment_account\": {\n    \"account_number\": \"INV1234\",\n    \"portfolio_value\": 20000.00,\n    \"currency\": \"SGD\",\n    \"transactions\": [\n      {\n        \"transaction_id\": \"TX9001\",\n        \"amount\": 500.00,\n        \"currency\": \"SGD\",\n        \"timestamp\": \"2023-10-12T09:00:00Z\"\u202f\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "meal": "Breakfast",
+        "items": [
+          "Oatmeal",
+          "Banana",
+          "Almonds"
+        ],
+        "totalCalories": 350
+      },
+      "{\n    \"meal\": \"Breakfast\",\n    \"items\": [\"Oatmeal\", \"Banana\", \"Almonds\"],\n    \"totalCalories\": 350\\u00A0\n}"
+    ],
+    [
+      {
+        "user": "Alex Roe",
+        "fitnessGoals": [
+          "Lose weight",
+          "Build muscle"
+        ],
+        "weeklyProgress": {
+          "monday": {
+            "steps": 8000,
+            "caloriesBurned": 600
+          },
+          "friday": {
+            "steps": 10000,
+            "caloriesBurned": 750
+          }
+        }
+      },
+      "{\n    \"user\": \"Alex\\u2028Roe\",\n    \"fitnessGoals\": [\"Lose weight\", \"Build muscle\"],\n    \"weeklyProgress\": {\n        \"monday\": {\"steps\": 8000, \"caloriesBurned\": 600},\n        \"friday\": {\"steps\": 10000,\\u2028\"caloriesBurned\": 750}\n    }\n}"
+    ],
+    [
+      {
+        "user": "Tom Brown",
+        "weightLog": [
+          {
+            "date": "2023-01-01",
+            "weight": 180
+          },
+          {
+            "date": "2023-02-01",
+            "weight": 178
+          }
+        ],
+        "goalWeight": 170
+      },
+      "{\n    \"user\": \"Tom\\u3000Brown\",\n    \"weightLog\": [\n        {\"date\": \"2023-01-01\", \"weight\": 180\\u3000},\n        {\"date\": \"2023-02-01\", \"weight\": 178}\n    ],\n    \"goalWeight\": 170\n}"
+    ]
+  ]
+}

@@ -1,0 +1,2677 @@
+{
+  "possible_fix": "Replace JavaScript undefined with null\nExample: { \"key\": undefined } \u2192 { \"key\": null }",
+  "test_cases": [
+    [
+      {
+        "courseName": "Introduction to Programming",
+        "enrollmentStatus": "active",
+        "studentDetails": {
+          "name": "Alice Johnson",
+          "age": 20,
+          "completionCertificate": null
+        }
+      },
+      "{\n    \"courseName\": \"Introduction to Programming\",\n    \"enrollmentStatus\": \"active\",\n    \"studentDetails\": {\n        \"name\": \"Alice Johnson\",\n        \"age\": 20,\n        \"completionCertificate\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Data Science 101",
+        "enrollmentStatus": "completed",
+        "studentDetails": {
+          "name": "Bob Smith",
+          "age": 25,
+          "finalGrade": null
+        }
+      },
+      "{\n    \"courseName\": \"Data Science 101\",\n    \"enrollmentStatus\": \"completed\",\n    \"studentDetails\": {\n        \"name\": \"Bob Smith\",\n        \"age\": 25,\n        \"finalGrade\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Web Development Basics",
+        "enrollmentStatus": "waitlisted",
+        "studentDetails": {
+          "name": "Charlie Brown",
+          "age": 22,
+          "paymentStatus": null
+        }
+      },
+      "{\n    \"courseName\": \"Web Development Basics\",\n    \"enrollmentStatus\": \"waitlisted\",\n    \"studentDetails\": {\n        \"name\": \"Charlie Brown\",\n        \"age\": 22,\n        \"paymentStatus\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Advanced Mathematics",
+        "enrollmentStatus": "active",
+        "studentDetails": {
+          "name": "Diana Prince",
+          "age": 24,
+          "scholarship": null
+        }
+      },
+      "{\n    \"courseName\": \"Advanced Mathematics\",\n    \"enrollmentStatus\": \"active\",\n    \"studentDetails\": {\n        \"name\": \"Diana Prince\",\n        \"age\": 24,\n        \"scholarship\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Physics for Beginners",
+        "enrollmentStatus": "completed",
+        "studentDetails": {
+          "name": "Ella Fitzgerald",
+          "age": 21,
+          "projectSubmitted": null
+        }
+      },
+      "{\n    \"courseName\": \"Physics for Beginners\",\n    \"enrollmentStatus\": \"completed\",\n    \"studentDetails\": {\n        \"name\": \"Ella Fitzgerald\",\n        \"age\": 21,\n        \"projectSubmitted\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "History 101",
+        "enrollmentStatus": "dropped",
+        "studentDetails": {
+          "name": "Frank Ocean",
+          "age": 23,
+          "refundProcessed": null
+        }
+      },
+      "{\n    \"courseName\": \"History 101\",\n    \"enrollmentStatus\": \"dropped\",\n    \"studentDetails\": {\n        \"name\": \"Frank Ocean\",\n        \"age\": 23,\n        \"refundProcessed\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Graphic Design Basics",
+        "enrollmentStatus": "active",
+        "studentDetails": {
+          "name": "Grace Hopper",
+          "age": 28,
+          "materialsAccess": null
+        }
+      },
+      "{\n    \"courseName\": \"Graphic Design Basics\",\n    \"enrollmentStatus\": \"active\",\n    \"studentDetails\": {\n        \"name\": \"Grace Hopper\",\n        \"age\": 28,\n        \"materialsAccess\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Artificial Intelligence",
+        "enrollmentStatus": "active",
+        "studentDetails": {
+          "name": "Hank Schrader",
+          "age": 29,
+          "AIProjectApproved": null
+        }
+      },
+      "{\n    \"courseName\": \"Artificial Intelligence\",\n    \"enrollmentStatus\": \"active\",\n    \"studentDetails\": {\n        \"name\": \"Hank Schrader\",\n        \"age\": 29,\n        \"AIProjectApproved\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Cybersecurity Essentials",
+        "enrollmentStatus": "completed",
+        "studentDetails": {
+          "name": "Ivy League",
+          "age": 27,
+          "securityClearance": null
+        }
+      },
+      "{\n    \"courseName\": \"Cybersecurity Essentials\",\n    \"enrollmentStatus\": \"completed\",\n    \"studentDetails\": {\n        \"name\": \"Ivy League\",\n        \"age\": 27,\n        \"securityClearance\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "courseName": "Philosophy of Mind",
+        "enrollmentStatus": "dropped",
+        "studentDetails": {
+          "name": "Jack Sparrow",
+          "age": 30,
+          "feedbackProvided": null
+        }
+      },
+      "{\n    \"courseName\": \"Philosophy of Mind\",\n    \"enrollmentStatus\": \"dropped\",\n    \"studentDetails\": {\n        \"name\": \"Jack Sparrow\",\n        \"age\": 30,\n        \"feedbackProvided\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "applicantName": "John Doe",
+        "loanAmount": 150000,
+        "loanPurpose": "Home Purchase",
+        "employmentStatus": "Full-time",
+        "creditScore": 720,
+        "coApplicant": null
+      },
+      "{\n  \"applicantName\": \"John Doe\",\n  \"loanAmount\": 150000,\n  \"loanPurpose\": \"Home Purchase\",\n  \"employmentStatus\": \"Full-time\",\n  \"creditScore\": 720,\n  \"coApplicant\": undefined\n}"
+    ],
+    [
+      {
+        "applicantId": "A12345",
+        "requestedAmount": 50000,
+        "loanTerm": 36,
+        "interestRate": 5.5,
+        "collateral": "Car",
+        "partnerApplicant": null
+      },
+      "{\n  \"applicantId\": \"A12345\",\n  \"requestedAmount\": 50000,\n  \"loanTerm\": 36,\n  \"interestRate\": 5.5,\n  \"collateral\": \"Car\",\n  \"partnerApplicant\": undefined\n}"
+    ],
+    [
+      {
+        "applicantName": "Jane Smith",
+        "loanAmount": 200000,
+        "loanPurpose": "Business Expansion",
+        "employmentStatus": "Self-employed",
+        "creditScore": 650,
+        "previousDefaults": null
+      },
+      "{\n  \"applicantName\": \"Jane Smith\",\n  \"loanAmount\": 200000,\n  \"loanPurpose\": \"Business Expansion\",\n  \"employmentStatus\": \"Self-employed\",\n  \"creditScore\": 650,\n  \"previousDefaults\": undefined\n}"
+    ],
+    [
+      {
+        "applicantId": "B67890",
+        "requestedAmount": 10000,
+        "loanTerm": 12,
+        "interestRate": 3.9,
+        "collateral": "None",
+        "guarantor": null
+      },
+      "{\n  \"applicantId\": \"B67890\",\n  \"requestedAmount\": 10000,\n  \"loanTerm\": 12,\n  \"interestRate\": 3.9,\n  \"collateral\": \"None\",\n  \"guarantor\": undefined\n}"
+    ],
+    [
+      {
+        "applicantName": "Michael Johnson",
+        "loanAmount": 75000,
+        "loanPurpose": "Car Purchase",
+        "employmentStatus": "Part-time",
+        "creditScore": 690,
+        "cosigner": null
+      },
+      "{\n  \"applicantName\": \"Michael Johnson\",\n  \"loanAmount\": 75000,\n  \"loanPurpose\": \"Car Purchase\",\n  \"employmentStatus\": \"Part-time\",\n  \"creditScore\": 690,\n  \"cosigner\": undefined\n}"
+    ],
+    [
+      {
+        "applicantId": "C11223",
+        "requestedAmount": 30000,
+        "loanTerm": 24,
+        "interestRate": 4.2,
+        "collateral": "Jewelry",
+        "coBorrower": null
+      },
+      "{\n  \"applicantId\": \"C11223\",\n  \"requestedAmount\": 30000,\n  \"loanTerm\": 24,\n  \"interestRate\": 4.2,\n  \"collateral\": \"Jewelry\",\n  \"coBorrower\": undefined\n}"
+    ],
+    [
+      {
+        "applicantName": "Alice Brown",
+        "loanAmount": 500000,
+        "loanPurpose": "Real Estate Investment",
+        "employmentStatus": "Investor",
+        "creditScore": 780,
+        "secondaryApplicant": null
+      },
+      "{\n  \"applicantName\": \"Alice Brown\",\n  \"loanAmount\": 500000,\n  \"loanPurpose\": \"Real Estate Investment\",\n  \"employmentStatus\": \"Investor\",\n  \"creditScore\": 780,\n  \"secondaryApplicant\": undefined\n}"
+    ],
+    [
+      {
+        "applicantId": "D44556",
+        "requestedAmount": 7500,
+        "loanTerm": 6,
+        "interestRate": 2.9,
+        "collateral": "Savings",
+        "jointApplicant": null
+      },
+      "{\n  \"applicantId\": \"D44556\",\n  \"requestedAmount\": 7500,\n  \"loanTerm\": 6,\n  \"interestRate\": 2.9,\n  \"collateral\": \"Savings\",\n  \"jointApplicant\": undefined\n}"
+    ],
+    [
+      {
+        "applicantName": "Emily White",
+        "loanAmount": 120000,
+        "loanPurpose": "Medical Expenses",
+        "employmentStatus": "Unemployed",
+        "creditScore": 630,
+        "dependentApplicant": null
+      },
+      "{\n  \"applicantName\": \"Emily White\",\n  \"loanAmount\": 120000,\n  \"loanPurpose\": \"Medical Expenses\",\n  \"employmentStatus\": \"Unemployed\",\n  \"creditScore\": 630,\n  \"dependentApplicant\": undefined\n}"
+    ],
+    [
+      {
+        "applicantId": "E77889",
+        "requestedAmount": 60000,
+        "loanTerm": 18,
+        "interestRate": 4.6,
+        "collateral": "Property",
+        "familyApplicant": null
+      },
+      "{\n  \"applicantId\": \"E77889\",\n  \"requestedAmount\": 60000,\n  \"loanTerm\": 18,\n  \"interestRate\": 4.6,\n  \"collateral\": \"Property\",\n  \"familyApplicant\": undefined\n}"
+    ],
+    [
+      {
+        "deviceID": "sensor_01",
+        "usage": {
+          "temperature": 22.5,
+          "humidity": null,
+          "power_status": "on"
+        },
+        "timestamp": "2023-10-12T07:48:00Z"
+      },
+      "{\n    \"deviceID\": \"sensor_01\",\n    \"usage\": {\n        \"temperature\": 22.5,\n        \"humidity\": undefined,\n        \"power_status\": \"on\"\n    },\n    \"timestamp\": \"2023-10-12T07:48:00Z\"\n}"
+    ],
+    [
+      {
+        "deviceID": "cam_02",
+        "status": "offline",
+        "last_active": null,
+        "settings": {
+          "resolution": "1080p",
+          "night_mode": true
+        }
+      },
+      "{\n    \"deviceID\": \"cam_02\",\n    \"status\": \"offline\",\n    \"last_active\": undefined,\n    \"settings\": {\n        \"resolution\": \"1080p\",\n        \"night_mode\": true\n    }\n}"
+    ],
+    [
+      {
+        "deviceID": "thermostat_03",
+        "current_temp": 19.0,
+        "target_temp": null,
+        "mode": "cooling",
+        "energy_usage": {
+          "last_hour": 1.5,
+          "day": 12.3
+        }
+      },
+      "{\n    \"deviceID\": \"thermostat_03\",\n    \"current_temp\": 19.0,\n    \"target_temp\": undefined,\n    \"mode\": \"cooling\",\n    \"energy_usage\": {\n        \"last_hour\": 1.5,\n        \"day\": 12.3\n    }\n}"
+    ],
+    [
+      {
+        "deviceID": "speaker_04",
+        "volume": 55,
+        "last_command": null,
+        "is_muted": false
+      },
+      "{\n    \"deviceID\": \"speaker_04\",\n    \"volume\": 55,\n    \"last_command\": undefined,\n    \"is_muted\": false\n}"
+    ],
+    [
+      {
+        "deviceID": "light_05",
+        "brightness": 80,
+        "color": "warm_white",
+        "schedule": {
+          "on_time": "18:00",
+          "off_time": null
+        }
+      },
+      "{\n    \"deviceID\": \"light_05\",\n    \"brightness\": 80,\n    \"color\": \"warm_white\",\n    \"schedule\": {\n        \"on_time\": \"18:00\",\n        \"off_time\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "deviceID": "fridge_06",
+        "temperature": 4,
+        "door_open": null,
+        "alarms": {
+          "power_failure": false,
+          "temperature_high": false
+        }
+      },
+      "{\n    \"deviceID\": \"fridge_06\",\n    \"temperature\": 4,\n    \"door_open\": undefined,\n    \"alarms\": {\n        \"power_failure\": false,\n        \"temperature_high\": false\n    }\n}"
+    ],
+    [
+      {
+        "deviceID": "oven_07",
+        "current_temp": null,
+        "target_temp": 180,
+        "status": "preheating"
+      },
+      "{\n    \"deviceID\": \"oven_07\",\n    \"current_temp\": undefined,\n    \"target_temp\": 180,\n    \"status\": \"preheating\"\n}"
+    ],
+    [
+      {
+        "deviceID": "robot_vacuum_08",
+        "battery_level": 75,
+        "last_clean": null,
+        "cleaning_mode": "auto"
+      },
+      "{\n    \"deviceID\": \"robot_vacuum_08\",\n    \"battery_level\": 75,\n    \"last_clean\": undefined,\n    \"cleaning_mode\": \"auto\"\n}"
+    ],
+    [
+      {
+        "deviceID": "washing_machine_09",
+        "cycle": "rinse",
+        "time_remaining": 30,
+        "error_code": null
+      },
+      "{\n    \"deviceID\": \"washing_machine_09\",\n    \"cycle\": \"rinse\",\n    \"time_remaining\": 30,\n    \"error_code\": undefined\n}"
+    ],
+    [
+      {
+        "deviceID": "door_lock_10",
+        "locked": true,
+        "battery_low": null,
+        "last_unlocked": "2023-10-10T15:00:00Z"
+      },
+      "{\n    \"deviceID\": \"door_lock_10\",\n    \"locked\": true,\n    \"battery_low\": undefined,\n    \"last_unlocked\": \"2023-10-10T15:00:00Z\"\n}"
+    ],
+    [
+      {
+        "applicantName": "John Doe",
+        "email": "johndoe@example.com",
+        "experience": [
+          {
+            "company": "Tech Solutions",
+            "role": "Software Developer",
+            "duration": "2 years",
+            "technologies": [
+              "JavaScript",
+              "React",
+              "Node.js"
+            ]
+          }
+        ],
+        "education": {
+          "degree": "B.Sc. Computer Science",
+          "institution": "State University",
+          "graduationYear": 2020
+        },
+        "references": null
+      },
+      "{\n  \"applicantName\": \"John Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"experience\": [\n    {\n      \"company\": \"Tech Solutions\",\n      \"role\": \"Software Developer\",\n      \"duration\": \"2 years\",\n      \"technologies\": [\"JavaScript\", \"React\", \"Node.js\"]\n    }\n  ],\n  \"education\": {\n    \"degree\": \"B.Sc. Computer Science\",\n    \"institution\": \"State University\",\n    \"graduationYear\": 2020\n  },\n  \"references\": undefined\n}"
+    ],
+    [
+      {
+        "name": "Jane Smith",
+        "positionApplied": "Project Manager",
+        "skills": [
+          "Leadership",
+          "Communication",
+          "Problem Solving"
+        ],
+        "certifications": null,
+        "previousJobs": [
+          {
+            "employer": "Business Corp",
+            "title": "Team Lead",
+            "years": "3 years"
+          },
+          {
+            "employer": "Global Tech",
+            "title": "Project Coordinator",
+            "years": "2 years"
+          }
+        ]
+      },
+      "{\n  \"name\": \"Jane Smith\",\n  \"positionApplied\": \"Project Manager\",\n  \"skills\": [\"Leadership\", \"Communication\", \"Problem Solving\"],\n  \"certifications\": undefined,\n  \"previousJobs\": [\n    {\n      \"employer\": \"Business Corp\",\n      \"title\": \"Team Lead\",\n      \"years\": \"3 years\"\n    },\n    {\n      \"employer\": \"Global Tech\",\n      \"title\": \"Project Coordinator\",\n      \"years\": \"2 years\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "candidate": "Alice Johnson",
+        "contactNumber": "123-456-7890",
+        "portfolio": null,
+        "workExperience": [
+          {
+            "companyName": "Innovate Ltd",
+            "position": "UI/UX Designer",
+            "duration": "1.5 years"
+          }
+        ],
+        "languages": [
+          "English",
+          "Spanish"
+        ]
+      },
+      "{\n  \"candidate\": \"Alice Johnson\",\n  \"contactNumber\": \"123-456-7890\",\n  \"portfolio\": undefined,\n  \"workExperience\": [\n    {\n      \"companyName\": \"Innovate Ltd\",\n      \"position\": \"UI/UX Designer\",\n      \"duration\": \"1.5 years\"\n    }\n  ],\n  \"languages\": [\"English\", \"Spanish\"]\n}"
+    ],
+    [
+      {
+        "applicant": "Michael Brown",
+        "position": "Data Scientist",
+        "technologies": [
+          "Python",
+          "R",
+          "SQL"
+        ],
+        "linkedIn": null,
+        "previousExperience": [
+          {
+            "company": "Data Analytics Inc",
+            "jobTitle": "Analyst",
+            "years": "4 years"
+          }
+        ],
+        "achievements": [
+          "Employee of the Month",
+          "Best Innovator 2022"
+        ]
+      },
+      "{\n  \"applicant\": \"Michael Brown\",\n  \"position\": \"Data Scientist\",\n  \"technologies\": [\"Python\", \"R\", \"SQL\"],\n  \"linkedIn\": undefined,\n  \"previousExperience\": [\n    {\n      \"company\": \"Data Analytics Inc\",\n      \"jobTitle\": \"Analyst\",\n      \"years\": \"4 years\"\n    }\n  ],\n  \"achievements\": [\"Employee of the Month\", \"Best Innovator 2022\"]\n}"
+    ],
+    [
+      {
+        "name": "Emily Davis",
+        "desiredPosition": "Marketing Specialist",
+        "strengths": [
+          "Creativity",
+          "Strategic Thinking"
+        ],
+        "portfolioLink": null,
+        "workHistory": [
+          {
+            "organization": "Creative Solutions",
+            "position": "Marketing Coordinator",
+            "duration": "3 years"
+          }
+        ],
+        "volunteerExperience": []
+      },
+      "{\n  \"name\": \"Emily Davis\",\n  \"desiredPosition\": \"Marketing Specialist\",\n  \"strengths\": [\"Creativity\", \"Strategic Thinking\"],\n  \"portfolioLink\": undefined,\n  \"workHistory\": [\n    {\n      \"organization\": \"Creative Solutions\",\n      \"position\": \"Marketing Coordinator\",\n      \"duration\": \"3 years\"\n    }\n  ],\n  \"volunteerExperience\": []\n}"
+    ],
+    [
+      {
+        "applicantName": "Sophia Martinez",
+        "roleAppliedFor": "Content Writer",
+        "publications": [
+          "Tech Blog",
+          "Content Weekly"
+        ],
+        "website": null,
+        "employmentHistory": [
+          {
+            "company": "WriteNow",
+            "position": "Freelance Writer",
+            "duration": "2 years"
+          }
+        ],
+        "education": {
+          "degree": "BA in English",
+          "institution": "Arts College",
+          "graduationYear": 2018
+        }
+      },
+      "{\n  \"applicantName\": \"Sophia Martinez\",\n  \"roleAppliedFor\": \"Content Writer\",\n  \"publications\": [\"Tech Blog\", \"Content Weekly\"],\n  \"website\": undefined,\n  \"employmentHistory\": [\n    {\n      \"company\": \"WriteNow\",\n      \"position\": \"Freelance Writer\",\n      \"duration\": \"2 years\"\n    }\n  ],\n  \"education\": {\n    \"degree\": \"BA in English\",\n    \"institution\": \"Arts College\",\n    \"graduationYear\": 2018\n  }\n}"
+    ],
+    [
+      {
+        "candidate": "William Clark",
+        "email": "williamclark@example.com",
+        "skills": [
+          "C++",
+          "Machine Learning"
+        ],
+        "githubProfile": null,
+        "careerHistory": [
+          {
+            "employer": "Tech Innovators",
+            "title": "Machine Learning Engineer",
+            "years": "5 years"
+          }
+        ],
+        "certifications": [
+          "Certified ML Specialist"
+        ]
+      },
+      "{\n  \"candidate\": \"William Clark\",\n  \"email\": \"williamclark@example.com\",\n  \"skills\": [\"C++\", \"Machine Learning\"],\n  \"githubProfile\": undefined,\n  \"careerHistory\": [\n    {\n      \"employer\": \"Tech Innovators\",\n      \"title\": \"Machine Learning Engineer\",\n      \"years\": \"5 years\"\n    }\n  ],\n  \"certifications\": [\"Certified ML Specialist\"]\n}"
+    ],
+    [
+      {
+        "applicant": "Olivia Wilson",
+        "desiredRole": "Graphic Designer",
+        "softwareSkills": [
+          "Photoshop",
+          "Illustrator"
+        ],
+        "portfolioWebsite": null,
+        "jobExperience": [
+          {
+            "company": "Design Experts",
+            "role": "Lead Designer",
+            "duration": "4 years"
+          }
+        ],
+        "languagesSpoken": [
+          "English",
+          "French"
+        ]
+      },
+      "{\n  \"applicant\": \"Olivia Wilson\",\n  \"desiredRole\": \"Graphic Designer\",\n  \"softwareSkills\": [\"Photoshop\", \"Illustrator\"],\n  \"portfolioWebsite\": undefined,\n  \"jobExperience\": [\n    {\n      \"company\": \"Design Experts\",\n      \"role\": \"Lead Designer\",\n      \"duration\": \"4 years\"\n    }\n  ],\n  \"languagesSpoken\": [\"English\", \"French\"]\n}"
+    ],
+    [
+      {
+        "name": "Lucas Lee",
+        "objective": "DevOps Engineer",
+        "tools": [
+          "Docker",
+          "Kubernetes"
+        ],
+        "linkedInProfile": null,
+        "professionalExperience": [
+          {
+            "companyName": "Cloud Solutions",
+            "role": "Systems Administrator",
+            "years": "6 years"
+          }
+        ],
+        "degrees": [
+          "M.Sc. in Information Systems"
+        ]
+      },
+      "{\n  \"name\": \"Lucas Lee\",\n  \"objective\": \"DevOps Engineer\",\n  \"tools\": [\"Docker\", \"Kubernetes\"],\n  \"linkedInProfile\": undefined,\n  \"professionalExperience\": [\n    {\n      \"companyName\": \"Cloud Solutions\",\n      \"role\": \"Systems Administrator\",\n      \"years\": \"6 years\"\n    }\n  ],\n  \"degrees\": [\"M.Sc. in Information Systems\"]\n}"
+    ],
+    [
+      {
+        "candidateName": "Chloe Zhang",
+        "targetPosition": "HR Manager",
+        "expertise": [
+          "Recruitment",
+          "Employee Relations"
+        ],
+        "personalWebsite": null,
+        "careerExperience": [
+          {
+            "organization": "People First",
+            "position": "HR Specialist",
+            "duration": "5 years"
+          }
+        ],
+        "awards": [
+          "Best HR Professional 2021"
+        ]
+      },
+      "{\n  \"candidateName\": \"Chloe Zhang\",\n  \"targetPosition\": \"HR Manager\",\n  \"expertise\": [\"Recruitment\", \"Employee Relations\"],\n  \"personalWebsite\": undefined,\n  \"careerExperience\": [\n    {\n      \"organization\": \"People First\",\n      \"position\": \"HR Specialist\",\n      \"duration\": \"5 years\"\n    }\n  ],\n  \"awards\": [\"Best HR Professional 2021\"]\n}"
+    ],
+    [
+      {
+        "flightNumber": "AA123",
+        "departure": {
+          "airport": "JFK",
+          "time": "2023-10-15T08:00:00"
+        },
+        "arrival": {
+          "airport": "LAX",
+          "time": "2023-10-15T11:00:00"
+        },
+        "passenger": {
+          "name": "John Doe",
+          "seat": "12A"
+        },
+        "status": null
+      },
+      "{\n    \"flightNumber\": \"AA123\",\n    \"departure\": {\n        \"airport\": \"JFK\",\n        \"time\": \"2023-10-15T08:00:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"LAX\",\n        \"time\": \"2023-10-15T11:00:00\"\n    },\n    \"passenger\": {\n        \"name\": \"John Doe\",\n        \"seat\": \"12A\"\n    },\n    \"status\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "DL456",
+        "departure": {
+          "airport": "ATL",
+          "time": "2023-11-01T14:30:00"
+        },
+        "arrival": {
+          "airport": "ORD",
+          "time": "2023-11-01T16:00:00"
+        },
+        "passenger": {
+          "name": "Alice Smith",
+          "seat": "22B"
+        },
+        "luggage": null
+      },
+      "{\n    \"flightNumber\": \"DL456\",\n    \"departure\": {\n        \"airport\": \"ATL\",\n        \"time\": \"2023-11-01T14:30:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"ORD\",\n        \"time\": \"2023-11-01T16:00:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Alice Smith\",\n        \"seat\": \"22B\"\n    },\n    \"luggage\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "UA789",
+        "departure": {
+          "airport": "SFO",
+          "time": "2023-10-20T09:00:00"
+        },
+        "arrival": {
+          "airport": "SEA",
+          "time": "2023-10-20T11:30:00"
+        },
+        "passenger": {
+          "name": "Michael Brown",
+          "seat": "14C"
+        },
+        "mealPreference": null
+      },
+      "{\n    \"flightNumber\": \"UA789\",\n    \"departure\": {\n        \"airport\": \"SFO\",\n        \"time\": \"2023-10-20T09:00:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"SEA\",\n        \"time\": \"2023-10-20T11:30:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Michael Brown\",\n        \"seat\": \"14C\"\n    },\n    \"mealPreference\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "SW123",
+        "departure": {
+          "airport": "DEN",
+          "time": "2023-11-05T07:15:00"
+        },
+        "arrival": {
+          "airport": "PHX",
+          "time": "2023-11-05T09:00:00"
+        },
+        "passenger": {
+          "name": "Emma Wilson",
+          "seat": "18D"
+        },
+        "specialAssistance": null
+      },
+      "{\n    \"flightNumber\": \"SW123\",\n    \"departure\": {\n        \"airport\": \"DEN\",\n        \"time\": \"2023-11-05T07:15:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"PHX\",\n        \"time\": \"2023-11-05T09:00:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Emma Wilson\",\n        \"seat\": \"18D\"\n    },\n    \"specialAssistance\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "LH007",
+        "departure": {
+          "airport": "FRA",
+          "time": "2023-12-01T15:45:00"
+        },
+        "arrival": {
+          "airport": "JFK",
+          "time": "2023-12-01T18:45:00"
+        },
+        "passenger": {
+          "name": "Sophia Martinez",
+          "seat": "1A"
+        },
+        "frequentFlyerNumber": null
+      },
+      "{\n    \"flightNumber\": \"LH007\",\n    \"departure\": {\n        \"airport\": \"FRA\",\n        \"time\": \"2023-12-01T15:45:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"JFK\",\n        \"time\": \"2023-12-01T18:45:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Sophia Martinez\",\n        \"seat\": \"1A\"\n    },\n    \"frequentFlyerNumber\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "QF008",
+        "departure": {
+          "airport": "SYD",
+          "time": "2023-12-15T22:00:00"
+        },
+        "arrival": {
+          "airport": "LAX",
+          "time": "2023-12-15T15:50:00"
+        },
+        "passenger": {
+          "name": "Liam Johnson",
+          "seat": "5F"
+        },
+        "baggageClaim": null
+      },
+      "{\n    \"flightNumber\": \"QF008\",\n    \"departure\": {\n        \"airport\": \"SYD\",\n        \"time\": \"2023-12-15T22:00:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"LAX\",\n        \"time\": \"2023-12-15T15:50:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Liam Johnson\",\n        \"seat\": \"5F\"\n    },\n    \"baggageClaim\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "BA150",
+        "departure": {
+          "airport": "LHR",
+          "time": "2023-12-20T18:25:00"
+        },
+        "arrival": {
+          "airport": "JFK",
+          "time": "2023-12-20T21:30:00"
+        },
+        "passenger": {
+          "name": "Mia Davis",
+          "seat": "8E"
+        },
+        "visaStatus": null
+      },
+      "{\n    \"flightNumber\": \"BA150\",\n    \"departure\": {\n        \"airport\": \"LHR\",\n        \"time\": \"2023-12-20T18:25:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"JFK\",\n        \"time\": \"2023-12-20T21:30:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Mia Davis\",\n        \"seat\": \"8E\"\n    },\n    \"visaStatus\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "EK202",
+        "departure": {
+          "airport": "DXB",
+          "time": "2024-01-10T03:20:00"
+        },
+        "arrival": {
+          "airport": "LAX",
+          "time": "2024-01-10T12:50:00"
+        },
+        "passenger": {
+          "name": "Noah Taylor",
+          "seat": "3B"
+        },
+        "inFlightEntertainment": null
+      },
+      "{\n    \"flightNumber\": \"EK202\",\n    \"departure\": {\n        \"airport\": \"DXB\",\n        \"time\": \"2024-01-10T03:20:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"LAX\",\n        \"time\": \"2024-01-10T12:50:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Noah Taylor\",\n        \"seat\": \"3B\"\n    },\n    \"inFlightEntertainment\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "AC789",
+        "departure": {
+          "airport": "YYZ",
+          "time": "2024-02-15T07:45:00"
+        },
+        "arrival": {
+          "airport": "HND",
+          "time": "2024-02-16T15:25:00"
+        },
+        "passenger": {
+          "name": "Olivia White",
+          "seat": "20H"
+        },
+        "ticketNumber": null
+      },
+      "{\n    \"flightNumber\": \"AC789\",\n    \"departure\": {\n        \"airport\": \"YYZ\",\n        \"time\": \"2024-02-15T07:45:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"HND\",\n        \"time\": \"2024-02-16T15:25:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Olivia White\",\n        \"seat\": \"20H\"\n    },\n    \"ticketNumber\": undefined\n}"
+    ],
+    [
+      {
+        "flightNumber": "AF456",
+        "departure": {
+          "airport": "CDG",
+          "time": "2024-03-03T13:15:00"
+        },
+        "arrival": {
+          "airport": "JFK",
+          "time": "2024-03-03T15:45:00"
+        },
+        "passenger": {
+          "name": "Ethan Moore",
+          "seat": "9G"
+        },
+        "upgradeStatus": null
+      },
+      "{\n    \"flightNumber\": \"AF456\",\n    \"departure\": {\n        \"airport\": \"CDG\",\n        \"time\": \"2024-03-03T13:15:00\"\n    },\n    \"arrival\": {\n        \"airport\": \"JFK\",\n        \"time\": \"2024-03-03T15:45:00\"\n    },\n    \"passenger\": {\n        \"name\": \"Ethan Moore\",\n        \"seat\": \"9G\"\n    },\n    \"upgradeStatus\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 101,
+        "customerName": "John Doe",
+        "reservationTime": "2023-10-12T19:00:00",
+        "numberOfGuests": 4,
+        "specialRequests": null
+      },
+      "{\n    \"reservationID\": 101,\n    \"customerName\": \"John Doe\",\n    \"reservationTime\": \"2023-10-12T19:00:00\",\n    \"numberOfGuests\": 4,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 102,
+        "customerName": "Jane Smith",
+        "reservationTime": "2023-10-13T20:30:00",
+        "numberOfGuests": 2,
+        "specialRequests": "Window seat"
+      },
+      "{\n    \"reservationID\": 102,\n    \"customerName\": \"Jane Smith\",\n    \"reservationTime\": \"2023-10-13T20:30:00\",\n    \"numberOfGuests\": 2,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 103,
+        "customerName": "Alice Brown",
+        "reservationTime": "2023-10-14T18:00:00",
+        "numberOfGuests": 3,
+        "specialRequests": null
+      },
+      "{\n    \"reservationID\": 103,\n    \"customerName\": \"Alice Brown\",\n    \"reservationTime\": \"2023-10-14T18:00:00\",\n    \"numberOfGuests\": 3,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 104,
+        "customerName": "Bob White",
+        "reservationTime": "2023-10-15T21:00:00",
+        "numberOfGuests": 5,
+        "specialRequests": "Vegetarian menu"
+      },
+      "{\n    \"reservationID\": 104,\n    \"customerName\": \"Bob White\",\n    \"reservationTime\": \"2023-10-15T21:00:00\",\n    \"numberOfGuests\": 5,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 105,
+        "customerName": "Charlie Black",
+        "reservationTime": "2023-11-01T19:30:00",
+        "numberOfGuests": 2,
+        "specialRequests": null
+      },
+      "{\n    \"reservationID\": 105,\n    \"customerName\": \"Charlie Black\",\n    \"reservationTime\": \"2023-11-01T19:30:00\",\n    \"numberOfGuests\": 2,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 106,
+        "customerName": "Dana Green",
+        "reservationTime": "2023-11-02T20:00:00",
+        "numberOfGuests": 6,
+        "specialRequests": "Birthday cake"
+      },
+      "{\n    \"reservationID\": 106,\n    \"customerName\": \"Dana Green\",\n    \"reservationTime\": \"2023-11-02T20:00:00\",\n    \"numberOfGuests\": 6,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 107,
+        "customerName": "Eva Blue",
+        "reservationTime": "2023-11-03T18:45:00",
+        "numberOfGuests": 8,
+        "specialRequests": null
+      },
+      "{\n    \"reservationID\": 107,\n    \"customerName\": \"Eva Blue\",\n    \"reservationTime\": \"2023-11-03T18:45:00\",\n    \"numberOfGuests\": 8,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 108,
+        "customerName": "Frank Yellow",
+        "reservationTime": "2023-11-04T19:15:00",
+        "numberOfGuests": 10,
+        "specialRequests": "Gluten-free options"
+      },
+      "{\n    \"reservationID\": 108,\n    \"customerName\": \"Frank Yellow\",\n    \"reservationTime\": \"2023-11-04T19:15:00\",\n    \"numberOfGuests\": 10,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 109,
+        "customerName": "Grace Pink",
+        "reservationTime": "2023-11-05T20:45:00",
+        "numberOfGuests": 7,
+        "specialRequests": null
+      },
+      "{\n    \"reservationID\": 109,\n    \"customerName\": \"Grace Pink\",\n    \"reservationTime\": \"2023-11-05T20:45:00\",\n    \"numberOfGuests\": 7,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "reservationID": 110,
+        "customerName": "Henry Purple",
+        "reservationTime": "2023-11-06T21:30:00",
+        "numberOfGuests": 1,
+        "specialRequests": "Quiet corner"
+      },
+      "{\n    \"reservationID\": 110,\n    \"customerName\": \"Henry Purple\",\n    \"reservationTime\": \"2023-11-06T21:30:00\",\n    \"numberOfGuests\": 1,\n    \"specialRequests\": undefined\n}"
+    ],
+    [
+      {
+        "player_id": 101,
+        "player_name": "Gamer123",
+        "session": {
+          "session_id": "abc123",
+          "start_time": "2023-10-01T14:00:00Z",
+          "end_time": "2023-10-01T16:30:00Z",
+          "achievement_unlocked": null
+        }
+      },
+      "{\n    \"player_id\": 101,\n    \"player_name\": \"Gamer123\",\n    \"session\": {\n        \"session_id\": \"abc123\",\n        \"start_time\": \"2023-10-01T14:00:00Z\",\n        \"end_time\": \"2023-10-01T16:30:00Z\",\n        \"achievement_unlocked\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "game_title": "Battle Quest",
+        "players": [
+          {
+            "player_id": 102,
+            "score": 1500,
+            "rank": null
+          },
+          {
+            "player_id": 103,
+            "score": 2000,
+            "rank": null
+          }
+        ],
+        "date": "2023-10-02"
+      },
+      "{\n    \"game_title\": \"Battle Quest\",\n    \"players\": [\n        {\"player_id\": 102, \"score\": 1500, \"rank\": undefined},\n        {\"player_id\": 103, \"score\": 2000, \"rank\": undefined}\n    ],\n    \"date\": \"2023-10-02\"\n}"
+    ],
+    [
+      {
+        "match_id": "xyz789",
+        "participants": 10,
+        "results": {
+          "winner": "Player99",
+          "loser": null
+        }
+      },
+      "{\n    \"match_id\": \"xyz789\",\n    \"participants\": 10,\n    \"results\": {\n        \"winner\": \"Player99\",\n        \"loser\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "guild": {
+          "name": "Warriors United",
+          "members": [
+            {
+              "id": 104,
+              "online_status": null
+            },
+            {
+              "id": 105,
+              "online_status": "active"
+            }
+          ]
+        }
+      },
+      "{\n    \"guild\": {\n        \"name\": \"Warriors United\",\n        \"members\": [\n            {\"id\": 104, \"online_status\": undefined},\n            {\"id\": 105, \"online_status\": \"active\"}\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "tournament": {
+          "name": "Champion's Cup",
+          "location": "Virtual Arena",
+          "details": null
+        }
+      },
+      "{\n    \"tournament\": {\n        \"name\": \"Champion's Cup\",\n        \"location\": \"Virtual Arena\",\n        \"details\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "server": {
+          "region": "NA",
+          "status": "maintenance",
+          "restart_time": null
+        }
+      },
+      "{\n    \"server\": {\n        \"region\": \"NA\",\n        \"status\": \"maintenance\",\n        \"restart_time\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "event": "Double XP Weekend",
+        "start_date": "2023-10-05",
+        "end_date": null
+      },
+      "{\n    \"event\": \"Double XP Weekend\",\n    \"start_date\": \"2023-10-05\",\n    \"end_date\": undefined\n}"
+    ],
+    [
+      {
+        "quest": {
+          "id": 301,
+          "name": "Dragon Slayer",
+          "completed": null
+        }
+      },
+      "{\n    \"quest\": {\n        \"id\": 301,\n        \"name\": \"Dragon Slayer\",\n        \"completed\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "leaderboard": [
+          {
+            "rank": 1,
+            "player": "Ace",
+            "score": 3000
+          },
+          {
+            "rank": 2,
+            "player": "Blaze",
+            "score": null
+          }
+        ]
+      },
+      "{\n    \"leaderboard\": [\n        {\"rank\": 1, \"player\": \"Ace\", \"score\": 3000},\n        {\"rank\": 2, \"player\": \"Blaze\", \"score\": undefined}\n    ]\n}"
+    ],
+    [
+      {
+        "notification": {
+          "message": "Welcome back!",
+          "read": null
+        }
+      },
+      "{\n    \"notification\": {\n        \"message\": \"Welcome back!\",\n        \"read\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "product_id": 1,
+        "name": "Laptop",
+        "stock": 50,
+        "last_updated": null
+      },
+      "{\n    \"product_id\": 1,\n    \"name\": \"Laptop\",\n    \"stock\": 50,\n    \"last_updated\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 2,
+        "name": "Smartphone",
+        "stock": 100,
+        "supplier": null
+      },
+      "{\n    \"product_id\": 2,\n    \"name\": \"Smartphone\",\n    \"stock\": 100,\n    \"supplier\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 3,
+        "name": "Headphones",
+        "stock": 30,
+        "warehouse_location": null
+      },
+      "{\n    \"product_id\": 3,\n    \"name\": \"Headphones\",\n    \"stock\": 30,\n    \"warehouse_location\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 4,
+        "name": "Tablet",
+        "stock": 0,
+        "discontinued": null
+      },
+      "{\n    \"product_id\": 4,\n    \"name\": \"Tablet\",\n    \"stock\": 0,\n    \"discontinued\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 5,
+        "name": "Smartwatch",
+        "stock": 75,
+        "arrival_date": null
+      },
+      "{\n    \"product_id\": 5,\n    \"name\": \"Smartwatch\",\n    \"stock\": 75,\n    \"arrival_date\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 6,
+        "name": "Camera",
+        "stock": 20,
+        "next_shipment": null
+      },
+      "{\n    \"product_id\": 6,\n    \"name\": \"Camera\",\n    \"stock\": 20,\n    \"next_shipment\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 7,
+        "name": "Printer",
+        "stock": 40,
+        "support_contact": null
+      },
+      "{\n    \"product_id\": 7,\n    \"name\": \"Printer\",\n    \"stock\": 40,\n    \"support_contact\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 8,
+        "name": "Monitor",
+        "stock": 10,
+        "warranty_period": null
+      },
+      "{\n    \"product_id\": 8,\n    \"name\": \"Monitor\",\n    \"stock\": 10,\n    \"warranty_period\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 9,
+        "name": "Keyboard",
+        "stock": 200,
+        "manufacturer_info": null
+      },
+      "{\n    \"product_id\": 9,\n    \"name\": \"Keyboard\",\n    \"stock\": 200,\n    \"manufacturer_info\": undefined\n}"
+    ],
+    [
+      {
+        "product_id": 10,
+        "name": "Mouse",
+        "stock": 150,
+        "customizable": null
+      },
+      "{\n    \"product_id\": 10,\n    \"name\": \"Mouse\",\n    \"stock\": 150,\n    \"customizable\": undefined\n}"
+    ],
+    [
+      {
+        "user": "john_doe",
+        "subscription": "premium",
+        "expiry_date": "2023-12-31",
+        "auto_renew": true,
+        "last_payment": {
+          "amount": 49.99,
+          "currency": "USD",
+          "date": "2023-10-01"
+        }
+      },
+      "{\n    \"user\": \"john_doe\",\n    \"subscription\": \"premium\",\n    \"expiry_date\": \"2023-12-31\",\n    \"auto_renew\": undefined,\n    \"last_payment\": {\n        \"amount\": 49.99,\n        \"currency\": \"USD\",\n        \"date\": \"2023-10-01\"\n    }\n}"
+    ],
+    [
+      {
+        "user_id": 102,
+        "plan": "basic",
+        "billing_info": {
+          "card_type": "Visa",
+          "last_four_digits": "1234",
+          "billing_cycle": "monthly"
+        },
+        "notifications": {
+          "email": true,
+          "sms": false
+        }
+      },
+      "{\n    \"user_id\": 102,\n    \"plan\": \"basic\",\n    \"billing_info\": {\n        \"card_type\": \"Visa\",\n        \"last_four_digits\": undefined,\n        \"billing_cycle\": \"monthly\"\n    },\n    \"notifications\": {\n        \"email\": true,\n        \"sms\": false\n    }\n}"
+    ],
+    [
+      {
+        "customer": "jane_doe",
+        "subscription_status": "active",
+        "devices": [
+          "laptop",
+          "tablet"
+        ],
+        "preferences": {
+          "newsletter": false,
+          "recommendations": true
+        }
+      },
+      "{\n    \"customer\": \"jane_doe\",\n    \"subscription_status\": \"active\",\n    \"devices\": [\"laptop\", undefined],\n    \"preferences\": {\n        \"newsletter\": false,\n        \"recommendations\": true\n    }\n}"
+    ],
+    [
+      {
+        "account_id": "abc123",
+        "active": true,
+        "trial_period": {
+          "start_date": "2023-09-01",
+          "end_date": "2023-09-30"
+        },
+        "usage": {
+          "hours": 120,
+          "data_gb": 50
+        }
+      },
+      "{\n    \"account_id\": \"abc123\",\n    \"active\": undefined,\n    \"trial_period\": {\n        \"start_date\": \"2023-09-01\",\n        \"end_date\": \"2023-09-30\"\n    },\n    \"usage\": {\n        \"hours\": 120,\n        \"data_gb\": 50\n    }\n}"
+    ],
+    [
+      {
+        "subscriber": "mark_twain",
+        "subscription_plan": "family",
+        "members": [
+          "alice",
+          "bob",
+          "carol"
+        ],
+        "renewal_date": "2024-01-01"
+      },
+      "{\n    \"subscriber\": \"mark_twain\",\n    \"subscription_plan\": \"family\",\n    \"members\": [\"alice\", undefined, \"carol\"],\n    \"renewal_date\": \"2024-01-01\"\n}"
+    ],
+    [
+      {
+        "username": "peter_parker",
+        "subscription_level": "standard",
+        "settings": {
+          "language": "en",
+          "timezone": "EST"
+        },
+        "payment_status": "completed"
+      },
+      "{\n    \"username\": \"peter_parker\",\n    \"subscription_level\": undefined,\n    \"settings\": {\n        \"language\": \"en\",\n        \"timezone\": \"EST\"\n    },\n    \"payment_status\": \"completed\"\n}"
+    ],
+    [
+      {
+        "name": "charles_darwin",
+        "active_subscription": true,
+        "preferences": {
+          "ads": false,
+          "dark_mode": true
+        },
+        "last_login": "2023-10-15"
+      },
+      "{\n    \"name\": \"charles_darwin\",\n    \"active_subscription\": undefined,\n    \"preferences\": {\n        \"ads\": false,\n        \"dark_mode\": true\n    },\n    \"last_login\": \"2023-10-15\"\n}"
+    ],
+    [
+      {
+        "account_name": "ada_lovelace",
+        "plan_type": "enterprise",
+        "api_calls": 5230,
+        "support_access": {
+          "chat": true,
+          "phone": true
+        }
+      },
+      "{\n    \"account_name\": \"ada_lovelace\",\n    \"plan_type\": undefined,\n    \"api_calls\": 5230,\n    \"support_access\": {\n        \"chat\": true,\n        \"phone\": true\n    }\n}"
+    ],
+    [
+      {
+        "customer_id": 9876,
+        "membership": "gold",
+        "account_status": "suspended",
+        "contact_preferences": {
+          "email": false,
+          "phone": true
+        }
+      },
+      "{\n    \"customer_id\": 9876,\n    \"membership\": \"gold\",\n    \"account_status\": undefined,\n    \"contact_preferences\": {\n        \"email\": false,\n        \"phone\": true\n    }\n}"
+    ],
+    [
+      {
+        "subscriber": "grace_hopper",
+        "current_plan": "basic",
+        "addons": [
+          "extra_storage",
+          "vpn"
+        ],
+        "renewal_reminder": false
+      },
+      "{\n    \"subscriber\": \"grace_hopper\",\n    \"current_plan\": \"basic\",\n    \"addons\": [\"extra_storage\", undefined],\n    \"renewal_reminder\": false\n}"
+    ],
+    [
+      {
+        "studentName": "Alice Johnson",
+        "grades": {
+          "math": "A",
+          "science": null,
+          "history": "B"
+        },
+        "attendance": 95
+      },
+      "{\n  \"studentName\": \"Alice Johnson\",\n  \"grades\": {\n    \"math\": \"A\",\n    \"science\": undefined,\n    \"history\": \"B\"\n  },\n  \"attendance\": 95\n}"
+    ],
+    [
+      {
+        "courseTitle": "Introduction to Biology",
+        "instructor": "Dr. Emily Smith",
+        "evaluation": {
+          "midterm": null,
+          "finalExam": "B+"
+        },
+        "credits": 4
+      },
+      "{\n  \"courseTitle\": \"Introduction to Biology\",\n  \"instructor\": \"Dr. Emily Smith\",\n  \"evaluation\": {\n    \"midterm\": undefined,\n    \"finalExam\": \"B+\"\n  },\n  \"credits\": 4\n}"
+    ],
+    [
+      {
+        "department": "Computer Science",
+        "students": [
+          {
+            "name": "Bob Brown",
+            "gpa": 3.8
+          },
+          {
+            "name": "Carol White",
+            "gpa": null
+          }
+        ],
+        "semester": "Fall 2023"
+      },
+      "{\n  \"department\": \"Computer Science\",\n  \"students\": [\n    {\"name\": \"Bob Brown\", \"gpa\": 3.8},\n    {\"name\": \"Carol White\", \"gpa\": undefined}\n  ],\n  \"semester\": \"Fall 2023\"\n}"
+    ],
+    [
+      {
+        "program": "Mechanical Engineering",
+        "enrollment": 120,
+        "averageGPA": null,
+        "passed": true
+      },
+      "{\n  \"program\": \"Mechanical Engineering\",\n  \"enrollment\": 120,\n  \"averageGPA\": undefined,\n  \"passed\": true\n}"
+    ],
+    [
+      {
+        "exam": "SAT",
+        "scores": {
+          "math": 720,
+          "verbal": null
+        },
+        "submitted": false
+      },
+      "{\n  \"exam\": \"SAT\",\n  \"scores\": {\n    \"math\": 720,\n    \"verbal\": undefined\n  },\n  \"submitted\": false\n}"
+    ],
+    [
+      {
+        "university": "Global University",
+        "annualReport": {
+          "published": true,
+          "findings": null
+        },
+        "researchFunds": 500000
+      },
+      "{\n  \"university\": \"Global University\",\n  \"annualReport\": {\n    \"published\": true,\n    \"findings\": undefined\n  },\n  \"researchFunds\": 500000\n}"
+    ],
+    [
+      {
+        "class": "Physics 101",
+        "teacher": "Mr. George",
+        "studentList": [
+          {
+            "id": 101,
+            "name": "Eve Harper",
+            "attendance": null
+          },
+          {
+            "id": 102,
+            "name": "Felix King",
+            "attendance": 88
+          }
+        ]
+      },
+      "{\n  \"class\": \"Physics 101\",\n  \"teacher\": \"Mr. George\",\n  \"studentList\": [\n    {\"id\": 101, \"name\": \"Eve Harper\", \"attendance\": undefined},\n    {\"id\": 102, \"name\": \"Felix King\", \"attendance\": 88}\n  ]\n}"
+    ],
+    [
+      {
+        "project": "Science Fair",
+        "participants": 30,
+        "winner": null,
+        "completed": true
+      },
+      "{\n  \"project\": \"Science Fair\",\n  \"participants\": 30,\n  \"winner\": undefined,\n  \"completed\": true\n}"
+    ],
+    [
+      {
+        "course": "Statistics 202",
+        "instructor": "Prof. Linda Gray",
+        "successRate": null
+      },
+      "{\n  \"course\": \"Statistics 202\",\n  \"instructor\": \"Prof. Linda Gray\",\n  \"successRate\": undefined\n}"
+    ],
+    [
+      {
+        "conference": "International Education Summit",
+        "location": "New York",
+        "attendance": null,
+        "year": 2023
+      },
+      "{\n  \"conference\": \"International Education Summit\",\n  \"location\": \"New York\",\n  \"attendance\": undefined,\n  \"year\": 2023\n}"
+    ],
+    [
+      {
+        "listingId": 101,
+        "address": {
+          "street": "123 Maple Street",
+          "city": "Springfield",
+          "state": "IL"
+        },
+        "price": 250000,
+        "status": null
+      },
+      "{\n  \"listingId\": 101,\n  \"address\": {\n    \"street\": \"123 Maple Street\",\n    \"city\": \"Springfield\",\n    \"state\": \"IL\"\n  },\n  \"price\": 250000,\n  \"status\": undefined\n}"
+    ],
+    [
+      {
+        "propertyType": "condo",
+        "bedrooms": 3,
+        "bathrooms": null,
+        "features": [
+          "pool",
+          "gym",
+          "garage"
+        ]
+      },
+      "{\n  \"propertyType\": \"condo\",\n  \"bedrooms\": 3,\n  \"bathrooms\": undefined,\n  \"features\": [\"pool\", \"gym\", \"garage\"]\n}"
+    ],
+    [
+      {
+        "agent": {
+          "name": "John Doe",
+          "contact": {
+            "phone": "555-1234",
+            "email": "john.doe@example.com"
+          }
+        },
+        "availability": null
+      },
+      "{\n  \"agent\": {\n    \"name\": \"John Doe\",\n    \"contact\": {\n      \"phone\": \"555-1234\",\n      \"email\": \"john.doe@example.com\"\n    }\n  },\n  \"availability\": undefined\n}"
+    ],
+    [
+      {
+        "listingId": 202,
+        "area": 1500,
+        "petsAllowed": null,
+        "amenities": [
+          "garden",
+          "balcony"
+        ]
+      },
+      "{\n  \"listingId\": 202,\n  \"area\": 1500,\n  \"petsAllowed\": undefined,\n  \"amenities\": [\"garden\", \"balcony\"]\n}"
+    ],
+    [
+      {
+        "address": {
+          "street": "456 Oak Avenue",
+          "city": "Rivertown",
+          "zipcode": 12345
+        },
+        "forSale": true,
+        "openHouseDate": null
+      },
+      "{\n  \"address\": {\n    \"street\": \"456 Oak Avenue\",\n    \"city\": \"Rivertown\",\n    \"zipcode\": 12345\n  },\n  \"forSale\": true,\n  \"openHouseDate\": undefined\n}"
+    ],
+    [
+      {
+        "listingId": 303,
+        "price": 350000,
+        "description": "Spacious 4 bedroom house",
+        "soldDate": null
+      },
+      "{\n  \"listingId\": 303,\n  \"price\": 350000,\n  \"description\": \"Spacious 4 bedroom house\",\n  \"soldDate\": undefined\n}"
+    ],
+    [
+      {
+        "owner": "Jane Smith",
+        "contact": {
+          "phone": "555-5678",
+          "email": null
+        },
+        "hasBasement": true
+      },
+      "{\n  \"owner\": \"Jane Smith\",\n  \"contact\": {\n    \"phone\": \"555-5678\",\n    \"email\": undefined\n  },\n  \"hasBasement\": true\n}"
+    ],
+    [
+      {
+        "propertyType": "apartment",
+        "floor": 5,
+        "availableFrom": null,
+        "utilitiesIncluded": true
+      },
+      "{\n  \"propertyType\": \"apartment\",\n  \"floor\": 5,\n  \"availableFrom\": undefined,\n  \"utilitiesIncluded\": true\n}"
+    ],
+    [
+      {
+        "listingId": 404,
+        "rooms": 4,
+        "furnished": null,
+        "yearBuilt": 2000
+      },
+      "{\n  \"listingId\": 404,\n  \"rooms\": 4,\n  \"furnished\": undefined,\n  \"yearBuilt\": 2000\n}"
+    ],
+    [
+      {
+        "propertyType": "villa",
+        "squareFeet": 2800,
+        "availabilityDate": null,
+        "additionalFeatures": [
+          "fireplace",
+          "sauna"
+        ]
+      },
+      "{\n  \"propertyType\": \"villa\",\n  \"squareFeet\": 2800,\n  \"availabilityDate\": undefined,\n  \"additionalFeatures\": [\"fireplace\", \"sauna\"]\n}"
+    ],
+    [
+      {
+        "event": "Rock Concert",
+        "date": "2023-11-25",
+        "ticketsSold": 150,
+        "venue": {
+          "name": "Madison Square Garden",
+          "location": "New York",
+          "capacity": 20000
+        },
+        "additionalInfo": null
+      },
+      "{\n    \"event\": \"Rock Concert\",\n    \"date\": \"2023-11-25\",\n    \"ticketsSold\": 150,\n    \"venue\": {\n        \"name\": \"Madison Square Garden\",\n        \"location\": \"New York\",\n        \"capacity\": 20000\n    },\n    \"additionalInfo\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Art Exhibition",
+        "date": "2024-01-15",
+        "ticketsAvailable": 300,
+        "organizer": {
+          "name": "Art World",
+          "contact": null
+        }
+      },
+      "{\n    \"event\": \"Art Exhibition\",\n    \"date\": \"2024-01-15\",\n    \"ticketsAvailable\": 300,\n    \"organizer\": {\n        \"name\": \"Art World\",\n        \"contact\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "event": "Charity Gala",
+        "date": "2023-12-05",
+        "ticketsSold": 500,
+        "sponsors": [
+          "Company A",
+          "Company B"
+        ],
+        "vipGuests": null
+      },
+      "{\n    \"event\": \"Charity Gala\",\n    \"date\": \"2023-12-05\",\n    \"ticketsSold\": 500,\n    \"sponsors\": [\n        \"Company A\",\n        \"Company B\"\n    ],\n    \"vipGuests\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Food Festival",
+        "date": "2023-10-10",
+        "ticketsAvailable": 1000,
+        "location": {
+          "city": "Los Angeles",
+          "venue": "City Park"
+        },
+        "remarks": null
+      },
+      "{\n    \"event\": \"Food Festival\",\n    \"date\": \"2023-10-10\",\n    \"ticketsAvailable\": 1000,\n    \"location\": {\n        \"city\": \"Los Angeles\",\n        \"venue\": \"City Park\"\n    },\n    \"remarks\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Marathon",
+        "date": "2023-09-18",
+        "participants": 2500,
+        "route": {
+          "start": "Central Park",
+          "end": "Times Square"
+        },
+        "weatherForecast": null
+      },
+      "{\n    \"event\": \"Marathon\",\n    \"date\": \"2023-09-18\",\n    \"participants\": 2500,\n    \"route\": {\n        \"start\": \"Central Park\",\n        \"end\": \"Times Square\"\n    },\n    \"weatherForecast\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Tech Conference",
+        "date": "2024-03-12",
+        "ticketsSold": 750,
+        "keynoteSpeaker": {
+          "name": "Dr. John Doe",
+          "topic": "AI Innovations"
+        },
+        "catering": null
+      },
+      "{\n    \"event\": \"Tech Conference\",\n    \"date\": \"2024-03-12\",\n    \"ticketsSold\": 750,\n    \"keynoteSpeaker\": {\n        \"name\": \"Dr. John Doe\",\n        \"topic\": \"AI Innovations\"\n    },\n    \"catering\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Theater Play",
+        "date": "2024-02-20",
+        "ticketsSold": 200,
+        "playwright": "Jane Smith",
+        "language": "English",
+        "intermissions": null
+      },
+      "{\n    \"event\": \"Theater Play\",\n    \"date\": \"2024-02-20\",\n    \"ticketsSold\": 200,\n    \"playwright\": \"Jane Smith\",\n    \"language\": \"English\",\n    \"intermissions\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Book Fair",
+        "date": "2023-11-30",
+        "exhibitors": 100,
+        "mainAuthor": "Alice Brown",
+        "eventSponsor": null
+      },
+      "{\n    \"event\": \"Book Fair\",\n    \"date\": \"2023-11-30\",\n    \"exhibitors\": 100,\n    \"mainAuthor\": \"Alice Brown\",\n    \"eventSponsor\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Film Festival",
+        "date": "2024-05-05",
+        "filmsScreening": 50,
+        "mainVenue": "Downtown Cinema",
+        "juryPanel": null
+      },
+      "{\n    \"event\": \"Film Festival\",\n    \"date\": \"2024-05-05\",\n    \"filmsScreening\": 50,\n    \"mainVenue\": \"Downtown Cinema\",\n    \"juryPanel\": undefined\n}"
+    ],
+    [
+      {
+        "event": "Music Festival",
+        "date": "2023-08-12",
+        "bandsPlaying": [
+          "The Rockers",
+          "Jazz Trio"
+        ],
+        "ticketsSold": 4000,
+        "volunteers": null
+      },
+      "{\n    \"event\": \"Music Festival\",\n    \"date\": \"2023-08-12\",\n    \"bandsPlaying\": [\n        \"The Rockers\",\n        \"Jazz Trio\"\n    ],\n    \"ticketsSold\": 4000,\n    \"volunteers\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 101,
+        "title": "Login page error",
+        "status": "Open",
+        "assignedTo": "John Doe",
+        "description": "Error occurs when logging in with special characters.",
+        "tags": [
+          "frontend",
+          "bug"
+        ],
+        "lastUpdated": "2023-10-01T10:00:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 101,\n  \"title\": \"Login page error\",\n  \"status\": \"Open\",\n  \"assignedTo\": \"John Doe\",\n  \"description\": \"Error occurs when logging in with special characters.\",\n  \"tags\": [\"frontend\", \"bug\"],\n  \"lastUpdated\": \"2023-10-01T10:00:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 102,
+        "title": "API timeout",
+        "status": "Closed",
+        "assignedTo": "Jane Smith",
+        "description": "The API times out after 30 seconds instead of 60.",
+        "tags": [
+          "backend",
+          "performance"
+        ],
+        "lastUpdated": "2023-09-29T14:30:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 102,\n  \"title\": \"API timeout\",\n  \"status\": \"Closed\",\n  \"assignedTo\": \"Jane Smith\",\n  \"description\": \"The API times out after 30 seconds instead of 60.\",\n  \"tags\": [\"backend\", \"performance\"],\n  \"lastUpdated\": \"2023-09-29T14:30:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 103,
+        "title": "Misalignment on dashboard",
+        "status": "In Progress",
+        "assignedTo": "Alice Johnson",
+        "description": "Widgets are not aligned properly on various screen sizes.",
+        "tags": [
+          "UI",
+          "design"
+        ],
+        "lastUpdated": "2023-10-02T09:45:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 103,\n  \"title\": \"Misalignment on dashboard\",\n  \"status\": \"In Progress\",\n  \"assignedTo\": \"Alice Johnson\",\n  \"description\": \"Widgets are not aligned properly on various screen sizes.\",\n  \"tags\": [\"UI\", \"design\"],\n  \"lastUpdated\": \"2023-10-02T09:45:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 104,
+        "title": "Database connection failure",
+        "status": "Open",
+        "assignedTo": "David Brown",
+        "description": "Connection to the database fails intermittently.",
+        "tags": [
+          "backend",
+          "database"
+        ],
+        "lastUpdated": "2023-10-03T12:00:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 104,\n  \"title\": \"Database connection failure\",\n  \"status\": \"Open\",\n  \"assignedTo\": \"David Brown\",\n  \"description\": \"Connection to the database fails intermittently.\",\n  \"tags\": [\"backend\", \"database\"],\n  \"lastUpdated\": \"2023-10-03T12:00:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 105,
+        "title": "Button not clickable",
+        "status": "Resolved",
+        "assignedTo": "Chris Green",
+        "description": "Submit button is not clickable in certain browsers.",
+        "tags": [
+          "frontend",
+          "compatibility"
+        ],
+        "lastUpdated": "2023-10-04T08:00:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 105,\n  \"title\": \"Button not clickable\",\n  \"status\": \"Resolved\",\n  \"assignedTo\": \"Chris Green\",\n  \"description\": \"Submit button is not clickable in certain browsers.\",\n  \"tags\": [\"frontend\", \"compatibility\"],\n  \"lastUpdated\": \"2023-10-04T08:00:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 106,
+        "title": "Error 500 on profile update",
+        "status": "Open",
+        "assignedTo": "Michael Clark",
+        "description": "Internal server error when updating user profile.",
+        "tags": [
+          "backend",
+          "server"
+        ],
+        "lastUpdated": "2023-10-05T11:15:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 106,\n  \"title\": \"Error 500 on profile update\",\n  \"status\": \"Open\",\n  \"assignedTo\": \"Michael Clark\",\n  \"description\": \"Internal server error when updating user profile.\",\n  \"tags\": [\"backend\", \"server\"],\n  \"lastUpdated\": \"2023-10-05T11:15:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 107,
+        "title": "Image upload failing",
+        "status": "In Review",
+        "assignedTo": "Sarah White",
+        "description": "Image uploads fail on slow internet connections.",
+        "tags": [
+          "frontend",
+          "upload"
+        ],
+        "lastUpdated": "2023-10-06T14:05:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 107,\n  \"title\": \"Image upload failing\",\n  \"status\": \"In Review\",\n  \"assignedTo\": \"Sarah White\",\n  \"description\": \"Image uploads fail on slow internet connections.\",\n  \"tags\": [\"frontend\", \"upload\"],\n  \"lastUpdated\": \"2023-10-06T14:05:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 108,
+        "title": "Search not returning results",
+        "status": "Open",
+        "assignedTo": "Tom Harris",
+        "description": "Search functionality returns no results for valid queries.",
+        "tags": [
+          "frontend",
+          "search"
+        ],
+        "lastUpdated": "2023-10-07T09:30:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 108,\n  \"title\": \"Search not returning results\",\n  \"status\": \"Open\",\n  \"assignedTo\": \"Tom Harris\",\n  \"description\": \"Search functionality returns no results for valid queries.\",\n  \"tags\": [\"frontend\", \"search\"],\n  \"lastUpdated\": \"2023-10-07T09:30:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 109,
+        "title": "Notification not received",
+        "status": "Closed",
+        "assignedTo": "Jessica Lee",
+        "description": "Users are not receiving notifications on new messages.",
+        "tags": [
+          "backend",
+          "notification"
+        ],
+        "lastUpdated": "2023-10-08T13:20:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 109,\n  \"title\": \"Notification not received\",\n  \"status\": \"Closed\",\n  \"assignedTo\": \"Jessica Lee\",\n  \"description\": \"Users are not receiving notifications on new messages.\",\n  \"tags\": [\"backend\", \"notification\"],\n  \"lastUpdated\": \"2023-10-08T13:20:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "issueId": 110,
+        "title": "Data sync issue",
+        "status": "Open",
+        "assignedTo": "Robert King",
+        "description": "Data synchronization between devices is inconsistent.",
+        "tags": [
+          "sync",
+          "data"
+        ],
+        "lastUpdated": "2023-10-09T11:50:00Z",
+        "resolution": null
+      },
+      "{\n  \"issueId\": 110,\n  \"title\": \"Data sync issue\",\n  \"status\": \"Open\",\n  \"assignedTo\": \"Robert King\",\n  \"description\": \"Data synchronization between devices is inconsistent.\",\n  \"tags\": [\"sync\", \"data\"],\n  \"lastUpdated\": \"2023-10-09T11:50:00Z\",\n  \"resolution\": undefined\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V1234",
+        "maintenance_records": [
+          {
+            "date": "2023-01-15",
+            "service": "Oil Change",
+            "cost": 50.75,
+            "notes": null
+          },
+          {
+            "date": "2023-03-10",
+            "service": "Tire Rotation",
+            "cost": 30.0,
+            "notes": "Rotated all tires"
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V1234\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-01-15\",\n            \"service\": \"Oil Change\",\n            \"cost\": 50.75,\n            \"notes\": undefined\n        },\n        {\n            \"date\": \"2023-03-10\",\n            \"service\": \"Tire Rotation\",\n            \"cost\": 30.00,\n            \"notes\": \"Rotated all tires\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V5678",
+        "maintenance_records": [
+          {
+            "date": "2022-12-01",
+            "service": "Brake Inspection",
+            "cost": 75.0,
+            "notes": null
+          },
+          {
+            "date": "2023-02-20",
+            "service": "Battery Replacement",
+            "cost": 120.0,
+            "notes": "Replaced with new battery"
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V5678\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2022-12-01\",\n            \"service\": \"Brake Inspection\",\n            \"cost\": 75.00,\n            \"notes\": undefined\n        },\n        {\n            \"date\": \"2023-02-20\",\n            \"service\": \"Battery Replacement\",\n            \"cost\": 120.00,\n            \"notes\": \"Replaced with new battery\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V91011",
+        "maintenance_records": [
+          {
+            "date": "2023-04-05",
+            "service": "Transmission Fluid Replacement",
+            "cost": 90.0,
+            "notes": "Flushed and replaced"
+          },
+          {
+            "date": "2023-06-15",
+            "service": "Air Filter Change",
+            "cost": 20.0,
+            "notes": null
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V91011\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-04-05\",\n            \"service\": \"Transmission Fluid Replacement\",\n            \"cost\": 90.00,\n            \"notes\": \"Flushed and replaced\"\n        },\n        {\n            \"date\": \"2023-06-15\",\n            \"service\": \"Air Filter Change\",\n            \"cost\": 20.00,\n            \"notes\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V121314",
+        "maintenance_records": [
+          {
+            "date": "2023-07-10",
+            "service": "Spark Plug Replacement",
+            "cost": 45.0,
+            "notes": "Replaced all spark plugs"
+          },
+          {
+            "date": "2023-08-25",
+            "service": "Windshield Wiper Replacement",
+            "cost": 25.0,
+            "notes": null
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V121314\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-07-10\",\n            \"service\": \"Spark Plug Replacement\",\n            \"cost\": 45.00,\n            \"notes\": \"Replaced all spark plugs\"\n        },\n        {\n            \"date\": \"2023-08-25\",\n            \"service\": \"Windshield Wiper Replacement\",\n            \"cost\": 25.00,\n            \"notes\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V151617",
+        "maintenance_records": [
+          {
+            "date": "2023-09-30",
+            "service": "Coolant Flush",
+            "cost": 60.5,
+            "notes": null
+          },
+          {
+            "date": "2023-10-12",
+            "service": "Fuel System Cleaning",
+            "cost": 85.0,
+            "notes": "Improved fuel efficiency"
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V151617\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-09-30\",\n            \"service\": \"Coolant Flush\",\n            \"cost\": 60.50,\n            \"notes\": undefined\n        },\n        {\n            \"date\": \"2023-10-12\",\n            \"service\": \"Fuel System Cleaning\",\n            \"cost\": 85.00,\n            \"notes\": \"Improved fuel efficiency\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V181920",
+        "maintenance_records": [
+          {
+            "date": "2023-11-05",
+            "service": "Exhaust System Check",
+            "cost": 40.0,
+            "notes": "No issues found"
+          },
+          {
+            "date": "2023-12-01",
+            "service": "Brake Fluid Replacement",
+            "cost": 55.0,
+            "notes": null
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V181920\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2023-11-05\",\n            \"service\": \"Exhaust System Check\",\n            \"cost\": 40.00,\n            \"notes\": \"No issues found\"\n        },\n        {\n            \"date\": \"2023-12-01\",\n            \"service\": \"Brake Fluid Replacement\",\n            \"cost\": 55.00,\n            \"notes\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V212223",
+        "maintenance_records": [
+          {
+            "date": "2024-01-15",
+            "service": "Alternator Replacement",
+            "cost": 150.0,
+            "notes": null
+          },
+          {
+            "date": "2024-02-20",
+            "service": "Fuel Pump Replacement",
+            "cost": 200.0,
+            "notes": "Improved performance"
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V212223\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2024-01-15\",\n            \"service\": \"Alternator Replacement\",\n            \"cost\": 150.00,\n            \"notes\": undefined\n        },\n        {\n            \"date\": \"2024-02-20\",\n            \"service\": \"Fuel Pump Replacement\",\n            \"cost\": 200.00,\n            \"notes\": \"Improved performance\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V242526",
+        "maintenance_records": [
+          {
+            "date": "2024-03-10",
+            "service": "Headlight Bulb Replacement",
+            "cost": 25.0,
+            "notes": "Replaced both bulbs"
+          },
+          {
+            "date": "2024-04-15",
+            "service": "Power Steering Fluid Replacement",
+            "cost": 45.0,
+            "notes": null
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V242526\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2024-03-10\",\n            \"service\": \"Headlight Bulb Replacement\",\n            \"cost\": 25.00,\n            \"notes\": \"Replaced both bulbs\"\n        },\n        {\n            \"date\": \"2024-04-15\",\n            \"service\": \"Power Steering Fluid Replacement\",\n            \"cost\": 45.00,\n            \"notes\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V272829",
+        "maintenance_records": [
+          {
+            "date": "2024-05-20",
+            "service": "Radiator Flush",
+            "cost": 60.0,
+            "notes": null
+          },
+          {
+            "date": "2024-06-10",
+            "service": "Suspension Check",
+            "cost": 80.0,
+            "notes": "No issues detected"
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V272829\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2024-05-20\",\n            \"service\": \"Radiator Flush\",\n            \"cost\": 60.00,\n            \"notes\": undefined\n        },\n        {\n            \"date\": \"2024-06-10\",\n            \"service\": \"Suspension Check\",\n            \"cost\": 80.00,\n            \"notes\": \"No issues detected\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "V303132",
+        "maintenance_records": [
+          {
+            "date": "2024-07-15",
+            "service": "AC Recharge",
+            "cost": 90.0,
+            "notes": "AC blowing cold"
+          },
+          {
+            "date": "2024-08-25",
+            "service": "Emissions Test",
+            "cost": 25.0,
+            "notes": null
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"V303132\",\n    \"maintenance_records\": [\n        {\n            \"date\": \"2024-07-15\",\n            \"service\": \"AC Recharge\",\n            \"cost\": 90.00,\n            \"notes\": \"AC blowing cold\"\n        },\n        {\n            \"date\": \"2024-08-25\",\n            \"service\": \"Emissions Test\",\n            \"cost\": 25.00,\n            \"notes\": undefined\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": "E123",
+        "name": "Alice Smith",
+        "attendance": {
+          "2023-10-01": "Present",
+          "2023-10-02": "Absent",
+          "2023-10-03": null
+        }
+      },
+      "{\n  \"employeeId\": \"E123\",\n  \"name\": \"Alice Smith\",\n  \"attendance\": {\n    \"2023-10-01\": \"Present\",\n    \"2023-10-02\": \"Absent\",\n    \"2023-10-03\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E456",
+        "name": "Bob Jones",
+        "attendance": {
+          "2023-10-01": "Absent",
+          "2023-10-02": null,
+          "2023-10-03": "Present"
+        }
+      },
+      "{\n  \"employeeId\": \"E456\",\n  \"name\": \"Bob Jones\",\n  \"attendance\": {\n    \"2023-10-01\": \"Absent\",\n    \"2023-10-02\": undefined,\n    \"2023-10-03\": \"Present\"\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E789",
+        "name": "Carol White",
+        "attendance": {
+          "2023-10-01": null,
+          "2023-10-02": "Present",
+          "2023-10-03": "Absent"
+        }
+      },
+      "{\n  \"employeeId\": \"E789\",\n  \"name\": \"Carol White\",\n  \"attendance\": {\n    \"2023-10-01\": undefined,\n    \"2023-10-02\": \"Present\",\n    \"2023-10-03\": \"Absent\"\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E321",
+        "name": "David Brown",
+        "attendance": {
+          "2023-10-01": "Present",
+          "2023-10-02": "Present",
+          "2023-10-03": null
+        }
+      },
+      "{\n  \"employeeId\": \"E321\",\n  \"name\": \"David Brown\",\n  \"attendance\": {\n    \"2023-10-01\": \"Present\",\n    \"2023-10-02\": \"Present\",\n    \"2023-10-03\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E654",
+        "name": "Eva Green",
+        "attendance": {
+          "2023-10-01": "Absent",
+          "2023-10-02": null,
+          "2023-10-03": "Present"
+        }
+      },
+      "{\n  \"employeeId\": \"E654\",\n  \"name\": \"Eva Green\",\n  \"attendance\": {\n    \"2023-10-01\": \"Absent\",\n    \"2023-10-02\": undefined,\n    \"2023-10-03\": \"Present\"\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E987",
+        "name": "Frank Black",
+        "attendance": {
+          "2023-10-01": null,
+          "2023-10-02": "Absent",
+          "2023-10-03": "Absent"
+        }
+      },
+      "{\n  \"employeeId\": \"E987\",\n  \"name\": \"Frank Black\",\n  \"attendance\": {\n    \"2023-10-01\": undefined,\n    \"2023-10-02\": \"Absent\",\n    \"2023-10-03\": \"Absent\"\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E111",
+        "name": "Gina Gray",
+        "attendance": {
+          "2023-10-01": "Present",
+          "2023-10-02": null,
+          "2023-10-03": "Absent"
+        }
+      },
+      "{\n  \"employeeId\": \"E111\",\n  \"name\": \"Gina Gray\",\n  \"attendance\": {\n    \"2023-10-01\": \"Present\",\n    \"2023-10-02\": undefined,\n    \"2023-10-03\": \"Absent\"\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E222",
+        "name": "Henry Blue",
+        "attendance": {
+          "2023-10-01": "Absent",
+          "2023-10-02": "Present",
+          "2023-10-03": null
+        }
+      },
+      "{\n  \"employeeId\": \"E222\",\n  \"name\": \"Henry Blue\",\n  \"attendance\": {\n    \"2023-10-01\": \"Absent\",\n    \"2023-10-02\": \"Present\",\n    \"2023-10-03\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E333",
+        "name": "Ivy Red",
+        "attendance": {
+          "2023-10-01": null,
+          "2023-10-02": "Absent",
+          "2023-10-03": "Present"
+        }
+      },
+      "{\n  \"employeeId\": \"E333\",\n  \"name\": \"Ivy Red\",\n  \"attendance\": {\n    \"2023-10-01\": undefined,\n    \"2023-10-02\": \"Absent\",\n    \"2023-10-03\": \"Present\"\n  }\n}"
+    ],
+    [
+      {
+        "employeeId": "E444",
+        "name": "Jack Yellow",
+        "attendance": {
+          "2023-10-01": "Present",
+          "2023-10-02": "Absent",
+          "2023-10-03": null
+        }
+      },
+      "{\n  \"employeeId\": \"E444\",\n  \"name\": \"Jack Yellow\",\n  \"attendance\": {\n    \"2023-10-01\": \"Present\",\n    \"2023-10-02\": \"Absent\",\n    \"2023-10-03\": undefined\n  }\n}"
+    ],
+    [
+      {
+        "thread_id": 12345,
+        "title": "Best Programming Languages in 2023",
+        "posts": [
+          {
+            "user": "devGuru",
+            "content": "I think Python is still the best!",
+            "likes": 42,
+            "replies": null
+          },
+          {
+            "user": "codeMaster",
+            "content": "JavaScript has improved a lot, especially with ES2023.",
+            "likes": 37,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 12345,\n  \"title\": \"Best Programming Languages in 2023\",\n  \"posts\": [\n    {\n      \"user\": \"devGuru\",\n      \"content\": \"I think Python is still the best!\",\n      \"likes\": 42,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"codeMaster\",\n      \"content\": \"JavaScript has improved a lot, especially with ES2023.\",\n      \"likes\": 37,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 98765,
+        "title": "How to start learning AI?",
+        "posts": [
+          {
+            "user": "aiNovice",
+            "content": "Where should I begin if I'm new to AI?",
+            "likes": 15,
+            "replies": null
+          },
+          {
+            "user": "mlExpert",
+            "content": "Start with Python and libraries like TensorFlow.",
+            "likes": 58,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 98765,\n  \"title\": \"How to start learning AI?\",\n  \"posts\": [\n    {\n      \"user\": \"aiNovice\",\n      \"content\": \"Where should I begin if I'm new to AI?\",\n      \"likes\": 15,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"mlExpert\",\n      \"content\": \"Start with Python and libraries like TensorFlow.\",\n      \"likes\": 58,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 55555,
+        "title": "Web vs Native Apps",
+        "posts": [
+          {
+            "user": "webDev",
+            "content": "PWAs are the future of web apps.",
+            "likes": 70,
+            "replies": null
+          },
+          {
+            "user": "nativeCoder",
+            "content": "Native apps offer better performance.",
+            "likes": 85,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 55555,\n  \"title\": \"Web vs Native Apps\",\n  \"posts\": [\n    {\n      \"user\": \"webDev\",\n      \"content\": \"PWAs are the future of web apps.\",\n      \"likes\": 70,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"nativeCoder\",\n      \"content\": \"Native apps offer better performance.\",\n      \"likes\": 85,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 24680,
+        "title": "Favorite Code Editors",
+        "posts": [
+          {
+            "user": "editorFan",
+            "content": "VSCode is hands down the best!",
+            "likes": 150,
+            "replies": null
+          },
+          {
+            "user": "oldSchool",
+            "content": "I still prefer Vim for its efficiency.",
+            "likes": 100,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 24680,\n  \"title\": \"Favorite Code Editors\",\n  \"posts\": [\n    {\n      \"user\": \"editorFan\",\n      \"content\": \"VSCode is hands down the best!\",\n      \"likes\": 150,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"oldSchool\",\n      \"content\": \"I still prefer Vim for its efficiency.\",\n      \"likes\": 100,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 33333,
+        "title": "Future of Technology",
+        "posts": [
+          {
+            "user": "techFuturist",
+            "content": "Quantum computing will change everything.",
+            "likes": 200,
+            "replies": null
+          },
+          {
+            "user": "skeptic",
+            "content": "I'm not sure we'll see it in our lifetime.",
+            "likes": 50,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 33333,\n  \"title\": \"Future of Technology\",\n  \"posts\": [\n    {\n      \"user\": \"techFuturist\",\n      \"content\": \"Quantum computing will change everything.\",\n      \"likes\": 200,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"skeptic\",\n      \"content\": \"I'm not sure we'll see it in our lifetime.\",\n      \"likes\": 50,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 11223,
+        "title": "Open Source Contributions",
+        "posts": [
+          {
+            "user": "openSourceAdvocate",
+            "content": "Contributing to open source is rewarding.",
+            "likes": 120,
+            "replies": null
+          },
+          {
+            "user": "studentProgrammer",
+            "content": "Where should I start?",
+            "likes": 60,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 11223,\n  \"title\": \"Open Source Contributions\",\n  \"posts\": [\n    {\n      \"user\": \"openSourceAdvocate\",\n      \"content\": \"Contributing to open source is rewarding.\",\n      \"likes\": 120,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"studentProgrammer\",\n      \"content\": \"Where should I start?\",\n      \"likes\": 60,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 67890,
+        "title": "Data Science Career Path",
+        "posts": [
+          {
+            "user": "dataEnthusiast",
+            "content": "Data Science is a lucrative field.",
+            "likes": 110,
+            "replies": null
+          },
+          {
+            "user": "careerChanger",
+            "content": "How do I transition into this field?",
+            "likes": 90,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 67890,\n  \"title\": \"Data Science Career Path\",\n  \"posts\": [\n    {\n      \"user\": \"dataEnthusiast\",\n      \"content\": \"Data Science is a lucrative field.\",\n      \"likes\": 110,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"careerChanger\",\n      \"content\": \"How do I transition into this field?\",\n      \"likes\": 90,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 44444,
+        "title": "Cloud Computing Trends",
+        "posts": [
+          {
+            "user": "cloudGuru",
+            "content": "Serverless is the way to go.",
+            "likes": 95,
+            "replies": null
+          },
+          {
+            "user": "infraEngineer",
+            "content": "What about security concerns?",
+            "likes": 80,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 44444,\n  \"title\": \"Cloud Computing Trends\",\n  \"posts\": [\n    {\n      \"user\": \"cloudGuru\",\n      \"content\": \"Serverless is the way to go.\",\n      \"likes\": 95,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"infraEngineer\",\n      \"content\": \"What about security concerns?\",\n      \"likes\": 80,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 99999,
+        "title": "Blockchain Applications",
+        "posts": [
+          {
+            "user": "cryptoFan",
+            "content": "Blockchain is beyond just cryptocurrencies.",
+            "likes": 130,
+            "replies": null
+          },
+          {
+            "user": "blockchainSkeptic",
+            "content": "It's still a solution looking for a problem.",
+            "likes": 55,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 99999,\n  \"title\": \"Blockchain Applications\",\n  \"posts\": [\n    {\n      \"user\": \"cryptoFan\",\n      \"content\": \"Blockchain is beyond just cryptocurrencies.\",\n      \"likes\": 130,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"blockchainSkeptic\",\n      \"content\": \"It's still a solution looking for a problem.\",\n      \"likes\": 55,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "thread_id": 12321,
+        "title": "Cybersecurity Best Practices",
+        "posts": [
+          {
+            "user": "securityPro",
+            "content": "Always use multi-factor authentication.",
+            "likes": 140,
+            "replies": null
+          },
+          {
+            "user": "techLearner",
+            "content": "Which tools are essential?",
+            "likes": 75,
+            "replies": null
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 12321,\n  \"title\": \"Cybersecurity Best Practices\",\n  \"posts\": [\n    {\n      \"user\": \"securityPro\",\n      \"content\": \"Always use multi-factor authentication.\",\n      \"likes\": 140,\n      \"replies\": undefined\n    },\n    {\n      \"user\": \"techLearner\",\n      \"content\": \"Which tools are essential?\",\n      \"likes\": 75,\n      \"replies\": undefined\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "date": "2023-10-01",
+        "foot_traffic": 1200,
+        "store_open": true,
+        "peak_hour": "14:00",
+        "additional_notes": null
+      },
+      "{\n  \"date\": \"2023-10-01\",\n  \"foot_traffic\": 1200,\n  \"store_open\": true,\n  \"peak_hour\": \"14:00\",\n  \"additional_notes\": undefined\n}"
+    ],
+    [
+      {
+        "store_id": "A123",
+        "location": "Downtown",
+        "daily_traffic": 850,
+        "weekend_specials": null
+      },
+      "{\n  \"store_id\": \"A123\",\n  \"location\": \"Downtown\",\n  \"daily_traffic\": 850,\n  \"weekend_specials\": undefined\n}"
+    ],
+    [
+      {
+        "day": "Monday",
+        "visitors": 300,
+        "weather_impact": "Moderate",
+        "maintenance": null
+      },
+      "{\n  \"day\": \"Monday\",\n  \"visitors\": 300,\n  \"weather_impact\": \"Moderate\",\n  \"maintenance\": undefined\n}"
+    ],
+    [
+      {
+        "date": "2023-09-25",
+        "unique_visitors": 450,
+        "store_event": "Back-to-school sale",
+        "advertisements": null
+      },
+      "{\n  \"date\": \"2023-09-25\",\n  \"unique_visitors\": 450,\n  \"store_event\": \"Back-to-school sale\",\n  \"advertisements\": undefined\n}"
+    ],
+    [
+      {
+        "store_name": "Tech Hub",
+        "customer_count": 560,
+        "promotional_event": true,
+        "freebies_given": null
+      },
+      "{\n  \"store_name\": \"Tech Hub\",\n  \"customer_count\": 560,\n  \"promotional_event\": true,\n  \"freebies_given\": undefined\n}"
+    ],
+    [
+      {
+        "date": "2023-10-05",
+        "new_customers": 145,
+        "recurring_customers": 340,
+        "closing_remark": null
+      },
+      "{\n  \"date\": \"2023-10-05\",\n  \"new_customers\": 145,\n  \"recurring_customers\": 340,\n  \"closing_remark\": undefined\n}"
+    ],
+    [
+      {
+        "staff_on_duty": 14,
+        "inventory_check": "Complete",
+        "surprise_audit": false,
+        "audit_notes": null
+      },
+      "{\n  \"staff_on_duty\": 14,\n  \"inventory_check\": \"Complete\",\n  \"surprise_audit\": false,\n  \"audit_notes\": undefined\n}"
+    ],
+    [
+      {
+        "day_of_week": "Wednesday",
+        "foot_traffic": 920,
+        "new_product_launch": "Smart Speakers",
+        "customer_feedback_collected": null
+      },
+      "{\n  \"day_of_week\": \"Wednesday\",\n  \"foot_traffic\": 920,\n  \"new_product_launch\": \"Smart Speakers\",\n  \"customer_feedback_collected\": undefined\n}"
+    ],
+    [
+      {
+        "store_location": "Suburban",
+        "visitor_count": 200,
+        "seasonal_decorations": "Halloween",
+        "decoration_notes": null
+      },
+      "{\n  \"store_location\": \"Suburban\",\n  \"visitor_count\": 200,\n  \"seasonal_decorations\": \"Halloween\",\n  \"decoration_notes\": undefined\n}"
+    ],
+    [
+      {
+        "date": "2023-10-10",
+        "foot_traffic": 760,
+        "new_arrivals": "Winter Collection",
+        "special_event": null
+      },
+      "{\n  \"date\": \"2023-10-10\",\n  \"foot_traffic\": 760,\n  \"new_arrivals\": \"Winter Collection\",\n  \"special_event\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Chill Vibes",
+        "tracks": [
+          {
+            "title": "Lofi Beat",
+            "artist": "DJ Smooth",
+            "duration": 180
+          },
+          {
+            "title": "Relaxing Waves",
+            "artist": "Ocean Sounds",
+            "duration": 300
+          }
+        ],
+        "description": null
+      },
+      "{\n    \"playlistName\": \"Chill Vibes\",\n    \"tracks\": [\n        {\n            \"title\": \"Lofi Beat\",\n            \"artist\": \"DJ Smooth\",\n            \"duration\": 180\n        },\n        {\n            \"title\": \"Relaxing Waves\",\n            \"artist\": \"Ocean Sounds\",\n            \"duration\": 300\n        }\n    ],\n    \"description\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Top Hits",
+        "tracks": [
+          {
+            "title": "Hit Song 1",
+            "artist": "Famous Artist",
+            "duration": 210
+          },
+          {
+            "title": "Hit Song 2",
+            "artist": "Another Artist",
+            "duration": 200
+          }
+        ],
+        "lastUpdated": "2023-10-05"
+      },
+      "{\n    \"playlistName\": \"Top Hits\",\n    \"tracks\": [\n        {\n            \"title\": \"Hit Song 1\",\n            \"artist\": \"Famous Artist\",\n            \"duration\": 210\n        },\n        {\n            \"title\": \"Hit Song 2\",\n            \"artist\": \"Another Artist\",\n            \"duration\": 200\n        }\n    ],\n    \"lastUpdated\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Workout Mix",
+        "tracks": [
+          {
+            "title": "Pump It Up",
+            "artist": "Energy Boost",
+            "duration": 240
+          },
+          {
+            "title": "Run Fast",
+            "artist": "Speed Master",
+            "duration": 260
+          }
+        ],
+        "creator": null
+      },
+      "{\n    \"playlistName\": \"Workout Mix\",\n    \"tracks\": [\n        {\n            \"title\": \"Pump It Up\",\n            \"artist\": \"Energy Boost\",\n            \"duration\": 240\n        },\n        {\n            \"title\": \"Run Fast\",\n            \"artist\": \"Speed Master\",\n            \"duration\": 260\n        }\n    ],\n    \"creator\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Morning Motivation",
+        "tracks": [
+          {
+            "title": "Start Fresh",
+            "artist": "Morning Dew",
+            "duration": 150
+          },
+          {
+            "title": "New Day",
+            "artist": "Sunrise Melodies",
+            "duration": 180
+          }
+        ],
+        "followers": 5000
+      },
+      "{\n    \"playlistName\": \"Morning Motivation\",\n    \"tracks\": [\n        {\n            \"title\": \"Start Fresh\",\n            \"artist\": \"Morning Dew\",\n            \"duration\": 150\n        },\n        {\n            \"title\": \"New Day\",\n            \"artist\": \"Sunrise Melodies\",\n            \"duration\": 180\n        }\n    ],\n    \"followers\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Evening Relax",
+        "tracks": [
+          {
+            "title": "Calm Nights",
+            "artist": "Moonlight Sonata",
+            "duration": 320
+          },
+          {
+            "title": "Peaceful Dreams",
+            "artist": "Dream Catcher",
+            "duration": 300
+          }
+        ],
+        "isCollaborative": true
+      },
+      "{\n    \"playlistName\": \"Evening Relax\",\n    \"tracks\": [\n        {\n            \"title\": \"Calm Nights\",\n            \"artist\": \"Moonlight Sonata\",\n            \"duration\": 320\n        },\n        {\n            \"title\": \"Peaceful Dreams\",\n            \"artist\": \"Dream Catcher\",\n            \"duration\": 300\n        }\n    ],\n    \"isCollaborative\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Party Anthems",
+        "tracks": [
+          {
+            "title": "Dance Now",
+            "artist": "Party Starter",
+            "duration": 210
+          },
+          {
+            "title": "Let's Move",
+            "artist": "Groove Maker",
+            "duration": 230
+          }
+        ],
+        "genre": "Dance"
+      },
+      "{\n    \"playlistName\": \"Party Anthems\",\n    \"tracks\": [\n        {\n            \"title\": \"Dance Now\",\n            \"artist\": \"Party Starter\",\n            \"duration\": 210\n        },\n        {\n            \"title\": \"Let's Move\",\n            \"artist\": \"Groove Maker\",\n            \"duration\": 230\n        }\n    ],\n    \"genre\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Summer Jams",
+        "tracks": [
+          {
+            "title": "Beach Day",
+            "artist": "Sunny Vibes",
+            "duration": 250
+          },
+          {
+            "title": "Heat Wave",
+            "artist": "Summer Hits",
+            "duration": 270
+          }
+        ],
+        "createdBy": "DJ Sunshine"
+      },
+      "{\n    \"playlistName\": \"Summer Jams\",\n    \"tracks\": [\n        {\n            \"title\": \"Beach Day\",\n            \"artist\": \"Sunny Vibes\",\n            \"duration\": 250\n        },\n        {\n            \"title\": \"Heat Wave\",\n            \"artist\": \"Summer Hits\",\n            \"duration\": 270\n        }\n    ],\n    \"createdBy\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Classical Essentials",
+        "tracks": [
+          {
+            "title": "Symphony No. 5",
+            "artist": "Beethoven",
+            "duration": 1800
+          },
+          {
+            "title": "Canon in D",
+            "artist": "Pachelbel",
+            "duration": 360
+          }
+        ],
+        "published": null
+      },
+      "{\n    \"playlistName\": \"Classical Essentials\",\n    \"tracks\": [\n        {\n            \"title\": \"Symphony No. 5\",\n            \"artist\": \"Beethoven\",\n            \"duration\": 1800\n        },\n        {\n            \"title\": \"Canon in D\",\n            \"artist\": \"Pachelbel\",\n            \"duration\": 360\n        }\n    ],\n    \"published\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Indie Discoveries",
+        "tracks": [
+          {
+            "title": "Unknown Star",
+            "artist": "Indie Band",
+            "duration": 200
+          },
+          {
+            "title": "New Horizon",
+            "artist": "Up&Coming",
+            "duration": 210
+          }
+        ],
+        "popularity": 72
+      },
+      "{\n    \"playlistName\": \"Indie Discoveries\",\n    \"tracks\": [\n        {\n            \"title\": \"Unknown Star\",\n            \"artist\": \"Indie Band\",\n            \"duration\": 200\n        },\n        {\n            \"title\": \"New Horizon\",\n            \"artist\": \"Up&Coming\",\n            \"duration\": 210\n        }\n    ],\n    \"popularity\": undefined\n}"
+    ],
+    [
+      {
+        "playlistName": "Jazz Classics",
+        "tracks": [
+          {
+            "title": "Take Five",
+            "artist": "Dave Brubeck",
+            "duration": 324
+          },
+          {
+            "title": "So What",
+            "artist": "Miles Davis",
+            "duration": 569
+          }
+        ],
+        "comments": null
+      },
+      "{\n    \"playlistName\": \"Jazz Classics\",\n    \"tracks\": [\n        {\n            \"title\": \"Take Five\",\n            \"artist\": \"Dave Brubeck\",\n            \"duration\": 324\n        },\n        {\n            \"title\": \"So What\",\n            \"artist\": \"Miles Davis\",\n            \"duration\": 569\n        }\n    ],\n    \"comments\": undefined\n}"
+    ],
+    [
+      {
+        "card_id": "123456789",
+        "trips": [
+          {
+            "date": "2023-10-10",
+            "route": "Bus 32",
+            "fare": 2.5
+          },
+          {
+            "date": "2023-10-11",
+            "route": "Train Red Line",
+            "fare": 3.0
+          },
+          {
+            "date": "2023-10-12",
+            "route": "Tram A",
+            "fare": null
+          }
+        ]
+      },
+      "{\n    \"card_id\": \"123456789\",\n    \"trips\": [\n        {\"date\": \"2023-10-10\", \"route\": \"Bus 32\", \"fare\": 2.5},\n        {\"date\": \"2023-10-11\", \"route\": \"Train Red Line\", \"fare\": 3.0},\n        {\"date\": \"2023-10-12\", \"route\": \"Tram A\", \"fare\": undefined}\n    ]\n}"
+    ],
+    [
+      {
+        "passenger": "John Doe",
+        "balance": 15.75,
+        "last_trip": {
+          "date": "2023-09-30",
+          "route": "Bus 5",
+          "fare": 1.25
+        }
+      },
+      "{\n    \"passenger\": \"John Doe\",\n    \"balance\": 15.75,\n    \"last_trip\": {\"date\": \"2023-09-30\", \"route\": \"Bus 5\", \"fare\": undefined}\n}"
+    ],
+    [
+      {
+        "usage_history": [],
+        "monthly_pass": {
+          "active": false,
+          "expiry_date": null
+        }
+      },
+      "{\n    \"usage_history\": [],\n    \"monthly_pass\": {\n        \"active\": false,\n        \"expiry_date\": undefined\n    }\n}"
+    ],
+    [
+      {
+        "card_number": "987654321",
+        "owner": "Alice Smith",
+        "trips": [
+          {
+            "date": "2023-08-15",
+            "route": "Metro Blue Line",
+            "fare": 2.75
+          },
+          {
+            "date": "2023-09-01",
+            "route": "Bus 20",
+            "fare": null
+          }
+        ]
+      },
+      "{\n    \"card_number\": \"987654321\",\n    \"owner\": \"Alice Smith\",\n    \"trips\": [\n        {\"date\": \"2023-08-15\", \"route\": \"Metro Blue Line\", \"fare\": 2.75},\n        {\"date\": \"2023-09-01\", \"route\": \"Bus 20\", \"fare\": undefined}\n    ]\n}"
+    ],
+    [
+      {
+        "card_status": "active",
+        "balance": 8.0,
+        "recent_trips": [
+          {
+            "date": "2023-10-01",
+            "route": "Tram C",
+            "fare": 1.5
+          },
+          {
+            "date": "2023-10-05",
+            "route": "Bus 12",
+            "fare": 2.0
+          }
+        ]
+      },
+      "{\n    \"card_status\": \"active\",\n    \"balance\": 8.00,\n    \"recent_trips\": [\n        {\"date\": \"2023-10-01\", \"route\": \"Tram C\", \"fare\": 1.50},\n        {\"date\": \"2023-10-05\", \"route\": \"Bus 12\", \"fare\": undefined}\n    ]\n}"
+    ],
+    [
+      {
+        "user_id": "UID7890",
+        "trips_summary": {
+          "total_trips": 5,
+          "total_spent": 10.75,
+          "last_trip": {
+            "date": "2023-09-25",
+            "route": "Bus 7",
+            "fare": 1.25
+          }
+        }
+      },
+      "{\n    \"user_id\": \"UID7890\",\n    \"trips_summary\": {\n        \"total_trips\": 5,\n        \"total_spent\": 10.75,\n        \"last_trip\": {\"date\": \"2023-09-25\", \"route\": \"Bus 7\", \"fare\": undefined}\n    }\n}"
+    ],
+    [
+      {
+        "public_transport": "Subway",
+        "balance_remaining": null,
+        "last_used": "2023-09-15"
+      },
+      "{\n    \"public_transport\": \"Subway\",\n    \"balance_remaining\": undefined,\n    \"last_used\": \"2023-09-15\"\n}"
+    ],
+    [
+      {
+        "card_holder": "Emily Davis",
+        "active_card": true,
+        "expired": false,
+        "recent_fare": null
+      },
+      "{\n    \"card_holder\": \"Emily Davis\",\n    \"active_card\": true,\n    \"expired\": false,\n    \"recent_fare\": undefined\n}"
+    ],
+    [
+      {
+        "account": "54321",
+        "last_transactions": [
+          {
+            "date": "2023-07-10",
+            "route": "Ferry 1",
+            "fare": 5.5
+          },
+          {
+            "date": "2023-07-25",
+            "route": "Bus 9",
+            "fare": 2.25
+          },
+          {
+            "date": "2023-08-10",
+            "route": "Tram B",
+            "fare": null
+          }
+        ]
+      },
+      "{\n    \"account\": \"54321\",\n    \"last_transactions\": [\n        {\"date\": \"2023-07-10\", \"route\": \"Ferry 1\", \"fare\": 5.50},\n        {\"date\": \"2023-07-25\", \"route\": \"Bus 9\", \"fare\": 2.25},\n        {\"date\": \"2023-08-10\", \"route\": \"Tram B\", \"fare\": undefined}\n    ]\n}"
+    ],
+    [
+      {
+        "transport_card": "Gold",
+        "usage": {
+          "total_days": 30,
+          "average_fare": 2.0,
+          "last_fare": null
+        }
+      },
+      "{\n    \"transport_card\": \"Gold\",\n    \"usage\": {\n        \"total_days\": 30,\n        \"average_fare\": 2.00,\n        \"last_fare\": undefined\n    }\n}"
+    ]
+  ]
+}

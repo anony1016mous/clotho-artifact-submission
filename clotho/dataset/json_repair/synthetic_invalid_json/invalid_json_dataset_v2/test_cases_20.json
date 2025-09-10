@@ -1,0 +1,2674 @@
+{
+  "possible_fix": "Fix numeric values with leading zeros\nExample: { \"key\": 00123 } \u2192 { \"key\": 123 }",
+  "test_cases": [
+    [
+      {
+        "courseId": 101,
+        "studentName": "John Doe",
+        "enrollmentDate": "2023-01-15",
+        "courseFee": 599,
+        "progressPercentage": 80
+      },
+      "{\n  \"courseId\": 00101,\n  \"studentName\": \"John Doe\",\n  \"enrollmentDate\": \"2023-01-15\",\n  \"courseFee\": 599,\n  \"progressPercentage\": 80\n}"
+    ],
+    [
+      {
+        "courseId": 202,
+        "studentName": "Jane Smith",
+        "enrollmentDate": "2023-02-20",
+        "courseFee": 799,
+        "progressPercentage": 65
+      },
+      "{\n  \"courseId\": 00202,\n  \"studentName\": \"Jane Smith\",\n  \"enrollmentDate\": \"2023-02-20\",\n  \"courseFee\": 799,\n  \"progressPercentage\": 65\n}"
+    ],
+    [
+      {
+        "courseId": 303,
+        "studentName": "Alice Johnson",
+        "enrollmentDate": "2023-03-10",
+        "courseFee": 499,
+        "progressPercentage": 50
+      },
+      "{\n  \"courseId\": 00303,\n  \"studentName\": \"Alice Johnson\",\n  \"enrollmentDate\": \"2023-03-10\",\n  \"courseFee\": 499,\n  \"progressPercentage\": 50\n}"
+    ],
+    [
+      {
+        "courseId": 404,
+        "studentName": "Bob Brown",
+        "enrollmentDate": "2023-04-05",
+        "courseFee": 699,
+        "progressPercentage": 90
+      },
+      "{\n  \"courseId\": 00404,\n  \"studentName\": \"Bob Brown\",\n  \"enrollmentDate\": \"2023-04-05\",\n  \"courseFee\": 699,\n  \"progressPercentage\": 90\n}"
+    ],
+    [
+      {
+        "courseId": 505,
+        "studentName": "Charlie Davis",
+        "enrollmentDate": "2023-05-22",
+        "courseFee": 899,
+        "progressPercentage": 75
+      },
+      "{\n  \"courseId\": 00505,\n  \"studentName\": \"Charlie Davis\",\n  \"enrollmentDate\": \"2023-05-22\",\n  \"courseFee\": 899,\n  \"progressPercentage\": 75\n}"
+    ],
+    [
+      {
+        "courseId": 606,
+        "studentName": "Diana Evans",
+        "enrollmentDate": "2023-06-14",
+        "courseFee": 499,
+        "progressPercentage": 40
+      },
+      "{\n  \"courseId\": 00606,\n  \"studentName\": \"Diana Evans\",\n  \"enrollmentDate\": \"2023-06-14\",\n  \"courseFee\": 499,\n  \"progressPercentage\": 40\n}"
+    ],
+    [
+      {
+        "courseId": 707,
+        "studentName": "Edward Green",
+        "enrollmentDate": "2023-07-30",
+        "courseFee": 1099,
+        "progressPercentage": 95
+      },
+      "{\n  \"courseId\": 00707,\n  \"studentName\": \"Edward Green\",\n  \"enrollmentDate\": \"2023-07-30\",\n  \"courseFee\": 1099,\n  \"progressPercentage\": 95\n}"
+    ],
+    [
+      {
+        "courseId": 808,
+        "studentName": "Fiona Harris",
+        "enrollmentDate": "2023-08-08",
+        "courseFee": 1299,
+        "progressPercentage": 30
+      },
+      "{\n  \"courseId\": 00808,\n  \"studentName\": \"Fiona Harris\",\n  \"enrollmentDate\": \"2023-08-08\",\n  \"courseFee\": 1299,\n  \"progressPercentage\": 30\n}"
+    ],
+    [
+      {
+        "courseId": 909,
+        "studentName": "George King",
+        "enrollmentDate": "2023-09-01",
+        "courseFee": 599,
+        "progressPercentage": 85
+      },
+      "{\n  \"courseId\": 00909,\n  \"studentName\": \"George King\",\n  \"enrollmentDate\": \"2023-09-01\",\n  \"courseFee\": 599,\n  \"progressPercentage\": 85\n}"
+    ],
+    [
+      {
+        "courseId": 1010,
+        "studentName": "Hannah Lee",
+        "enrollmentDate": "2023-10-25",
+        "courseFee": 999,
+        "progressPercentage": 55
+      },
+      "{\n  \"courseId\": 01010,\n  \"studentName\": \"Hannah Lee\",\n  \"enrollmentDate\": \"2023-10-25\",\n  \"courseFee\": 999,\n  \"progressPercentage\": 55\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "John Doe",
+          "age": 35,
+          "loan_amount": 15000,
+          "income": 50000
+        },
+        "status": "pending"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"John Doe\",\n    \"age\": 035,\n    \"loan_amount\": 015000,\n    \"income\": 050000\n  },\n  \"status\": \"pending\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Alice Smith",
+          "age": 29,
+          "loan_amount": 25000,
+          "income": 60000
+        },
+        "status": "approved"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Alice Smith\",\n    \"age\": 029,\n    \"loan_amount\": 025000,\n    \"income\": 060000\n  },\n  \"status\": \"approved\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Michael Brown",
+          "age": 42,
+          "loan_amount": 32000,
+          "income": 75000
+        },
+        "status": "rejected"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Michael Brown\",\n    \"age\": 042,\n    \"loan_amount\": 032000,\n    \"income\": 075000\n  },\n  \"status\": \"rejected\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Lisa White",
+          "age": 31,
+          "loan_amount": 45000,
+          "income": 87000
+        },
+        "status": "pending"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Lisa White\",\n    \"age\": 031,\n    \"loan_amount\": 045000,\n    \"income\": 087000\n  },\n  \"status\": \"pending\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Robert Green",
+          "age": 47,
+          "loan_amount": 37500,
+          "income": 92000
+        },
+        "status": "approved"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Robert Green\",\n    \"age\": 047,\n    \"loan_amount\": 037500,\n    \"income\": 092000\n  },\n  \"status\": \"approved\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Emily Johnson",
+          "age": 28,
+          "loan_amount": 22500,
+          "income": 63000
+        },
+        "status": "pending"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Emily Johnson\",\n    \"age\": 028,\n    \"loan_amount\": 022500,\n    \"income\": 063000\n  },\n  \"status\": \"pending\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Paul Taylor",
+          "age": 39,
+          "loan_amount": 48000,
+          "income": 105000
+        },
+        "status": "rejected"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Paul Taylor\",\n    \"age\": 039,\n    \"loan_amount\": 048000,\n    \"income\": 0105000\n  },\n  \"status\": \"rejected\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Nancy Wilson",
+          "age": 33,
+          "loan_amount": 31000,
+          "income": 77000
+        },
+        "status": "approved"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Nancy Wilson\",\n    \"age\": 033,\n    \"loan_amount\": 031000,\n    \"income\": 077000\n  },\n  \"status\": \"approved\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Oliver King",
+          "age": 45,
+          "loan_amount": 52000,
+          "income": 98000
+        },
+        "status": "pending"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Oliver King\",\n    \"age\": 045,\n    \"loan_amount\": 052000,\n    \"income\": 098000\n  },\n  \"status\": \"pending\"\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Sophia Martinez",
+          "age": 54,
+          "loan_amount": 65000,
+          "income": 113000
+        },
+        "status": "rejected"
+      },
+      "{\n  \"applicant\": {\n    \"name\": \"Sophia Martinez\",\n    \"age\": 054,\n    \"loan_amount\": 065000,\n    \"income\": 0113000\n  },\n  \"status\": \"rejected\"\n}"
+    ],
+    [
+      {
+        "customer_id": 12345,
+        "chat": [
+          {
+            "timestamp": "2023-10-01T10:15:30Z",
+            "agent_id": 678,
+            "message": "Hello, how can I assist you today?"
+          },
+          {
+            "timestamp": "2023-10-01T10:16:00Z",
+            "customer_id": 12345,
+            "message": "I have an issue with my order."
+          }
+        ]
+      },
+      "{\n  \"customer_id\": 012345,\n  \"chat\": [\n    {\n      \"timestamp\": \"2023-10-01T10:15:30Z\",\n      \"agent_id\": 0678,\n      \"message\": \"Hello, how can I assist you today?\"\n    },\n    {\n      \"timestamp\": \"2023-10-01T10:16:00Z\",\n      \"customer_id\": 012345,\n      \"message\": \"I have an issue with my order.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_id": 98765,
+        "messages": [
+          {
+            "timestamp": "2023-10-03T14:22:10Z",
+            "customer_id": 23456,
+            "message": "Can you provide more info on your services?"
+          },
+          {
+            "timestamp": "2023-10-03T14:23:50Z",
+            "agent_id": 789,
+            "message": "Certainly! What exactly would you like to know?"
+          }
+        ]
+      },
+      "{\n  \"chat_id\": 098765,\n  \"messages\": [\n    {\n      \"timestamp\": \"2023-10-03T14:22:10Z\",\n      \"customer_id\": 023456,\n      \"message\": \"Can you provide more info on your services?\"\n    },\n    {\n      \"timestamp\": \"2023-10-03T14:23:50Z\",\n      \"agent_id\": 0789,\n      \"message\": \"Certainly! What exactly would you like to know?\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "session_id": 555,
+        "conversation": [
+          {
+            "timestamp": "2023-09-28T09:45:00Z",
+            "agent_id": 123,
+            "message": "Good morning! How can I help you?"
+          },
+          {
+            "timestamp": "2023-09-28T09:46:30Z",
+            "customer_id": 34567,
+            "message": "I need help with my account settings."
+          }
+        ]
+      },
+      "{\n  \"session_id\": 0555,\n  \"conversation\": [\n    {\n      \"timestamp\": \"2023-09-28T09:45:00Z\",\n      \"agent_id\": 0123,\n      \"message\": \"Good morning! How can I help you?\"\n    },\n    {\n      \"timestamp\": \"2023-09-28T09:46:30Z\",\n      \"customer_id\": 034567,\n      \"message\": \"I need help with my account settings.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "interaction_id": 210,
+        "dialogue": [
+          {
+            "timestamp": "2023-09-30T17:35:20Z",
+            "customer_id": 67890,
+            "message": "I want to cancel my subscription."
+          },
+          {
+            "timestamp": "2023-09-30T17:36:45Z",
+            "agent_id": 456,
+            "message": "I'm sorry to hear that. Let me help you with the cancellation process."
+          }
+        ]
+      },
+      "{\n  \"interaction_id\": 0210,\n  \"dialogue\": [\n    {\n      \"timestamp\": \"2023-09-30T17:35:20Z\",\n      \"customer_id\": 067890,\n      \"message\": \"I want to cancel my subscription.\"\n    },\n    {\n      \"timestamp\": \"2023-09-30T17:36:45Z\",\n      \"agent_id\": 0456,\n      \"message\": \"I'm sorry to hear that. Let me help you with the cancellation process.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "customer_service_id": 333,
+        "logs": [
+          {
+            "timestamp": "2023-10-02T11:10:10Z",
+            "agent_id": 654,
+            "message": "Thank you for contacting support."
+          },
+          {
+            "timestamp": "2023-10-02T11:12:25Z",
+            "customer_id": 78901,
+            "message": "I'm having trouble logging in."
+          }
+        ]
+      },
+      "{\n  \"customer_service_id\": 0333,\n  \"logs\": [\n    {\n      \"timestamp\": \"2023-10-02T11:10:10Z\",\n      \"agent_id\": 0654,\n      \"message\": \"Thank you for contacting support.\"\n    },\n    {\n      \"timestamp\": \"2023-10-02T11:12:25Z\",\n      \"customer_id\": 078901,\n      \"message\": \"I'm having trouble logging in.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "support_ticket_id": 784,
+        "interactions": [
+          {
+            "timestamp": "2023-10-05T21:20:30Z",
+            "customer_id": 45678,
+            "message": "Can I change my delivery address?"
+          },
+          {
+            "timestamp": "2023-10-05T21:21:05Z",
+            "agent_id": 321,
+            "message": "Yes, let me update that for you."
+          }
+        ]
+      },
+      "{\n  \"support_ticket_id\": 0784,\n  \"interactions\": [\n    {\n      \"timestamp\": \"2023-10-05T21:20:30Z\",\n      \"customer_id\": 045678,\n      \"message\": \"Can I change my delivery address?\"\n    },\n    {\n      \"timestamp\": \"2023-10-05T21:21:05Z\",\n      \"agent_id\": 0321,\n      \"message\": \"Yes, let me update that for you.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "chat_log_id": 999,
+        "entries": [
+          {
+            "timestamp": "2023-09-27T16:40:00Z",
+            "agent_id": 789,
+            "message": "Your issue has been resolved."
+          },
+          {
+            "timestamp": "2023-09-27T16:42:50Z",
+            "customer_id": 12321,
+            "message": "Thank you very much!"
+          }
+        ]
+      },
+      "{\n  \"chat_log_id\": 0999,\n  \"entries\": [\n    {\n      \"timestamp\": \"2023-09-27T16:40:00Z\",\n      \"agent_id\": 0789,\n      \"message\": \"Your issue has been resolved.\"\n    },\n    {\n      \"timestamp\": \"2023-09-27T16:42:50Z\",\n      \"customer_id\": 012321,\n      \"message\": \"Thank you very much!\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "feedback_id": 444,
+        "conversation": [
+          {
+            "timestamp": "2023-10-06T08:20:00Z",
+            "customer_id": 78910,
+            "message": "I want to leave feedback about your service."
+          },
+          {
+            "timestamp": "2023-10-06T08:22:10Z",
+            "agent_id": 987,
+            "message": "Sure, we would love to hear your feedback!"
+          }
+        ]
+      },
+      "{\n  \"feedback_id\": 0444,\n  \"conversation\": [\n    {\n      \"timestamp\": \"2023-10-06T08:20:00Z\",\n      \"customer_id\": 078910,\n      \"message\": \"I want to leave feedback about your service.\"\n    },\n    {\n      \"timestamp\": \"2023-10-06T08:22:10Z\",\n      \"agent_id\": 0987,\n      \"message\": \"Sure, we would love to hear your feedback!\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "service_case_id": 888,
+        "dialogs": [
+          {
+            "timestamp": "2023-09-29T15:30:00Z",
+            "agent_id": 567,
+            "message": "I am here to assist you with anything you need."
+          },
+          {
+            "timestamp": "2023-09-29T15:31:25Z",
+            "customer_id": 65432,
+            "message": "Thanks, I just need to update my phone number."
+          }
+        ]
+      },
+      "{\n  \"service_case_id\": 0888,\n  \"dialogs\": [\n    {\n      \"timestamp\": \"2023-09-29T15:30:00Z\",\n      \"agent_id\": 0567,\n      \"message\": \"I am here to assist you with anything you need.\"\n    },\n    {\n      \"timestamp\": \"2023-09-29T15:31:25Z\",\n      \"customer_id\": 065432,\n      \"message\": \"Thanks, I just need to update my phone number.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "interaction_session_id": 222,
+        "log": [
+          {
+            "timestamp": "2023-10-07T19:30:15Z",
+            "customer_id": 34512,
+            "message": "Do you offer any discounts?"
+          },
+          {
+            "timestamp": "2023-10-07T19:31:55Z",
+            "agent_id": 876,
+            "message": "Yes, we have several promotions running."
+          }
+        ]
+      },
+      "{\n  \"interaction_session_id\": 0222,\n  \"log\": [\n    {\n      \"timestamp\": \"2023-10-07T19:30:15Z\",\n      \"customer_id\": 034512,\n      \"message\": \"Do you offer any discounts?\"\n    },\n    {\n      \"timestamp\": \"2023-10-07T19:31:55Z\",\n      \"agent_id\": 0876,\n      \"message\": \"Yes, we have several promotions running.\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "device_id": "Thermostat_01",
+        "usage_log": [
+          {
+            "timestamp": "2023-10-01T08:00:00",
+            "temperature": 22,
+            "humidity": 55
+          },
+          {
+            "timestamp": "2023-10-01T12:00:00",
+            "temperature": 24,
+            "humidity": 50
+          },
+          {
+            "timestamp": "2023-10-01T16:00:00",
+            "temperature": 20,
+            "humidity": 60
+          }
+        ]
+      },
+      "{\n    \"device_id\": \"Thermostat_01\",\n    \"usage_log\": [\n        {\"timestamp\": \"2023-10-01T08:00:00\", \"temperature\": 022, \"humidity\": 055},\n        {\"timestamp\": \"2023-10-01T12:00:00\", \"temperature\": 024, \"humidity\": 050},\n        {\"timestamp\": \"2023-10-01T16:00:00\", \"temperature\": 020, \"humidity\": 060}\n    ]\n}"
+    ],
+    [
+      {
+        "device_id": "LightSwitch_A",
+        "status_log": [
+          {
+            "timestamp": "2023-10-01T09:15:00",
+            "status": "ON"
+          },
+          {
+            "timestamp": "2023-10-01T11:45:00",
+            "status": "OFF"
+          },
+          {
+            "timestamp": "2023-10-01T18:30:00",
+            "status": "ON"
+          }
+        ],
+        "power_usage": {
+          "total": 30,
+          "peak": 10
+        }
+      },
+      "{\n    \"device_id\": \"LightSwitch_A\",\n    \"status_log\": [\n        {\"timestamp\": \"2023-10-01T09:15:00\", \"status\": \"ON\"},\n        {\"timestamp\": \"2023-10-01T11:45:00\", \"status\": \"OFF\"},\n        {\"timestamp\": \"2023-10-01T18:30:00\", \"status\": \"ON\"}\n    ],\n    \"power_usage\": {\n        \"total\": 030,\n        \"peak\": 010\n    }\n}"
+    ],
+    [
+      {
+        "device_id": "Camera_07",
+        "recording_log": [
+          {
+            "timestamp": "2023-10-01T14:00:00",
+            "duration": 300,
+            "motion_detected": true
+          },
+          {
+            "timestamp": "2023-10-01T15:30:00",
+            "duration": 180,
+            "motion_detected": false
+          }
+        ]
+      },
+      "{\n    \"device_id\": \"Camera_07\",\n    \"recording_log\": [\n        {\"timestamp\": \"2023-10-01T14:00:00\", \"duration\": 0300, \"motion_detected\": true},\n        {\"timestamp\": \"2023-10-01T15:30:00\", \"duration\": 0180, \"motion_detected\": false}\n    ]\n}"
+    ],
+    [
+      {
+        "device_id": "SmartPlug_15",
+        "energy_consumption": [
+          {
+            "timestamp": "2023-10-01T06:00:00",
+            "watts": 50
+          },
+          {
+            "timestamp": "2023-10-01T06:30:00",
+            "watts": 45
+          }
+        ],
+        "total_kWh": 0.95
+      },
+      "{\n    \"device_id\": \"SmartPlug_15\",\n    \"energy_consumption\": [\n        {\"timestamp\": \"2023-10-01T06:00:00\", \"watts\": 050},\n        {\"timestamp\": \"2023-10-01T06:30:00\", \"watts\": 045}\n    ],\n    \"total_kWh\": 0.95\n}"
+    ],
+    [
+      {
+        "device_id": "SecuritySystem_12",
+        "alarm_log": [
+          {
+            "timestamp": "2023-10-01T02:00:00",
+            "alarm_type": "Fire",
+            "severity": 5
+          },
+          {
+            "timestamp": "2023-10-01T04:30:00",
+            "alarm_type": "Burglary",
+            "severity": 3
+          }
+        ]
+      },
+      "{\n    \"device_id\": \"SecuritySystem_12\",\n    \"alarm_log\": [\n        {\"timestamp\": \"2023-10-01T02:00:00\", \"alarm_type\": \"Fire\", \"severity\": 05},\n        {\"timestamp\": \"2023-10-01T04:30:00\", \"alarm_type\": \"Burglary\", \"severity\": 03}\n    ]\n}"
+    ],
+    [
+      {
+        "device_id": "WaterSensor_03",
+        "detection_log": [
+          {
+            "timestamp": "2023-10-01T05:00:00",
+            "water_level": 15
+          },
+          {
+            "timestamp": "2023-10-01T05:45:00",
+            "water_level": 12
+          }
+        ],
+        "alert_threshold": 20
+      },
+      "{\n    \"device_id\": \"WaterSensor_03\",\n    \"detection_log\": [\n        {\"timestamp\": \"2023-10-01T05:00:00\", \"water_level\": 015},\n        {\"timestamp\": \"2023-10-01T05:45:00\", \"water_level\": 012}\n    ],\n    \"alert_threshold\": 20\n}"
+    ],
+    [
+      {
+        "device_id": "DoorLock_09",
+        "access_log": [
+          {
+            "timestamp": "2023-10-01T07:15:00",
+            "user": "Alice"
+          },
+          {
+            "timestamp": "2023-10-01T08:30:00",
+            "user": "Bob"
+          }
+        ],
+        "attempts_today": 3
+      },
+      "{\n    \"device_id\": \"DoorLock_09\",\n    \"access_log\": [\n        {\"timestamp\": \"2023-10-01T07:15:00\", \"user\": \"Alice\"},\n        {\"timestamp\": \"2023-10-01T08:30:00\", \"user\": \"Bob\"}\n    ],\n    \"attempts_today\": 03\n}"
+    ],
+    [
+      {
+        "device_id": "AirPurifier_02",
+        "operation_log": [
+          {
+            "timestamp": "2023-10-01T10:00:00",
+            "mode": "Auto",
+            "level": 3
+          },
+          {
+            "timestamp": "2023-10-01T12:00:00",
+            "mode": "Manual",
+            "level": 2
+          }
+        ],
+        "filter_status": 90
+      },
+      "{\n    \"device_id\": \"AirPurifier_02\",\n    \"operation_log\": [\n        {\"timestamp\": \"2023-10-01T10:00:00\", \"mode\": \"Auto\", \"level\": 03},\n        {\"timestamp\": \"2023-10-01T12:00:00\", \"mode\": \"Manual\", \"level\": 02}\n    ],\n    \"filter_status\": 90\n}"
+    ],
+    [
+      {
+        "device_id": "Sprinkler_05",
+        "watering_log": [
+          {
+            "timestamp": "2023-10-01T03:00:00",
+            "duration": 15
+          },
+          {
+            "timestamp": "2023-10-01T04:00:00",
+            "duration": 30
+          }
+        ],
+        "water_usage": 45
+      },
+      "{\n    \"device_id\": \"Sprinkler_05\",\n    \"watering_log\": [\n        {\"timestamp\": \"2023-10-01T03:00:00\", \"duration\": 015},\n        {\"timestamp\": \"2023-10-01T04:00:00\", \"duration\": 030}\n    ],\n    \"water_usage\": 45\n}"
+    ],
+    [
+      {
+        "device_id": "RobotVacuum_18",
+        "cleaning_log": [
+          {
+            "timestamp": "2023-10-01T09:00:00",
+            "area_covered": 25
+          },
+          {
+            "timestamp": "2023-10-01T11:00:00",
+            "area_covered": 30
+          }
+        ],
+        "battery_level": 85
+      },
+      "{\n    \"device_id\": \"RobotVacuum_18\",\n    \"cleaning_log\": [\n        {\"timestamp\": \"2023-10-01T09:00:00\", \"area_covered\": 025},\n        {\"timestamp\": \"2023-10-01T11:00:00\", \"area_covered\": 030}\n    ],\n    \"battery_level\": 85\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "John Doe",
+          "age": 30,
+          "years_of_experience": 5,
+          "desired_salary": 60000
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"John Doe\",\n        \"age\": 030,\n        \"years_of_experience\": 05,\n        \"desired_salary\": 060000\n    }\n}"
+    ],
+    [
+      {
+        "job": {
+          "title": "Software Engineer",
+          "location": "New York",
+          "open_positions": 2,
+          "department_id": 101
+        }
+      },
+      "{\n    \"job\": {\n        \"title\": \"Software Engineer\",\n        \"location\": \"New York\",\n        \"open_positions\": 02,\n        \"department_id\": 0101\n    }\n}"
+    ],
+    [
+      {
+        "resume": {
+          "education": {
+            "degree": "B.Sc. Computer Science",
+            "graduation_year": 2020
+          },
+          "skills": [
+            "Python",
+            "JavaScript",
+            "SQL"
+          ]
+        }
+      },
+      "{\n    \"resume\": {\n        \"education\": {\n            \"degree\": \"B.Sc. Computer Science\",\n            \"graduation_year\": 02020\n        },\n        \"skills\": [\"Python\", \"JavaScript\", \"SQL\"]\n    }\n}"
+    ],
+    [
+      {
+        "work_history": [
+          {
+            "company": "Tech Corp",
+            "years": 3
+          },
+          {
+            "company": "Innovate LLC",
+            "years": 2
+          }
+        ]
+      },
+      "{\n    \"work_history\": [\n        {\"company\": \"Tech Corp\", \"years\": 03},\n        {\"company\": \"Innovate LLC\", \"years\": 02}\n    ]\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Alice Smith",
+          "age": 29,
+          "years_of_experience": 7
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Alice Smith\",\n        \"age\": 029,\n        \"years_of_experience\": 007\n    }\n}"
+    ],
+    [
+      {
+        "job": {
+          "title": "Data Analyst",
+          "department_code": 305,
+          "required_experience": 4
+        }
+      },
+      "{\n    \"job\": {\n        \"title\": \"Data Analyst\",\n        \"department_code\": 0305,\n        \"required_experience\": 004\n    }\n}"
+    ],
+    [
+      {
+        "resume": {
+          "languages": [
+            "English",
+            "Spanish"
+          ],
+          "certifications": {
+            "certified_data_analyst": 2022
+          }
+        }
+      },
+      "{\n    \"resume\": {\n        \"languages\": [\"English\", \"Spanish\"],\n        \"certifications\": {\n            \"certified_data_analyst\": 02022\n        }\n    }\n}"
+    ],
+    [
+      {
+        "contact_info": {
+          "phone": 1234567890,
+          "email": "applicant@example.com"
+        }
+      },
+      "{\n    \"contact_info\": {\n        \"phone\": 01234567890,\n        \"email\": \"applicant@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "references": [
+          {
+            "name": "Mr. James",
+            "contact": 9876543210
+          },
+          {
+            "name": "Ms. Laura",
+            "contact": 8765432109
+          }
+        ]
+      },
+      "{\n    \"references\": [\n        {\"name\": \"Mr. James\", \"contact\": 09876543210},\n        {\"name\": \"Ms. Laura\", \"contact\": 08765432109}\n    ]\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "name": "Michael Johnson",
+          "experience": [
+            {
+              "role": "Frontend Developer",
+              "years": 2
+            },
+            {
+              "role": "Backend Developer",
+              "years": 3
+            }
+          ]
+        }
+      },
+      "{\n    \"applicant\": {\n        \"name\": \"Michael Johnson\",\n        \"experience\": [\n            {\"role\": \"Frontend Developer\", \"years\": 02},\n            {\"role\": \"Backend Developer\", \"years\": 03}\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "flightNumber": 123,
+        "departure": "New York",
+        "arrival": "Los Angeles",
+        "passengerCount": 200,
+        "gate": 12
+      },
+      "{\n    \"flightNumber\": 00123,\n    \"departure\": \"New York\",\n    \"arrival\": \"Los Angeles\",\n    \"passengerCount\": 0200,\n    \"gate\": 012\n}"
+    ],
+    [
+      {
+        "bookingID": 987654,
+        "airline": "Global Airlines",
+        "passenger": "John Doe",
+        "seatNumber": 15,
+        "price": 350
+      },
+      "{\n    \"bookingID\": 0987654,\n    \"airline\": \"Global Airlines\",\n    \"passenger\": \"John Doe\",\n    \"seatNumber\": 015,\n    \"price\": 0350\n}"
+    ],
+    [
+      {
+        "ticketNumber": 456789,
+        "destination": "Chicago",
+        "departureTime": "14:30",
+        "arrivalTime": "16:00",
+        "baggageCount": 2
+      },
+      "{\n    \"ticketNumber\": 00456789,\n    \"destination\": \"Chicago\",\n    \"departureTime\": \"14:30\",\n    \"arrivalTime\": \"16:00\",\n    \"baggageCount\": 02\n}"
+    ],
+    [
+      {
+        "flightCode": 1122,
+        "origin": "Miami",
+        "destination": "Seattle",
+        "duration": 5,
+        "delay": 0
+      },
+      "{\n    \"flightCode\": 01122,\n    \"origin\": \"Miami\",\n    \"destination\": \"Seattle\",\n    \"duration\": 05,\n    \"delay\": 00\n}"
+    ],
+    [
+      {
+        "reservationID": 334455,
+        "customerName": "Alice Smith",
+        "flightDate": "2023-12-15",
+        "seatType": "Economy",
+        "mealPreference": 1
+      },
+      "{\n    \"reservationID\": 0334455,\n    \"customerName\": \"Alice Smith\",\n    \"flightDate\": \"2023-12-15\",\n    \"seatType\": \"Economy\",\n    \"mealPreference\": 01\n}"
+    ],
+    [
+      {
+        "confirmationNumber": 567890,
+        "carrier": "Sky High Airlines",
+        "traveller": "Mike Johnson",
+        "row": 22,
+        "luggageWeight": 15
+      },
+      "{\n    \"confirmationNumber\": 0567890,\n    \"carrier\": \"Sky High Airlines\",\n    \"traveller\": \"Mike Johnson\",\n    \"row\": 022,\n    \"luggageWeight\": 015\n}"
+    ],
+    [
+      {
+        "itineraryID": 778899,
+        "departureCity": "Atlanta",
+        "arrivalCity": "Boston",
+        "layover": 1,
+        "carryOnBags": 2
+      },
+      "{\n    \"itineraryID\": 0778899,\n    \"departureCity\": \"Atlanta\",\n    \"arrivalCity\": \"Boston\",\n    \"layover\": 01,\n    \"carryOnBags\": 02\n}"
+    ],
+    [
+      {
+        "flightGroup": 3,
+        "originAirport": "LAX",
+        "destinationAirport": "JFK",
+        "totalPassengers": 250,
+        "crewMembers": 8
+      },
+      "{\n    \"flightGroup\": 03,\n    \"originAirport\": \"LAX\",\n    \"destinationAirport\": \"JFK\",\n    \"totalPassengers\": 0250,\n    \"crewMembers\": 08\n}"
+    ],
+    [
+      {
+        "boardingPassID": 112233,
+        "name": "Sarah Connor",
+        "seatAssignment": 18,
+        "gateNumber": 20,
+        "zone": 4
+      },
+      "{\n    \"boardingPassID\": 0112233,\n    \"name\": \"Sarah Connor\",\n    \"seatAssignment\": 018,\n    \"gateNumber\": 020,\n    \"zone\": 04\n}"
+    ],
+    [
+      {
+        "voucherCode": 445566,
+        "customerID": "C12345",
+        "flightClass": "Business",
+        "checkedBags": 3,
+        "mealVoucher": 20
+      },
+      "{\n    \"voucherCode\": 0445566,\n    \"customerID\": \"C12345\",\n    \"flightClass\": \"Business\",\n    \"checkedBags\": 03,\n    \"mealVoucher\": 020\n}"
+    ],
+    [
+      {
+        "reservationId": 12345,
+        "customerName": "John Doe",
+        "partySize": 4,
+        "time": "19:00",
+        "tableNumber": 12
+      },
+      "{\n    \"reservationId\": 00123,\n    \"customerName\": \"John Doe\",\n    \"partySize\": 4,\n    \"time\": \"19:00\",\n    \"tableNumber\": 12\n}"
+    ],
+    [
+      {
+        "reservationId": 67890,
+        "customerName": "Jane Smith",
+        "partySize": 2,
+        "date": "2023-10-21",
+        "specialRequests": "Window seat"
+      },
+      "{\n    \"reservationId\": 067890,\n    \"customerName\": \"Jane Smith\",\n    \"partySize\": 2,\n    \"date\": \"2023-10-21\",\n    \"specialRequests\": \"Window seat\"\n}"
+    ],
+    [
+      {
+        "reservationId": 34567,
+        "customerName": "Michael Brown",
+        "partySize": 5,
+        "time": "20:30",
+        "contactNumber": "555-0198"
+      },
+      "{\n    \"reservationId\": 0034567,\n    \"customerName\": \"Michael Brown\",\n    \"partySize\": 5,\n    \"time\": \"20:30\",\n    \"contactNumber\": \"555-0198\"\n}"
+    ],
+    [
+      {
+        "reservationId": 45678,
+        "customerName": "Emily Clark",
+        "partySize": 3,
+        "date": "2023-11-15",
+        "tableNumber": 8
+      },
+      "{\n    \"reservationId\": 045678,\n    \"customerName\": \"Emily Clark\",\n    \"partySize\": 3,\n    \"date\": \"2023-11-15\",\n    \"tableNumber\": 8\n}"
+    ],
+    [
+      {
+        "reservationId": 56789,
+        "customerName": "Chris Johnson",
+        "partySize": 6,
+        "time": "21:00",
+        "specialRequests": "Anniversary celebration"
+      },
+      "{\n    \"reservationId\": 056789,\n    \"customerName\": \"Chris Johnson\",\n    \"partySize\": 6,\n    \"time\": \"21:00\",\n    \"specialRequests\": \"Anniversary celebration\"\n}"
+    ],
+    [
+      {
+        "reservationId": 78901,
+        "customerName": "Patricia Lee",
+        "partySize": 7,
+        "date": "2023-12-25",
+        "tableNumber": 15
+      },
+      "{\n    \"reservationId\": 078901,\n    \"customerName\": \"Patricia Lee\",\n    \"partySize\": 7,\n    \"date\": \"2023-12-25\",\n    \"tableNumber\": 15\n}"
+    ],
+    [
+      {
+        "reservationId": 89012,
+        "customerName": "David Wilson",
+        "partySize": 8,
+        "time": "22:00",
+        "contactNumber": "555-0234"
+      },
+      "{\n    \"reservationId\": 089012,\n    \"customerName\": \"David Wilson\",\n    \"partySize\": 8,\n    \"time\": \"22:00\",\n    \"contactNumber\": \"555-0234\"\n}"
+    ],
+    [
+      {
+        "reservationId": 90123,
+        "customerName": "Andrew Martinez",
+        "partySize": 10,
+        "date": "2024-01-01",
+        "specialRequests": "Birthday cake"
+      },
+      "{\n    \"reservationId\": 090123,\n    \"customerName\": \"Andrew Martinez\",\n    \"partySize\": 10,\n    \"date\": \"2024-01-01\",\n    \"specialRequests\": \"Birthday cake\"\n}"
+    ],
+    [
+      {
+        "reservationId": 23456,
+        "customerName": "Sophia Harris",
+        "partySize": 12,
+        "time": "18:45",
+        "contactNumber": "555-0678"
+      },
+      "{\n    \"reservationId\": 023456,\n    \"customerName\": \"Sophia Harris\",\n    \"partySize\": 12,\n    \"time\": \"18:45\",\n    \"contactNumber\": \"555-0678\"\n}"
+    ],
+    [
+      {
+        "reservationId": 34567,
+        "customerName": "Liam Anderson",
+        "partySize": 15,
+        "date": "2024-02-14",
+        "tableNumber": 20
+      },
+      "{\n    \"reservationId\": 034567,\n    \"customerName\": \"Liam Anderson\",\n    \"partySize\": 15,\n    \"date\": \"2024-02-14\",\n    \"tableNumber\": 20\n}"
+    ],
+    [
+      {
+        "playerId": 1023,
+        "gamesPlayed": [
+          {
+            "gameName": "Battle Royale",
+            "score": 987,
+            "durationMinutes": 120
+          },
+          {
+            "gameName": "Space Invaders",
+            "score": 750,
+            "durationMinutes": 45
+          }
+        ],
+        "totalPoints": 1737
+      },
+      "{\n    \"playerId\": 1023,\n    \"gamesPlayed\": [\n        {\n            \"gameName\": \"Battle Royale\",\n            \"score\": 0987,\n            \"durationMinutes\": 0120\n        },\n        {\n            \"gameName\": \"Space Invaders\",\n            \"score\": 0750,\n            \"durationMinutes\": 0045\n        }\n    ],\n    \"totalPoints\": 1737\n}"
+    ],
+    [
+      {
+        "username": "gamer123",
+        "level": 25,
+        "achievements": [
+          "First Kill",
+          "Monster Hunter",
+          "Treasure Seeker"
+        ],
+        "friends": 53
+      },
+      "{\n    \"username\": \"gamer123\",\n    \"level\": 0025,\n    \"achievements\": [\n        \"First Kill\",\n        \"Monster Hunter\",\n        \"Treasure Seeker\"\n    ],\n    \"friends\": 053\n}"
+    ],
+    [
+      {
+        "sessionId": 4567,
+        "gameStats": {
+          "kills": 34,
+          "deaths": 12,
+          "assists": 18
+        },
+        "rank": 3
+      },
+      "{\n    \"sessionId\": 4567,\n    \"gameStats\": {\n        \"kills\": 034,\n        \"deaths\": 012,\n        \"assists\": 018\n    },\n    \"rank\": 03\n}"
+    ],
+    [
+      {
+        "playerName": "ShadowKnight",
+        "matches": 102,
+        "victories": 45,
+        "defeats": 57
+      },
+      "{\n    \"playerName\": \"ShadowKnight\",\n    \"matches\": 0102,\n    \"victories\": 045,\n    \"defeats\": 057\n}"
+    ],
+    [
+      {
+        "teamId": 782,
+        "members": [
+          "player1",
+          "player2",
+          "player3",
+          "player4"
+        ],
+        "score": 1250
+      },
+      "{\n    \"teamId\": 0782,\n    \"members\": [\n        \"player1\",\n        \"player2\",\n        \"player3\",\n        \"player4\"\n    ],\n    \"score\": 01250\n}"
+    ],
+    [
+      {
+        "gameId": 5678,
+        "highScore": 8930,
+        "timeSpent": 360
+      },
+      "{\n    \"gameId\": 05678,\n    \"highScore\": 08930,\n    \"timeSpent\": 0360\n}"
+    ],
+    [
+      {
+        "matchId": 9004,
+        "participants": 8,
+        "spectators": 4
+      },
+      "{\n    \"matchId\": 09004,\n    \"participants\": 08,\n    \"spectators\": 004\n}"
+    ],
+    [
+      {
+        "tournamentId": 331,
+        "teams": 16,
+        "rounds": 4
+      },
+      "{\n    \"tournamentId\": 0331,\n    \"teams\": 016,\n    \"rounds\": 004\n}"
+    ],
+    [
+      {
+        "questId": 789,
+        "completed": 20,
+        "rewards": 50
+      },
+      "{\n    \"questId\": 0789,\n    \"completed\": 020,\n    \"rewards\": 050\n}"
+    ],
+    [
+      {
+        "eventId": 2345,
+        "participants": 150,
+        "sessions": 3
+      },
+      "{\n    \"eventId\": 02345,\n    \"participants\": 0150,\n    \"sessions\": 03\n}"
+    ],
+    [
+      {
+        "productId": 12345,
+        "productName": "Wireless Mouse",
+        "stockLevel": 150,
+        "price": 29.99,
+        "warehouse": {
+          "locationId": 101,
+          "aisle": 3,
+          "bin": 5
+        }
+      },
+      "{\n    \"productId\": 012345,\n    \"productName\": \"Wireless Mouse\",\n    \"stockLevel\": 0150,\n    \"price\": 29.99,\n    \"warehouse\": {\n        \"locationId\": 0101,\n        \"aisle\": 3,\n        \"bin\": 05\n    }\n}"
+    ],
+    [
+      {
+        "productId": 987654,
+        "productName": "Gaming Keyboard",
+        "stockLevel": 200,
+        "price": 89.99,
+        "warehouse": {
+          "locationId": 102,
+          "aisle": 2,
+          "bin": 12
+        }
+      },
+      "{\n    \"productId\": 0987654,\n    \"productName\": \"Gaming Keyboard\",\n    \"stockLevel\": 0200,\n    \"price\": 89.99,\n    \"warehouse\": {\n        \"locationId\": 0102,\n        \"aisle\": 2,\n        \"bin\": 012\n    }\n}"
+    ],
+    [
+      {
+        "productId": 54321,
+        "productName": "Bluetooth Speaker",
+        "stockLevel": 75,
+        "price": 49.95,
+        "warehouse": {
+          "locationId": 103,
+          "aisle": 1,
+          "bin": 7
+        }
+      },
+      "{\n    \"productId\": 054321,\n    \"productName\": \"Bluetooth Speaker\",\n    \"stockLevel\": 075,\n    \"price\": 49.95,\n    \"warehouse\": {\n        \"locationId\": 0103,\n        \"aisle\": 01,\n        \"bin\": 07\n    }\n}"
+    ],
+    [
+      {
+        "productId": 11111,
+        "productName": "USB-C Charger",
+        "stockLevel": 500,
+        "price": 19.99,
+        "warehouse": {
+          "locationId": 104,
+          "aisle": 4,
+          "bin": 3
+        }
+      },
+      "{\n    \"productId\": 011111,\n    \"productName\": \"USB-C Charger\",\n    \"stockLevel\": 0500,\n    \"price\": 19.99,\n    \"warehouse\": {\n        \"locationId\": 0104,\n        \"aisle\": 04,\n        \"bin\": 03\n    }\n}"
+    ],
+    [
+      {
+        "productId": 22222,
+        "productName": "Smartphone Case",
+        "stockLevel": 800,
+        "price": 15.99,
+        "warehouse": {
+          "locationId": 105,
+          "aisle": 5,
+          "bin": 9
+        }
+      },
+      "{\n    \"productId\": 022222,\n    \"productName\": \"Smartphone Case\",\n    \"stockLevel\": 0800,\n    \"price\": 15.99,\n    \"warehouse\": {\n        \"locationId\": 0105,\n        \"aisle\": 05,\n        \"bin\": 09\n    }\n}"
+    ],
+    [
+      {
+        "productId": 33333,
+        "productName": "Laptop Stand",
+        "stockLevel": 250,
+        "price": 39.99,
+        "warehouse": {
+          "locationId": 106,
+          "aisle": 6,
+          "bin": 11
+        }
+      },
+      "{\n    \"productId\": 033333,\n    \"productName\": \"Laptop Stand\",\n    \"stockLevel\": 0250,\n    \"price\": 39.99,\n    \"warehouse\": {\n        \"locationId\": 0106,\n        \"aisle\": 06,\n        \"bin\": 011\n    }\n}"
+    ],
+    [
+      {
+        "productId": 44444,
+        "productName": "Monitor Arm",
+        "stockLevel": 120,
+        "price": 69.99,
+        "warehouse": {
+          "locationId": 107,
+          "aisle": 7,
+          "bin": 14
+        }
+      },
+      "{\n    \"productId\": 044444,\n    \"productName\": \"Monitor Arm\",\n    \"stockLevel\": 0120,\n    \"price\": 69.99,\n    \"warehouse\": {\n        \"locationId\": 0107,\n        \"aisle\": 07,\n        \"bin\": 014\n    }\n}"
+    ],
+    [
+      {
+        "productId": 55555,
+        "productName": "Webcam",
+        "stockLevel": 180,
+        "price": 25.99,
+        "warehouse": {
+          "locationId": 108,
+          "aisle": 8,
+          "bin": 16
+        }
+      },
+      "{\n    \"productId\": 055555,\n    \"productName\": \"Webcam\",\n    \"stockLevel\": 0180,\n    \"price\": 25.99,\n    \"warehouse\": {\n        \"locationId\": 0108,\n        \"aisle\": 08,\n        \"bin\": 016\n    }\n}"
+    ],
+    [
+      {
+        "productId": 66666,
+        "productName": "Portable SSD",
+        "stockLevel": 300,
+        "price": 129.99,
+        "warehouse": {
+          "locationId": 109,
+          "aisle": 9,
+          "bin": 20
+        }
+      },
+      "{\n    \"productId\": 066666,\n    \"productName\": \"Portable SSD\",\n    \"stockLevel\": 0300,\n    \"price\": 129.99,\n    \"warehouse\": {\n        \"locationId\": 0109,\n        \"aisle\": 09,\n        \"bin\": 020\n    }\n}"
+    ],
+    [
+      {
+        "productId": 77777,
+        "productName": "External Hard Drive",
+        "stockLevel": 140,
+        "price": 99.99,
+        "warehouse": {
+          "locationId": 110,
+          "aisle": 10,
+          "bin": 25
+        }
+      },
+      "{\n    \"productId\": 077777,\n    \"productName\": \"External Hard Drive\",\n    \"stockLevel\": 0140,\n    \"price\": 99.99,\n    \"warehouse\": {\n        \"locationId\": 0110,\n        \"aisle\": 010,\n        \"bin\": 025\n    }\n}"
+    ],
+    [
+      {
+        "subscriptionId": 12345,
+        "userId": 67890,
+        "plan": "Premium",
+        "renewalDate": "2023-11-01",
+        "price": 19.99
+      },
+      "{\n    \"subscriptionId\": 012345,\n    \"userId\": 067890,\n    \"plan\": \"Premium\",\n    \"renewalDate\": \"2023-11-01\",\n    \"price\": 19.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 54321,
+        "userId": 98765,
+        "plan": "Basic",
+        "renewalDate": "2023-12-31",
+        "price": 9.99
+      },
+      "{\n    \"subscriptionId\": 054321,\n    \"userId\": 098765,\n    \"plan\": \"Basic\",\n    \"renewalDate\": \"2023-12-31\",\n    \"price\": 9.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 11111,
+        "userId": 22222,
+        "plan": "Family",
+        "renewalDate": "2024-01-15",
+        "price": 29.99
+      },
+      "{\n    \"subscriptionId\": 011111,\n    \"userId\": 022222,\n    \"plan\": \"Family\",\n    \"renewalDate\": \"2024-01-15\",\n    \"price\": 29.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 55555,
+        "userId": 33333,
+        "plan": "Student",
+        "renewalDate": "2023-11-20",
+        "price": 4.99
+      },
+      "{\n    \"subscriptionId\": 055555,\n    \"userId\": 033333,\n    \"plan\": \"Student\",\n    \"renewalDate\": \"2023-11-20\",\n    \"price\": 4.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 66666,
+        "userId": 44444,
+        "plan": "Enterprise",
+        "renewalDate": "2024-04-10",
+        "price": 49.99
+      },
+      "{\n    \"subscriptionId\": 066666,\n    \"userId\": 044444,\n    \"plan\": \"Enterprise\",\n    \"renewalDate\": \"2024-04-10\",\n    \"price\": 49.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 77777,
+        "userId": 55555,
+        "plan": "Annual",
+        "renewalDate": "2023-09-30",
+        "price": 99.99
+      },
+      "{\n    \"subscriptionId\": 077777,\n    \"userId\": 055555,\n    \"plan\": \"Annual\",\n    \"renewalDate\": \"2023-09-30\",\n    \"price\": 99.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 88888,
+        "userId": 66666,
+        "plan": "Monthly",
+        "renewalDate": "2024-02-28",
+        "price": 14.99
+      },
+      "{\n    \"subscriptionId\": 088888,\n    \"userId\": 066666,\n    \"plan\": \"Monthly\",\n    \"renewalDate\": \"2024-02-28\",\n    \"price\": 14.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 99999,
+        "userId": 77777,
+        "plan": "Weekly",
+        "renewalDate": "2023-11-05",
+        "price": 1.99
+      },
+      "{\n    \"subscriptionId\": 099999,\n    \"userId\": 077777,\n    \"plan\": \"Weekly\",\n    \"renewalDate\": \"2023-11-05\",\n    \"price\": 1.99\n}"
+    ],
+    [
+      {
+        "subscriptionId": 10101,
+        "userId": 20202,
+        "plan": "Trial",
+        "renewalDate": "2023-11-15",
+        "price": 0.0
+      },
+      "{\n    \"subscriptionId\": 010101,\n    \"userId\": 020202,\n    \"plan\": \"Trial\",\n    \"renewalDate\": \"2023-11-15\",\n    \"price\": 0.00\n}"
+    ],
+    [
+      {
+        "subscriptionId": 12121,
+        "userId": 23232,
+        "plan": "VIP",
+        "renewalDate": "2024-03-30",
+        "price": 59.99
+      },
+      "{\n    \"subscriptionId\": 012121,\n    \"userId\": 023232,\n    \"plan\": \"VIP\",\n    \"renewalDate\": \"2024-03-30\",\n    \"price\": 59.99\n}"
+    ],
+    [
+      {
+        "student": "John Doe",
+        "grades": {
+          "math": 89,
+          "science": 92,
+          "literature": 76
+        },
+        "attendance": 95
+      },
+      "{\n  \"student\": \"John Doe\",\n  \"grades\": {\n    \"math\": 089,\n    \"science\": 092,\n    \"literature\": 076\n  },\n  \"attendance\": 095\n}"
+    ],
+    [
+      {
+        "student": "Alice Smith",
+        "grades": {
+          "history": 88,
+          "chemistry": 94,
+          "biology": 78
+        },
+        "attendance": 98
+      },
+      "{\n  \"student\": \"Alice Smith\",\n  \"grades\": {\n    \"history\": 088,\n    \"chemistry\": 094,\n    \"biology\": 078\n  },\n  \"attendance\": 098\n}"
+    ],
+    [
+      {
+        "student": "Carlos Reyes",
+        "grades": {
+          "physics": 85,
+          "music": 91,
+          "art": 80
+        },
+        "attendance": 93
+      },
+      "{\n  \"student\": \"Carlos Reyes\",\n  \"grades\": {\n    \"physics\": 085,\n    \"music\": 091,\n    \"art\": 080\n  },\n  \"attendance\": 093\n}"
+    ],
+    [
+      {
+        "student": "Emily Zhang",
+        "grades": {
+          "computer_science": 90,
+          "geography": 84,
+          "philosophy": 77
+        },
+        "attendance": 99
+      },
+      "{\n  \"student\": \"Emily Zhang\",\n  \"grades\": {\n    \"computer_science\": 090,\n    \"geography\": 084,\n    \"philosophy\": 077\n  },\n  \"attendance\": 099\n}"
+    ],
+    [
+      {
+        "student": "Liam O'Brien",
+        "grades": {
+          "economics": 82,
+          "psychology": 87,
+          "sociology": 79
+        },
+        "attendance": 94
+      },
+      "{\n  \"student\": \"Liam O'Brien\",\n  \"grades\": {\n    \"economics\": 082,\n    \"psychology\": 087,\n    \"sociology\": 079\n  },\n  \"attendance\": 094\n}"
+    ],
+    [
+      {
+        "student": "Mia Patel",
+        "grades": {
+          "french": 86,
+          "german": 90,
+          "spanish": 83
+        },
+        "attendance": 96
+      },
+      "{\n  \"student\": \"Mia Patel\",\n  \"grades\": {\n    \"french\": 086,\n    \"german\": 090,\n    \"spanish\": 083\n  },\n  \"attendance\": 096\n}"
+    ],
+    [
+      {
+        "student": "Noah Kim",
+        "grades": {
+          "math": 91,
+          "science": 89,
+          "history": 85
+        },
+        "attendance": 92
+      },
+      "{\n  \"student\": \"Noah Kim\",\n  \"grades\": {\n    \"math\": 091,\n    \"science\": 089,\n    \"history\": 085\n  },\n  \"attendance\": 092\n}"
+    ],
+    [
+      {
+        "student": "Sophia Lee",
+        "grades": {
+          "literature": 88,
+          "computer_science": 93,
+          "art": 86
+        },
+        "attendance": 97
+      },
+      "{\n  \"student\": \"Sophia Lee\",\n  \"grades\": {\n    \"literature\": 088,\n    \"computer_science\": 093,\n    \"art\": 086\n  },\n  \"attendance\": 097\n}"
+    ],
+    [
+      {
+        "student": "Jack Brown",
+        "grades": {
+          "music": 85,
+          "geography": 82,
+          "philosophy": 88
+        },
+        "attendance": 91
+      },
+      "{\n  \"student\": \"Jack Brown\",\n  \"grades\": {\n    \"music\": 085,\n    \"geography\": 082,\n    \"philosophy\": 088\n  },\n  \"attendance\": 091\n}"
+    ],
+    [
+      {
+        "student": "Ava Davis",
+        "grades": {
+          "biology": 87,
+          "chemistry": 91,
+          "economics": 80
+        },
+        "attendance": 93
+      },
+      "{\n  \"student\": \"Ava Davis\",\n  \"grades\": {\n    \"biology\": 087,\n    \"chemistry\": 091,\n    \"economics\": 080\n  },\n  \"attendance\": 093\n}"
+    ],
+    [
+      {
+        "property": {
+          "id": 12345,
+          "price": 250000,
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "square_feet": 2000
+        }
+      },
+      "{\n  \"property\": {\n    \"id\": 012345,\n    \"price\": 0250000,\n    \"bedrooms\": 0003,\n    \"bathrooms\": 0002,\n    \"square_feet\": 02000\n  }\n}"
+    ],
+    [
+      {
+        "listing": {
+          "identifier": 67890,
+          "cost": 350000,
+          "rooms": {
+            "beds": 4,
+            "baths": 3
+          },
+          "area": 2500
+        }
+      },
+      "{\n  \"listing\": {\n    \"identifier\": 067890,\n    \"cost\": 0350000,\n    \"rooms\": {\n      \"beds\": 004,\n      \"baths\": 0003\n    },\n    \"area\": 02500\n  }\n}"
+    ],
+    [
+      {
+        "estate": {
+          "unique_id": 54321,
+          "value": 450000,
+          "features": {
+            "bedroom_count": 5,
+            "bathroom_count": 4
+          },
+          "size_sqft": 3000
+        }
+      },
+      "{\n  \"estate\": {\n    \"unique_id\": 054321,\n    \"value\": 0450000,\n    \"features\": {\n      \"bedroom_count\": 0005,\n      \"bathroom_count\": 0004\n    },\n    \"size_sqft\": 03000\n  }\n}"
+    ],
+    [
+      {
+        "sale": {
+          "property_number": 11223,
+          "amount": 500000,
+          "details": {
+            "num_bedrooms": 6,
+            "num_bathrooms": 5
+          },
+          "area_sqft": 3500
+        }
+      },
+      "{\n  \"sale\": {\n    \"property_number\": 011223,\n    \"amount\": 0500000,\n    \"details\": {\n      \"num_bedrooms\": 0006,\n      \"num_bathrooms\": 0005\n    },\n    \"area_sqft\": 03500\n  }\n}"
+    ],
+    [
+      {
+        "rental": {
+          "unit_id": 33445,
+          "monthly_rent": 2000,
+          "specifications": {
+            "bedrooms_available": 2,
+            "bathrooms_available": 1
+          },
+          "total_space": 900
+        }
+      },
+      "{\n  \"rental\": {\n    \"unit_id\": 033445,\n    \"monthly_rent\": 02000,\n    \"specifications\": {\n      \"bedrooms_available\": 0002,\n      \"bathrooms_available\": 0001\n    },\n    \"total_space\": 0900\n  }\n}"
+    ],
+    [
+      {
+        "housing": {
+          "code": 98765,
+          "market_value": 750000,
+          "layout": {
+            "bedroom_total": 7,
+            "bathroom_total": 6
+          },
+          "living_space": 4500
+        }
+      },
+      "{\n  \"housing\": {\n    \"code\": 098765,\n    \"market_value\": 0750000,\n    \"layout\": {\n      \"bedroom_total\": 0007,\n      \"bathroom_total\": 0006\n    },\n    \"living_space\": 04500\n  }\n}"
+    ],
+    [
+      {
+        "apartment": {
+          "listing_id": 22334,
+          "price_per_month": 3000,
+          "features": {
+            "bedrooms": 3,
+            "bathrooms": 2
+          },
+          "area": 1200
+        }
+      },
+      "{\n  \"apartment\": {\n    \"listing_id\": 022334,\n    \"price_per_month\": 03000,\n    \"features\": {\n      \"bedrooms\": 0003,\n      \"bathrooms\": 0002\n    },\n    \"area\": 01200\n  }\n}"
+    ],
+    [
+      {
+        "condo": {
+          "id": 44556,
+          "price": 600000,
+          "amenities": {
+            "bedrooms": 4,
+            "bathrooms": 3
+          },
+          "size": 1800
+        }
+      },
+      "{\n  \"condo\": {\n    \"id\": 044556,\n    \"price\": 0600000,\n    \"amenities\": {\n      \"bedrooms\": 0004,\n      \"bathrooms\": 0003\n    },\n    \"size\": 01800\n  }\n}"
+    ],
+    [
+      {
+        "villa": {
+          "ref_number": 55667,
+          "market_price": 1000000,
+          "attributes": {
+            "bedrooms": 8,
+            "bathrooms": 7
+          },
+          "total_area": 5000
+        }
+      },
+      "{\n  \"villa\": {\n    \"ref_number\": 055667,\n    \"market_price\": 01000000,\n    \"attributes\": {\n      \"bedrooms\": 0008,\n      \"bathrooms\": 0007\n    },\n    \"total_area\": 05000\n  }\n}"
+    ],
+    [
+      {
+        "cabin": {
+          "property_id": 66778,
+          "sale_price": 150000,
+          "layout": {
+            "beds": 2,
+            "baths": 1
+          },
+          "footage": 800
+        }
+      },
+      "{\n  \"cabin\": {\n    \"property_id\": 066778,\n    \"sale_price\": 0150000,\n    \"layout\": {\n      \"beds\": 0002,\n      \"baths\": 0001\n    },\n    \"footage\": 0800\n  }\n}"
+    ],
+    [
+      {
+        "event": "Music Concert",
+        "tickets_sold": 150,
+        "price_per_ticket": 50
+      },
+      "{\n    \"event\": \"Music Concert\",\n    \"tickets_sold\": 0150,\n    \"price_per_ticket\": 050\n}"
+    ],
+    [
+      {
+        "event": "Theater Play",
+        "tickets_sold": 98,
+        "price_per_ticket": 35
+      },
+      "{\n    \"event\": \"Theater Play\",\n    \"tickets_sold\": 098,\n    \"price_per_ticket\": 035\n}"
+    ],
+    [
+      {
+        "event": "Football Match",
+        "tickets_sold": 2000,
+        "price_per_ticket": 75
+      },
+      "{\n    \"event\": \"Football Match\",\n    \"tickets_sold\": 02000,\n    \"price_per_ticket\": 075\n}"
+    ],
+    [
+      {
+        "event": "Art Exhibition",
+        "tickets_sold": 45,
+        "price_per_ticket": 20
+      },
+      "{\n    \"event\": \"Art Exhibition\",\n    \"tickets_sold\": 045,\n    \"price_per_ticket\": 020\n}"
+    ],
+    [
+      {
+        "event": "Circus Show",
+        "tickets_sold": 1500,
+        "price_per_ticket": 15
+      },
+      "{\n    \"event\": \"Circus Show\",\n    \"tickets_sold\": 01500,\n    \"price_per_ticket\": 015\n}"
+    ],
+    [
+      {
+        "event": "Comedy Night",
+        "tickets_sold": 250,
+        "price_per_ticket": 40
+      },
+      "{\n    \"event\": \"Comedy Night\",\n    \"tickets_sold\": 0250,\n    \"price_per_ticket\": 040\n}"
+    ],
+    [
+      {
+        "event": "Dance Performance",
+        "tickets_sold": 500,
+        "price_per_ticket": 65
+      },
+      "{\n    \"event\": \"Dance Performance\",\n    \"tickets_sold\": 0500,\n    \"price_per_ticket\": 065\n}"
+    ],
+    [
+      {
+        "event": "Book Fair",
+        "tickets_sold": 320,
+        "price_per_ticket": 10
+      },
+      "{\n    \"event\": \"Book Fair\",\n    \"tickets_sold\": 0320,\n    \"price_per_ticket\": 010\n}"
+    ],
+    [
+      {
+        "event": "Food Festival",
+        "tickets_sold": 720,
+        "price_per_ticket": 30
+      },
+      "{\n    \"event\": \"Food Festival\",\n    \"tickets_sold\": 0720,\n    \"price_per_ticket\": 030\n}"
+    ],
+    [
+      {
+        "event": "Film Screening",
+        "tickets_sold": 180,
+        "price_per_ticket": 12
+      },
+      "{\n    \"event\": \"Film Screening\",\n    \"tickets_sold\": 0180,\n    \"price_per_ticket\": 012\n}"
+    ],
+    [
+      {
+        "bugId": 12345,
+        "title": "Login button not responding",
+        "severity": 2,
+        "reportedBy": "user123",
+        "status": "open"
+      },
+      "{\n  \"bugId\": 012345,\n  \"title\": \"Login button not responding\",\n  \"severity\": 02,\n  \"reportedBy\": \"user123\",\n  \"status\": \"open\"\n}"
+    ],
+    [
+      {
+        "issueId": 67890,
+        "description": "Page crashes on submit",
+        "priority": 5,
+        "assignedTo": "developer456",
+        "status": "in progress"
+      },
+      "{\n  \"issueId\": 067890,\n  \"description\": \"Page crashes on submit\",\n  \"priority\": 05,\n  \"assignedTo\": \"developer456\",\n  \"status\": \"in progress\"\n}"
+    ],
+    [
+      {
+        "ticketNumber": 23456,
+        "summary": "UI misalignment on dashboard",
+        "impact": 3,
+        "createdBy": "tester789",
+        "resolution": "unresolved"
+      },
+      "{\n  \"ticketNumber\": 023456,\n  \"summary\": \"UI misalignment on dashboard\",\n  \"impact\": 03,\n  \"createdBy\": \"tester789\",\n  \"resolution\": \"unresolved\"\n}"
+    ],
+    [
+      {
+        "reportId": 54321,
+        "details": "Memory leak in process",
+        "urgency": 4,
+        "reportedTo": "admin101",
+        "state": "review"
+      },
+      "{\n  \"reportId\": 054321,\n  \"details\": \"Memory leak in process\",\n  \"urgency\": 04,\n  \"reportedTo\": \"admin101\",\n  \"state\": \"review\"\n}"
+    ],
+    [
+      {
+        "caseId": 98765,
+        "issue": "Unexpected logout",
+        "riskLevel": 1,
+        "loggedBy": "user111",
+        "currentStatus": "closed"
+      },
+      "{\n  \"caseId\": 098765,\n  \"issue\": \"Unexpected logout\",\n  \"riskLevel\": 01,\n  \"loggedBy\": \"user111\",\n  \"currentStatus\": \"closed\"\n}"
+    ],
+    [
+      {
+        "incidentId": 11223,
+        "problem": "Slow response time",
+        "priorityLevel": 2,
+        "submittedBy": "user222",
+        "progress": "waiting for feedback"
+      },
+      "{\n  \"incidentId\": 011223,\n  \"problem\": \"Slow response time\",\n  \"priorityLevel\": 02,\n  \"submittedBy\": \"user222\",\n  \"progress\": \"waiting for feedback\"\n}"
+    ],
+    [
+      {
+        "faultId": 33445,
+        "message": "Error in data sync",
+        "criticality": 5,
+        "filedBy": "admin333",
+        "statusUpdate": "investigating"
+      },
+      "{\n  \"faultId\": 033445,\n  \"message\": \"Error in data sync\",\n  \"criticality\": 05,\n  \"filedBy\": \"admin333\",\n  \"statusUpdate\": \"investigating\"\n}"
+    ],
+    [
+      {
+        "reportNumber": 55667,
+        "issueSummary": "Notification failure",
+        "impactScore": 3,
+        "enteredBy": "dev444",
+        "currentPhase": "testing"
+      },
+      "{\n  \"reportNumber\": 055667,\n  \"issueSummary\": \"Notification failure\",\n  \"impactScore\": 03,\n  \"enteredBy\": \"dev444\",\n  \"currentPhase\": \"testing\"\n}"
+    ],
+    [
+      {
+        "errorId": 77889,
+        "description": "Incorrect data rendering",
+        "severityRating": 4,
+        "reportedVia": "portal555",
+        "outcome": "fixed"
+      },
+      "{\n  \"errorId\": 077889,\n  \"description\": \"Incorrect data rendering\",\n  \"severityRating\": 04,\n  \"reportedVia\": \"portal555\",\n  \"outcome\": \"fixed\"\n}"
+    ],
+    [
+      {
+        "logId": 99001,
+        "summaryText": "Crash during update",
+        "importance": 2,
+        "notedBy": "dev666",
+        "resolutionState": "pending"
+      },
+      "{\n  \"logId\": 099001,\n  \"summaryText\": \"Crash during update\",\n  \"importance\": 02,\n  \"notedBy\": \"dev666\",\n  \"resolutionState\": \"pending\"\n}"
+    ],
+    [
+      {
+        "vehicle_id": "A123BC",
+        "maintenance": [
+          {
+            "date": "2023-09-15",
+            "mileage": 45000,
+            "services": [
+              "oil change",
+              "tire rotation"
+            ],
+            "cost": 120
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"A123BC\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-09-15\",\n            \"mileage\": 045000,\n            \"services\": [\"oil change\", \"tire rotation\"],\n            \"cost\": 0120\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "B456DE",
+        "maintenance": [
+          {
+            "date": "2023-10-02",
+            "mileage": 52000,
+            "services": [
+              "brake inspection"
+            ],
+            "cost": 200
+          },
+          {
+            "date": "2023-11-05",
+            "mileage": 53000,
+            "services": [
+              "battery replacement"
+            ],
+            "cost": 180
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"B456DE\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-10-02\",\n            \"mileage\": 052000,\n            \"services\": [\"brake inspection\"],\n            \"cost\": 0200\n        },\n        {\n            \"date\": \"2023-11-05\",\n            \"mileage\": 053000,\n            \"services\": [\"battery replacement\"],\n            \"cost\": 0180\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "C789FG",
+        "maintenance": [
+          {
+            "date": "2023-08-20",
+            "mileage": 60000,
+            "services": [
+              "coolant flush"
+            ],
+            "cost": 90
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"C789FG\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-08-20\",\n            \"mileage\": 060000,\n            \"services\": [\"coolant flush\"],\n            \"cost\": 090\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "D012HI",
+        "maintenance": [
+          {
+            "date": "2023-07-30",
+            "mileage": 75000,
+            "services": [
+              "transmission service"
+            ],
+            "cost": 300
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"D012HI\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-07-30\",\n            \"mileage\": 075000,\n            \"services\": [\"transmission service\"],\n            \"cost\": 0300\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "E345JK",
+        "maintenance": [
+          {
+            "date": "2023-06-10",
+            "mileage": 82000,
+            "services": [
+              "spark plug replacement"
+            ],
+            "cost": 150
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"E345JK\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-06-10\",\n            \"mileage\": 082000,\n            \"services\": [\"spark plug replacement\"],\n            \"cost\": 0150\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "F678LM",
+        "maintenance": [
+          {
+            "date": "2023-05-15",
+            "mileage": 90000,
+            "services": [
+              "timing belt replacement"
+            ],
+            "cost": 450
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"F678LM\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-05-15\",\n            \"mileage\": 090000,\n            \"services\": [\"timing belt replacement\"],\n            \"cost\": 0450\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "G901NO",
+        "maintenance": [
+          {
+            "date": "2023-04-25",
+            "mileage": 105000,
+            "services": [
+              "fuel system cleaning"
+            ],
+            "cost": 120
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"G901NO\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-04-25\",\n            \"mileage\": 0105000,\n            \"services\": [\"fuel system cleaning\"],\n            \"cost\": 0120\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "H234PQ",
+        "maintenance": [
+          {
+            "date": "2023-03-18",
+            "mileage": 112000,
+            "services": [
+              "air filter replacement"
+            ],
+            "cost": 30
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"H234PQ\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-03-18\",\n            \"mileage\": 0112000,\n            \"services\": [\"air filter replacement\"],\n            \"cost\": 030\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "I567RS",
+        "maintenance": [
+          {
+            "date": "2023-02-28",
+            "mileage": 120000,
+            "services": [
+              "cabin filter replacement"
+            ],
+            "cost": 50
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"I567RS\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-02-28\",\n            \"mileage\": 0120000,\n            \"services\": [\"cabin filter replacement\"],\n            \"cost\": 050\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "vehicle_id": "J890TU",
+        "maintenance": [
+          {
+            "date": "2023-01-10",
+            "mileage": 130000,
+            "services": [
+              "wheel alignment"
+            ],
+            "cost": 100
+          }
+        ]
+      },
+      "{\n    \"vehicle_id\": \"J890TU\",\n    \"maintenance\": [\n        {\n            \"date\": \"2023-01-10\",\n            \"mileage\": 0130000,\n            \"services\": [\"wheel alignment\"],\n            \"cost\": 0100\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 123,
+        "name": "John Doe",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    \"employeeId\": 00123,\n    \"name\": \"John Doe\",\n    \"attendance\": [\n        {\"date\": \"2023-10-01\", \"status\": \"Present\"},\n        {\"date\": \"2023-10-02\", \"status\": \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "recordId": 456,
+        "department": "Sales",
+        "attendance": [
+          {
+            "date": "2023-09-30",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    \"recordId\": 00456,\n    \"department\": \"Sales\",\n    \"attendance\": [\n        {\"date\": \"2023-09-30\", \"status\": \"Present\"},\n        {\"date\": \"2023-10-01\", \"status\": \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 789,
+        "name": "Jane Smith",
+        "attendance": [
+          {
+            "date": "2023-10-05",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-06",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    \"employeeId\": 00789,\n    \"name\": \"Jane Smith\",\n    \"attendance\": [\n        {\"date\": \"2023-10-05\", \"status\": \"Absent\"},\n        {\"date\": \"2023-10-06\", \"status\": \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "recordId": 321,
+        "department": "HR",
+        "attendance": [
+          {
+            "date": "2023-08-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-08-02",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    \"recordId\": 00321,\n    \"department\": \"HR\",\n    \"attendance\": [\n        {\"date\": \"2023-08-01\", \"status\": \"Present\"},\n        {\"date\": \"2023-08-02\", \"status\": \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 654,
+        "name": "Emily Johnson",
+        "attendance": [
+          {
+            "date": "2023-09-15",
+            "status": "Present"
+          },
+          {
+            "date": "2023-09-16",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    \"employeeId\": 00654,\n    \"name\": \"Emily Johnson\",\n    \"attendance\": [\n        {\"date\": \"2023-09-15\", \"status\": \"Present\"},\n        {\"date\": \"2023-09-16\", \"status\": \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "recordId": 987,
+        "department": "IT",
+        "attendance": [
+          {
+            "date": "2023-07-20",
+            "status": "Present"
+          },
+          {
+            "date": "2023-07-21",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    \"recordId\": 00987,\n    \"department\": \"IT\",\n    \"attendance\": [\n        {\"date\": \"2023-07-20\", \"status\": \"Present\"},\n        {\"date\": \"2023-07-21\", \"status\": \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 246,
+        "name": "Michael Brown",
+        "attendance": [
+          {
+            "date": "2023-06-10",
+            "status": "Present"
+          },
+          {
+            "date": "2023-06-11",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    \"employeeId\": 00246,\n    \"name\": \"Michael Brown\",\n    \"attendance\": [\n        {\"date\": \"2023-06-10\", \"status\": \"Present\"},\n        {\"date\": \"2023-06-11\", \"status\": \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "recordId": 135,
+        "department": "Finance",
+        "attendance": [
+          {
+            "date": "2023-05-05",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-05-06",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    \"recordId\": 00135,\n    \"department\": \"Finance\",\n    \"attendance\": [\n        {\"date\": \"2023-05-05\", \"status\": \"Absent\"},\n        {\"date\": \"2023-05-06\", \"status\": \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 864,
+        "name": "Sophia Martinez",
+        "attendance": [
+          {
+            "date": "2023-04-15",
+            "status": "Present"
+          },
+          {
+            "date": "2023-04-16",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    \"employeeId\": 00864,\n    \"name\": \"Sophia Martinez\",\n    \"attendance\": [\n        {\"date\": \"2023-04-15\", \"status\": \"Present\"},\n        {\"date\": \"2023-04-16\", \"status\": \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "recordId": 579,
+        "department": "Marketing",
+        "attendance": [
+          {
+            "date": "2023-03-10",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-03-11",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    \"recordId\": 00579,\n    \"department\": \"Marketing\",\n    \"attendance\": [\n        {\"date\": \"2023-03-10\", \"status\": \"Absent\"},\n        {\"date\": \"2023-03-11\", \"status\": \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "thread_id": 123,
+        "title": "How to fix JSON errors?",
+        "posts": [
+          {
+            "post_id": 1,
+            "user": "johndoe",
+            "content": "I'm having trouble with parsing JSON!",
+            "likes": 10
+          },
+          {
+            "post_id": 2,
+            "user": "janedoe",
+            "content": "Make sure to check for trailing commas.",
+            "likes": 15
+          }
+        ]
+      },
+      "{\n  \"thread_id\": 00123,\n  \"title\": \"How to fix JSON errors?\",\n  \"posts\": [\n    {\n      \"post_id\": 001,\n      \"user\": \"johndoe\",\n      \"content\": \"I'm having trouble with parsing JSON!\",\n      \"likes\": 010\n    },\n    {\n      \"post_id\": 002,\n      \"user\": \"janedoe\",\n      \"content\": \"Make sure to check for trailing commas.\",\n      \"likes\": 015\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "forum_name": "Tech Talk",
+        "discussions": [
+          {
+            "discussion_id": 45,
+            "topic": "Latest in AI",
+            "messages": 150
+          },
+          {
+            "discussion_id": 46,
+            "topic": "Web Development",
+            "messages": 200
+          }
+        ]
+      },
+      "{\n  \"forum_name\": \"Tech Talk\",\n  \"discussions\": [\n    {\n      \"discussion_id\": 045,\n      \"topic\": \"Latest in AI\",\n      \"messages\": 0150\n    },\n    {\n      \"discussion_id\": 046,\n      \"topic\": \"Web Development\",\n      \"messages\": 0200\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user_id": 6789,
+        "username": "coder123",
+        "posts_count": 42,
+        "active": true
+      },
+      "{\n  \"user_id\": 06789,\n  \"username\": \"coder123\",\n  \"posts_count\": 042,\n  \"active\": true\n}"
+    ],
+    [
+      {
+        "category": "Programming",
+        "threads": [
+          {
+            "thread_id": 1,
+            "views": 300
+          },
+          {
+            "thread_id": 2,
+            "views": 450
+          }
+        ],
+        "total_threads": 2
+      },
+      "{\n  \"category\": \"Programming\",\n  \"threads\": [\n    {\n      \"thread_id\": 01,\n      \"views\": 0300\n    },\n    {\n      \"thread_id\": 02,\n      \"views\": 0450\n    }\n  ],\n  \"total_threads\": 02\n}"
+    ],
+    [
+      {
+        "discussion_title": "Best Coding Practices",
+        "participants": 25,
+        "post_counts": {
+          "total": 75,
+          "unanswered": 5
+        }
+      },
+      "{\n  \"discussion_title\": \"Best Coding Practices\",\n  \"participants\": 025,\n  \"post_counts\": {\n    \"total\": 075,\n    \"unanswered\": 05\n  }\n}"
+    ],
+    [
+      {
+        "section": "General",
+        "active_users": 1234,
+        "inactive_users": 75
+      },
+      "{\n  \"section\": \"General\",\n  \"active_users\": 01234,\n  \"inactive_users\": 075\n}"
+    ],
+    [
+      {
+        "thread": {
+          "id": 56,
+          "subject": "JavaScript Tips",
+          "responses": 89
+        }
+      },
+      "{\n  \"thread\": {\n    \"id\": 056,\n    \"subject\": \"JavaScript Tips\",\n    \"responses\": 089\n  }\n}"
+    ],
+    [
+      {
+        "username": "techguru",
+        "post_id": 109,
+        "likes_received": 320
+      },
+      "{\n  \"username\": \"techguru\",\n  \"post_id\": 0109,\n  \"likes_received\": 0320\n}"
+    ],
+    [
+      {
+        "forum": "Data Science",
+        "topics": [
+          {
+            "topic_id": 10,
+            "replies": 100
+          },
+          {
+            "topic_id": 11,
+            "replies": 75
+          }
+        ]
+      },
+      "{\n  \"forum\": \"Data Science\",\n  \"topics\": [\n    {\n      \"topic_id\": 010,\n      \"replies\": 0100\n    },\n    {\n      \"topic_id\": 011,\n      \"replies\": 075\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "user": {
+          "id": 8,
+          "name": "devmaster",
+          "posts": 3
+        }
+      },
+      "{\n  \"user\": {\n    \"id\": 008,\n    \"name\": \"devmaster\",\n    \"posts\": 003\n  }\n}"
+    ],
+    [
+      {
+        "store_id": 123,
+        "date": "2023-10-15",
+        "foot_traffic": 250,
+        "average_dwell_time": 45
+      },
+      "{\n  \"store_id\": 00123,\n  \"date\": \"2023-10-15\",\n  \"foot_traffic\": 250,\n  \"average_dwell_time\": 45\n}"
+    ],
+    [
+      {
+        "location": "Downtown",
+        "store_id": 87,
+        "daily_visitors": 320,
+        "peak_hour": "15:00"
+      },
+      "{\n  \"location\": \"Downtown\",\n  \"store_id\": 00087,\n  \"daily_visitors\": 320,\n  \"peak_hour\": \"15:00\"\n}"
+    ],
+    [
+      {
+        "store_name": "Fashion Hub",
+        "store_id": 48,
+        "foot_traffic": {
+          "morning": 120,
+          "afternoon": 150,
+          "evening": 210
+        }
+      },
+      "{\n  \"store_name\": \"Fashion Hub\",\n  \"store_id\": 00048,\n  \"foot_traffic\": {\n    \"morning\": 120,\n    \"afternoon\": 150,\n    \"evening\": 210\n  }\n}"
+    ],
+    [
+      {
+        "date": "2023-10-16",
+        "store_id": 5,
+        "unique_visitors": 400,
+        "repeat_customers": 150
+      },
+      "{\n  \"date\": \"2023-10-16\",\n  \"store_id\": 0005,\n  \"unique_visitors\": 400,\n  \"repeat_customers\": 150\n}"
+    ],
+    [
+      {
+        "chain": "Grocery Mart",
+        "store_id": 233,
+        "weekly_traffic": [
+          1000,
+          1200,
+          1300,
+          1100,
+          1400,
+          1500,
+          1600
+        ]
+      },
+      "{\n  \"chain\": \"Grocery Mart\",\n  \"store_id\": 00233,\n  \"weekly_traffic\": [\n    1000,\n    1200,\n    1300,\n    1100,\n    1400,\n    1500,\n    1600\n  ]\n}"
+    ],
+    [
+      {
+        "store_id": 76,
+        "location_area": "Suburban",
+        "foot_traffic": {
+          "weekday": 900,
+          "weekend": 1200
+        }
+      },
+      "{\n  \"store_id\": 00076,\n  \"location_area\": \"Suburban\",\n  \"foot_traffic\": {\n    \"weekday\": 900,\n    \"weekend\": 1200\n  }\n}"
+    ],
+    [
+      {
+        "mall_name": "City Center",
+        "store_id": 19,
+        "visitors": {
+          "total": 50000,
+          "new": 15000,
+          "returning": 35000
+        }
+      },
+      "{\n  \"mall_name\": \"City Center\",\n  \"store_id\": 00019,\n  \"visitors\": {\n    \"total\": 50000,\n    \"new\": 15000,\n    \"returning\": 35000\n  }\n}"
+    ],
+    [
+      {
+        "district": "Eastside",
+        "store_id": 92,
+        "visit_data": {
+          "average_duration": 35,
+          "peak_day": "Saturday"
+        }
+      },
+      "{\n  \"district\": \"Eastside\",\n  \"store_id\": 00092,\n  \"visit_data\": {\n    \"average_duration\": 35,\n    \"peak_day\": \"Saturday\"\n  }\n}"
+    ],
+    [
+      {
+        "store_id": 44,
+        "opening_hours": {
+          "weekday": "09:00-21:00",
+          "weekend": "10:00-22:00"
+        },
+        "customer_feedback": {
+          "positive": 420,
+          "negative": 30
+        }
+      },
+      "{\n  \"store_id\": 00044,\n  \"opening_hours\": {\n    \"weekday\": \"09:00-21:00\",\n    \"weekend\": \"10:00-22:00\"\n  },\n  \"customer_feedback\": {\n    \"positive\": 420,\n    \"negative\": 30\n  }\n}"
+    ],
+    [
+      {
+        "store_name": "Electronics World",
+        "store_id": 101,
+        "monthly_sales": 75000,
+        "returns": 500
+      },
+      "{\n  \"store_name\": \"Electronics World\",\n  \"store_id\": 00101,\n  \"monthly_sales\": 75000,\n  \"returns\": 500\n}"
+    ],
+    [
+      {
+        "playlistName": "Chill Vibes",
+        "tracks": [
+          {
+            "title": "Beach Walk",
+            "artist": "Sunset Lovers",
+            "duration": 245
+          },
+          {
+            "title": "Serene Waves",
+            "artist": "Ocean Sounds",
+            "duration": 180
+          }
+        ],
+        "totalDuration": 425
+      },
+      "{\n  \"playlistName\": \"Chill Vibes\",\n  \"tracks\": [\n    {\n      \"title\": \"Beach Walk\",\n      \"artist\": \"Sunset Lovers\",\n      \"duration\": 0245\n    },\n    {\n      \"title\": \"Serene Waves\",\n      \"artist\": \"Ocean Sounds\",\n      \"duration\": 0180\n    }\n  ],\n  \"totalDuration\": 0425\n}"
+    ],
+    [
+      {
+        "playlistName": "Workout Mix",
+        "tracks": [
+          {
+            "title": "Pump It Up",
+            "artist": "Gym Beats",
+            "duration": 210
+          },
+          {
+            "title": "Run Fast",
+            "artist": "Sprint Team",
+            "duration": 195
+          }
+        ],
+        "totalDuration": 405
+      },
+      "{\n  \"playlistName\": \"Workout Mix\",\n  \"tracks\": [\n    {\n      \"title\": \"Pump It Up\",\n      \"artist\": \"Gym Beats\",\n      \"duration\": 0210\n    },\n    {\n      \"title\": \"Run Fast\",\n      \"artist\": \"Sprint Team\",\n      \"duration\": 0195\n    }\n  ],\n  \"totalDuration\": 0405\n}"
+    ],
+    [
+      {
+        "playlistName": "Road Trip",
+        "tracks": [
+          {
+            "title": "Highway Tunes",
+            "artist": "Drive Band",
+            "duration": 300
+          },
+          {
+            "title": "Sunset Drive",
+            "artist": "The Cruisers",
+            "duration": 270
+          }
+        ],
+        "totalDuration": 570
+      },
+      "{\n  \"playlistName\": \"Road Trip\",\n  \"tracks\": [\n    {\n      \"title\": \"Highway Tunes\",\n      \"artist\": \"Drive Band\",\n      \"duration\": 0300\n    },\n    {\n      \"title\": \"Sunset Drive\",\n      \"artist\": \"The Cruisers\",\n      \"duration\": 0270\n    }\n  ],\n  \"totalDuration\": 0570\n}"
+    ],
+    [
+      {
+        "playlistName": "Party Hits",
+        "tracks": [
+          {
+            "title": "Dance All Night",
+            "artist": "DJ Remix",
+            "duration": 180
+          },
+          {
+            "title": "Electro Swing",
+            "artist": "Club Grooves",
+            "duration": 220
+          }
+        ],
+        "totalDuration": 400
+      },
+      "{\n  \"playlistName\": \"Party Hits\",\n  \"tracks\": [\n    {\n      \"title\": \"Dance All Night\",\n      \"artist\": \"DJ Remix\",\n      \"duration\": 0180\n    },\n    {\n      \"title\": \"Electro Swing\",\n      \"artist\": \"Club Grooves\",\n      \"duration\": 0220\n    }\n  ],\n  \"totalDuration\": 0400\n}"
+    ],
+    [
+      {
+        "playlistName": "Study Focus",
+        "tracks": [
+          {
+            "title": "Concentration",
+            "artist": "Mind Free",
+            "duration": 360
+          },
+          {
+            "title": "Deep Focus",
+            "artist": "Serene Mind",
+            "duration": 300
+          }
+        ],
+        "totalDuration": 660
+      },
+      "{\n  \"playlistName\": \"Study Focus\",\n  \"tracks\": [\n    {\n      \"title\": \"Concentration\",\n      \"artist\": \"Mind Free\",\n      \"duration\": 0360\n    },\n    {\n      \"title\": \"Deep Focus\",\n      \"artist\": \"Serene Mind\",\n      \"duration\": 0300\n    }\n  ],\n  \"totalDuration\": 0660\n}"
+    ],
+    [
+      {
+        "playlistName": "Relaxing Tunes",
+        "tracks": [
+          {
+            "title": "Calm Breeze",
+            "artist": "Nature Harmonies",
+            "duration": 250
+          },
+          {
+            "title": "Gentle Rain",
+            "artist": "Ambient Sound",
+            "duration": 290
+          }
+        ],
+        "totalDuration": 540
+      },
+      "{\n  \"playlistName\": \"Relaxing Tunes\",\n  \"tracks\": [\n    {\n      \"title\": \"Calm Breeze\",\n      \"artist\": \"Nature Harmonies\",\n      \"duration\": 0250\n    },\n    {\n      \"title\": \"Gentle Rain\",\n      \"artist\": \"Ambient Sound\",\n      \"duration\": 0290\n    }\n  ],\n  \"totalDuration\": 0540\n}"
+    ],
+    [
+      {
+        "playlistName": "Jazz Night",
+        "tracks": [
+          {
+            "title": "Smooth Jazz",
+            "artist": "Jazz Quartet",
+            "duration": 310
+          },
+          {
+            "title": "Evening Groove",
+            "artist": "Soul Notes",
+            "duration": 275
+          }
+        ],
+        "totalDuration": 585
+      },
+      "{\n  \"playlistName\": \"Jazz Night\",\n  \"tracks\": [\n    {\n      \"title\": \"Smooth Jazz\",\n      \"artist\": \"Jazz Quartet\",\n      \"duration\": 0310\n    },\n    {\n      \"title\": \"Evening Groove\",\n      \"artist\": \"Soul Notes\",\n      \"duration\": 0275\n    }\n  ],\n  \"totalDuration\": 0585\n}"
+    ],
+    [
+      {
+        "playlistName": "Indie Pop Hits",
+        "tracks": [
+          {
+            "title": "Summer Lights",
+            "artist": "Indie Stars",
+            "duration": 240
+          },
+          {
+            "title": "Night Drive",
+            "artist": "Pop Dreams",
+            "duration": 260
+          }
+        ],
+        "totalDuration": 500
+      },
+      "{\n  \"playlistName\": \"Indie Pop Hits\",\n  \"tracks\": [\n    {\n      \"title\": \"Summer Lights\",\n      \"artist\": \"Indie Stars\",\n      \"duration\": 0240\n    },\n    {\n      \"title\": \"Night Drive\",\n      \"artist\": \"Pop Dreams\",\n      \"duration\": 0260\n    }\n  ],\n  \"totalDuration\": 0500\n}"
+    ],
+    [
+      {
+        "playlistName": "Classic Rock",
+        "tracks": [
+          {
+            "title": "Rock Anthem",
+            "artist": "The Legends",
+            "duration": 320
+          },
+          {
+            "title": "Guitar Heroes",
+            "artist": "Strings & Co.",
+            "duration": 280
+          }
+        ],
+        "totalDuration": 600
+      },
+      "{\n  \"playlistName\": \"Classic Rock\",\n  \"tracks\": [\n    {\n      \"title\": \"Rock Anthem\",\n      \"artist\": \"The Legends\",\n      \"duration\": 0320\n    },\n    {\n      \"title\": \"Guitar Heroes\",\n      \"artist\": \"Strings & Co.\",\n      \"duration\": 0280\n    }\n  ],\n  \"totalDuration\": 0600\n}"
+    ],
+    [
+      {
+        "playlistName": "Instrumental Magic",
+        "tracks": [
+          {
+            "title": "Magic Flute",
+            "artist": "Orchestra Symphony",
+            "duration": 340
+          },
+          {
+            "title": "Piano Dreams",
+            "artist": "Keys Master",
+            "duration": 300
+          }
+        ],
+        "totalDuration": 640
+      },
+      "{\n  \"playlistName\": \"Instrumental Magic\",\n  \"tracks\": [\n    {\n      \"title\": \"Magic Flute\",\n      \"artist\": \"Orchestra Symphony\",\n      \"duration\": 0340\n    },\n    {\n      \"title\": \"Piano Dreams\",\n      \"artist\": \"Keys Master\",\n      \"duration\": 0300\n    }\n  ],\n  \"totalDuration\": 0640\n}"
+    ],
+    [
+      {
+        "cardId": "AB1234",
+        "usageHistory": [
+          {
+            "date": "2023-10-01",
+            "time": "08:30",
+            "station": "Central",
+            "amount": 250
+          },
+          {
+            "date": "2023-10-01",
+            "time": "17:45",
+            "station": "Park Street",
+            "amount": 300
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"AB1234\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-10-01\",\n            \"time\": \"08:30\",\n            \"station\": \"Central\",\n            \"amount\": 0250\n        },\n        {\n            \"date\": \"2023-10-01\",\n            \"time\": \"17:45\",\n            \"station\": \"Park Street\",\n            \"amount\": 0300\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "ZX9876",
+        "usageHistory": [
+          {
+            "date": "2023-09-15",
+            "time": "07:15",
+            "station": "North End",
+            "amount": 150
+          },
+          {
+            "date": "2023-09-15",
+            "time": "18:00",
+            "station": "Downtown",
+            "amount": 200
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"ZX9876\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-09-15\",\n            \"time\": \"07:15\",\n            \"station\": \"North End\",\n            \"amount\": 0150\n        },\n        {\n            \"date\": \"2023-09-15\",\n            \"time\": \"18:00\",\n            \"station\": \"Downtown\",\n            \"amount\": 0200\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "LM4321",
+        "usageHistory": [
+          {
+            "date": "2023-08-21",
+            "time": "09:00",
+            "station": "South Square",
+            "amount": 100
+          },
+          {
+            "date": "2023-08-21",
+            "time": "19:30",
+            "station": "Eastside",
+            "amount": 180
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"LM4321\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-08-21\",\n            \"time\": \"09:00\",\n            \"station\": \"South Square\",\n            \"amount\": 0100\n        },\n        {\n            \"date\": \"2023-08-21\",\n            \"time\": \"19:30\",\n            \"station\": \"Eastside\",\n            \"amount\": 0180\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "QW5678",
+        "usageHistory": [
+          {
+            "date": "2023-07-10",
+            "time": "06:45",
+            "station": "Harbor",
+            "amount": 275
+          },
+          {
+            "date": "2023-07-10",
+            "time": "16:20",
+            "station": "Midtown",
+            "amount": 250
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"QW5678\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-07-10\",\n            \"time\": \"06:45\",\n            \"station\": \"Harbor\",\n            \"amount\": 0275\n        },\n        {\n            \"date\": \"2023-07-10\",\n            \"time\": \"16:20\",\n            \"station\": \"Midtown\",\n            \"amount\": 0250\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "RT2345",
+        "usageHistory": [
+          {
+            "date": "2023-06-05",
+            "time": "07:50",
+            "station": "City Center",
+            "amount": 220
+          },
+          {
+            "date": "2023-06-05",
+            "time": "17:30",
+            "station": "West End",
+            "amount": 300
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"RT2345\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-06-05\",\n            \"time\": \"07:50\",\n            \"station\": \"City Center\",\n            \"amount\": 0220\n        },\n        {\n            \"date\": \"2023-06-05\",\n            \"time\": \"17:30\",\n            \"station\": \"West End\",\n            \"amount\": 0300\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "YU6543",
+        "usageHistory": [
+          {
+            "date": "2023-05-12",
+            "time": "08:15",
+            "station": "Old Town",
+            "amount": 155
+          },
+          {
+            "date": "2023-05-12",
+            "time": "18:45",
+            "station": "New Market",
+            "amount": 225
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"YU6543\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-05-12\",\n            \"time\": \"08:15\",\n            \"station\": \"Old Town\",\n            \"amount\": 0155\n        },\n        {\n            \"date\": \"2023-05-12\",\n            \"time\": \"18:45\",\n            \"station\": \"New Market\",\n            \"amount\": 0225\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "PO0987",
+        "usageHistory": [
+          {
+            "date": "2023-04-22",
+            "time": "07:30",
+            "station": "University",
+            "amount": 200
+          },
+          {
+            "date": "2023-04-22",
+            "time": "18:15",
+            "station": "Riverside",
+            "amount": 250
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"PO0987\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-04-22\",\n            \"time\": \"07:30\",\n            \"station\": \"University\",\n            \"amount\": 0200\n        },\n        {\n            \"date\": \"2023-04-22\",\n            \"time\": \"18:15\",\n            \"station\": \"Riverside\",\n            \"amount\": 0250\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "GH5432",
+        "usageHistory": [
+          {
+            "date": "2023-03-03",
+            "time": "08:05",
+            "station": "Market Square",
+            "amount": 175
+          },
+          {
+            "date": "2023-03-03",
+            "time": "17:55",
+            "station": "East Park",
+            "amount": 200
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"GH5432\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-03-03\",\n            \"time\": \"08:05\",\n            \"station\": \"Market Square\",\n            \"amount\": 0175\n        },\n        {\n            \"date\": \"2023-03-03\",\n            \"time\": \"17:55\",\n            \"station\": \"East Park\",\n            \"amount\": 0200\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "JK3210",
+        "usageHistory": [
+          {
+            "date": "2023-02-14",
+            "time": "09:10",
+            "station": "Sunset Boulevard",
+            "amount": 230
+          },
+          {
+            "date": "2023-02-14",
+            "time": "19:40",
+            "station": "Mountain View",
+            "amount": 275
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"JK3210\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-02-14\",\n            \"time\": \"09:10\",\n            \"station\": \"Sunset Boulevard\",\n            \"amount\": 0230\n        },\n        {\n            \"date\": \"2023-02-14\",\n            \"time\": \"19:40\",\n            \"station\": \"Mountain View\",\n            \"amount\": 0275\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "cardId": "MN8765",
+        "usageHistory": [
+          {
+            "date": "2023-01-25",
+            "time": "06:35",
+            "station": "River Bank",
+            "amount": 210
+          },
+          {
+            "date": "2023-01-25",
+            "time": "18:05",
+            "station": "Hilltop",
+            "amount": 190
+          }
+        ]
+      },
+      "{\n    \"cardId\": \"MN8765\",\n    \"usageHistory\": [\n        {\n            \"date\": \"2023-01-25\",\n            \"time\": \"06:35\",\n            \"station\": \"River Bank\",\n            \"amount\": 0210\n        },\n        {\n            \"date\": \"2023-01-25\",\n            \"time\": \"18:05\",\n            \"station\": \"Hilltop\",\n            \"amount\": 0190\n        }\n    ]\n}"
+    ]
+  ]
+}

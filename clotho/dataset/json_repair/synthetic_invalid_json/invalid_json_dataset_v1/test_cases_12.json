@@ -1,0 +1,424 @@
+{
+  "possible_fix": "Strip fenced code blocks like ```json and ```",
+  "test_cases": [
+    [
+      {
+        "username": "john_doe",
+        "post": "Had a great day today! #happy",
+        "likes": 120,
+        "comments": [
+          "That's awesome!",
+          "Glad to hear that!"
+        ]
+      },
+      "```\n{\n    \"username\": \"john_doe\",\n    \"post\": \"Had a great day today! #happy\",\n    \"likes\": 120,\n    \"comments\": [\n        \"That's awesome!\",\n        \"Glad to hear that!\"\n    ]\n}\n```"
+    ],
+    [
+      {
+        "username": "jane_smith",
+        "post": "New blog post up on my site. Check it out!",
+        "tags": [
+          "blog",
+          "writing",
+          "creative"
+        ],
+        "shares": 45
+      },
+      "```\n{\n    \"username\": \"jane_smith\",\n    \"post\": \"New blog post up on my site. Check it out!\",\n    \"tags\": [\"blog\", \"writing\", \"creative\"],\n    \"shares\": 45\n}\n```"
+    ],
+    [
+      {
+        "username": "tech_guru",
+        "post": "Just reviewed the latest smartphone. Spoiler: It's amazing!",
+        "likes": 300,
+        "comments": [
+          "Can't wait to read the review!",
+          "Nice, looking forward to it."
+        ],
+        "shares": 75
+      },
+      "```\n{\n    \"username\": \"tech_guru\",\n    \"post\": \"Just reviewed the latest smartphone. Spoiler: It's amazing!\",\n    \"likes\": 300,\n    \"comments\": [\n        \"Can't wait to read the review!\",\n        \"Nice, looking forward to it.\"\n    ],\n    \"shares\": 75\n}\n```"
+    ],
+    [
+      {
+        "username": "foodie123",
+        "post": "Tried a new recipe today and it was delicious!",
+        "tags": [
+          "cooking",
+          "recipe",
+          "food"
+        ],
+        "likes": 200,
+        "comments": [
+          "Recipe please!",
+          "Looks so yummy!"
+        ]
+      },
+      "```\n{\n    \"username\": \"foodie123\",\n    \"post\": \"Tried a new recipe today and it was delicious!\",\n    \"tags\": [\"cooking\", \"recipe\", \"food\"],\n    \"likes\": 200,\n    \"comments\": [\n        \"Recipe please!\",\n        \"Looks so yummy!\"\n    ]\n}\n```"
+    ],
+    [
+      {
+        "username": "travel_buddy",
+        "post": "Visited the Grand Canyon today, breathtaking views!",
+        "tags": [
+          "travel",
+          "nature"
+        ],
+        "likes": 500,
+        "shares": 90
+      },
+      "```\n{\n    \"username\": \"travel_buddy\",\n    \"post\": \"Visited the Grand Canyon today, breathtaking views!\",\n    \"tags\": [\"travel\", \"nature\"],\n    \"likes\": 500,\n    \"shares\": 90\n}\n```"
+    ],
+    [
+      {
+        "username": "fitness_fanatic",
+        "post": "Just completed a 5k run. Feeling great!",
+        "tags": [
+          "fitness",
+          "running"
+        ],
+        "likes": 150,
+        "comments": [
+          "Well done!",
+          "Keep it up!"
+        ]
+      },
+      "```\n{\n    \"username\": \"fitness_fanatic\",\n    \"post\": \"Just completed a 5k run. Feeling great!\",\n    \"tags\": [\"fitness\", \"running\"],\n    \"likes\": 150,\n    \"comments\": [\n        \"Well done!\",\n        \"Keep it up!\"\n    ]\n}\n```"
+    ],
+    [
+      {
+        "username": "movie_buff",
+        "post": "Watched an amazing film last night. Highly recommend!",
+        "tags": [
+          "movies",
+          "review"
+        ],
+        "likes": 230,
+        "comments": [
+          "What was the movie?",
+          "Need to check it out!"
+        ]
+      },
+      "```\n{\n    \"username\": \"movie_buff\",\n    \"post\": \"Watched an amazing film last night. Highly recommend!\",\n    \"tags\": [\"movies\", \"review\"],\n    \"likes\": 230,\n    \"comments\": [\n        \"What was the movie?\",\n        \"Need to check it out!\"\n    ]\n}\n```"
+    ],
+    [
+      {
+        "username": "nature_lover",
+        "post": "Captured this beautiful sunset today.",
+        "tags": [
+          "photography",
+          "sunset"
+        ],
+        "likes": 340,
+        "comments": [
+          "Stunning shot!",
+          "Love the colors."
+        ],
+        "shares": 80
+      },
+      "```\n{\n    \"username\": \"nature_lover\",\n    \"post\": \"Captured this beautiful sunset today.\",\n    \"tags\": [\"photography\", \"sunset\"],\n    \"likes\": 340,\n    \"comments\": [\n        \"Stunning shot!\",\n        \"Love the colors.\"\n    ],\n    \"shares\": 80\n}\n```"
+    ],
+    [
+      {
+        "username": "bookworm",
+        "post": "Just finished reading a fantastic book. A must-read!",
+        "tags": [
+          "books",
+          "reading"
+        ],
+        "likes": 180,
+        "comments": [
+          "What's the title?",
+          "Adding it to my list."
+        ]
+      },
+      "```\n{\n    \"username\": \"bookworm\",\n    \"post\": \"Just finished reading a fantastic book. A must-read!\",\n    \"tags\": [\"books\", \"reading\"],\n    \"likes\": 180,\n    \"comments\": [\n        \"What's the title?\",\n        \"Adding it to my list.\"\n    ]\n}\n```"
+    ],
+    [
+      {
+        "username": "music_lover",
+        "post": "Discovered a new band today. Their music is amazing!",
+        "tags": [
+          "music",
+          "discovery"
+        ],
+        "likes": 260,
+        "comments": [
+          "Who are they?",
+          "Thanks for the recommendation!"
+        ],
+        "shares": 65
+      },
+      "```\n{\n    \"username\": \"music_lover\",\n    \"post\": \"Discovered a new band today. Their music is amazing!\",\n    \"tags\": [\"music\", \"discovery\"],\n    \"likes\": 260,\n    \"comments\": [\n        \"Who are they?\",\n        \"Thanks for the recommendation!\"\n    ],\n    \"shares\": 65\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "1A2B3C",
+        "amount": 2500.75,
+        "currency": "USD",
+        "date": "2023-10-15",
+        "status": "completed"
+      },
+      "```json\n{\n  \"transaction_id\": \"1A2B3C\",\n  \"amount\": 2500.75,\n  \"currency\": \"USD\",\n  \"date\": \"2023-10-15\",\n  \"status\": \"completed\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "7D8E9F",
+        "amount": 100.0,
+        "currency": "EUR",
+        "date": "2023-09-20",
+        "status": "pending"
+      },
+      "```json\n{\n  \"transaction_id\": \"7D8E9F\",\n  \"amount\": 100.00,\n  \"currency\": \"EUR\",\n  \"date\": \"2023-09-20\",\n  \"status\": \"pending\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "4G5H6I",
+        "amount": 150.5,
+        "currency": "GBP",
+        "date": "2023-08-10",
+        "status": "failed"
+      },
+      "```json\n{\n  \"transaction_id\": \"4G5H6I\",\n  \"amount\": 150.50,\n  \"currency\": \"GBP\",\n  \"date\": \"2023-08-10\",\n  \"status\": \"failed\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "0J1K2L",
+        "amount": 570.0,
+        "currency": "JPY",
+        "date": "2023-07-25",
+        "status": "completed"
+      },
+      "```json\n{\n  \"transaction_id\": \"0J1K2L\",\n  \"amount\": 570.00,\n  \"currency\": \"JPY\",\n  \"date\": \"2023-07-25\",\n  \"status\": \"completed\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "3M4N5O",
+        "amount": 2000.2,
+        "currency": "AUD",
+        "date": "2023-06-15",
+        "status": "in_progress"
+      },
+      "```json\n{\n  \"transaction_id\": \"3M4N5O\",\n  \"amount\": 2000.20,\n  \"currency\": \"AUD\",\n  \"date\": \"2023-06-15\",\n  \"status\": \"in_progress\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "6P7Q8R",
+        "amount": 975.5,
+        "currency": "CAD",
+        "date": "2023-05-05",
+        "status": "cancelled"
+      },
+      "```json\n{\n  \"transaction_id\": \"6P7Q8R\",\n  \"amount\": 975.50,\n  \"currency\": \"CAD\",\n  \"date\": \"2023-05-05\",\n  \"status\": \"cancelled\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "9S0T1U",
+        "amount": 1234.56,
+        "currency": "CHF",
+        "date": "2023-04-01",
+        "status": "completed"
+      },
+      "```json\n{\n  \"transaction_id\": \"9S0T1U\",\n  \"amount\": 1234.56,\n  \"currency\": \"CHF\",\n  \"date\": \"2023-04-01\",\n  \"status\": \"completed\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "2V3W4X",
+        "amount": 300.0,
+        "currency": "CNY",
+        "date": "2023-03-12",
+        "status": "refunded"
+      },
+      "```json\n{\n  \"transaction_id\": \"2V3W4X\",\n  \"amount\": 300.00,\n  \"currency\": \"CNY\",\n  \"date\": \"2023-03-12\",\n  \"status\": \"refunded\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "5Y6Z7A",
+        "amount": 7500.0,
+        "currency": "INR",
+        "date": "2023-02-20",
+        "status": "completed"
+      },
+      "```json\n{\n  \"transaction_id\": \"5Y6Z7A\",\n  \"amount\": 7500.00,\n  \"currency\": \"INR\",\n  \"date\": \"2023-02-20\",\n  \"status\": \"completed\"\n}\n```"
+    ],
+    [
+      {
+        "transaction_id": "8B9C0D",
+        "amount": 450.45,
+        "currency": "BRL",
+        "date": "2023-01-30",
+        "status": "failed"
+      },
+      "```json\n{\n  \"transaction_id\": \"8B9C0D\",\n  \"amount\": 450.45,\n  \"currency\": \"BRL\",\n  \"date\": \"2023-01-30\",\n  \"status\": \"failed\"\n}\n```"
+    ],
+    [
+      {
+        "user": "Alice",
+        "steps": 10234,
+        "workouts": [
+          {
+            "type": "running",
+            "duration": 30
+          },
+          {
+            "type": "yoga",
+            "duration": 45
+          }
+        ],
+        "hydration": {
+          "water_intake_oz": 64
+        }
+      },
+      "{\n    \"user\": \"Alice\",\n    \"steps\": 10234,\n    \"workouts\": [\n        {\"type\": \"running\", \"duration\": 30},\n        {\"type\": \"yoga\", \"duration\": 45}\n    ],\n    \"hydration\": {\n    ```json\n        \"water_intake_oz\": 64\n    ```\n    }\n}"
+    ],
+    [
+      {
+        "user": "Bob",
+        "calories_burned": 500,
+        "activities": [
+          {
+            "activity": "cycling",
+            "calories": 300
+          },
+          {
+            "activity": "swimming",
+            "calories": 200
+          }
+        ],
+        "goals": {
+          "weekly": "Run 3 times"
+        }
+      },
+      "{\n    \"user\": \"Bob\",\n    \"calories_burned\": 500,\n    \"activities\": [\n    ```json\n        {\"activity\": \"cycling\", \"calories\": 300},\n        {\"activity\": \"swimming\", \"calories\": 200}\n    ```\n    ],\n    \"goals\": {\n        \"weekly\": \"Run 3 times\"\n    }\n}"
+    ],
+    [
+      {
+        "user": "Charlie",
+        "heart_rate_bpm": 72,
+        "sleep": {
+          "hours": 7,
+          "quality": "good"
+        },
+        "diet": {
+          "calories": 2000,
+          "protein_g": 150
+        }
+      },
+      "{\n    \"user\": \"Charlie\",\n    \"heart_rate_bpm\": 72,\n    \"sleep\": {\n        \"hours\": 7,\n        \"quality\": \"good\"\n    },\n    \"diet\": {\n        ```json\n        \"calories\": 2000,\n        \"protein_g\": 150\n        ```\n    }\n}"
+    ],
+    [
+      {
+        "user": "Dana",
+        "body_metrics": {
+          "weight_kg": 68,
+          "height_cm": 172
+        },
+        "fitness_routine": [
+          {
+            "day": "Monday",
+            "activity": "gym"
+          },
+          {
+            "day": "Wednesday",
+            "activity": "pilates"
+          }
+        ]
+      },
+      "{\n    \"user\": \"Dana\",\n    \"body_metrics\": {\n    ```json\n        \"weight_kg\": 68,\n        \"height_cm\": 172\n    ```\n    },\n    \"fitness_routine\": [\n        {\"day\": \"Monday\", \"activity\": \"gym\"},\n        {\"day\": \"Wednesday\", \"activity\": \"pilates\"}\n    ]\n}"
+    ],
+    [
+      {
+        "user": "Eve",
+        "active_minutes": 60,
+        "stress_level": "moderate",
+        "sleep_pattern": {
+          "average_hours": 6.5
+        }
+      },
+      "{\n    \"user\": \"Eve\",\n    \"active_minutes\": 60,\n    \"stress_level\": \"moderate\",\n    \"sleep_pattern\": {\n    ```json\n        \"average_hours\": 6.5\n    ```\n    }\n}"
+    ],
+    [
+      {
+        "user": "Frank",
+        "goal_steps": 10000,
+        "current_steps": 8000,
+        "additional_info": {
+          "last_workout": "HIIT",
+          "favorite_activity": "running"
+        }
+      },
+      "{\n    \"user\": \"Frank\",\n    \"goal_steps\": 10000,\n    \"current_steps\": 8000,\n    \"additional_info\": {\n    ```json\n        \"last_workout\": \"HIIT\",\n        \"favorite_activity\": \"running\"\n    ```\n    }\n}"
+    ],
+    [
+      {
+        "user": "Grace",
+        "exercise_plans": [
+          {
+            "name": "Cardio",
+            "duration": 40
+          },
+          {
+            "name": "Strength",
+            "duration": 50
+          }
+        ],
+        "dietary_preferences": {
+          "vegan": true
+        }
+      },
+      "{\n    \"user\": \"Grace\",\n    \"exercise_plans\": [\n    ```json\n        {\"name\": \"Cardio\", \"duration\": 40},\n        {\"name\": \"Strength\", \"duration\": 50}\n    ```\n    ],\n    \"dietary_preferences\": {\n        \"vegan\": true\n    }\n}"
+    ],
+    [
+      {
+        "user": "Hank",
+        "hydration_levels": [
+          {
+            "day": "Monday",
+            "water_oz": 70
+          },
+          {
+            "day": "Tuesday",
+            "water_oz": 65
+          }
+        ],
+        "mental_health": {
+          "mood": "happy",
+          "stress_score": 3
+        }
+      },
+      "{\n    \"user\": \"Hank\",\n    \"hydration_levels\": [\n    ```json\n        {\"day\": \"Monday\", \"water_oz\": 70},\n        {\"day\": \"Tuesday\", \"water_oz\": 65}\n    ```\n    ],\n    \"mental_health\": {\n        \"mood\": \"happy\",\n        \"stress_score\": 3\n    }\n}"
+    ],
+    [
+      {
+        "user": "Ivy",
+        "tracking_period": "weekly",
+        "metrics": {
+          "average_calories_burned": 3500,
+          "average_steps_walked": 70000
+        },
+        "feedback": "On track"
+      },
+      "{\n    \"user\": \"Ivy\",\n    \"tracking_period\": \"weekly\",\n    \"metrics\": {\n    ```json\n        \"average_calories_burned\": 3500,\n        \"average_steps_walked\": 70000\n    ```\n    },\n    \"feedback\": \"On track\"\n}"
+    ],
+    [
+      {
+        "user": "Jack",
+        "fitness_test_scores": {
+          "strength_score": 80,
+          "endurance_score": 85
+        },
+        "weekly_summary": [
+          {
+            "day": "Monday",
+            "score": 78
+          },
+          {
+            "day": "Wednesday",
+            "score": 82
+          }
+        ]
+      },
+      "{\n    \"user\": \"Jack\",\n    \"fitness_test_scores\": {\n    ```json\n        \"strength_score\": 80,\n        \"endurance_score\": 85\n    ```\n    },\n    \"weekly_summary\": [\n        {\"day\": \"Monday\", \"score\": 78},\n        {\"day\": \"Wednesday\", \"score\": 82}\n    ]\n}"
+    ]
+  ]
+}

@@ -1,0 +1,1139 @@
+{
+  "possible_fix": "Replace special quote characters like \u201c...\u201d with regular double quotes",
+  "test_cases": [
+    [
+      {
+        "name": "John Doe",
+        "age": 30,
+        "email": "johndoe@example.com",
+        "preferences": {
+          "newsletter": true,
+          "notifications": "weekly"
+        }
+      },
+      "{\n    \u201cname\u201d: \u201cJohn Doe\u201d,\n    \u201cage\u201d: 30,\n    \u201cemail\u201d: \u201cjohndoe@example.com\u201d,\n    \u201cpreferences\u201d: {\n        \u201cnewsletter\u201d: true,\n        \u201cnotifications\u201d: \u201cweekly\u201d\n    }\n}"
+    ],
+    [
+      {
+        "username": "janedoe_92",
+        "password": "safePass123",
+        "contacts": [
+          "alice@example.com",
+          "bob@example.net"
+        ],
+        "active": false
+      },
+      "{\n    \u201cusername\u201d: \u201cjanedoe_92\u201d,\n    \u201cpassword\u201d: \u201csafePass123\u201d,\n    \u201ccontacts\u201d: [\n        \u201calice@example.com\u201d,\n        \u201cbob@example.net\u201d\n    ],\n    \u201cactive\u201d: false\n}"
+    ],
+    [
+      {
+        "bio": "Enthusiastic traveler and food lover.",
+        "followers": 1500,
+        "verified": true,
+        "likes": [
+          "travel",
+          "food",
+          "music"
+        ]
+      },
+      "{\n    \u201cbio\u201d: \u201cEnthusiastic traveler and food lover.\u201d,\n    \u201cfollowers\u201d: 1500,\n    \u201cverified\u201d: true,\n    \u201clikes\u201d: [ \u201ctravel\u201d, \u201cfood\u201d, \u201cmusic\u201d ]\n}"
+    ],
+    [
+      {
+        "firstName": "Alice",
+        "lastName": "Smith",
+        "dob": "1985-05-15",
+        "interests": [
+          "reading",
+          "hiking",
+          "coding"
+        ]
+      },
+      "{\n    \u201cfirstName\u201d: \u201cAlice\u201d,\n    \u201clastName\u201d: \u201cSmith\u201d,\n    \u201cdob\u201d: \u201c1985-05-15\u201d,\n    \u201cinterests\u201d: [ \u201creading\u201d, \u201chiking\u201d, \u201ccoding\u201d ]\n}"
+    ],
+    [
+      {
+        "nickname": "cool_kid",
+        "score": 4200,
+        "achievements": null,
+        "settings": {
+          "theme": "dark",
+          "volume": 75
+        }
+      },
+      "{\n    \u201cnickname\u201d: \u201ccool_kid\u201d,\n    \u201cscore\u201d: 4200,\n    \u201cachievements\u201d: null,\n    \u201csettings\u201d: {\n        \u201ctheme\u201d: \u201cdark\u201d,\n        \u201cvolume\u201d: 75\n    }\n}"
+    ],
+    [
+      {
+        "id": 913,
+        "status": "active",
+        "friends": [
+          "jack",
+          "jill",
+          "harry"
+        ],
+        "lastOnline": "2023-10-15T14:48:00Z"
+      },
+      "{\n    \u201cid\u201d: 913,\n    \u201cstatus\u201d: \u201cactive\u201d,\n    \u201cfriends\u201d: [ \u201cjack\u201d, \u201cjill\u201d, \u201charry\u201d ],\n    \u201clastOnline\u201d: \u201c2023-10-15T14:48:00Z\u201d\n}"
+    ],
+    [
+      {
+        "fullName": "Bob Marley",
+        "subscriptions": {
+          "premium": true,
+          "expiration": "2024-01-01"
+        },
+        "history": []
+      },
+      "{\n    \u201cfullName\u201d: \u201cBob Marley\u201d,\n    \u201csubscriptions\u201d: {\n        \u201cpremium\u201d: true,\n        \u201cexpiration\u201d: \u201c2024-01-01\u201d\n    },\n    \u201chistory\u201d: []\n}"
+    ],
+    [
+      {
+        "email": "charlie@example.org",
+        "tags": [
+          "VIP",
+          "early_adopter"
+        ],
+        "notifications": {
+          "email": false,
+          "sms": true
+        }
+      },
+      "{\n    \u201cemail\u201d: \u201ccharlie@example.org\u201d,\n    \u201ctags\u201d: [ \u201cVIP\u201d, \u201cearly_adopter\u201d ],\n    \u201cnotifications\u201d: {\n        \u201cemail\u201d: false,\n        \u201csms\u201d: true\n    }\n}"
+    ],
+    [
+      {
+        "userID": "u12345",
+        "created": "2020-06-30",
+        "roles": [
+          "admin",
+          "editor"
+        ],
+        "profileComplete": true
+      },
+      "{\n    \u201cuserID\u201d: \u201cu12345\u201d,\n    \u201ccreated\u201d: \u201c2020-06-30\u201d,\n    \u201croles\u201d: [ \u201cadmin\u201d, \u201ceditor\u201d ],\n    \u201cprofileComplete\u201d: true\n}"
+    ],
+    [
+      {
+        "bio": "Passionate coder and educator.",
+        "socials": {
+          "twitter": "@coder",
+          "github": "coderhub"
+        },
+        "projects": [
+          {
+            "name": "JSON Fixer",
+            "status": "completed"
+          }
+        ]
+      },
+      "{\n    \u201cbio\u201d: \u201cPassionate coder and educator.\u201d,\n    \u201csocials\u201d: {\n        \u201ctwitter\u201d: \u201c@coder\u201d,\n        \u201cgithub\u201d: \u201ccoderhub\u201d\n    },\n    \u201cprojects\u201d: [\n        {\n            \u201cname\u201d: \u201cJSON Fixer\u201d,\n            \u201cstatus\u201d: \u201ccompleted\u201d\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "orderID": "A123",
+        "customer": {
+          "name": "John Doe",
+          "email": "johndoe@example.com"
+        },
+        "items": [
+          {
+            "productID": "P001",
+            "productName": "Wireless Mouse",
+            "quantity": 2,
+            "price": 19.99
+          },
+          {
+            "productID": "P002",
+            "productName": "Keyboard",
+            "quantity": 1,
+            "price": 49.99
+          }
+        ],
+        "orderDate": "2023-10-05",
+        "status": "shipped"
+      },
+      "{\n  \u201corderID\u201d: \u201cA123\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cJohn Doe\u201d,\n    \u201cemail\u201d: \u201cjohndoe@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP001\u201d,\n      \u201cproductName\u201d: \u201cWireless Mouse\u201d,\n      \u201cquantity\u201d: 2,\n      \u201cprice\u201d: 19.99\n    },\n    {\n      \u201cproductID\u201d: \u201cP002\u201d,\n      \u201cproductName\u201d: \u201cKeyboard\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 49.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-05\u201d,\n  \u201cstatus\u201d: \u201cshipped\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "B456",
+        "customer": {
+          "name": "Jane Smith",
+          "email": "janesmith@example.com"
+        },
+        "items": [
+          {
+            "productID": "P003",
+            "productName": "Laptop",
+            "quantity": 1,
+            "price": 999.99
+          }
+        ],
+        "orderDate": "2023-10-06",
+        "status": "processing"
+      },
+      "{\n  \u201corderID\u201d: \u201cB456\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cJane Smith\u201d,\n    \u201cemail\u201d: \u201cjanesmith@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP003\u201d,\n      \u201cproductName\u201d: \u201cLaptop\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 999.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-06\u201d,\n  \u201cstatus\u201d: \u201cprocessing\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "C789",
+        "customer": {
+          "name": "Alex Johnson",
+          "email": "alexj@example.com"
+        },
+        "items": [
+          {
+            "productID": "P004",
+            "productName": "Desk Chair",
+            "quantity": 1,
+            "price": 199.99
+          },
+          {
+            "productID": "P005",
+            "productName": "Desk Lamp",
+            "quantity": 2,
+            "price": 49.99
+          }
+        ],
+        "orderDate": "2023-10-07",
+        "status": "delivered"
+      },
+      "{\n  \u201corderID\u201d: \u201cC789\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cAlex Johnson\u201d,\n    \u201cemail\u201d: \u201calexj@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP004\u201d,\n      \u201cproductName\u201d: \u201cDesk Chair\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 199.99\n    },\n    {\n      \u201cproductID\u201d: \u201cP005\u201d,\n      \u201cproductName\u201d: \u201cDesk Lamp\u201d,\n      \u201cquantity\u201d: 2,\n      \u201cprice\u201d: 49.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-07\u201d,\n  \u201cstatus\u201d: \u201cdelivered\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "D012",
+        "customer": {
+          "name": "Emily Brown",
+          "email": "emilyb@example.com"
+        },
+        "items": [
+          {
+            "productID": "P006",
+            "productName": "Standing Desk",
+            "quantity": 1,
+            "price": 499.99
+          }
+        ],
+        "orderDate": "2023-10-08",
+        "status": "canceled"
+      },
+      "{\n  \u201corderID\u201d: \u201cD012\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cEmily Brown\u201d,\n    \u201cemail\u201d: \u201cemilyb@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP006\u201d,\n      \u201cproductName\u201d: \u201cStanding Desk\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 499.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-08\u201d,\n  \u201cstatus\u201d: \u201ccanceled\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "E345",
+        "customer": {
+          "name": "Michael Green",
+          "email": "michaelg@example.com"
+        },
+        "items": [
+          {
+            "productID": "P007",
+            "productName": "External Hard Drive",
+            "quantity": 3,
+            "price": 89.99
+          },
+          {
+            "productID": "P008",
+            "productName": "USB Hub",
+            "quantity": 2,
+            "price": 29.99
+          }
+        ],
+        "orderDate": "2023-10-09",
+        "status": "pending"
+      },
+      "{\n  \u201corderID\u201d: \u201cE345\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cMichael Green\u201d,\n    \u201cemail\u201d: \u201cmichaelg@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP007\u201d,\n      \u201cproductName\u201d: \u201cExternal Hard Drive\u201d,\n      \u201cquantity\u201d: 3,\n      \u201cprice\u201d: 89.99\n    },\n    {\n      \u201cproductID\u201d: \u201cP008\u201d,\n      \u201cproductName\u201d: \u201cUSB Hub\u201d,\n      \u201cquantity\u201d: 2,\n      \u201cprice\u201d: 29.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-09\u201d,\n  \u201cstatus\u201d: \u201cpending\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "F678",
+        "customer": {
+          "name": "Sarah Lee",
+          "email": "sarahlee@example.com"
+        },
+        "items": [
+          {
+            "productID": "P009",
+            "productName": "Graphics Tablet",
+            "quantity": 1,
+            "price": 299.99
+          }
+        ],
+        "orderDate": "2023-10-10",
+        "status": "completed"
+      },
+      "{\n  \u201corderID\u201d: \u201cF678\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cSarah Lee\u201d,\n    \u201cemail\u201d: \u201csarahlee@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP009\u201d,\n      \u201cproductName\u201d: \u201cGraphics Tablet\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 299.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-10\u201d,\n  \u201cstatus\u201d: \u201ccompleted\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "G901",
+        "customer": {
+          "name": "David King",
+          "email": "davidk@example.com"
+        },
+        "items": [
+          {
+            "productID": "P010",
+            "productName": "Smartphone",
+            "quantity": 1,
+            "price": 799.99
+          },
+          {
+            "productID": "P011",
+            "productName": "Phone Case",
+            "quantity": 1,
+            "price": 19.99
+          }
+        ],
+        "orderDate": "2023-10-11",
+        "status": "refunded"
+      },
+      "{\n  \u201corderID\u201d: \u201cG901\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cDavid King\u201d,\n    \u201cemail\u201d: \u201cdavidk@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP010\u201d,\n      \u201cproductName\u201d: \u201cSmartphone\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 799.99\n    },\n    {\n      \u201cproductID\u201d: \u201cP011\u201d,\n      \u201cproductName\u201d: \u201cPhone Case\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 19.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-11\u201d,\n  \u201cstatus\u201d: \u201crefunded\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "H234",
+        "customer": {
+          "name": "Laura White",
+          "email": "lauraw@example.com"
+        },
+        "items": [
+          {
+            "productID": "P012",
+            "productName": "Bluetooth Speaker",
+            "quantity": 2,
+            "price": 59.99
+          }
+        ],
+        "orderDate": "2023-10-12",
+        "status": "shipped"
+      },
+      "{\n  \u201corderID\u201d: \u201cH234\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cLaura White\u201d,\n    \u201cemail\u201d: \u201clauraw@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP012\u201d,\n      \u201cproductName\u201d: \u201cBluetooth Speaker\u201d,\n      \u201cquantity\u201d: 2,\n      \u201cprice\u201d: 59.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-12\u201d,\n  \u201cstatus\u201d: \u201cshipped\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "I567",
+        "customer": {
+          "name": "Chris Brown",
+          "email": "chrisb@example.com"
+        },
+        "items": [
+          {
+            "productID": "P013",
+            "productName": "Gaming Console",
+            "quantity": 1,
+            "price": 399.99
+          },
+          {
+            "productID": "P014",
+            "productName": "Game Controller",
+            "quantity": 2,
+            "price": 59.99
+          }
+        ],
+        "orderDate": "2023-10-13",
+        "status": "processing"
+      },
+      "{\n  \u201corderID\u201d: \u201cI567\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cChris Brown\u201d,\n    \u201cemail\u201d: \u201cchrisb@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP013\u201d,\n      \u201cproductName\u201d: \u201cGaming Console\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 399.99\n    },\n    {\n      \u201cproductID\u201d: \u201cP014\u201d,\n      \u201cproductName\u201d: \u201cGame Controller\u201d,\n      \u201cquantity\u201d: 2,\n      \u201cprice\u201d: 59.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-13\u201d,\n  \u201cstatus\u201d: \u201cprocessing\u201d\n}"
+    ],
+    [
+      {
+        "orderID": "J890",
+        "customer": {
+          "name": "Sophia Green",
+          "email": "sophiag@example.com"
+        },
+        "items": [
+          {
+            "productID": "P015",
+            "productName": "Smartwatch",
+            "quantity": 1,
+            "price": 199.99
+          }
+        ],
+        "orderDate": "2023-10-14",
+        "status": "delivered"
+      },
+      "{\n  \u201corderID\u201d: \u201cJ890\u201d,\n  \u201ccustomer\u201d: {\n    \u201cname\u201d: \u201cSophia Green\u201d,\n    \u201cemail\u201d: \u201csophiag@example.com\u201d\n  },\n  \u201citems\u201d: [\n    {\n      \u201cproductID\u201d: \u201cP015\u201d,\n      \u201cproductName\u201d: \u201cSmartwatch\u201d,\n      \u201cquantity\u201d: 1,\n      \u201cprice\u201d: 199.99\n    }\n  ],\n  \u201corderDate\u201d: \u201c2023-10-14\u201d,\n  \u201cstatus\u201d: \u201cdelivered\u201d\n}"
+    ],
+    [
+      {
+        "title": "Inception",
+        "review": "A mind-bending thriller with stunning visuals.",
+        "rating": 4.5,
+        "reviewer": "John Doe"
+      },
+      "{\n    \u201ctitle\u201d: \u201cInception\u201d,\n    \u201creview\u201d: \u201cA mind-bending thriller with stunning visuals.\u201d,\n    \u201crating\u201d: 4.5,\n    \u201creviewer\u201d: \u201cJohn Doe\u201d\n}"
+    ],
+    [
+      {
+        "title": "The Witcher",
+        "review": "An epic fantasy series with a complex storyline.",
+        "rating": 4.7,
+        "reviewer": "Jane Smith"
+      },
+      "{\n    \u201ctitle\u201d: \u201cThe Witcher\u201d,\n    \u201creview\u201d: \u201cAn epic fantasy series with a complex storyline.\u201d,\n    \u201crating\u201d: 4.7,\n    \u201creviewer\u201d: \u201cJane Smith\u201d\n}"
+    ],
+    [
+      {
+        "title": "Breaking Bad",
+        "review": "A gripping and intense character study.",
+        "rating": 5.0,
+        "reviewer": "Alice Johnson"
+      },
+      "{\n    \u201ctitle\u201d: \u201cBreaking Bad\u201d,\n    \u201creview\u201d: \u201cA gripping and intense character study.\u201d,\n    \u201crating\u201d: 5.0,\n    \u201creviewer\u201d: \u201cAlice Johnson\u201d\n}"
+    ],
+    [
+      {
+        "title": "Stranger Things",
+        "review": "A nostalgic trip with a supernatural twist.",
+        "rating": 4.8,
+        "reviewer": "Chris Lee"
+      },
+      "{\n    \u201ctitle\u201d: \u201cStranger Things\u201d,\n    \u201creview\u201d: \u201cA nostalgic trip with a supernatural twist.\u201d,\n    \u201crating\u201d: 4.8,\n    \u201creviewer\u201d: \u201cChris Lee\u201d\n}"
+    ],
+    [
+      {
+        "title": "The Mandalorian",
+        "review": "A thrilling adventure set in the Star Wars universe.",
+        "rating": 4.9,
+        "reviewer": "Michael Brown"
+      },
+      "{\n    \u201ctitle\u201d: \u201cThe Mandalorian\u201d,\n    \u201creview\u201d: \u201cA thrilling adventure set in the Star Wars universe.\u201d,\n    \u201crating\u201d: 4.9,\n    \u201creviewer\u201d: \u201cMichael Brown\u201d\n}"
+    ],
+    [
+      {
+        "title": "The Crown",
+        "review": "A captivating insight into the British monarchy.",
+        "rating": 4.6,
+        "reviewer": "Emma Wilson"
+      },
+      "{\n    \u201ctitle\u201d: \u201cThe Crown\u201d,\n    \u201creview\u201d: \u201cA captivating insight into the British monarchy.\u201d,\n    \u201crating\u201d: 4.6,\n    \u201creviewer\u201d: \u201cEmma Wilson\u201d\n}"
+    ],
+    [
+      {
+        "title": "Parasite",
+        "review": "A masterful depiction of class struggle.",
+        "rating": 5.0,
+        "reviewer": "Lucas Green"
+      },
+      "{\n    \u201ctitle\u201d: \u201cParasite\u201d,\n    \u201creview\u201d: \u201cA masterful depiction of class struggle.\u201d,\n    \u201crating\u201d: 5.0,\n    \u201creviewer\u201d: \u201cLucas Green\u201d\n}"
+    ],
+    [
+      {
+        "title": "The Queen's Gambit",
+        "review": "A riveting tale of chess and personal discovery.",
+        "rating": 4.9,
+        "reviewer": "Olivia White"
+      },
+      "{\n    \u201ctitle\u201d: \u201cThe Queen's Gambit\u201d,\n    \u201creview\u201d: \u201cA riveting tale of chess and personal discovery.\u201d,\n    \u201crating\u201d: 4.9,\n    \u201creviewer\u201d: \u201cOlivia White\u201d\n}"
+    ],
+    [
+      {
+        "title": "Game of Thrones",
+        "review": "A complex and sprawling saga of power and betrayal.",
+        "rating": 4.4,
+        "reviewer": "Sophia Martinez"
+      },
+      "{\n    \u201ctitle\u201d: \u201cGame of Thrones\u201d,\n    \u201creview\u201d: \u201cA complex and sprawling saga of power and betrayal.\u201d,\n    \u201crating\u201d: 4.4,\n    \u201creviewer\u201d: \u201cSophia Martinez\u201d\n}"
+    ],
+    [
+      {
+        "title": "The Boys",
+        "review": "A dark and satirical take on superhero tropes.",
+        "rating": 4.3,
+        "reviewer": "Liam Hall"
+      },
+      "{\n    \u201ctitle\u201d: \u201cThe Boys\u201d,\n    \u201creview\u201d: \u201cA dark and satirical take on superhero tropes.\u201d,\n    \u201crating\u201d: 4.3,\n    \u201creviewer\u201d: \u201cLiam Hall\u201d\n}"
+    ],
+    [
+      {
+        "location": "New York",
+        "temperature": 22,
+        "unit": "Celsius",
+        "forecast": "Partly cloudy",
+        "wind": {
+          "speed": 15,
+          "direction": "NW"
+        }
+      },
+      "{\n  \u201clocation\u201d: \u201cNew York\u201d,\n  \u201ctemperature\u201d: 22,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cforecast\u201d: \u201cPartly cloudy\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 15,\n    \u201cdirection\u201d: \u201cNW\u201d\n  }\n}"
+    ],
+    [
+      {
+        "city": "Los Angeles",
+        "humidity": 65,
+        "conditions": "Sunny",
+        "alerts": []
+      },
+      "{\n  \u201ccity\u201d: \u201cLos Angeles\u201d,\n  \u201chumidity\u201d: 65,\n  \u201cconditions\u201d: \u201cSunny\u201d,\n  \u201calerts\u201d: []\n}"
+    ],
+    [
+      {
+        "station": "Downtown",
+        "temperature": 10,
+        "feels_like": 8,
+        "precipitation": "None",
+        "pressure": 1015
+      },
+      "{\n  \u201cstation\u201d: \u201cDowntown\u201d,\n  \u201ctemperature\u201d: 10,\n  \u201cfeels_like\u201d: 8,\n  \u201cprecipitation\u201d: \u201cNone\u201d,\n  \u201cpressure\u201d: 1015\n}"
+    ],
+    [
+      {
+        "region": "Sahara",
+        "temperature": 38,
+        "unit": "Celsius",
+        "description": "Hot and dry",
+        "wind": {
+          "speed": 5,
+          "direction": "N"
+        }
+      },
+      "{\n  \u201cregion\u201d: \u201cSahara\u201d,\n  \u201ctemperature\u201d: 38,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cdescription\u201d: \u201cHot and dry\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 5,\n    \u201cdirection\u201d: \u201cN\u201d\n  }\n}"
+    ],
+    [
+      {
+        "locale": "Tokyo",
+        "temperature": 15,
+        "unit": "Celsius",
+        "forecast": "Rainy",
+        "wind": {
+          "speed": 20,
+          "direction": "E"
+        }
+      },
+      "{\n  \u201clocale\u201d: \u201cTokyo\u201d,\n  \u201ctemperature\u201d: 15,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cforecast\u201d: \u201cRainy\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 20,\n    \u201cdirection\u201d: \u201cE\u201d\n  }\n}"
+    ],
+    [
+      {
+        "area": "Amazon Rainforest",
+        "temperature": 28,
+        "humidity": 85,
+        "status": "Humid",
+        "wind": {
+          "speed": 2,
+          "direction": "SW"
+        }
+      },
+      "{\n  \u201carea\u201d: \u201cAmazon Rainforest\u201d,\n  \u201ctemperature\u201d: 28,\n  \u201chumidity\u201d: 85,\n  \u201cstatus\u201d: \u201cHumid\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 2,\n    \u201cdirection\u201d: \u201cSW\u201d\n  }\n}"
+    ],
+    [
+      {
+        "city": "Paris",
+        "temperature": 12,
+        "unit": "Celsius",
+        "forecast": "Cloudy",
+        "wind": {
+          "speed": 10,
+          "direction": "S"
+        }
+      },
+      "{\n  \u201ccity\u201d: \u201cParis\u201d,\n  \u201ctemperature\u201d: 12,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cforecast\u201d: \u201cCloudy\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 10,\n    \u201cdirection\u201d: \u201cS\u201d\n  }\n}"
+    ],
+    [
+      {
+        "location": "Sydney",
+        "temperature": 25,
+        "unit": "Celsius",
+        "forecast": "Clear skies",
+        "wind": {
+          "speed": 12,
+          "direction": "NE"
+        }
+      },
+      "{\n  \u201clocation\u201d: \u201cSydney\u201d,\n  \u201ctemperature\u201d: 25,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cforecast\u201d: \u201cClear skies\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 12,\n    \u201cdirection\u201d: \u201cNE\u201d\n  }\n}"
+    ],
+    [
+      {
+        "region": "Arctic Circle",
+        "temperature": -20,
+        "unit": "Celsius",
+        "forecast": "Blizzard",
+        "wind": {
+          "speed": 30,
+          "direction": "N"
+        }
+      },
+      "{\n  \u201cregion\u201d: \u201cArctic Circle\u201d,\n  \u201ctemperature\u201d: -20,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cforecast\u201d: \u201cBlizzard\u201d,\n  \u201cwind\u201d: {\n    \u201cspeed\u201d: 30,\n    \u201cdirection\u201d: \u201cN\u201d\n  }\n}"
+    ],
+    [
+      {
+        "area": "Dubai",
+        "temperature": 40,
+        "unit": "Celsius",
+        "forecast": "Sunny",
+        "humidity": 20
+      },
+      "{\n  \u201carea\u201d: \u201cDubai\u201d,\n  \u201ctemperature\u201d: 40,\n  \u201cunit\u201d: \u201cCelsius\u201d,\n  \u201cforecast\u201d: \u201cSunny\u201d,\n  \u201chumidity\u201d: 20\n}"
+    ],
+    [
+      {
+        "transactionId": "TXN12345",
+        "date": "2023-10-01",
+        "amount": 250.0,
+        "currency": "USD",
+        "description": "Payment for invoice INV-1001"
+      },
+      "{\n  \u201ctransactionId\u201d: \u201cTXN12345\u201d,\n  \u201cdate\u201d: \u201c2023-10-01\u201d,\n  \u201camount\u201d: 250.00,\n  \u201ccurrency\u201d: \u201cUSD\u201d,\n  \u201cdescription\u201d: \u201cPayment for invoice INV-1001\u201d\n}"
+    ],
+    [
+      {
+        "accountNumber": "987654321",
+        "transactions": [
+          {
+            "transactionId": "TXN12346",
+            "amount": 150.75,
+            "currency": "EUR"
+          },
+          {
+            "transactionId": "TXN12347",
+            "amount": 300.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n  \u201caccountNumber\u201d: \u201c987654321\u201d,\n  \u201ctransactions\u201d: [\n    {\n      \u201ctransactionId\u201d: \u201cTXN12346\u201d,\n      \u201camount\u201d: 150.75,\n      \u201ccurrency\u201d: \u201cEUR\u201d\n    },\n    {\n      \u201ctransactionId\u201d: \u201cTXN12347\u201d,\n      \u201camount\u201d: 300.00,\n      \u201ccurrency\u201d: \u201cUSD\u201d\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "userId": "user001",
+        "lastLogin": "2023-09-30T15:20:00Z",
+        "transactions": [
+          {
+            "transactionId": "TXN12348",
+            "date": "2023-09-29",
+            "amount": 500.0,
+            "currency": "GBP",
+            "category": "Shopping"
+          }
+        ]
+      },
+      "{\n  \u201cuserId\u201d: \u201cuser001\u201d,\n  \u201clastLogin\u201d: \u201c2023-09-30T15:20:00Z\u201d,\n  \u201ctransactions\u201d: [\n    {\n      \u201ctransactionId\u201d: \u201cTXN12348\u201d,\n      \u201cdate\u201d: \u201c2023-09-29\u201d,\n      \u201camount\u201d: 500.00,\n      \u201ccurrency\u201d: \u201cGBP\u201d,\n      \u201ccategory\u201d: \u201cShopping\u201d\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "merchant": "Amazon",
+        "transactionHistory": [
+          {
+            "transactionId": "TXN12349",
+            "date": "2023-09-25",
+            "amount": 120.45,
+            "currency": "USD"
+          },
+          {
+            "transactionId": "TXN12350",
+            "date": "2023-09-26",
+            "amount": 85.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n  \u201cmerchant\u201d: \u201cAmazon\u201d,\n  \u201ctransactionHistory\u201d: [\n    {\n      \u201ctransactionId\u201d: \u201cTXN12349\u201d,\n      \u201cdate\u201d: \u201c2023-09-25\u201d,\n      \u201camount\u201d: 120.45,\n      \u201ccurrency\u201d: \u201cUSD\u201d\n    },\n    {\n      \u201ctransactionId\u201d: \u201cTXN12350\u201d,\n      \u201cdate\u201d: \u201c2023-09-26\u201d,\n      \u201camount\u201d: 85.00,\n      \u201ccurrency\u201d: \u201cUSD\u201d\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "bank": "Chase",
+        "accountType": "Savings",
+        "balance": 10500.5,
+        "currency": "USD"
+      },
+      "{\n  \u201cbank\u201d: \u201cChase\u201d,\n  \u201caccountType\u201d: \u201cSavings\u201d,\n  \u201cbalance\u201d: 10500.50,\n  \u201ccurrency\u201d: \u201cUSD\u201d\n}"
+    ],
+    [
+      {
+        "customerId": "CUST123",
+        "transactions": [
+          {
+            "transactionId": "TXN12351",
+            "amount": 200.0,
+            "currency": "CAD",
+            "date": "2023-09-01"
+          },
+          {
+            "transactionId": "TXN12352",
+            "amount": 100.0,
+            "currency": "CAD",
+            "date": "2023-09-15"
+          }
+        ]
+      },
+      "{\n  \u201ccustomerId\u201d: \u201cCUST123\u201d,\n  \u201ctransactions\u201d: [\n    {\n      \u201ctransactionId\u201d: \u201cTXN12351\u201d,\n      \u201camount\u201d: 200.00,\n      \u201ccurrency\u201d: \u201cCAD\u201d,\n      \u201cdate\u201d: \u201c2023-09-01\u201d\n    },\n    {\n      \u201ctransactionId\u201d: \u201cTXN12352\u201d,\n      \u201camount\u201d: 100.00,\n      \u201ccurrency\u201d: \u201cCAD\u201d,\n      \u201cdate\u201d: \u201c2023-09-15\u201d\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "invoiceNumber": "INV-2002",
+        "dueDate": "2023-10-15",
+        "totalAmount": 750.0,
+        "currency": "USD",
+        "status": "Unpaid"
+      },
+      "{\n  \u201cinvoiceNumber\u201d: \u201cINV-2002\u201d,\n  \u201cdueDate\u201d: \u201c2023-10-15\u201d,\n  \u201ctotalAmount\u201d: 750.00,\n  \u201ccurrency\u201d: \u201cUSD\u201d,\n  \u201cstatus\u201d: \u201cUnpaid\u201d\n}"
+    ],
+    [
+      {
+        "payer": "John Doe",
+        "transactions": [
+          {
+            "transactionId": "TXN12353",
+            "date": "2023-09-10",
+            "amount": 450.0,
+            "currency": "AUD"
+          },
+          {
+            "transactionId": "TXN12354",
+            "date": "2023-09-12",
+            "amount": 320.0,
+            "currency": "AUD"
+          }
+        ]
+      },
+      "{\n  \u201cpayer\u201d: \u201cJohn Doe\u201d,\n  \u201ctransactions\u201d: [\n    {\n      \u201ctransactionId\u201d: \u201cTXN12353\u201d,\n      \u201cdate\u201d: \u201c2023-09-10\u201d,\n      \u201camount\u201d: 450.00,\n      \u201ccurrency\u201d: \u201cAUD\u201d\n    },\n    {\n      \u201ctransactionId\u201d: \u201cTXN12354\u201d,\n      \u201cdate\u201d: \u201c2023-09-12\u201d,\n      \u201camount\u201d: 320.00,\n      \u201ccurrency\u201d: \u201cAUD\u201d\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "paymentMethod": "Credit Card",
+        "transactions": [
+          {
+            "transactionId": "TXN12355",
+            "amount": 1250.0,
+            "currency": "JPY",
+            "date": "2023-08-29"
+          }
+        ]
+      },
+      "{\n  \u201cpaymentMethod\u201d: \u201cCredit Card\u201d,\n  \u201ctransactions\u201d: [\n    {\n      \u201ctransactionId\u201d: \u201cTXN12355\u201d,\n      \u201camount\u201d: 1250.00,\n      \u201ccurrency\u201d: \u201cJPY\u201d,\n      \u201cdate\u201d: \u201c2023-08-29\u201d\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "transactionId": "TXN12356",
+        "merchant": "Walmart",
+        "date": "2023-10-05",
+        "amount": 60.5,
+        "currency": "USD",
+        "items": [
+          {
+            "item": "Groceries",
+            "quantity": 10,
+            "price": 6.05
+          }
+        ]
+      },
+      "{\n  \u201ctransactionId\u201d: \u201cTXN12356\u201d,\n  \u201cmerchant\u201d: \u201cWalmart\u201d,\n  \u201cdate\u201d: \u201c2023-10-05\u201d,\n  \u201camount\u201d: 60.50,\n  \u201ccurrency\u201d: \u201cUSD\u201d,\n  \u201citems\u201d: [\n    {\n      \u201citem\u201d: \u201cGroceries\u201d,\n      \u201cquantity\u201d: 10,\n      \u201cprice\u201d: 6.05\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "workout": {
+          "name": "Morning Yoga",
+          "duration_minutes": 30,
+          "calories_burned": 200,
+          "exercises": [
+            "Sun Salutation",
+            "Tree Pose",
+            "Warrior II"
+          ]
+        }
+      },
+      "{\n  \u201cworkout\u201d: {\n    \u201cname\u201d: \u201cMorning Yoga\u201d,\n    \u201cduration_minutes\u201d: 30,\n    \u201ccalories_burned\u201d: 200,\n    \u201cexercises\u201d: [\u201cSun Salutation\u201d, \u201cTree Pose\u201d, \u201cWarrior II\u201d]\n  }\n}"
+    ],
+    [
+      {
+        "diet_plan": {
+          "day": "Monday",
+          "meals": [
+            "Oatmeal",
+            "Grilled Chicken Salad",
+            "Steamed Vegetables"
+          ],
+          "total_calories": 1500
+        }
+      },
+      "{\n  \u201cdiet_plan\u201d: {\n    \u201cday\u201d: \u201cMonday\u201d,\n    \u201cmeals\u201d: [\u201cOatmeal\u201d, \u201cGrilled Chicken Salad\u201d, \u201cSteamed Vegetables\u201d],\n    \u201ctotal_calories\u201d: 1500\n  }\n}"
+    ],
+    [
+      {
+        "health_metrics": {
+          "weight_kg": 70,
+          "height_cm": 175,
+          "bmi": 22.9
+        }
+      },
+      "{\n  \u201chealth_metrics\u201d: {\n    \u201cweight_kg\u201d: 70,\n    \u201cheight_cm\u201d: 175,\n    \u201cbmi\u201d: 22.9\n  }\n}"
+    ],
+    [
+      {
+        "sleep_data": {
+          "average_hours": 7.5,
+          "last_week": [
+            7,
+            8,
+            7.5,
+            6,
+            8,
+            7,
+            7.5
+          ]
+        }
+      },
+      "{\n  \u201csleep_data\u201d: {\n    \u201caverage_hours\u201d: 7.5,\n    \u201clast_week\u201d: [7, 8, 7.5, 6, 8, 7, 7.5]\n  }\n}"
+    ],
+    [
+      {
+        "hydration": {
+          "daily_intake_liters": 2.5,
+          "goal_liters": 3,
+          "days_met_goal": 5
+        }
+      },
+      "{\n  \u201chydration\u201d: {\n    \u201cdaily_intake_liters\u201d: 2.5,\n    \u201cgoal_liters\u201d: 3,\n    \u201cdays_met_goal\u201d: 5\n  }\n}"
+    ],
+    [
+      {
+        "fitness_goals": {
+          "steps_goal": 10000,
+          "current_steps": 8500,
+          "achieved": false
+        }
+      },
+      "{\n  \u201cfitness_goals\u201d: {\n    \u201csteps_goal\u201d: 10000,\n    \u201ccurrent_steps\u201d: 8500,\n    \u201cachieved\u201d: false\n  }\n}"
+    ],
+    [
+      {
+        "mental_health": {
+          "stress_level": "medium",
+          "mindfulness_minutes": 20
+        }
+      },
+      "{\n  \u201cmental_health\u201d: {\n    \u201cstress_level\u201d: \u201cmedium\u201d,\n    \u201cmindfulness_minutes\u201d: 20\n  }\n}"
+    ],
+    [
+      {
+        "meal_tracking": {
+          "breakfast": "Smoothie",
+          "lunch": "Quinoa Salad",
+          "dinner": "Grilled Salmon"
+        }
+      },
+      "{\n  \u201cmeal_tracking\u201d: {\n    \u201cbreakfast\u201d: \u201cSmoothie\u201d,\n    \u201clunch\u201d: \u201cQuinoa Salad\u201d,\n    \u201cdinner\u201d: \u201cGrilled Salmon\u201d\n  }\n}"
+    ],
+    [
+      {
+        "exercise_schedule": [
+          {
+            "day": "Monday",
+            "activity": "Swimming",
+            "duration_minutes": 60
+          },
+          {
+            "day": "Wednesday",
+            "activity": "Cycling",
+            "duration_minutes": 45
+          }
+        ]
+      },
+      "{\n  \u201cexercise_schedule\u201d: [\n    {\n      \u201cday\u201d: \u201cMonday\u201d,\n      \u201cactivity\u201d: \u201cSwimming\u201d,\n      \u201cduration_minutes\u201d: 60\n    },\n    {\n      \u201cday\u201d: \u201cWednesday\u201d,\n      \u201cactivity\u201d: \u201cCycling\u201d,\n      \u201cduration_minutes\u201d: 45\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "fitness_summary": {
+          "total_workouts": 20,
+          "total_calories_burned": 5000,
+          "favorite_workout": "Running"
+        }
+      },
+      "{\n  \u201cfitness_summary\u201d: {\n    \u201ctotal_workouts\u201d: 20,\n    \u201ctotal_calories_burned\u201d: 5000,\n    \u201cfavorite_workout\u201d: \u201cRunning\u201d\n  }\n}"
+    ],
+    [
+      {
+        "vehicle": "Car",
+        "coordinates": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "status": "Active"
+      },
+      "{\n  \u201cvehicle\u201d: \u201cCar\u201d,\n  \u201ccoordinates\u201d: {\n    \u201clatitude\u201d: 37.7749,\n    \u201clongitude\u201d: -122.4194\n  },\n  \u201cstatus\u201d: \u201cActive\u201d\n}"
+    ],
+    [
+      {
+        "mode": "Bicycle",
+        "route": [
+          {
+            "lat": 34.0522,
+            "long": -118.2437
+          },
+          {
+            "lat": 36.1699,
+            "long": -115.1398
+          }
+        ],
+        "updated": "2023-10-05T14:48:00"
+      },
+      "{\n  \u201cmode\u201d: \u201cBicycle\u201d,\n  \u201croute\u201d: [\n    {\u201clat\u201d: 34.0522, \u201clong\u201d: -118.2437},\n    {\u201clat\u201d: 36.1699, \u201clong\u201d: -115.1398}\n  ],\n  \u201cupdated\u201d: \u201c2023-10-05T14:48:00\u201d\n}"
+    ],
+    [
+      {
+        "transport": "Train",
+        "station": "Central",
+        "arrival": "15:30",
+        "departure": "15:45"
+      },
+      "{\n  \u201ctransport\u201d: \u201cTrain\u201d,\n  \u201cstation\u201d: \u201cCentral\u201d,\n  \u201carrival\u201d: \u201c15:30\u201d,\n  \u201cdeparture\u201d: \u201c15:45\u201d\n}"
+    ],
+    [
+      {
+        "type": "Bus",
+        "route_number": 25,
+        "stops": [
+          "Main St",
+          "5th Avenue",
+          "Broadway"
+        ]
+      },
+      "{\n  \u201ctype\u201d: \u201cBus\u201d,\n  \u201croute_number\u201d: 25,\n  \u201cstops\u201d: [\n    \u201cMain St\u201d,\n    \u201c5th Avenue\u201d,\n    \u201cBroadway\u201d\n  ]\n}"
+    ],
+    [
+      {
+        "service": "Taxi",
+        "pickup_location": {
+          "latitude": 40.7128,
+          "longitude": -74.006
+        },
+        "destination": "JFK Airport"
+      },
+      "{\n  \u201cservice\u201d: \u201cTaxi\u201d,\n  \u201cpickup_location\u201d: {\n    \u201clatitude\u201d: 40.7128,\n    \u201clongitude\u201d: -74.0060\n  },\n  \u201cdestination\u201d: \u201cJFK Airport\u201d\n}"
+    ],
+    [
+      {
+        "transportation": "Subway",
+        "lines": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "current_station": "Downtown"
+      },
+      "{\n  \u201ctransportation\u201d: \u201cSubway\u201d,\n  \u201clines\u201d: [\u201cRed\u201d, \u201cBlue\u201d, \u201cGreen\u201d],\n  \u201ccurrent_station\u201d: \u201cDowntown\u201d\n}"
+    ],
+    [
+      {
+        "service": "Ride-share",
+        "driver": "Alice",
+        "vehicle": {
+          "make": "Toyota",
+          "model": "Prius"
+        }
+      },
+      "{\n  \u201cservice\u201d: \u201cRide-share\u201d,\n  \u201cdriver\u201d: \u201cAlice\u201d,\n  \u201cvehicle\u201d: {\n    \u201cmake\u201d: \u201cToyota\u201d,\n    \u201cmodel\u201d: \u201cPrius\u201d\n  }\n}"
+    ],
+    [
+      {
+        "type": "Ferry",
+        "departure_time": "08:00 AM",
+        "arrival_time": "10:00 AM"
+      },
+      "{\n  \u201ctype\u201d: \u201cFerry\u201d,\n  \u201cdeparture_time\u201d: \u201c08:00 AM\u201d,\n  \u201carrival_time\u201d: \u201c10:00 AM\u201d\n}"
+    ],
+    [
+      {
+        "vehicle": "Scooter",
+        "battery_level": 85,
+        "last_check": "2023-10-05T07:15:00"
+      },
+      "{\n  \u201cvehicle\u201d: \u201cScooter\u201d,\n  \u201cbattery_level\u201d: 85,\n  \u201clast_check\u201d: \u201c2023-10-05T07:15:00\u201d\n}"
+    ],
+    [
+      {
+        "service": "Cargo",
+        "destination": {
+          "city": "Los Angeles",
+          "port": "Long Beach"
+        },
+        "status": "In Transit"
+      },
+      "{\n  \u201cservice\u201d: \u201cCargo\u201d,\n  \u201cdestination\u201d: {\n    \u201ccity\u201d: \u201cLos Angeles\u201d,\n    \u201cport\u201d: \u201cLong Beach\u201d\n  },\n  \u201cstatus\u201d: \u201cIn Transit\u201d\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Central Library",
+          "address": "123 Main St, Anytown, USA",
+          "books": [
+            {
+              "title": "The Great Gatsby",
+              "author": "F. Scott Fitzgerald",
+              "isbn": "9780743273565",
+              "borrowed_by": "John Doe",
+              "due_date": "2023-12-01"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cCentral Library\u201d,\n    \u201caddress\u201d: \u201c123 Main St, Anytown, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cThe Great Gatsby\u201d,\n        \u201cauthor\u201d: \u201cF. Scott Fitzgerald\u201d,\n        \u201cisbn\u201d: \u201c9780743273565\u201d,\n        \u201cborrowed_by\u201d: \u201cJohn Doe\u201d,\n        \u201cdue_date\u201d: \u201c2023-12-01\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "West End Library",
+          "address": "456 Elm St, Hometown, USA",
+          "books": [
+            {
+              "title": "1984",
+              "author": "George Orwell",
+              "isbn": "9780451524935",
+              "borrowed_by": null,
+              "due_date": null
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cWest End Library\u201d,\n    \u201caddress\u201d: \u201c456 Elm St, Hometown, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201c1984\u201d,\n        \u201cauthor\u201d: \u201cGeorge Orwell\u201d,\n        \u201cisbn\u201d: \u201c9780451524935\u201d,\n        \u201cborrowed_by\u201d: null,\n        \u201cdue_date\u201d: null\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Eastside Library",
+          "address": "789 Maple Ave, Othercity, USA",
+          "books": [
+            {
+              "title": "To Kill a Mockingbird",
+              "author": "Harper Lee",
+              "isbn": "9780061120084",
+              "borrowed_by": "Alice Johnson",
+              "due_date": "2023-11-15"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cEastside Library\u201d,\n    \u201caddress\u201d: \u201c789 Maple Ave, Othercity, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cTo Kill a Mockingbird\u201d,\n        \u201cauthor\u201d: \u201cHarper Lee\u201d,\n        \u201cisbn\u201d: \u201c9780061120084\u201d,\n        \u201cborrowed_by\u201d: \u201cAlice Johnson\u201d,\n        \u201cdue_date\u201d: \u201c2023-11-15\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Greenwich Library",
+          "address": "234 Oak St, Smalltown, USA",
+          "books": [
+            {
+              "title": "Pride and Prejudice",
+              "author": "Jane Austen",
+              "isbn": "9780141439518",
+              "borrowed_by": "Michael Brown",
+              "due_date": "2023-10-30"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cGreenwich Library\u201d,\n    \u201caddress\u201d: \u201c234 Oak St, Smalltown, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cPride and Prejudice\u201d,\n        \u201cauthor\u201d: \u201cJane Austen\u201d,\n        \u201cisbn\u201d: \u201c9780141439518\u201d,\n        \u201cborrowed_by\u201d: \u201cMichael Brown\u201d,\n        \u201cdue_date\u201d: \u201c2023-10-30\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Downtown Library",
+          "address": "567 Pine St, Bigcity, USA",
+          "books": [
+            {
+              "title": "The Catcher in the Rye",
+              "author": "J.D. Salinger",
+              "isbn": "9780316769488",
+              "borrowed_by": "Emma Wilson",
+              "due_date": "2023-12-20"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cDowntown Library\u201d,\n    \u201caddress\u201d: \u201c567 Pine St, Bigcity, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cThe Catcher in the Rye\u201d,\n        \u201cauthor\u201d: \u201cJ.D. Salinger\u201d,\n        \u201cisbn\u201d: \u201c9780316769488\u201d,\n        \u201cborrowed_by\u201d: \u201cEmma Wilson\u201d,\n        \u201cdue_date\u201d: \u201c2023-12-20\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Suburban Library",
+          "address": "890 Birch Rd, Suburbia, USA",
+          "books": [
+            {
+              "title": "Brave New World",
+              "author": "Aldous Huxley",
+              "isbn": "9780060850524",
+              "borrowed_by": "David Miller",
+              "due_date": "2023-11-05"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cSuburban Library\u201d,\n    \u201caddress\u201d: \u201c890 Birch Rd, Suburbia, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cBrave New World\u201d,\n        \u201cauthor\u201d: \u201cAldous Huxley\u201d,\n        \u201cisbn\u201d: \u201c9780060850524\u201d,\n        \u201cborrowed_by\u201d: \u201cDavid Miller\u201d,\n        \u201cdue_date\u201d: \u201c2023-11-05\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Northern Lights Library",
+          "address": "321 Spruce St, Northerncity, USA",
+          "books": [
+            {
+              "title": "Moby Dick",
+              "author": "Herman Melville",
+              "isbn": "9781503280786",
+              "borrowed_by": "Hannah Davis",
+              "due_date": "2023-10-25"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cNorthern Lights Library\u201d,\n    \u201caddress\u201d: \u201c321 Spruce St, Northerncity, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cMoby Dick\u201d,\n        \u201cauthor\u201d: \u201cHerman Melville\u201d,\n        \u201cisbn\u201d: \u201c9781503280786\u201d,\n        \u201cborrowed_by\u201d: \u201cHannah Davis\u201d,\n        \u201cdue_date\u201d: \u201c2023-10-25\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Seaside Library",
+          "address": "654 Ocean Blvd, Seaside, USA",
+          "books": [
+            {
+              "title": "War and Peace",
+              "author": "Leo Tolstoy",
+              "isbn": "9781400079988",
+              "borrowed_by": "Lucas Garcia",
+              "due_date": "2023-12-10"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cSeaside Library\u201d,\n    \u201caddress\u201d: \u201c654 Ocean Blvd, Seaside, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cWar and Peace\u201d,\n        \u201cauthor\u201d: \u201cLeo Tolstoy\u201d,\n        \u201cisbn\u201d: \u201c9781400079988\u201d,\n        \u201cborrowed_by\u201d: \u201cLucas Garcia\u201d,\n        \u201cdue_date\u201d: \u201c2023-12-10\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Mountain View Library",
+          "address": "987 Highland Ave, Mountainview, USA",
+          "books": [
+            {
+              "title": "The Odyssey",
+              "author": "Homer",
+              "isbn": "9780140268867",
+              "borrowed_by": "Sophia Martinez",
+              "due_date": "2023-11-25"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cMountain View Library\u201d,\n    \u201caddress\u201d: \u201c987 Highland Ave, Mountainview, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cThe Odyssey\u201d,\n        \u201cauthor\u201d: \u201cHomer\u201d,\n        \u201cisbn\u201d: \u201c9780140268867\u201d,\n        \u201cborrowed_by\u201d: \u201cSophia Martinez\u201d,\n        \u201cdue_date\u201d: \u201c2023-11-25\u201d\n      }\n    ]\n  }\n}"
+    ],
+    [
+      {
+        "library": {
+          "name": "Riverbank Library",
+          "address": "123 River Rd, Riverside, USA",
+          "books": [
+            {
+              "title": "The Brothers Karamazov",
+              "author": "Fyodor Dostoevsky",
+              "isbn": "9780374528379",
+              "borrowed_by": "Jack Turner",
+              "due_date": "2023-10-15"
+            }
+          ]
+        }
+      },
+      "{\n  \u201clibrary\u201d: {\n    \u201cname\u201d: \u201cRiverbank Library\u201d,\n    \u201caddress\u201d: \u201c123 River Rd, Riverside, USA\u201d,\n    \u201cbooks\u201d: [\n      {\n        \u201ctitle\u201d: \u201cThe Brothers Karamazov\u201d,\n        \u201cauthor\u201d: \u201cFyodor Dostoevsky\u201d,\n        \u201cisbn\u201d: \u201c9780374528379\u201d,\n        \u201cborrowed_by\u201d: \u201cJack Turner\u201d,\n        \u201cdue_date\u201d: \u201c2023-10-15\u201d\n      }\n    ]\n  }\n}"
+    ]
+  ]
+}

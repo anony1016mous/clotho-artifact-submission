@@ -1,0 +1,514 @@
+{
+  "possible_fix": "Add missing escape characters",
+  "test_cases": [
+    [
+      {
+        "user": {
+          "name": "John Doe",
+          "bio": "Loves hiking, skiing, and \"coding\"",
+          "email": "john.doe@example.com",
+          "website": "http://johndoe.com",
+          "tags": [
+            "developer",
+            "blogger",
+            "photographer"
+          ]
+        }
+      },
+      "{\n    \"user\": {\n        \"name\": \"John Doe\",\n        \"bio\": \"Loves hiking, skiing, and \"coding\"\",\n        \"email\": \"john.doe@example.com\",\n        \"website\": \"http://johndoe.com\",\n        \"tags\": [\"developer\", \"blogger\", \"photographer\"]\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "jane_smith",
+          "interests": "Reading \"Harry Potter\" series and watching \"Star Wars\" movies",
+          "phone": "+1234567890",
+          "address": "123 Elm St, Springfield"
+        }
+      },
+      "{\n    \"profile\": {\n        \"username\": \"jane_smith\",\n        \"interests\": \"Reading \"Harry Potter\" series and watching \"Star Wars\" movies\",\n        \"phone\": \"+1234567890\",\n        \"address\": \"123 Elm St, Springfield\"\n    }\n}"
+    ],
+    [
+      {
+        "account": {
+          "email": "alice@example.com",
+          "description": "Avid \"gamer\" and tech enthusiast",
+          "social": "@alice_gamer"
+        }
+      },
+      "{\n    \"account\": {\n        \"email\": \"alice@example.com\",\n        \"description\": \"Avid \"gamer\" and tech enthusiast\",\n        \"social\": \"@alice_gamer\"\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "name": "Carlos",
+          "note": "Enjoys \"making music\" and \"painting\"",
+          "email": "carlos.music@example.com"
+        }
+      },
+      "{\n    \"user\": {\n        \"name\": \"Carlos\",\n        \"note\": \"Enjoys \"making music\" and \"painting\"\",\n        \"email\": \"carlos.music@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "id": 101,
+          "bio": "\"Vegan\", traveler, and fitness freak",
+          "contact": {
+            "phone": "987-654-3210",
+            "email": "veg.traveler@example.com"
+          }
+        }
+      },
+      "{\n    \"profile\": {\n        \"id\": 101,\n        \"bio\": \"\"Vegan\", traveler, and fitness freak\",\n        \"contact\": {\n            \"phone\": \"987-654-3210\",\n            \"email\": \"veg.traveler@example.com\"\n        }\n    }\n}"
+    ],
+    [
+      {
+        "account": {
+          "username": "tomR",
+          "about": "Loves \"programming\" and \"cybersecurity\" challenges",
+          "site": "http://tomr.dev"
+        }
+      },
+      "{\n    \"account\": {\n        \"username\": \"tomR\",\n        \"about\": \"Loves \"programming\" and \"cybersecurity\" challenges\",\n        \"site\": \"http://tomr.dev\"\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "fullName": "Elena K.",
+          "blurb": "Cat lover and \"coffee\" enthusiast",
+          "connections": [
+            "LinkedIn",
+            "Twitter"
+          ]
+        }
+      },
+      "{\n    \"profile\": {\n        \"fullName\": \"Elena K.\",\n        \"blurb\": \"Cat lover and \"coffee\" enthusiast\",\n        \"connections\": [\n            \"LinkedIn\", \n            \"Twitter\"\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "name": "Mike L.",
+          "interests": "Enjoys \"rock climbing\" and \"coding\"",
+          "contact": {
+            "email": "mike.l@example.com",
+            "linkedIn": "mikeL"
+          }
+        }
+      },
+      "{\n    \"user\": {\n        \"name\": \"Mike L.\",\n        \"interests\": \"Enjoys \"rock climbing\" and \"coding\"\",\n        \"contact\": {\n            \"email\": \"mike.l@example.com\",\n            \"linkedIn\": \"mikeL\"\n        }\n    }\n}"
+    ],
+    [
+      {
+        "details": {
+          "name": "Sophie M.",
+          "about": "Baker and \"culinary\" artist",
+          "socialMedia": [
+            "Instagram",
+            "Facebook"
+          ]
+        }
+      },
+      "{\n    \"details\": {\n        \"name\": \"Sophie M.\",\n        \"about\": \"Baker and \"culinary\" artist\",\n        \"socialMedia\": [\"Instagram\", \"Facebook\"]\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "username": "charlie123",
+          "bio": "\"Pet lover\" and \"bookworm\"",
+          "email": "charlie123@mail.com"
+        }
+      },
+      "{\n    \"user\": {\n        \"username\": \"charlie123\",\n        \"bio\": \"\"Pet lover\" and \"bookworm\"\",\n        \"email\": \"charlie123@mail.com\"\n    }\n}"
+    ],
+    [
+      {
+        "title": "Inception",
+        "review": "Amazing movie! A real mind-bender with lots of twists and turns.",
+        "rating": 9.5,
+        "reviewer": "John Doe"
+      },
+      "{\n  \"title\": \"Inception\",\n  \"review\": \"Amazing movie! A real mind-bender with lots of twists and turns.\",\n  \"rating\": 9.5,\n  \"reviewer\": \"John Doe\n}"
+    ],
+    [
+      {
+        "title": "Breaking Bad",
+        "review": "An intense series with brilliant character development.",
+        "rating": 9.7,
+        "reviewer": "Jane Smith"
+      },
+      "{\n  \"title\": \"Breaking Bad\",\n  \"review\": \"An intense series with brilliant character development.\",\n  \"rating\": 9.7,\n  \"reviewer\": \"Jane Smith\n}"
+    ],
+    [
+      {
+        "title": "The Matrix",
+        "review": "A groundbreaking film that questions reality and perception.",
+        "rating": 9.0,
+        "reviewer": "Alice Johnson"
+      },
+      "{\n  \"title\": \"The Matrix\",\n  \"review\": \"A groundbreaking film that questions reality and perception.\",\n  \"rating\": 9.0,\n  \"reviewer\": \"Alice Johnson\n}"
+    ],
+    [
+      {
+        "title": "Game of Thrones",
+        "review": "Epic battles and political intrigue fill this fantasy saga.",
+        "rating": 8.8,
+        "reviewer": "Bob Brown"
+      },
+      "{\n  \"title\": \"Game of Thrones\",\n  \"review\": \"Epic battles and political intrigue fill this fantasy saga.\",\n  \"rating\": 8.8,\n  \"reviewer\": \"Bob Brown\n}"
+    ],
+    [
+      {
+        "title": "The Godfather",
+        "review": "A timeless masterpiece of crime and drama.",
+        "rating": 9.2,
+        "reviewer": "Chris White"
+      },
+      "{\n  \"title\": \"The Godfather\",\n  \"review\": \"A timeless masterpiece of crime and drama.\",\n  \"rating\": 9.2,\n  \"reviewer\": \"Chris White\n}"
+    ],
+    [
+      {
+        "title": "Stranger Things",
+        "review": "A nostalgic trip back to the 80s with supernatural elements.",
+        "rating": 8.9,
+        "reviewer": "Dana Lee"
+      },
+      "{\n  \"title\": \"Stranger Things\",\n  \"review\": \"A nostalgic trip back to the 80s with supernatural elements.\",\n  \"rating\": 8.9,\n  \"reviewer\": \"Dana Lee\n}"
+    ],
+    [
+      {
+        "title": "Pulp Fiction",
+        "review": "An innovative and non-linear narrative with unforgettable characters.",
+        "rating": 9.1,
+        "reviewer": "Eve Black"
+      },
+      "{\n  \"title\": \"Pulp Fiction\",\n  \"review\": \"An innovative and non-linear narrative with unforgettable characters.\",\n  \"rating\": 9.1,\n  \"reviewer\": \"Eve Black\n}"
+    ],
+    [
+      {
+        "title": "The Office",
+        "review": "A hilarious mockumentary about office life and its absurdities.",
+        "rating": 8.9,
+        "reviewer": "Frank Green"
+      },
+      "{\n  \"title\": \"The Office\",\n  \"review\": \"A hilarious mockumentary about office life and its absurdities.\",\n  \"rating\": 8.9,\n  \"reviewer\": \"Frank Green\n}"
+    ],
+    [
+      {
+        "title": "The Dark Knight",
+        "review": "A compelling and dark take on the superhero genre.",
+        "rating": 9.4,
+        "reviewer": "Grace King"
+      },
+      "{\n  \"title\": \"The Dark Knight\",\n  \"review\": \"A compelling and dark take on the superhero genre.\",\n  \"rating\": 9.4,\n  \"reviewer\": \"Grace King\n}"
+    ],
+    [
+      {
+        "title": "Friends",
+        "review": "A timeless sitcom with a lovable cast and lots of laughs.",
+        "rating": 8.7,
+        "reviewer": "Harry Potter"
+      },
+      "{\n  \"title\": \"Friends\",\n  \"review\": \"A timeless sitcom with a lovable cast and lots of laughs.\",\n  \"rating\": 8.7,\n  \"reviewer\": \"Harry Potter\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-001",
+        "location": "Building \"A\", Floor 2",
+        "temperature": 23.5,
+        "humidity": 56,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-001\",\n  \"location\": \"Building \"A\", Floor 2\",\n  \"temperature\": 23.5,\n  \"humidity\": 56,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-002",
+        "location": "Factory \"Zone C\"",
+        "temperature": 29.1,
+        "humidity": 45,
+        "status": "inactive"
+      },
+      "{\n  \"deviceId\": \"sensor-002\",\n  \"location\": \"Factory \"Zone C\"\",\n  \"temperature\": 29.1,\n  \"humidity\": 45,\n  \"status\": \"inactive\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-003",
+        "location": "Warehouse \"Sector 5A\"",
+        "temperature": 18.2,
+        "humidity": 65,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-003\",\n  \"location\": \"Warehouse \"Sector 5A\"\",\n  \"temperature\": 18.2,\n  \"humidity\": 65,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-004",
+        "location": "Office \"B1\"",
+        "temperature": 22.0,
+        "humidity": 50,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-004\",\n  \"location\": \"Office \"B1\"\",\n  \"temperature\": 22.0,\n  \"humidity\": 50,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-005",
+        "location": "Lab \"Test Area\"",
+        "temperature": 20.1,
+        "humidity": 70,
+        "status": "inactive"
+      },
+      "{\n  \"deviceId\": \"sensor-005\",\n  \"location\": \"Lab \"Test Area\"\",\n  \"temperature\": 20.1,\n  \"humidity\": 70,\n  \"status\": \"inactive\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-006",
+        "location": "Greenhouse \"Unit 7\"",
+        "temperature": 26.3,
+        "humidity": 75,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-006\",\n  \"location\": \"Greenhouse \"Unit 7\"\",\n  \"temperature\": 26.3,\n  \"humidity\": 75,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-007",
+        "location": "Server Room \"Rack 42\"",
+        "temperature": 19.7,
+        "humidity": 40,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-007\",\n  \"location\": \"Server Room \"Rack 42\"\",\n  \"temperature\": 19.7,\n  \"humidity\": 40,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-008",
+        "location": "Parking \"Zone 3\"",
+        "temperature": 15.6,
+        "humidity": 80,
+        "status": "inactive"
+      },
+      "{\n  \"deviceId\": \"sensor-008\",\n  \"location\": \"Parking \"Zone 3\"\",\n  \"temperature\": 15.6,\n  \"humidity\": 80,\n  \"status\": \"inactive\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-009",
+        "location": "Lounge \"VIP Area\"",
+        "temperature": 24.5,
+        "humidity": 55,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-009\",\n  \"location\": \"Lounge \"VIP Area\"\",\n  \"temperature\": 24.5,\n  \"humidity\": 55,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "deviceId": "sensor-010",
+        "location": "Lab \"Research Wing\"",
+        "temperature": 21.9,
+        "humidity": 60,
+        "status": "active"
+      },
+      "{\n  \"deviceId\": \"sensor-010\",\n  \"location\": \"Lab \"Research Wing\"\",\n  \"temperature\": 21.9,\n  \"humidity\": 60,\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "12345",
+        "amount": "5000",
+        "currency": "USD",
+        "description": "Payment for invoice #INV12345",
+        "date": "2023-10-10"
+      },
+      "{\n  \"transaction_id\": \"12345\",\n  \"amount\": \"5000\",\n  \"currency\": \"USD\",\n  \"description\": \"Payment for invoice #INV12345\",\n  \"date\": \"2023-10-10\n}"
+    ],
+    [
+      {
+        "payer": "John Doe",
+        "payee": "ABC Corp",
+        "amount": "250.75",
+        "currency": "GBP",
+        "reference": "Yearly Subscription"
+      },
+      "{\n  \"payer\": \"John Doe\",\n  \"payee\": \"ABC Corp\",\n  \"amount\": \"250.75\",\n  \"currency\": \"GBP\",\n  \"reference\": \"Yearly Subscription\n}"
+    ],
+    [
+      {
+        "transaction_id": "78901",
+        "amount": "15000",
+        "currency": "EUR",
+        "description": "Refund for order #ORD78901",
+        "date": "2023-09-15"
+      },
+      "{\n  \"transaction_id\": \"78901\",\n  \"amount\": \"15000\",\n  \"currency\": \"EUR\",\n  \"description\": \"Refund for order #ORD78901,\n  \"date\": \"2023-09-15\"\n}"
+    ],
+    [
+      {
+        "account_holder": "Jane Smith",
+        "account_number": "9876543210",
+        "bank": "XYZ Bank",
+        "transaction_type": "withdrawal",
+        "amount": "100.00"
+      },
+      "{\n  \"account_holder\": \"Jane Smith\",\n  \"account_number\": \"9876543210\",\n  \"bank\": \"XYZ Bank\",\n  \"transaction_type\": \"withdrawal,\n  \"amount\": \"100.00\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "45678",
+        "amount": "320.00",
+        "currency": "AUD",
+        "description": "Book purchase: 'Principles of Economics'",
+        "date": "2023-11-01"
+      },
+      "{\n  \"transaction_id\": \"45678\",\n  \"amount\": \"320.00\",\n  \"currency\": \"AUD\",\n  \"description\": \"Book purchase: 'Principles of Economics'\",\n  \"date\": \"2023-11-01\n}"
+    ],
+    [
+      {
+        "sender": "Michael Lee",
+        "receiver": "Lisa Wong",
+        "amount": "75.50",
+        "currency": "JPY",
+        "note": "Dinner reimbursement"
+      },
+      "{\n  \"sender\": \"Michael Lee\",\n  \"receiver\": \"Lisa Wong\",\n  \"amount\": \"75.50\",\n  \"currency\": \"JPY\",\n  \"note\": \"Dinner reimbursement\n}"
+    ],
+    [
+      {
+        "merchant": "Online Electronics Store",
+        "transaction_id": "112233",
+        "amount": "1299.99",
+        "currency": "CAD",
+        "items": "Laptop Model X450"
+      },
+      "{\n  \"merchant\": \"Online Electronics Store\",\n  \"transaction_id\": \"112233\",\n  \"amount\": \"1299.99\",\n  \"currency\": \"CAD\",\n  \"items\": Laptop Model X450\n}"
+    ],
+    [
+      {
+        "transaction_id": "24680",
+        "amount": "410.00",
+        "currency": "CHF",
+        "description": "Flight ticket purchase",
+        "date": "2023-12-05"
+      },
+      "{\n  \"transaction_id\": \"24680\",\n  \"amount\": \"410.00\",\n  \"currency\": \"CHF\",\n  \"description\": \"Flight ticket purchase\n  \"date\": \"2023-12-05\"\n}"
+    ],
+    [
+      {
+        "payer": "Alice Green",
+        "payee": "Car Repair Shop",
+        "amount": "800.00",
+        "currency": "HKD",
+        "services": "Engine overhaul"
+      },
+      "{\n  \"payer\": \"Alice Green\",\n  \"payee\": \"Car Repair Shop\",\n  \"amount\": \"800.00\",\n  \"currency\": \"HKD\",\n  \"services\": \"Engine overhaul\n}"
+    ],
+    [
+      {
+        "transaction_id": "159753",
+        "amount": "95.20",
+        "currency": "SGD",
+        "description": "Grocery shopping",
+        "date": "2023-10-20"
+      },
+      "{\n  \"transaction_id\": \"159753\",\n  \"amount\": \"95.20\",\n  \"currency\": \"SGD\",\n  \"description\": \"Grocery shopping\n  \"date\": \"2023-10-20\"\n}"
+    ],
+    [
+      {
+        "vehicle": "Car",
+        "model": "Tesla Model S",
+        "location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        },
+        "status": "Available for \"ride\""
+      },
+      "{\n    \"vehicle\": \"Car\",\n    \"model\": \"Tesla Model S\",\n    \"location\": {\n        \"latitude\": 37.7749,\n        \"longitude\": -122.4194\n    },\n    \"status\": \"Available for \"ride\"\"\n}"
+    ],
+    [
+      {
+        "transport_type": "Bus",
+        "route": "8A Downtown",
+        "current_stop": "Main St & 3rd Ave",
+        "passenger_count": 24,
+        "message": "Next stop is \"Central Station\""
+      },
+      "{\n    \"transport_type\": \"Bus\",\n    \"route\": \"8A Downtown\",\n    \"current_stop\": \"Main St & 3rd Ave\",\n    \"passenger_count\": 24,\n    \"message\": \"Next stop is \"Central Station\"\"\n}"
+    ],
+    [
+      {
+        "driver": "Jane Doe",
+        "vehicle": "Taxi",
+        "license_plate": "XYZ 1234",
+        "notes": "Call driver if \"late\""
+      },
+      "{\n    \"driver\": \"Jane Doe\",\n    \"vehicle\": \"Taxi\",\n    \"license_plate\": \"XYZ 1234\",\n    \"notes\": \"Call driver if \"late\"\"\n}"
+    ],
+    [
+      {
+        "transport_company": "City Transport",
+        "fleet": {
+          "buses": 120,
+          "trams": 40,
+          "trains": "10 \"express\""
+        }
+      },
+      "{\n    \"transport_company\": \"City Transport\",\n    \"fleet\": {\n        \"buses\": 120,\n        \"trams\": 40,\n        \"trains\": \"10 \"express\"\"\n    }\n}"
+    ],
+    [
+      {
+        "station": "Central Park",
+        "schedules": {
+          "weekday": "06:00 AM - 11:00 PM",
+          "weekend": "08:00 AM - 10:00 PM"
+        },
+        "alert": "Maintenance work on track \"A\""
+      },
+      "{\n    \"station\": \"Central Park\",\n    \"schedules\": {\n        \"weekday\": \"06:00 AM - 11:00 PM\",\n        \"weekend\": \"08:00 AM - 10:00 PM\"\n    },\n    \"alert\": \"Maintenance work on track \"A\"\"\n}"
+    ],
+    [
+      {
+        "trip_id": 10234,
+        "passenger_name": "John Smith",
+        "journey_plan": "From \"Downtown\" to \"Uptown\""
+      },
+      "{\n    \"trip_id\": 10234,\n    \"passenger_name\": \"John Smith\",\n    \"journey_plan\": \"From \"Downtown\" to \"Uptown\"\"\n}"
+    ],
+    [
+      {
+        "logistics_company": "Speedy Deliveries",
+        "fleet_size": 50,
+        "policy": "All vehicles must pass \"safety checks\""
+      },
+      "{\n    \"logistics_company\": \"Speedy Deliveries\",\n    \"fleet_size\": 50,\n    \"policy\": \"All vehicles must pass \"safety checks\"\"\n}"
+    ],
+    [
+      {
+        "service": "Car Rental",
+        "available_models": [
+          "Sedan",
+          "SUV",
+          "Convertible"
+        ],
+        "note": "Convertible models are \"limited\""
+      },
+      "{\n    \"service\": \"Car Rental\",\n    \"available_models\": [\"Sedan\", \"SUV\", \"Convertible\"],\n    \"note\": \"Convertible models are \"limited\"\"\n}"
+    ],
+    [
+      {
+        "location_name": "Airport Terminal 3",
+        "coordinates": {
+          "latitude": 40.6413,
+          "longitude": -73.7781
+        },
+        "info": "Baggage claim is at \"section B\""
+      },
+      "{\n    \"location_name\": \"Airport Terminal 3\",\n    \"coordinates\": {\n        \"latitude\": 40.6413,\n        \"longitude\": -73.7781\n    },\n    \"info\": \"Baggage claim is at \"section B\"\"\n}"
+    ],
+    [
+      {
+        "event": "Marathon",
+        "start_time": "07:00 AM",
+        "description": "Track will be closed during \"event\" hours"
+      },
+      "{\n    \"event\": \"Marathon\",\n    \"start_time\": \"07:00 AM\",\n    \"description\": \"Track will be closed during \"event\" hours\"\n}"
+    ]
+  ]
+}

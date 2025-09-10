@@ -1,0 +1,182 @@
+{
+  "test_0": {
+    "model_names": [
+      "IsolationNet"
+    ],
+    "abstract": "In this study, we introduce IsolationNet, a novel deep learning model designed for anomaly detection in high-dimensional data. IsolationNet employs an ensemble of isolation forests to effectively capture rare events by learning the intrinsic data distribution. Our experimental results demonstrate that IsolationNet outperforms existing state-of-the-art models on several benchmark datasets, offering improved detection accuracy and reduced false positive rates."
+  },
+  "test_1": {
+    "model_names": [
+      "VAE-GAN"
+    ],
+    "abstract": "We propose an innovative approach to rare event modeling using VAE-GAN, which combines the strengths of Variational Autoencoders and Generative Adversarial Networks. VAE-GAN is particularly effective in generating synthetic samples that enhance anomaly detection capabilities in various domains, including finance and healthcare. Our extensive experiments reveal that VAE-GAN achieves superior performance in recognizing anomalies compared to conventional methods."
+  },
+  "test_2": {
+    "model_names": [
+      "DeepSVDD"
+    ],
+    "abstract": "This paper presents DeepSVDD, a deep support vector data description model tailored for anomaly detection in complex datasets. DeepSVDD leverages neural network-based feature extraction to learn compact representations of normal data, thereby improving the detection of rare events. Comparative analysis with baseline models shows that DeepSVDD consistently achieves higher precision and recall in diverse scenarios."
+  },
+  "test_3": {
+    "model_names": [
+      "AutoEncoder-X"
+    ],
+    "abstract": "AutoEncoder-X, a newly developed unsupervised learning model, is introduced for the task of anomaly detection. By utilizing a multi-layer autoencoder architecture, AutoEncoder-X effectively learns the underlying structure of normal data, allowing it to pinpoint anomalies with high accuracy. Experiments demonstrate its robustness and effectiveness in detecting rare events across multiple application areas."
+  },
+  "test_4": {
+    "model_names": [
+      "LSTM-AD"
+    ],
+    "abstract": "We describe LSTM-AD, a long short-term memory network specifically designed for anomaly detection in time-series data. LSTM-AD captures temporal dependencies and patterns, making it highly effective for identifying rare events in sequential datasets. Our evaluation across various benchmark time-series datasets illustrates the superior performance of LSTM-AD over traditional anomaly detection techniques."
+  },
+  "test_5": {
+    "model_names": [
+      "DeepAnT"
+    ],
+    "abstract": "An advancement in time-series anomaly detection is achieved with the introduction of DeepAnT, a deep learning model that employs convolutional neural networks to identify anomalous patterns. DeepAnT is capable of learning complex temporal features, leading to improved detection accuracy and reliability. Extensive testing on real-world datasets confirms its effectiveness in modeling rare events."
+  },
+  "test_6": {
+    "model_names": [
+      "OC-NN"
+    ],
+    "abstract": "This paper proposes OC-NN, a one-class neural network model for anomaly detection. OC-NN is designed to learn a decision boundary around normal data, thus facilitating the recognition of anomalies. Empirical results indicate that OC-NN outperforms traditional one-class SVM in terms of both speed and accuracy across a variety of datasets."
+  },
+  "test_7": {
+    "model_names": [
+      "GPT-AD"
+    ],
+    "abstract": "Introducing GPT-AD, a generative pre-trained transformer model adapted for anomaly detection tasks. GPT-AD leverages large-scale language model pre-training to enhance the identification of rare textual anomalies. Our experiments demonstrate the model's proficiency in detecting anomalies in text datasets with significantly improved precision and recall metrics."
+  },
+  "test_8": {
+    "model_names": [
+      "Anomalo"
+    ],
+    "abstract": "Anomalo, a newly developed model for anomaly detection, utilizes a novel framework combining reinforcement learning with neural networks. Anomalo autonomously learns adaptive thresholds for identifying rare events, showing remarkable improvement over existing models. Comparative studies validate its effectiveness and adaptability in dynamic environments."
+  },
+  "test_9": {
+    "model_names": [
+      "Llama"
+    ],
+    "abstract": "This study explores the application of Llama, a scalable language model, in the domain of anomaly detection. Llama's advanced contextual understanding is leveraged to detect anomalies in text-based data sources. Experiments conducted show that Llama successfully identifies rare textual anomalies with higher accuracy compared to baseline transformer models."
+  },
+  "test_10": {
+    "model_names": [
+      "C-RNN-GAN"
+    ],
+    "abstract": "We introduce C-RNN-GAN, a novel approach combining recurrent neural networks and generative adversarial networks for anomaly detection in sequential data. C-RNN-GAN captures temporal dependencies and generates synthetic sequences to enhance the detection of rare events. Our results indicate significant performance gains over existing GAN-based models."
+  },
+  "test_11": {
+    "model_names": [
+      "TadGAN"
+    ],
+    "abstract": "TadGAN is proposed as a new model for time-series anomaly detection, integrating recurrent neural networks with GANs to address the challenges of rare event modeling. TadGAN efficiently learns temporal features and generates diverse sequences that improve anomaly detection rates. Extensive experiments confirm its superior performance on multiple benchmark datasets."
+  },
+  "test_12": {
+    "model_names": [
+      "Sparse-AE"
+    ],
+    "abstract": "Sparse-AE, an innovative sparse autoencoder, is designed for anomaly detection, leveraging sparsity to improve the identification of rare events in high-dimensional data. By constraining the latent space, Sparse-AE enhances the separation between normal and anomalous data. Experimental results demonstrate its effectiveness across various industry datasets."
+  },
+  "test_13": {
+    "model_names": [
+      "TS-GAN"
+    ],
+    "abstract": "Introducing TS-GAN, a time-series generative adversarial network model engineered for anomaly detection. TS-GAN synthesizes realistic time-series data to improve the identification of rare events. Our comparative analysis shows that TS-GAN outperforms existing methods in accuracy and robustness across several challenging datasets."
+  },
+  "test_14": {
+    "model_names": [
+      "DeepAR"
+    ],
+    "abstract": "This paper presents DeepAR, a probabilistic forecasting model adapted for anomaly detection in time-series data. DeepAR captures seasonality and trend patterns, enhancing the detection of rare anomalies. Evaluation results on a diverse set of time-series datasets reveal that DeepAR achieves higher detection rates compared to baseline models."
+  },
+  "test_15": {
+    "model_names": [
+      "Flow-GAN"
+    ],
+    "abstract": "Flow-GAN is a novel model that merges normalizing flows with generative adversarial networks for anomaly detection. This hybrid approach allows Flow-GAN to model complex data distributions, improving the detection of rare events. Our experiments demonstrate its superiority over traditional GAN models in various anomaly detection tasks."
+  },
+  "test_16": {
+    "model_names": [
+      "AnomalyTransformer"
+    ],
+    "abstract": "We propose AnomalyTransformer, a transformer-based model specifically for detecting anomalies in sequential data. AnomalyTransformer's attention mechanism enables it to identify rare events efficiently by focusing on relevant features. Experimental results highlight its effectiveness in outperforming conventional models in several benchmark datasets."
+  },
+  "test_17": {
+    "model_names": [
+      "STORN"
+    ],
+    "abstract": "Introducing STORN, a stochastic recurrent neural network designed for anomaly detection in time-series data. STORN captures temporal dynamics and uncertainty, making it ideal for rare event modeling. Our experiments show that STORN achieves significant improvements in accuracy over traditional RNN-based approaches."
+  },
+  "test_18": {
+    "model_names": [
+      "TimeGAN"
+    ],
+    "abstract": "TimeGAN, a novel time-series generative adversarial network, is introduced for anomaly detection. TimeGAN effectively generates realistic time-series sequences, aiding in the detection of rare events. Comprehensive experiments confirm its superior performance in various challenging datasets compared to baseline GAN models."
+  },
+  "test_19": {
+    "model_names": [
+      "DeepLog"
+    ],
+    "abstract": "DeepLog, an advanced log anomaly detection model, leverages deep learning to automatically detect rare anomalies in system logs. By modeling log sequences, DeepLog identifies patterns indicative of anomalies. Our evaluations demonstrate its high detection accuracy across diverse datasets, outperforming traditional log analysis methods."
+  },
+  "test_20": {
+    "model_names": [
+      "MAD-GAN"
+    ],
+    "abstract": "This paper introduces MAD-GAN, a model for multivariate anomaly detection using GANs. MAD-GAN models the joint distribution of multivariate data, enhancing the detection of rare events. Experimental results across various domains confirm MAD-GAN's effectiveness compared to existing anomaly detection techniques."
+  },
+  "test_21": {
+    "model_names": [
+      "GraphSAGE"
+    ],
+    "abstract": "In this study, we apply GraphSAGE, a scalable graph neural network, to anomaly detection in graph-structured data. GraphSAGE efficiently learns node embeddings that highlight anomalies related to rare events. Our results show that GraphSAGE outperforms baseline graph models in detecting anomalies across multiple datasets."
+  },
+  "test_22": {
+    "model_names": [
+      "GANomaly"
+    ],
+    "abstract": "GANomaly, a novel generative adversarial network model, is proposed for anomaly detection in image data. GANomaly learns to reconstruct normal images, enabling the identification of anomalies by reconstruction error. Evaluation results demonstrate its effectiveness in detecting rare events across various image datasets."
+  },
+  "test_23": {
+    "model_names": [
+      "ALAD"
+    ],
+    "abstract": "ALAD, an adversarially learned anomaly detection model, leverages adversarial training to improve the detection of rare events. By learning robust features, ALAD enhances anomaly detection accuracy. Our experiments validate its superior performance over existing methods in multiple benchmark datasets."
+  },
+  "test_24": {
+    "model_names": [
+      "FB-Prophet"
+    ],
+    "abstract": "FB-Prophet, a forecasting model adapted for anomaly detection, is evaluated in time-series data. By modeling trend and seasonality, FB-Prophet effectively detects rare events as anomalies. Experiments demonstrate its robustness and accuracy, outperforming traditional statistical methods in several datasets."
+  },
+  "test_25": {
+    "model_names": [
+      "DeepBoltzmann"
+    ],
+    "abstract": "DeepBoltzmann, a Boltzmann machine model, is explored for anomaly detection. DeepBoltzmann learns the energy distribution of normal data, enhancing the detection of rare anomalies. Comparative studies show its capability to outperform existing models in terms of accuracy and efficiency across various datasets."
+  },
+  "test_26": {
+    "model_names": [
+      "NBEATS"
+    ],
+    "abstract": "NBEATS, a deep neural architecture for time-series forecasting, is adapted for anomaly detection. By utilizing its trend and seasonal decomposition, NBEATS improves the identification of rare events. Our results from extensive experiments indicate that NBEATS achieves superior detection performance compared to conventional models."
+  },
+  "test_27": {
+    "model_names": [
+      "BigGAN"
+    ],
+    "abstract": "We investigate BigGAN's capabilities in anomaly detection, particularly in image data. By leveraging BigGAN's high-fidelity image generation, we enhance anomaly detection accuracy through synthetic data augmentation. Experiments confirm that BigGAN contributes to higher detection rates of rare image anomalies."
+  },
+  "test_28": {
+    "model_names": [
+      "Self-Organizing Map (SOM)"
+    ],
+    "abstract": "This research explores the use of Self-Organizing Map (SOM) for anomaly detection in high-dimensional data. SOM's capability to form a topological map allows it to effectively identify rare anomalies. Experimental data show SOM's superior performance in detecting rare events compared to traditional clustering methods."
+  },
+  "test_29": {
+    "model_names": [
+      "PixelCNN"
+    ],
+    "abstract": "PixelCNN, a generative model for image data, is adapted for anomaly detection tasks. By learning the distribution of normal pixels, PixelCNN can identify anomalies through reconstruction likelihoods. Our evaluation shows PixelCNN's effectiveness in detecting rare image anomalies with improved accuracy over baseline models."
+  }
+}

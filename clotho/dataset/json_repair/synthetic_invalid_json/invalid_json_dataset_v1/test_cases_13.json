@@ -1,0 +1,1313 @@
+{
+  "possible_fix": "Strip ellipsis in arrays and objects like [1, 2, 3, ...]",
+  "test_cases": [
+    [
+      {
+        "user": {
+          "id": 101,
+          "name": "Alice",
+          "hobbies": [
+            "reading",
+            "swimming",
+            "painting"
+          ]
+        }
+      },
+      "{\n    \"user\": {\n        \"id\": 101,\n        \"name\": \"Alice\",\n        \"hobbies\": [\"reading\", \"swimming\", \"painting\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "bob_the_builder",
+          "email": "bob@example.com",
+          "preferences": {
+            "theme": "dark",
+            "notifications": [
+              "email",
+              "sms"
+            ]
+          }
+        }
+      },
+      "{\n    \"profile\": {\n        \"username\": \"bob_the_builder\",\n        \"email\": \"bob@example.com\",\n        \"preferences\": {\n            \"theme\": \"dark\",\n            \"notifications\": [\"email\", \"sms\", ...]\n        }\n    }\n}"
+    ],
+    [
+      {
+        "user_info": {
+          "first_name": "Charlie",
+          "last_name": "Brown",
+          "friends": [
+            "Linus",
+            "Lucy",
+            "Snoopy"
+          ]
+        }
+      },
+      "{\n    \"user_info\": {\n        \"first_name\": \"Charlie\",\n        \"last_name\": \"Brown\",\n        \"friends\": [\"Linus\", \"Lucy\", \"Snoopy\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "account": {
+          "user_id": 204,
+          "created_on": "2021-05-15",
+          "roles": [
+            "admin",
+            "editor"
+          ]
+        }
+      },
+      "{\n    \"account\": {\n        \"user_id\": 204,\n        \"created_on\": \"2021-05-15\",\n        \"roles\": [\"admin\", \"editor\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "settings": {
+          "visibility": "private",
+          "blocked_users": [
+            "user123",
+            "user456"
+          ]
+        }
+      },
+      "{\n    \"settings\": {\n        \"visibility\": \"private\",\n        \"blocked_users\": [\"user123\", \"user456\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "user_profile": {
+          "bio": "Developer and tech enthusiast.",
+          "languages": [
+            "English",
+            "Spanish",
+            "French"
+          ]
+        }
+      },
+      "{\n    \"user_profile\": {\n        \"bio\": \"Developer and tech enthusiast.\",\n        \"languages\": [\"English\", \"Spanish\", \"French\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "contact": {
+          "phone": "123-456-7890",
+          "emails": [
+            "contact@example.com",
+            "support@example.org"
+          ]
+        }
+      },
+      "{\n    \"contact\": {\n        \"phone\": \"123-456-7890\",\n        \"emails\": [\"contact@example.com\", \"support@example.org\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "username": "dora_explorer",
+          "subscriptions": [
+            "news",
+            "updates"
+          ]
+        }
+      },
+      "{\n    \"user\": {\n        \"username\": \"dora_explorer\",\n        \"subscriptions\": [\"news\", \"updates\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "preferences": {
+          "language": "English",
+          "timezone": "GMT"
+        }
+      },
+      "{\n    \"preferences\": {\n        \"language\": \"English\",\n        \"timezone\": \"GMT\",\n        ...\n    }\n}"
+    ],
+    [
+      {
+        "activity": {
+          "last_login": "2023-09-10T12:34:56Z",
+          "recent_actions": [
+            "login",
+            "upload_file",
+            "change_password"
+          ]
+        }
+      },
+      "{\n    \"activity\": {\n        \"last_login\": \"2023-09-10T12:34:56Z\",\n        \"recent_actions\": [\"login\", \"upload_file\", \"change_password\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "order_id": 12345,
+        "customer": "John Doe",
+        "items": [
+          {
+            "product_id": 101,
+            "quantity": 2
+          },
+          {
+            "product_id": 202,
+            "quantity": 1
+          },
+          {
+            "product_id": 303,
+            "quantity": 3
+          }
+        ],
+        "delivery_address": "123 Elm Street"
+      },
+      "{\n    \"order_id\": 12345,\n    \"customer\": \"John Doe\",\n    \"items\": [\n        {\"product_id\": 101, \"quantity\": 2},\n        {\"product_id\": 202, \"quantity\": 1},\n        {\"product_id\": 303, \"quantity\": 3},\n        ...\n    ],\n    \"delivery_address\": \"123 Elm Street\"\n}"
+    ],
+    [
+      {
+        "order_id": 67890,
+        "customer": "Jane Smith",
+        "items": [
+          {
+            "product_id": 404,
+            "quantity": 5
+          },
+          {
+            "product_id": 505,
+            "quantity": 2
+          }
+        ],
+        "status": "shipped"
+      },
+      "{\n    \"order_id\": 67890,\n    \"customer\": \"Jane Smith\",\n    \"items\": [\n        {\"product_id\": 404, \"quantity\": 5},\n        {\"product_id\": 505, \"quantity\": 2},\n        ...\n    ],\n    \"status\": \"shipped\"\n}"
+    ],
+    [
+      {
+        "order_id": 11223,
+        "customer": "Alice Johnson",
+        "items": [
+          {
+            "product_id": 606,
+            "quantity": 1
+          },
+          {
+            "product_id": 707,
+            "quantity": 4
+          }
+        ],
+        "payment": {
+          "method": "credit card",
+          "amount": 150.75
+        }
+      },
+      "{\n    \"order_id\": 11223,\n    \"customer\": \"Alice Johnson\",\n    \"items\": [\n        {\"product_id\": 606, \"quantity\": 1},\n        {\"product_id\": 707, \"quantity\": 4},\n        ...\n    ],\n    \"payment\": {\n        \"method\": \"credit card\",\n        \"amount\": 150.75,\n        ...\n    }\n}"
+    ],
+    [
+      {
+        "order_id": 33445,
+        "customer": "Bob Brown",
+        "items": [
+          {
+            "product_id": 808,
+            "quantity": 10
+          }
+        ],
+        "coupon_code": "SAVE20"
+      },
+      "{\n    \"order_id\": 33445,\n    \"customer\": \"Bob Brown\",\n    \"items\": [{\"product_id\": 808, \"quantity\": 10}, ...],\n    \"coupon_code\": \"SAVE20\"\n}"
+    ],
+    [
+      {
+        "order_id": 55667,
+        "customer": "Charlie Davis",
+        "items": [
+          {
+            "product_id": 909,
+            "quantity": 6
+          },
+          {
+            "product_id": 1010,
+            "quantity": 3
+          }
+        ],
+        "gift_wrap": true
+      },
+      "{\n    \"order_id\": 55667,\n    \"customer\": \"Charlie Davis\",\n    \"items\": [\n        {\"product_id\": 909, \"quantity\": 6},\n        {\"product_id\": 1010, \"quantity\": 3},\n        ...\n    ],\n    \"gift_wrap\": true\n}"
+    ],
+    [
+      {
+        "order_id": 77889,
+        "customer": "Diana Evans",
+        "items": [],
+        "delivery_date": "2023-10-15"
+      },
+      "{\n    \"order_id\": 77889,\n    \"customer\": \"Diana Evans\",\n    \"items\": [...],\n    \"delivery_date\": \"2023-10-15\"\n}"
+    ],
+    [
+      {
+        "order_id": 99000,
+        "customer": "Evan Foster",
+        "items": [
+          {
+            "product_id": 1111,
+            "quantity": 2
+          },
+          {
+            "product_id": 1212,
+            "quantity": 1
+          }
+        ],
+        "notes": "Leave at the back door"
+      },
+      "{\n    \"order_id\": 99000,\n    \"customer\": \"Evan Foster\",\n    \"items\": [\n        {\"product_id\": 1111, \"quantity\": 2},\n        {\"product_id\": 1212, \"quantity\": 1},\n        ...\n    ],\n    \"notes\": \"Leave at the back door\"\n}"
+    ],
+    [
+      {
+        "order_id": 11212,
+        "customer": "Fiona Green",
+        "items": [
+          {
+            "product_id": 1313,
+            "quantity": 4
+          },
+          {
+            "product_id": 1414,
+            "quantity": 7
+          }
+        ],
+        "promo": {
+          "code": "FALL20",
+          "discount": 20
+        }
+      },
+      "{\n    \"order_id\": 11212,\n    \"customer\": \"Fiona Green\",\n    \"items\": [\n        {\"product_id\": 1313, \"quantity\": 4},\n        {\"product_id\": 1414, \"quantity\": 7},\n        ...\n    ],\n    \"promo\": {\n        \"code\": \"FALL20\",\n        \"discount\": 20,\n        ...\n    }\n}"
+    ],
+    [
+      {
+        "order_id": 23232,
+        "customer": "George Hill",
+        "items": [
+          {
+            "product_id": 1515,
+            "quantity": 5
+          },
+          {
+            "product_id": 1616,
+            "quantity": 2
+          }
+        ],
+        "delivery_method": "express"
+      },
+      "{\n    \"order_id\": 23232,\n    \"customer\": \"George Hill\",\n    \"items\": [\n        {\"product_id\": 1515, \"quantity\": 5},\n        {\"product_id\": 1616, \"quantity\": 2},\n        ...\n    ],\n    \"delivery_method\": \"express\"\n}"
+    ],
+    [
+      {
+        "order_id": 34343,
+        "customer": "Hannah Ivy",
+        "items": [
+          {
+            "product_id": 1717,
+            "quantity": 3
+          },
+          {
+            "product_id": 1818,
+            "quantity": 1
+          }
+        ],
+        "order_status": "processing"
+      },
+      "{\n    \"order_id\": 34343,\n    \"customer\": \"Hannah Ivy\",\n    \"items\": [\n        {\"product_id\": 1717, \"quantity\": 3},\n        {\"product_id\": 1818, \"quantity\": 1},\n        ...\n    ],\n    \"order_status\": \"processing\"\n}"
+    ],
+    [
+      {
+        "user": "johndoe",
+        "posts": [
+          "Hello world!",
+          "Loving the weather today!",
+          "Just finished a great book."
+        ]
+      },
+      "{\n  \"user\": \"johndoe\",\n  \"posts\": [\"Hello world!\", \"Loving the weather today!\", \"Just finished a great book.\", ...]\n}"
+    ],
+    [
+      {
+        "profile_name": "janedoe",
+        "followers": [
+          101,
+          202,
+          303
+        ]
+      },
+      "{\n  \"profile_name\": \"janedoe\",\n  \"followers\": [101, 202, 303, ...]\n}"
+    ],
+    [
+      {
+        "username": "social_guru",
+        "likes": [
+          12,
+          34,
+          56,
+          78
+        ]
+      },
+      "{\n  \"username\": \"social_guru\",\n  \"likes\": [12, 34, 56, 78, ...]\n}"
+    ],
+    [
+      {
+        "handle": "traveler123",
+        "comments": [
+          "Nice pic!",
+          "Where is this place?",
+          "Great view!"
+        ]
+      },
+      "{\n  \"handle\": \"traveler123\",\n  \"comments\": [\"Nice pic!\", \"Where is this place?\", \"Great view!\", ...]\n}"
+    ],
+    [
+      {
+        "account": "foodie_lover",
+        "favorite_dishes": [
+          "Pasta",
+          "Sushi",
+          "Tacos"
+        ]
+      },
+      "{\n  \"account\": \"foodie_lover\",\n  \"favorite_dishes\": [\"Pasta\", \"Sushi\", \"Tacos\", ...]\n}"
+    ],
+    [
+      {
+        "nickname": "tech_savvy",
+        "recent_posts": [
+          {
+            "title": "New Tech Trends",
+            "likes": 150
+          },
+          {
+            "title": "AI in 2023",
+            "likes": 99
+          },
+          {
+            "title": "Gadget Reviews",
+            "likes": 47
+          }
+        ]
+      },
+      "{\n  \"nickname\": \"tech_savvy\",\n  \"recent_posts\": [\n    {\"title\": \"New Tech Trends\", \"likes\": 150},\n    {\"title\": \"AI in 2023\", \"likes\": 99},\n    {\"title\": \"Gadget Reviews\", \"likes\": 47},\n    ...\n  ]\n}"
+    ],
+    [
+      {
+        "profile": "nature_enthusiast",
+        "photos": [
+          "mountain.jpg",
+          "forest.png",
+          "river.bmp"
+        ]
+      },
+      "{\n  \"profile\": \"nature_enthusiast\",\n  \"photos\": [\"mountain.jpg\", \"forest.png\", \"river.bmp\", ...]\n}"
+    ],
+    [
+      {
+        "user_id": "artist_at_heart",
+        "artworks": [
+          "portrait.png",
+          "landscape.jpg",
+          "abstract.gif"
+        ]
+      },
+      "{\n  \"user_id\": \"artist_at_heart\",\n  \"artworks\": [\"portrait.png\", \"landscape.jpg\", \"abstract.gif\", ...]\n}"
+    ],
+    [
+      {
+        "username": "music_fanatic",
+        "playlists": [
+          "Chill Vibes",
+          "Party Mix",
+          "Workout Tunes"
+        ]
+      },
+      "{\n  \"username\": \"music_fanatic\",\n  \"playlists\": [\"Chill Vibes\", \"Party Mix\", \"Workout Tunes\", ...]\n}"
+    ],
+    [
+      {
+        "name": "movie_buff",
+        "watchlist": [
+          "Inception",
+          "The Matrix",
+          "Interstellar"
+        ]
+      },
+      "{\n  \"name\": \"movie_buff\",\n  \"watchlist\": [\"Inception\", \"The Matrix\", \"Interstellar\", ...]\n}"
+    ],
+    [
+      {
+        "sensor_id": "sensor_001",
+        "temperature_readings": [
+          23.5,
+          24.1,
+          22.8
+        ],
+        "status": "active"
+      },
+      "{\n  \"sensor_id\": \"sensor_001\",\n  \"temperature_readings\": [23.5, 24.1, 22.8, ...],\n  \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "device": {
+          "name": "thermostat",
+          "battery_level": 87
+        },
+        "alerts": [
+          "low battery",
+          "maintenance required"
+        ]
+      },
+      "{\n  \"device\": {\n    \"name\": \"thermostat\",\n    \"battery_level\": 87\n  },\n  \"alerts\": [\"low battery\", \"maintenance required\", ...]\n}"
+    ],
+    [
+      {
+        "location": "greenhouse",
+        "humidity_sensor": {
+          "readings": [
+            55.1,
+            56.3,
+            54.8
+          ]
+        },
+        "alert": false
+      },
+      "{\n  \"location\": \"greenhouse\",\n  \"humidity_sensor\": {\n    \"readings\": [55.1, 56.3, 54.8, ...]\n  },\n  \"alert\": false\n}"
+    ],
+    [
+      {
+        "sensor_type": "motion",
+        "triggers": [
+          true,
+          false,
+          true
+        ],
+        "last_triggered": "2023-10-01T14:32:00Z"
+      },
+      "{\n  \"sensor_type\": \"motion\",\n  \"triggers\": [true, false, true, ...],\n  \"last_triggered\": \"2023-10-01T14:32:00Z\"\n}"
+    ],
+    [
+      {
+        "device_id": "device_123",
+        "pressure_readings": [
+          101.3,
+          102.1,
+          100.8
+        ],
+        "unit": "kPa"
+      },
+      "{\n  \"device_id\": \"device_123\",\n  \"pressure_readings\": [101.3, 102.1, 100.8, ...],\n  \"unit\": \"kPa\"\n}"
+    ],
+    [
+      {
+        "room": "living room",
+        "light_sensor": {
+          "intensity": [
+            300,
+            450,
+            600
+          ],
+          "status": "on"
+        }
+      },
+      "{\n  \"room\": \"living room\",\n  \"light_sensor\": {\n    \"intensity\": [300, 450, 600, ...],\n    \"status\": \"on\"\n  }\n}"
+    ],
+    [
+      {
+        "sensor_network": {
+          "nodes": [
+            "node_1",
+            "node_2",
+            "node_3"
+          ],
+          "active": true
+        },
+        "data_interval": 5
+      },
+      "{\n  \"sensor_network\": {\n    \"nodes\": [\"node_1\", \"node_2\", \"node_3\", ...],\n    \"active\": true\n  },\n  \"data_interval\": 5\n}"
+    ],
+    [
+      {
+        "gateway_id": "gw_456",
+        "connected_devices": [
+          "sensor_101",
+          "sensor_102"
+        ],
+        "last_sync": "2023-09-21T08:45:00Z"
+      },
+      "{\n  \"gateway_id\": \"gw_456\",\n  \"connected_devices\": [\"sensor_101\", \"sensor_102\", ...],\n  \"last_sync\": \"2023-09-21T08:45:00Z\"\n}"
+    ],
+    [
+      {
+        "controller": "HVAC",
+        "settings": {
+          "temperature": 22,
+          "mode": "automatic"
+        },
+        "active_sensors": [
+          "temperature",
+          "humidity"
+        ]
+      },
+      "{\n  \"controller\": \"HVAC\",\n  \"settings\": {\n    \"temperature\": 22,\n    \"mode\": \"automatic\"\n  },\n  \"active_sensors\": [\"temperature\", \"humidity\", ...]\n}"
+    ],
+    [
+      {
+        "plant": "Tomato",
+        "growth_stage": "flowering",
+        "sensors": {
+          "soil_moisture": [
+            30,
+            45,
+            50
+          ],
+          "sunlight_hours": 6
+        }
+      },
+      "{\n  \"plant\": \"Tomato\",\n  \"growth_stage\": \"flowering\",\n  \"sensors\": {\n    \"soil_moisture\": [30, 45, 50, ...],\n    \"sunlight_hours\": 6\n  }\n}"
+    ],
+    [
+      {
+        "city": "New York",
+        "temperature": 75,
+        "conditions": [
+          "sunny",
+          "clear",
+          "warm"
+        ]
+      },
+      "{\n  \"city\": \"New York\",\n  \"temperature\": 75,\n  \"conditions\": [\"sunny\", \"clear\", \"warm\", ...]\n}"
+    ],
+    [
+      {
+        "location": "Los Angeles",
+        "humidity": 65,
+        "forecast": {
+          "morning": "cloudy",
+          "afternoon": "sunny",
+          "evening": "clear"
+        }
+      },
+      "{\n  \"location\": \"Los Angeles\",\n  \"humidity\": 65,\n  \"forecast\": {\n    \"morning\": \"cloudy\",\n    \"afternoon\": \"sunny\",\n    \"evening\": \"clear\",\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "city": "Chicago",
+        "wind_speed": 10,
+        "alerts": [
+          "flood warning",
+          "high wind advisory"
+        ]
+      },
+      "{\n  \"city\": \"Chicago\",\n  \"wind_speed\": 10,\n  \"alerts\": [\"flood warning\", \"high wind advisory\", ...]\n}"
+    ],
+    [
+      {
+        "city": "Miami",
+        "temperature": 88,
+        "conditions": [
+          "humid",
+          "rainy"
+        ]
+      },
+      "{\n  \"city\": \"Miami\",\n  \"temperature\": 88,\n  \"conditions\": [\"humid\", \"rainy\", ...]\n}"
+    ],
+    [
+      {
+        "city": "Seattle",
+        "precipitation": "heavy rain",
+        "forecast": [
+          "rain",
+          "cloudy",
+          "drizzle"
+        ]
+      },
+      "{\n  \"city\": \"Seattle\",\n  \"precipitation\": \"heavy rain\",\n  \"forecast\": [\"rain\", \"cloudy\", \"drizzle\", ...]\n}"
+    ],
+    [
+      {
+        "city": "Houston",
+        "temperature": 95,
+        "conditions": [
+          "hot",
+          "clear",
+          "dry"
+        ]
+      },
+      "{\n  \"city\": \"Houston\",\n  \"temperature\": 95,\n  \"conditions\": [\"hot\", \"clear\", \"dry\", ...]\n}"
+    ],
+    [
+      {
+        "city": "Denver",
+        "altitude": 5280,
+        "weather": {
+          "day": "sunny",
+          "night": "cool"
+        }
+      },
+      "{\n  \"city\": \"Denver\",\n  \"altitude\": 5280,\n  \"weather\": {\n    \"day\": \"sunny\",\n    \"night\": \"cool\",\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "city": "Phoenix",
+        "uv_index": 10,
+        "conditions": [
+          "sunny",
+          "hot"
+        ]
+      },
+      "{\n  \"city\": \"Phoenix\",\n  \"uv_index\": 10,\n  \"conditions\": [\"sunny\", \"hot\", ...]\n}"
+    ],
+    [
+      {
+        "city": "Boston",
+        "temperature": 60,
+        "forecast": [
+          "cool",
+          "partly cloudy"
+        ]
+      },
+      "{\n  \"city\": \"Boston\",\n  \"temperature\": 60,\n  \"forecast\": [\"cool\", \"partly cloudy\", ...]\n}"
+    ],
+    [
+      {
+        "city": "San Francisco",
+        "conditions": [
+          "foggy",
+          "cool"
+        ],
+        "high": 68,
+        "low": 55
+      },
+      "{\n  \"city\": \"San Francisco\",\n  \"conditions\": [\"foggy\", \"cool\", ...],\n  \"high\": 68,\n  \"low\": 55\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN12345",
+        "amount": 250.75,
+        "currency": "USD",
+        "items": [
+          "book",
+          "pen",
+          "notebook"
+        ]
+      },
+      "{\n    \"transaction_id\": \"TXN12345\",\n    \"amount\": 250.75,\n    \"currency\": \"USD\",\n    \"items\": [\"book\", \"pen\", \"notebook\", ...]\n}"
+    ],
+    [
+      {
+        "account_number": "987654321",
+        "transactions": [
+          {
+            "date": "2023-01-10",
+            "amount": -500.0,
+            "type": "withdrawal"
+          },
+          {
+            "date": "2023-01-15",
+            "amount": 1500.0,
+            "type": "deposit"
+          }
+        ]
+      },
+      "{\n    \"account_number\": \"987654321\",\n    \"transactions\": [\n        {\"date\": \"2023-01-10\", \"amount\": -500.00, \"type\": \"withdrawal\"},\n        {\"date\": \"2023-01-15\", \"amount\": 1500.00, \"type\": \"deposit\"},\n        ...\n    ]\n}"
+    ],
+    [
+      {
+        "account_holder": "John Doe",
+        "balance": 1200.5,
+        "recent_activity": [
+          {
+            "description": "Groceries",
+            "amount": -100.25
+          },
+          {
+            "description": "Salary",
+            "amount": 2000.0
+          }
+        ]
+      },
+      "{\n    \"account_holder\": \"John Doe\",\n    \"balance\": 1200.50,\n    \"recent_activity\": [\n        {\"description\": \"Groceries\", \"amount\": -100.25},\n        {\"description\": \"Salary\", \"amount\": 2000.00},\n        ...\n    ]\n}"
+    ],
+    [
+      {
+        "transaction_summary": {
+          "total_deposits": 5000.0,
+          "total_withdrawals": 2500.0,
+          "net_balance": 2500.0
+        }
+      },
+      "{\n    \"transaction_summary\": {\n        \"total_deposits\": 5000.00,\n        \"total_withdrawals\": 2500.00,\n        \"net_balance\": 2500.00,\n        ...\n    }\n}"
+    ],
+    [
+      {
+        "customer_id": "CUST1001",
+        "transactions": [
+          {
+            "id": "T001",
+            "amount": 100.0
+          },
+          {
+            "id": "T002",
+            "amount": 200.0
+          }
+        ]
+      },
+      "{\n    \"customer_id\": \"CUST1001\",\n    \"transactions\": [{\"id\": \"T001\", \"amount\": 100.00}, {\"id\": \"T002\", \"amount\": 200.00}, ...]\n}"
+    ],
+    [
+      {
+        "financial_report": {
+          "quarter": "Q1",
+          "year": 2023,
+          "revenue": 15000.0,
+          "expenses": 7000.0
+        }
+      },
+      "{\n    \"financial_report\": {\n        \"quarter\": \"Q1\",\n        \"year\": 2023,\n        \"revenue\": 15000.00,\n        \"expenses\": 7000.00,\n        ...\n    }\n}"
+    ],
+    [
+      {
+        "bank_name": "ABC Bank",
+        "branches": [
+          "New York",
+          "Los Angeles",
+          "Chicago"
+        ]
+      },
+      "{\n    \"bank_name\": \"ABC Bank\",\n    \"branches\": [\"New York\", \"Los Angeles\", \"Chicago\", ...]\n}"
+    ],
+    [
+      {
+        "customer_transactions": {
+          "customer_name": "Jane Smith",
+          "transactions": [
+            {
+              "transaction_id": "TXN1001",
+              "amount": 300.0
+            },
+            {
+              "transaction_id": "TXN1002",
+              "amount": 150.0
+            }
+          ]
+        }
+      },
+      "{\n    \"customer_transactions\": {\n        \"customer_name\": \"Jane Smith\",\n        \"transactions\": [\n            {\"transaction_id\": \"TXN1001\", \"amount\": 300.00},\n            {\"transaction_id\": \"TXN1002\", \"amount\": 150.00},\n            ...\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "payment_methods": [
+          "credit card",
+          "paypal",
+          "bank transfer"
+        ]
+      },
+      "{\n    \"payment_methods\": [\"credit card\", \"paypal\", \"bank transfer\", ...]\n}"
+    ],
+    [
+      {
+        "investment_portfolio": {
+          "stocks": [
+            "AAPL",
+            "GOOGL",
+            "AMZN"
+          ],
+          "bonds": [
+            "BOND1",
+            "BOND2"
+          ]
+        }
+      },
+      "{\n    \"investment_portfolio\": {\n        \"stocks\": [\"AAPL\", \"GOOGL\", \"AMZN\", ...],\n        \"bonds\": [\"BOND1\", \"BOND2\", ...]\n    }\n}"
+    ],
+    [
+      {
+        "workouts": [
+          {
+            "name": "Running",
+            "duration_minutes": 30
+          },
+          {
+            "name": "Cycling",
+            "duration_minutes": 45
+          }
+        ],
+        "weekly_goal_minutes": 150
+      },
+      "{\n  \"workouts\": [\n    {\n      \"name\": \"Running\",\n      \"duration_minutes\": 30\n    },\n    {\n      \"name\": \"Cycling\",\n      \"duration_minutes\": 45\n    },\n    ...\n  ],\n  \"weekly_goal_minutes\": 150\n}"
+    ],
+    [
+      {
+        "food_log": [
+          {
+            "meal": "Breakfast",
+            "calories": 300
+          },
+          {
+            "meal": "Lunch",
+            "calories": 600
+          },
+          {
+            "meal": "Dinner",
+            "calories": 700
+          }
+        ],
+        "daily_calorie_goal": 2000
+      },
+      "{\n  \"food_log\": [\n    {\n      \"meal\": \"Breakfast\",\n      \"calories\": 300\n    },\n    {\n      \"meal\": \"Lunch\",\n      \"calories\": 600\n    },\n    {\n      \"meal\": \"Dinner\",\n      \"calories\": 700\n    },\n    ...\n  ],\n  \"daily_calorie_goal\": 2000\n}"
+    ],
+    [
+      {
+        "hydration": {
+          "daily_water_intake_liters": 2.5,
+          "goal_liters": 3
+        }
+      },
+      "{\n  \"hydration\": {\n    \"daily_water_intake_liters\": 2.5,\n    \"goal_liters\": 3,\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "sleep_record": [
+          {
+            "day": "Monday",
+            "hours_slept": 7
+          },
+          {
+            "day": "Tuesday",
+            "hours_slept": 6.5
+          }
+        ],
+        "average_sleep_hours": 7
+      },
+      "{\n  \"sleep_record\": [\n    {\n      \"day\": \"Monday\",\n      \"hours_slept\": 7\n    },\n    {\n      \"day\": \"Tuesday\",\n      \"hours_slept\": 6.5\n    },\n    ...\n  ],\n  \"average_sleep_hours\": 7\n}"
+    ],
+    [
+      {
+        "fitness_goals": {
+          "steps_per_day": 10000,
+          "calories_burned_per_week": 3500
+        }
+      },
+      "{\n  \"fitness_goals\": {\n    \"steps_per_day\": 10000,\n    \"calories_burned_per_week\": 3500,\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "exercise_routines": [
+          {
+            "type": "Yoga",
+            "frequency": "Daily"
+          },
+          {
+            "type": "HIIT",
+            "frequency": "Thrice a week"
+          }
+        ]
+      },
+      "{\n  \"exercise_routines\": [\n    {\n      \"type\": \"Yoga\",\n      \"frequency\": \"Daily\"\n    },\n    {\n      \"type\": \"HIIT\",\n      \"frequency\": \"Thrice a week\"\n    },\n    ...\n  ]\n}"
+    ],
+    [
+      {
+        "mental_health": {
+          "meditation_minutes": 20,
+          "stress_level": "low"
+        }
+      },
+      "{\n  \"mental_health\": {\n    \"meditation_minutes\": 20,\n    \"stress_level\": \"low\",\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "body_measurements": [
+          {
+            "part": "Waist",
+            "measurement_in_cm": 80
+          },
+          {
+            "part": "Hip",
+            "measurement_in_cm": 95
+          }
+        ]
+      },
+      "{\n  \"body_measurements\": [\n    {\n      \"part\": \"Waist\",\n      \"measurement_in_cm\": 80\n    },\n    {\n      \"part\": \"Hip\",\n      \"measurement_in_cm\": 95\n    },\n    ...\n  ]\n}"
+    ],
+    [
+      {
+        "nutrition_plan": {
+          "protein_grams_per_day": 150,
+          "carbs_grams_per_day": 250,
+          "fats_grams_per_day": 70
+        }
+      },
+      "{\n  \"nutrition_plan\": {\n    \"protein_grams_per_day\": 150,\n    \"carbs_grams_per_day\": 250,\n    \"fats_grams_per_day\": 70,\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "wellness_activities": [
+          {
+            "activity": "Journaling",
+            "duration_minutes": 15
+          },
+          {
+            "activity": "Breathing exercises",
+            "duration_minutes": 10
+          }
+        ]
+      },
+      "{\n  \"wellness_activities\": [\n    {\n      \"activity\": \"Journaling\",\n      \"duration_minutes\": 15\n    },\n    {\n      \"activity\": \"Breathing exercises\",\n      \"duration_minutes\": 10\n    },\n    ...\n  ]\n}"
+    ],
+    [
+      {
+        "transportation_modes": [
+          "car",
+          "bike",
+          "bus",
+          "train"
+        ],
+        "current_location": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        }
+      },
+      "{\n  \"transportation_modes\": [\"car\", \"bike\", \"bus\", \"train\", ...],\n  \"current_location\": {\"latitude\": 37.7749, \"longitude\": -122.4194}\n}"
+    ],
+    [
+      {
+        "routes": [
+          {
+            "start": "A",
+            "end": "B",
+            "distance_km": 5.4
+          },
+          {
+            "start": "B",
+            "end": "C",
+            "distance_km": 3.2
+          }
+        ],
+        "last_updated": "2023-10-01T10:30:00Z"
+      },
+      "{\n  \"routes\": [\n    {\"start\": \"A\", \"end\": \"B\", \"distance_km\": 5.4},\n    {\"start\": \"B\", \"end\": \"C\", \"distance_km\": 3.2},\n    ...\n  ],\n  \"last_updated\": \"2023-10-01T10:30:00Z\"\n}"
+    ],
+    [
+      {
+        "vehicle": "bicycle",
+        "gps_coordinates": [
+          40.7128,
+          -74.006
+        ],
+        "speed_kmh": 15
+      },
+      "{\n  \"vehicle\": \"bicycle\",\n  \"gps_coordinates\": [40.7128, -74.0060, ...],\n  \"speed_kmh\": 15\n}"
+    ],
+    [
+      {
+        "passenger_count": 4,
+        "trip": {
+          "departure_point": "Central Station",
+          "arrival_point": "City Park",
+          "estimated_time_minutes": 25
+        }
+      },
+      "{\n  \"passenger_count\": 4,\n  \"trip\": {\n    \"departure_point\": \"Central Station\",\n    \"arrival_point\": \"City Park\",\n    \"estimated_time_minutes\": 25,\n    ...\n  }\n}"
+    ],
+    [
+      {
+        "bus_routes": [
+          "Route 1",
+          "Route 2",
+          "Route 3"
+        ],
+        "next_departure": {
+          "time": "14:00",
+          "route": "Route 1"
+        }
+      },
+      "{\n  \"bus_routes\": [\"Route 1\", \"Route 2\", \"Route 3\", ...],\n  \"next_departure\": {\"time\": \"14:00\", \"route\": \"Route 1\"}\n}"
+    ],
+    [
+      {
+        "station": "Main Terminal",
+        "bikes_available": 5,
+        "docks_available": 10
+      },
+      "{\n  \"station\": \"Main Terminal\",\n  \"bikes_available\": 5,\n  \"docks_available\": 10,\n  ...\n}"
+    ],
+    [
+      {
+        "destination": "Airport",
+        "flight_paths": [
+          "Path 1",
+          "Path 2"
+        ],
+        "on_time": true
+      },
+      "{\n  \"destination\": \"Airport\",\n  \"flight_paths\": [\"Path 1\", \"Path 2\", ...],\n  \"on_time\": true\n}"
+    ],
+    [
+      {
+        "delivery_vehicles": [
+          "Truck A",
+          "Van B",
+          "Bike C"
+        ],
+        "load_capacity_kg": 1000
+      },
+      "{\n  \"delivery_vehicles\": [\"Truck A\", \"Van B\", \"Bike C\", ...],\n  \"load_capacity_kg\": 1000\n}"
+    ],
+    [
+      {
+        "shipping_routes": [
+          {
+            "route_id": "R1",
+            "distance_km": 200
+          },
+          {
+            "route_id": "R2",
+            "distance_km": 150
+          }
+        ],
+        "preferred_mode": "rail"
+      },
+      "{\n  \"shipping_routes\": [\n    {\"route_id\": \"R1\", \"distance_km\": 200},\n    {\"route_id\": \"R2\", \"distance_km\": 150},\n    ...\n  ],\n  \"preferred_mode\": \"rail\"\n}"
+    ],
+    [
+      {
+        "car_rentals": [
+          "Sedan",
+          "SUV",
+          "Convertible"
+        ],
+        "office_location": {
+          "city": "Los Angeles",
+          "state": "CA"
+        }
+      },
+      "{\n  \"car_rentals\": [\"Sedan\", \"SUV\", \"Convertible\", ...],\n  \"office_location\": {\"city\": \"Los Angeles\", \"state\": \"CA\"}\n}"
+    ],
+    [
+      {
+        "library": "Central Library",
+        "books": [
+          {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "genres": [
+              "Fiction",
+              "Classic"
+            ]
+          },
+          {
+            "title": "1984",
+            "author": "George Orwell",
+            "genres": [
+              "Dystopian",
+              "Political Fiction"
+            ]
+          }
+        ],
+        "totalBooks": 2
+      },
+      "{\n  \"library\": \"Central Library\",\n  \"books\": [\n    {\n      \"title\": \"The Great Gatsby\",\n      \"author\": \"F. Scott Fitzgerald\",\n      \"genres\": [\"Fiction\", \"Classic\", ...]\n    },\n    {\n      \"title\": \"1984\",\n      \"author\": \"George Orwell\",\n      \"genres\": [\"Dystopian\", \"Political Fiction\", ...]\n    }\n  ],\n  \"totalBooks\": 2\n}"
+    ],
+    [
+      {
+        "library": "Downtown Branch",
+        "books": [
+          {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "genres": [
+              "Fiction",
+              "Drama"
+            ]
+          },
+          {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "genres": [
+              "Fiction",
+              "Young Adult"
+            ]
+          }
+        ],
+        "totalBooks": 2
+      },
+      "{\n  \"library\": \"Downtown Branch\",\n  \"books\": [\n    {\n      \"title\": \"To Kill a Mockingbird\",\n      \"author\": \"Harper Lee\",\n      \"genres\": [\"Fiction\", \"Drama\", ...]\n    },\n    {\n      \"title\": \"The Catcher in the Rye\",\n      \"author\": \"J.D. Salinger\",\n      \"genres\": [\"Fiction\", \"Young Adult\", ...]\n    }\n  ],\n  \"totalBooks\": 2\n}"
+    ],
+    [
+      {
+        "library": "Eastside Library",
+        "books": [
+          {
+            "title": "Moby Dick",
+            "author": "Herman Melville",
+            "genres": [
+              "Adventure",
+              "Classic"
+            ]
+          }
+        ],
+        "totalBooks": 1
+      },
+      "{\n  \"library\": \"Eastside Library\",\n  \"books\": [\n    {\n      \"title\": \"Moby Dick\",\n      \"author\": \"Herman Melville\",\n      \"genres\": [\"Adventure\", \"Classic\", ...]\n    }\n  ],\n  \"totalBooks\": 1\n}"
+    ],
+    [
+      {
+        "library": "West End Library",
+        "books": [
+          {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "genres": [
+              "Romance",
+              "Classic"
+            ]
+          },
+          {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "genres": [
+              "Fantasy",
+              "Adventure"
+            ]
+          },
+          {
+            "title": "War and Peace",
+            "author": "Leo Tolstoy",
+            "genres": [
+              "Historical",
+              "Epic"
+            ]
+          }
+        ],
+        "totalBooks": 3
+      },
+      "{\n  \"library\": \"West End Library\",\n  \"books\": [\n    {\n      \"title\": \"Pride and Prejudice\",\n      \"author\": \"Jane Austen\",\n      \"genres\": [\"Romance\", \"Classic\", ...]\n    },\n    {\n      \"title\": \"The Hobbit\",\n      \"author\": \"J.R.R. Tolkien\",\n      \"genres\": [\"Fantasy\", \"Adventure\", ...]\n    },\n    {\n      \"title\": \"War and Peace\",\n      \"author\": \"Leo Tolstoy\",\n      \"genres\": [\"Historical\", \"Epic\", ...]\n    }\n  ],\n  \"totalBooks\": 3\n}"
+    ],
+    [
+      {
+        "library": "North Library",
+        "books": [
+          {
+            "title": "The Odyssey",
+            "author": "Homer",
+            "genres": [
+              "Epic",
+              "Mythology"
+            ]
+          }
+        ],
+        "totalBooks": 1
+      },
+      "{\n  \"library\": \"North Library\",\n  \"books\": [\n    {\n      \"title\": \"The Odyssey\",\n      \"author\": \"Homer\",\n      \"genres\": [\"Epic\", \"Mythology\", ...]\n    }\n  ],\n  \"totalBooks\": 1\n}"
+    ],
+    [
+      {
+        "library": "Suburban Library",
+        "books": [
+          {
+            "title": "Gone with the Wind",
+            "author": "Margaret Mitchell",
+            "genres": [
+              "Historical",
+              "Romance"
+            ]
+          },
+          {
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "genres": [
+              "Dystopian",
+              "Science Fiction"
+            ]
+          }
+        ],
+        "totalBooks": 2
+      },
+      "{\n  \"library\": \"Suburban Library\",\n  \"books\": [\n    {\n      \"title\": \"Gone with the Wind\",\n      \"author\": \"Margaret Mitchell\",\n      \"genres\": [\"Historical\", \"Romance\", ...]\n    },\n    {\n      \"title\": \"Brave New World\",\n      \"author\": \"Aldous Huxley\",\n      \"genres\": [\"Dystopian\", \"Science Fiction\", ...]\n    }\n  ],\n  \"totalBooks\": 2\n}"
+    ],
+    [
+      {
+        "library": "City Library",
+        "books": [
+          {
+            "title": "Catch-22",
+            "author": "Joseph Heller",
+            "genres": [
+              "Satire",
+              "War"
+            ]
+          },
+          {
+            "title": "Lolita",
+            "author": "Vladimir Nabokov",
+            "genres": [
+              "Fiction",
+              "Classic"
+            ]
+          }
+        ],
+        "totalBooks": 2
+      },
+      "{\n  \"library\": \"City Library\",\n  \"books\": [\n    {\n      \"title\": \"Catch-22\",\n      \"author\": \"Joseph Heller\",\n      \"genres\": [\"Satire\", \"War\", ...]\n    },\n    {\n      \"title\": \"Lolita\",\n      \"author\": \"Vladimir Nabokov\",\n      \"genres\": [\"Fiction\", \"Classic\", ...]\n    }\n  ],\n  \"totalBooks\": 2\n}"
+    ],
+    [
+      {
+        "library": "University Library",
+        "books": [
+          {
+            "title": "The Brothers Karamazov",
+            "author": "Fyodor Dostoevsky",
+            "genres": [
+              "Philosophical",
+              "Drama"
+            ]
+          },
+          {
+            "title": "Anna Karenina",
+            "author": "Leo Tolstoy",
+            "genres": [
+              "Romance",
+              "Classic"
+            ]
+          }
+        ],
+        "totalBooks": 2
+      },
+      "{\n  \"library\": \"University Library\",\n  \"books\": [\n    {\n      \"title\": \"The Brothers Karamazov\",\n      \"author\": \"Fyodor Dostoevsky\",\n      \"genres\": [\"Philosophical\", \"Drama\", ...]\n    },\n    {\n      \"title\": \"Anna Karenina\",\n      \"author\": \"Leo Tolstoy\",\n      \"genres\": [\"Romance\", \"Classic\", ...]\n    }\n  ],\n  \"totalBooks\": 2\n}"
+    ],
+    [
+      {
+        "library": "Community Library",
+        "books": [
+          {
+            "title": "The Sound and the Fury",
+            "author": "William Faulkner",
+            "genres": [
+              "Fiction",
+              "Classic"
+            ]
+          }
+        ],
+        "totalBooks": 1
+      },
+      "{\n  \"library\": \"Community Library\",\n  \"books\": [\n    {\n      \"title\": \"The Sound and the Fury\",\n      \"author\": \"William Faulkner\",\n      \"genres\": [\"Fiction\", \"Classic\", ...]\n    }\n  ],\n  \"totalBooks\": 1\n}"
+    ],
+    [
+      {
+        "library": "Riverside Library",
+        "books": [
+          {
+            "title": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "genres": [
+              "Historical",
+              "Classic"
+            ]
+          },
+          {
+            "title": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "genres": [
+              "Psychological",
+              "Classic"
+            ]
+          }
+        ],
+        "totalBooks": 2
+      },
+      "{\n  \"library\": \"Riverside Library\",\n  \"books\": [\n    {\n      \"title\": \"A Tale of Two Cities\",\n      \"author\": \"Charles Dickens\",\n      \"genres\": [\"Historical\", \"Classic\", ...]\n    },\n    {\n      \"title\": \"Crime and Punishment\",\n      \"author\": \"Fyodor Dostoevsky\",\n      \"genres\": [\"Psychological\", \"Classic\", ...]\n    }\n  ],\n  \"totalBooks\": 2\n}"
+    ]
+  ]
+}

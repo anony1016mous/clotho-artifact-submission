@@ -1,0 +1,182 @@
+{
+  "test_0": {
+    "model_names": [
+      "BERT"
+    ],
+    "abstract": "In this study, we propose a novel federated learning approach utilizing BERT to enhance privacy-preserving capabilities in natural language processing tasks. By distributing the training of BERT across multiple devices, we ensure that sensitive data remains localized, thereby safeguarding user privacy. Our experiments demonstrate that this method maintains performance while mitigating privacy risks associated with centralized data storage."
+  },
+  "test_1": {
+    "model_names": [
+      "ResNet"
+    ],
+    "abstract": "This paper presents an innovative federated learning framework that integrates ResNet to improve privacy-preserving image classification. By avoiding the transfer of raw image data to a central server, our approach leverages ResNet's powerful feature extraction capabilities locally, ensuring that user data privacy is maintained without compromising model accuracy."
+  },
+  "test_2": {
+    "model_names": [
+      "VGG-16"
+    ],
+    "abstract": "We propose a privacy-preserving federated learning model based on VGG-16 for medical image analysis. This model allows hospitals to collaboratively train a robust image classification model while keeping sensitive patient data on-premises. Our results show that the federated VGG-16 model achieves comparable accuracy to centralized methods, with enhanced data privacy protection."
+  },
+  "test_3": {
+    "model_names": [
+      "GPT-2"
+    ],
+    "abstract": "In this work, we adapt GPT-2 for federated learning to provide a privacy-preserving solution for text generation applications. With data retained on individual devices, our approach curtails privacy risks associated with centralized training. Experimental results highlight that federated GPT-2 achieves near-centralized performance in generating coherent and contextually accurate text."
+  },
+  "test_4": {
+    "model_names": [
+      "YOLOv5"
+    ],
+    "abstract": "This research introduces a federated learning strategy utilizing YOLOv5 for privacy-preserving real-time object detection. By deploying YOLOv5 in a distributed manner across edge devices, we ensure that video data remains confidential while still benefiting from the model's rapid detection capabilities. The approach effectively balances performance and privacy concerns."
+  },
+  "test_5": {
+    "model_names": [
+      "Transformer"
+    ],
+    "abstract": "We explore the use of Transformer models in a federated learning setting to protect user data privacy during training. Our approach distributes the Transformer training process across multiple nodes, ensuring that data never leaves the local environment. The methodology proves effective, achieving high accuracy in language tasks while preserving data confidentiality."
+  },
+  "test_6": {
+    "model_names": [
+      "AlexNet"
+    ],
+    "abstract": "This paper presents a federated learning system designed around AlexNet to enable privacy-preserving image recognition. By leveraging the distributed nature of federated learning, AlexNet models are trained locally, significantly reducing the need to transmit raw image data. Our findings confirm the viability of this approach, maintaining recognition accuracy and enhancing privacy."
+  },
+  "test_7": {
+    "model_names": [
+      "EfficientNet"
+    ],
+    "abstract": "We propose a federated learning framework incorporating EfficientNet to enhance privacy in distributed image classification tasks. Our method ensures that all data processing occurs locally on user devices, utilizing EfficientNet's architecture to achieve high accuracy without compromising user privacy. This approach demonstrates the potential of privacy-preserving ML in real-world applications."
+  },
+  "test_8": {
+    "model_names": [
+      "DistilBERT"
+    ],
+    "abstract": "In this study, we adapt DistilBERT for federated learning to facilitate privacy-preserving sentiment analysis. By training DistilBERT across decentralized networks, our model protects user data from exposure, offering a secure method to perform text analysis. The distributed DistilBERT model maintains robust performance, aligning closely with centralized alternatives."
+  },
+  "test_9": {
+    "model_names": [
+      "MobileNet"
+    ],
+    "abstract": "This paper details a novel application of federated learning using MobileNet for privacy-preserving mobile image processing. MobileNet's lightweight architecture is ideal for on-device execution, allowing data to remain on user hardware and reducing privacy risks. Experimental results reveal that our approach sustains competitive accuracy while preserving user data."
+  },
+  "test_10": {
+    "model_names": [
+      "XLNet"
+    ],
+    "abstract": "We introduce a federated learning protocol utilizing XLNet for enhanced privacy in natural language understanding. By training XLNet models locally on distributed devices, we ensure sensitive user information remains secure. Our evaluation shows that federated XLNet performs comparably to centralized models, providing a viable solution for privacy-preserving NLP tasks."
+  },
+  "test_11": {
+    "model_names": [
+      "InceptionV3"
+    ],
+    "abstract": "This paper presents a federated learning approach using InceptionV3 to maintain user privacy in distributed image classification. By keeping image data on local devices, our method prevents exposure to privacy breaches. InceptionV3's effective feature extraction allows for high-accuracy classification without centralized data aggregation, thus preserving privacy."
+  },
+  "test_12": {
+    "model_names": [
+      "RoBERTa"
+    ],
+    "abstract": "In our research, we adapt RoBERTa for federated learning to provide a privacy-preserving solution for language model training. Localized training of RoBERTa ensures data does not leave the user's device, addressing privacy concerns while maintaining model efficacy. Our tests illustrate that federated RoBERTa can achieve performance on par with traditional methods."
+  },
+  "test_13": {
+    "model_names": [
+      "DeepLabV3"
+    ],
+    "abstract": "We propose a novel framework for federated learning utilizing DeepLabV3, aimed at privacy-preserving semantic segmentation. By executing DeepLabV3 in a decentralized manner, our method ensures that sensitive segmentation data remains safe on local devices. The approach delivers high segmentation accuracy, demonstrating its potential for privacy-aware deployments."
+  },
+  "test_14": {
+    "model_names": [
+      "NASNet"
+    ],
+    "abstract": "This study investigates the use of NASNet within a federated learning paradigm to ensure privacy in image classification tasks. By leveraging NASNet's architecture locally, our approach mitigates risks associated with data centralization. Results indicate that federated NASNet achieves excellent classification performance while safeguarding user privacy."
+  },
+  "test_15": {
+    "model_names": [
+      "OpenAI CLIP"
+    ],
+    "abstract": "We explore the integration of OpenAI CLIP into a federated learning system for privacy-preserving multimodal tasks. CLIP's ability to process text and images locally ensures that personal data remains confined to user devices. Our experiments demonstrate that federated CLIP performs effectively, maintaining privacy without sacrificing task accuracy."
+  },
+  "test_16": {
+    "model_names": [
+      "StyleGAN"
+    ],
+    "abstract": "This research proposes a federated learning framework utilizing StyleGAN for privacy-preserving generative image synthesis. By distributing the training process across multiple devices, our method keeps sensitive image data secure on local hardware. The federated StyleGAN model generates high-quality images while ensuring robust privacy protection."
+  },
+  "test_17": {
+    "model_names": [
+      "UNet"
+    ],
+    "abstract": "We present a federated learning approach based on UNet for privacy-preserving medical image segmentation. By keeping the segmentation tasks distributed across hospital networks, UNet ensures that patient data confidentiality is maintained. Our results confirm that federated UNet delivers comparable segmentation accuracy to centralized approaches, with enhanced privacy safeguards."
+  },
+  "test_18": {
+    "model_names": [
+      "ViT"
+    ],
+    "abstract": "In this work, we employ ViT in a federated learning setting to enhance privacy in image classification tasks. By ensuring that ViT operates on local devices, our method protects user data from potential breaches. The federated ViT model achieves competitive classification accuracy, proving its effectiveness in privacy-sensitive environments."
+  },
+  "test_19": {
+    "model_names": [
+      "T5"
+    ],
+    "abstract": "We introduce a federated learning solution using T5 for privacy-preserving text-to-text transformations. T5's adaptable architecture allows for distributed training, keeping text data secure on user devices. Our evaluation shows that federated T5 models maintain strong performance, offering a promising avenue for secure NLP applications."
+  },
+  "test_20": {
+    "model_names": [
+      "BigGAN"
+    ],
+    "abstract": "This paper explores a federated learning framework employing BigGAN for privacy-preserving generative modeling. By distributing BigGAN's training, we ensure that private data remains on local devices, reducing the risk of exposure. The results demonstrate that federated BigGAN produces high-quality generative outputs while respecting user privacy."
+  },
+  "test_21": {
+    "model_names": [
+      "DenseNet"
+    ],
+    "abstract": "We propose a federated learning approach using DenseNet to enhance privacy in distributed image classification tasks. DenseNet's efficient architecture allows for local training, ensuring that user images remain confidential. The federated DenseNet model achieves competitive performance, illustrating its viability for privacy-preserving machine learning."
+  },
+  "test_22": {
+    "model_names": [
+      "XGBoost"
+    ],
+    "abstract": "In this study, we adapt XGBoost for federated learning to provide a privacy-preserving solution for structured data analysis. By training XGBoost models locally on distributed datasets, we reduce the risk of data leaks while maintaining model accuracy. Our evaluation shows that federated XGBoost performs effectively, ensuring data confidentiality."
+  },
+  "test_23": {
+    "model_names": [
+      "Fast R-CNN"
+    ],
+    "abstract": "This research presents a federated learning framework using Fast R-CNN for privacy-preserving object detection. By deploying Fast R-CNN across multiple devices, we ensure that sensitive data is processed locally, enhancing privacy protection. Our approach achieves high detection accuracy without compromising data confidentiality."
+  },
+  "test_24": {
+    "model_names": [
+      "DeBERTa"
+    ],
+    "abstract": "We introduce a federated learning model utilizing DeBERTa for privacy-preserving natural language processing. By decentralizing DeBERTa's training, our method ensures that sensitive linguistic data remains secure on user devices. The federated DeBERTa model delivers strong NLP performance, matching centralized alternatives while safeguarding user privacy."
+  },
+  "test_25": {
+    "model_names": [
+      "Sparse R-CNN"
+    ],
+    "abstract": "We present a federated learning approach employing Sparse R-CNN for privacy-preserving object detection in edge computing environments. By keeping object detection tasks decentralized, our method ensures that video data remains confidential on local devices. The results indicate that federated Sparse R-CNN maintains high detection accuracy, supporting privacy-conscious applications."
+  },
+  "test_26": {
+    "model_names": [
+      "BART"
+    ],
+    "abstract": "In this paper, we adapt BART for federated learning to enable privacy-preserving text summarization. By ensuring that BART processes remain distributed across user devices, our method protects textual data from exposure. The federated BART model achieves impressive summarization quality, demonstrating its potential for secure NLP tasks."
+  },
+  "test_27": {
+    "model_names": [
+      "CycleGAN"
+    ],
+    "abstract": "This study explores a federated learning framework using CycleGAN for privacy-preserving image-to-image translation. By executing CycleGAN's processes locally, we ensure that image data is protected from breaches. The approach results in high-quality translations, confirming the effectiveness of federated CycleGAN for privacy-aware applications."
+  },
+  "test_28": {
+    "model_names": [
+      "Swin Transformer"
+    ],
+    "abstract": "We propose a federated learning model integrating Swin Transformer for privacy-preserving visual recognition. Swin Transformer's local training on user devices prevents data exposure, aligning with privacy requirements. Our results show that federated Swin Transformer offers competitive recognition performance, providing a robust solution for privacy-sensitive tasks."
+  },
+  "test_29": {
+    "model_names": [
+      "BERTweet"
+    ],
+    "abstract": "This paper presents a federated learning approach utilizing BERTweet for privacy-preserving sentiment analysis on social media data. By distributing BERTweet's training across user devices, we ensure that personal data remains confidential. The federated BERTweet model delivers effective performance, comparable to centralized techniques while prioritizing user privacy."
+  }
+}

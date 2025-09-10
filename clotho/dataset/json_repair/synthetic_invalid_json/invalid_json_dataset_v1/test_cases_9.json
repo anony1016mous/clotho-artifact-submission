@@ -1,0 +1,1151 @@
+{
+  "possible_fix": "Replace Python constants None, True, and False with null, true, and false",
+  "test_cases": [
+    [
+      {
+        "username": "johndoe",
+        "age": 30,
+        "email_verified": true,
+        "preferences": {
+          "newsletter": true,
+          "dark_mode": false
+        },
+        "address": null
+      },
+      "{\n    \"username\": \"johndoe\",\n    \"age\": 30,\n    \"email_verified\": True,\n    \"preferences\": {\n        \"newsletter\": True,\n        \"dark_mode\": False\n    },\n    \"address\": None\n}"
+    ],
+    [
+      {
+        "name": "Jane Smith",
+        "contact": {
+          "email": "jane.smith@example.com",
+          "phone": null
+        },
+        "is_active": false,
+        "has_premium": true
+      },
+      "{\n    \"name\": \"Jane Smith\",\n    \"contact\": {\n        \"email\": \"jane.smith@example.com\",\n        \"phone\": None\n    },\n    \"is_active\": False,\n    \"has_premium\": True\n}"
+    ],
+    [
+      {
+        "user_id": 9876,
+        "profile_complete": true,
+        "notifications": {
+          "sms": false,
+          "email": true
+        },
+        "last_login": null
+      },
+      "{\n    \"user_id\": 9876,\n    \"profile_complete\": True,\n    \"notifications\": {\n        \"sms\": False,\n        \"email\": True\n    },\n    \"last_login\": None\n}"
+    ],
+    [
+      {
+        "first_name": "Emily",
+        "last_name": "Clark",
+        "bio": null,
+        "settings": {
+          "two_factor": true,
+          "marketing_emails": false
+        }
+      },
+      "{\n    \"first_name\": \"Emily\",\n    \"last_name\": \"Clark\",\n    \"bio\": None,\n    \"settings\": {\n        \"two_factor\": True,\n        \"marketing_emails\": False\n    }\n}"
+    ],
+    [
+      {
+        "account_id": 12345,
+        "verified": false,
+        "friend_count": 300,
+        "notifications_enabled": true,
+        "subscription": null
+      },
+      "{\n    \"account_id\": 12345,\n    \"verified\": False,\n    \"friend_count\": 300,\n    \"notifications_enabled\": True,\n    \"subscription\": None\n}"
+    ],
+    [
+      {
+        "login_status": true,
+        "membership_level": "premium",
+        "preferences": {
+          "ads_personalized": false,
+          "location_tracking": true
+        },
+        "backup_email": null
+      },
+      "{\n    \"login_status\": True,\n    \"membership_level\": \"premium\",\n    \"preferences\": {\n        \"ads_personalized\": False,\n        \"location_tracking\": True\n    },\n    \"backup_email\": None\n}"
+    ],
+    [
+      {
+        "user_name": "alex_r",
+        "is_online": false,
+        "theme": "light",
+        "last_purchase": null,
+        "privacy_settings": {
+          "share_location": false,
+          "search_history": true
+        }
+      },
+      "{\n    \"user_name\": \"alex_r\",\n    \"is_online\": False,\n    \"theme\": \"light\",\n    \"last_purchase\": None,\n    \"privacy_settings\": {\n        \"share_location\": False,\n        \"search_history\": True\n    }\n}"
+    ],
+    [
+      {
+        "profile_name": "Chris",
+        "birthdate": null,
+        "notification_settings": {
+          "push_notifications": true,
+          "email_alerts": false
+        },
+        "is_authenticated": true
+      },
+      "{\n    \"profile_name\": \"Chris\",\n    \"birthdate\": None,\n    \"notification_settings\": {\n        \"push_notifications\": True,\n        \"email_alerts\": False\n    },\n    \"is_authenticated\": True\n}"
+    ],
+    [
+      {
+        "display_name": "Samuel",
+        "has_2fa": false,
+        "login_attempts": 5,
+        "email_visible": true,
+        "alternate_contact": null
+      },
+      "{\n    \"display_name\": \"Samuel\",\n    \"has_2fa\": False,\n    \"login_attempts\": 5,\n    \"email_visible\": True,\n    \"alternate_contact\": None\n}"
+    ],
+    [
+      {
+        "nickname": "lilybeth",
+        "status": "active",
+        "location": null,
+        "email_verified": true,
+        "preferences": {
+          "receive_notifications": true,
+          "auto_update": false
+        }
+      },
+      "{\n    \"nickname\": \"lilybeth\",\n    \"status\": \"active\",\n    \"location\": None,\n    \"email_verified\": True,\n    \"preferences\": {\n        \"receive_notifications\": True,\n        \"auto_update\": False\n    }\n}"
+    ],
+    [
+      {
+        "order_id": 12345,
+        "customer": {
+          "name": "John Doe",
+          "member": true
+        },
+        "items": [
+          {
+            "product": "Laptop",
+            "price": 999.99,
+            "quantity": 1
+          }
+        ],
+        "shipped": false
+      },
+      "{\n    \"order_id\": 12345,\n    \"customer\": {\n        \"name\": \"John Doe\",\n        \"member\": True\n    },\n    \"items\": [\n        {\n            \"product\": \"Laptop\",\n            \"price\": 999.99,\n            \"quantity\": 1\n        }\n    ],\n    \"shipped\": False\n}"
+    ],
+    [
+      {
+        "order_id": 67890,
+        "customer": {
+          "name": "Jane Smith",
+          "member": false
+        },
+        "items": [
+          {
+            "product": "Smartphone",
+            "price": 499.99,
+            "quantity": 2
+          },
+          {
+            "product": "Headphones",
+            "price": 89.99,
+            "quantity": 1
+          }
+        ],
+        "completed": null
+      },
+      "{\n    \"order_id\": 67890,\n    \"customer\": {\n        \"name\": \"Jane Smith\",\n        \"member\": False\n    },\n    \"items\": [\n        {\n            \"product\": \"Smartphone\",\n            \"price\": 499.99,\n            \"quantity\": 2\n        },\n        {\n            \"product\": \"Headphones\",\n            \"price\": 89.99,\n            \"quantity\": 1\n        }\n    ],\n    \"completed\": None\n}"
+    ],
+    [
+      {
+        "order_id": 11121,
+        "customer": {
+          "name": "Alice Johnson",
+          "member": true
+        },
+        "items": [
+          {
+            "product": "Tablet",
+            "price": 299.99,
+            "quantity": 1
+          }
+        ],
+        "gift_wrap": true
+      },
+      "{\n    \"order_id\": 11121,\n    \"customer\": {\n        \"name\": \"Alice Johnson\",\n        \"member\": True\n    },\n    \"items\": [\n        {\n            \"product\": \"Tablet\",\n            \"price\": 299.99,\n            \"quantity\": 1\n        }\n    ],\n    \"gift_wrap\": True\n}"
+    ],
+    [
+      {
+        "order_id": 14156,
+        "customer": {
+          "name": "Bob Brown",
+          "member": false
+        },
+        "items": [
+          {
+            "product": "Monitor",
+            "price": 199.99,
+            "quantity": 2
+          }
+        ],
+        "returned": null
+      },
+      "{\n    \"order_id\": 14156,\n    \"customer\": {\n        \"name\": \"Bob Brown\",\n        \"member\": False\n    },\n    \"items\": [\n        {\n            \"product\": \"Monitor\",\n            \"price\": 199.99,\n            \"quantity\": 2\n        }\n    ],\n    \"returned\": None\n}"
+    ],
+    [
+      {
+        "order_id": 17182,
+        "customer": {
+          "name": "Charlie Davis",
+          "member": true
+        },
+        "items": [
+          {
+            "product": "Camera",
+            "price": 899.99,
+            "quantity": 1
+          }
+        ],
+        "expedited_shipping": false
+      },
+      "{\n    \"order_id\": 17182,\n    \"customer\": {\n        \"name\": \"Charlie Davis\",\n        \"member\": True\n    },\n    \"items\": [\n        {\n            \"product\": \"Camera\",\n            \"price\": 899.99,\n            \"quantity\": 1\n        }\n    ],\n    \"expedited_shipping\": False\n}"
+    ],
+    [
+      {
+        "order_id": 20234,
+        "customer": {
+          "name": "Diana Evans",
+          "member": false
+        },
+        "items": [
+          {
+            "product": "Printer",
+            "price": 129.99,
+            "quantity": 1
+          }
+        ],
+        "coupon_applied": null
+      },
+      "{\n    \"order_id\": 20234,\n    \"customer\": {\n        \"name\": \"Diana Evans\",\n        \"member\": False\n    },\n    \"items\": [\n        {\n            \"product\": \"Printer\",\n            \"price\": 129.99,\n            \"quantity\": 1\n        }\n    ],\n    \"coupon_applied\": None\n}"
+    ],
+    [
+      {
+        "order_id": 22256,
+        "customer": {
+          "name": "Ethan Frank",
+          "member": true
+        },
+        "items": [
+          {
+            "product": "Smartwatch",
+            "price": 199.99,
+            "quantity": 1
+          }
+        ],
+        "gift_message": true
+      },
+      "{\n    \"order_id\": 22256,\n    \"customer\": {\n        \"name\": \"Ethan Frank\",\n        \"member\": True\n    },\n    \"items\": [\n        {\n            \"product\": \"Smartwatch\",\n            \"price\": 199.99,\n            \"quantity\": 1\n        }\n    ],\n    \"gift_message\": True\n}"
+    ],
+    [
+      {
+        "order_id": 24387,
+        "customer": {
+          "name": "Grace Hall",
+          "member": false
+        },
+        "items": [
+          {
+            "product": "Router",
+            "price": 59.99,
+            "quantity": 1
+          }
+        ],
+        "express_checkout": null
+      },
+      "{\n    \"order_id\": 24387,\n    \"customer\": {\n        \"name\": \"Grace Hall\",\n        \"member\": False\n    },\n    \"items\": [\n        {\n            \"product\": \"Router\",\n            \"price\": 59.99,\n            \"quantity\": 1\n        }\n    ],\n    \"express_checkout\": None\n}"
+    ],
+    [
+      {
+        "order_id": 28293,
+        "customer": {
+          "name": "Hannah Ives",
+          "member": true
+        },
+        "items": [
+          {
+            "product": "Keyboard",
+            "price": 30.99,
+            "quantity": 2
+          }
+        ],
+        "loyalty_discount": false
+      },
+      "{\n    \"order_id\": 28293,\n    \"customer\": {\n        \"name\": \"Hannah Ives\",\n        \"member\": True\n    },\n    \"items\": [\n        {\n            \"product\": \"Keyboard\",\n            \"price\": 30.99,\n            \"quantity\": 2\n        }\n    ],\n    \"loyalty_discount\": False\n}"
+    ],
+    [
+      {
+        "order_id": 30344,
+        "customer": {
+          "name": "Ian James",
+          "member": true
+        },
+        "items": [
+          {
+            "product": "Mouse",
+            "price": 20.99,
+            "quantity": 1
+          }
+        ],
+        "pre_order": null
+      },
+      "{\n    \"order_id\": 30344,\n    \"customer\": {\n        \"name\": \"Ian James\",\n        \"member\": True\n    },\n    \"items\": [\n        {\n            \"product\": \"Mouse\",\n            \"price\": 20.99,\n            \"quantity\": 1\n        }\n    ],\n    \"pre_order\": None\n}"
+    ],
+    [
+      {
+        "review_id": 101,
+        "title": "Inception",
+        "rating": 9.0,
+        "is_recommended": true,
+        "comments": null
+      },
+      "{\n    \"review_id\": 101,\n    \"title\": \"Inception\",\n    \"rating\": 9.0,\n    \"is_recommended\": True,\n    \"comments\": None\n}"
+    ],
+    [
+      {
+        "review_id": 202,
+        "title": "Breaking Bad",
+        "rating": 9.5,
+        "is_recommended": true,
+        "comments": "A masterpiece of storytelling."
+      },
+      "{\n    \"review_id\": 202,\n    \"title\": \"Breaking Bad\",\n    \"rating\": 9.5,\n    \"is_recommended\": True,\n    \"comments\": \"A masterpiece of storytelling.\"\n}"
+    ],
+    [
+      {
+        "review_id": 303,
+        "title": "The Witcher",
+        "rating": 8.0,
+        "is_recommended": false,
+        "comments": "Entertaining, but not for everyone."
+      },
+      "{\n    \"review_id\": 303,\n    \"title\": \"The Witcher\",\n    \"rating\": 8.0,\n    \"is_recommended\": False,\n    \"comments\": \"Entertaining, but not for everyone.\"\n}"
+    ],
+    [
+      {
+        "review_id": 404,
+        "title": "The Mandalorian",
+        "rating": 9.2,
+        "is_recommended": true,
+        "comments": null
+      },
+      "{\n    \"review_id\": 404,\n    \"title\": \"The Mandalorian\",\n    \"rating\": 9.2,\n    \"is_recommended\": True,\n    \"comments\": None\n}"
+    ],
+    [
+      {
+        "review_id": 505,
+        "title": "Game of Thrones",
+        "rating": 7.5,
+        "is_recommended": false,
+        "comments": "Great start, but disappointing ending."
+      },
+      "{\n    \"review_id\": 505,\n    \"title\": \"Game of Thrones\",\n    \"rating\": 7.5,\n    \"is_recommended\": False,\n    \"comments\": \"Great start, but disappointing ending.\"\n}"
+    ],
+    [
+      {
+        "review_id": 606,
+        "title": "The Crown",
+        "rating": 8.7,
+        "is_recommended": true,
+        "comments": "Excellent portrayal of the British monarchy."
+      },
+      "{\n    \"review_id\": 606,\n    \"title\": \"The Crown\",\n    \"rating\": 8.7,\n    \"is_recommended\": True,\n    \"comments\": \"Excellent portrayal of the British monarchy.\"\n}"
+    ],
+    [
+      {
+        "review_id": 707,
+        "title": "Stranger Things",
+        "rating": 8.9,
+        "is_recommended": true,
+        "comments": null
+      },
+      "{\n    \"review_id\": 707,\n    \"title\": \"Stranger Things\",\n    \"rating\": 8.9,\n    \"is_recommended\": True,\n    \"comments\": None\n}"
+    ],
+    [
+      {
+        "review_id": 808,
+        "title": "The Office",
+        "rating": 9.3,
+        "is_recommended": true,
+        "comments": "One of the best sitcoms of all time."
+      },
+      "{\n    \"review_id\": 808,\n    \"title\": \"The Office\",\n    \"rating\": 9.3,\n    \"is_recommended\": True,\n    \"comments\": \"One of the best sitcoms of all time.\"\n}"
+    ],
+    [
+      {
+        "review_id": 909,
+        "title": "Friends",
+        "rating": 8.5,
+        "is_recommended": true,
+        "comments": "An iconic sitcom that remains popular."
+      },
+      "{\n    \"review_id\": 909,\n    \"title\": \"Friends\",\n    \"rating\": 8.5,\n    \"is_recommended\": True,\n    \"comments\": \"An iconic sitcom that remains popular.\"\n}"
+    ],
+    [
+      {
+        "review_id": 1010,
+        "title": "Black Mirror",
+        "rating": 9.0,
+        "is_recommended": true,
+        "comments": null
+      },
+      "{\n    \"review_id\": 1010,\n    \"title\": \"Black Mirror\",\n    \"rating\": 9.0,\n    \"is_recommended\": True,\n    \"comments\": None\n}"
+    ],
+    [
+      {
+        "post_id": 1,
+        "user": "john_doe",
+        "content": "Check out my new blog post!",
+        "likes": 245,
+        "comments": [
+          {
+            "user": "jane_smith",
+            "comment": "Great post!",
+            "is_spam": false
+          }
+        ],
+        "tags": null
+      },
+      "{\n  \"post_id\": 1,\n  \"user\": \"john_doe\",\n  \"content\": \"Check out my new blog post!\",\n  \"likes\": 245,\n  \"comments\": [\n    {\n      \"user\": \"jane_smith\",\n      \"comment\": \"Great post!\",\n      \"is_spam\": False\n    }\n  ],\n  \"tags\": None\n}"
+    ],
+    [
+      {
+        "post_id": 2,
+        "user": "alice_b",
+        "content": "Beautiful day at the park!",
+        "likes": 150,
+        "comments": [],
+        "shared": true
+      },
+      "{\n  \"post_id\": 2,\n  \"user\": \"alice_b\",\n  \"content\": \"Beautiful day at the park!\",\n  \"likes\": 150,\n  \"comments\": [],\n  \"shared\": True\n}"
+    ],
+    [
+      {
+        "post_id": 3,
+        "user": "mike_the_bike",
+        "content": "Just finished a 50-mile ride!",
+        "likes": 320,
+        "comments": [
+          {
+            "user": "cyclist_anna",
+            "comment": "Awesome!",
+            "is_spam": false
+          },
+          {
+            "user": "biker_tom",
+            "comment": "Incredible distance",
+            "is_spam": false
+          }
+        ],
+        "tags": [
+          "cycling",
+          "fitness"
+        ]
+      },
+      "{\n  \"post_id\": 3,\n  \"user\": \"mike_the_bike\",\n  \"content\": \"Just finished a 50-mile ride!\",\n  \"likes\": 320,\n  \"comments\": [\n    {\n      \"user\": \"cyclist_anna\",\n      \"comment\": \"Awesome!\",\n      \"is_spam\": False\n    },\n    {\n      \"user\": \"biker_tom\",\n      \"comment\": \"Incredible distance\",\n      \"is_spam\": False\n    }\n  ],\n  \"tags\": [\"cycling\", \"fitness\"]\n}"
+    ],
+    [
+      {
+        "post_id": 4,
+        "user": "chef_ron",
+        "content": "New recipe out: Spaghetti Carbonara",
+        "likes": 80,
+        "comments": [
+          {
+            "user": "food_lover",
+            "comment": "Can't wait to try this!",
+            "is_spam": false
+          }
+        ],
+        "shared": false
+      },
+      "{\n  \"post_id\": 4,\n  \"user\": \"chef_ron\",\n  \"content\": \"New recipe out: Spaghetti Carbonara\",\n  \"likes\": 80,\n  \"comments\": [\n    {\n      \"user\": \"food_lover\",\n      \"comment\": \"Can't wait to try this!\",\n      \"is_spam\": False\n    }\n  ],\n  \"shared\": False\n}"
+    ],
+    [
+      {
+        "post_id": 5,
+        "user": "travel_jenny",
+        "content": "Exploring the mountains!",
+        "likes": 560,
+        "tags": [
+          "travel",
+          "adventure"
+        ],
+        "sponsored": null
+      },
+      "{\n  \"post_id\": 5,\n  \"user\": \"travel_jenny\",\n  \"content\": \"Exploring the mountains!\",\n  \"likes\": 560,\n  \"tags\": [\"travel\", \"adventure\"],\n  \"sponsored\": None\n}"
+    ],
+    [
+      {
+        "post_id": 6,
+        "user": "artistic_alex",
+        "content": "New paintings up for sale!",
+        "likes": 220,
+        "comments": [
+          {
+            "user": "art_enthusiast",
+            "comment": "Beautiful work!",
+            "is_spam": false
+          }
+        ],
+        "shared": true
+      },
+      "{\n  \"post_id\": 6,\n  \"user\": \"artistic_alex\",\n  \"content\": \"New paintings up for sale!\",\n  \"likes\": 220,\n  \"comments\": [\n    {\n      \"user\": \"art_enthusiast\",\n      \"comment\": \"Beautiful work!\",\n      \"is_spam\": False\n    }\n  ],\n  \"shared\": True\n}"
+    ],
+    [
+      {
+        "post_id": 7,
+        "user": "tech_guru",
+        "content": "Reviewing the latest smartphone",
+        "likes": 400,
+        "comments": [],
+        "tags": [
+          "technology",
+          "review"
+        ],
+        "sponsored": false
+      },
+      "{\n  \"post_id\": 7,\n  \"user\": \"tech_guru\",\n  \"content\": \"Reviewing the latest smartphone\",\n  \"likes\": 400,\n  \"comments\": [],\n  \"tags\": [\"technology\", \"review\"],\n  \"sponsored\": False\n}"
+    ],
+    [
+      {
+        "post_id": 8,
+        "user": "fitness_fanatic",
+        "content": "Morning yoga session complete",
+        "likes": 350,
+        "comments": [
+          {
+            "user": "yoga_lover",
+            "comment": "So inspiring!",
+            "is_spam": false
+          }
+        ],
+        "shared": true
+      },
+      "{\n  \"post_id\": 8,\n  \"user\": \"fitness_fanatic\",\n  \"content\": \"Morning yoga session complete\",\n  \"likes\": 350,\n  \"comments\": [\n    {\n      \"user\": \"yoga_lover\",\n      \"comment\": \"So inspiring!\",\n      \"is_spam\": False\n    }\n  ],\n  \"shared\": True\n}"
+    ],
+    [
+      {
+        "post_id": 9,
+        "user": "nature_nick",
+        "content": "Captured a stunning sunset!",
+        "likes": 430,
+        "comments": [
+          {
+            "user": "sunset_chaser",
+            "comment": "Breathtaking!",
+            "is_spam": false
+          }
+        ],
+        "tags": [
+          "nature",
+          "photography"
+        ]
+      },
+      "{\n  \"post_id\": 9,\n  \"user\": \"nature_nick\",\n  \"content\": \"Captured a stunning sunset!\",\n  \"likes\": 430,\n  \"comments\": [\n    {\n      \"user\": \"sunset_chaser\",\n      \"comment\": \"Breathtaking!\",\n      \"is_spam\": False\n    }\n  ],\n  \"tags\": [\"nature\", \"photography\"]\n}"
+    ],
+    [
+      {
+        "post_id": 10,
+        "user": "crafty_cara",
+        "content": "DIY projects for the weekend",
+        "likes": 290,
+        "comments": [],
+        "tags": null
+      },
+      "{\n  \"post_id\": 10,\n  \"user\": \"crafty_cara\",\n  \"content\": \"DIY projects for the weekend\",\n  \"likes\": 290,\n  \"comments\": [],\n  \"tags\": None\n}"
+    ],
+    [
+      {
+        "sensorId": "12345",
+        "temperature": 22.5,
+        "humidity": 60.2,
+        "batteryLow": false,
+        "lastUpdated": null
+      },
+      "{\n    \"sensorId\": \"12345\",\n    \"temperature\": 22.5,\n    \"humidity\": 60.2,\n    \"batteryLow\": False,\n    \"lastUpdated\": None\n}"
+    ],
+    [
+      {
+        "deviceName": "Thermostat",
+        "status": "active",
+        "settings": {
+          "mode": "auto",
+          "temperatureThreshold": 19.5,
+          "alertsEnabled": true
+        }
+      },
+      "{\n    \"deviceName\": \"Thermostat\",\n    \"status\": \"active\",\n    \"settings\": {\n        \"mode\": \"auto\",\n        \"temperatureThreshold\": 19.5,\n        \"alertsEnabled\": True\n    }\n}"
+    ],
+    [
+      {
+        "sensorId": "67890",
+        "data": {
+          "temperature": null,
+          "humidity": null,
+          "pressure": 1013.25
+        },
+        "connected": true
+      },
+      "{\n    \"sensorId\": \"67890\",\n    \"data\": {\n        \"temperature\": None,\n        \"humidity\": None,\n        \"pressure\": 1013.25\n    },\n    \"connected\": True\n}"
+    ],
+    [
+      {
+        "location": "Warehouse A",
+        "sensors": [
+          {
+            "id": "001",
+            "type": "temperature",
+            "active": true
+          },
+          {
+            "id": "002",
+            "type": "humidity",
+            "active": false
+          }
+        ],
+        "lastSync": "2023-10-01T12:00:00Z"
+      },
+      "{\n    \"location\": \"Warehouse A\",\n    \"sensors\": [\n        {\"id\": \"001\", \"type\": \"temperature\", \"active\": True},\n        {\"id\": \"002\", \"type\": \"humidity\", \"active\": False}\n    ],\n    \"lastSync\": \"2023-10-01T12:00:00Z\"\n}"
+    ],
+    [
+      {
+        "deviceId": "abc123",
+        "firmwareVersion": "1.2.3",
+        "online": true,
+        "lastCheckIn": null
+      },
+      "{\n    \"deviceId\": \"abc123\",\n    \"firmwareVersion\": \"1.2.3\",\n    \"online\": True,\n    \"lastCheckIn\": None\n}"
+    ],
+    [
+      {
+        "alerts": {
+          "temperature": true,
+          "humidity": false,
+          "battery": null
+        },
+        "alertThresholds": {
+          "temperature": 25.0,
+          "humidity": 70
+        }
+      },
+      "{\n    \"alerts\": {\n        \"temperature\": True,\n        \"humidity\": False,\n        \"battery\": None\n    },\n    \"alertThresholds\": {\n        \"temperature\": 25.0,\n        \"humidity\": 70\n    }\n}"
+    ],
+    [
+      {
+        "gatewayId": "G123",
+        "active": false,
+        "sensorsConnected": null,
+        "networkStatus": "disconnected"
+      },
+      "{\n    \"gatewayId\": \"G123\",\n    \"active\": False,\n    \"sensorsConnected\": None,\n    \"networkStatus\": \"disconnected\"\n}"
+    ],
+    [
+      {
+        "sensor": {
+          "id": "sensor789",
+          "type": "pressure",
+          "isCalibrated": true
+        },
+        "calibrationDate": "2023-09-25",
+        "errors": []
+      },
+      "{\n    \"sensor\": {\n        \"id\": \"sensor789\",\n        \"type\": \"pressure\",\n        \"isCalibrated\": True\n    },\n    \"calibrationDate\": \"2023-09-25\",\n    \"errors\": []\n}"
+    ],
+    [
+      {
+        "locationId": "Loc001",
+        "temperatureSensors": 3,
+        "humiditySensors": 2,
+        "batteriesLow": false
+      },
+      "{\n    \"locationId\": \"Loc001\",\n    \"temperatureSensors\": 3,\n    \"humiditySensors\": 2,\n    \"batteriesLow\": False\n}"
+    ],
+    [
+      {
+        "network": {
+          "ssid": "IoT_Network",
+          "connected": false,
+          "lastChecked": "2023-10-05T08:30:00Z"
+        },
+        "maintenanceDue": null
+      },
+      "{\n    \"network\": {\n        \"ssid\": \"IoT_Network\",\n        \"connected\": False,\n        \"lastChecked\": \"2023-10-05T08:30:00Z\"\n    },\n    \"maintenanceDue\": None\n}"
+    ],
+    [
+      {
+        "temperature": 23.5,
+        "humidity": 68,
+        "conditions": "Partly cloudy",
+        "isDaytime": true
+      },
+      "{\n    \"temperature\": 23.5,\n    \"humidity\": 68,\n    \"conditions\": \"Partly cloudy\",\n    \"isDaytime\": True\n}"
+    ],
+    [
+      {
+        "city": "Los Angeles",
+        "forecast": [
+          {
+            "day": "Monday",
+            "high": 30,
+            "low": 18
+          },
+          {
+            "day": "Tuesday",
+            "high": 28,
+            "low": 17
+          }
+        ],
+        "alerts": null
+      },
+      "{\n    \"city\": \"Los Angeles\",\n    \"forecast\": [\n        {\"day\": \"Monday\", \"high\": 30, \"low\": 18},\n        {\"day\": \"Tuesday\", \"high\": 28, \"low\": 17}\n    ],\n    \"alerts\": None\n}"
+    ],
+    [
+      {
+        "weather_station": "Station 42",
+        "readings": [
+          {
+            "time": "08:00",
+            "temperature": 20.1,
+            "precipitation": false
+          },
+          {
+            "time": "12:00",
+            "temperature": 24.3,
+            "precipitation": true
+          }
+        ]
+      },
+      "{\n    \"weather_station\": \"Station 42\",\n    \"readings\": [\n        {\"time\": \"08:00\", \"temperature\": 20.1, \"precipitation\": False},\n        {\"time\": \"12:00\", \"temperature\": 24.3, \"precipitation\": True}\n    ]\n}"
+    ],
+    [
+      {
+        "region": "Midwest",
+        "average_rainfall": 35.2,
+        "expected_storms": null,
+        "is_severe_warning": false
+      },
+      "{\n    \"region\": \"Midwest\",\n    \"average_rainfall\": 35.2,\n    \"expected_storms\": None,\n    \"is_severe_warning\": False\n}"
+    ],
+    [
+      {
+        "temperature": [
+          15,
+          17,
+          20,
+          18
+        ],
+        "status": "Sunny",
+        "updated": true
+      },
+      "{\n    \"temperature\": [15, 17, 20, 18],\n    \"status\": \"Sunny\",\n    \"updated\": True\n}"
+    ],
+    [
+      {
+        "conditions": "Rainy",
+        "alerts": {
+          "floodWarning": true,
+          "windAdvisory": false
+        },
+        "alerts_details": null
+      },
+      "{\n    \"conditions\": \"Rainy\",\n    \"alerts\": {\"floodWarning\": True, \"windAdvisory\": False},\n    \"alerts_details\": None\n}"
+    ],
+    [
+      {
+        "location": "New York",
+        "forecast": {
+          "today": {
+            "temperature": 26,
+            "humidity": 70
+          },
+          "tomorrow": {
+            "temperature": 25,
+            "humidity": 68,
+            "precipitation": null
+          }
+        }
+      },
+      "{\n    \"location\": \"New York\",\n    \"forecast\": {\n        \"today\": {\"temperature\": 26, \"humidity\": 70},\n        \"tomorrow\": {\"temperature\": 25, \"humidity\": 68, \"precipitation\": None}\n    }\n}"
+    ],
+    [
+      {
+        "city": "Tokyo",
+        "hourly_data": [
+          {
+            "hour": "06:00",
+            "temp": 19.5,
+            "rain": false
+          },
+          {
+            "hour": "09:00",
+            "temp": 23.1,
+            "rain": true
+          }
+        ]
+      },
+      "{\n    \"city\": \"Tokyo\",\n    \"hourly_data\": [\n        {\"hour\": \"06:00\", \"temp\": 19.5, \"rain\": False},\n        {\"hour\": \"09:00\", \"temp\": 23.1, \"rain\": True}\n    ]\n}"
+    ],
+    [
+      {
+        "city": "Paris",
+        "weather": "Cloudy",
+        "humidity": 82,
+        "active_warnings": null
+      },
+      "{\n    \"city\": \"Paris\",\n    \"weather\": \"Cloudy\",\n    \"humidity\": 82,\n    \"active_warnings\": None\n}"
+    ],
+    [
+      {
+        "region": "Southeast",
+        "temperatures": [
+          30,
+          32,
+          29,
+          31
+        ],
+        "is_heatwave": true
+      },
+      "{\n    \"region\": \"Southeast\",\n    \"temperatures\": [30, 32, 29, 31],\n    \"is_heatwave\": True\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1001",
+        "amount": 2500.75,
+        "currency": "USD",
+        "is_successful": true,
+        "notes": null
+      },
+      "{\n    \"transaction_id\": \"TX1001\",\n    \"amount\": 2500.75,\n    \"currency\": \"USD\",\n    \"is_successful\": True,\n    \"notes\": None\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1002",
+        "amount": 150.0,
+        "currency": "EUR",
+        "is_successful": false,
+        "notes": "Transaction declined"
+      },
+      "{\n    \"transaction_id\": \"TX1002\",\n    \"amount\": 150.00,\n    \"currency\": \"EUR\",\n    \"is_successful\": False,\n    \"notes\": \"Transaction declined\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1003",
+        "amount": 500.0,
+        "currency": "GBP",
+        "is_successful": true,
+        "notes": null
+      },
+      "{\n    \"transaction_id\": \"TX1003\",\n    \"amount\": 500.00,\n    \"currency\": \"GBP\",\n    \"is_successful\": True,\n    \"notes\": None\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1004",
+        "amount": 780.25,
+        "currency": "JPY",
+        "is_successful": false,
+        "notes": "Insufficient funds"
+      },
+      "{\n    \"transaction_id\": \"TX1004\",\n    \"amount\": 780.25,\n    \"currency\": \"JPY\",\n    \"is_successful\": False,\n    \"notes\": \"Insufficient funds\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1005",
+        "amount": 1250.0,
+        "currency": "AUD",
+        "is_successful": true,
+        "notes": "Payment received"
+      },
+      "{\n    \"transaction_id\": \"TX1005\",\n    \"amount\": 1250.00,\n    \"currency\": \"AUD\",\n    \"is_successful\": True,\n    \"notes\": \"Payment received\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1006",
+        "amount": 300.5,
+        "currency": "CAD",
+        "is_successful": false,
+        "notes": null
+      },
+      "{\n    \"transaction_id\": \"TX1006\",\n    \"amount\": 300.50,\n    \"currency\": \"CAD\",\n    \"is_successful\": False,\n    \"notes\": None\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1007",
+        "amount": 950.0,
+        "currency": "CHF",
+        "is_successful": true,
+        "notes": "Refund issued"
+      },
+      "{\n    \"transaction_id\": \"TX1007\",\n    \"amount\": 950.00,\n    \"currency\": \"CHF\",\n    \"is_successful\": True,\n    \"notes\": \"Refund issued\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1008",
+        "amount": 1950.0,
+        "currency": "CNY",
+        "is_successful": false,
+        "notes": "Currency conversion error"
+      },
+      "{\n    \"transaction_id\": \"TX1008\",\n    \"amount\": 1950.00,\n    \"currency\": \"CNY\",\n    \"is_successful\": False,\n    \"notes\": \"Currency conversion error\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1009",
+        "amount": 50.0,
+        "currency": "INR",
+        "is_successful": true,
+        "notes": null
+      },
+      "{\n    \"transaction_id\": \"TX1009\",\n    \"amount\": 50.00,\n    \"currency\": \"INR\",\n    \"is_successful\": True,\n    \"notes\": None\n}"
+    ],
+    [
+      {
+        "transaction_id": "TX1010",
+        "amount": 750.0,
+        "currency": "BRL",
+        "is_successful": false,
+        "notes": "Limit exceeded"
+      },
+      "{\n    \"transaction_id\": \"TX1010\",\n    \"amount\": 750.00,\n    \"currency\": \"BRL\",\n    \"is_successful\": False,\n    \"notes\": \"Limit exceeded\"\n}"
+    ],
+    [
+      {
+        "user": "John Doe",
+        "age": 30,
+        "active": true,
+        "workout_details": {
+          "type": "cardio",
+          "duration": 45,
+          "completed": true
+        }
+      },
+      "{\n    \"user\": \"John Doe\",\n    \"age\": 30,\n    \"active\": True,\n    \"workout_details\": {\n        \"type\": \"cardio\",\n        \"duration\": 45,\n        \"completed\": True\n    }\n}"
+    ],
+    [
+      {
+        "diet": "vegetarian",
+        "calories": 2000,
+        "hydrated": false,
+        "supplements": null
+      },
+      "{\n    \"diet\": \"vegetarian\",\n    \"calories\": 2000,\n    \"hydrated\": False,\n    \"supplements\": None\n}"
+    ],
+    [
+      {
+        "participant_id": 12345,
+        "session": "yoga",
+        "attendance": true,
+        "feedback": null
+      },
+      "{\n    \"participant_id\": 12345,\n    \"session\": \"yoga\",\n    \"attendance\": True,\n    \"feedback\": None\n}"
+    ],
+    [
+      {
+        "trainer": "Alice Brown",
+        "experience": 5,
+        "certified": true,
+        "clients": [
+          {
+            "name": "Sam",
+            "progress": null
+          },
+          {
+            "name": "Lily",
+            "progress": "excellent"
+          }
+        ]
+      },
+      "{\n    \"trainer\": \"Alice Brown\",\n    \"experience\": 5,\n    \"certified\": True,\n    \"clients\": [\n        {\"name\": \"Sam\", \"progress\": None},\n        {\"name\": \"Lily\", \"progress\": \"excellent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "program": "weight loss",
+        "target_weight": 150,
+        "achieved": false,
+        "notes": null
+      },
+      "{\n    \"program\": \"weight loss\",\n    \"target_weight\": 150,\n    \"achieved\": False,\n    \"notes\": None\n}"
+    ],
+    [
+      {
+        "class_type": "HIIT",
+        "duration_minutes": 30,
+        "participants": [
+          {
+            "name": "Tom",
+            "attended": true
+          },
+          {
+            "name": "Jerry",
+            "attended": false
+          }
+        ]
+      },
+      "{\n    \"class_type\": \"HIIT\",\n    \"duration_minutes\": 30,\n    \"participants\": [\n        {\"name\": \"Tom\", \"attended\": True},\n        {\"name\": \"Jerry\", \"attended\": False}\n    ]\n}"
+    ],
+    [
+      {
+        "meal_plan": "keto",
+        "compliance": false,
+        "grocery_list": null
+      },
+      "{\n    \"meal_plan\": \"keto\",\n    \"compliance\": False,\n    \"grocery_list\": None\n}"
+    ],
+    [
+      {
+        "fitness_goal": "run marathon",
+        "current_mileage": 20,
+        "injury": false,
+        "doctor_approval": true
+      },
+      "{\n    \"fitness_goal\": \"run marathon\",\n    \"current_mileage\": 20,\n    \"injury\": False,\n    \"doctor_approval\": True\n}"
+    ],
+    [
+      {
+        "app_version": "1.2.3",
+        "features": [
+          "step counter",
+          "calorie tracker"
+        ],
+        "bug_free": true
+      },
+      "{\n    \"app_version\": \"1.2.3\",\n    \"features\": [\"step counter\", \"calorie tracker\"],\n    \"bug_free\": True\n}"
+    ],
+    [
+      {
+        "equipment": "treadmill",
+        "maintenance_due": false,
+        "last_service": null
+      },
+      "{\n    \"equipment\": \"treadmill\",\n    \"maintenance_due\": False,\n    \"last_service\": None\n}"
+    ],
+    [
+      {
+        "vehicle": "Car",
+        "location": {
+          "latitude": 34.052235,
+          "longitude": -118.243683,
+          "inTransit": true
+        },
+        "passengers": null
+      },
+      "{\n    \"vehicle\": \"Car\",\n    \"location\": {\n        \"latitude\": 34.052235,\n        \"longitude\": -118.243683,\n        \"inTransit\": True\n    },\n    \"passengers\": None\n}"
+    ],
+    [
+      {
+        "transport": "Bicycle",
+        "gps": {
+          "latitude": 51.507351,
+          "longitude": -0.127758
+        },
+        "isAvailable": false
+      },
+      "{\n    \"transport\": \"Bicycle\",\n    \"gps\": {\n        \"latitude\": 51.507351,\n        \"longitude\": -0.127758\n    },\n    \"isAvailable\": False\n}"
+    ],
+    [
+      {
+        "mode": "Train",
+        "currentLocation": {
+          "latitude": 35.689487,
+          "longitude": 139.691706
+        },
+        "operationalStatus": true
+      },
+      "{\n    \"mode\": \"Train\",\n    \"currentLocation\": {\n        \"latitude\": 35.689487,\n        \"longitude\": 139.691706\n    },\n    \"operationalStatus\": True\n}"
+    ],
+    [
+      {
+        "transportType": "Bus",
+        "route": {
+          "start": "Station A",
+          "end": "Station B"
+        },
+        "isOperational": true,
+        "seatsAvailable": null
+      },
+      "{\n    \"transportType\": \"Bus\",\n    \"route\": {\n        \"start\": \"Station A\",\n        \"end\": \"Station B\"\n    },\n    \"isOperational\": True,\n    \"seatsAvailable\": None\n}"
+    ],
+    [
+      {
+        "vehicle": "Truck",
+        "gpsPosition": {
+          "latitude": 40.712776,
+          "longitude": -74.005974
+        },
+        "cargoLoaded": false
+      },
+      "{\n    \"vehicle\": \"Truck\",\n    \"gpsPosition\": {\n        \"latitude\": 40.712776,\n        \"longitude\": -74.005974\n    },\n    \"cargoLoaded\": False\n}"
+    ],
+    [
+      {
+        "transport": "Scooter",
+        "location": {
+          "latitude": 48.856613,
+          "longitude": 2.352222
+        },
+        "isRented": true,
+        "rentDuration": null
+      },
+      "{\n    \"transport\": \"Scooter\",\n    \"location\": {\n        \"latitude\": 48.856613,\n        \"longitude\": 2.352222\n    },\n    \"isRented\": True,\n    \"rentDuration\": None\n}"
+    ],
+    [
+      {
+        "type": "Boat",
+        "currentLocation": {
+          "latitude": 37.774929,
+          "longitude": -122.419418
+        },
+        "inService": false
+      },
+      "{\n    \"type\": \"Boat\",\n    \"currentLocation\": {\n        \"latitude\": 37.774929,\n        \"longitude\": -122.419418\n    },\n    \"inService\": False\n}"
+    ],
+    [
+      {
+        "vehicleType": "Helicopter",
+        "gpsCoords": {
+          "latitude": 55.755825,
+          "longitude": 37.617298
+        },
+        "isFlying": true
+      },
+      "{\n    \"vehicleType\": \"Helicopter\",\n    \"gpsCoords\": {\n        \"latitude\": 55.755825,\n        \"longitude\": 37.617298\n    },\n    \"isFlying\": True\n}"
+    ],
+    [
+      {
+        "means": "Tram",
+        "position": {
+          "latitude": 41.902782,
+          "longitude": 12.496366
+        },
+        "isRunning": false,
+        "nextStop": null
+      },
+      "{\n    \"means\": \"Tram\",\n    \"position\": {\n        \"latitude\": 41.902782,\n        \"longitude\": 12.496366\n    },\n    \"isRunning\": False,\n    \"nextStop\": None\n}"
+    ],
+    [
+      {
+        "form": "Subway",
+        "locationData": {
+          "latitude": 52.520008,
+          "longitude": 13.404954
+        },
+        "hasPassengers": true
+      },
+      "{\n    \"form\": \"Subway\",\n    \"locationData\": {\n        \"latitude\": 52.520008,\n        \"longitude\": 13.404954\n    },\n    \"hasPassengers\": True\n}"
+    ]
+  ]
+}

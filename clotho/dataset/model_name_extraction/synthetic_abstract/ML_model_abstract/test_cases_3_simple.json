@@ -1,0 +1,212 @@
+{
+  "test_0": {
+    "model_names": [
+      "BERT",
+      "XGBoost"
+    ],
+    "abstract": "This study focuses on enhancing the interpretability of BERT and XGBoost models in the context of text classification. We propose a novel framework that integrates saliency maps for BERT and SHAP values for XGBoost to provide clear, human-understandable explanations of model predictions. Our experiments demonstrate that the proposed methods not only improve the transparency of these models but also maintain their predictive accuracy."
+  },
+  "test_1": {
+    "model_names": [
+      "ResNet-50",
+      "LIME"
+    ],
+    "abstract": "In the domain of image classification, explaining model decisions is crucial. This paper examines the application of LIME to ResNet-50 to enhance interpretability. By highlighting the regions of images that most influence the model's predictions, our approach allows users to gain insights into the decision-making process of ResNet-50, thereby increasing trust in automated systems."
+  },
+  "test_2": {
+    "model_names": [
+      "Transformer",
+      "Random Forest"
+    ],
+    "abstract": "We investigate the interpretability of Transformer and Random Forest models in sentiment analysis tasks. Utilizing attention visualization for Transformers and feature importance for Random Forests, we provide users with intuitive explanations of how different parts of the input data contribute to the final predictions. Our results indicate significant improvements in model transparency without sacrificing performance."
+  },
+  "test_3": {
+    "model_names": [
+      "VGG-16",
+      "Gradient Boosting"
+    ],
+    "abstract": "The need for explainability in deep learning is ever-increasing. This paper explores the use of VGG-16 for image recognition and Gradient Boosting for tabular data classification. By applying feature attribution techniques, we show how each model's predictions can be broken down into contributions from input features, thus offering a straightforward understanding of the underlying decision processes."
+  },
+  "test_4": {
+    "model_names": [
+      "RoBERTa",
+      "DeepAR"
+    ],
+    "abstract": "Explaining model outputs is vital in natural language processing and time series forecasting. We present a study on the explainability of RoBERTa and DeepAR models. By employing attention maps and temporal feature attribution, we provide insights into how these models process input sequences and make predictions. Our framework helps bridge the gap between model complexity and user interpretability."
+  },
+  "test_5": {
+    "model_names": [
+      "Inception-v3",
+      "CatBoost"
+    ],
+    "abstract": "In this work, we address the challenge of model interpretability for Inception-v3 used in image processing and CatBoost in categorical data analysis. We introduce a hybrid explanation approach that combines activation maximization and categorical feature interaction analysis, offering a unified view of how these models derive their predictions from input data."
+  },
+  "test_6": {
+    "model_names": [
+      "ELECTRA",
+      "LightGBM"
+    ],
+    "abstract": "We propose a novel interpretability framework for ELECTRA and LightGBM models applied in the fields of NLP and structured data respectively. By leveraging gradient-based attribution for ELECTRA and leaf-wise prediction tracking for LightGBM, we provide detailed, user-friendly insights that help demystify the models' decision processes without impacting their performance."
+  },
+  "test_7": {
+    "model_names": [
+      "DistilBERT",
+      "Support Vector Machine"
+    ],
+    "abstract": "This paper explores methods to enhance the interpretability of DistilBERT and Support Vector Machine (SVM) classifiers. We apply integrated gradients for DistilBERT and leverage kernel visualization techniques for SVM, enabling users to understand the importance of different features in the models' decision processes. Our approach achieves a balance between interpretability and accuracy."
+  },
+  "test_8": {
+    "model_names": [
+      "NASNet",
+      "AdaBoost"
+    ],
+    "abstract": "The paper discusses interpretability strategies for NASNet in image classification and AdaBoost in ensemble learning. By implementing feature visualization for NASNet and boosting phase analysis for AdaBoost, we provide comprehensive explanations that help users see how these models transform inputs into outputs. Our method demonstrates improved user comprehension without loss of predictive power."
+  },
+  "test_9": {
+    "model_names": [
+      "XLNet",
+      "k-Nearest Neighbors"
+    ],
+    "abstract": "Our study introduces a dual-model interpretability framework for XLNet and k-Nearest Neighbors (k-NN) models. By utilizing attention-based explanations for XLNet and distance metric analysis for k-NN, we aim to enhance the transparency of these models, making their prediction processes more understandable to users. The framework maintains high accuracy while offering interpretability."
+  },
+  "test_10": {
+    "model_names": [
+      "GPT-2",
+      "Decision Tree"
+    ],
+    "abstract": "This paper presents an approach to improve the interpretability of GPT-2 and Decision Tree models. We apply attention score visualization to GPT-2 and use path-based feature importance for Decision Trees, allowing users to follow the reasoning behind each model's predictions step by step. Our experiments show that these methods provide valuable insights while preserving model efficacy."
+  },
+  "test_11": {
+    "model_names": [
+      "EfficientNet",
+      "Bayesian Neural Network"
+    ],
+    "abstract": "The challenge of interpretability in complex models is addressed by analyzing EfficientNet and Bayesian Neural Network outputs. We introduce an interpretable framework that combines feature map analysis for EfficientNet and posterior distribution inspection for Bayesian Neural Network, thus enabling users to grasp the models' decision-making processes intuitively."
+  },
+  "test_12": {
+    "model_names": [
+      "OpenAI Codex",
+      "Neural Collaborative Filtering"
+    ],
+    "abstract": "We explore the explainability of OpenAI Codex in code generation tasks and Neural Collaborative Filtering in recommendation systems. By incorporating attention heatmaps for Codex and user-item interaction analysis for collaborative filtering, our approach offers clear insights into how these models generate outputs and make recommendations, enhancing user trust."
+  },
+  "test_13": {
+    "model_names": [
+      "YOLOv5",
+      "Convolutional Neural Network"
+    ],
+    "abstract": "The paper investigates methods to interpret the YOLOv5 model for object detection and a Convolutional Neural Network (CNN) for image classification. Through feature activation visualization for YOLOv5 and occlusion sensitivity analysis for CNN, we provide users with transparent explanations of model predictions, contributing to more robust and understandable AI applications."
+  },
+  "test_14": {
+    "model_names": [
+      "T5",
+      "Linear Regression"
+    ],
+    "abstract": "This study aims to improve the interpretability of T5 in text-to-text transformations and Linear Regression in predictive modeling. We utilize self-attention visualization for T5 and coefficient value analysis for Linear Regression to offer users a clear understanding of how these models arrive at their predictions. The results show that interpretability can be achieved alongside high performance."
+  },
+  "test_15": {
+    "model_names": [
+      "DeBERTa",
+      "Gradient Boosted Trees"
+    ],
+    "abstract": "We present an interpretability framework for DeBERTa in natural language tasks and Gradient Boosted Trees in structured data analysis. By using attention score explanations for DeBERTa and feature contribution tracking for Gradient Boosted Trees, we ensure that the decision-making processes of these models are transparent and accessible to users."
+  },
+  "test_16": {
+    "model_names": [
+      "StyleGAN2",
+      "Recurrent Neural Network"
+    ],
+    "abstract": "In this paper, we address the interpretability of StyleGAN2 in image synthesis and Recurrent Neural Networks (RNNs) in sequence prediction. By implementing latent space exploration for StyleGAN2 and temporal feature attribution for RNNs, we provide clear insights into the operation of these models, enhancing user understanding of their capabilities and limitations."
+  },
+  "test_17": {
+    "model_names": [
+      "BART",
+      "Multilayer Perceptron"
+    ],
+    "abstract": "We investigate the interpretability of BART in text generation and Multilayer Perceptrons (MLPs) in classification tasks. Through attention mechanism analysis for BART and weight significance analysis for MLPs, we offer users an accessible and detailed understanding of model behavior, which is crucial for applications that require transparency and trust."
+  },
+  "test_18": {
+    "model_names": [
+      "DeepMind AlphaFold",
+      "Autoencoder"
+    ],
+    "abstract": "The interpretability of DeepMind AlphaFold in protein structure prediction and Autoencoders in dimensionality reduction is studied. We propose a method for visualizing folding pathway predictions for AlphaFold and latent space activations for Autoencoders, providing a comprehensive view of how these models process and transform complex data inputs into meaningful outputs."
+  },
+  "test_19": {
+    "model_names": [
+      "Reformer",
+      "Gaussian Processes"
+    ],
+    "abstract": "This research focuses on enhancing the interpretability of Reformer in long-sequence modeling and Gaussian Processes in regression analysis. By employing efficient attention visualization for Reformer and covariance function exploration for Gaussian Processes, we deliver interpretable insights that help users comprehend the models' predictive strategies and decisions."
+  },
+  "test_20": {
+    "model_names": [
+      "BigGAN",
+      "Logistic Regression"
+    ],
+    "abstract": "We explore the interpretability of BigGAN in generative tasks and Logistic Regression in binary classification. Using class-specific feature visualization for BigGAN and coefficient impact analysis for Logistic Regression, we provide clear explanations that give users a better understanding of how these models generate outcomes and classify data."
+  },
+  "test_21": {
+    "model_names": [
+      "MobileNetV2",
+      "Naive Bayes"
+    ],
+    "abstract": "This paper examines the interpretability of MobileNetV2 in mobile vision applications and Naive Bayes in text classification. By employing feature map projection for MobileNetV2 and word importance analysis for Naive Bayes, we enhance user understanding of the models' predictions, which is crucial for deploying these models in real-world scenarios."
+  },
+  "test_22": {
+    "model_names": [
+      "WaveNet",
+      "Support Vector Regression"
+    ],
+    "abstract": "The study introduces methods to interpret WaveNet in audio synthesis and Support Vector Regression (SVR) in predictive analytics. Through layer-wise relevance propagation for WaveNet and margin-based feature contribution for SVR, our approach provides transparent insights into model predictions, supporting users in understanding complex data transformations."
+  },
+  "test_23": {
+    "model_names": [
+      "GPT-Neo",
+      "Hierarchical Clustering"
+    ],
+    "abstract": "This research investigates the interpretability of GPT-Neo in language generation and Hierarchical Clustering in data grouping tasks. By visualizing attention matrices for GPT-Neo and dendrogram analysis for Hierarchical Clustering, we offer insights into model processes, promoting better comprehension of how these models structure and generate outputs."
+  },
+  "test_24": {
+    "model_names": [
+      "Swin Transformer",
+      "K-Means"
+    ],
+    "abstract": "We examine the interpretability of Swin Transformer in vision tasks and K-Means clustering in unsupervised learning. Utilizing window-based attention visualization for Swin Transformer and centroid trajectory analysis for K-Means, we provide users with a clear understanding of how these models partition and analyze complex input data."
+  },
+  "test_25": {
+    "model_names": [
+      "DALL-E",
+      "Principal Component Analysis"
+    ],
+    "abstract": "In this study, we explore the interpretability of DALL-E in creative image generation and Principal Component Analysis (PCA) in dimensionality reduction. By applying concept activation vectors for DALL-E and component loading inspection for PCA, we offer a novel perspective on how these models represent and manipulate data to achieve their tasks."
+  },
+  "test_26": {
+    "model_names": [
+      "DeepLabV3+",
+      "Decision Forest"
+    ],
+    "abstract": "We focus on the interpretability of DeepLabV3+ in semantic segmentation and Decision Forest models in complex decision-making. Our framework uses segmentation map transparency for DeepLabV3+ and tree ensemble visualization for Decision Forests, enhancing user insight into model operations and fostering trust in automated decision systems."
+  },
+  "test_27": {
+    "model_names": [
+      "CTRL",
+      "Factorization Machines"
+    ],
+    "abstract": "This paper presents methods for improving the interpretability of CTRL in controlled text generation and Factorization Machines in recommendation systems. By implementing context-guided explanation for CTRL and interaction effect analysis for Factorization Machines, we deliver accessible insights into model predictions, ensuring that users understand the influence of various factors."
+  },
+  "test_28": {
+    "model_names": [
+      "ConvNeXT",
+      "Linear Discriminant Analysis"
+    ],
+    "abstract": "The interpretability of ConvNeXT in advanced image classification and Linear Discriminant Analysis (LDA) in multivariate data analysis is examined. Feature attribution maps for ConvNeXT and discriminant function visualizations for LDA provide users with a clear understanding of how these models differentiate and classify inputs, enhancing transparency and user trust."
+  },
+  "test_29": {
+    "model_names": [
+      "BERTweet",
+      "Bayesian Optimization"
+    ],
+    "abstract": "This study investigates methods to enhance the interpretability of BERTweet in social media text analysis and Bayesian Optimization in hyperparameter tuning. Attention distribution visualization for BERTweet and acquisition function breakdown for Bayesian Optimization are used to offer users a clearer picture of model decision-making processes, aiding in better decision-making."
+  }
+}

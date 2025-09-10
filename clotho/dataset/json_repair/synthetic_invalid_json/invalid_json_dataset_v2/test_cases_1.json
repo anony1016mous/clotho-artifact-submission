@@ -1,0 +1,3134 @@
+{
+  "possible_fix": "Add missing quotes around keys",
+  "test_cases": [
+    [
+      {
+        "studentId": 101,
+        "name": "John Doe",
+        "courses": [
+          {
+            "courseId": "CS101",
+            "title": "Introduction to Computer Science",
+            "enrollmentDate": "2023-09-01"
+          }
+        ]
+      },
+      "{\n    studentId: 101,\n    name: \"John Doe\",\n    courses: [\n        {\n            courseId: \"CS101\",\n            title: \"Introduction to Computer Science\",\n            enrollmentDate: \"2023-09-01\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 102,
+        "name": "Jane Smith",
+        "courses": [
+          {
+            "courseId": "MATH200",
+            "title": "Calculus I",
+            "enrollmentDate": "2023-09-02"
+          },
+          {
+            "courseId": "PHYS101",
+            "title": "Physics I",
+            "enrollmentDate": "2023-09-05"
+          }
+        ]
+      },
+      "{\n    studentId: 102,\n    name: \"Jane Smith\",\n    courses: [\n        {\n            courseId: \"MATH200\",\n            title: \"Calculus I\",\n            enrollmentDate: \"2023-09-02\"\n        },\n        {\n            courseId: \"PHYS101\",\n            title: \"Physics I\",\n            enrollmentDate: \"2023-09-05\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 103,
+        "name": "Emily Rose",
+        "courses": []
+      },
+      "{\n    studentId: 103,\n    name: \"Emily Rose\",\n    courses: []\n}"
+    ],
+    [
+      {
+        "studentId": 104,
+        "name": "Michael Brown",
+        "courses": [
+          {
+            "courseId": "BIO101",
+            "title": "Biology Basics",
+            "enrollmentDate": "2023-08-30"
+          }
+        ]
+      },
+      "{\n    studentId: 104,\n    name: \"Michael Brown\",\n    courses: [\n        {\n            courseId: \"BIO101\",\n            title: \"Biology Basics\",\n            enrollmentDate: \"2023-08-30\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 105,
+        "name": "Sophia Green",
+        "courses": [
+          {
+            "courseId": "CHEM101",
+            "title": "Introduction to Chemistry",
+            "enrollmentDate": "2023-09-15"
+          },
+          {
+            "courseId": "ENG201",
+            "title": "Advanced English",
+            "enrollmentDate": "2023-09-20"
+          }
+        ]
+      },
+      "{\n    studentId: 105,\n    name: \"Sophia Green\",\n    courses: [\n        {\n            courseId: \"CHEM101\",\n            title: \"Introduction to Chemistry\",\n            enrollmentDate: \"2023-09-15\"\n        },\n        {\n            courseId: \"ENG201\",\n            title: \"Advanced English\",\n            enrollmentDate: \"2023-09-20\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 106,
+        "name": "Liam Johnson",
+        "courses": [
+          {
+            "courseId": "HIST101",
+            "title": "World History",
+            "enrollmentDate": "2023-09-10"
+          }
+        ]
+      },
+      "{\n    studentId: 106,\n    name: \"Liam Johnson\",\n    courses: [\n        {\n            courseId: \"HIST101\",\n            title: \"World History\",\n            enrollmentDate: \"2023-09-10\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 107,
+        "name": "Olivia Martinez",
+        "courses": [
+          {
+            "courseId": "ART101",
+            "title": "Introduction to Art",
+            "enrollmentDate": "2023-09-12"
+          }
+        ]
+      },
+      "{\n    studentId: 107,\n    name: \"Olivia Martinez\",\n    courses: [\n        {\n            courseId: \"ART101\",\n            title: \"Introduction to Art\",\n            enrollmentDate: \"2023-09-12\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 108,
+        "name": "Noah White",
+        "courses": [
+          {
+            "courseId": "PSY101",
+            "title": "Psychology Basics",
+            "enrollmentDate": "2023-09-14"
+          }
+        ]
+      },
+      "{\n    studentId: 108,\n    name: \"Noah White\",\n    courses: [\n        {\n            courseId: \"PSY101\",\n            title: \"Psychology Basics\",\n            enrollmentDate: \"2023-09-14\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 109,
+        "name": "Ava Wilson",
+        "courses": [
+          {
+            "courseId": "ENGL101",
+            "title": "English Literature",
+            "enrollmentDate": "2023-09-16"
+          }
+        ]
+      },
+      "{\n    studentId: 109,\n    name: \"Ava Wilson\",\n    courses: [\n        {\n            courseId: \"ENGL101\",\n            title: \"English Literature\",\n            enrollmentDate: \"2023-09-16\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "studentId": 110,
+        "name": "Lucas Harris",
+        "courses": [
+          {
+            "courseId": "PHIL101",
+            "title": "Introduction to Philosophy",
+            "enrollmentDate": "2023-09-18"
+          }
+        ]
+      },
+      "{\n    studentId: 110,\n    name: \"Lucas Harris\",\n    courses: [\n        {\n            courseId: \"PHIL101\",\n            title: \"Introduction to Philosophy\",\n            enrollmentDate: \"2023-09-18\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "applicant_name": "John Doe",
+        "loan_amount": 150000,
+        "loan_type": "Home",
+        "credit_score": 720,
+        "employment_status": "Employed"
+      },
+      "{\n    applicant_name: \"John Doe\",\n    loan_amount: 150000,\n    loan_type: \"Home\",\n    credit_score: 720,\n    employment_status: \"Employed\"\n}"
+    ],
+    [
+      {
+        "applicant_id": 12345,
+        "requested_amount": 50000,
+        "interest_rate": 3.5,
+        "repayment_period": "5 years",
+        "collateral": "Car"
+      },
+      "{\n    applicant_id: 12345,\n    requested_amount: 50000,\n    interest_rate: 3.5,\n    repayment_period: \"5 years\",\n    collateral: \"Car\"\n}"
+    ],
+    [
+      {
+        "loan_application_date": "2023-10-15",
+        "approval_status": "Pending",
+        "applicant_income": 75000,
+        "co_applicant": "Jane Smith"
+      },
+      "{\n    loan_application_date: \"2023-10-15\",\n    approval_status: \"Pending\",\n    applicant_income: 75000,\n    co_applicant: \"Jane Smith\"\n}"
+    ],
+    [
+      {
+        "property_value": 300000,
+        "down_payment": 60000,
+        "loan_term_years": 30,
+        "fixed_rate": true
+      },
+      "{\n    property_value: 300000,\n    down_payment: 60000,\n    loan_term_years: 30,\n    fixed_rate: true\n}"
+    ],
+    [
+      {
+        "bank_name": "ABC Bank",
+        "branch_code": "XYZ123",
+        "loan_officer": "Alice Johnson",
+        "office_phone": "+123456789"
+      },
+      "{\n    bank_name: \"ABC Bank\",\n    branch_code: \"XYZ123\",\n    loan_officer: \"Alice Johnson\",\n    office_phone: \"+123456789\"\n}"
+    ],
+    [
+      {
+        "applicant_age": 35,
+        "marital_status": "Married",
+        "children_count": 2,
+        "current_residence_years": 10
+      },
+      "{\n    applicant_age: 35,\n    marital_status: \"Married\",\n    children_count: 2,\n    current_residence_years: 10\n}"
+    ],
+    [
+      {
+        "monthly_expenses": 2000,
+        "savings_account_balance": 15000,
+        "debt_to_income_ratio": 0.25
+      },
+      "{\n    monthly_expenses: 2000,\n    savings_account_balance: 15000,\n    debt_to_income_ratio: 0.25\n}"
+    ],
+    [
+      {
+        "previous_loan_default": false,
+        "bankruptcy_history": "None",
+        "legal_disputes": false
+      },
+      "{\n    previous_loan_default: false,\n    bankruptcy_history: \"None\",\n    legal_disputes: false\n}"
+    ],
+    [
+      {
+        "employer_name": "Tech Corp",
+        "position": "Software Engineer",
+        "years_with_employer": 5
+      },
+      "{\n    employer_name: \"Tech Corp\",\n    position: \"Software Engineer\",\n    years_with_employer: 5\n}"
+    ],
+    [
+      {
+        "loan_id": "LN123456",
+        "application_status": "Under Review",
+        "reviewer_comments": "Additional documents needed"
+      },
+      "{\n    loan_id: \"LN123456\",\n    application_status: \"Under Review\",\n    reviewer_comments: \"Additional documents needed\"\n}"
+    ],
+    [
+      {
+        "timestamp": "2023-10-01T10:23:45Z",
+        "customer": {
+          "id": 1234,
+          "name": "Alice Smith"
+        },
+        "agent": {
+          "id": 5678,
+          "name": "Bob Johnson"
+        },
+        "messages": [
+          {
+            "sender": "customer",
+            "message": "I need help with my order."
+          },
+          {
+            "sender": "agent",
+            "message": "Sure, I can assist you with that. Can you provide your order ID?"
+          }
+        ]
+      },
+      "{\n    timestamp: \"2023-10-01T10:23:45Z\",\n    customer: {\n        id: 1234,\n        name: \"Alice Smith\"\n    },\n    agent: {\n        id: 5678,\n        name: \"Bob Johnson\"\n    },\n    messages: [\n        {\n            sender: \"customer\",\n            message: \"I need help with my order.\"\n        },\n        {\n            sender: \"agent\",\n            message: \"Sure, I can assist you with that. Can you provide your order ID?\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "session_id": "abc123",
+        "customer": {
+          "id": 4321,
+          "name": "John Doe"
+        },
+        "agent": {
+          "id": 8765,
+          "name": "Jane Smith"
+        },
+        "conversation": [
+          {
+            "sender": "customer",
+            "message": "How do I reset my password?"
+          },
+          {
+            "sender": "agent",
+            "message": "Click on 'Forgot Password' on the login page to reset it."
+          }
+        ]
+      },
+      "{\n    session_id: \"abc123\",\n    customer: {\n        id: 4321,\n        name: \"John Doe\"\n    },\n    agent: {\n        id: 8765,\n        name: \"Jane Smith\"\n    },\n    conversation: [\n        {\n            sender: \"customer\",\n            message: \"How do I reset my password?\"\n        },\n        {\n            sender: \"agent\",\n            message: \"Click on 'Forgot Password' on the login page to reset it.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "time": "2023-10-01T15:45:30Z",
+        "customer_info": {
+          "id": 5678,
+          "full_name": "Emma Brown"
+        },
+        "support_agent": {
+          "id": 1239,
+          "full_name": "Liam Johnson"
+        },
+        "chat_log": [
+          {
+            "sender": "customer",
+            "text": "Can I get an update on my ticket?"
+          },
+          {
+            "sender": "agent",
+            "text": "Of course, let me check the status for you."
+          }
+        ]
+      },
+      "{\n    time: \"2023-10-01T15:45:30Z\",\n    customer_info: {\n        id: 5678,\n        full_name: \"Emma Brown\"\n    },\n    support_agent: {\n        id: 1239,\n        full_name: \"Liam Johnson\"\n    },\n    chat_log: [\n        {\n            sender: \"customer\",\n            text: \"Can I get an update on my ticket?\"\n        },\n        {\n            sender: \"agent\",\n            text: \"Of course, let me check the status for you.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "chat_id": "xyz789",
+        "customer_details": {
+          "id": 9876,
+          "name": "Olivia White"
+        },
+        "support": {
+          "id": 6543,
+          "name": "Noah Williams"
+        },
+        "messages_exchanged": [
+          {
+            "sender": "customer",
+            "content": "Can you help me track my shipment?"
+          },
+          {
+            "sender": "agent",
+            "content": "Sure, please provide your tracking number."
+          }
+        ]
+      },
+      "{\n    chat_id: \"xyz789\",\n    customer_details: {\n        id: 9876,\n        name: \"Olivia White\"\n    },\n    support: {\n        id: 6543,\n        name: \"Noah Williams\"\n    },\n    messages_exchanged: [\n        {\n            sender: \"customer\",\n            content: \"Can you help me track my shipment?\"\n        },\n        {\n            sender: \"agent\",\n            content: \"Sure, please provide your tracking number.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "interaction_id": "567abc",
+        "client": {
+          "id": 3456,
+          "name": "James Taylor"
+        },
+        "representative": {
+          "id": 7890,
+          "name": "Sophia Martinez"
+        },
+        "chat_history": [
+          {
+            "sender": "customer",
+            "message": "What are your business hours?"
+          },
+          {
+            "sender": "agent",
+            "message": "We are open from 9 AM to 5 PM, Monday to Friday."
+          }
+        ]
+      },
+      "{\n    interaction_id: \"567abc\",\n    client: {\n        id: 3456,\n        name: \"James Taylor\"\n    },\n    representative: {\n        id: 7890,\n        name: \"Sophia Martinez\"\n    },\n    chat_history: [\n        {\n            sender: \"customer\",\n            message: \"What are your business hours?\"\n        },\n        {\n            sender: \"agent\",\n            message: \"We are open from 9 AM to 5 PM, Monday to Friday.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "contact_id": "123def",
+        "customer_profile": {
+          "id": 7654,
+          "name": "Ava Green"
+        },
+        "service_rep": {
+          "id": 4321,
+          "name": "Lucas Harris"
+        },
+        "dialogue": [
+          {
+            "sender": "customer",
+            "query": "How do I update my account information?"
+          },
+          {
+            "sender": "agent",
+            "reply": "You can update your information from the account settings page."
+          }
+        ]
+      },
+      "{\n    contact_id: \"123def\",\n    customer_profile: {\n        id: 7654,\n        name: \"Ava Green\"\n    },\n    service_rep: {\n        id: 4321,\n        name: \"Lucas Harris\"\n    },\n    dialogue: [\n        {\n            sender: \"customer\",\n            query: \"How do I update my account information?\"\n        },\n        {\n            sender: \"agent\",\n            reply: \"You can update your information from the account settings page.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "session_code": "qwe456",
+        "client_info": {
+          "id": 8520,
+          "name": "Isabella Scott"
+        },
+        "customer_support": {
+          "id": 9632,
+          "name": "Ethan Taylor"
+        },
+        "chat_transcript": [
+          {
+            "sender": "customer",
+            "message": "I have a question about my invoice."
+          },
+          {
+            "sender": "agent",
+            "message": "What would you like to know about it?"
+          }
+        ]
+      },
+      "{\n    session_code: \"qwe456\",\n    client_info: {\n        id: 8520,\n        name: \"Isabella Scott\"\n    },\n    customer_support: {\n        id: 9632,\n        name: \"Ethan Taylor\"\n    },\n    chat_transcript: [\n        {\n            sender: \"customer\",\n            message: \"I have a question about my invoice.\"\n        },\n        {\n            sender: \"agent\",\n            message: \"What would you like to know about it?\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "dialog_id": "rty789",
+        "user": {
+          "id": 3691,
+          "name": "Mia Walker"
+        },
+        "help_desk": {
+          "id": 1478,
+          "name": "Michael Lee"
+        },
+        "exchange": [
+          {
+            "sender": "customer",
+            "statement": "Is there a way to expedite my request?"
+          },
+          {
+            "sender": "agent",
+            "response": "I will prioritize your request and get back to you soon."
+          }
+        ]
+      },
+      "{\n    dialog_id: \"rty789\",\n    user: {\n        id: 3691,\n        name: \"Mia Walker\"\n    },\n    help_desk: {\n        id: 1478,\n        name: \"Michael Lee\"\n    },\n    exchange: [\n        {\n            sender: \"customer\",\n            statement: \"Is there a way to expedite my request?\"\n        },\n        {\n            sender: \"agent\",\n            response: \"I will prioritize your request and get back to you soon.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "interaction": {
+          "id": "tyu234",
+          "customer": {
+            "id": 9512,
+            "name": "Lucas Young"
+          },
+          "agent": {
+            "id": 3579,
+            "name": "Amelia Brown"
+          },
+          "communications": [
+            {
+              "sender": "customer",
+              "message": "Can I receive a call back for my concern?"
+            },
+            {
+              "sender": "agent",
+              "message": "Certainly, what is the best time to reach you?"
+            }
+          ]
+        }
+      },
+      "{\n    interaction: {\n        id: \"tyu234\",\n        customer: {\n            id: 9512,\n            name: \"Lucas Young\"\n        },\n        agent: {\n            id: 3579,\n            name: \"Amelia Brown\"\n        },\n        communications: [\n            {\n                sender: \"customer\",\n                message: \"Can I receive a call back for my concern?\"\n            },\n            {\n                sender: \"agent\",\n                message: \"Certainly, what is the best time to reach you?\"\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "conversation_id": "poi567",
+        "customer_record": {
+          "id": 7532,
+          "name": "Chloe Martin"
+        },
+        "support_person": {
+          "id": 1593,
+          "name": "Logan White"
+        },
+        "chat": [
+          {
+            "sender": "customer",
+            "content": "Can you walk me through the installation process?"
+          },
+          {
+            "sender": "agent",
+            "content": "Certainly, let's go step by step."
+          }
+        ]
+      },
+      "{\n    conversation_id: \"poi567\",\n    customer_record: {\n        id: 7532,\n        name: \"Chloe Martin\"\n    },\n    support_person: {\n        id: 1593,\n        name: \"Logan White\"\n    },\n    chat: [\n        {\n            sender: \"customer\",\n            content: \"Can you walk me through the installation process?\"\n        },\n        {\n            sender: \"agent\",\n            content: \"Certainly, let's go step by step.\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "deviceID": "thermostat_01",
+        "events": [
+          {
+            "timestamp": "2023-10-01T08:00:00Z",
+            "event": "temperature_change",
+            "value": 22.5
+          },
+          {
+            "timestamp": "2023-10-01T09:00:00Z",
+            "event": "temperature_change",
+            "value": 23.0
+          }
+        ]
+      },
+      "{\n  deviceID: \"thermostat_01\",\n  events: [\n    {\n      timestamp: \"2023-10-01T08:00:00Z\",\n      event: \"temperature_change\",\n      value: 22.5\n    },\n    {\n      timestamp: \"2023-10-01T09:00:00Z\",\n      event: \"temperature_change\",\n      value: 23.0\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "fridge_02",
+        "events": [
+          {
+            "timestamp": "2023-10-01T12:00:00Z",
+            "event": "door_open",
+            "duration": 5
+          },
+          {
+            "timestamp": "2023-10-01T12:05:00Z",
+            "event": "door_closed"
+          }
+        ]
+      },
+      "{\n  deviceID: \"fridge_02\",\n  events: [\n    {\n      timestamp: \"2023-10-01T12:00:00Z\",\n      event: \"door_open\",\n      duration: 5\n    },\n    {\n      timestamp: \"2023-10-01T12:05:00Z\",\n      event: \"door_closed\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "light_03",
+        "events": [
+          {
+            "timestamp": "2023-10-01T18:00:00Z",
+            "event": "light_on"
+          },
+          {
+            "timestamp": "2023-10-01T23:00:00Z",
+            "event": "light_off"
+          }
+        ]
+      },
+      "{\n  deviceID: \"light_03\",\n  events: [\n    {\n      timestamp: \"2023-10-01T18:00:00Z\",\n      event: \"light_on\"\n    },\n    {\n      timestamp: \"2023-10-01T23:00:00Z\",\n      event: \"light_off\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "security_camera_04",
+        "events": [
+          {
+            "timestamp": "2023-10-01T03:00:00Z",
+            "event": "motion_detected",
+            "details": "Living room"
+          }
+        ]
+      },
+      "{\n  deviceID: \"security_camera_04\",\n  events: [\n    {\n      timestamp: \"2023-10-01T03:00:00Z\",\n      event: \"motion_detected\",\n      details: \"Living room\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "speaker_05",
+        "events": [
+          {
+            "timestamp": "2023-10-01T07:00:00Z",
+            "event": "volume_change",
+            "level": 15
+          }
+        ]
+      },
+      "{\n  deviceID: \"speaker_05\",\n  events: [\n    {\n      timestamp: \"2023-10-01T07:00:00Z\",\n      event: \"volume_change\",\n      level: 15\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "smart_tv_06",
+        "events": [
+          {
+            "timestamp": "2023-10-01T20:00:00Z",
+            "event": "channel_change",
+            "channel": "HBO"
+          }
+        ]
+      },
+      "{\n  deviceID: \"smart_tv_06\",\n  events: [\n    {\n      timestamp: \"2023-10-01T20:00:00Z\",\n      event: \"channel_change\",\n      channel: \"HBO\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "oven_07",
+        "events": [
+          {
+            "timestamp": "2023-10-01T17:00:00Z",
+            "event": "preheat",
+            "temperature": 180
+          },
+          {
+            "timestamp": "2023-10-01T17:15:00Z",
+            "event": "bake",
+            "temperature": 200
+          }
+        ]
+      },
+      "{\n  deviceID: \"oven_07\",\n  events: [\n    {\n      timestamp: \"2023-10-01T17:00:00Z\",\n      event: \"preheat\",\n      temperature: 180\n    },\n    {\n      timestamp: \"2023-10-01T17:15:00Z\",\n      event: \"bake\",\n      temperature: 200\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "washing_machine_08",
+        "events": [
+          {
+            "timestamp": "2023-10-01T09:00:00Z",
+            "event": "start_cycle",
+            "cycle_type": "Normal"
+          },
+          {
+            "timestamp": "2023-10-01T10:00:00Z",
+            "event": "end_cycle"
+          }
+        ]
+      },
+      "{\n  deviceID: \"washing_machine_08\",\n  events: [\n    {\n      timestamp: \"2023-10-01T09:00:00Z\",\n      event: \"start_cycle\",\n      cycle_type: \"Normal\"\n    },\n    {\n      timestamp: \"2023-10-01T10:00:00Z\",\n      event: \"end_cycle\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "vacuum_09",
+        "events": [
+          {
+            "timestamp": "2023-10-01T14:00:00Z",
+            "event": "start_cleaning",
+            "mode": "Quiet"
+          },
+          {
+            "timestamp": "2023-10-01T15:30:00Z",
+            "event": "return_to_base"
+          }
+        ]
+      },
+      "{\n  deviceID: \"vacuum_09\",\n  events: [\n    {\n      timestamp: \"2023-10-01T14:00:00Z\",\n      event: \"start_cleaning\",\n      mode: \"Quiet\"\n    },\n    {\n      timestamp: \"2023-10-01T15:30:00Z\",\n      event: \"return_to_base\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "deviceID": "doorbell_10",
+        "events": [
+          {
+            "timestamp": "2023-10-01T13:00:00Z",
+            "event": "ring",
+            "visitor_detected": true
+          }
+        ]
+      },
+      "{\n  deviceID: \"doorbell_10\",\n  events: [\n    {\n      timestamp: \"2023-10-01T13:00:00Z\",\n      event: \"ring\",\n      visitor_detected: true\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "experience": [
+          {
+            "company": "Tech Corp",
+            "position": "Software Engineer",
+            "years": 3
+          },
+          {
+            "company": "Innovate Solutions",
+            "position": "Senior Developer",
+            "years": 2
+          }
+        ],
+        "skills": [
+          "Python",
+          "JavaScript",
+          "SQL"
+        ]
+      },
+      "{\n    name: \"John Doe\",\n    email: \"johndoe@example.com\",\n    experience: [\n        {\n            company: \"Tech Corp\",\n            position: \"Software Engineer\",\n            years: 3\n        },\n        {\n            company: \"Innovate Solutions\",\n            position: \"Senior Developer\",\n            years: 2\n        }\n    ],\n    skills: [\"Python\", \"JavaScript\", \"SQL\"]\n}"
+    ],
+    [
+      {
+        "applicant": {
+          "first_name": "Jane",
+          "last_name": "Smith",
+          "contact": {
+            "phone": "555-1234",
+            "email": "jane.smith@email.com"
+          }
+        },
+        "education": [
+          {
+            "institution": "University of Example",
+            "degree": "B.Sc. Computer Science",
+            "year": 2018
+          }
+        ],
+        "certifications": [
+          "AWS Certified Solutions Architect",
+          "PMP"
+        ]
+      },
+      "{\n    applicant: {\n        first_name: \"Jane\",\n        last_name: \"Smith\",\n        contact: {\n            phone: \"555-1234\",\n            email: \"jane.smith@email.com\"\n        }\n    },\n    education: [\n        {\n            institution: \"University of Example\",\n            degree: \"B.Sc. Computer Science\",\n            year: 2018\n        }\n    ],\n    certifications: [\"AWS Certified Solutions Architect\", \"PMP\"]\n}"
+    ],
+    [
+      {
+        "profile": {
+          "name": "Alice Johnson",
+          "role": "Data Analyst"
+        },
+        "work_history": [
+          {
+            "organization": "Data Insights",
+            "role": "Junior Analyst",
+            "duration": 1
+          }
+        ],
+        "languages": [
+          "R",
+          "SQL",
+          "Python"
+        ]
+      },
+      "{\n    profile: {\n        name: \"Alice Johnson\",\n        role: \"Data Analyst\"\n    },\n    work_history: [\n        {\n            organization: \"Data Insights\",\n            role: \"Junior Analyst\",\n            duration: 1\n        }\n    ],\n    languages: [\"R\", \"SQL\", \"Python\"]\n}"
+    ],
+    [
+      {
+        "candidate": {
+          "fullname": "Michael Brown",
+          "age": 30
+        },
+        "jobs": [
+          {
+            "company_name": "Net Solutions",
+            "job_title": "Project Manager",
+            "years_of_service": 5
+          }
+        ],
+        "courses": [
+          "Lean Six Sigma",
+          "Agile Project Management"
+        ]
+      },
+      "{\n    candidate: {\n        fullname: \"Michael Brown\",\n        age: 30\n    },\n    jobs: [\n        {\n            company_name: \"Net Solutions\",\n            job_title: \"Project Manager\",\n            years_of_service: 5\n        }\n    ],\n    courses: [\"Lean Six Sigma\", \"Agile Project Management\"]\n}"
+    ],
+    [
+      {
+        "personal_info": {
+          "name": "Emily Davis",
+          "email": "emily.davis@example.com"
+        },
+        "career": [
+          {
+            "employer": "GreenTech",
+            "role": "Environmental Scientist",
+            "period": 2
+          },
+          {
+            "employer": "Eco Innovations",
+            "role": "Researcher",
+            "period": 3
+          }
+        ],
+        "expertise": [
+          "Climate Change",
+          "Sustainability"
+        ]
+      },
+      "{\n    personal_info: {\n        name: \"Emily Davis\",\n        email: \"emily.davis@example.com\"\n    },\n    career: [\n        {\n            employer: \"GreenTech\",\n            role: \"Environmental Scientist\",\n            period: 2\n        },\n        {\n            employer: \"Eco Innovations\",\n            role: \"Researcher\",\n            period: 3\n        }\n    ],\n    expertise: [\"Climate Change\", \"Sustainability\"]\n}"
+    ],
+    [
+      {
+        "contact_info": {
+          "name": "Chris Green",
+          "phone": "555-9876"
+        },
+        "experiences": [
+          {
+            "name": "Advanced Technologies",
+            "role": "Systems Engineer",
+            "duration": 4
+          }
+        ],
+        "skillset": [
+          "Linux",
+          "Networking",
+          "Cloud Computing"
+        ]
+      },
+      "{\n    contact_info: {\n        name: \"Chris Green\",\n        phone: \"555-9876\"\n    },\n    experiences: [\n        {\n            name: \"Advanced Technologies\",\n            role: \"Systems Engineer\",\n            duration: 4\n        }\n    ],\n    skillset: [\"Linux\", \"Networking\", \"Cloud Computing\"]\n}"
+    ],
+    [
+      {
+        "applicant_profile": {
+          "name": "Olivia White",
+          "age": 28
+        },
+        "employment": [
+          {
+            "organization": "Future Enterprises",
+            "job": "Consultant",
+            "years": 3
+          }
+        ],
+        "qualifications": [
+          "MBA",
+          "Certified Scrum Master"
+        ]
+      },
+      "{\n    applicant_profile: {\n        name: \"Olivia White\",\n        age: 28\n    },\n    employment: [\n        {\n            organization: \"Future Enterprises\",\n            job: \"Consultant\",\n            years: 3\n        }\n    ],\n    qualifications: [\"MBA\", \"Certified Scrum Master\"]\n}"
+    ],
+    [
+      {
+        "person": {
+          "full_name": "Henry Miller",
+          "email": "henry.miller@domain.com"
+        },
+        "work_experience": [
+          {
+            "company": "Tech Innovators",
+            "title": "Developer",
+            "years": 4
+          }
+        ],
+        "competencies": [
+          "Java",
+          "Spring Boot",
+          "Hibernate"
+        ]
+      },
+      "{\n    person: {\n        full_name: \"Henry Miller\",\n        email: \"henry.miller@domain.com\"\n    },\n    work_experience: [\n        {\n            company: \"Tech Innovators\",\n            title: \"Developer\",\n            years: 4\n        }\n    ],\n    competencies: [\"Java\", \"Spring Boot\", \"Hibernate\"]\n}"
+    ],
+    [
+      {
+        "resume": {
+          "name": "Sophia Turner",
+          "contact_number": "555-7654"
+        },
+        "positions": [
+          {
+            "company": "Design Studio",
+            "position": "Graphic Designer",
+            "experience": 5
+          }
+        ],
+        "software_skills": [
+          "Adobe Photoshop",
+          "Illustrator",
+          "InDesign"
+        ]
+      },
+      "{\n    resume: {\n        name: \"Sophia Turner\",\n        contact_number: \"555-7654\"\n    },\n    positions: [\n        {\n            company: \"Design Studio\",\n            position: \"Graphic Designer\",\n            experience: 5\n        }\n    ],\n    software_skills: [\"Adobe Photoshop\", \"Illustrator\", \"InDesign\"]\n}"
+    ],
+    [
+      {
+        "details": {
+          "name": "Lucas Martin",
+          "email": "lucas.martin@example.org"
+        },
+        "history": [
+          {
+            "company": "Global Corp",
+            "role": "Finance Analyst",
+            "duration": 6
+          }
+        ],
+        "specialties": [
+          "Financial Modeling",
+          "Data Analysis"
+        ]
+      },
+      "{\n    details: {\n        name: \"Lucas Martin\",\n        email: \"lucas.martin@example.org\"\n    },\n    history: [\n        {\n            company: \"Global Corp\",\n            role: \"Finance Analyst\",\n            duration: 6\n        }\n    ],\n    specialties: [\"Financial Modeling\", \"Data Analysis\"]\n}"
+    ],
+    [
+      {
+        "flightNumber": "AA123",
+        "departure": {
+          "airport": "JFK",
+          "dateTime": "2023-11-15T08:00:00"
+        },
+        "arrival": {
+          "airport": "LAX",
+          "dateTime": "2023-11-15T11:00:00"
+        },
+        "passenger": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "seat": "12A"
+        }
+      },
+      "{\n    flightNumber: \"AA123\",\n    \"departure\": {\n        airport: \"JFK\",\n        \"dateTime\": \"2023-11-15T08:00:00\"\n    },\n    \"arrival\": {\n        airport: \"LAX\",\n        \"dateTime\": \"2023-11-15T11:00:00\"\n    },\n    \"passenger\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"seat\": \"12A\"\n    }\n}"
+    ],
+    [
+      {
+        "bookingID": "XYZ789",
+        "flightDetails": {
+          "carrier": "Delta",
+          "flightNumber": "DL456",
+          "departure": "ATL",
+          "arrival": "SFO"
+        },
+        "passengerInfo": {
+          "name": "Alice Smith",
+          "contact": "alice@example.com"
+        }
+      },
+      "{\n    bookingID: \"XYZ789\",\n    \"flightDetails\": {\n        \"carrier\": \"Delta\",\n        flightNumber: \"DL456\",\n        \"departure\": \"ATL\",\n        \"arrival\": \"SFO\"\n    },\n    \"passengerInfo\": {\n        name: \"Alice Smith\",\n        \"contact\": \"alice@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "reservationCode": "B12U9",
+        "flights": [
+          {
+            "flightNumber": "BA308",
+            "origin": "LHR",
+            "destination": "CDG",
+            "departureTime": "2023-11-18T07:30:00"
+          }
+        ],
+        "traveler": {
+          "fullName": "Michael Brown",
+          "passportNumber": "A12345678"
+        }
+      },
+      "{\n    reservationCode: \"B12U9\",\n    \"flights\": [\n        {\n            flightNumber: \"BA308\",\n            \"origin\": \"LHR\",\n            destination: \"CDG\",\n            \"departureTime\": \"2023-11-18T07:30:00\"\n        }\n    ],\n    \"traveler\": {\n        fullName: \"Michael Brown\",\n        \"passportNumber\": \"A12345678\"\n    }\n}"
+    ],
+    [
+      {
+        "itineraryID": "8765PQ",
+        "segments": [
+          {
+            "carrierCode": "UA",
+            "flight": "UA890",
+            "from": "ORD",
+            "to": "DEN",
+            "duration": "02:30"
+          },
+          {
+            "carrierCode": "UA",
+            "flight": "UA123",
+            "from": "DEN",
+            "to": "SEA",
+            "duration": "03:00"
+          }
+        ],
+        "customer": {
+          "name": "Emma Wilson",
+          "email": "emma.wilson@example.com"
+        }
+      },
+      "{\n    itineraryID: \"8765PQ\",\n    \"segments\": [\n        {\n            carrierCode: \"UA\",\n            \"flight\": \"UA890\",\n            from: \"ORD\",\n            \"to\": \"DEN\",\n            \"duration\": \"02:30\"\n        },\n        {\n            carrierCode: \"UA\",\n            flight: \"UA123\",\n            \"from\": \"DEN\",\n            to: \"SEA\",\n            \"duration\": \"03:00\"\n        }\n    ],\n    \"customer\": {\n        name: \"Emma Wilson\",\n        \"email\": \"emma.wilson@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "confirmationNumber": "JY779B",
+        "flightInfo": {
+          "airline": "Southwest",
+          "flightNum": "SW345",
+          "origination": "PHX",
+          "dest": "LAS",
+          "boardingTime": "2023-11-20T06:30:00"
+        },
+        "passengerDetails": {
+          "givenName": "Oliver",
+          "surname": "Jones",
+          "seatNumber": "5C"
+        }
+      },
+      "{\n    confirmationNumber: \"JY779B\",\n    \"flightInfo\": {\n        airline: \"Southwest\",\n        \"flightNum\": \"SW345\",\n        origination: \"PHX\",\n        \"dest\": \"LAS\",\n        \"boardingTime\": \"2023-11-20T06:30:00\"\n    },\n    \"passengerDetails\": {\n        givenName: \"Oliver\",\n        \"surname\": \"Jones\",\n        seatNumber: \"5C\"\n    }\n}"
+    ],
+    [
+      {
+        "ticketID": "00321KL",
+        "details": {
+          "airline": "JetBlue",
+          "flightCode": "B6 789",
+          "departureDate": "2023-11-22",
+          "arrivalAirport": "MIA"
+        },
+        "travelerInfo": {
+          "firstName": "Sophia",
+          "lastName": "Johnson",
+          "contactNumber": "+1234567890"
+        }
+      },
+      "{\n    ticketID: \"00321KL\",\n    \"details\": {\n        airline: \"JetBlue\",\n        flightCode: \"B6 789\",\n        \"departureDate\": \"2023-11-22\",\n        arrivalAirport: \"MIA\"\n    },\n    \"travelerInfo\": {\n        firstName: \"Sophia\",\n        \"lastName\": \"Johnson\",\n        contactNumber: \"+1234567890\"\n    }\n}"
+    ],
+    [
+      {
+        "recordLocator": "PLQX92",
+        "flightSegment": {
+          "carrierName": "Emirates",
+          "flightID": "EK203",
+          "departurePoint": "DXB",
+          "arrivalPoint": "JFK",
+          "travelDate": "2023-12-01"
+        },
+        "passengerRecord": {
+          "name": "Jackson Lee",
+          "loyaltyNumber": "EK123456"
+        }
+      },
+      "{\n    recordLocator: \"PLQX92\",\n    \"flightSegment\": {\n        carrierName: \"Emirates\",\n        flightID: \"EK203\",\n        \"departurePoint\": \"DXB\",\n        arrivalPoint: \"JFK\",\n        travelDate: \"2023-12-01\"\n    },\n    \"passengerRecord\": {\n        name: \"Jackson Lee\",\n        loyaltyNumber: \"EK123456\"\n    }\n}"
+    ],
+    [
+      {
+        "pnr": "8UI5R",
+        "flightData": {
+          "airlineCode": "LH",
+          "flightNumber": "LH456",
+          "departureLocation": "FRA",
+          "arrivalLocation": "ORD",
+          "departureTime": "2023-12-05T13:45:00"
+        },
+        "travelerDetails": {
+          "fullName": "Lucas Martin",
+          "emailAddress": "lucas.martin@example.com"
+        }
+      },
+      "{\n    pnr: \"8UI5R\",\n    \"flightData\": {\n        airlineCode: \"LH\",\n        \"flightNumber\": \"LH456\",\n        departureLocation: \"FRA\",\n        \"arrivalLocation\": \"ORD\",\n        departureTime: \"2023-12-05T13:45:00\"\n    },\n    \"travelerDetails\": {\n        fullName: \"Lucas Martin\",\n        \"emailAddress\": \"lucas.martin@example.com\"\n    }\n}"
+    ],
+    [
+      {
+        "bookingReference": "H7YT67",
+        "airTravel": {
+          "carrier": "Qatar Airways",
+          "flightNum": "QR728",
+          "from": "DOH",
+          "to": "IAD",
+          "departureTime": "2023-12-10T01:50:00"
+        },
+        "passengerName": {
+          "first": "Chloe",
+          "last": "Davis",
+          "seatAssignment": "15B"
+        }
+      },
+      "{\n    bookingReference: \"H7YT67\",\n    \"airTravel\": {\n        carrier: \"Qatar Airways\",\n        flightNum: \"QR728\",\n        from: \"DOH\",\n        \"to\": \"IAD\",\n        departureTime: \"2023-12-10T01:50:00\"\n    },\n    \"passengerName\": {\n        first: \"Chloe\",\n        last: \"Davis\",\n        seatAssignment: \"15B\"\n    }\n}"
+    ],
+    [
+      {
+        "reservationReference": "90YUIO",
+        "flightSegments": [
+          {
+            "airlineCode": "AF",
+            "flightId": "AF11",
+            "origin": "CDG",
+            "destination": "JFK",
+            "departureTime": "2023-12-15T13:00:00"
+          }
+        ],
+        "passengerInfo": {
+          "name": "Grace Lee",
+          "passportId": "P98765432"
+        }
+      },
+      "{\n    reservationReference: \"90YUIO\",\n    \"flightSegments\": [\n        {\n            airlineCode: \"AF\",\n            \"flightId\": \"AF11\",\n            origin: \"CDG\",\n            \"destination\": \"JFK\",\n            \"departureTime\": \"2023-12-15T13:00:00\"\n        }\n    ],\n    \"passengerInfo\": {\n        name: \"Grace Lee\",\n        passportId: \"P98765432\"\n    }\n}"
+    ],
+    [
+      {
+        "customerName": "John Doe",
+        "partySize": 4,
+        "reservationDate": "2023-11-25",
+        "reservationTime": "19:00",
+        "contactNumber": "+1234567890",
+        "specialRequests": "Window seat"
+      },
+      "{\n    customerName: \"John Doe\",\n    \"partySize\": 4,\n    \"reservationDate\": \"2023-11-25\",\n    \"reservationTime\": \"19:00\",\n    \"contactNumber\": \"+1234567890\",\n    \"specialRequests\": \"Window seat\"\n}"
+    ],
+    [
+      {
+        "customerName": "Alice Smith",
+        "partySize": 2,
+        "reservationDate": "2023-12-18",
+        "reservationTime": "20:30",
+        "contactNumber": "+1987654321",
+        "specialRequests": "Vegan menu"
+      },
+      "{\n    \"customerName\": \"Alice Smith\",\n    partySize: 2,\n    \"reservationDate\": \"2023-12-18\",\n    \"reservationTime\": \"20:30\",\n    \"contactNumber\": \"+1987654321\",\n    specialRequests: \"Vegan menu\"\n}"
+    ],
+    [
+      {
+        "customerName": "Michael Brown",
+        "partySize": 6,
+        "reservationDate": "2023-12-01",
+        "reservationTime": "18:45",
+        "contactNumber": "+1122334455",
+        "specialRequests": "Birthday celebration"
+      },
+      "{\n    \"customerName\": \"Michael Brown\",\n    \"partySize\": 6,\n    \"reservationDate\": \"2023-12-01\",\n    reservationTime: \"18:45\",\n    contactNumber: \"+1122334455\",\n    specialRequests: \"Birthday celebration\"\n}"
+    ],
+    [
+      {
+        "customerName": "Emily Johnson",
+        "partySize": 3,
+        "reservationDate": "2023-11-30",
+        "reservationTime": "21:15",
+        "contactNumber": "+1098765432",
+        "specialRequests": "Wheelchair accessible"
+      },
+      "{\n    \"customerName\": \"Emily Johnson\",\n    partySize: 3,\n    \"reservationDate\": \"2023-11-30\",\n    \"reservationTime\": \"21:15\",\n    contactNumber: \"+1098765432\",\n    specialRequests: \"Wheelchair accessible\"\n}"
+    ],
+    [
+      {
+        "customerName": "Robert Wilson",
+        "partySize": 5,
+        "reservationDate": "2023-11-20",
+        "reservationTime": "17:00",
+        "contactNumber": "+1223344556",
+        "specialRequests": "None"
+      },
+      "{\n    \"customerName\": \"Robert Wilson\",\n    \"partySize\": 5,\n    reservationDate: \"2023-11-20\",\n    reservationTime: \"17:00\",\n    contactNumber: \"+1223344556\",\n    \"specialRequests\": \"None\"\n}"
+    ],
+    [
+      {
+        "customerName": "Jessica Davis",
+        "partySize": 8,
+        "reservationDate": "2023-11-15",
+        "reservationTime": "19:30",
+        "contactNumber": "+1445566778",
+        "specialRequests": "High chair for toddler"
+      },
+      "{\n    \"customerName\": \"Jessica Davis\",\n    \"partySize\": 8,\n    \"reservationDate\": \"2023-11-15\",\n    reservationTime: \"19:30\",\n    contactNumber: \"+1445566778\",\n    specialRequests: \"High chair for toddler\"\n}"
+    ],
+    [
+      {
+        "customerName": "David Martinez",
+        "partySize": 7,
+        "reservationDate": "2023-12-05",
+        "reservationTime": "18:00",
+        "contactNumber": "+1556677889",
+        "specialRequests": "Kosher meal"
+      },
+      "{\n    customerName: \"David Martinez\",\n    \"partySize\": 7,\n    reservationDate: \"2023-12-05\",\n    \"reservationTime\": \"18:00\",\n    \"contactNumber\": \"+1556677889\",\n    \"specialRequests\": \"Kosher meal\"\n}"
+    ],
+    [
+      {
+        "customerName": "Laura Taylor",
+        "partySize": 1,
+        "reservationDate": "2023-11-22",
+        "reservationTime": "20:00",
+        "contactNumber": "+1667788990",
+        "specialRequests": "Gluten-free dessert"
+      },
+      "{\n    \"customerName\": \"Laura Taylor\",\n    \"partySize\": 1,\n    reservationDate: \"2023-11-22\",\n    \"reservationTime\": \"20:00\",\n    contactNumber: \"+1667788990\",\n    specialRequests: \"Gluten-free dessert\"\n}"
+    ],
+    [
+      {
+        "customerName": "Daniel Anderson",
+        "partySize": 2,
+        "reservationDate": "2023-11-29",
+        "reservationTime": "19:00",
+        "contactNumber": "+1778899001",
+        "specialRequests": "Close to restrooms"
+      },
+      "{\n    customerName: \"Daniel Anderson\",\n    \"partySize\": 2,\n    \"reservationDate\": \"2023-11-29\",\n    reservationTime: \"19:00\",\n    contactNumber: \"+1778899001\",\n    \"specialRequests\": \"Close to restrooms\"\n}"
+    ],
+    [
+      {
+        "customerName": "Sophia Lee",
+        "partySize": 10,
+        "reservationDate": "2023-12-10",
+        "reservationTime": "17:30",
+        "contactNumber": "+1889900112",
+        "specialRequests": "Separate checks"
+      },
+      "{\n    \"customerName\": \"Sophia Lee\",\n    partySize: 10,\n    reservationDate: \"2023-12-10\",\n    \"reservationTime\": \"17:30\",\n    contactNumber: \"+1889900112\",\n    specialRequests: \"Separate checks\"\n}"
+    ],
+    [
+      {
+        "playerID": "12345",
+        "gamesPlayed": [
+          {
+            "gameName": "Battle Arena",
+            "hoursPlayed": 150,
+            "achievements": [
+              "First Blood",
+              "Top Scorer"
+            ]
+          }
+        ]
+      },
+      "{\n    playerID: \"12345\",\n    \"gamesPlayed\": [\n        {\n            \"gameName\": \"Battle Arena\",\n            \"hoursPlayed\": 150,\n            \"achievements\": [\"First Blood\", \"Top Scorer\"]\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "username": "gamer_guy",
+        "level": 42,
+        "currentGame": {
+          "name": "Dungeon Crawler",
+          "difficulty": "hard"
+        }
+      },
+      "{\n    \"username\": \"gamer_guy\",\n    level: 42,\n    \"currentGame\": {\n        \"name\": \"Dungeon Crawler\",\n        \"difficulty\": \"hard\"\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "id": "7890",
+          "nickname": "dragon_slayer"
+        },
+        "stats": {
+          "kills": 300,
+          "deaths": 45
+        }
+      },
+      "{\n    \"user\": {\n        id: \"7890\",\n        nickname: \"dragon_slayer\"\n    },\n    \"stats\": {\n        \"kills\": 300,\n        \"deaths\": 45\n    }\n}"
+    ],
+    [
+      {
+        "sessionID": "abc123",
+        "activeGames": [
+          {
+            "title": "Space Invaders",
+            "progress": "75%"
+          },
+          {
+            "title": "Galactic Conquest",
+            "progress": "20%"
+          }
+        ]
+      },
+      "{\n    sessionID: \"abc123\",\n    \"activeGames\": [\n        {\n            \"title\": \"Space Invaders\",\n            \"progress\": \"75%\"\n        },\n        {\n            \"title\": \"Galactic Conquest\",\n            \"progress\": \"20%\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "level_master",
+          "rank": "gold"
+        },
+        "gameHistory": [
+          {
+            "gameTitle": "Castle Siege",
+            "victories": 25,
+            "defeats": 5
+          }
+        ]
+      },
+      "{\n    \"profile\": {\n        username: \"level_master\",\n        rank: \"gold\"\n    },\n    \"gameHistory\": [\n        {\n            \"gameTitle\": \"Castle Siege\",\n            \"victories\": 25,\n            \"defeats\": 5\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "account": {
+          "id": "5678",
+          "creationDate": "2021-06-15"
+        },
+        "favoriteGames": [
+          "Alien Attack",
+          "Mystery Mansion"
+        ]
+      },
+      "{\n    account: {\n        \"id\": \"5678\",\n        \"creationDate\": \"2021-06-15\"\n    },\n    \"favoriteGames\": [\"Alien Attack\", \"Mystery Mansion\"]\n}"
+    ],
+    [
+      {
+        "playerProfile": {
+          "name": "warrior_king",
+          "experience": 10000
+        },
+        "recentGames": [
+          {
+            "name": "Zombie Land",
+            "score": 4500
+          }
+        ]
+      },
+      "{\n    playerProfile: {\n        \"name\": \"warrior_king\",\n        \"experience\": 10000\n    },\n    \"recentGames\": [\n        {\n            \"name\": \"Zombie Land\",\n            \"score\": 4500\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "gameID": "9999",
+        "participants": [
+          {
+            "playerName": "speed_runner",
+            "score": 800
+          },
+          {
+            "playerName": "night_hawk",
+            "score": 750
+          }
+        ]
+      },
+      "{\n    gameID: \"9999\",\n    \"participants\": [\n        {\n            \"playerName\": \"speed_runner\",\n            \"score\": 800\n        },\n        {\n            \"playerName\": \"night_hawk\",\n            \"score\": 750\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "arenaStats": {
+          "matches": 100,
+          "wins": 60
+        },
+        "trophies": [
+          "Champion",
+          "MVP"
+        ]
+      },
+      "{\n    arenaStats: {\n        \"matches\": 100,\n        \"wins\": 60\n    },\n    \"trophies\": [\n        \"Champion\",\n        \"MVP\"\n    ]\n}"
+    ],
+    [
+      {
+        "gamerTag": "shadow_walker",
+        "achievementsUnlocked": [
+          "Stealth Master",
+          "Sharp Shooter"
+        ],
+        "friendList": [
+          {
+            "tag": "blaze_phoenix",
+            "status": "online"
+          }
+        ]
+      },
+      "{\n    gamerTag: \"shadow_walker\",\n    \"achievementsUnlocked\": [\n        \"Stealth Master\",\n        \"Sharp Shooter\"\n    ],\n    \"friendList\": [\n        {\n            \"tag\": \"blaze_phoenix\",\n            \"status\": \"online\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "product_id": "001",
+        "name": "Laptop",
+        "quantity": 50,
+        "price": 999.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"001\",\n  name: \"Laptop\",\n  quantity: 50,\n  price: 999.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "product_id": "002",
+        "name": "Smartphone",
+        "quantity": 200,
+        "price": 699.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"002\",\n  name: \"Smartphone\",\n  quantity: 200,\n  price: 699.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "product_id": "003",
+        "name": "Wireless Mouse",
+        "quantity": 150,
+        "price": 29.99,
+        "in_stock": false
+      },
+      "{\n  product_id: \"003\",\n  name: \"Wireless Mouse\",\n  quantity: 150,\n  price: 29.99,\n  in_stock: false\n}"
+    ],
+    [
+      {
+        "product_id": "004",
+        "name": "Keyboard",
+        "quantity": 75,
+        "price": 49.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"004\",\n  name: \"Keyboard\",\n  quantity: 75,\n  price: 49.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "product_id": "005",
+        "name": "Monitor",
+        "quantity": 30,
+        "price": 199.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"005\",\n  name: \"Monitor\",\n  quantity: 30,\n  price: 199.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "product_id": "006",
+        "name": "Printer",
+        "quantity": 20,
+        "price": 89.99,
+        "in_stock": false
+      },
+      "{\n  product_id: \"006\",\n  name: \"Printer\",\n  quantity: 20,\n  price: 89.99,\n  in_stock: false\n}"
+    ],
+    [
+      {
+        "product_id": "007",
+        "name": "Tablet",
+        "quantity": 120,
+        "price": 499.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"007\",\n  name: \"Tablet\",\n  quantity: 120,\n  price: 499.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "product_id": "008",
+        "name": "External Hard Drive",
+        "quantity": 60,
+        "price": 59.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"008\",\n  name: \"External Hard Drive\",\n  quantity: 60,\n  price: 59.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "product_id": "009",
+        "name": "Webcam",
+        "quantity": 45,
+        "price": 39.99,
+        "in_stock": false
+      },
+      "{\n  product_id: \"009\",\n  name: \"Webcam\",\n  quantity: 45,\n  price: 39.99,\n  in_stock: false\n}"
+    ],
+    [
+      {
+        "product_id": "010",
+        "name": "Speaker",
+        "quantity": 90,
+        "price": 79.99,
+        "in_stock": true
+      },
+      "{\n  product_id: \"010\",\n  name: \"Speaker\",\n  quantity: 90,\n  price: 79.99,\n  in_stock: true\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_12345",
+        "userId": "user_67890",
+        "plan": "premium",
+        "status": "active",
+        "startDate": "2023-01-01",
+        "endDate": "2023-12-31",
+        "paymentMethod": "credit_card"
+      },
+      "{\n    subscriptionId: \"sub_12345\",\n    userId: \"user_67890\",\n    plan: \"premium\",\n    status: \"active\",\n    startDate: \"2023-01-01\",\n    endDate: \"2023-12-31\",\n    paymentMethod: \"credit_card\"\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_54321",
+        "userId": "user_09876",
+        "plan": "basic",
+        "status": "cancelled",
+        "startDate": "2022-05-15",
+        "endDate": "2023-05-14",
+        "renewal": false
+      },
+      "{\n    subscriptionId: \"sub_54321\",\n    userId: \"user_09876\",\n    plan: \"basic\",\n    status: \"cancelled\",\n    startDate: \"2022-05-15\",\n    endDate: \"2023-05-14\",\n    renewal: false\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_11223",
+        "userId": "user_33445",
+        "plan": "family",
+        "status": "active",
+        "startDate": "2021-09-01",
+        "endDate": "2024-09-01",
+        "devices": 5
+      },
+      "{\n    subscriptionId: \"sub_11223\",\n    userId: \"user_33445\",\n    plan: \"family\",\n    status: \"active\",\n    startDate: \"2021-09-01\",\n    endDate: \"2024-09-01\",\n    devices: 5\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_99887",
+        "userId": "user_22334",
+        "plan": "enterprise",
+        "status": "paused",
+        "startDate": "2023-06-01",
+        "endDate": "2023-12-01",
+        "discountCode": "SUMMER2023"
+      },
+      "{\n    subscriptionId: \"sub_99887\",\n    userId: \"user_22334\",\n    plan: \"enterprise\",\n    status: \"paused\",\n    startDate: \"2023-06-01\",\n    endDate: \"2023-12-01\",\n    discountCode: \"SUMMER2023\"\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_77665",
+        "userId": "user_55443",
+        "plan": "standard",
+        "status": "expired",
+        "startDate": "2020-01-01",
+        "endDate": "2021-01-01",
+        "autoRenew": true
+      },
+      "{\n    subscriptionId: \"sub_77665\",\n    userId: \"user_55443\",\n    plan: \"standard\",\n    status: \"expired\",\n    startDate: \"2020-01-01\",\n    endDate: \"2021-01-01\",\n    autoRenew: true\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_66778",
+        "userId": "user_88776",
+        "plan": "student",
+        "status": "inactive",
+        "startDate": "2022-03-20",
+        "endDate": "2023-03-20",
+        "studentVerification": "verified"
+      },
+      "{\n    subscriptionId: \"sub_66778\",\n    userId: \"user_88776\",\n    plan: \"student\",\n    status: \"inactive\",\n    startDate: \"2022-03-20\",\n    endDate: \"2023-03-20\",\n    studentVerification: \"verified\"\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_454545",
+        "userId": "user_99999",
+        "plan": "weekly",
+        "status": "trial",
+        "startDate": "2023-07-15",
+        "endDate": "2023-07-22",
+        "trialDays": 7
+      },
+      "{\n    subscriptionId: \"sub_454545\",\n    userId: \"user_99999\",\n    plan: \"weekly\",\n    status: \"trial\",\n    startDate: \"2023-07-15\",\n    endDate: \"2023-07-22\",\n    trialDays: 7\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_85858",
+        "userId": "user_34343",
+        "plan": "monthly",
+        "status": "suspended",
+        "startDate": "2023-02-01",
+        "endDate": "2023-03-01",
+        "suspensionReason": "payment_issue"
+      },
+      "{\n    subscriptionId: \"sub_85858\",\n    userId: \"user_34343\",\n    plan: \"monthly\",\n    status: \"suspended\",\n    startDate: \"2023-02-01\",\n    endDate: \"2023-03-01\",\n    suspensionReason: \"payment_issue\"\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_767676",
+        "userId": "user_21212",
+        "plan": "biannual",
+        "status": "pending",
+        "startDate": "2023-08-01",
+        "endDate": "2024-02-01",
+        "pendingReason": "awaiting_approval"
+      },
+      "{\n    subscriptionId: \"sub_767676\",\n    userId: \"user_21212\",\n    plan: \"biannual\",\n    status: \"pending\",\n    startDate: \"2023-08-01\",\n    endDate: \"2024-02-01\",\n    pendingReason: \"awaiting_approval\"\n}"
+    ],
+    [
+      {
+        "subscriptionId": "sub_989898",
+        "userId": "user_56565",
+        "plan": "annual",
+        "status": "renewed",
+        "startDate": "2023-01-01",
+        "endDate": "2024-01-01",
+        "renewalDate": "2023-12-25"
+      },
+      "{\n    subscriptionId: \"sub_989898\",\n    userId: \"user_56565\",\n    plan: \"annual\",\n    status: \"renewed\",\n    startDate: \"2023-01-01\",\n    endDate: \"2024-01-01\",\n    renewalDate: \"2023-12-25\"\n}"
+    ],
+    [
+      {
+        "studentName": "Alice Johnson",
+        "subjects": {
+          "math": 85,
+          "science": 92,
+          "literature": 88
+        },
+        "attendance": 95.5
+      },
+      "{\n    studentName: \"Alice Johnson\",\n    subjects: {\n        \"math\": 85,\n        \"science\": 92,\n        \"literature\": 88\n    },\n    \"attendance\": 95.5\n}"
+    ],
+    [
+      {
+        "reportId": 1023,
+        "studentName": "Bob Smith",
+        "grades": {
+          "history": 79,
+          "art": 85
+        },
+        "comments": "Shows great improvement."
+      },
+      "{\n    \"reportId\": 1023,\n    studentName: \"Bob Smith\",\n    grades: {\n        \"history\": 79,\n        \"art\": 85\n    },\n    \"comments\": \"Shows great improvement.\"\n}"
+    ],
+    [
+      {
+        "semester": "Fall 2023",
+        "students": [
+          {
+            "name": "Clara Thompson",
+            "gpa": 3.7,
+            "remarks": "Outstanding"
+          },
+          {
+            "name": "Derek White",
+            "gpa": 2.8,
+            "remarks": "Needs improvement"
+          }
+        ]
+      },
+      "{\n    semester: \"Fall 2023\",\n    \"students\": [\n        {\n            \"name\": \"Clara Thompson\",\n            \"gpa\": 3.7,\n            \"remarks\": \"Outstanding\"\n        },\n        {\n            \"name\": \"Derek White\",\n            \"gpa\": 2.8,\n            \"remarks\": \"Needs improvement\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "class": "10th Grade",
+        "performance": {
+          "averageGrade": 82,
+          "topStudent": "Emily Green",
+          "topSubject": "Biology"
+        }
+      },
+      "{\n    \"class\": \"10th Grade\",\n    performance: {\n        \"averageGrade\": 82,\n        \"topStudent\": \"Emily Green\",\n        \"topSubject\": \"Biology\"\n    }\n}"
+    ],
+    [
+      {
+        "teacher": "Mr. Brown",
+        "subjectsTaught": [
+          "Physics",
+          "Chemistry"
+        ],
+        "ratings": 4.5
+      },
+      "{\n    \"teacher\": \"Mr. Brown\",\n    subjectsTaught: [\n        \"Physics\",\n        \"Chemistry\"\n    ],\n    \"ratings\": 4.5\n}"
+    ],
+    [
+      {
+        "department": "Science",
+        "evaluations": {
+          "overallPerformance": "Excellent",
+          "studentFeedback": "Highly approachable"
+        },
+        "year": 2023
+      },
+      "{\n    department: \"Science\",\n    evaluations: {\n        \"overallPerformance\": \"Excellent\",\n        \"studentFeedback\": \"Highly approachable\"\n    },\n    \"year\": 2023\n}"
+    ],
+    [
+      {
+        "school": "Greenhill High",
+        "location": "Maple Street",
+        "principal": "Dr. Rebecca Lee"
+      },
+      "{\n    school: \"Greenhill High\",\n    location: \"Maple Street\",\n    \"principal\": \"Dr. Rebecca Lee\"\n}"
+    ],
+    [
+      {
+        "examSession": "Spring",
+        "totalStudents": 150,
+        "passPercentage": 89.3
+      },
+      "{\n    \"examSession\": \"Spring\",\n    totalStudents: 150,\n    \"passPercentage\": 89.3\n}"
+    ],
+    [
+      {
+        "activity": "Science Fair",
+        "participants": [
+          "Jake Long",
+          "Marie Curie",
+          "Isaac Newton"
+        ],
+        "date": "2023-04-22"
+      },
+      "{\n    activity: \"Science Fair\",\n    \"participants\": [\n        \"Jake Long\",\n        \"Marie Curie\",\n        \"Isaac Newton\"\n    ],\n    \"date\": \"2023-04-22\"\n}"
+    ],
+    [
+      {
+        "event": "Annual Sports Day",
+        "winners": {
+          "100m": "Usain Bolt",
+          "marathon": "Eliud Kipchoge"
+        },
+        "date": "2023-06-15"
+      },
+      "{\n    \"event\": \"Annual Sports Day\",\n    winners: {\n        \"100m\": \"Usain Bolt\",\n        \"marathon\": \"Eliud Kipchoge\"\n    },\n    \"date\": \"2023-06-15\"\n}"
+    ],
+    [
+      {
+        "property_id": "12345",
+        "address": "123 Elm St",
+        "price": 350000,
+        "features": {
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "sqft": 1500
+        },
+        "amenities": [
+          "pool",
+          "garage",
+          "garden"
+        ]
+      },
+      "{\n    property_id: \"12345\",\n    address: \"123 Elm St\",\n    price: 350000,\n    features: {\n        bedrooms: 3,\n        bathrooms: 2,\n        sqft: 1500\n    },\n    amenities: [\"pool\", \"garage\", \"garden\"]\n}"
+    ],
+    [
+      {
+        "listing": {
+          "agent": "John Doe",
+          "contact_number": "555-1234",
+          "email": "johndoe@example.com"
+        },
+        "property_type": "Apartment",
+        "city": "New York"
+      },
+      "{\n    listing: {\n        agent: \"John Doe\",\n        contact_number: \"555-1234\",\n        email: \"johndoe@example.com\"\n    },\n    property_type: \"Apartment\",\n    city: \"New York\"\n}"
+    ],
+    [
+      {
+        "property": {
+          "type": "House",
+          "location": "Los Angeles",
+          "details": {
+            "year_built": 1990,
+            "lot_size": 5000
+          }
+        },
+        "price": 850000
+      },
+      "{\n    property: {\n        type: \"House\",\n        location: \"Los Angeles\",\n        details: {\n            year_built: 1990,\n            lot_size: 5000\n        }\n    },\n    price: 850000\n}"
+    ],
+    [
+      {
+        "id": "A1B2C3",
+        "status": "For Sale",
+        "owner": {
+          "name": "Jane Smith",
+          "phone": "555-5678"
+        },
+        "features": {
+          "floors": 2,
+          "basement": true
+        }
+      },
+      "{\n    id: \"A1B2C3\",\n    status: \"For Sale\",\n    owner: {\n        name: \"Jane Smith\",\n        phone: \"555-5678\"\n    },\n    features: {\n        floors: 2,\n        basement: true\n    }\n}"
+    ],
+    [
+      {
+        "listing_id": "98765",
+        "available_from": "2024-01-01",
+        "description": "Beautiful lakeside property",
+        "images": [
+          "front_view.jpg",
+          "lake_view.jpg",
+          "living_room.jpg"
+        ]
+      },
+      "{\n    listing_id: \"98765\",\n    available_from: \"2024-01-01\",\n    description: \"Beautiful lakeside property\",\n    images: [\n        \"front_view.jpg\",\n        \"lake_view.jpg\",\n        \"living_room.jpg\"\n    ]\n}"
+    ],
+    [
+      {
+        "house_id": "54321",
+        "neighborhood": "Downtown",
+        "price": 1200000,
+        "details": {
+          "sqft": 3200,
+          "bedrooms": 4,
+          "bathrooms": 3,
+          "garage": true
+        }
+      },
+      "{\n    house_id: \"54321\",\n    neighborhood: \"Downtown\",\n    price: 1200000,\n    details: {\n        sqft: 3200,\n        bedrooms: 4,\n        bathrooms: 3,\n        garage: true\n    }\n}"
+    ],
+    [
+      {
+        "estate_id": "001122",
+        "location": "San Francisco",
+        "manager": {
+          "name": "Alice Brown",
+          "email": "alice@example.com"
+        },
+        "features": {
+          "elevator": true,
+          "parking": false
+        }
+      },
+      "{\n    estate_id: \"001122\",\n    location: \"San Francisco\",\n    manager: {\n        name: \"Alice Brown\",\n        email: \"alice@example.com\"\n    },\n    features: {\n        elevator: true,\n        parking: false\n    }\n}"
+    ],
+    [
+      {
+        "listing_number": "LMN456",
+        "property_type": "Condo",
+        "amenities": [
+          "gym",
+          "spa"
+        ],
+        "year_built": 2010
+      },
+      "{\n    listing_number: \"LMN456\",\n    property_type: \"Condo\",\n    amenities: [\"gym\", \"spa\"],\n    year_built: 2010\n}"
+    ],
+    [
+      {
+        "offer_id": "FDE789",
+        "terms": {
+          "price": 650000,
+          "closing_date": "2024-06-30"
+        },
+        "agent": {
+          "name": "Tom Green",
+          "license": "TG1234"
+        }
+      },
+      "{\n    offer_id: \"FDE789\",\n    terms: {\n        price: 650000,\n        closing_date: \"2024-06-30\"\n    },\n    agent: {\n        name: \"Tom Green\",\n        license: \"TG1234\"\n    }\n}"
+    ],
+    [
+      {
+        "realty_id": "789654",
+        "zone": "Suburbs",
+        "contact_info": {
+          "phone": "555-0000",
+          "email": "contact@realty.com"
+        },
+        "details": {
+          "energy_rating": "A",
+          "furnished": true
+        }
+      },
+      "{\n    realty_id: \"789654\",\n    zone: \"Suburbs\",\n    contact_info: {\n        phone: \"555-0000\",\n        email: \"contact@realty.com\"\n    },\n    details: {\n        energy_rating: \"A\",\n        furnished: true\n    }\n}"
+    ],
+    [
+      {
+        "eventId": 101,
+        "eventName": "Concert in the Park",
+        "ticketsAvailable": 200,
+        "date": "2023-12-15",
+        "prices": {
+          "standard": 50,
+          "vip": 100
+        }
+      },
+      "{\n  eventId: 101,\n  eventName: \"Concert in the Park\",\n  ticketsAvailable: 200,\n  date: \"2023-12-15\",\n  prices: {\n    standard: 50,\n    vip: 100\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 102,
+        "eventName": "Art Exhibition Opening",
+        "ticketsAvailable": 150,
+        "date": "2023-11-20",
+        "prices": {
+          "adult": 20,
+          "child": 10
+        }
+      },
+      "{\n  eventId: 102,\n  eventName: \"Art Exhibition Opening\",\n  ticketsAvailable: 150,\n  date: \"2023-11-20\",\n  prices: {\n    adult: 20,\n    child: 10\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 103,
+        "eventName": "Food Festival",
+        "ticketsAvailable": 500,
+        "date": "2024-01-10",
+        "prices": {
+          "entry": 5
+        }
+      },
+      "{\n  eventId: 103,\n  eventName: \"Food Festival\",\n  ticketsAvailable: 500,\n  date: \"2024-01-10\",\n  prices: {\n    entry: 5\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 104,
+        "eventName": "Tech Conference",
+        "ticketsAvailable": 300,
+        "date": "2024-03-15",
+        "prices": {
+          "earlyBird": 100,
+          "regular": 150
+        }
+      },
+      "{\n  eventId: 104,\n  eventName: \"Tech Conference\",\n  ticketsAvailable: 300,\n  date: \"2024-03-15\",\n  prices: {\n    earlyBird: 100,\n    regular: 150\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 105,
+        "eventName": "Marathon",
+        "ticketsAvailable": 400,
+        "date": "2024-04-02",
+        "prices": {
+          "participant": 25,
+          "spectator": 10
+        }
+      },
+      "{\n  eventId: 105,\n  eventName: \"Marathon\",\n  ticketsAvailable: 400,\n  date: \"2024-04-02\",\n  prices: {\n    participant: 25,\n    spectator: 10\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 106,
+        "eventName": "Science Fair",
+        "ticketsAvailable": 250,
+        "date": "2024-05-15",
+        "prices": {
+          "entry": 15,
+          "student": 5
+        }
+      },
+      "{\n  eventId: 106,\n  eventName: \"Science Fair\",\n  ticketsAvailable: 250,\n  date: \"2024-05-15\",\n  prices: {\n    entry: 15,\n    student: 5\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 107,
+        "eventName": "Comic Con",
+        "ticketsAvailable": 600,
+        "date": "2024-06-20",
+        "prices": {
+          "standard": 40,
+          "vip": 80
+        }
+      },
+      "{\n  eventId: 107,\n  eventName: \"Comic Con\",\n  ticketsAvailable: 600,\n  date: \"2024-06-20\",\n  prices: {\n    standard: 40,\n    vip: 80\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 108,
+        "eventName": "Music Festival",
+        "ticketsAvailable": 1000,
+        "date": "2023-12-01",
+        "prices": {
+          "general": 60,
+          "zoneA": 100,
+          "zoneB": 80
+        }
+      },
+      "{\n  eventId: 108,\n  eventName: \"Music Festival\",\n  ticketsAvailable: 1000,\n  date: \"2023-12-01\",\n  prices: {\n    general: 60,\n    zoneA: 100,\n    zoneB: 80\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 109,
+        "eventName": "Charity Gala",
+        "ticketsAvailable": 120,
+        "date": "2024-02-20",
+        "prices": {
+          "table": 500,
+          "single": 50
+        }
+      },
+      "{\n  eventId: 109,\n  eventName: \"Charity Gala\",\n  ticketsAvailable: 120,\n  date: \"2024-02-20\",\n  prices: {\n    table: 500,\n    single: 50\n  }\n}"
+    ],
+    [
+      {
+        "eventId": 110,
+        "eventName": "Theater Play",
+        "ticketsAvailable": 180,
+        "date": "2024-03-30",
+        "prices": {
+          "frontRow": 120,
+          "middleRow": 80,
+          "backRow": 50
+        }
+      },
+      "{\n  eventId: 110,\n  eventName: \"Theater Play\",\n  ticketsAvailable: 180,\n  date: \"2024-03-30\",\n  prices: {\n    frontRow: 120,\n    middleRow: 80,\n    backRow: 50\n  }\n}"
+    ],
+    [
+      {
+        "bugId": 101,
+        "title": "Login page error",
+        "description": "Users are unable to login due to timeout.",
+        "status": "Open",
+        "priority": "High"
+      },
+      "{\n  bugId: 101,\n  \"title\": \"Login page error\",\n  \"description\": \"Users are unable to login due to timeout.\",\n  \"status\": \"Open\",\n  \"priority\": \"High\"\n}"
+    ],
+    [
+      {
+        "bugId": 102,
+        "title": "CSS not loading",
+        "description": "Stylesheets are not applied on the dashboard.",
+        "status": "In Progress",
+        "priority": "Medium"
+      },
+      "{\n  \"bugId\": 102,\n  title: \"CSS not loading\",\n  \"description\": \"Stylesheets are not applied on the dashboard.\",\n  \"status\": \"In Progress\",\n  \"priority\": \"Medium\"\n}"
+    ],
+    [
+      {
+        "bugId": 103,
+        "title": "API returns 500",
+        "description": "Server error when fetching user data.",
+        "status": "Closed",
+        "priority": "Critical"
+      },
+      "{\n  \"bugId\": 103,\n  \"title\": \"API returns 500\",\n  description: \"Server error when fetching user data.\",\n  \"status\": \"Closed\",\n  \"priority\": \"Critical\"\n}"
+    ],
+    [
+      {
+        "bugId": 104,
+        "title": "Unexpected logout",
+        "description": "Users are logged out after 2 minutes of inactivity.",
+        "status": "Open",
+        "priority": "High"
+      },
+      "{\n  bugId: 104,\n  \"title\": \"Unexpected logout\",\n  \"description\": \"Users are logged out after 2 minutes of inactivity.\",\n  \"status\": \"Open\",\n  \"priority\": \"High\"\n}"
+    ],
+    [
+      {
+        "bugId": 105,
+        "title": "Image upload failure",
+        "description": "Images are not being uploaded in the profile section.",
+        "status": "Reopened",
+        "priority": "Medium"
+      },
+      "{\n  \"bugId\": 105,\n  \"title\": \"Image upload failure\",\n  description: \"Images are not being uploaded in the profile section.\",\n  \"status\": \"Reopened\",\n  \"priority\": \"Medium\"\n}"
+    ],
+    [
+      {
+        "bugId": 106,
+        "title": "Slow page loading",
+        "description": "The homepage takes more than 10 seconds to load.",
+        "status": "In Progress",
+        "priority": "Low"
+      },
+      "{\n  \"bugId\": 106,\n  title: \"Slow page loading\",\n  \"description\": \"The homepage takes more than 10 seconds to load.\",\n  \"status\": \"In Progress\",\n  \"priority\": \"Low\"\n}"
+    ],
+    [
+      {
+        "bugId": 107,
+        "title": "Button misalignment",
+        "description": "Submit button is not aligned on mobile view.",
+        "status": "Open",
+        "priority": "Low"
+      },
+      "{\n  bugId: 107,\n  \"title\": \"Button misalignment\",\n  \"description\": \"Submit button is not aligned on mobile view.\",\n  \"status\": \"Open\",\n  \"priority\": \"Low\"\n}"
+    ],
+    [
+      {
+        "bugId": 108,
+        "title": "Incorrect tooltip",
+        "description": "Tooltip displays wrong information on hover.",
+        "status": "Closed",
+        "priority": "Medium"
+      },
+      "{\n  bugId: 108,\n  \"title\": \"Incorrect tooltip\",\n  \"description\": \"Tooltip displays wrong information on hover.\",\n  \"status\": \"Closed\",\n  priority: \"Medium\"\n}"
+    ],
+    [
+      {
+        "bugId": 109,
+        "title": "Missing translation",
+        "description": "Some texts are not translated in Spanish locale.",
+        "status": "Reopened",
+        "priority": "High"
+      },
+      "{\n  \"bugId\": 109,\n  title: \"Missing translation\",\n  \"description\": \"Some texts are not translated in Spanish locale.\",\n  \"status\": \"Reopened\",\n  \"priority\": \"High\"\n}"
+    ],
+    [
+      {
+        "bugId": 110,
+        "title": "Email notification failure",
+        "description": "Email notifications are not sent to users.",
+        "status": "In Progress",
+        "priority": "Critical"
+      },
+      "{\n  bugId: 110,\n  \"title\": \"Email notification failure\",\n  \"description\": \"Email notifications are not sent to users.\",\n  \"status\": \"In Progress\",\n  \"priority\": \"Critical\"\n}"
+    ],
+    [
+      {
+        "vehicle_id": "1234ABCD",
+        "maintenance_records": [
+          {
+            "date": "2023-01-15",
+            "service": "Oil Change",
+            "mileage": 15000
+          },
+          {
+            "date": "2023-03-22",
+            "service": "Tire Rotation",
+            "mileage": 18000
+          }
+        ]
+      },
+      "{\n    vehicle_id: \"1234ABCD\",\n    maintenance_records: [\n        {\n            \"date\": \"2023-01-15\",\n            \"service\": \"Oil Change\",\n            \"mileage\": 15000\n        },\n        {\n            \"date\": \"2023-03-22\",\n            \"service\": \"Tire Rotation\",\n            \"mileage\": 18000\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "owner": "John Doe",
+        "car": {
+          "make": "Toyota",
+          "model": "Camry",
+          "year": 2020
+        },
+        "maintenance": [
+          {
+            "date": "2022-12-01",
+            "service": "Brake Inspection",
+            "mileage": 12000
+          }
+        ]
+      },
+      "{\n    owner: \"John Doe\",\n    car: {\n        make: \"Toyota\",\n        model: \"Camry\",\n        year: 2020\n    },\n    maintenance: [\n        {\n            \"date\": \"2022-12-01\",\n            \"service\": \"Brake Inspection\",\n            \"mileage\": 12000\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "service_center": "QuickFix Auto",
+        "services": [
+          {
+            "type": "Engine Check",
+            "cost": 300,
+            "recommended_interval": "6 months"
+          },
+          {
+            "type": "Battery Replacement",
+            "cost": 120,
+            "recommended_interval": "2 years"
+          }
+        ]
+      },
+      "{\n    service_center: \"QuickFix Auto\",\n    services: [\n        {\n            \"type\": \"Engine Check\",\n            \"cost\": 300,\n            \"recommended_interval\": \"6 months\"\n        },\n        {\n            \"type\": \"Battery Replacement\",\n            \"cost\": 120,\n            \"recommended_interval\": \"2 years\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "registration_number": "XYZ9876",
+        "maintenance_history": [
+          {
+            "date": "2021-05-10",
+            "service": "Transmission Fluid Change",
+            "mileage": 60000
+          },
+          {
+            "date": "2021-11-15",
+            "service": "Cooling System Flush",
+            "mileage": 75000
+          }
+        ]
+      },
+      "{\n    registration_number: \"XYZ9876\",\n    maintenance_history: [\n        {\n            \"date\": \"2021-05-10\",\n            \"service\": \"Transmission Fluid Change\",\n            \"mileage\": 60000\n        },\n        {\n            \"date\": \"2021-11-15\",\n            \"service\": \"Cooling System Flush\",\n            \"mileage\": 75000\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "garage_location": "Downtown Auto Services",
+        "vehicles_serviced": [
+          {
+            "license_plate": "ABC123",
+            "owner": "Alice Johnson",
+            "last_service": "2022-10-05"
+          }
+        ]
+      },
+      "{\n    garage_location: \"Downtown Auto Services\",\n    vehicles_serviced: [\n        {\n            license_plate: \"ABC123\",\n            owner: \"Alice Johnson\",\n            last_service: \"2022-10-05\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "fleet_id": "FL-007",
+        "vehicles": [
+          {
+            "id": "V1",
+            "service_date": "2023-04-10",
+            "service_details": "Air Filter Replacement"
+          },
+          {
+            "id": "V2",
+            "service_date": "2023-04-12",
+            "service_details": "Spark Plug Replacement"
+          }
+        ]
+      },
+      "{\n    fleet_id: \"FL-007\",\n    vehicles: [\n        {\n            id: \"V1\",\n            service_date: \"2023-04-10\",\n            service_details: \"Air Filter Replacement\"\n        },\n        {\n            id: \"V2\",\n            service_date: \"2023-04-12\",\n            service_details: \"Spark Plug Replacement\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "mechanic": "Frank Murphy",
+        "recent_repairs": [
+          {
+            "vehicle_id": "CAR001",
+            "repair": "Exhaust System",
+            "date_completed": "2023-02-20"
+          }
+        ]
+      },
+      "{\n    mechanic: \"Frank Murphy\",\n    recent_repairs: [\n        {\n            vehicle_id: \"CAR001\",\n            repair: \"Exhaust System\",\n            date_completed: \"2023-02-20\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "company": "Fleet Solutions Inc.",
+        "maintenance_schedule": {
+          "weekly": "Check tire pressure",
+          "monthly": "Inspect brake pads",
+          "quarterly": "Full vehicle inspection"
+        }
+      },
+      "{\n    company: \"Fleet Solutions Inc.\",\n    maintenance_schedule: {\n        weekly: \"Check tire pressure\",\n        monthly: \"Inspect brake pads\",\n        quarterly: \"Full vehicle inspection\"\n    }\n}"
+    ],
+    [
+      {
+        "client": "Sarah Connor",
+        "car_details": {
+          "make": "Ford",
+          "model": "Mustang",
+          "year": 2018,
+          "services": [
+            {
+              "service_type": "Alignment",
+              "date": "2023-07-07"
+            }
+          ]
+        }
+      },
+      "{\n    client: \"Sarah Connor\",\n    car_details: {\n        make: \"Ford\",\n        model: \"Mustang\",\n        year: 2018,\n        services: [\n            {\n                service_type: \"Alignment\",\n                date: \"2023-07-07\"\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "vehicle_fleet": "North District",
+        "service_log": [
+          {
+            "entry_id": "001",
+            "service": "Battery Check",
+            "service_provider": "Green Auto Services"
+          },
+          {
+            "entry_id": "002",
+            "service": "Brake Fluid Replacement",
+            "service_provider": "Super Auto"
+          }
+        ]
+      },
+      "{\n    vehicle_fleet: \"North District\",\n    service_log: [\n        {\n            entry_id: \"001\",\n            service: \"Battery Check\",\n            service_provider: \"Green Auto Services\"\n        },\n        {\n            entry_id: \"002\",\n            service: \"Brake Fluid Replacement\",\n            service_provider: \"Super Auto\"\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 101,
+        "name": "John Doe",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-02",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    employeeId: 101,\n    name: \"John Doe\",\n    attendance: [\n        {date: \"2023-10-01\", status: \"Present\"},\n        {date: \"2023-10-02\", status: \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 102,
+        "name": "Jane Smith",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-03",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    employeeId: 102,\n    name: \"Jane Smith\",\n    attendance: [\n        {date: \"2023-10-01\", status: \"Present\"},\n        {date: \"2023-10-03\", status: \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 103,
+        "name": "Alice Johnson",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-05",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    employeeId: 103,\n    name: \"Alice Johnson\",\n    attendance: [\n        {date: \"2023-10-01\", status: \"Absent\"},\n        {date: \"2023-10-05\", status: \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 104,
+        "name": "Bob Brown",
+        "attendance": [
+          {
+            "date": "2023-10-01",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-06",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    employeeId: 104,\n    name: \"Bob Brown\",\n    attendance: [\n        {date: \"2023-10-01\", status: \"Present\"},\n        {date: \"2023-10-06\", status: \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 105,
+        "name": "Charlie Davis",
+        "attendance": [
+          {
+            "date": "2023-10-02",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-07",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    employeeId: 105,\n    name: \"Charlie Davis\",\n    attendance: [\n        {date: \"2023-10-02\", status: \"Present\"},\n        {date: \"2023-10-07\", status: \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 106,
+        "name": "Diana Evans",
+        "attendance": [
+          {
+            "date": "2023-10-02",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-08",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    employeeId: 106,\n    name: \"Diana Evans\",\n    attendance: [\n        {date: \"2023-10-02\", status: \"Absent\"},\n        {date: \"2023-10-08\", status: \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 107,
+        "name": "Eve Foster",
+        "attendance": [
+          {
+            "date": "2023-10-03",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-09",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    employeeId: 107,\n    name: \"Eve Foster\",\n    attendance: [\n        {date: \"2023-10-03\", status: \"Absent\"},\n        {date: \"2023-10-09\", status: \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 108,
+        "name": "Frank Green",
+        "attendance": [
+          {
+            "date": "2023-10-03",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-10",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    employeeId: 108,\n    name: \"Frank Green\",\n    attendance: [\n        {date: \"2023-10-03\", status: \"Present\"},\n        {date: \"2023-10-10\", status: \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 109,
+        "name": "Grace Hall",
+        "attendance": [
+          {
+            "date": "2023-10-04",
+            "status": "Present"
+          },
+          {
+            "date": "2023-10-11",
+            "status": "Absent"
+          }
+        ]
+      },
+      "{\n    employeeId: 109,\n    name: \"Grace Hall\",\n    attendance: [\n        {date: \"2023-10-04\", status: \"Present\"},\n        {date: \"2023-10-11\", status: \"Absent\"}\n    ]\n}"
+    ],
+    [
+      {
+        "employeeId": 110,
+        "name": "Hank Ives",
+        "attendance": [
+          {
+            "date": "2023-10-04",
+            "status": "Absent"
+          },
+          {
+            "date": "2023-10-12",
+            "status": "Present"
+          }
+        ]
+      },
+      "{\n    employeeId: 110,\n    name: \"Hank Ives\",\n    attendance: [\n        {date: \"2023-10-04\", status: \"Absent\"},\n        {date: \"2023-10-12\", status: \"Present\"}\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 123,
+        "title": "How to learn Python?",
+        "author": "user123",
+        "posts": [
+          {
+            "postId": 1,
+            "author": "user456",
+            "content": "I recommend starting with the official Python tutorial.",
+            "likes": 15
+          },
+          {
+            "postId": 2,
+            "author": "user789",
+            "content": "Check out freeCodeCamp's Python course!",
+            "likes": 8
+          }
+        ]
+      },
+      "{\n    threadId: 123,\n    title: \"How to learn Python?\",\n    author: \"user123\",\n    posts: [\n        {\n            postId: 1,\n            author: \"user456\",\n            content: \"I recommend starting with the official Python tutorial.\",\n            likes: 15\n        },\n        {\n            postId: 2,\n            author: \"user789\",\n            content: \"Check out freeCodeCamp's Python course!\",\n            likes: 8\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 456,
+        "title": "Favorite coding resources?",
+        "author": "user321",
+        "posts": [
+          {
+            "postId": 10,
+            "author": "user654",
+            "content": "I love using Codewars for practicing.",
+            "likes": 20
+          },
+          {
+            "postId": 11,
+            "author": "user987",
+            "content": "LeetCode is great for interview prep.",
+            "likes": 30
+          }
+        ]
+      },
+      "{\n    threadId: 456,\n    title: \"Favorite coding resources?\",\n    author: \"user321\",\n    posts: [\n        {\n            postId: 10,\n            author: \"user654\",\n            content: \"I love using Codewars for practicing.\",\n            likes: 20\n        },\n        {\n            postId: 11,\n            author: \"user987\",\n            content: \"LeetCode is great for interview prep.\",\n            likes: 30\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 789,
+        "title": "Best programming languages for web development?",
+        "author": "user654",
+        "posts": [
+          {
+            "postId": 21,
+            "author": "user321",
+            "content": "JavaScript is a must for web development.",
+            "likes": 50
+          },
+          {
+            "postId": 22,
+            "author": "user123",
+            "content": "Don't forget about CSS and HTML!",
+            "likes": 35
+          }
+        ]
+      },
+      "{\n    threadId: 789,\n    title: \"Best programming languages for web development?\",\n    author: \"user654\",\n    posts: [\n        {\n            postId: 21,\n            author: \"user321\",\n            content: \"JavaScript is a must for web development.\",\n            likes: 50\n        },\n        {\n            postId: 22,\n            author: \"user123\",\n            content: \"Don't forget about CSS and HTML!\",\n            likes: 35\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 101,
+        "title": "Remote work tips?",
+        "author": "user987",
+        "posts": [
+          {
+            "postId": 31,
+            "author": "user654",
+            "content": "Set up a dedicated workspace at home.",
+            "likes": 25
+          },
+          {
+            "postId": 32,
+            "author": "user321",
+            "content": "Keep a regular schedule to stay productive.",
+            "likes": 40
+          }
+        ]
+      },
+      "{\n    threadId: 101,\n    title: \"Remote work tips?\",\n    author: \"user987\",\n    posts: [\n        {\n            postId: 31,\n            author: \"user654\",\n            content: \"Set up a dedicated workspace at home.\",\n            likes: 25\n        },\n        {\n            postId: 32,\n            author: \"user321\",\n            content: \"Keep a regular schedule to stay productive.\",\n            likes: 40\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 202,
+        "title": "How to improve coding skills?",
+        "author": "user456",
+        "posts": [
+          {
+            "postId": 41,
+            "author": "user123",
+            "content": "Practice daily and solve problems on different platforms.",
+            "likes": 60
+          },
+          {
+            "postId": 42,
+            "author": "user789",
+            "content": "Read code written by others to learn new techniques.",
+            "likes": 45
+          }
+        ]
+      },
+      "{\n    threadId: 202,\n    title: \"How to improve coding skills?\",\n    author: \"user456\",\n    posts: [\n        {\n            postId: 41,\n            author: \"user123\",\n            content: \"Practice daily and solve problems on different platforms.\",\n            likes: 60\n        },\n        {\n            postId: 42,\n            author: \"user789\",\n            content: \"Read code written by others to learn new techniques.\",\n            likes: 45\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 303,
+        "title": "Computer Science vs Software Engineering?",
+        "author": "user321",
+        "posts": [
+          {
+            "postId": 51,
+            "author": "user654",
+            "content": "Computer Science focuses more on theory.",
+            "likes": 70
+          },
+          {
+            "postId": 52,
+            "author": "user987",
+            "content": "Software Engineering is more about practical application.",
+            "likes": 55
+          }
+        ]
+      },
+      "{\n    threadId: 303,\n    title: \"Computer Science vs Software Engineering?\",\n    author: \"user321\",\n    posts: [\n        {\n            postId: 51,\n            author: \"user654\",\n            content: \"Computer Science focuses more on theory.\",\n            likes: 70\n        },\n        {\n            postId: 52,\n            author: \"user987\",\n            content: \"Software Engineering is more about practical application.\",\n            likes: 55\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 404,
+        "title": "Machine Learning resources?",
+        "author": "user654",
+        "posts": [
+          {
+            "postId": 61,
+            "author": "user321",
+            "content": "Check out Coursera's Machine Learning course by Andrew Ng.",
+            "likes": 80
+          },
+          {
+            "postId": 62,
+            "author": "user123",
+            "content": "Fast.ai offers great free resources on deep learning.",
+            "likes": 65
+          }
+        ]
+      },
+      "{\n    threadId: 404,\n    title: \"Machine Learning resources?\",\n    author: \"user654\",\n    posts: [\n        {\n            postId: 61,\n            author: \"user321\",\n            content: \"Check out Coursera's Machine Learning course by Andrew Ng.\",\n            likes: 80\n        },\n        {\n            postId: 62,\n            author: \"user123\",\n            content: \"Fast.ai offers great free resources on deep learning.\",\n            likes: 65\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 505,
+        "title": "Open source contribution?",
+        "author": "user987",
+        "posts": [
+          {
+            "postId": 71,
+            "author": "user654",
+            "content": "Contributing to open source is a great way to learn and give back.",
+            "likes": 90
+          },
+          {
+            "postId": 72,
+            "author": "user321",
+            "content": "Look for 'good first issues' in repositories you are interested in.",
+            "likes": 75
+          }
+        ]
+      },
+      "{\n    threadId: 505,\n    title: \"Open source contribution?\",\n    author: \"user987\",\n    posts: [\n        {\n            postId: 71,\n            author: \"user654\",\n            content: \"Contributing to open source is a great way to learn and give back.\",\n            likes: 90\n        },\n        {\n            postId: 72,\n            author: \"user321\",\n            content: \"Look for 'good first issues' in repositories you are interested in.\",\n            likes: 75\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 606,
+        "title": "Best IDE for JavaScript?",
+        "author": "user123",
+        "posts": [
+          {
+            "postId": 81,
+            "author": "user654",
+            "content": "I love using VSCode for JavaScript development.",
+            "likes": 95
+          },
+          {
+            "postId": 82,
+            "author": "user987",
+            "content": "Sublime Text is lightweight and fast.",
+            "likes": 85
+          }
+        ]
+      },
+      "{\n    threadId: 606,\n    title: \"Best IDE for JavaScript?\",\n    author: \"user123\",\n    posts: [\n        {\n            postId: 81,\n            author: \"user654\",\n            content: \"I love using VSCode for JavaScript development.\",\n            likes: 95\n        },\n        {\n            postId: 82,\n            author: \"user987\",\n            content: \"Sublime Text is lightweight and fast.\",\n            likes: 85\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "threadId": 707,
+        "title": "How to start freelancing as a developer?",
+        "author": "user321",
+        "posts": [
+          {
+            "postId": 91,
+            "author": "user654",
+            "content": "Build a strong portfolio and start networking.",
+            "likes": 100
+          },
+          {
+            "postId": 92,
+            "author": "user123",
+            "content": "Try platforms like Upwork and Freelancer to find clients.",
+            "likes": 85
+          }
+        ]
+      },
+      "{\n    threadId: 707,\n    title: \"How to start freelancing as a developer?\",\n    author: \"user321\",\n    posts: [\n        {\n            postId: 91,\n            author: \"user654\",\n            content: \"Build a strong portfolio and start networking.\",\n            likes: 100\n        },\n        {\n            postId: 92,\n            author: \"user123\",\n            content: \"Try platforms like Upwork and Freelancer to find clients.\",\n            likes: 85\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "storeId": 101,
+        "date": "2023-10-05",
+        "footTraffic": [
+          {
+            "hour": "09:00",
+            "count": 150
+          },
+          {
+            "hour": "10:00",
+            "count": 200
+          },
+          {
+            "hour": "11:00",
+            "count": 250
+          }
+        ]
+      },
+      "{\n  storeId: 101,\n  date: \"2023-10-05\",\n  footTraffic: [\n    {hour: \"09:00\", count: 150},\n    {hour: \"10:00\", count: 200},\n    {hour: \"11:00\", count: 250}\n  ]\n}"
+    ],
+    [
+      {
+        "location": "Downtown",
+        "day": "Monday",
+        "visitors": [
+          {
+            "period": "morning",
+            "number": 300
+          },
+          {
+            "period": "afternoon",
+            "number": 400
+          },
+          {
+            "period": "evening",
+            "number": 350
+          }
+        ]
+      },
+      "{\n  location: \"Downtown\",\n  day: \"Monday\",\n  visitors: [\n    {period: \"morning\", number: 300},\n    {period: \"afternoon\", number: 400},\n    {period: \"evening\", number: 350}\n  ]\n}"
+    ],
+    [
+      {
+        "branch": "Mall",
+        "week": "42",
+        "dailyTraffic": {
+          "Monday": 1200,
+          "Tuesday": 1300,
+          "Wednesday": 1100,
+          "Thursday": 1450,
+          "Friday": 1600
+        }
+      },
+      "{\n  branch: \"Mall\",\n  week: \"42\",\n  dailyTraffic: {\n    Monday: 1200,\n    Tuesday: 1300,\n    Wednesday: 1100,\n    Thursday: 1450,\n    Friday: 1600\n  }\n}"
+    ],
+    [
+      {
+        "storeName": "SuperMart",
+        "monthlyVisitors": [
+          {
+            "month": "January",
+            "visits": 5000
+          },
+          {
+            "month": "February",
+            "visits": 4500
+          },
+          {
+            "month": "March",
+            "visits": 4800
+          }
+        ]
+      },
+      "{\n  storeName: \"SuperMart\",\n  monthlyVisitors: [\n    {month: \"January\", visits: 5000},\n    {month: \"February\", visits: 4500},\n    {month: \"March\", visits: 4800}\n  ]\n}"
+    ],
+    [
+      {
+        "region": "West",
+        "year": 2023,
+        "quarterlyFootTraffic": {
+          "Q1": 15000,
+          "Q2": 16000,
+          "Q3": 17000
+        }
+      },
+      "{\n  region: \"West\",\n  year: 2023,\n  quarterlyFootTraffic: {\n    Q1: 15000,\n    Q2: 16000,\n    Q3: 17000\n  }\n}"
+    ],
+    [
+      {
+        "city": "Metropolis",
+        "specialEvent": "Black Friday",
+        "eventTraffic": [
+          {
+            "hour": "08:00",
+            "peak": 900
+          },
+          {
+            "hour": "09:00",
+            "peak": 1200
+          },
+          {
+            "hour": "10:00",
+            "peak": 1500
+          }
+        ]
+      },
+      "{\n  city: \"Metropolis\",\n  specialEvent: \"Black Friday\",\n  eventTraffic: [\n    {hour: \"08:00\", peak: 900},\n    {hour: \"09:00\", peak: 1200},\n    {hour: \"10:00\", peak: 1500}\n  ]\n}"
+    ],
+    [
+      {
+        "chain": "FashionHub",
+        "season": "Fall",
+        "visitorTrends": {
+          "October": 10000,
+          "November": 11500,
+          "December": 12500
+        }
+      },
+      "{\n  chain: \"FashionHub\",\n  season: \"Fall\",\n  visitorTrends: {\n    October: 10000,\n    November: 11500,\n    December: 12500\n  }\n}"
+    ],
+    [
+      {
+        "storeCode": "A123",
+        "holiday": "Christmas",
+        "holidayTraffic": [
+          {
+            "day": "Christmas Eve",
+            "count": 800
+          },
+          {
+            "day": "Christmas Day",
+            "count": 1000
+          },
+          {
+            "day": "Boxing Day",
+            "count": 950
+          }
+        ]
+      },
+      "{\n  storeCode: \"A123\",\n  holiday: \"Christmas\",\n  holidayTraffic: [\n    {day: \"Christmas Eve\", count: 800},\n    {day: \"Christmas Day\", count: 1000},\n    {day: \"Boxing Day\", count: 950}\n  ]\n}"
+    ],
+    [
+      {
+        "superintendent": "John Doe",
+        "surveyDate": "2023-11-01",
+        "surveyResults": [
+          {
+            "timeFrame": "morning",
+            "footfall": 400
+          },
+          {
+            "timeFrame": "noon",
+            "footfall": 600
+          },
+          {
+            "timeFrame": "afternoon",
+            "footfall": 700
+          }
+        ]
+      },
+      "{\n  superintendent: \"John Doe\",\n  surveyDate: \"2023-11-01\",\n  surveyResults: [\n    {timeFrame: \"morning\", footfall: 400},\n    {timeFrame: \"noon\", footfall: 600},\n    {timeFrame: \"afternoon\", footfall: 700}\n  ]\n}"
+    ],
+    [
+      {
+        "manager": "Alice Smith",
+        "period": "Q4",
+        "footTrafficAnalysis": {
+          "October": 10500,
+          "November": 11200,
+          "December": 13000
+        }
+      },
+      "{\n  manager: \"Alice Smith\",\n  period: \"Q4\",\n  footTrafficAnalysis: {\n    October: 10500,\n    November: 11200,\n    December: 13000\n  }\n}"
+    ],
+    [
+      {
+        "playlistName": "Summer Vibes",
+        "createdBy": "DJ Smooth",
+        "songs": [
+          {
+            "title": "Sunshine",
+            "artist": "The Brights",
+            "duration": "3:45"
+          },
+          {
+            "title": "Beach Walk",
+            "artist": "Ocean Sounds",
+            "duration": "4:20"
+          }
+        ]
+      },
+      "{\n    playlistName: \"Summer Vibes\",\n    createdBy: \"DJ Smooth\",\n    songs: [\n        {\"title\": \"Sunshine\", \"artist\": \"The Brights\", \"duration\": \"3:45\"},\n        {\"title\": \"Beach Walk\", \"artist\": \"Ocean Sounds\", \"duration\": \"4:20\"}\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Chill Beats",
+        "createdBy": "Lofi Guru",
+        "genre": "Lofi",
+        "songs": [
+          {
+            "title": "Calm Waters",
+            "artist": "Aesthetic Vibes",
+            "duration": "2:30"
+          },
+          {
+            "title": "Evening Glow",
+            "artist": "Chill Masters",
+            "duration": "3:15"
+          }
+        ]
+      },
+      "{\n    playlistName: \"Chill Beats\",\n    createdBy: \"Lofi Guru\",\n    genre: \"Lofi\",\n    songs: [\n        {\"title\": \"Calm Waters\", \"artist\": \"Aesthetic Vibes\", \"duration\": \"2:30\"},\n        {\"title\": \"Evening Glow\", \"artist\": \"Chill Masters\", \"duration\": \"3:15\"}\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Workout Hits",
+        "createdBy": "Fitness DJ",
+        "likes": 1500,
+        "songs": [
+          {
+            "title": "Pump It Up",
+            "artist": "Energy Crew",
+            "duration": "4:05"
+          },
+          {
+            "title": "Run Faster",
+            "artist": "Speed Kings",
+            "duration": "3:50"
+          }
+        ]
+      },
+      "{\n    playlistName: \"Workout Hits\",\n    createdBy: \"Fitness DJ\",\n    likes: 1500,\n    songs: [\n        {\"title\": \"Pump It Up\", \"artist\": \"Energy Crew\", \"duration\": \"4:05\"},\n        {\"title\": \"Run Faster\", \"artist\": \"Speed Kings\", \"duration\": \"3:50\"}\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Evening Relaxation",
+        "createdBy": "Harmony Maker",
+        "mood": "Relaxed",
+        "songs": [
+          {
+            "title": "Gentle Breeze",
+            "artist": "Nature's Harmony",
+            "duration": "5:00"
+          },
+          {
+            "title": "Quiet Night",
+            "artist": "Peaceful Sounds",
+            "duration": "4:45"
+          }
+        ]
+      },
+      "{\n    playlistName: \"Evening Relaxation\",\n    createdBy: \"Harmony Maker\",\n    mood: \"Relaxed\",\n    songs: [\n        {\"title\": \"Gentle Breeze\", \"artist\": \"Nature's Harmony\", \"duration\": \"5:00\"},\n        {\"title\": \"Quiet Night\", \"artist\": \"Peaceful Sounds\", \"duration\": \"4:45\"}\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Top 40",
+        "createdBy": "Pop Hitters",
+        "year": 2023,
+        "songs": [
+          {
+            "title": "Hit Song 1",
+            "artist": "Star Singer",
+            "duration": "3:30"
+          },
+          {
+            "title": "Hit Song 2",
+            "artist": "Chart Toppers",
+            "duration": "3:50"
+          }
+        ]
+      },
+      "{\n    playlistName: \"Top 40\",\n    createdBy: \"Pop Hitters\",\n    year: 2023,\n    songs: [\n        {\"title\": \"Hit Song 1\", \"artist\": \"Star Singer\", \"duration\": \"3:30\"},\n        {\"title\": \"Hit Song 2\", \"artist\": \"Chart Toppers\", \"duration\": \"3:50\"}\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Classical Essentials",
+        "createdBy": "Symphony Master",
+        "decade": "1800s",
+        "songs": [
+          {
+            "title": "Symphony No. 5",
+            "artist": "Ludwig van Beethoven",
+            "duration": "7:10"
+          },
+          {
+            "title": "The Four Seasons",
+            "artist": "Antonio Vivaldi",
+            "duration": "8:20"
+          }
+        ]
+      },
+      "{\n    playlistName: \"Classical Essentials\",\n    createdBy: \"Symphony Master\",\n    decade: \"1800s\",\n    songs: [\n        {\"title\": \"Symphony No. 5\", \"artist\": \"Ludwig van Beethoven\", \"duration\": \"7:10\"},\n        {\"title\": \"The Four Seasons\", \"artist\": \"Antonio Vivaldi\", \"duration\": \"8:20\"}\n    ]\n}"
+    ],
+    [
+      {
+        "playlistName": "Party Anthems",
+        "createdBy": "DJ Party",
+        "songs": [
+          {
+            "title": "Dance All Night",
+            "artist": "The Beat",
+            "duration": "3:35"
+          },
+          {
+            "title": "Turn Up",
+            "artist": "Party Band",
+            "duration": "4:00"
+          }
+        ],
+        "followers": 9870
+      },
+      "{\n    playlistName: \"Party Anthems\",\n    createdBy: \"DJ Party\",\n    songs: [\n        {\"title\": \"Dance All Night\", \"artist\": \"The Beat\", \"duration\": \"3:35\"},\n        {\"title\": \"Turn Up\", \"artist\": \"Party Band\", \"duration\": \"4:00\"}\n    ],\n    followers: 9870\n}"
+    ],
+    [
+      {
+        "playlistName": "Indie Collection",
+        "createdBy": "Indie Lover",
+        "songs": [
+          {
+            "title": "Indie Dream",
+            "artist": "The Free Spirits",
+            "duration": "4:45"
+          },
+          {
+            "title": "Acoustic Tones",
+            "artist": "Solo Artist",
+            "duration": "5:10"
+          }
+        ],
+        "comments": "Great for a quiet afternoon!"
+      },
+      "{\n    playlistName: \"Indie Collection\",\n    createdBy: \"Indie Lover\",\n    songs: [\n        {\"title\": \"Indie Dream\", \"artist\": \"The Free Spirits\", \"duration\": \"4:45\"},\n        {\"title\": \"Acoustic Tones\", \"artist\": \"Solo Artist\", \"duration\": \"5:10\"}\n    ],\n    comments: \"Great for a quiet afternoon!\"\n}"
+    ],
+    [
+      {
+        "playlistName": "Electronic Hits",
+        "createdBy": "Synth Master",
+        "songs": [
+          {
+            "title": "Digital Love",
+            "artist": "Synth Duo",
+            "duration": "6:10"
+          },
+          {
+            "title": "Pulse",
+            "artist": "Electric Groove",
+            "duration": "5:45"
+          }
+        ],
+        "downloads": 12000
+      },
+      "{\n    playlistName: \"Electronic Hits\",\n    createdBy: \"Synth Master\",\n    songs: [\n        {\"title\": \"Digital Love\", \"artist\": \"Synth Duo\", \"duration\": \"6:10\"},\n        {\"title\": \"Pulse\", \"artist\": \"Electric Groove\", \"duration\": \"5:45\"}\n    ],\n    downloads: 12000\n}"
+    ],
+    [
+      {
+        "playlistName": "Rock Classics",
+        "createdBy": "Rock Fan",
+        "songs": [
+          {
+            "title": "Thunder Struck",
+            "artist": "Rock Legends",
+            "duration": "4:45"
+          },
+          {
+            "title": "Back in Black",
+            "artist": "Guitar Heroes",
+            "duration": "5:30"
+          }
+        ],
+        "rating": 4.9
+      },
+      "{\n    playlistName: \"Rock Classics\",\n    createdBy: \"Rock Fan\",\n    songs: [\n        {\"title\": \"Thunder Struck\", \"artist\": \"Rock Legends\", \"duration\": \"4:45\"},\n        {\"title\": \"Back in Black\", \"artist\": \"Guitar Heroes\", \"duration\": \"5:30\"}\n    ],\n    rating: 4.9\n}"
+    ],
+    [
+      {
+        "card_id": "1234567890",
+        "usage_history": [
+          {
+            "date": "2023-10-01",
+            "entry_station": "Central",
+            "exit_station": "West End",
+            "fare": 2.5
+          },
+          {
+            "date": "2023-10-02",
+            "entry_station": "East Side",
+            "exit_station": "Central",
+            "fare": 2.75
+          }
+        ],
+        "balance": 20.5
+      },
+      "{\n    card_id: \"1234567890\",\n    usage_history: [\n        {\n            date: \"2023-10-01\",\n            entry_station: \"Central\",\n            exit_station: \"West End\",\n            fare: 2.50\n        },\n        {\n            date: \"2023-10-02\",\n            entry_station: \"East Side\",\n            exit_station: \"Central\",\n            fare: 2.75\n        }\n    ],\n    balance: 20.50\n}"
+    ],
+    [
+      {
+        "card_id": "0987654321",
+        "usage": [
+          {
+            "date": "2023-09-29",
+            "station": "North Square",
+            "type": "entry",
+            "fare": 3.0
+          },
+          {
+            "date": "2023-09-30",
+            "station": "South Park",
+            "type": "exit",
+            "fare": 2.25
+          }
+        ],
+        "balance": 15.0
+      },
+      "{\n    card_id: \"0987654321\",\n    usage: [\n        {\n            date: \"2023-09-29\",\n            station: \"North Square\",\n            type: \"entry\",\n            fare: 3.00\n        },\n        {\n            date: \"2023-09-30\",\n            station: \"South Park\",\n            type: \"exit\",\n            fare: 2.25\n        }\n    ],\n    balance: 15.00\n}"
+    ],
+    [
+      {
+        "card_number": "5678901234",
+        "transactions": [
+          {
+            "date": "2023-10-03",
+            "entry": "Downtown",
+            "exit": "Airport",
+            "amount": 5.0
+          },
+          {
+            "date": "2023-10-04",
+            "entry": "Airport",
+            "exit": "Downtown",
+            "amount": 5.0
+          }
+        ],
+        "current_balance": 30.0
+      },
+      "{\n    card_number: \"5678901234\",\n    transactions: [\n        {\n            date: \"2023-10-03\",\n            entry: \"Downtown\",\n            exit: \"Airport\",\n            amount: 5.00\n        },\n        {\n            date: \"2023-10-04\",\n            entry: \"Airport\",\n            exit: \"Downtown\",\n            amount: 5.00\n        }\n    ],\n    current_balance: 30.00\n}"
+    ],
+    [
+      {
+        "id": "111122223333",
+        "trips": [
+          {
+            "date": "2023-09-28",
+            "start_station": "West End",
+            "end_station": "Central",
+            "cost": 2.75
+          },
+          {
+            "date": "2023-09-29",
+            "start_station": "Central",
+            "end_station": "East Side",
+            "cost": 2.5
+          }
+        ],
+        "remaining_balance": 12.75
+      },
+      "{\n    id: \"111122223333\",\n    trips: [\n        {\n            date: \"2023-09-28\",\n            start_station: \"West End\",\n            end_station: \"Central\",\n            cost: 2.75\n        },\n        {\n            date: \"2023-09-29\",\n            start_station: \"Central\",\n            end_station: \"East Side\",\n            cost: 2.50\n        }\n    ],\n    remaining_balance: 12.75\n}"
+    ],
+    [
+      {
+        "pass_id": "222233334444",
+        "log": [
+          {
+            "date": "2023-10-05",
+            "from": "South Park",
+            "to": "Downtown",
+            "fee": 3.25
+          },
+          {
+            "date": "2023-10-06",
+            "from": "Downtown",
+            "to": "North Square",
+            "fee": 3.0
+          }
+        ],
+        "card_balance": 18.0
+      },
+      "{\n    pass_id: \"222233334444\",\n    log: [\n        {\n            date: \"2023-10-05\",\n            from: \"South Park\",\n            to: \"Downtown\",\n            fee: 3.25\n        },\n        {\n            date: \"2023-10-06\",\n            from: \"Downtown\",\n            to: \"North Square\",\n            fee: 3.00\n        }\n    ],\n    card_balance: 18.00\n}"
+    ],
+    [
+      {
+        "transit_card_id": "444455556666",
+        "journeys": [
+          {
+            "date": "2023-09-27",
+            "origin": "North Side",
+            "destination": "West End",
+            "charge": 4.0
+          },
+          {
+            "date": "2023-09-28",
+            "origin": "Airport",
+            "destination": "East Side",
+            "charge": 5.0
+          }
+        ],
+        "available_balance": 25.5
+      },
+      "{\n    transit_card_id: \"444455556666\",\n    journeys: [\n        {\n            date: \"2023-09-27\",\n            origin: \"North Side\",\n            destination: \"West End\",\n            charge: 4.00\n        },\n        {\n            date: \"2023-09-28\",\n            origin: \"Airport\",\n            destination: \"East Side\",\n            charge: 5.00\n        }\n    ],\n    available_balance: 25.50\n}"
+    ],
+    [
+      {
+        "smart_card_number": "777788889999",
+        "activity": [
+          {
+            "date": "2023-10-07",
+            "entry_location": "Central",
+            "exit_location": "North Square",
+            "payment": 2.75
+          },
+          {
+            "date": "2023-10-08",
+            "entry_location": "West End",
+            "exit_location": "Downtown",
+            "payment": 3.0
+          }
+        ],
+        "balance_remaining": 22.25
+      },
+      "{\n    smart_card_number: \"777788889999\",\n    activity: [\n        {\n            date: \"2023-10-07\",\n            entry_location: \"Central\",\n            exit_location: \"North Square\",\n            payment: 2.75\n        },\n        {\n            date: \"2023-10-08\",\n            entry_location: \"West End\",\n            exit_location: \"Downtown\",\n            payment: 3.00\n        }\n    ],\n    balance_remaining: 22.25\n}"
+    ],
+    [
+      {
+        "card_reference": "333344445555",
+        "commutes": [
+          {
+            "date": "2023-09-30",
+            "start": "East Side",
+            "finish": "West End",
+            "rate": 2.5
+          },
+          {
+            "date": "2023-10-01",
+            "start": "West End",
+            "finish": "Airport",
+            "rate": 4.5
+          }
+        ],
+        "total_balance": 19.0
+      },
+      "{\n    card_reference: \"333344445555\",\n    commutes: [\n        {\n            date: \"2023-09-30\",\n            start: \"East Side\",\n            finish: \"West End\",\n            rate: 2.50\n        },\n        {\n            date: \"2023-10-01\",\n            start: \"West End\",\n            finish: \"Airport\",\n            rate: 4.50\n        }\n    ],\n    total_balance: 19.00\n}"
+    ],
+    [
+      {
+        "pass_number": "666677778888",
+        "records": [
+          {
+            "date": "2023-10-02",
+            "entry_point": "Downtown",
+            "exit_point": "Central",
+            "deducted_amount": 3.25
+          },
+          {
+            "date": "2023-10-03",
+            "entry_point": "North Square",
+            "exit_point": "East Side",
+            "deducted_amount": 2.75
+          }
+        ],
+        "balance_left": 20.75
+      },
+      "{\n    pass_number: \"666677778888\",\n    records: [\n        {\n            date: \"2023-10-02\",\n            entry_point: \"Downtown\",\n            exit_point: \"Central\",\n            deducted_amount: 3.25\n        },\n        {\n            date: \"2023-10-03\",\n            entry_point: \"North Square\",\n            exit_point: \"East Side\",\n            deducted_amount: 2.75\n        }\n    ],\n    balance_left: 20.75\n}"
+    ],
+    [
+      {
+        "card_key": "555566667777",
+        "travel_logs": [
+          {
+            "date": "2023-09-26",
+            "boarding_station": "South Park",
+            "alighting_station": "East Side",
+            "cost_incurred": 3.5
+          },
+          {
+            "date": "2023-09-27",
+            "boarding_station": "Central",
+            "alighting_station": "West End",
+            "cost_incurred": 2.5
+          }
+        ],
+        "credit_balance": 28.0
+      },
+      "{\n    card_key: \"555566667777\",\n    travel_logs: [\n        {\n            date: \"2023-09-26\",\n            boarding_station: \"South Park\",\n            alighting_station: \"East Side\",\n            cost_incurred: 3.50\n        },\n        {\n            date: \"2023-09-27\",\n            boarding_station: \"Central\",\n            alighting_station: \"West End\",\n            cost_incurred: 2.50\n        }\n    ],\n    credit_balance: 28.00\n}"
+    ]
+  ]
+}

@@ -1,0 +1,1291 @@
+{
+  "possible_fix": "Strip comments like /* ... */ and // ...",
+  "test_cases": [
+    [
+      {
+        "name": "Alice Brown",
+        "age": 30,
+        "email": "alice.brown@example.com",
+        "preferences": {
+          "newsletter": true,
+          "notifications": false
+        }
+      },
+      "{\n  \"name\": \"Alice Brown\",\n  \"age\": 30, // Age in years\n  \"email\": \"alice.brown@example.com\",\n  \"preferences\": {\n    \"newsletter\": true,\n    \"notifications\": false /* No push notifications */\n  }\n}"
+    ],
+    [
+      {
+        "username": "john_doe",
+        "password": "securePa$$w0rd",
+        "login_attempts": 2,
+        "active": true
+      },
+      "{\n  \"username\": \"john_doe\",\n  \"password\": \"securePa$$w0rd\",\n  \"login_attempts\": 2, // Number of attempts\n  \"active\": true\n}"
+    ],
+    [
+      {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "interests": [
+          "reading",
+          "traveling",
+          "coding"
+        ]
+      },
+      "{\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"interests\": [\"reading\", \"traveling\", \"coding\"] // List of interests\n}"
+    ],
+    [
+      {
+        "user_id": 1024,
+        "status": "active",
+        "roles": [
+          "admin",
+          "editor"
+        ]
+      },
+      "{\n  \"user_id\": 1024, /* Unique identifier */\n  \"status\": \"active\",\n  \"roles\": [\"admin\", \"editor\"]\n}"
+    ],
+    [
+      {
+        "full_name": "Chris Johnson",
+        "birthdate": "1990-11-23",
+        "subscription": {
+          "type": "premium",
+          "expiry": "2023-12-31"
+        }
+      },
+      "{\n  \"full_name\": \"Chris Johnson\",\n  \"birthdate\": \"1990-11-23\",\n  \"subscription\": {\n    \"type\": \"premium\",\n    \"expiry\": \"2023-12-31\" // Expiry date of the subscription\n  }\n}"
+    ],
+    [
+      {
+        "email": "michael.smith@example.com",
+        "phone": "+1234567890",
+        "addresses": [
+          {
+            "type": "home",
+            "line1": "123 Maple Street",
+            "city": "Somewhere"
+          }
+        ]
+      },
+      "{\n  \"email\": \"michael.smith@example.com\",\n  \"phone\": \"+1234567890\", // User's contact number\n  \"addresses\": [\n    {\n      \"type\": \"home\",\n      \"line1\": \"123 Maple Street\",\n      \"city\": \"Somewhere\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "name": "Emily Wilson",
+        "membership": "Gold",
+        "points": 1500
+      },
+      "{\n  \"name\": \"Emily Wilson\",\n  \"membership\": \"Gold\", /* Membership tier */\n  \"points\": 1500\n}"
+    ],
+    [
+      {
+        "username": "peter_pan",
+        "verified": true,
+        "last_login": "2023-10-05T14:48:00"
+      },
+      "{\n  \"username\": \"peter_pan\",\n  \"verified\": true, // Whether the user is verified\n  \"last_login\": \"2023-10-05T14:48:00\"\n}"
+    ],
+    [
+      {
+        "first_name": "Laura",
+        "last_name": "Stevens",
+        "preferences": {
+          "theme": "dark",
+          "language": "en"
+        }
+      },
+      "{\n  \"first_name\": \"Laura\",\n  \"last_name\": \"Stevens\",\n  \"preferences\": {\n    \"theme\": \"dark\", // Preferred theme\n    \"language\": \"en\"\n  }\n}"
+    ],
+    [
+      {
+        "contact": {
+          "email": "alex.green@example.com",
+          "phone": null
+        },
+        "profile_complete": false
+      },
+      "{\n  \"contact\": {\n    \"email\": \"alex.green@example.com\", // Primary contact email\n    \"phone\": null\n  },\n  \"profile_complete\": false\n}"
+    ],
+    [
+      {
+        "order_id": "12345",
+        "customer": "John Doe",
+        "items": [
+          {
+            "product_id": "A001",
+            "quantity": 2,
+            "price": 19.99
+          },
+          {
+            "product_id": "B002",
+            "quantity": 1,
+            "price": 5.99
+          }
+        ],
+        "total": 45.97,
+        "date": "2023-10-01"
+      },
+      "{\n  \"order_id\": \"12345\", // Customer's order ID\n  \"customer\": \"John Doe\",\n  \"items\": [\n    {\"product_id\": \"A001\", \"quantity\": 2, \"price\": 19.99}, // Item 1\n    {\"product_id\": \"B002\", \"quantity\": 1, \"price\": 5.99} // Item 2\n  ],\n  \"total\": 45.97,\n  \"date\": \"2023-10-01\"\n}"
+    ],
+    [
+      {
+        "order_id": "54321",
+        "customer": "Jane Smith",
+        "items": [
+          {
+            "product_id": "C003",
+            "quantity": 3,
+            "price": 10.0
+          },
+          {
+            "product_id": "D004",
+            "quantity": 4,
+            "price": 7.5
+          }
+        ],
+        "total": 70.0,
+        "date": "2023-09-20"
+      },
+      "{\n  \"order_id\": \"54321\",\n  \"customer\": \"Jane Smith\", /* Main customer */\n  \"items\": [\n    {\"product_id\": \"C003\", \"quantity\": 3, \"price\": 10.00}, /* First item */\n    {\"product_id\": \"D004\", \"quantity\": 4, \"price\": 7.50} /* Second item */\n  ],\n  \"total\": 70.00,\n  \"date\": \"2023-09-20\"\n}"
+    ],
+    [
+      {
+        "order_id": "67890",
+        "customer": "Alice Johnson",
+        "items": [
+          {
+            "product_id": "E005",
+            "quantity": 1,
+            "price": 99.99
+          }
+        ],
+        "total": 99.99,
+        "date": "2023-08-15"
+      },
+      "{\n  \"order_id\": \"67890\",\n  \"customer\": \"Alice Johnson\",\n  \"items\": [\n    {\"product_id\": \"E005\", \"quantity\": 1, \"price\": 99.99} // Single item order\n  ],\n  \"total\": 99.99,\n  \"date\": \"2023-08-15\" // Order date\n}"
+    ],
+    [
+      {
+        "order_id": "11111",
+        "customer": "Bob Brown",
+        "items": [],
+        "total": 0.0,
+        "date": "2023-07-10"
+      },
+      "{\n  \"order_id\": \"11111\",\n  \"customer\": \"Bob Brown\", // No items ordered\n  \"items\": [],\n  \"total\": 0.00, // Total is zero\n  \"date\": \"2023-07-10\"\n}"
+    ],
+    [
+      {
+        "order_id": "22222",
+        "customer": "Charlie Davis",
+        "items": [
+          {
+            "product_id": "F006",
+            "quantity": 5,
+            "price": 20.0
+          }
+        ],
+        "total": 100.0,
+        "date": "2023-06-05"
+      },
+      "{\n  \"order_id\": \"22222\",\n  \"customer\": \"Charlie Davis\",\n  \"items\": [\n    {\"product_id\": \"F006\", \"quantity\": 5, \"price\": 20.00} /* Bulk purchase */\n  ],\n  \"total\": 100.00,\n  \"date\": \"2023-06-05\"\n}"
+    ],
+    [
+      {
+        "order_id": "33333",
+        "customer": "Diana Evans",
+        "items": [
+          {
+            "product_id": "G007",
+            "quantity": 2,
+            "price": 30.0
+          },
+          {
+            "product_id": "H008",
+            "quantity": 3,
+            "price": 15.0
+          }
+        ],
+        "total": 105.0,
+        "date": "2023-05-01"
+      },
+      "{\n  \"order_id\": \"33333\",\n  \"customer\": \"Diana Evans\", // Repeat customer\n  \"items\": [\n    {\"product_id\": \"G007\", \"quantity\": 2, \"price\": 30.00},\n    {\"product_id\": \"H008\", \"quantity\": 3, \"price\": 15.00} // Discounted items\n  ],\n  \"total\": 105.00,\n  \"date\": \"2023-05-01\"\n}"
+    ],
+    [
+      {
+        "order_id": "44444",
+        "customer": "Eve Ford",
+        "items": [
+          {
+            "product_id": "I009",
+            "quantity": 10,
+            "price": 5.0
+          }
+        ],
+        "total": 50.0,
+        "date": "2023-04-25"
+      },
+      "{\n  \"order_id\": \"44444\",\n  \"customer\": \"Eve Ford\", /* Large quantity */\n  \"items\": [\n    {\"product_id\": \"I009\", \"quantity\": 10, \"price\": 5.00}\n  ],\n  \"total\": 50.00,\n  \"date\": \"2023-04-25\"\n}"
+    ],
+    [
+      {
+        "order_id": "55555",
+        "customer": "Frank Green",
+        "items": [
+          {
+            "product_id": "J010",
+            "quantity": 1,
+            "price": 50.0
+          },
+          {
+            "product_id": "K011",
+            "quantity": 2,
+            "price": 25.0
+          }
+        ],
+        "total": 100.0,
+        "date": "2023-03-15"
+      },
+      "{\n  \"order_id\": \"55555\",\n  \"customer\": \"Frank Green\",\n  \"items\": [\n    {\"product_id\": \"J010\", \"quantity\": 1, \"price\": 50.00}, // High-value item\n    {\"product_id\": \"K011\", \"quantity\": 2, \"price\": 25.00}\n  ],\n  \"total\": 100.00,\n  \"date\": \"2023-03-15\"\n}"
+    ],
+    [
+      {
+        "order_id": "66666",
+        "customer": "Georgia Harris",
+        "items": [
+          {
+            "product_id": "L012",
+            "quantity": 6,
+            "price": 10.0
+          }
+        ],
+        "total": 60.0,
+        "date": "2023-02-10"
+      },
+      "{\n  \"order_id\": \"66666\",\n  \"customer\": \"Georgia Harris\", /* Frequent buyer */\n  \"items\": [\n    {\"product_id\": \"L012\", \"quantity\": 6, \"price\": 10.00}\n  ],\n  \"total\": 60.00,\n  \"date\": \"2023-02-10\"\n}"
+    ],
+    [
+      {
+        "order_id": "77777",
+        "customer": "Hannah Irvine",
+        "items": [
+          {
+            "product_id": "M013",
+            "quantity": 4,
+            "price": 12.5
+          }
+        ],
+        "total": 50.0,
+        "date": "2023-01-05"
+      },
+      "{\n  \"order_id\": \"77777\",\n  \"customer\": \"Hannah Irvine\",\n  \"items\": [\n    {\"product_id\": \"M013\", \"quantity\": 4, \"price\": 12.50} /* Regular purchase */\n  ],\n  \"total\": 50.00,\n  \"date\": \"2023-01-05\"\n}"
+    ],
+    [
+      {
+        "movie": "Inception",
+        "director": "Christopher Nolan",
+        "rating": 8.8,
+        "reviews": [
+          {
+            "user": "Alice",
+            "comment": "Mind-bending thriller!",
+            "stars": 5
+          },
+          {
+            "user": "Bob",
+            "comment": "Too complex to follow.",
+            "stars": 3
+          }
+        ]
+      },
+      "{\n    \"movie\": \"Inception\",\n    \"director\": \"Christopher Nolan\",\n    \"rating\": 8.8,\n    \"reviews\": [\n        {\n            \"user\": \"Alice\",\n            \"comment\": \"Mind-bending thriller!\",\n            \"stars\": 5\n        },\n        {\n            \"user\": \"Bob\",\n            \"comment\": \"Too complex to follow.\",\n            \"stars\": 3\n        }\n    ] // This is a review list\n}"
+    ],
+    [
+      {
+        "show": "Breaking Bad",
+        "seasons": 5,
+        "creator": "Vince Gilligan",
+        "reviews": [
+          {
+            "user": "Charlie",
+            "comment": "Best show ever made.",
+            "stars": 5
+          }
+        ]
+      },
+      "{\n    \"show\": \"Breaking Bad\",\n    \"seasons\": 5,\n    \"creator\": \"Vince Gilligan\",\n    \"reviews\": [\n        {\n            \"user\": \"Charlie\",\n            \"comment\": \"Best show ever made.\",\n            \"stars\": 5\n        }\n    ]\n    // Reviews for Breaking Bad\n}"
+    ],
+    [
+      {
+        "movie": "The Matrix",
+        "release_year": 1999,
+        "genre": "Sci-Fi",
+        "cast": [
+          "Keanu Reeves",
+          "Laurence Fishburne",
+          "Carrie-Anne Moss"
+        ]
+      },
+      "{\n    \"movie\": \"The Matrix\",\n    \"release_year\": 1999, /* Released near the turn of the millennium */\n    \"genre\": \"Sci-Fi\",\n    \"cast\": [\n        \"Keanu Reeves\",\n        \"Laurence Fishburne\",\n        \"Carrie-Anne Moss\"\n    ]\n}"
+    ],
+    [
+      {
+        "tv_show": "The Office",
+        "episodes": 201,
+        "cast": {
+          "Michael Scott": "Steve Carell",
+          "Jim Halpert": "John Krasinski"
+        }
+      },
+      "{\n    \"tv_show\": \"The Office\",\n    \"episodes\": 201,\n    \"cast\": {\n        \"Michael Scott\": \"Steve Carell\",\n        \"Jim Halpert\": \"John Krasinski\"\n    } // Main cast of the show\n}"
+    ],
+    [
+      {
+        "movie": "Parasite",
+        "director": "Bong Joon-ho",
+        "awards": [
+          "Best Picture",
+          "Best Director"
+        ]
+      },
+      "{\n    \"movie\": \"Parasite\",\n    \"director\": \"Bong Joon-ho\",\n    \"awards\": [\"Best Picture\", \"Best Director\"] // Oscar-winning film\n}"
+    ],
+    [
+      {
+        "show": "Stranger Things",
+        "genre": "Horror",
+        "rating": 8.7,
+        "platform": "Netflix"
+      },
+      "{\n    \"show\": \"Stranger Things\",\n    \"genre\": \"Horror\",\n    \"rating\": 8.7,\n    \"platform\": \"Netflix\" // Available for streaming\n}"
+    ],
+    [
+      {
+        "movie": "The Godfather",
+        "director": "Francis Ford Coppola",
+        "cast": [
+          "Marlon Brando",
+          "Al Pacino",
+          "James Caan"
+        ],
+        "genres": [
+          "Crime",
+          "Drama"
+        ]
+      },
+      "{\n    \"movie\": \"The Godfather\",\n    \"director\": \"Francis Ford Coppola\",\n    \"cast\": [\n        \"Marlon Brando\",\n        \"Al Pacino\",\n        \"James Caan\"\n    ],\n    \"genres\": [\"Crime\", \"Drama\"] /* Iconic Mafia movie */\n}"
+    ],
+    [
+      {
+        "title": "Game of Thrones",
+        "network": "HBO",
+        "seasons": 8,
+        "finale_year": 2019
+      },
+      "{\n    \"title\": \"Game of Thrones\",\n    \"network\": \"HBO\",\n    \"seasons\": 8, // Epic fantasy series\n    \"finale_year\": 2019\n}"
+    ],
+    [
+      {
+        "movie": "Pulp Fiction",
+        "director": "Quentin Tarantino",
+        "box_office": 213.9
+      },
+      "{\n    \"movie\": \"Pulp Fiction\",\n    \"director\": \"Quentin Tarantino\",\n    \"box_office\": 213.9 // In millions\n}"
+    ],
+    [
+      {
+        "show": "Friends",
+        "episodes": 236,
+        "genre": "Comedy",
+        "finale": "2004-05-06"
+      },
+      "{\n    \"show\": \"Friends\",\n    \"episodes\": 236,\n    \"genre\": \"Comedy\",\n    \"finale\": \"2004-05-06\" // Last episode aired\n}"
+    ],
+    [
+      {
+        "user": "john_doe",
+        "post": "Hello World!",
+        "likes": 150,
+        "comments": [
+          {
+            "user": "alice",
+            "comment": "Nice post!"
+          },
+          {
+            "user": "bob",
+            "comment": "I agree!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"john_doe\",\n    \"post\": \"Hello World!\", // A greeting post\n    \"likes\": 150,\n    \"comments\": [\n        {\"user\": \"alice\", \"comment\": \"Nice post!\"},\n        {\"user\": \"bob\", \"comment\": \"I agree!\"} // Bob agrees\n    ]\n}"
+    ],
+    [
+      {
+        "user": "mary_jane",
+        "post": "Just finished my first marathon!",
+        "likes": 230,
+        "comments": [
+          {
+            "user": "runner123",
+            "comment": "Congrats!"
+          },
+          {
+            "user": "happy_feet",
+            "comment": "Awesome job!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"mary_jane\",\n    \"post\": \"Just finished my first marathon!\", /* Marathon post */\n    \"likes\": 230,\n    \"comments\": [\n        {\"user\": \"runner123\", \"comment\": \"Congrats!\"},\n        {\"user\": \"happy_feet\", \"comment\": \"Awesome job!\"} /* Encouragement comment */\n    ]\n}"
+    ],
+    [
+      {
+        "user": "sam_smith",
+        "post": "Check out this cool sunset!",
+        "likes": 310,
+        "comments": []
+      },
+      "{\n    \"user\": \"sam_smith\",\n    \"post\": \"Check out this cool sunset!\", // A picture of a sunset\n    \"likes\": 310,\n    \"comments\": [] // No comments yet\n}"
+    ],
+    [
+      {
+        "user": "lisa_ray",
+        "post": "Baking some cookies today!",
+        "likes": 90,
+        "comments": [
+          {
+            "user": "chef_tom",
+            "comment": "Save some for me!"
+          },
+          {
+            "user": "bake_lover",
+            "comment": "Yummy!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"lisa_ray\",\n    \"post\": \"Baking some cookies today!\", /* Lisa's baking adventure */\n    \"likes\": 90,\n    \"comments\": [\n        {\"user\": \"chef_tom\", \"comment\": \"Save some for me!\"},\n        {\"user\": \"bake_lover\", \"comment\": \"Yummy!\"} // Positive feedback on baking\n    ]\n}"
+    ],
+    [
+      {
+        "user": "george_clark",
+        "post": "Game night was a blast!",
+        "likes": 200,
+        "comments": [
+          {
+            "user": "gamer_girl",
+            "comment": "It was epic!"
+          },
+          {
+            "user": "chess_master",
+            "comment": "Let's do it again!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"george_clark\",\n    \"post\": \"Game night was a blast!\", // Fun times\n    \"likes\": 200,\n    \"comments\": [\n        {\"user\": \"gamer_girl\", \"comment\": \"It was epic!\"},\n        {\"user\": \"chess_master\", \"comment\": \"Let's do it again!\"} /* Looking forward to the next game night */\n    ]\n}"
+    ],
+    [
+      {
+        "user": "emma_white",
+        "post": "Reading a new book series!",
+        "likes": 135,
+        "comments": [
+          {
+            "user": "book_worm",
+            "comment": "Which one?"
+          },
+          {
+            "user": "novel_lover",
+            "comment": "Sounds interesting!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"emma_white\",\n    \"post\": \"Reading a new book series!\", /* Book post */\n    \"likes\": 135,\n    \"comments\": [\n        {\"user\": \"book_worm\", \"comment\": \"Which one?\"},\n        {\"user\": \"novel_lover\", \"comment\": \"Sounds interesting!\"} // Enthusiastic reader\n    ]\n}"
+    ],
+    [
+      {
+        "user": "david_black",
+        "post": "Exploring the city today!",
+        "likes": 180,
+        "comments": [
+          {
+            "user": "urban_explorer",
+            "comment": "Have fun!"
+          },
+          {
+            "user": "city_lights",
+            "comment": "Take lots of photos!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"david_black\",\n    \"post\": \"Exploring the city today!\", // City adventure\n    \"likes\": 180,\n    \"comments\": [\n        {\"user\": \"urban_explorer\", \"comment\": \"Have fun!\"},\n        {\"user\": \"city_lights\", \"comment\": \"Take lots of photos!\"} /* City enthusiast */\n    ]\n}"
+    ],
+    [
+      {
+        "user": "natalie_green",
+        "post": "Gardening is so relaxing!",
+        "likes": 75,
+        "comments": [
+          {
+            "user": "plant_lover",
+            "comment": "I totally agree!"
+          },
+          {
+            "user": "green_thumb",
+            "comment": "What are you planting?"
+          }
+        ]
+      },
+      "{\n    \"user\": \"natalie_green\",\n    \"post\": \"Gardening is so relaxing!\", /* Gardening activity */\n    \"likes\": 75,\n    \"comments\": [\n        {\"user\": \"plant_lover\", \"comment\": \"I totally agree!\"},\n        {\"user\": \"green_thumb\", \"comment\": \"What are you planting?\"} // Curious about the plants\n    ]\n}"
+    ],
+    [
+      {
+        "user": "oliver_brown",
+        "post": "Just saw a great movie!",
+        "likes": 210,
+        "comments": [
+          {
+            "user": "movie_buff",
+            "comment": "Which one?"
+          },
+          {
+            "user": "cinema_fan",
+            "comment": "I need recommendations!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"oliver_brown\",\n    \"post\": \"Just saw a great movie!\", // Movie night\n    \"likes\": 210,\n    \"comments\": [\n        {\"user\": \"movie_buff\", \"comment\": \"Which one?\"},\n        {\"user\": \"cinema_fan\", \"comment\": \"I need recommendations!\"} /* Movie enthusiast */\n    ]\n}"
+    ],
+    [
+      {
+        "user": "sophia_gray",
+        "post": "Cooking is my therapy!",
+        "likes": 100,
+        "comments": [
+          {
+            "user": "foodie",
+            "comment": "What's cooking?"
+          },
+          {
+            "user": "chef_in_training",
+            "comment": "Share the recipe!"
+          }
+        ]
+      },
+      "{\n    \"user\": \"sophia_gray\",\n    \"post\": \"Cooking is my therapy!\", /* Culinary therapy */\n    \"likes\": 100,\n    \"comments\": [\n        {\"user\": \"foodie\", \"comment\": \"What's cooking?\"},\n        {\"user\": \"chef_in_training\", \"comment\": \"Share the recipe!\"} // Aspiring chef\n    ]\n}"
+    ],
+    [
+      {
+        "location": "New York",
+        "temperature": 22,
+        "unit": "Celsius",
+        "conditions": "Sunny"
+      },
+      "{\n    \"location\": \"New York\",\n    \"temperature\": 22, // temperature in Celsius\n    \"unit\": \"Celsius\",\n    \"conditions\": \"Sunny\" /* clear sky */\n}"
+    ],
+    [
+      {
+        "location": "Los Angeles",
+        "temperature": 30,
+        "unit": "Celsius",
+        "conditions": "Clear",
+        "humidity": 50
+      },
+      "{\n    \"location\": \"Los Angeles\",\n    \"temperature\": 30,\n    \"unit\": \"Celsius\", // measure in Celsius\n    \"conditions\": \"Clear\",\n    \"humidity\": 50 /* relative humidity */\n}"
+    ],
+    [
+      {
+        "location": "Chicago",
+        "windSpeed": 15,
+        "unit": "km/h",
+        "conditions": "Cloudy"
+      },
+      "{\n    \"location\": \"Chicago\",\n    \"windSpeed\": 15, /* wind speed in km/h */\n    \"unit\": \"km/h\",\n    \"conditions\": \"Cloudy\" // overcast conditions\n}"
+    ],
+    [
+      {
+        "location": "Houston",
+        "temperature": 35,
+        "unit": "Celsius",
+        "precipitation": "None"
+      },
+      "{\n    \"location\": \"Houston\",\n    \"temperature\": 35, // hot weather\n    \"unit\": \"Celsius\",\n    \"precipitation\": \"None\" /* no rain expected */\n}"
+    ],
+    [
+      {
+        "location": "Phoenix",
+        "temperature": 40,
+        "unit": "Celsius",
+        "conditions": "Hot"
+      },
+      "{\n    \"location\": \"Phoenix\", // very hot city\n    \"temperature\": 40,\n    \"unit\": \"Celsius\",\n    \"conditions\": \"Hot\" /* scorching conditions */\n}"
+    ],
+    [
+      {
+        "location": "San Francisco",
+        "temperature": 18,
+        "unit": "Celsius",
+        "conditions": "Foggy"
+      },
+      "{\n    \"location\": \"San Francisco\",\n    \"temperature\": 18, /* cool and foggy */\n    \"unit\": \"Celsius\",\n    \"conditions\": \"Foggy\" // typical SF weather\n}"
+    ],
+    [
+      {
+        "location": "Miami",
+        "temperature": 28,
+        "unit": "Celsius",
+        "humidity": 80
+      },
+      "{\n    \"location\": \"Miami\",\n    \"temperature\": 28, // tropical weather\n    \"unit\": \"Celsius\",\n    \"humidity\": 80 /* high humidity */\n}"
+    ],
+    [
+      {
+        "location": "Seattle",
+        "temperature": 16,
+        "unit": "Celsius",
+        "precipitation": "Likely"
+      },
+      "{\n    \"location\": \"Seattle\",\n    \"temperature\": 16, /* rainy city */\n    \"unit\": \"Celsius\",\n    \"precipitation\": \"Likely\" // chance of rain\n}"
+    ],
+    [
+      {
+        "location": "Denver",
+        "temperature": 25,
+        "unit": "Celsius",
+        "windSpeed": 10
+      },
+      "{\n    \"location\": \"Denver\",\n    \"temperature\": 25, // mild weather\n    \"unit\": \"Celsius\",\n    \"windSpeed\": 10 /* light breeze */\n}"
+    ],
+    [
+      {
+        "location": "Atlanta",
+        "temperature": 32,
+        "unit": "Celsius",
+        "conditions": "Humid"
+      },
+      "{\n    \"location\": \"Atlanta\", // summer heat\n    \"temperature\": 32,\n    \"unit\": \"Celsius\",\n    \"conditions\": \"Humid\" /* very muggy */\n}"
+    ],
+    [
+      {
+        "transactions": [
+          {
+            "id": "txn001",
+            "amount": 150.75,
+            "currency": "USD",
+            "timestamp": "2023-10-01T10:00:00Z",
+            "merchant": "Amazon"
+          },
+          {
+            "id": "txn002",
+            "amount": 80.5,
+            "currency": "USD",
+            "timestamp": "2023-10-02T12:30:00Z",
+            "merchant": "Walmart"
+          }
+        ]
+      },
+      "{\n    \"transactions\": [\n        {\n            \"id\": \"txn001\",\n            \"amount\": 150.75,\n            \"currency\": \"USD\",\n            \"timestamp\": \"2023-10-01T10:00:00Z\",\n            \"merchant\": \"Amazon\" // Transaction purchase from Amazon\n        },\n        {\n            \"id\": \"txn002\",\n            \"amount\": 80.50,\n            \"currency\": \"USD\",\n            \"timestamp\": \"2023-10-02T12:30:00Z\",\n            \"merchant\": \"Walmart\" // Purchase at Walmart\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "accounts": [
+          {
+            "account_id": "acc123",
+            "balance": 1023.45,
+            "currency": "EUR"
+          },
+          {
+            "account_id": "acc456",
+            "balance": 980.0,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n    \"accounts\": [\n        {\n            \"account_id\": \"acc123\",\n            \"balance\": 1023.45,\n            \"currency\": \"EUR\" /* European account */\n        },\n        {\n            \"account_id\": \"acc456\",\n            \"balance\": 980.00,\n            \"currency\": \"USD\" /* US account */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "summary": {
+          "total_income": 2500.0,
+          "total_expense": 1800.75,
+          "currency": "GBP"
+        }
+      },
+      "{\n    \"summary\": {\n        \"total_income\": 2500.00, // Monthly income\n        \"total_expense\": 1800.75, // Monthly expense\n        \"currency\": \"GBP\"\n    }\n}"
+    ],
+    [
+      {
+        "invoices": [
+          {
+            "invoice_id": "inv789",
+            "amount": 200.0,
+            "currency": "USD",
+            "status": "paid"
+          },
+          {
+            "invoice_id": "inv790",
+            "amount": 350.0,
+            "currency": "USD",
+            "status": "unpaid"
+          }
+        ]
+      },
+      "{\n    \"invoices\": [\n        {\n            \"invoice_id\": \"inv789\",\n            \"amount\": 200.00,\n            \"currency\": \"USD\",\n            \"status\": \"paid\" // Invoice already paid\n        },\n        {\n            \"invoice_id\": \"inv790\",\n            \"amount\": 350.00,\n            \"currency\": \"USD\",\n            \"status\": \"unpaid\" // Pending payment\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "budget": {
+          "year": 2023,
+          "allocated": 5000.0,
+          "used": 3000.0,
+          "currency": "JPY"
+        }
+      },
+      "{\n    \"budget\": {\n        \"year\": 2023,\n        \"allocated\": 5000.00, /* Total allocation for the year */\n        \"used\": 3000.00, /* Used amount so far */\n        \"currency\": \"JPY\"\n    }\n}"
+    ],
+    [
+      {
+        "expenses": [
+          {
+            "category": "travel",
+            "amount": 1200.0,
+            "currency": "USD"
+          },
+          {
+            "category": "food",
+            "amount": 450.5,
+            "currency": "USD"
+          }
+        ]
+      },
+      "{\n    \"expenses\": [\n        {\n            \"category\": \"travel\",\n            \"amount\": 1200.00,\n            \"currency\": \"USD\" // Travel expenses\n        },\n        {\n            \"category\": \"food\",\n            \"amount\": 450.50,\n            \"currency\": \"USD\" // Food expenses\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "salary": {
+          "base": 3500.0,
+          "bonus": 500.0,
+          "currency": "AUD"
+        }
+      },
+      "{\n    \"salary\": {\n        \"base\": 3500.00, // Base salary amount\n        \"bonus\": 500.00, // Additional bonus\n        \"currency\": \"AUD\"\n    }\n}"
+    ],
+    [
+      {
+        "payments": [
+          {
+            "payment_id": "pay001",
+            "amount": 600.0,
+            "currency": "USD",
+            "method": "credit_card"
+          },
+          {
+            "payment_id": "pay002",
+            "amount": 75.0,
+            "currency": "USD",
+            "method": "paypal"
+          }
+        ]
+      },
+      "{\n    \"payments\": [\n        {\n            \"payment_id\": \"pay001\",\n            \"amount\": 600.00,\n            \"currency\": \"USD\",\n            \"method\": \"credit_card\" // Paid via credit card\n        },\n        {\n            \"payment_id\": \"pay002\",\n            \"amount\": 75.00,\n            \"currency\": \"USD\",\n            \"method\": \"paypal\" // Paid via PayPal\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "loans": [
+          {
+            "loan_id": "loan123",
+            "amount": 15000.0,
+            "currency": "USD",
+            "rate": 3.5
+          },
+          {
+            "loan_id": "loan124",
+            "amount": 20000.0,
+            "currency": "USD",
+            "rate": 4.0
+          }
+        ]
+      },
+      "{\n    \"loans\": [\n        {\n            \"loan_id\": \"loan123\",\n            \"amount\": 15000.00,\n            \"currency\": \"USD\",\n            \"rate\": 3.5 // Interest rate\n        },\n        {\n            \"loan_id\": \"loan124\",\n            \"amount\": 20000.00,\n            \"currency\": \"USD\",\n            \"rate\": 4.0 // Interest rate\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "investment": {
+          "portfolio_value": 50000.0,
+          "currency": "USD",
+          "annual_return": 7.2
+        }
+      },
+      "{\n    \"investment\": {\n        \"portfolio_value\": 50000.00, // Total portfolio value\n        \"currency\": \"USD\",\n        \"annual_return\": 7.2 // Expected annual return\n    }\n}"
+    ],
+    [
+      {
+        "userProfile": {
+          "name": "John Doe",
+          "age": 30,
+          "height_cm": 175,
+          "weight_kg": 70
+        },
+        "fitnessGoals": {
+          "stepsPerDay": 10000,
+          "caloriesPerDay": 2500
+        }
+      },
+      "{\n    \"userProfile\": {\n        \"name\": \"John Doe\",\n        \"age\": 30, // User's age\n        \"height_cm\": 175,\n        \"weight_kg\": 70\n    },\n    \"fitnessGoals\": {\n        \"stepsPerDay\": 10000,\n        \"caloriesPerDay\": 2500\n    }\n}"
+    ],
+    [
+      {
+        "workoutPlan": {
+          "daysPerWeek": 5,
+          "exercises": [
+            "running",
+            "cycling",
+            "yoga"
+          ]
+        },
+        "nutrition": {
+          "protein_g": 150,
+          "carbs_g": 200,
+          "fats_g": 50
+        }
+      },
+      "{\n    \"workoutPlan\": {\n        \"daysPerWeek\": 5,\n        \"exercises\": [\"running\", \"cycling\", \"yoga\"] // Favorite exercises\n    },\n    \"nutrition\": {\n        \"protein_g\": 150,\n        \"carbs_g\": 200,\n        \"fats_g\": 50\n    }\n}"
+    ],
+    [
+      {
+        "hydration": {
+          "waterIntake_l": 3,
+          "reminders": true
+        },
+        "sleep": {
+          "hoursPerNight": 8,
+          "quality": "good"
+        }
+      },
+      "{\n    \"hydration\": {\n        \"waterIntake_l\": 3,\n        \"reminders\": true /* Set to true to receive notifications */\n    },\n    \"sleep\": {\n        \"hoursPerNight\": 8,\n        \"quality\": \"good\"\n    }\n}"
+    ],
+    [
+      {
+        "weeklySummary": {
+          "totalSteps": 70000,
+          "averageCalories": 2400
+        },
+        "progress": {
+          "weightLoss_kg": 2,
+          "muscleGain_kg": 1
+        }
+      },
+      "{\n    \"weeklySummary\": {\n        \"totalSteps\": 70000,\n        \"averageCalories\": 2400 // Average daily intake\n    },\n    \"progress\": {\n        \"weightLoss_kg\": 2,\n        \"muscleGain_kg\": 1\n    }\n}"
+    ],
+    [
+      {
+        "mentalHealth": {
+          "meditationMinutes": 20,
+          "mood": "happy"
+        },
+        "stressLevel": {
+          "current": "low",
+          "weeklyTrend": "decreasing"
+        }
+      },
+      "{\n    \"mentalHealth\": {\n        \"meditationMinutes\": 20, // Time spent on meditation\n        \"mood\": \"happy\"\n    },\n    \"stressLevel\": {\n        \"current\": \"low\",\n        \"weeklyTrend\": \"decreasing\"\n    }\n}"
+    ],
+    [
+      {
+        "activityTracker": {
+          "currentActivity": "walking",
+          "heartRate_bpm": 80
+        },
+        "goals": {
+          "weeklyDistance_km": 50,
+          "weeklyCaloriesBurned": 3500
+        }
+      },
+      "{\n    \"activityTracker\": {\n        \"currentActivity\": \"walking\", // Current activity being tracked\n        \"heartRate_bpm\": 80\n    },\n    \"goals\": {\n        \"weeklyDistance_km\": 50,\n        \"weeklyCaloriesBurned\": 3500\n    }\n}"
+    ],
+    [
+      {
+        "dietPlan": {
+          "meals": 3,
+          "snacks": 2
+        },
+        "supplements": {
+          "vitaminD": "2000 IU",
+          "omega3": "1000 mg"
+        }
+      },
+      "{\n    \"dietPlan\": {\n        \"meals\": 3,\n        \"snacks\": 2 // Including healthy snacks\n    },\n    \"supplements\": {\n        \"vitaminD\": \"2000 IU\",\n        \"omega3\": \"1000 mg\"\n    }\n}"
+    ],
+    [
+      {
+        "dailyRoutine": {
+          "morningExercise": "jogging",
+          "eveningExercise": "strength training"
+        },
+        "recovery": {
+          "restDays": 2,
+          "stretchingTime_minutes": 15
+        }
+      },
+      "{\n    \"dailyRoutine\": {\n        \"morningExercise\": \"jogging\",\n        \"eveningExercise\": \"strength training\" /* Essential for muscle recovery */\n    },\n    \"recovery\": {\n        \"restDays\": 2,\n        \"stretchingTime_minutes\": 15\n    }\n}"
+    ],
+    [
+      {
+        "bodyMeasurements": {
+          "chest_cm": 100,
+          "waist_cm": 85
+        },
+        "strength": {
+          "maxBenchPress_kg": 90,
+          "maxDeadlift_kg": 120
+        }
+      },
+      "{\n    \"bodyMeasurements\": {\n        \"chest_cm\": 100 /* Measured around the fullest part */,\n        \"waist_cm\": 85\n    },\n    \"strength\": {\n        \"maxBenchPress_kg\": 90,\n        \"maxDeadlift_kg\": 120\n    }\n}"
+    ],
+    [
+      {
+        "fitnessAppData": {
+          "version": "1.2.3",
+          "features": [
+            "tracking",
+            "reminders",
+            "analytics"
+          ]
+        },
+        "userFeedback": {
+          "rating": 4.5,
+          "comments": "Great app for tracking progress!"
+        }
+      },
+      "{\n    \"fitnessAppData\": {\n        \"version\": \"1.2.3\",\n        \"features\": [\"tracking\", \"reminders\", \"analytics\"] // List of features\n    },\n    \"userFeedback\": {\n        \"rating\": 4.5,\n        \"comments\": \"Great app for tracking progress!\"\n    }\n}"
+    ],
+    [
+      {
+        "vehicle_id": "A123BC",
+        "current_location": {
+          "latitude": 34.0522,
+          "longitude": -118.2437
+        },
+        "status": "active"
+      },
+      "{\n    \"vehicle_id\": \"A123BC\",\n    \"current_location\": {\n        \"latitude\": 34.0522, // Los Angeles latitude\n        \"longitude\": -118.2437 // Los Angeles longitude\n    },\n    \"status\": \"active\"\n}"
+    ],
+    [
+      {
+        "route": "Route 66",
+        "segments": [
+          {
+            "start_location": "Chicago",
+            "end_location": "St. Louis",
+            "distance_miles": 300
+          },
+          {
+            "start_location": "St. Louis",
+            "end_location": "Oklahoma City",
+            "distance_miles": 500
+          }
+        ]
+      },
+      "{\n    \"route\": \"Route 66\",\n    \"segments\": [\n        {\n            \"start_location\": \"Chicago\",\n            \"end_location\": \"St. Louis\",\n            \"distance_miles\": 300 // distance in miles\n        },\n        {\n            \"start_location\": \"St. Louis\",\n            \"end_location\": \"Oklahoma City\",\n            \"distance_miles\": 500 // distance in miles\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "user_id": "U987654",
+        "preferred_transport": "bicycle",
+        "last_known_position": {
+          "latitude": 51.5074,
+          "longitude": -0.1278
+        }
+      },
+      "{\n    \"user_id\": \"U987654\",\n    \"preferred_transport\": \"bicycle\", // User prefers bicycles\n    \"last_known_position\": {\n        \"latitude\": 51.5074, /* London latitude */\n        \"longitude\": -0.1278 /* London longitude */\n    }\n}"
+    ],
+    [
+      {
+        "fleet": [
+          {
+            "vehicle_id": "TRK001",
+            "capacity": 1000
+          },
+          {
+            "vehicle_id": "TRK002",
+            "capacity": 1500
+          }
+        ]
+      },
+      "{\n    \"fleet\": [\n        {\n            \"vehicle_id\": \"TRK001\", // Truck ID\n            \"capacity\": 1000 // in kilograms\n        },\n        {\n            \"vehicle_id\": \"TRK002\", // Truck ID\n            \"capacity\": 1500 // in kilograms\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "delivery": {
+          "package_id": "PKG123",
+          "destination": "New York",
+          "coordinates": {
+            "latitude": 40.7128,
+            "longitude": -74.006
+          }
+        }
+      },
+      "{\n    \"delivery\": {\n        \"package_id\": \"PKG123\", // Package identifier\n        \"destination\": \"New York\", // Destination city\n        \"coordinates\": {\n            \"latitude\": 40.7128, // New York latitude\n            \"longitude\": -74.0060 // New York longitude\n        }\n    }\n}"
+    ],
+    [
+      {
+        "train_schedule": [
+          {
+            "train_id": "EXP101",
+            "departure_time": "08:00",
+            "arrival_time": "12:00"
+          },
+          {
+            "train_id": "EXP102",
+            "departure_time": "09:00",
+            "arrival_time": "13:00"
+          }
+        ]
+      },
+      "{\n    \"train_schedule\": [\n        {\n            \"train_id\": \"EXP101\", // Express train 101\n            \"departure_time\": \"08:00\", /* 8 AM departure */\n            \"arrival_time\": \"12:00\" /* 12 PM arrival */\n        },\n        {\n            \"train_id\": \"EXP102\", // Express train 102\n            \"departure_time\": \"09:00\", /* 9 AM departure */\n            \"arrival_time\": \"13:00\" /* 1 PM arrival */\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "ride_sharing_app": {
+          "active_vehicles": 1500,
+          "locations_tracked": [
+            {
+              "city": "San Francisco",
+              "latitude": 37.7749,
+              "longitude": -122.4194
+            },
+            {
+              "city": "Seattle",
+              "latitude": 47.6062,
+              "longitude": -122.3321
+            }
+          ]
+        }
+      },
+      "{\n    \"ride_sharing_app\": {\n        \"active_vehicles\": 1500, // Number of vehicles currently active\n        \"locations_tracked\": [\n            {\n                \"city\": \"San Francisco\",\n                \"latitude\": 37.7749, // San Francisco latitude\n                \"longitude\": -122.4194 // San Francisco longitude\n            },\n            {\n                \"city\": \"Seattle\",\n                \"latitude\": 47.6062, // Seattle latitude\n                \"longitude\": -122.3321 // Seattle longitude\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "bus_routes": [
+          {
+            "route_number": "B12",
+            "stops": [
+              "Central Park",
+              "5th Ave",
+              "Wall Street"
+            ]
+          },
+          {
+            "route_number": "B15",
+            "stops": [
+              "Times Square",
+              "Broadway",
+              "Brooklyn Bridge"
+            ]
+          }
+        ]
+      },
+      "{\n    \"bus_routes\": [\n        {\n            \"route_number\": \"B12\", // Bus route number\n            \"stops\": [\"Central Park\", \"5th Ave\", \"Wall Street\"] // List of stops\n        },\n        {\n            \"route_number\": \"B15\", // Bus route number\n            \"stops\": [\"Times Square\", \"Broadway\", \"Brooklyn Bridge\"] // List of stops\n        }\n    ]\n}"
+    ],
+    [
+      {
+        "drone_delivery": {
+          "drone_id": "DRN009",
+          "payload_capacity_kg": 5,
+          "base_location": {
+            "latitude": 40.73061,
+            "longitude": -73.935242
+          }
+        }
+      },
+      "{\n    \"drone_delivery\": {\n        \"drone_id\": \"DRN009\", // Unique drone identifier\n        \"payload_capacity_kg\": 5, // Payload capacity in kilograms\n        \"base_location\": {\n            \"latitude\": 40.73061, // Base location latitude\n            \"longitude\": -73.935242 // Base location longitude\n        }\n    }\n}"
+    ],
+    [
+      {
+        "city_bike_sharing": {
+          "total_bikes": 2000,
+          "stations": [
+            {
+              "station_id": "ST101",
+              "location": "Downtown"
+            },
+            {
+              "station_id": "ST102",
+              "location": "Uptown"
+            }
+          ]
+        }
+      },
+      "{\n    \"city_bike_sharing\": {\n        \"total_bikes\": 2000, // Total number of bikes available\n        \"stations\": [\n            {\n                \"station_id\": \"ST101\", // Station identifier\n                \"location\": \"Downtown\" // Station location\n            },\n            {\n                \"station_id\": \"ST102\", // Station identifier\n                \"location\": \"Uptown\" // Station location\n            }\n        ]\n    }\n}"
+    ],
+    [
+      {
+        "library": "Downtown Library",
+        "address": "123 Library St.",
+        "bookLendingRecords": [
+          {
+            "bookID": "001",
+            "title": "1984",
+            "author": "George Orwell",
+            "borrower": "John Doe",
+            "borrowDate": "2023-09-15",
+            "returnDate": "2023-10-15"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Downtown Library\", // Main library branch\n  \"address\": \"123 Library St.\",\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"001\",\n      \"title\": \"1984\",\n      \"author\": \"George Orwell\",\n      \"borrower\": \"John Doe\",\n      \"borrowDate\": \"2023-09-15\",\n      \"returnDate\": \"2023-10-15\" // Return date is set\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Westside Library",
+        "address": "456 Book Rd.",
+        "bookLendingRecords": [
+          {
+            "bookID": "002",
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "borrower": "Jane Smith",
+            "borrowDate": "2023-09-20",
+            "returnDate": null
+          }
+        ]
+      },
+      "{\n  \"library\": \"Westside Library\",\n  \"address\": \"456 Book Rd.\", // Located in the west\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"002\",\n      \"title\": \"To Kill a Mockingbird\",\n      \"author\": \"Harper Lee\",\n      \"borrower\": \"Jane Smith\",\n      \"borrowDate\": \"2023-09-20\",\n      \"returnDate\": null // No return date yet\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "City Central Library",
+        "address": "789 Library Ln.",
+        "bookLendingRecords": [
+          {
+            "bookID": "003",
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "borrower": "Mark Twain",
+            "borrowDate": "2023-08-01",
+            "returnDate": "2023-09-01"
+          }
+        ]
+      },
+      "{\n  \"library\": \"City Central Library\",\n  \"address\": \"789 Library Ln.\",\n  /* Book lending records for this library */\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"003\",\n      \"title\": \"Brave New World\",\n      \"author\": \"Aldous Huxley\",\n      \"borrower\": \"Mark Twain\",\n      \"borrowDate\": \"2023-08-01\",\n      \"returnDate\": \"2023-09-01\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Eastside Library",
+        "address": "321 Literature Ave.",
+        "bookLendingRecords": [
+          {
+            "bookID": "004",
+            "title": "Fahrenheit 451",
+            "author": "Ray Bradbury",
+            "borrower": "Emily Bront\u00eb",
+            "borrowDate": "2023-07-10",
+            "returnDate": "2023-08-10"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Eastside Library\",\n  \"address\": \"321 Literature Ave.\",\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"004\",\n      \"title\": \"Fahrenheit 451\",\n      \"author\": \"Ray Bradbury\",\n      \"borrower\": \"Emily Bront\u00eb\", // Known borrower\n      \"borrowDate\": \"2023-07-10\",\n      \"returnDate\": \"2023-08-10\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Northside Library",
+        "address": "654 Reading Pkwy.",
+        "bookLendingRecords": [
+          {
+            "bookID": "005",
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "borrower": "Charles Dickens",
+            "borrowDate": "2023-06-05",
+            "returnDate": "2023-07-05"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Northside Library\",\n  \"address\": \"654 Reading Pkwy.\",\n  \"bookLendingRecords\": [\n    {\n      /* Record of a borrowed book */\n      \"bookID\": \"005\",\n      \"title\": \"The Great Gatsby\",\n      \"author\": \"F. Scott Fitzgerald\",\n      \"borrower\": \"Charles Dickens\",\n      \"borrowDate\": \"2023-06-05\",\n      \"returnDate\": \"2023-07-05\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Southside Library",
+        "address": "987 Story Blvd.",
+        "bookLendingRecords": [
+          {
+            "bookID": "006",
+            "title": "Moby Dick",
+            "author": "Herman Melville",
+            "borrower": "Virginia Woolf",
+            "borrowDate": "2023-05-10",
+            "returnDate": "2023-06-10"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Southside Library\",\n  // The main street address\n  \"address\": \"987 Story Blvd.\",\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"006\",\n      \"title\": \"Moby Dick\",\n      \"author\": \"Herman Melville\",\n      \"borrower\": \"Virginia Woolf\",\n      \"borrowDate\": \"2023-05-10\",\n      \"returnDate\": \"2023-06-10\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Beachside Library",
+        "address": "123 Ocean Dr.",
+        "bookLendingRecords": [
+          {
+            "bookID": "007",
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "borrower": "Leo Tolstoy",
+            "borrowDate": "2023-04-01",
+            "returnDate": "2023-05-01"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Beachside Library\",\n  \"address\": \"123 Ocean Dr.\",\n  \"bookLendingRecords\": [\n    // Lending records for books\n    {\n      \"bookID\": \"007\",\n      \"title\": \"Pride and Prejudice\",\n      \"author\": \"Jane Austen\",\n      \"borrower\": \"Leo Tolstoy\",\n      \"borrowDate\": \"2023-04-01\",\n      \"returnDate\": \"2023-05-01\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Mountain Library",
+        "address": "456 Hilltop Rd.",
+        "bookLendingRecords": [
+          {
+            "bookID": "008",
+            "title": "War and Peace",
+            "author": "Leo Tolstoy",
+            "borrower": "H.G. Wells",
+            "borrowDate": "2023-03-10",
+            "returnDate": "2023-04-10"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Mountain Library\",\n  \"address\": \"456 Hilltop Rd.\",\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"008\",\n      /* Classic novel */\n      \"title\": \"War and Peace\",\n      \"author\": \"Leo Tolstoy\",\n      \"borrower\": \"H.G. Wells\",\n      \"borrowDate\": \"2023-03-10\",\n      \"returnDate\": \"2023-04-10\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Riverbank Library",
+        "address": "789 Stream Ln.",
+        "bookLendingRecords": [
+          {
+            "bookID": "009",
+            "title": "Jane Eyre",
+            "author": "Charlotte Bront\u00eb",
+            "borrower": "Oscar Wilde",
+            "borrowDate": "2023-02-15",
+            "returnDate": "2023-03-15"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Riverbank Library\",\n  \"address\": \"789 Stream Ln.\",\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"009\",\n      \"title\": \"Jane Eyre\",\n      // Renowned author\n      \"author\": \"Charlotte Bront\u00eb\",\n      \"borrower\": \"Oscar Wilde\",\n      \"borrowDate\": \"2023-02-15\",\n      \"returnDate\": \"2023-03-15\"\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "library": "Forest Library",
+        "address": "321 Wood Rd.",
+        "bookLendingRecords": [
+          {
+            "bookID": "010",
+            "title": "The Odyssey",
+            "author": "Homer",
+            "borrower": "Sophocles",
+            "borrowDate": "2023-01-05",
+            "returnDate": "2023-02-05"
+          }
+        ]
+      },
+      "{\n  \"library\": \"Forest Library\",\n  \"address\": \"321 Wood Rd.\",\n  \"bookLendingRecords\": [\n    {\n      \"bookID\": \"010\",\n      \"title\": \"The Odyssey\",\n      \"author\": \"Homer\",\n      \"borrower\": \"Sophocles\",\n      \"borrowDate\": \"2023-01-05\",\n      // Expected return date\n      \"returnDate\": \"2023-02-05\"\n    }\n  ]\n}"
+    ]
+  ]
+}

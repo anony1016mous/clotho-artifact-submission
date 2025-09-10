@@ -1,0 +1,182 @@
+{
+  "test_0": {
+    "model_names": [
+      "GPT-3"
+    ],
+    "abstract": "This study explores the use of GPT-3 in a human-in-the-loop framework for enhancing interactive machine learning applications. By integrating human feedback in real-time, GPT-3 adapts to user inputs to provide more accurate and context-aware responses. Results show improved user satisfaction and learning efficiency."
+  },
+  "test_1": {
+    "model_names": [
+      "BERT"
+    ],
+    "abstract": "We investigate the application of BERT for interactive text editing tasks, where human-in-the-loop feedback is crucial. Through iterative updates and user interactions, BERT models are fine-tuned to enhance the precision of text suggestions, promoting a more dynamic and responsive editing environment."
+  },
+  "test_2": {
+    "model_names": [
+      "Llama"
+    ],
+    "abstract": "This paper presents an interactive learning system using the Llama model, focusing on real-time user engagement for personalized recommendations. By continuously incorporating user feedback, Llama effectively tailors suggestions, showcasing the benefits of human-in-the-loop methodologies in recommendation systems."
+  },
+  "test_3": {
+    "model_names": [
+      "T5"
+    ],
+    "abstract": "We propose a novel approach using T5 in a collaborative human-in-the-loop setting for document summarization tasks. The model adapts to user feedback by refining summaries to better match user preferences, demonstrating significant improvements in summarization quality and user satisfaction."
+  },
+  "test_4": {
+    "model_names": [
+      "XLNet"
+    ],
+    "abstract": "Our research leverages XLNet in an interactive machine learning platform for sentiment analysis. By incorporating user feedback, XLNet dynamically adjusts to changing sentiment contexts, leading to more accurate sentiment predictions and enhanced user interaction."
+  },
+  "test_5": {
+    "model_names": [
+      "RoBERTa"
+    ],
+    "abstract": "This work examines the integration of RoBERTa in a human-in-the-loop framework for sentiment classification. Through user interactions, RoBERTa is fine-tuned to better understand nuanced sentiments, resulting in improved classification accuracy and user experience."
+  },
+  "test_6": {
+    "model_names": [
+      "Electra"
+    ],
+    "abstract": "We explore the effectiveness of Electra in a human-in-the-loop environment for language translation. Electra's ability to incorporate user feedback leads to significant improvements in translation precision, offering a more interactive and adaptive translation system."
+  },
+  "test_7": {
+    "model_names": [
+      "DistilBERT"
+    ],
+    "abstract": "DistilBERT is utilized in an interactive question-answering system enhanced by human-in-the-loop feedback. The model's compact architecture allows for real-time updates based on user input, improving the relevance and accuracy of answers provided."
+  },
+  "test_8": {
+    "model_names": [
+      "Albert"
+    ],
+    "abstract": "This research leverages Albert in a human-in-the-loop framework for interactive dialogue systems. By utilizing user feedback, Albert adapts its responses to improve conversational flow and user satisfaction, highlighting the potential for enhanced human-computer interaction."
+  },
+  "test_9": {
+    "model_names": [
+      "OpenAI Codex"
+    ],
+    "abstract": "We investigate the application of OpenAI Codex in a human-in-the-loop coding assistant tool. By integrating user corrections and feedback, Codex becomes more adept at providing code suggestions that align with user intentions, streamlining the coding process."
+  },
+  "test_10": {
+    "model_names": [
+      "Megatron"
+    ],
+    "abstract": "Megatron is employed in an innovative human-in-the-loop framework to enhance interactive storytelling. By incorporating user feedback, Megatron adjusts narrative elements to create personalized and engaging storytelling experiences."
+  },
+  "test_11": {
+    "model_names": [
+      "BART"
+    ],
+    "abstract": "This paper introduces a human-in-the-loop framework using BART for interactive content generation. By engaging users in the feedback loop, BART adapts its output to better align with user preferences, resulting in higher quality and more relevant content."
+  },
+  "test_12": {
+    "model_names": [
+      "Transformer-XL"
+    ],
+    "abstract": "Transformer-XL is applied in an interactive machine learning context for time-series forecasting. By incorporating real-time user feedback, the model refines its predictions, leading to improved forecasting accuracy and user engagement."
+  },
+  "test_13": {
+    "model_names": [
+      "ERNIE"
+    ],
+    "abstract": "ERNIE is integrated into a human-in-the-loop system for interactive information retrieval. The model's ability to leverage user feedback enables more accurate and contextually relevant search results, enhancing the overall retrieval process."
+  },
+  "test_14": {
+    "model_names": [
+      "Swin Transformer"
+    ],
+    "abstract": "This research explores the use of the Swin Transformer in a human-in-the-loop framework for image classification tasks. By incorporating user feedback, the model adjusts its classification criteria, resulting in more accurate and user-aligned image categorization."
+  },
+  "test_15": {
+    "model_names": [
+      "ViT"
+    ],
+    "abstract": "We apply the Vision Transformer (ViT) in an interactive machine learning setting for object detection. Through human-in-the-loop feedback, ViT adapts its detection models, improving both accuracy and user satisfaction with the detection process."
+  },
+  "test_16": {
+    "model_names": [
+      "CLIP"
+    ],
+    "abstract": "CLIP is employed in a human-in-the-loop system for multimedia content analysis. By integrating user feedback, CLIP enhances its understanding and categorization of visual and textual data, leading to more effective content analysis and organization."
+  },
+  "test_17": {
+    "model_names": [
+      "DeBERTa"
+    ],
+    "abstract": "In this study, DeBERTa is utilized in a human-in-the-loop approach for semantic analysis tasks. User feedback is incorporated to refine the model's understanding of context and semantics, improving its analytical capabilities and user interaction."
+  },
+  "test_18": {
+    "model_names": [
+      "Reformer"
+    ],
+    "abstract": "Reformer is integrated into a human-in-the-loop framework for document classification. By leveraging user feedback, Reformer dynamically adjusts its classification models, resulting in more accurate and user-aligned document categorization."
+  },
+  "test_19": {
+    "model_names": [
+      "BigGAN"
+    ],
+    "abstract": "We explore the application of BigGAN in a human-in-the-loop framework for interactive art generation. User feedback guides the creative process, allowing BigGAN to generate artwork that reflects user preferences and artistic styles."
+  },
+  "test_20": {
+    "model_names": [
+      "mT5"
+    ],
+    "abstract": "The use of mT5 in a human-in-the-loop setting for cross-lingual text generation is investigated. By incorporating user feedback, the model adapts to diverse linguistic nuances, enhancing the quality and relevance of cross-lingual content."
+  },
+  "test_21": {
+    "model_names": [
+      "Switch Transformer"
+    ],
+    "abstract": "This study examines the implementation of the Switch Transformer in a human-in-the-loop framework for large-scale data processing. User feedback is utilized to optimize processing models, resulting in more efficient and user-focused data handling."
+  },
+  "test_22": {
+    "model_names": [
+      "Reformer"
+    ],
+    "abstract": "Reformer is applied in an interactive machine learning setting to enhance video content analysis. By incorporating user feedback, Reformer fine-tunes its analysis models, improving accuracy and user satisfaction in video content classification."
+  },
+  "test_23": {
+    "model_names": [
+      "CTRL"
+    ],
+    "abstract": "We propose a human-in-the-loop approach using CTRL for personalized text generation. User interactions guide the model in fine-tuning its output to better match individual preferences, enhancing the personalization of generated text content."
+  },
+  "test_24": {
+    "model_names": [
+      "Perceiver"
+    ],
+    "abstract": "Perceiver is utilized in a human-in-the-loop framework for real-time music recommendation. By integrating user feedback, Perceiver refines its recommendation algorithms, providing more personalized and user-aligned music suggestions."
+  },
+  "test_25": {
+    "model_names": [
+      "Funnel Transformer"
+    ],
+    "abstract": "This research leverages the Funnel Transformer in a human-in-the-loop system for streamlined text summarization. User feedback helps the model refine its summarization tasks, resulting in more concise and relevant summaries that meet user requirements."
+  },
+  "test_26": {
+    "model_names": [
+      "GShard"
+    ],
+    "abstract": "GShard is applied in an interactive machine learning environment for multilingual translation. User feedback is instrumental in refining translation outputs, enabling GShard to offer more accurate and contextually appropriate translations across languages."
+  },
+  "test_27": {
+    "model_names": [
+      "ELECTRA"
+    ],
+    "abstract": "We explore the use of ELECTRA in a human-in-the-loop framework for enhancing email filtering systems. By incorporating user feedback, ELECTRA improves its filtering accuracy, resulting in a more effective and user-friendly email management tool."
+  },
+  "test_28": {
+    "model_names": [
+      "SqueezeFormer"
+    ],
+    "abstract": "SqueezeFormer is integrated into a human-in-the-loop setting for efficient speech recognition. User feedback is leveraged to fine-tune the model's recognition capabilities, leading to improved accuracy and user satisfaction with speech-to-text conversion."
+  },
+  "test_29": {
+    "model_names": [
+      "Nystromformer"
+    ],
+    "abstract": "This study investigates the application of Nystromformer in a human-in-the-loop framework for large-scale text classification. By utilizing user feedback, the model refines its classification strategies, enhancing both accuracy and user engagement."
+  }
+}

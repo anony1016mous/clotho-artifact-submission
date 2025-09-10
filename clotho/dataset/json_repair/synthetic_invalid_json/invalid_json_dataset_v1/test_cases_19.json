@@ -1,0 +1,1144 @@
+{
+  "possible_fix": "Fix unquoted string values\nExample: { \"key\": value } \u2192 { \"key\": \"value\" }",
+  "test_cases": [
+    [
+      {
+        "user": {
+          "id": "12345",
+          "name": "Alice",
+          "email": "alice@example.com",
+          "status": "active"
+        }
+      },
+      "{\n    \"user\": {\n        \"id\": 12345,\n        \"name\": \"Alice\",\n        \"email\": \"alice@example.com\",\n        \"status\": active\n    }\n}"
+    ],
+    [
+      {
+        "username": "bob_the_builder",
+        "profile": {
+          "age": "29",
+          "country": "USA",
+          "language": "English"
+        }
+      },
+      "{\n    \"username\": \"bob_the_builder\",\n    \"profile\": {\n        \"age\": 29,\n        \"country\": USA,\n        \"language\": English\n    }\n}"
+    ],
+    [
+      {
+        "account": {
+          "username": "charlie123",
+          "created_on": "2023-10-15",
+          "verified": "true"
+        }
+      },
+      "{\n    \"account\": {\n        \"username\": charlie123,\n        \"created_on\": \"2023-10-15\",\n        \"verified\": true\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "name": "Dana",
+          "preferences": {
+            "theme": "dark",
+            "notifications": "enabled"
+          }
+        }
+      },
+      "{\n    \"user\": {\n        \"name\": Dana,\n        \"preferences\": {\n            \"theme\": dark,\n            \"notifications\": enabled\n        }\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "userId": "67890",
+          "email": "eve@example.com",
+          "subscription": "premium"
+        }
+      },
+      "{\n    \"profile\": {\n        \"userId\": 67890,\n        \"email\": \"eve@example.com\",\n        \"subscription\": premium\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "id": "54321",
+          "name": "Frank",
+          "gender": "male",
+          "status": "inactive"
+        }
+      },
+      "{\n    \"user\": {\n        \"id\": 54321,\n        \"name\": Frank,\n        \"gender\": male,\n        \"status\": inactive\n    }\n}"
+    ],
+    [
+      {
+        "credentials": {
+          "login": "george99",
+          "password": "securepass",
+          "expires": "2024-01-01"
+        }
+      },
+      "{\n    \"credentials\": {\n        \"login\": george99,\n        \"password\": securepass,\n        \"expires\": \"2024-01-01\"\n    }\n}"
+    ],
+    [
+      {
+        "user": {
+          "alias": "hannah_h",
+          "birthday": "1995-06-24",
+          "active": "false"
+        }
+      },
+      "{\n    \"user\": {\n        \"alias\": hannah_h,\n        \"birthday\": \"1995-06-24\",\n        \"active\": false\n    }\n}"
+    ],
+    [
+      {
+        "profile": {
+          "username": "ivan_the_great",
+          "membership": "gold",
+          "auto_renewal": "on"
+        }
+      },
+      "{\n    \"profile\": {\n        \"username\": ivan_the_great,\n        \"membership\": gold,\n        \"auto_renewal\": on\n    }\n}"
+    ],
+    [
+      {
+        "account": {
+          "owner": "Judy",
+          "type": "savings",
+          "balance": "10000"
+        }
+      },
+      "{\n    \"account\": {\n        \"owner\": Judy,\n        \"type\": savings,\n        \"balance\": 10000\n    }\n}"
+    ],
+    [
+      {
+        "order_id": "12345",
+        "customer": "John Doe",
+        "items": [
+          {
+            "product": "Laptop",
+            "price": "1200",
+            "quantity": "1"
+          },
+          {
+            "product": "Mouse",
+            "price": "25",
+            "quantity": "2"
+          }
+        ],
+        "total": "1250"
+      },
+      "{\n    \"order_id\": \"12345\",\n    \"customer\": John Doe,\n    \"items\": [\n        {\"product\": Laptop, \"price\": 1200, \"quantity\": 1},\n        {\"product\": Mouse, \"price\": 25, \"quantity\": 2}\n    ],\n    \"total\": 1250\n}"
+    ],
+    [
+      {
+        "order_id": "98765",
+        "customer": "Jane Smith",
+        "items": [
+          {
+            "product": "Smartphone",
+            "price": "800",
+            "quantity": "1"
+          },
+          {
+            "product": "Headphones",
+            "price": "50",
+            "quantity": "1"
+          }
+        ],
+        "total": "850"
+      },
+      "{\n    \"order_id\": \"98765\",\n    \"customer\": Jane Smith,\n    \"items\": [\n        {\"product\": Smartphone, \"price\": 800, \"quantity\": 1},\n        {\"product\": Headphones, \"price\": 50, \"quantity\": 1}\n    ],\n    \"total\": 850\n}"
+    ],
+    [
+      {
+        "order_id": "54321",
+        "customer": "Alice Johnson",
+        "items": [
+          {
+            "product": "Tablet",
+            "price": "300",
+            "quantity": "1"
+          },
+          {
+            "product": "Charger",
+            "price": "20",
+            "quantity": "2"
+          }
+        ],
+        "total": "340"
+      },
+      "{\n    \"order_id\": 54321,\n    \"customer\": Alice Johnson,\n    \"items\": [\n        {\"product\": Tablet, \"price\": 300, \"quantity\": 1},\n        {\"product\": Charger, \"price\": 20, \"quantity\": 2}\n    ],\n    \"total\": 340\n}"
+    ],
+    [
+      {
+        "order_id": "22222",
+        "customer": "Bob Brown",
+        "items": [
+          {
+            "product": "Monitor",
+            "price": "200",
+            "quantity": "1"
+          },
+          {
+            "product": "Keyboard",
+            "price": "30",
+            "quantity": "1"
+          }
+        ],
+        "total": "230"
+      },
+      "{\n    \"order_id\": \"22222\",\n    \"customer\": Bob Brown,\n    \"items\": [\n        {\"product\": Monitor, \"price\": 200, \"quantity\": 1},\n        {\"product\": Keyboard, \"price\": 30, \"quantity\": 1}\n    ],\n    \"total\": 230\n}"
+    ],
+    [
+      {
+        "order_id": "33333",
+        "customer": "Chris Green",
+        "items": [
+          {
+            "product": "Printer",
+            "price": "150",
+            "quantity": "1"
+          },
+          {
+            "product": "Ink Cartridge",
+            "price": "40",
+            "quantity": "3"
+          }
+        ],
+        "total": "270"
+      },
+      "{\n    \"order_id\": 33333,\n    \"customer\": Chris Green,\n    \"items\": [\n        {\"product\": Printer, \"price\": 150, \"quantity\": 1},\n        {\"product\": Ink Cartridge, \"price\": 40, \"quantity\": 3}\n    ],\n    \"total\": 270\n}"
+    ],
+    [
+      {
+        "order_id": "44444",
+        "customer": "Dana White",
+        "items": [
+          {
+            "product": "Camera",
+            "price": "600",
+            "quantity": "1"
+          },
+          {
+            "product": "Memory Card",
+            "price": "20",
+            "quantity": "2"
+          }
+        ],
+        "total": "640"
+      },
+      "{\n    \"order_id\": \"44444\",\n    \"customer\": Dana White,\n    \"items\": [\n        {\"product\": Camera, \"price\": 600, \"quantity\": 1},\n        {\"product\": Memory Card, \"price\": 20, \"quantity\": 2}\n    ],\n    \"total\": 640\n}"
+    ],
+    [
+      {
+        "order_id": "55555",
+        "customer": "Evan Black",
+        "items": [
+          {
+            "product": "Smartwatch",
+            "price": "250",
+            "quantity": "1"
+          },
+          {
+            "product": "Watch Strap",
+            "price": "15",
+            "quantity": "2"
+          }
+        ],
+        "total": "280"
+      },
+      "{\n    \"order_id\": 55555,\n    \"customer\": Evan Black,\n    \"items\": [\n        {\"product\": Smartwatch, \"price\": 250, \"quantity\": 1},\n        {\"product\": Watch Strap, \"price\": 15, \"quantity\": 2}\n    ],\n    \"total\": 280\n}"
+    ],
+    [
+      {
+        "order_id": "66666",
+        "customer": "Fiona Gray",
+        "items": [
+          {
+            "product": "Desk",
+            "price": "180",
+            "quantity": "1"
+          },
+          {
+            "product": "Desk Lamp",
+            "price": "35",
+            "quantity": "1"
+          }
+        ],
+        "total": "215"
+      },
+      "{\n    \"order_id\": 66666,\n    \"customer\": Fiona Gray,\n    \"items\": [\n        {\"product\": Desk, \"price\": 180, \"quantity\": 1},\n        {\"product\": Desk Lamp, \"price\": 35, \"quantity\": 1}\n    ],\n    \"total\": 215\n}"
+    ],
+    [
+      {
+        "order_id": "77777",
+        "customer": "George Red",
+        "items": [
+          {
+            "product": "Chair",
+            "price": "100",
+            "quantity": "2"
+          },
+          {
+            "product": "Cushion",
+            "price": "25",
+            "quantity": "4"
+          }
+        ],
+        "total": "200"
+      },
+      "{\n    \"order_id\": 77777,\n    \"customer\": George Red,\n    \"items\": [\n        {\"product\": Chair, \"price\": 100, \"quantity\": 2},\n        {\"product\": Cushion, \"price\": 25, \"quantity\": 4}\n    ],\n    \"total\": 200\n}"
+    ],
+    [
+      {
+        "order_id": "88888",
+        "customer": "Hannah Blue",
+        "items": [
+          {
+            "product": "Sofa",
+            "price": "800",
+            "quantity": "1"
+          },
+          {
+            "product": "Coffee Table",
+            "price": "120",
+            "quantity": "1"
+          }
+        ],
+        "total": "920"
+      },
+      "{\n    \"order_id\": 88888,\n    \"customer\": Hannah Blue,\n    \"items\": [\n        {\"product\": Sofa, \"price\": 800, \"quantity\": 1},\n        {\"product\": Coffee Table, \"price\": 120, \"quantity\": 1}\n    ],\n    \"total\": 920\n}"
+    ],
+    [
+      {
+        "title": "Inception",
+        "year": "2010",
+        "reviews": [
+          {
+            "user": "Alice",
+            "rating": "5",
+            "comment": "Mind-bending and thrilling!"
+          },
+          {
+            "user": "Bob",
+            "rating": "4",
+            "comment": "Complex but rewarding."
+          }
+        ]
+      },
+      "{\n  \"title\": Inception,\n  \"year\": 2010,\n  \"reviews\": [\n    {\n      \"user\": Alice,\n      \"rating\": 5,\n      \"comment\": Mind-bending and thrilling!\n    },\n    {\n      \"user\": Bob,\n      \"rating\": 4,\n      \"comment\": Complex but rewarding.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "title": "The Office",
+        "season": "1",
+        "episodes": [
+          {
+            "name": "Pilot",
+            "rating": "4",
+            "review": "A great introduction to the series."
+          },
+          {
+            "name": "Diversity Day",
+            "rating": "5",
+            "review": "Hilarious and smart."
+          }
+        ]
+      },
+      "{\n  \"title\": The Office,\n  \"season\": 1,\n  \"episodes\": [\n    {\n      \"name\": Pilot,\n      \"rating\": 4,\n      \"review\": A great introduction to the series.\n    },\n    {\n      \"name\": Diversity Day,\n      \"rating\": 5,\n      \"review\": Hilarious and smart.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "title": "Breaking Bad",
+        "completed": "true",
+        "feedback": [
+          {
+            "viewer": "Charlie",
+            "opinion": "Best show ever!"
+          },
+          {
+            "viewer": "Dana",
+            "opinion": "Gripping from start to finish."
+          }
+        ]
+      },
+      "{\n  \"title\": Breaking Bad,\n  \"completed\": true,\n  \"feedback\": [\n    {\n      \"viewer\": Charlie,\n      \"opinion\": Best show ever!\n    },\n    {\n      \"viewer\": Dana,\n      \"opinion\": Gripping from start to finish.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "title": "Game of Thrones",
+        "season": "8",
+        "finale": "controversial",
+        "comments": [
+          {
+            "author": "Eve",
+            "reaction": "Disappointed with the ending."
+          },
+          {
+            "author": "Frank",
+            "reaction": "Loved the whole series."
+          }
+        ]
+      },
+      "{\n  \"title\": Game of Thrones,\n  \"season\": 8,\n  \"finale\": controversial,\n  \"comments\": [\n    {\n      \"author\": Eve,\n      \"reaction\": Disappointed with the ending.\n    },\n    {\n      \"author\": Frank,\n      \"reaction\": Loved the whole series.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "title": "Stranger Things",
+        "season": "3",
+        "rating": "9",
+        "highlights": [
+          {
+            "scene": "Mall Battle",
+            "impact": "Intense and visually stunning."
+          },
+          {
+            "scene": "Farewell",
+            "impact": "Emotional and heartfelt."
+          }
+        ]
+      },
+      "{\n  \"title\": Stranger Things,\n  \"season\": 3,\n  \"rating\": 9,\n  \"highlights\": [\n    {\n      \"scene\": Mall Battle,\n      \"impact\": Intense and visually stunning.\n    },\n    {\n      \"scene\": Farewell,\n      \"impact\": Emotional and heartfelt.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "movie": "Avengers: Endgame",
+        "release_year": "2019",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "review": {
+          "critic": "IGN",
+          "comment": "Epic conclusion to the saga."
+        }
+      },
+      "{\n  \"movie\": Avengers: Endgame,\n  \"release_year\": 2019,\n  \"genres\": [\n    Action,\n    Adventure,\n    Sci-Fi\n  ],\n  \"review\": {\n    \"critic\": IGN,\n    \"comment\": Epic conclusion to the saga.\n  }\n}"
+    ],
+    [
+      {
+        "show": "The Crown",
+        "seasons": "4",
+        "awards": "Emmy winner",
+        "reviews": [
+          {
+            "critic": "Variety",
+            "opinion": "A visually splendid series."
+          },
+          {
+            "critic": "The Guardian",
+            "opinion": "Captivating and deeply engaging."
+          }
+        ]
+      },
+      "{\n  \"show\": The Crown,\n  \"seasons\": 4,\n  \"awards\": Emmy winner,\n  \"reviews\": [\n    {\n      \"critic\": Variety,\n      \"opinion\": A visually splendid series.\n    },\n    {\n      \"critic\": The Guardian,\n      \"opinion\": Captivating and deeply engaging.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "title": "The Mandalorian",
+        "episodes": "16",
+        "favored_by": [
+          {
+            "group": "Star Wars Fans",
+            "reason": "Authentic feel and thrilling action."
+          },
+          {
+            "group": "Casual Viewers",
+            "reason": "Compelling and accessible."
+          }
+        ]
+      },
+      "{\n  \"title\": The Mandalorian,\n  \"episodes\": 16,\n  \"favored_by\": [\n    {\n      \"group\": Star Wars Fans,\n      \"reason\": Authentic feel and thrilling action.\n    },\n    {\n      \"group\": Casual Viewers,\n      \"reason\": Compelling and accessible.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "series": "Black Mirror",
+        "episode_count": "22",
+        "themes": [
+          "Dystopia",
+          "Technology",
+          "Society"
+        ],
+        "public_opinion": {
+          "blog": "TechCrunch",
+          "summary": "Innovative and thought-provoking."
+        }
+      },
+      "{\n  \"series\": Black Mirror,\n  \"episode_count\": 22,\n  \"themes\": [\n    Dystopia,\n    Technology,\n    Society\n  ],\n  \"public_opinion\": {\n    \"blog\": TechCrunch,\n    \"summary\": Innovative and thought-provoking.\n  }\n}"
+    ],
+    [
+      {
+        "title": "Friends",
+        "duration": "10 seasons",
+        "popularity": "Classic comedy",
+        "feedback": [
+          {
+            "viewer": "Emily",
+            "sentiment": "Timeless humor."
+          },
+          {
+            "viewer": "George",
+            "sentiment": "Relatable and funny."
+          }
+        ]
+      },
+      "{\n  \"title\": Friends,\n  \"duration\": 10 seasons,\n  \"popularity\": Classic comedy,\n  \"feedback\": [\n    {\n      \"viewer\": Emily,\n      \"sentiment\": Timeless humor.\n    },\n    {\n      \"viewer\": George,\n      \"sentiment\": Relatable and funny.\n    }\n  ]\n}"
+    ],
+    [
+      {
+        "username": "john_doe",
+        "post": "Had a great day at the beach!",
+        "likes": 150,
+        "comments": [
+          "Looks fun!",
+          "Glad you enjoyed it!"
+        ]
+      },
+      "{\n  \"username\": john_doe,\n  \"post\": \"Had a great day at the beach!\",\n  \"likes\": 150,\n  \"comments\": [\n    \"Looks fun!\",\n    \"Glad you enjoyed it!\"\n  ]\n}"
+    ],
+    [
+      {
+        "user": "alice",
+        "content": "Check out my new blog post!",
+        "tags": [
+          "blog",
+          "writing",
+          "personal"
+        ]
+      },
+      "{\n  \"user\": \"alice\",\n  \"content\": Check out my new blog post!,\n  \"tags\": [\"blog\", \"writing\", \"personal\"]\n}"
+    ],
+    [
+      {
+        "author": "bob_smith",
+        "message": "Feeling grateful for all the support!",
+        "shares": 20
+      },
+      "{\n  \"author\": bob_smith,\n  \"message\": \"Feeling grateful for all the support!\",\n  \"shares\": 20\n}"
+    ],
+    [
+      {
+        "profile": "charlie_brown",
+        "post": "Enjoying a cup of coffee on a rainy morning.",
+        "reactions": 87,
+        "shared_by": [
+          "daisy",
+          "lucy",
+          "linus"
+        ]
+      },
+      "{\n  \"profile\": charlie_brown,\n  \"post\": \"Enjoying a cup of coffee on a rainy morning.\",\n  \"reactions\": 87,\n  \"shared_by\": [\"daisy\", \"lucy\", \"linus\"]\n}"
+    ],
+    [
+      {
+        "user": "dave",
+        "status": "Looking forward to the weekend!",
+        "likes": 76,
+        "comments": [
+          "Same here!",
+          "Weekend vibes!"
+        ]
+      },
+      "{\n  \"user\": dave,\n  \"status\": \"Looking forward to the weekend!\",\n  \"likes\": 76,\n  \"comments\": [\"Same here!\", \"Weekend vibes!\"]\n}"
+    ],
+    [
+      {
+        "handle": "erin",
+        "update": "Just completed a 5k run!",
+        "achievements": [
+          "5k_run",
+          "morning_exercise"
+        ]
+      },
+      "{\n  \"handle\": erin,\n  \"update\": \"Just completed a 5k run!\",\n  \"achievements\": [\"5k_run\", \"morning_exercise\"]\n}"
+    ],
+    [
+      {
+        "name": "frank",
+        "tweet": "New blog post up! Check it out!",
+        "tags": [
+          "blogging",
+          "new_post"
+        ]
+      },
+      "{\n  \"name\": frank,\n  \"tweet\": \"New blog post up! Check it out!\",\n  \"tags\": [\"blogging\", \"new_post\"]\n}"
+    ],
+    [
+      {
+        "nickname": "grace",
+        "post": "Happy to announce my new project launch!",
+        "followers": 1000
+      },
+      "{\n  \"nickname\": grace,\n  \"post\": \"Happy to announce my new project launch!\",\n  \"followers\": 1000\n}"
+    ],
+    [
+      {
+        "user_id": "hannah",
+        "message": "Sunny days are the best!",
+        "likes": 230,
+        "comments": [
+          "Absolutely!",
+          "Love sunny weather!"
+        ]
+      },
+      "{\n  \"user_id\": hannah,\n  \"message\": \"Sunny days are the best!\",\n  \"likes\": 230,\n  \"comments\": [\"Absolutely!\", \"Love sunny weather!\"]\n}"
+    ],
+    [
+      {
+        "alias": "ian",
+        "status_update": "Can't believe it's already October!",
+        "likes": 345,
+        "comments": [
+          "Time flies!",
+          "Indeed!"
+        ]
+      },
+      "{\n  \"alias\": ian,\n  \"status_update\": \"Can't believe it's already October!\",\n  \"likes\": 345,\n  \"comments\": [\"Time flies!\", \"Indeed!\"]\n}"
+    ],
+    [
+      {
+        "sensorId": "tempSensor01",
+        "location": "Warehouse A",
+        "temperature": "22.5",
+        "status": "active"
+      },
+      "{\n  \"sensorId\": tempSensor01,\n  \"location\": Warehouse A,\n  \"temperature\": 22.5,\n  \"status\": active\n}"
+    ],
+    [
+      {
+        "deviceId": "humiditySensor02",
+        "location": "Greenhouse 1",
+        "humidity": "55.0",
+        "batteryStatus": "low"
+      },
+      "{\n  \"deviceId\": humiditySensor02,\n  \"location\": Greenhouse 1,\n  \"humidity\": 55.0,\n  \"batteryStatus\": low\n}"
+    ],
+    [
+      {
+        "sensorType": "motion",
+        "floor": "3",
+        "motionDetected": "yes",
+        "lastChecked": "2023-10-10T14:48:00"
+      },
+      "{\n  \"sensorType\": motion,\n  \"floor\": 3,\n  \"motionDetected\": yes,\n  \"lastChecked\": 2023-10-10T14:48:00\n}"
+    ],
+    [
+      {
+        "deviceId": "lightSensor05",
+        "room": "Conference Room",
+        "lightLevel": "250",
+        "operational": "true"
+      },
+      "{\n  \"deviceId\": lightSensor05,\n  \"room\": Conference Room,\n  \"lightLevel\": 250,\n  \"operational\": true\n}"
+    ],
+    [
+      {
+        "sensorName": "airQualityMonitor",
+        "zone": "Parking Lot",
+        "CO2Level": "400",
+        "alert": "none"
+      },
+      "{\n  \"sensorName\": airQualityMonitor,\n  \"zone\": Parking Lot,\n  \"CO2Level\": 400,\n  \"alert\": none\n}"
+    ],
+    [
+      {
+        "sensorId": "pressureSensor08",
+        "section": "Engine Room",
+        "pressure": "5.5",
+        "calibrated": "false"
+      },
+      "{\n  \"sensorId\": pressureSensor08,\n  \"section\": Engine Room,\n  \"pressure\": 5.5,\n  \"calibrated\": false\n}"
+    ],
+    [
+      {
+        "sensorId": "vibrationSensor12",
+        "unit": "Building B",
+        "vibrationLevel": "3.2",
+        "maintenanceRequired": "yes"
+      },
+      "{\n  \"sensorId\": vibrationSensor12,\n  \"unit\": Building B,\n  \"vibrationLevel\": 3.2,\n  \"maintenanceRequired\": yes\n}"
+    ],
+    [
+      {
+        "deviceId": "soundSensor09",
+        "area": "Auditorium",
+        "soundLevel": "85",
+        "active": "true"
+      },
+      "{\n  \"deviceId\": soundSensor09,\n  \"area\": Auditorium,\n  \"soundLevel\": 85,\n  \"active\": true\n}"
+    ],
+    [
+      {
+        "sensorName": "windSpeedMonitor",
+        "site": "Roof",
+        "windSpeed": "20.5",
+        "operational": "false"
+      },
+      "{\n  \"sensorName\": windSpeedMonitor,\n  \"site\": Roof,\n  \"windSpeed\": 20.5,\n  \"operational\": false\n}"
+    ],
+    [
+      {
+        "sensorId": "proximitySensor15",
+        "location": "Loading Dock",
+        "proximity": "0.3",
+        "functional": "true"
+      },
+      "{\n  \"sensorId\": proximitySensor15,\n  \"location\": Loading Dock,\n  \"proximity\": 0.3,\n  \"functional\": true\n}"
+    ],
+    [
+      {
+        "city": "New York",
+        "temperature": "22\u00b0C",
+        "condition": "Partly Cloudy",
+        "humidity": "60%"
+      },
+      "{\n    \"city\": \"New York\",\n    \"temperature\": \"22\u00b0C\",\n    \"condition\": Partly Cloudy,\n    \"humidity\": \"60%\"\n}"
+    ],
+    [
+      {
+        "location": "Los Angeles",
+        "forecast": "Sunny",
+        "high": "30\u00b0C",
+        "low": "18\u00b0C"
+      },
+      "{\n    \"location\": \"Los Angeles\",\n    \"forecast\": Sunny,\n    \"high\": \"30\u00b0C\",\n    \"low\": \"18\u00b0C\"\n}"
+    ],
+    [
+      {
+        "city": "Chicago",
+        "wind_speed": "15 km/h",
+        "visibility": "good",
+        "pressure": "1020 hPa"
+      },
+      "{\n    \"city\": \"Chicago\",\n    \"wind_speed\": 15 km/h,\n    \"visibility\": good,\n    \"pressure\": \"1020 hPa\"\n}"
+    ],
+    [
+      {
+        "location": "Paris",
+        "temperature": "19\u00b0C",
+        "weather": "Rainy",
+        "wind": "10 km/h"
+      },
+      "{\n    \"location\": \"Paris\",\n    \"temperature\": \"19\u00b0C\",\n    \"weather\": Rainy,\n    \"wind\": \"10 km/h\"\n}"
+    ],
+    [
+      {
+        "city": "Tokyo",
+        "temperature": "24\u00b0C",
+        "condition": "Clear",
+        "humidity": "55%"
+      },
+      "{\n    \"city\": \"Tokyo\",\n    \"temperature\": \"24\u00b0C\",\n    \"condition\": Clear,\n    \"humidity\": \"55%\"\n}"
+    ],
+    [
+      {
+        "location": "Cape Town",
+        "forecast": "Windy",
+        "high": "25\u00b0C",
+        "low": "15\u00b0C"
+      },
+      "{\n    \"location\": \"Cape Town\",\n    \"forecast\": Windy,\n    \"high\": \"25\u00b0C\",\n    \"low\": \"15\u00b0C\"\n}"
+    ],
+    [
+      {
+        "city": "Berlin",
+        "wind_speed": "20 km/h",
+        "visibility": "poor",
+        "pressure": "1015 hPa"
+      },
+      "{\n    \"city\": \"Berlin\",\n    \"wind_speed\": 20 km/h,\n    \"visibility\": poor,\n    \"pressure\": \"1015 hPa\"\n}"
+    ],
+    [
+      {
+        "location": "Sydney",
+        "temperature": "26\u00b0C",
+        "weather": "Cloudy",
+        "wind": "12 km/h"
+      },
+      "{\n    \"location\": \"Sydney\",\n    \"temperature\": \"26\u00b0C\",\n    \"weather\": Cloudy,\n    \"wind\": \"12 km/h\"\n}"
+    ],
+    [
+      {
+        "city": "Rio de Janeiro",
+        "temperature": "28\u00b0C",
+        "condition": "Thunderstorm",
+        "humidity": "70%"
+      },
+      "{\n    \"city\": \"Rio de Janeiro\",\n    \"temperature\": \"28\u00b0C\",\n    \"condition\": Thunderstorm,\n    \"humidity\": \"70%\"\n}"
+    ],
+    [
+      {
+        "location": "Mumbai",
+        "forecast": "Humid",
+        "high": "32\u00b0C",
+        "low": "26\u00b0C"
+      },
+      "{\n    \"location\": \"Mumbai\",\n    \"forecast\": Humid,\n    \"high\": \"32\u00b0C\",\n    \"low\": \"26\u00b0C\"\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN123456",
+        "amount": "100.00",
+        "currency": "USD",
+        "date": "2023-10-31",
+        "status": "completed"
+      },
+      "{\n    \"transaction_id\": TXN123456,\n    \"amount\": 100.00,\n    \"currency\": USD,\n    \"date\": 2023-10-31,\n    \"status\": completed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN789012",
+        "amount": "250.75",
+        "currency": "EUR",
+        "date": "2023-09-15",
+        "status": "pending"
+      },
+      "{\n    \"transaction_id\": TXN789012,\n    \"amount\": 250.75,\n    \"currency\": EUR,\n    \"date\": 2023-09-15,\n    \"status\": pending\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN345678",
+        "amount": "560.00",
+        "currency": "GBP",
+        "date": "2023-08-22",
+        "status": "failed"
+      },
+      "{\n    \"transaction_id\": TXN345678,\n    \"amount\": 560.00,\n    \"currency\": GBP,\n    \"date\": 2023-08-22,\n    \"status\": failed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN987654",
+        "amount": "1500.00",
+        "currency": "JPY",
+        "date": "2023-07-10",
+        "status": "completed"
+      },
+      "{\n    \"transaction_id\": TXN987654,\n    \"amount\": 1500.00,\n    \"currency\": JPY,\n    \"date\": 2023-07-10,\n    \"status\": completed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN654321",
+        "amount": "75.50",
+        "currency": "AUD",
+        "date": "2023-06-05",
+        "status": "reversed"
+      },
+      "{\n    \"transaction_id\": TXN654321,\n    \"amount\": 75.50,\n    \"currency\": AUD,\n    \"date\": 2023-06-05,\n    \"status\": reversed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN112233",
+        "amount": "300.00",
+        "currency": "CAD",
+        "date": "2023-05-14",
+        "status": "failed"
+      },
+      "{\n    \"transaction_id\": TXN112233,\n    \"amount\": 300.00,\n    \"currency\": CAD,\n    \"date\": 2023-05-14,\n    \"status\": failed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN334455",
+        "amount": "820.25",
+        "currency": "CHF",
+        "date": "2023-04-20",
+        "status": "completed"
+      },
+      "{\n    \"transaction_id\": TXN334455,\n    \"amount\": 820.25,\n    \"currency\": CHF,\n    \"date\": 2023-04-20,\n    \"status\": completed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN556677",
+        "amount": "200.00",
+        "currency": "CNY",
+        "date": "2023-03-18",
+        "status": "pending"
+      },
+      "{\n    \"transaction_id\": TXN556677,\n    \"amount\": 200.00,\n    \"currency\": CNY,\n    \"date\": 2023-03-18,\n    \"status\": pending\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN778899",
+        "amount": "650.00",
+        "currency": "INR",
+        "date": "2023-02-10",
+        "status": "completed"
+      },
+      "{\n    \"transaction_id\": TXN778899,\n    \"amount\": 650.00,\n    \"currency\": INR,\n    \"date\": 2023-02-10,\n    \"status\": completed\n}"
+    ],
+    [
+      {
+        "transaction_id": "TXN990011",
+        "amount": "95.50",
+        "currency": "BRL",
+        "date": "2023-01-07",
+        "status": "reversed"
+      },
+      "{\n    \"transaction_id\": TXN990011,\n    \"amount\": 95.50,\n    \"currency\": BRL,\n    \"date\": 2023-01-07,\n    \"status\": reversed\n}"
+    ],
+    [
+      {
+        "workout": "running",
+        "duration": "30 minutes",
+        "calories_burned": "300"
+      },
+      "{\n    \"workout\": running,\n    \"duration\": \"30 minutes\",\n    \"calories_burned\": \"300\"\n}"
+    ],
+    [
+      {
+        "meal": "breakfast",
+        "items": [
+          "oatmeal",
+          "banana",
+          "coffee"
+        ],
+        "calories": "400"
+      },
+      "{\n    \"meal\": breakfast,\n    \"items\": [\"oatmeal\", \"banana\", \"coffee\"],\n    \"calories\": \"400\"\n}"
+    ],
+    [
+      {
+        "exercise": "yoga",
+        "duration": "45 minutes",
+        "difficulty": "medium"
+      },
+      "{\n    \"exercise\": \"yoga\",\n    \"duration\": 45 minutes,\n    \"difficulty\": medium\n}"
+    ],
+    [
+      {
+        "hydration": "2 liters",
+        "reminder": "drink water every hour"
+      },
+      "{\n    \"hydration\": 2 liters,\n    \"reminder\": drink water every hour\n}"
+    ],
+    [
+      {
+        "goal": "lose weight",
+        "target_weight": "70 kg",
+        "current_weight": "75 kg"
+      },
+      "{\n    \"goal\": lose weight,\n    \"target_weight\": \"70 kg\",\n    \"current_weight\": \"75 kg\"\n}"
+    ],
+    [
+      {
+        "activity": "cycling",
+        "distance": "20 km",
+        "time": "1 hour"
+      },
+      "{\n    \"activity\": cycling,\n    \"distance\": \"20 km\",\n    \"time\": \"1 hour\"\n}"
+    ],
+    [
+      {
+        "sleep": "8 hours",
+        "quality": "good"
+      },
+      "{\n    \"sleep\": \"8 hours\",\n    \"quality\": good\n}"
+    ],
+    [
+      {
+        "vitamins": [
+          "vitamin C",
+          "vitamin D",
+          "zinc"
+        ],
+        "schedule": "daily"
+      },
+      "{\n    \"vitamins\": [\"vitamin C\", \"vitamin D\", \"zinc\"],\n    \"schedule\": daily\n}"
+    ],
+    [
+      {
+        "stress_level": "moderate",
+        "relaxation_techniques": [
+          "meditation",
+          "deep breathing"
+        ]
+      },
+      "{\n    \"stress_level\": moderate,\n    \"relaxation_techniques\": [\"meditation\", \"deep breathing\"]\n}"
+    ],
+    [
+      {
+        "gym": "open",
+        "membership": "active",
+        "last_visit": "2023-10-01"
+      },
+      "{\n    \"gym\": open,\n    \"membership\": active,\n    \"last_visit\": \"2023-10-01\"\n}"
+    ],
+    [
+      {
+        "vehicle": "car",
+        "location": "37.7749,-122.4194",
+        "status": "in_service"
+      },
+      "{\n  \"vehicle\": car,\n  \"location\": \"37.7749,-122.4194\",\n  \"status\": \"in_service\"\n}"
+    ],
+    [
+      {
+        "type": "bicycle",
+        "coordinates": "34.0522,-118.2437",
+        "availability": "available"
+      },
+      "{\n  \"type\": bicycle,\n  \"coordinates\": \"34.0522,-118.2437\",\n  \"availability\": \"available\"\n}"
+    ],
+    [
+      {
+        "transport": "bus",
+        "gps": "40.7128,-74.0060",
+        "route": "M15"
+      },
+      "{\n  \"transport\": bus,\n  \"gps\": \"40.7128,-74.0060\",\n  \"route\": \"M15\"\n}"
+    ],
+    [
+      {
+        "mode": "train",
+        "current_position": "51.5074,-0.1278",
+        "next_stop": "London Bridge"
+      },
+      "{\n  \"mode\": train,\n  \"current_position\": \"51.5074,-0.1278\",\n  \"next_stop\": \"London Bridge\"\n}"
+    ],
+    [
+      {
+        "service": "taxi",
+        "origin": "48.8566,2.3522",
+        "destination": "Champs-\u00c9lys\u00e9es"
+      },
+      "{\n  \"service\": taxi,\n  \"origin\": \"48.8566,2.3522\",\n  \"destination\": \"Champs-\u00c9lys\u00e9es\"\n}"
+    ],
+    [
+      {
+        "vessel": "ship",
+        "last_known_position": "35.6895,139.6917",
+        "status": "docked"
+      },
+      "{\n  \"vessel\": ship,\n  \"last_known_position\": \"35.6895,139.6917\",\n  \"status\": \"docked\"\n}"
+    ],
+    [
+      {
+        "aircraft": "jet",
+        "flight_path": "33.7490,-84.3880",
+        "status": "in_flight"
+      },
+      "{\n  \"aircraft\": jet,\n  \"flight_path\": \"33.7490,-84.3880\",\n  \"status\": \"in_flight\"\n}"
+    ],
+    [
+      {
+        "type": "scooter",
+        "station_location": "41.8781,-87.6298",
+        "status": "available"
+      },
+      "{\n  \"type\": scooter,\n  \"station_location\": \"41.8781,-87.6298\",\n  \"status\": \"available\"\n}"
+    ],
+    [
+      {
+        "vehicle": "motorcycle",
+        "gps_coordinates": "25.7617,-80.1918",
+        "status": "maintenance"
+      },
+      "{\n  \"vehicle\": motorcycle,\n  \"gps_coordinates\": \"25.7617,-80.1918\",\n  \"status\": \"maintenance\"\n}"
+    ],
+    [
+      {
+        "transport_mode": "subway",
+        "station": "40.730610,-73.935242",
+        "status": "operational"
+      },
+      "{\n  \"transport_mode\": subway,\n  \"station\": \"40.730610,-73.935242\",\n  \"status\": \"operational\"\n}"
+    ],
+    [
+      {
+        "book_id": 12345,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "borrower": "John Doe",
+        "due_date": "2023-10-15"
+      },
+      "{\n    \"book_id\": 12345,\n    \"title\": The Great Gatsby,\n    \"author\": F. Scott Fitzgerald,\n    \"borrower\": John Doe,\n    \"due_date\": 2023-10-15\n}"
+    ],
+    [
+      {
+        "book_id": 67890,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "borrower": "Jane Smith",
+        "due_date": "2023-11-01"
+      },
+      "{\n    \"book_id\": 67890,\n    \"title\": To Kill a Mockingbird,\n    \"author\": Harper Lee,\n    \"borrower\": Jane Smith,\n    \"due_date\": 2023-11-01\n}"
+    ],
+    [
+      {
+        "book_id": 11122,
+        "title": "1984",
+        "author": "George Orwell",
+        "borrower": null,
+        "due_date": null
+      },
+      "{\n    \"book_id\": 11122,\n    \"title\": 1984,\n    \"author\": George Orwell,\n    \"borrower\": null,\n    \"due_date\": null\n}"
+    ],
+    [
+      {
+        "book_id": 54321,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "borrower": "Anna Johnson",
+        "due_date": "2023-12-05"
+      },
+      "{\n    \"book_id\": 54321,\n    \"title\": Pride and Prejudice,\n    \"author\": Jane Austen,\n    \"borrower\": Anna Johnson,\n    \"due_date\": 2023-12-05\n}"
+    ],
+    [
+      {
+        "book_id": 13579,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "borrower": "Michael Brown",
+        "due_date": "2023-09-25"
+      },
+      "{\n    \"book_id\": 13579,\n    \"title\": The Catcher in the Rye,\n    \"author\": J.D. Salinger,\n    \"borrower\": Michael Brown,\n    \"due_date\": 2023-09-25\n}"
+    ],
+    [
+      {
+        "book_id": 24680,
+        "title": "Moby Dick",
+        "author": "Herman Melville",
+        "borrower": "Emily Davis",
+        "due_date": "2023-11-20"
+      },
+      "{\n    \"book_id\": 24680,\n    \"title\": Moby Dick,\n    \"author\": Herman Melville,\n    \"borrower\": Emily Davis,\n    \"due_date\": 2023-11-20\n}"
+    ],
+    [
+      {
+        "book_id": 11223,
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "borrower": "Chris Green",
+        "due_date": "2023-10-30"
+      },
+      "{\n    \"book_id\": 11223,\n    \"title\": War and Peace,\n    \"author\": Leo Tolstoy,\n    \"borrower\": Chris Green,\n    \"due_date\": 2023-10-30\n}"
+    ],
+    [
+      {
+        "book_id": 33445,
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "borrower": "Lisa White",
+        "due_date": "2023-11-15"
+      },
+      "{\n    \"book_id\": 33445,\n    \"title\": Brave New World,\n    \"author\": Aldous Huxley,\n    \"borrower\": Lisa White,\n    \"due_date\": 2023-11-15\n}"
+    ],
+    [
+      {
+        "book_id": 55667,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "borrower": "David Wilson",
+        "due_date": "2023-10-10"
+      },
+      "{\n    \"book_id\": 55667,\n    \"title\": The Hobbit,\n    \"author\": J.R.R. Tolkien,\n    \"borrower\": David Wilson,\n    \"due_date\": 2023-10-10\n}"
+    ],
+    [
+      {
+        "book_id": 77889,
+        "title": "The Odyssey",
+        "author": "Homer",
+        "borrower": null,
+        "due_date": null
+      },
+      "{\n    \"book_id\": 77889,\n    \"title\": The Odyssey,\n    \"author\": Homer,\n    \"borrower\": null,\n    \"due_date\": null\n}"
+    ]
+  ]
+}
